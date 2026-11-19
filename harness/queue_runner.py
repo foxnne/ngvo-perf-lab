@@ -8,10 +8,22 @@ import os, subprocess, sys, time, shlex
 HERE = os.path.dirname(os.path.abspath(__file__)); Q = os.path.join(HERE, 'queue.txt'); LOG = os.path.join(os.path.dirname(HERE), 'results', 'queue.log')
 def log(msg):
     with open(LOG, 'a', encoding='utf-8') as f: f.write(time.strftime('%Y-%m-%d %H:%M:%S ') + msg + '\n')
-def busy():
-    ps = "(@(Get-Process SkyrimSE,ModOrganizer -ErrorAction SilentlyContinue).Count) + (@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | ? { $_.CommandLine -match 'sky_sweep.py|load_shot.py|whale_check.py|footprint_check.py|save_sky_base.py|map_shot.py|bench.py|attribute.py' -and $_.CommandLine -notmatch 'queue_runner' }).Count)"
+GAME_JOBS = ('sky_sweep.py', 'lightning_demo.py', 'load_shot.py', 'map_shot.py', 'whale_check.py', 'footprint_check.py')
+def is_game_job(line): return bool(line) and line.split()[0] in GAME_JOBS and '--fresh' not in line
+def other_scripts():
+    ps = "@(Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | ? { $_.CommandLine -match 'sky_sweep.py|lightning_demo.py|build_deploy_job.py|first_launch.py|load_shot.py|whale_check.py|footprint_check.py|save_sky_base.py|map_shot.py|bench.py|attribute.py' -and $_.CommandLine -notmatch 'queue_runner' }).Count"
     out = subprocess.run(['powershell', '-NoProfile', '-Command', ps], capture_output=True, text=True).stdout.strip()
     return out not in ('0', '')
+def game_open():
+    out = subprocess.run(['powershell', '-NoProfile', '-Command', "@(Get-Process SkyrimSE,ModOrganizer -ErrorAction SilentlyContinue).Count"], capture_output=True, text=True).stdout.strip()
+    return out not in ('0', '')
+def close_game():
+    subprocess.run([sys.executable, '-c', 'import bench; bench.quit_game()'], cwd=HERE); time.sleep(10)
+def peek():
+    if not os.path.exists(Q): return None
+    for l in open(Q, encoding='utf-8').read().splitlines():
+        if l.strip() and not l.startswith('#'): return l.strip()
+    return None
 def pop():
     if not os.path.exists(Q): return None
     lines = [l for l in open(Q, encoding='utf-8').read().splitlines()]
@@ -24,19 +36,24 @@ if sys.argv[1] == 'add':
     with open(Q, 'a', encoding='utf-8') as f: f.write(' '.join(shlex.quote(a) if ' ' in a else a for a in sys.argv[2:]) + '\n')
     print('queued:', ' '.join(sys.argv[2:]))
 elif sys.argv[1] == 'run':
-    idle_since = time.time(); log('runner started')
+    idle_since = time.time(); log('runner started (session mode: the game stays open between consecutive game jobs)')
     while True:
-        if busy(): time.sleep(20); idle_since = time.time(); continue
-        time.sleep(25)
-        if busy(): continue
+        if other_scripts(): time.sleep(15); idle_since = time.time(); continue
         job = pop()
         if not job:
+            if game_open() and time.time() - idle_since > 240: log('queue empty for 4 min: closing the game'); close_game()
             if time.time() - idle_since > 1800: log('runner idle 30 min: exit'); break
-            time.sleep(30); continue
+            time.sleep(20); continue
         args = shlex.split(job); tag = args[1] if len(args) > 1 else args[0]
-        log('start: ' + job)
+        env = dict(os.environ)
+        if is_game_job(job):
+            env['NGVO_ATTACH'] = '1'
+            if is_game_job(peek()): env['NGVO_KEEP_OPEN'] = '1'
+        elif game_open():
+            log('closing the game for: ' + job); close_game()
+        log('start%s: %s' % (' (attached)' if is_game_job(job) and game_open() else '', job))
         with open(os.path.join(os.path.dirname(HERE), 'results', f'job-{os.path.splitext(args[0])[0]}-{tag}.log'), 'w', encoding='utf-8') as out:
-            rc = subprocess.run([sys.executable] + args, cwd=HERE, stdout=out, stderr=subprocess.STDOUT).returncode
-        log(f'done rc={rc}: ' + job); idle_since = time.time(); time.sleep(30)
+            rc = subprocess.run([sys.executable] + args, cwd=HERE, stdout=out, stderr=subprocess.STDOUT, env=env).returncode
+        log(f'done rc={rc}: ' + job); idle_since = time.time(); time.sleep(8)
 elif sys.argv[1] == 'list':
     print(open(Q, encoding='utf-8').read() if os.path.exists(Q) else '(empty)')

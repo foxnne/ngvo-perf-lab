@@ -1,0 +1,169 @@
+[
+ {
+  "name": "00_as_saved",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "01_secondary_inmin_0.1",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "secondary": {
+       "range": [
+        0.1,
+        0.8,
+        0.0,
+        0.4
+       ]
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "02_secondary_inmin_0.4",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "secondary": {
+       "range": [
+        0.4,
+        0.8,
+        0.0,
+        0.4
+       ]
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "03_secondary_off",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "secondary": {
+       "range": [
+        -0.2,
+        0.8,
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "04_primary_exponent_2.2",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "exponent": 2.2
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "05_primary_exp_2.2_secondary_0.4",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "exponent": 2.2
+      },
+      "secondary": {
+       "range": [
+        0.4,
+        0.8,
+        0.0,
+        0.4
+       ]
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "06_primary_steeper_inmin_0.25_inmax_0.5",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.25,
+        0.5,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "07_as06_secondary_off",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.25,
+        0.5,
+        0.0,
+        0.65
+       ]
+      },
+      "secondary": {
+       "range": [
+        -0.2,
+        0.8,
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   }
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ }
+]

@@ -1,0 +1,72 @@
+[
+ {
+  "name": "00_detile_off",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "shader": {
+   "file": "PhysicalSky/Volumetrics.cs.hlsl",
+   "defines": {
+    "CLOUD_DETILE_AMOUNT": 0.0,
+    "CLOUD_DETILE_SLICE": 0.0
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "01_current_0.19_0.2",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "shader": {
+   "file": "PhysicalSky/Volumetrics.cs.hlsl",
+   "defines": {
+    "CLOUD_DETILE_AMOUNT": 0.19,
+    "CLOUD_DETILE_SLICE": 0.2
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "02_slide_0.4",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "shader": {
+   "file": "PhysicalSky/Volumetrics.cs.hlsl",
+   "defines": {
+    "CLOUD_DETILE_AMOUNT": 0.4,
+    "CLOUD_DETILE_SLICE": 0.2
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "03_slice_0.5",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "shader": {
+   "file": "PhysicalSky/Volumetrics.cs.hlsl",
+   "defines": {
+    "CLOUD_DETILE_AMOUNT": 0.19,
+    "CLOUD_DETILE_SLICE": 0.5
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "04_slide_0.4_slice_0.5",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "shader": {
+   "file": "PhysicalSky/Volumetrics.cs.hlsl",
+   "defines": {
+    "CLOUD_DETILE_AMOUNT": 0.4,
+    "CLOUD_DETILE_SLICE": 0.5
+   }
+  },
+  "settle": 10
+ }
+]

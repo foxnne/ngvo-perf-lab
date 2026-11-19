@@ -1,0 +1,102 @@
+[
+ {
+  "name": "00_as_saved",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "01_height_fog_0.15",
+  "set": {},
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.15
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "02_height_fog_0.05",
+  "set": {},
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.05
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "03_height_fog_off",
+  "set": {},
+  "features": {
+   "ExponentialHeightFog": {
+    "enabled": 0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "04_haze_0.2",
+  "set": {
+   "aerosolLoading": 0.2
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "05_haze_0.2_fog_0.1",
+  "set": {
+   "aerosolLoading": 0.2
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "06_as05_sun_x1.3",
+  "set": {
+   "aerosolLoading": 0.2,
+   "sunlightColor": [
+    13.0,
+    12.6,
+    12.35
+   ]
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "07_as05_exposure_-0.4",
+  "set": {
+   "aerosolLoading": 0.2
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -0.4
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

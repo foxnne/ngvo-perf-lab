@@ -83,7 +83,26 @@ def saves():
 
 def launch(save=None):
     """save: name of a save to load (e.g. a per-view save); falls back to BASE_SAVE, then to the most recent save."""
-    if running(): raise SystemExit('game already running; quit it first or pass --no-launch')
+    global LOADED_SAVE
+    if running():
+        # Session mode: the queue runner left the game open for the next job. Attach instead of relaunching,
+        # and switch place by loading the wanted save from inside the game (seconds, not minutes).
+        if os.environ.get('NGVO_KEEP_OPEN') != '1' and os.environ.get('NGVO_ATTACH') != '1':
+            raise SystemExit('game already running; quit it first or pass --no-launch')
+        try: cs.call('menu', {'action': 'list'})
+        except Exception: raise SystemExit('game is running but the bridge does not answer')
+        release()
+        try: cs.call('communityshaders.testbed', {'action': 'camera', 'mode': 'player'})
+        except Exception: pass
+        have = saves()
+        if save in have:
+            print('attached: loading save', save, flush=True)
+            cs.call('game', {'action': 'load', 'name': save}); time.sleep(12)
+            if not settle(): raise SystemExit('save did not load')
+            LOADED_SAVE = save; time.sleep(4)
+        else:
+            print('attached: staying in the current game (no save named %s)' % save, flush=True); LOADED_SAVE = None
+        return
     if mo2_running(): close_mo2()
     for attempt in range(3):                      # the MO2 shortcut sometimes does not start the game: send it again
         # Tool shells run inside a Windows job object; an MO2 started from here inherits it and then gets
@@ -103,7 +122,7 @@ def launch(save=None):
     have = saves(); pick = save if save in have else BASE_SAVE if BASE_SAVE in have else None
     print('loading save:', pick or '(most recent)', flush=True)
     cs.call('game', {'action': 'load', 'name': pick} if pick else {'action': 'loadLast'}); time.sleep(15)
-    global LOADED_SAVE; LOADED_SAVE = pick
+    LOADED_SAVE = pick
     if not settle(): raise SystemExit('save did not load')
     time.sleep(5)
 
@@ -125,6 +144,16 @@ def all_on(strict=True):
     if bad and strict:
         quit_game(); sys.exit('everything-on check failed: %s' % bad)
     return state
+
+
+def finish():
+    """End of a job: leave the game open when the queue runner says another game job follows."""
+    if os.environ.get('NGVO_KEEP_OPEN') == '1' and running():
+        release()
+        try: cs.call('communityshaders.testbed', {'action': 'camera', 'mode': 'player'})
+        except Exception: pass
+        print('session kept open for the next job', flush=True); return
+    quit_game()
 
 
 def quit_game():

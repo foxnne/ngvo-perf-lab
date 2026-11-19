@@ -1,9 +1,10 @@
 """One view, one weather, a list of setting variants x hours: which setting fixes what. Variants are merged onto the cloud draft for that weather.
 usage: python sky_sweep.py TAG VARIANTS.json [--view plains_west] [--group cloudy] [--hours 18.2]
 VARIANTS.json: [{"name": "...", "set": {PhysicalSky keys, nested like the live settings}}, ...]   output: results/sky_sweep/TAG/"""
-import copy, json, os, re, shutil, sys, time
+import atexit, copy, json, os, re, shutil, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-import bench, cs
+import bench, cs, hot
+LAST = {}; SHADER_TOUCHED = set(); FAST = '--fast' in sys.argv
 from PIL import Image, ImageDraw
 DRAFT = 'C:/Users/foxnn/dev/nat3-volclouds'
 def opt(name, default=None): return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
@@ -26,6 +27,8 @@ def merge(dst, src):
         else: dst[k] = v
 VIEW_SAVE = 'harness_view_' + VN      # a save made at this view the first time it is visited: later runs load straight into it
 bench.launch(save=VIEW_SAVE); bench.console('tgm'); bench.all_on()
+DONE = []
+atexit.register(lambda: (not DONE) and bench.running() and bench.quit_game())      # a failed run must not leave the game open: it stalls the job queue
 g = cs.call('communityshaders.feature', {'action': 'get', 'shortName': 'PhysicalSky'}); orig = g.get('settings', g)
 base = json.load(open(DRAFT + '/draft/foxnne-nat3-clouds/Baseline/PhysicalSky.json'))
 if bench.LOADED_SAVE != VIEW_SAVE:
@@ -46,10 +49,14 @@ try:
             f = f'{DRAFT}/draft/foxnne-nat3-clouds/Weather/{KEY}/{PERIOD(h)}/foxnne-nat3-clouds_PhysicalSky.json'
             if os.path.exists(f) and '--stock' not in sys.argv: merge(s, json.load(open(f)))
             merge(s, var.get('set', {}))
-            if s.get('aerosolType'):                               # haze presets are only evaluated when the type CHANGES: force a change each time
+            hz = (s.get('aerosolType'), s.get('aerosolLoading'), s.get('aerosolHumidity'))
+            if s.get('aerosolType') and hz != LAST.get('hz'):      # haze presets are only re-derived when the type CHANGES: force that, but only when the haze inputs differ
                 s0 = copy.deepcopy(s); s0['aerosolType'] = 0
                 cs.call('communityshaders.feature', {'action': 'set', 'shortName': 'PhysicalSky', 'settings': s0}); time.sleep(1.0)
+            LAST['hz'] = hz
             r = cs.call('communityshaders.feature', {'action': 'set', 'shortName': 'PhysicalSky', 'settings': s})
+            if var.get('shader'):                                   # shader constants: edit #defines in the deployed copy and hot reload (no restart)
+                hot.set_defines(var['shader']['file'], var['shader']['defines']); hot.reload(); SHADER_TOUCHED.add(var['shader']['file'])
             for short, changes in var.get('features', {}).items():      # other features (e.g. PostProcessing, VolumetricLighting): set for this variant, restored after the shot
                 gg = cs.call('communityshaders.feature', {'action': 'get', 'shortName': short}); o2 = gg.get('settings', gg); OTHER.setdefault(short, o2)
                 s2 = copy.deepcopy(OTHER[short]); merge(s2, changes); cs.call('communityshaders.feature', {'action': 'set', 'shortName': short, 'settings': s2})
@@ -57,11 +64,12 @@ try:
             if var.get('weather'): cs.world(action='weather', name=var['weather'], instant=True, lock=True)
             cs.world(action='hour', value=h); time.sleep(float(var.get('settle', 12)))
             src = cs.shot(f'sweep-{TAG}-{var["name"]}-{h}'); time.sleep(1)
-            name = f'{var["name"]}__h{h:g}'; dst = os.path.join(OUT, name + os.path.splitext(src)[1]); shutil.move(src, dst)   # move, not copy: the game's Screenshots folder was filling with duplicates
+            name = re.sub(r'[^A-Za-z0-9_.+-]', '_', f'{var["name"]}__h{h:g}'); dst = os.path.join(OUT, name + os.path.splitext(src)[1]); shutil.move(src, dst)   # move, not copy: the game's Screenshots folder was filling with duplicates
             rb = cs.call('communityshaders.feature', {'action': 'get', 'shortName': 'PhysicalSky'}); rb = rb.get('settings', rb)
             READBACK[name] = {k: rb.get(k) for k in ('aerosolType', 'aerosolLoading', 'aerosolScatter', 'aerosolAbsorption', 'aerosolPhaseG', 'aerosolHumidity')}
             st = cs.stats(dst); log[name] = {'applied': r.get('applied', str(r)[:60]), 'mean': round(st['mean'], 3), 'sat': round(st['sat'], 3)}
-            try:                                                  # cost of this variant: median frame time over 4 s
+            try:
+                if FAST: raise RuntimeError('fast')                                                  # cost of this variant: median frame time over 4 s
                 cs.call('communityshaders.frames', {'action': 'start'}); time.sleep(4); cs.call('communityshaders.frames', {'action': 'stop'}); time.sleep(0.6)
                 fm = cs.call('communityshaders.frames', {'action': 'read'}).get('columns', {}).get('frameMs', [])
                 if fm: log[name]['frame_ms'] = round(sorted(fm)[len(fm) // 2], 2)
@@ -72,6 +80,10 @@ try:
             for short in var.get('features', {}): cs.call('communityshaders.feature', {'action': 'set', 'shortName': short, 'settings': OTHER[short]})
 finally:
     cs.call('communityshaders.feature', {'action': 'set', 'shortName': 'PhysicalSky', 'settings': orig})
+    if SHADER_TOUCHED:
+        hot.restore()
+        try: hot.reload()
+        except Exception: pass
     try: cs.call('communityshaders.testbed', {'action': 'camera', 'mode': 'player'})
     except Exception: pass
     json.dump({'view': VN, 'group': GRP, 'weather': WNAME, 'variants': VARIANTS, 'shots': log, 'haze_readback': READBACK}, open(os.path.join(OUT, 'log.json'), 'w'), indent=1)
@@ -80,4 +92,4 @@ sheet = Image.new('RGB', (w * cols, (hh + 26) * ((len(tiles) + cols - 1) // cols
 for i, (path, label) in enumerate(tiles):
     sheet.paste(Image.open(path).convert('RGB').resize((w, hh)), ((i % cols) * w, (i // cols) * (hh + 26) + 26)); d.text(((i % cols) * w + 8, (i // cols) * (hh + 26) + 6), label, fill=(240, 240, 240))
 sheet.save(os.path.join(OUT, 'sheet.jpg'), quality=88); print('sheet', len(tiles), flush=True)
-bench.quit_game()
+DONE.append(1); bench.finish()
