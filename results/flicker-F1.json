@@ -1,0 +1,90 @@
+{
+ "plains": {
+  "base": {
+   "what": "saved settings (NR 100%, alternate frames)",
+   "sky (top third)": 48.0,
+   "distance (middle third)": 48.93,
+   "near ground (bottom third)": 67.18,
+   "share of pixels changing by more than 4% (distance band)": 32.39
+  },
+  "nr-everyframe": {
+   "what": "Neural Rendering every frame",
+   "sky (top third)": 49.08,
+   "distance (middle third)": 59.94,
+   "near ground (bottom third)": 75.23,
+   "share of pixels changing by more than 4% (distance band)": 36.9
+  },
+  "nr-off": {
+   "what": "Neural Rendering off",
+   "sky (top third)": 104.27,
+   "distance (middle third)": 79.25,
+   "near ground (bottom third)": 51.46,
+   "share of pixels changing by more than 4% (distance band)": 44.25
+  },
+  "nr-75": {
+   "what": "Neural Rendering 75%",
+   "sky (top third)": 26.29,
+   "distance (middle third)": 24.32,
+   "near ground (bottom third)": 35.39,
+   "share of pixels changing by more than 4% (distance band)": 16.88
+  },
+  "vol-clouds": {
+   "what": "volumetric clouds on (untuned)",
+   "sky (top third)": 47.69,
+   "distance (middle third)": 51.41,
+   "near ground (bottom third)": 48.89,
+   "share of pixels changing by more than 4% (distance band)": 42.33
+  },
+  "base-again": {
+   "what": "saved settings, repeated",
+   "sky (top third)": 70.22,
+   "distance (middle third)": 59.56,
+   "near ground (bottom third)": 33.16,
+   "share of pixels changing by more than 4% (distance band)": 45.47
+  }
+ },
+ "ilinalta": {
+  "base": {
+   "what": "saved settings (NR 100%, alternate frames)",
+   "sky (top third)": 82.14,
+   "distance (middle third)": 59.35,
+   "near ground (bottom third)": 67.65,
+   "share of pixels changing by more than 4% (distance band)": 46.6
+  },
+  "nr-everyframe": {
+   "what": "Neural Rendering every frame",
+   "sky (top third)": 60.24,
+   "distance (middle third)": 59.56,
+   "near ground (bottom third)": 80.87,
+   "share of pixels changing by more than 4% (distance band)": 43.84
+  },
+  "nr-off": {
+   "what": "Neural Rendering off",
+   "sky (top third)": 9.24,
+   "distance (middle third)": 14.68,
+   "near ground (bottom third)": 27.72,
+   "share of pixels changing by more than 4% (distance band)": 8.09
+  },
+  "nr-75": {
+   "what": "Neural Rendering 75%",
+   "sky (top third)": 9.31,
+   "distance (middle third)": 15.21,
+   "near ground (bottom third)": 27.57,
+   "share of pixels changing by more than 4% (distance band)": 7.73
+  },
+  "vol-clouds": {
+   "what": "volumetric clouds on (untuned)",
+   "sky (top third)": 183.03,
+   "distance (middle third)": 121.44,
+   "near ground (bottom third)": 64.46,
+   "share of pixels changing by more than 4% (distance band)": 71.26
+  },
+  "base-again": {
+   "what": "saved settings, repeated",
+   "sky (top third)": 51.74,
+   "distance (middle third)": 56.89,
+   "near ground (bottom third)": 37.39,
+   "share of pixels changing by more than 4% (distance band)": 33.99
+  }
+ }
+}

@@ -1,0 +1,26 @@
+   9171   10537   2    395735 meshes/landscape/trees/pine_common_big01_summer â ÐºÐ¾Ð¿Ð¸Ñ.nif
+   9171   10537   2    395206 meshes/landscape/trees/pine_common_big01_summer.nif
+   8254    9511   2    358537 meshes/landscape/trees/pine_common_big02_summer â ÐºÐ¾Ð¿Ð¸Ñ.nif
+   8254    9511   2    356872 meshes/landscape/trees/pine_common_big02_summer.nif
+   6025    6859   2    258871 meshes/landscape/trees/pine_common_medium01_summer â ÐºÐ¾Ð¿Ð¸Ñ.nif
+   4188    4103   2    159639 meshes/landscape/trees/pine_common_medium01_dry_winter.nif
+   9034   11010   2    409520 meshes/landscape/trees/pine_field_big01_summer.nif
+   9034   11010   2    409598 meshes/landscape/trees/pine_field_big01_summer â ÐºÐ¾Ð¿Ð¸Ñ.nif
+  24549   31007   2   1145807 meshes/landscape/trees/scots_pine_cluster_big01_summer.nif
+  10552   11690   2    441229 meshes/landscape/trees/spruce_common_big01_summer.nif
+   3881    3253   2    132252 meshes/landscape/trees/spruce_break_big01_summer.nif
+   6274    7270   2    274786 meshes/landscape/trees/birch_slim_big01sum.nif
+   1236    1504   1     56322 meshes/landscape/trees/tundra_shrub02_summer.nif
+   1728    2104   1     78474 meshes/landscape/trees/tundra_shrub03_summer.nif
+  17314   24188   3    883490 meshes/landscape/trees/oak_big_wide01_summer.nif
+   6187    6537   3    250304 meshes/landscape/trees/conifer_forest01_summer.nif
+  55130   61935   3   2335483 meshes/landscape/trees/whiterun_temple_tree01_spring.nif
+   3377    3852   2    146465 meshes/landscape/trees/pine_twisted_medium01_summer.nif
+   1060    1279   2     50708 meshes/landscape/trees/birch_young_low01sum.nif
+   4687    4312   2    169675 meshes/landscape/trees/pine_dead01.nif
+  25023   32313   2   1193004 meshes/landscape/trees/alder_cluster_big01_summer.nif
+   7677    9625   3    358978 meshes/landscape/trees/elm_forest_big01_summer_vine.nif
+   6712    7842   2    295711 meshes/landscape/trees/elm_forest_big01_summer.nif
+   1459    3843   5    134457 meshes/dyndolod/lod/trees/pine_common_big02_summer_53fab581passthru_lod.nif
+   4698    6675   5    244515 meshes/dyndolod/lod/trees/pine_common_big03_summer_9545d40fpassthru_lod.nif
+   1723    4677   5    162721 meshes/dyndolod/lod/trees/pine_field_big01_summer_1acaf5fapassthru_lod.nif

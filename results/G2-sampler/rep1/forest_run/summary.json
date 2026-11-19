@@ -1,0 +1,8 @@
+{
+ "label": "G2-sampler",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "409cc22ad2",
+ "time": "2026-11-17 21:43:14",
+ "error": "HTTP Error 504: Gateway Timeout"
+}

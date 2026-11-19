@@ -1,0 +1,29 @@
+{
+ "label": "G1-vramtrack-off",
+ "rep": 2,
+ "scenario": "forest_run",
+ "config": "409cc22ad2",
+ "time": "2026-11-17 21:35:04",
+ "render": {
+  "frames": 2933,
+  "mean": 19.79,
+  "fps": 50.5,
+  "p50": 19.04,
+  "p95": 26.3,
+  "p99": 29.21,
+  "max": 170.0,
+  "over50": 10,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 170
+ },
+ "main_cpu_ms": 18.46,
+ "fg_share": 1.0,
+ "distance": 17312,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1218
+}

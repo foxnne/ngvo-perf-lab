@@ -1,0 +1,29 @@
+{
+ "label": "G2-sampler",
+ "rep": 1,
+ "scenario": "sprint2",
+ "config": "409cc22ad2",
+ "time": "2026-11-17 21:41:41",
+ "render": {
+  "frames": 4526,
+  "mean": 22.12,
+  "fps": 45.2,
+  "p50": 22.08,
+  "p95": 26.71,
+  "p99": 33.46,
+  "max": 194.9,
+  "over50": 12,
+  "over100": 3,
+  "over250": 0,
+  "stall_ms": 457
+ },
+ "main_cpu_ms": 19.84,
+ "fg_share": 1.0,
+ "distance": 33089,
+ "cells": 7,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 28973
+}

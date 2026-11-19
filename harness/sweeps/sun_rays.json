@@ -1,0 +1,137 @@
+[
+ {
+  "name": "00_current_disc_0.14deg",
+  "set": {}
+ },
+ {
+  "name": "01_disc_real_0.27deg",
+  "set": {
+   "sunDiskRad": 0.00466
+  }
+ },
+ {
+  "name": "02_disc_old_0.53deg",
+  "set": {
+   "sunDiskRad": 0.00925
+  }
+ },
+ {
+  "name": "03_game_sun_sprite",
+  "set": {
+   "proceduralSun": false
+  }
+ },
+ {
+  "name": "04_shafts_strength_3",
+  "set": {},
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorStrength": 3.0
+   }
+  }
+ },
+ {
+  "name": "05_shafts_definition_2.5",
+  "set": {},
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorShaftDefinition": 2.5,
+    "ExteriorStrength": 2.0
+   }
+  }
+ },
+ {
+  "name": "06_shafts_off",
+  "set": {},
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorStrength": 0.0
+   }
+  }
+ },
+ {
+  "name": "07_lens_flare_on",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Lens Flare": {
+     "enabled": true
+    }
+   }
+  }
+ },
+ {
+  "name": "08_bloom_stronger",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "COD Bloom": {
+     "settings": {
+      "BlendFactor": 0.3,
+      "Threshold": 0.6
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "09_haze_glow_tight_0.92",
+  "set": {
+   "aerosolPhaseG": 0.92
+  }
+ },
+ {
+  "name": "10_haze_1.4",
+  "set": {
+   "aerosolLoading": 1.4
+  }
+ },
+ {
+  "name": "11_sprite_plus_shafts",
+  "set": {
+   "proceduralSun": false
+  },
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorShaftDefinition": 2.5,
+    "ExteriorStrength": 2.5
+   }
+  }
+ },
+ {
+  "name": "12_volumetric_clouds_off",
+  "set": {
+   "enableVolumetricClouds": false
+  }
+ },
+ {
+  "name": "13_physical_sky_off",
+  "set": {
+   "enabled": false
+  },
+  "settle": 16
+ },
+ {
+  "name": "14_sky_off_shafts_2.5",
+  "set": {
+   "enabled": false
+  },
+  "settle": 16,
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorShaftDefinition": 2.5,
+    "ExteriorStrength": 2.5
+   }
+  }
+ },
+ {
+  "name": "15_shaft_haze_0.6",
+  "set": {},
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorDayHaze": 0.6,
+    "ExteriorStrength": 2.0
+   }
+  }
+ }
+]

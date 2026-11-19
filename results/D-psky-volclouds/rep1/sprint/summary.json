@@ -1,0 +1,40 @@
+{
+ "label": "D-psky-volclouds",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "89f386a820",
+ "time": "2026-11-17 17:37:17",
+ "render": {
+  "frames": 4261,
+  "mean": 23.51,
+  "fps": 42.5,
+  "p50": 23.09,
+  "p95": 28.66,
+  "p99": 32.56,
+  "max": 168.3,
+  "over50": 11,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 168
+ },
+ "main_cpu_ms": 20.75,
+ "fg_share": 1.0,
+ "distance": 22120,
+ "cells": 7,
+ "vram": {
+  "proc_max": 13175,
+  "proc_min": 10503,
+  "new_top": [
+   1142,
+   1079,
+   1047,
+   1028
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 18017
+}

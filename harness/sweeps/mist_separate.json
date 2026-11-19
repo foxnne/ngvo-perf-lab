@@ -1,0 +1,134 @@
+[
+ {
+  "name": "00_no_map",
+  "set": {
+   "cloudMap": {
+    "localCloud": {
+     "states": []
+    }
+   }
+  },
+  "features": {},
+  "settle": 22
+ },
+ {
+  "name": "01_mist_separate_16m",
+  "set": {
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 192.0,
+        "asset": "tamriel-mist-separate",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 0.0,
+        "flatAltitude": true,
+        "heightSpan": 640.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 2,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 1.0,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    },
+    "localTexelSize": 16.0
+   }
+  },
+  "features": {},
+  "settle": 22
+ },
+ {
+  "name": "02_mist_separate_strength_0.5",
+  "set": {
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 192.0,
+        "asset": "tamriel-mist-separate",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 0.0,
+        "flatAltitude": true,
+        "heightSpan": 640.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 2,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 0.5,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    },
+    "localTexelSize": 16.0
+   }
+  },
+  "features": {},
+  "settle": 22
+ },
+ {
+  "name": "03_mist_separate_curved_altitude",
+  "set": {
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 192.0,
+        "asset": "tamriel-mist-separate",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 0.0,
+        "flatAltitude": false,
+        "heightSpan": 640.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 2,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 1.0,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    },
+    "localTexelSize": 16.0
+   }
+  },
+  "features": {},
+  "settle": 22
+ }
+]

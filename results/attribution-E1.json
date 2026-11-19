@@ -1,0 +1,330 @@
+{
+ "plains": [
+  {
+   "lever": "grass",
+   "what": "grass hidden (tg)",
+   "base_ms": 24.41,
+   "switched_ms": 24.466,
+   "cost_ms": -0.06,
+   "fps_base": 41.0,
+   "fps_switched": 40.9
+  },
+  {
+   "lever": "lod",
+   "what": "all LOD hidden: terrain, objects, tree LOD (tll)",
+   "base_ms": 21.28,
+   "switched_ms": 24.279,
+   "cost_ms": -3.0,
+   "fps_base": 47.0,
+   "fps_switched": 41.2
+  },
+  {
+   "lever": "trees",
+   "what": "full trees hidden (tt)",
+   "base_ms": 19.5,
+   "switched_ms": 18.289,
+   "cost_ms": 1.21,
+   "fps_base": 51.3,
+   "fps_switched": 54.7
+  },
+  {
+   "lever": "sky",
+   "what": "sky hidden (ts)",
+   "base_ms": 19.76,
+   "switched_ms": 17.89,
+   "cost_ms": 1.87,
+   "fps_base": 50.6,
+   "fps_switched": 55.9
+  },
+  {
+   "lever": "water",
+   "what": "water hidden (tws)",
+   "base_ms": 18.26,
+   "switched_ms": 21.608,
+   "cost_ms": -3.34,
+   "fps_base": 54.8,
+   "fps_switched": 46.3
+  },
+  {
+   "lever": "ssgi",
+   "what": "Screen Space GI off",
+   "base_ms": 17.88,
+   "switched_ms": 16.889,
+   "cost_ms": 0.99,
+   "fps_base": 55.9,
+   "fps_switched": 59.2
+  },
+  {
+   "lever": "ssgi-quarter",
+   "what": "Screen Space GI quarter res",
+   "base_ms": 21.11,
+   "switched_ms": 24.532,
+   "cost_ms": -3.42,
+   "fps_base": 47.4,
+   "fps_switched": 40.8
+  },
+  {
+   "lever": "ssr",
+   "what": "Screen Space Reflections off",
+   "base_ms": 24.25,
+   "switched_ms": 23.419,
+   "cost_ms": 0.83,
+   "fps_base": 41.2,
+   "fps_switched": 42.7
+  },
+  {
+   "lever": "ssr-64steps",
+   "what": "SSR 64 steps instead of 128",
+   "base_ms": 24.16,
+   "switched_ms": 23.973,
+   "cost_ms": 0.18,
+   "fps_base": 41.4,
+   "fps_switched": 41.7
+  },
+  {
+   "lever": "vol-light",
+   "what": "exterior volumetric lighting off",
+   "base_ms": 24.11,
+   "switched_ms": 24.038,
+   "cost_ms": 0.07,
+   "fps_base": 41.5,
+   "fps_switched": 41.6
+  },
+  {
+   "lever": "ss-shadows",
+   "what": "Screen Space Shadows off",
+   "base_ms": 24.11,
+   "switched_ms": 23.903,
+   "cost_ms": 0.21,
+   "fps_base": 41.5,
+   "fps_switched": 41.8
+  },
+  {
+   "lever": "terrain-shadows",
+   "what": "Terrain Shadows off",
+   "base_ms": 24.07,
+   "switched_ms": 23.891,
+   "cost_ms": 0.18,
+   "fps_base": 41.5,
+   "fps_switched": 41.9
+  },
+  {
+   "lever": "psky",
+   "what": "Physical Sky off",
+   "base_ms": 24.39,
+   "switched_ms": 19.247,
+   "cost_ms": 5.14,
+   "fps_base": 41.0,
+   "fps_switched": 52.0
+  },
+  {
+   "lever": "vol-clouds",
+   "what": "volumetric clouds ON (negative = it costs)",
+   "base_ms": 24.49,
+   "switched_ms": 24.389,
+   "cost_ms": 0.1,
+   "fps_base": 40.8,
+   "fps_switched": 41.0
+  },
+  {
+   "lever": "nr-off",
+   "what": "Neural Rendering off",
+   "base_ms": 24.3,
+   "switched_ms": 24.231,
+   "cost_ms": 0.07,
+   "fps_base": 41.2,
+   "fps_switched": 41.3
+  },
+  {
+   "lever": "nr-75",
+   "what": "Neural Rendering at 75% resolution",
+   "base_ms": 24.21,
+   "switched_ms": 24.287,
+   "cost_ms": -0.07,
+   "fps_base": 41.3,
+   "fps_switched": 41.2
+  },
+  {
+   "lever": "nr-50",
+   "what": "Neural Rendering at 50% resolution",
+   "base_ms": 24.06,
+   "switched_ms": 24.042,
+   "cost_ms": 0.02,
+   "fps_base": 41.6,
+   "fps_switched": 41.6
+  },
+  {
+   "lever": "nr-everyframe",
+   "what": "Neural Rendering every frame (alternate frames off; negative = alternate frames helps)",
+   "base_ms": 24.13,
+   "switched_ms": 23.928,
+   "cost_ms": 0.2,
+   "fps_base": 41.4,
+   "fps_switched": 41.8
+  }
+ ],
+ "forest": [
+  {
+   "lever": "grass",
+   "what": "grass hidden (tg)",
+   "base_ms": 25.0,
+   "switched_ms": 25.06,
+   "cost_ms": -0.06,
+   "fps_base": 40.0,
+   "fps_switched": 39.9
+  },
+  {
+   "lever": "lod",
+   "what": "all LOD hidden: terrain, objects, tree LOD (tll)",
+   "base_ms": 25.23,
+   "switched_ms": 24.767,
+   "cost_ms": 0.47,
+   "fps_base": 39.6,
+   "fps_switched": 40.4
+  },
+  {
+   "lever": "trees",
+   "what": "full trees hidden (tt)",
+   "base_ms": 25.32,
+   "switched_ms": 25.966,
+   "cost_ms": -0.65,
+   "fps_base": 39.5,
+   "fps_switched": 38.5
+  },
+  {
+   "lever": "sky",
+   "what": "sky hidden (ts)",
+   "base_ms": 25.65,
+   "switched_ms": 24.999,
+   "cost_ms": 0.65,
+   "fps_base": 39.0,
+   "fps_switched": 40.0
+  },
+  {
+   "lever": "water",
+   "what": "water hidden (tws)",
+   "base_ms": 25.44,
+   "switched_ms": 25.812,
+   "cost_ms": -0.37,
+   "fps_base": 39.3,
+   "fps_switched": 38.7
+  },
+  {
+   "lever": "ssgi",
+   "what": "Screen Space GI off",
+   "base_ms": 24.97,
+   "switched_ms": 24.228,
+   "cost_ms": 0.75,
+   "fps_base": 40.0,
+   "fps_switched": 41.3
+  },
+  {
+   "lever": "ssgi-quarter",
+   "what": "Screen Space GI quarter res",
+   "base_ms": 25.57,
+   "switched_ms": 26.142,
+   "cost_ms": -0.57,
+   "fps_base": 39.1,
+   "fps_switched": 38.3
+  },
+  {
+   "lever": "ssr",
+   "what": "Screen Space Reflections off",
+   "base_ms": 26.33,
+   "switched_ms": 22.504,
+   "cost_ms": 3.83,
+   "fps_base": 38.0,
+   "fps_switched": 44.4
+  },
+  {
+   "lever": "ssr-64steps",
+   "what": "SSR 64 steps instead of 128",
+   "base_ms": 25.52,
+   "switched_ms": 24.061,
+   "cost_ms": 1.46,
+   "fps_base": 39.2,
+   "fps_switched": 41.6
+  },
+  {
+   "lever": "vol-light",
+   "what": "exterior volumetric lighting off",
+   "base_ms": 24.61,
+   "switched_ms": 26.685,
+   "cost_ms": -2.08,
+   "fps_base": 40.6,
+   "fps_switched": 37.5
+  },
+  {
+   "lever": "ss-shadows",
+   "what": "Screen Space Shadows off",
+   "base_ms": 24.78,
+   "switched_ms": 24.773,
+   "cost_ms": 0.0,
+   "fps_base": 40.4,
+   "fps_switched": 40.4
+  },
+  {
+   "lever": "terrain-shadows",
+   "what": "Terrain Shadows off",
+   "base_ms": 24.58,
+   "switched_ms": 24.722,
+   "cost_ms": -0.14,
+   "fps_base": 40.7,
+   "fps_switched": 40.4
+  },
+  {
+   "lever": "psky",
+   "what": "Physical Sky off",
+   "base_ms": 25.07,
+   "switched_ms": 20.433,
+   "cost_ms": 4.63,
+   "fps_base": 39.9,
+   "fps_switched": 48.9
+  },
+  {
+   "lever": "vol-clouds",
+   "what": "volumetric clouds ON (negative = it costs)",
+   "base_ms": 26.65,
+   "switched_ms": 23.951,
+   "cost_ms": 2.7,
+   "fps_base": 37.5,
+   "fps_switched": 41.8
+  },
+  {
+   "lever": "nr-off",
+   "what": "Neural Rendering off",
+   "base_ms": 25.78,
+   "switched_ms": 26.77,
+   "cost_ms": -0.99,
+   "fps_base": 38.8,
+   "fps_switched": 37.4
+  },
+  {
+   "lever": "nr-75",
+   "what": "Neural Rendering at 75% resolution",
+   "base_ms": 25.92,
+   "switched_ms": 25.44,
+   "cost_ms": 0.48,
+   "fps_base": 38.6,
+   "fps_switched": 39.3
+  },
+  {
+   "lever": "nr-50",
+   "what": "Neural Rendering at 50% resolution",
+   "base_ms": 26.05,
+   "switched_ms": 27.9,
+   "cost_ms": -1.85,
+   "fps_base": 38.4,
+   "fps_switched": 35.8
+  },
+  {
+   "lever": "nr-everyframe",
+   "what": "Neural Rendering every frame (alternate frames off; negative = alternate frames helps)",
+   "base_ms": 25.76,
+   "switched_ms": 27.43,
+   "cost_ms": -1.67,
+   "fps_base": 38.8,
+   "fps_switched": 36.5
+  }
+ ]
+}

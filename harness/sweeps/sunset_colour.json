@@ -1,0 +1,127 @@
+[
+ {
+  "name": "00_draft",
+  "set": {}
+ },
+ {
+  "name": "01_haze_low_0.2",
+  "set": {
+   "aerosolLoading": 0.2
+  }
+ },
+ {
+  "name": "02_haze_high_1.6",
+  "set": {
+   "aerosolLoading": 1.6
+  }
+ },
+ {
+  "name": "03_rayleigh_x1.6",
+  "set": {
+   "rayleighScatter": [
+    10.57,
+    19.75,
+    47.06
+   ],
+   "rayleighScatterAP1": [
+    11.1,
+    19.23,
+    46.26
+   ]
+  }
+ },
+ {
+  "name": "04_rayleigh_x2.5",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ]
+  }
+ },
+ {
+  "name": "05_ozone_x2",
+  "set": {
+   "ozoneAbsorption": [
+    4.58,
+    3.08,
+    0.0
+   ],
+   "ozoneAbsorptionAP1": [
+    4.5,
+    3.32,
+    0.0
+   ]
+  }
+ },
+ {
+  "name": "06_haze_absorb_blue",
+  "set": {
+   "aerosolAbsorption": [
+    2.0,
+    6.0,
+    14.0
+   ]
+  }
+ },
+ {
+  "name": "07_haze_forward_0.6",
+  "set": {
+   "aerosolPhaseG": 0.6
+  }
+ },
+ {
+  "name": "08_haze_forward_0.9",
+  "set": {
+   "aerosolPhaseG": 0.9
+  }
+ },
+ {
+  "name": "09_sun_white",
+  "set": {
+   "sunlightColor": [
+    7.0,
+    7.0,
+    7.0
+   ]
+  }
+ },
+ {
+  "name": "10_sun_x2",
+  "set": {
+   "sunlightColor": [
+    14.0,
+    13.58,
+    13.3
+   ]
+  }
+ },
+ {
+  "name": "11_ray2.5_hazeLow",
+  "set": {
+   "aerosolLoading": 0.25,
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ]
+  }
+ },
+ {
+  "name": "12_disc_real_0.27deg",
+  "set": {
+   "sunDiskRad": 0.00466
+  }
+ }
+]

@@ -1,0 +1,29 @@
+{
+ "label": "M-nr75",
+ "rep": 2,
+ "scenario": "forest_run",
+ "config": "2c82942e5f",
+ "time": "2026-11-18 13:17:27",
+ "render": {
+  "frames": 2475,
+  "mean": 23.53,
+  "fps": 42.5,
+  "p50": 22.7,
+  "p95": 32.01,
+  "p99": 38.79,
+  "max": 63.7,
+  "over50": 4,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 21.66,
+ "fg_share": 1.0,
+ "distance": 17151,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1286
+}

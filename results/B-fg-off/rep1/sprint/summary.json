@@ -1,0 +1,8 @@
+{
+ "label": "B-fg-off",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "1b54d3270b",
+ "time": "2026-11-17 12:36:53",
+ "error": "HTTP Error 504: Gateway Timeout"
+}

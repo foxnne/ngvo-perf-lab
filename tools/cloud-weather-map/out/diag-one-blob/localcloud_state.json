@@ -1,0 +1,25 @@
+{
+  "value": {
+    "altitude": 400.0,
+    "asset": "diag-one-blob",
+    "center": [
+      0.0,
+      -142.8
+    ],
+    "enabled": true,
+    "feather": 0.0,
+    "heightSpan": 1664.0,
+    "heightWeight": 1.0,
+    "modelingAlpha": true,
+    "modelingBlend": 0,
+    "modelingWeight": 1.0,
+    "rotation": 0.0,
+    "size": [
+      3840.0,
+      3840.0
+    ],
+    "strength": 1.0,
+    "worldspace": "Tamriel"
+  },
+  "weight": 1.0
+}

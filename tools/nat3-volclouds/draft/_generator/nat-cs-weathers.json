@@ -1,0 +1,457 @@
+{
+ "source": "WTHR records overridden by NAT-CS.esp (mods/NAT.CS III), parsed read-only 2026-11-17",
+ "masters": [
+  "Skyrim.esm",
+  "Update.esm",
+  "Dawnguard.esm",
+  "Dragonborn.esm",
+  "NAT-ENB.esp",
+  "NAT-CS.esp"
+ ],
+ "weathers": [
+  {
+   "spid": "0x81A~Skyrim.esm",
+   "editorId": "SunnyPF"
+  },
+  {
+   "spid": "0x12F89~Skyrim.esm",
+   "editorId": "CloudyPF"
+  },
+  {
+   "spid": "0x48C14~Skyrim.esm",
+   "editorId": "BlackreachWeather"
+  },
+  {
+   "spid": "0x4D7FB~Skyrim.esm",
+   "editorId": "Snow"
+  },
+  {
+   "spid": "0x923FD~Skyrim.esm",
+   "editorId": "SovngardeFog"
+  },
+  {
+   "spid": "0xA6858~Skyrim.esm",
+   "editorId": "WorldMapWeather"
+  },
+  {
+   "spid": "0xC821E~Skyrim.esm",
+   "editorId": "FogPF"
+  },
+  {
+   "spid": "0xC821F~Skyrim.esm",
+   "editorId": "RainPF"
+  },
+  {
+   "spid": "0xC8220~Skyrim.esm",
+   "editorId": "StormPF"
+  },
+  {
+   "spid": "0xC8221~Skyrim.esm",
+   "editorId": "Snowstorm"
+  },
+  {
+   "spid": "0xD299E~Skyrim.esm",
+   "editorId": "SkyrimOvercastWar"
+  },
+  {
+   "spid": "0xD4886~Skyrim.esm",
+   "editorId": "FXMagicStormRain"
+  },
+  {
+   "spid": "0xD9329~Skyrim.esm",
+   "editorId": "HelgenAttackWeather"
+  },
+  {
+   "spid": "0x10199F~Skyrim.esm",
+   "editorId": "SkyrimMQ206weather"
+  },
+  {
+   "spid": "0x104AB4~Skyrim.esm",
+   "editorId": "SkuldafnCloudy"
+  },
+  {
+   "spid": "0x105941~Skyrim.esm",
+   "editorId": "BloatedMansGrottoFog"
+  },
+  {
+   "spid": "0x105F40~Skyrim.esm",
+   "editorId": "SkyrimDA02Weather"
+  },
+  {
+   "spid": "0x106635~Skyrim.esm",
+   "editorId": "KarthspireRedoubtFog"
+  },
+  {
+   "spid": "0x10A230~Skyrim.esm",
+   "editorId": "SunnyMA"
+  },
+  {
+   "spid": "0x10A231~Skyrim.esm",
+   "editorId": "RainMA"
+  },
+  {
+   "spid": "0x10A232~Skyrim.esm",
+   "editorId": "FogMA"
+  },
+  {
+   "spid": "0x10A233~Skyrim.esm",
+   "editorId": "CloudyMA"
+  },
+  {
+   "spid": "0x10A234~Skyrim.esm",
+   "editorId": "SunnyCO"
+  },
+  {
+   "spid": "0x10A235~Skyrim.esm",
+   "editorId": "FogCO"
+  },
+  {
+   "spid": "0x10A236~Skyrim.esm",
+   "editorId": "CloudyCO"
+  },
+  {
+   "spid": "0x10A237~Skyrim.esm",
+   "editorId": "SunnyRE"
+  },
+  {
+   "spid": "0x10A238~Skyrim.esm",
+   "editorId": "RainRE"
+  },
+  {
+   "spid": "0x10A239~Skyrim.esm",
+   "editorId": "FogRE"
+  },
+  {
+   "spid": "0x10A23A~Skyrim.esm",
+   "editorId": "CloudyRE"
+  },
+  {
+   "spid": "0x10A23B~Skyrim.esm",
+   "editorId": "SunnyFF"
+  },
+  {
+   "spid": "0x10A23C~Skyrim.esm",
+   "editorId": "StormFF"
+  },
+  {
+   "spid": "0x10A23D~Skyrim.esm",
+   "editorId": "RainFF"
+  },
+  {
+   "spid": "0x10A23E~Skyrim.esm",
+   "editorId": "FogFF"
+  },
+  {
+   "spid": "0x10A23F~Skyrim.esm",
+   "editorId": "CloudyFF"
+  },
+  {
+   "spid": "0x10A240~Skyrim.esm",
+   "editorId": "SunnyTU"
+  },
+  {
+   "spid": "0x10A241~Skyrim.esm",
+   "editorId": "StormTU"
+  },
+  {
+   "spid": "0x10A242~Skyrim.esm",
+   "editorId": "RainTU"
+  },
+  {
+   "spid": "0x10A243~Skyrim.esm",
+   "editorId": "CloudyTU"
+  },
+  {
+   "spid": "0x10A244~Skyrim.esm",
+   "editorId": "SunnySN"
+  },
+  {
+   "spid": "0x10A245~Skyrim.esm",
+   "editorId": "CloudySN"
+  },
+  {
+   "spid": "0x10A7A5~Skyrim.esm",
+   "editorId": "SunnyVT"
+  },
+  {
+   "spid": "0x10A7A6~Skyrim.esm",
+   "editorId": "RainVT"
+  },
+  {
+   "spid": "0x10A7A7~Skyrim.esm",
+   "editorId": "FogVT"
+  },
+  {
+   "spid": "0x10A7A8~Skyrim.esm",
+   "editorId": "CloudyVT"
+  },
+  {
+   "spid": "0x10C32F~Skyrim.esm",
+   "editorId": "FXSkyrimStormBlowingGrass"
+  },
+  {
+   "spid": "0x10D9EC~Skyrim.esm",
+   "editorId": "SovngardeClear"
+  },
+  {
+   "spid": "0x10E1E3~Skyrim.esm",
+   "editorId": "CloudyVT_A"
+  },
+  {
+   "spid": "0x10E1E4~Skyrim.esm",
+   "editorId": "SunnyVT_A"
+  },
+  {
+   "spid": "0x10E1E5~Skyrim.esm",
+   "editorId": "CloudyMA_A"
+  },
+  {
+   "spid": "0x10E1E6~Skyrim.esm",
+   "editorId": "SunnyMA_A"
+  },
+  {
+   "spid": "0x10E1E7~Skyrim.esm",
+   "editorId": "CloudyCO_A"
+  },
+  {
+   "spid": "0x10E1E8~Skyrim.esm",
+   "editorId": "SunnyCO_A"
+  },
+  {
+   "spid": "0x10E1E9~Skyrim.esm",
+   "editorId": "CloudyRE_A"
+  },
+  {
+   "spid": "0x10E1EA~Skyrim.esm",
+   "editorId": "SunnyRE_A"
+  },
+  {
+   "spid": "0x10E1EB~Skyrim.esm",
+   "editorId": "CloudyFF_A"
+  },
+  {
+   "spid": "0x10E1EC~Skyrim.esm",
+   "editorId": "SunnyFF_A"
+  },
+  {
+   "spid": "0x10E1ED~Skyrim.esm",
+   "editorId": "CloudyTU_A"
+  },
+  {
+   "spid": "0x10E1EE~Skyrim.esm",
+   "editorId": "SunnyTU_A"
+  },
+  {
+   "spid": "0x10E1EF~Skyrim.esm",
+   "editorId": "CloudySN_A"
+  },
+  {
+   "spid": "0x10E1F0~Skyrim.esm",
+   "editorId": "SunnySN_A"
+  },
+  {
+   "spid": "0x10E1F1~Skyrim.esm",
+   "editorId": "CloudyPF_A"
+  },
+  {
+   "spid": "0x10E1F2~Skyrim.esm",
+   "editorId": "SunnyPF_A"
+  },
+  {
+   "spid": "0x10FE7E~Skyrim.esm",
+   "editorId": "RiftenOvercastFog"
+  },
+  {
+   "spid": "0x10FEF8~Skyrim.esm",
+   "editorId": "SovngardeDark"
+  },
+  {
+   "spid": "0x1407~Dawnguard.esm",
+   "editorId": "SoulCairnAmb01"
+  },
+  {
+   "spid": "0x6AEC~Dawnguard.esm",
+   "editorId": "DLC1Eclipse"
+  },
+  {
+   "spid": "0x959F~Dawnguard.esm",
+   "editorId": "SoulCairnAurora"
+  },
+  {
+   "spid": "0xF89C~Dawnguard.esm",
+   "editorId": "SunnyDLC1_Auriel"
+  },
+  {
+   "spid": "0xF89D~Dawnguard.esm",
+   "editorId": "CloudyDLC1_Auriel"
+  },
+  {
+   "spid": "0x10E0B~Dawnguard.esm",
+   "editorId": "CloudyFV_A"
+  },
+  {
+   "spid": "0x10E0E~Dawnguard.esm",
+   "editorId": "CloudyFV"
+  },
+  {
+   "spid": "0x10E0F~Dawnguard.esm",
+   "editorId": "SunnyFV"
+  },
+  {
+   "spid": "0x10E10~Dawnguard.esm",
+   "editorId": "SunnyFV_A"
+  },
+  {
+   "spid": "0x14551~Dawnguard.esm",
+   "editorId": "SoulCairnAmb01_Rain"
+  },
+  {
+   "spid": "0x18DBB~Dawnguard.esm",
+   "editorId": "SoulCairnAmb02"
+  },
+  {
+   "spid": "0x18DBC~Dawnguard.esm",
+   "editorId": "SoulCairnAmb03"
+  },
+  {
+   "spid": "0x18DBD~Dawnguard.esm",
+   "editorId": "SoulCairnAmb04"
+  },
+  {
+   "spid": "0x19599~Dawnguard.esm",
+   "editorId": "DLC1FalmerValley_bf"
+  },
+  {
+   "spid": "0x195A0~Dawnguard.esm",
+   "editorId": "DLC1FalmerValley_bfDark"
+  },
+  {
+   "spid": "0x18471~Dragonborn.esm",
+   "editorId": "SunnyDLC2"
+  },
+  {
+   "spid": "0x1D760~Dragonborn.esm",
+   "editorId": "RainCloudy_DLC2"
+  },
+  {
+   "spid": "0x1DFF5~Dragonborn.esm",
+   "editorId": "DLC2ApocryphaWeather"
+  },
+  {
+   "spid": "0x31AC0~Dragonborn.esm",
+   "editorId": "CloudyDLC2"
+  },
+  {
+   "spid": "0x32336~Dragonborn.esm",
+   "editorId": "StormDLC2"
+  },
+  {
+   "spid": "0x34CFB~Dragonborn.esm",
+   "editorId": "DLC2ApocryphaWeatherNew"
+  },
+  {
+   "spid": "0x374B8~Dragonborn.esm",
+   "editorId": "CloudyDLC2_A"
+  },
+  {
+   "spid": "0x374B9~Dragonborn.esm",
+   "editorId": "CloudyDLC2_A"
+  },
+  {
+   "spid": "0x374BA~Dragonborn.esm",
+   "editorId": "CloudyDLC2_TU_A"
+  },
+  {
+   "spid": "0x3DF4~NAT-ENB.esp",
+   "editorId": "SClearSkyTU"
+  },
+  {
+   "spid": "0x53B6~NAT-ENB.esp",
+   "editorId": "OvercastPF"
+  },
+  {
+   "spid": "0x53BD~NAT-ENB.esp",
+   "editorId": "OvercastTU"
+  },
+  {
+   "spid": "0x53BE~NAT-ENB.esp",
+   "editorId": "OvercastRE"
+  },
+  {
+   "spid": "0x53C2~NAT-ENB.esp",
+   "editorId": "SClearSkySN"
+  },
+  {
+   "spid": "0x53C4~NAT-ENB.esp",
+   "editorId": "OvercastMA"
+  },
+  {
+   "spid": "0x53C7~NAT-ENB.esp",
+   "editorId": "FogRain"
+  },
+  {
+   "spid": "0x53D1~NAT-ENB.esp",
+   "editorId": "OvercastFF"
+  },
+  {
+   "spid": "0x53D2~NAT-ENB.esp",
+   "editorId": "OvercastCO"
+  },
+  {
+   "spid": "0x5943~NAT-ENB.esp",
+   "editorId": "OvercastVT"
+  },
+  {
+   "spid": "0x7F00~NAT-ENB.esp",
+   "editorId": "SClearSkyPF"
+  },
+  {
+   "spid": "0x8476~NAT-ENB.esp",
+   "editorId": "SnowClear"
+  },
+  {
+   "spid": "0x23667~NAT-ENB.esp",
+   "editorId": "SClearSkyCOMA"
+  },
+  {
+   "spid": "0x6B387~NAT-ENB.esp",
+   "editorId": "SnowOvercast"
+  },
+  {
+   "spid": "0xD64B0~NAT-ENB.esp",
+   "editorId": "SunnyDLC2_ALT"
+  },
+  {
+   "spid": "0xD64B1~NAT-ENB.esp",
+   "editorId": "RainCloudy_DLC2_ALT"
+  },
+  {
+   "spid": "0xD64B2~NAT-ENB.esp",
+   "editorId": "CloudyDLC2_ALT"
+  },
+  {
+   "spid": "0xD64B3~NAT-ENB.esp",
+   "editorId": "CloudyDLC2_TU_A_ALT"
+  },
+  {
+   "spid": "0xD64B4~NAT-ENB.esp",
+   "editorId": "StormDLC2_ALT"
+  },
+  {
+   "spid": "0xD64D3~NAT-ENB.esp",
+   "editorId": "Snow_Alt"
+  },
+  {
+   "spid": "0xD64D4~NAT-ENB.esp",
+   "editorId": "SnowClear_Alt"
+  },
+  {
+   "spid": "0xD64D5~NAT-ENB.esp",
+   "editorId": "SnowOvercast_Alt"
+  },
+  {
+   "spid": "0xD64D6~NAT-ENB.esp",
+   "editorId": "Snowstorm_Alt"
+  }
+ ]
+}

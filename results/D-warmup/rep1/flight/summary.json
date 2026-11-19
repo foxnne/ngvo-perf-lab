@@ -1,0 +1,38 @@
+{
+ "label": "D-warmup",
+ "rep": 1,
+ "scenario": "flight",
+ "config": "2a947494b8",
+ "time": "2026-11-17 15:34:01",
+ "render": {
+  "frames": 3809,
+  "mean": 26.29,
+  "fps": 38.0,
+  "p50": 25.96,
+  "p95": 29.37,
+  "p99": 33.73,
+  "max": 97.4,
+  "over50": 8,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.95,
+ "fg_share": 1.0,
+ "distance": 34702,
+ "cells": 8,
+ "vram": {
+  "proc_max": 13021,
+  "proc_min": 10219,
+  "new_top": [
+   1211,
+   1133,
+   480,
+   388
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

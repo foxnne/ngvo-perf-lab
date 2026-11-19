@@ -1,0 +1,24 @@
+{
+  "name": "foxnne NAT III clouds (pass 2)",
+  "version": "0.2.0",
+  "type": "CS",
+  "author": "foxnne",
+  "description": "UNTESTED DRAFT, pass 2. Per-weather volumetric cloud coverage, altitude, density, drift, high layer, haze (Physical Sky) and height-fog strength (Exponential Height Fog) for the 111 NAT.CS III weathers, by sky type. Applying a pack with scene files makes it the active pack: read notes/how-it-works.md section 8 first.",
+  "tags": [
+    "NAT.CS III",
+    "Physical Sky",
+    "volumetric clouds",
+    "draft"
+  ],
+  "csVersion": "1.9.0",
+  "requiredFeatures": [
+    "PhysicalSky",
+    "ExponentialHeightFog",
+    "SceneManager",
+    "SkySync"
+  ],
+  "requiredPlugins": [
+    "NAT-ENB.esp",
+    "NAT-CS.esp"
+  ]
+}

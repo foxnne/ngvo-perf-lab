@@ -1,0 +1,175 @@
+[13:57:04] Hitch Hunter and Fixes 1.2.0 - hitch report, game 1.6.1170. Frames that take 50 ms or longer are listed with where the time went; a summary follows every 1 minute. Loading screens are not counted as hitches; their duration is listed separately.
+[13:59:28] Graphics add-ons found: DLSS, Community Shaders
+[13:59:28] Hitch 162 ms - mostly SKSE plugin task. World 0.0 ms, GPU 1.1 ms, game/HUD/other 160.7 ms. Video memory 2.7 of 14.9 GB (18%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 98%, SKSEMenuFramework.dll (inside Windows) 1%; 56 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (158.8 ms)
+[13:59:33] Hitch 330 ms - mostly SKSE plugin task. World 0.0 ms, GPU 10.4 ms, game/HUD/other 319.3 ms. Video memory 2.7 of 14.9 GB (18%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 95%, amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 3%; 124 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (159.3 ms)
+  SKSE plugin task: !ApocryphaMenuFramework.dll (158.3 ms)
+[13:59:49] Loading screen: 6.6 s (Dead Man's Drink). The game read 2.3 GB of files (361 MB/s on average, up to 792 MB/s). Loading work: reading files 15%, the game itself 33%, opening and finding files 33%, graphics driver 3%, PGLite.dll 8%.
+[13:59:51] Hitch 114 ms - mostly game logic, scripts, HUD/menus or other mods. World 6.2 ms, GPU 1.5 ms, game/HUD/other 106.4 ms. Video memory 8.5 of 14.9 GB (57%).
+  Main thread was in: the game itself (file access) 66%, CommunityShaders.dll (waiting for the graphics driver) 22%, hdtsmp64.dll (its own code) 11%; 9 samples from the slow part of the frame
+[13:59:52] Hitch 86 ms - mostly rendering the world (including post-processing). World 61.2 ms, GPU 0.9 ms, game/HUD/other 23.9 ms. Video memory 8.6 of 14.9 GB (57%).
+  Main thread was in: the game itself (waiting for another thread) 50%, CommunityShaders.dll (waiting for the graphics driver) 50%; 2 samples from the slow part of the frame
+[13:59:54] Hitch 408 ms - mostly SKSE plugin task. World 5.6 ms, GPU 1.4 ms, game/HUD/other 400.7 ms. Video memory 8.5 of 14.9 GB (57%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 96%, CommunityShaders.dll (its own code) 1%; 106 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (208.5 ms)
+  SKSE plugin task: !ApocryphaMenuFramework.dll (187.6 ms)
+[14:00:15] Loading screen: 19.7 s (Whiterun). The game read 4.6 GB of files (243 MB/s on average, up to 914 MB/s). Loading work: reading files 14%, the game itself 19%, opening and finding files 42%, graphics driver 4%, PGLite.dll 15%.
+[14:00:19] Hitch 1279 ms - mostly rendering the world (including post-processing) - video memory is nearly full. World 858.7 ms, GPU 1.1 ms, game/HUD/other 419.3 ms. Video memory 12.6 of 13.8 GB (91%).
+  Main thread was in: the game itself (waiting for another thread) 45%, NativeMeshLightFlickerFix.dll (waiting for the graphics driver) 44%, CommunityShaders.dll (its own code) 7%; 501 samples from the slow part of the frame
+  SKSE plugin task: AudioOcclusion.dll (2.2 ms)
+  SKSE plugin task: AudioOcclusion.dll (2.1 ms)
+  File opened: TEXTURES\PBR\S3DMisc\shared\S3DMisc_wood_planks_04_p.dds, 2.7 MB (4.7 ms, in the background)
+  File opened: TEXTURES\SacksRedone\SopaSackLarge.dds, 2.7 MB (4.3 ms, in the background)
+  File opened: TEXTURES\PBR\dungeons\mines\minerockwall03.dds, 2.7 MB (4.1 ms, in the background)
+[14:00:19] Hitch 152 ms - mostly game logic, scripts, HUD/menus or other mods. World 24.4 ms, GPU 47.6 ms, game/HUD/other 80.2 ms. Video memory 9.5 of 14.9 GB (63%).
+  Main thread was in: the game itself (waiting for another thread) 54%, CommunityShaders.dll (its own code) 37%; 51 samples from the slow part of the frame
+  File opened: MESHES\actors\character\animations\DynamicSprintStop\SprintStop_Spell.hkx, 32 KB (5.0 ms, in the background)
+  File opened: MESHES\actors\character\animations\DynamicSprintStop\SprintStop_2HM.hkx, 33 KB (4.7 ms, in the background)
+  File opened: MESHES\actors\character\animations\DynamicSprintStop\SprintStop_DualWield.hkx, 30 KB (4.7 ms, in the background)
+[14:00:20] Hitch 102 ms - mostly rendering the world (including post-processing). World 93.0 ms, GPU 1.5 ms, game/HUD/other 7.9 ms. Video memory 9.7 of 14.9 GB (65%).
+  Main thread was in: CommunityShaders.dll (waiting for the graphics driver) 18%, SPS.dll (its own code) 3%, PrismaUI.dll (its own code) 3%; 33 samples from the slow part of the frame
+  File opened: MESHES\lod\Grass\alliariadrj_tall_lod1.nif, 1 KB (5.7 ms, in the background)
+  File opened: MESHES\lod\Grass\sierranevadeberrydrj_lod1.nif, 1 KB (5.0 ms, in the background)
+  File opened: MESHES\lod\Grass\complexgrassdrj11_lod1.nif, 1 KB (4.6 ms, in the background)
+[14:00:20] Hitch 52 ms - mostly game logic, scripts, HUD/menus or other mods. World 24.9 ms, GPU 1.1 ms, game/HUD/other 25.9 ms. Video memory 9.8 of 14.9 GB (65%).
+  Main thread was in: the game itself 50%, CommunityShaders.dll (its own code) 25%, SPS.dll (its own code) 8%, EngineFixes.dll (its own code) 8%; 12 samples from the slow part of the frame
+  File opened: MESHES\lod\Grass\arnicadrj_lod1.nif, 1 KB (6.5 ms, in the background)
+  File opened: MESHES\lod\Grass\scabiosadrj_lod1.nif, 1 KB (5.9 ms, in the background)
+  File opened: MESHES\lod\Grass\veratrumdrj_d_lod1.nif, 1 KB (5.3 ms, in the background)
+[14:00:20] Hitch 58 ms - mostly rendering the world (including post-processing). World 43.3 ms, GPU 1.2 ms, game/HUD/other 13.5 ms. Video memory 9.8 of 14.9 GB (66%).
+  Main thread was in: CommunityShaders.dll (its own code) 62%, BetterDeformation.dll (inside Windows) 12%, the game itself 12%, PrismaUI.dll (waiting for another thread) 12%; 8 samples from the slow part of the frame
+  SKSE plugin task: AudioOcclusion.dll (5.8 ms)
+  File opened: MESHES\lod\Grass\buttercupdrj_lod1.nif, 1 KB (7.1 ms, in the background)
+  File opened: MESHES\lod\Grass\fernbrackendrj_lod1.nif, 1 KB (7.1 ms, in the background)
+  File opened: MESHES\lod\Grass\complexgrassdrj11_r_lod1.nif, 1 KB (6.9 ms, in the background)
+[14:00:21] Hitch 69 ms - mostly rendering the world (including post-processing). World 38.8 ms, GPU 1.6 ms, game/HUD/other 28.9 ms. Video memory 10.3 of 14.9 GB (69%).
+  Main thread was in: the game itself 85%, CommunityShaders.dll (its own code) 14%; 7 samples from the slow part of the frame
+[14:00:21] Hitch 69 ms - mostly rendering the world (including post-processing). World 43.5 ms, GPU 20.3 ms, game/HUD/other 5.6 ms. Video memory 10.6 of 14.9 GB (71%).
+  Main thread was in: CommunityShaders.dll (waiting for the graphics driver) 55%, amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 40%, HudNG.dll (its own code) 5%; 20 samples from the slow part of the frame
+  NPC appearance rebuilt: Atahbah (Skyrim.esm) (7.8 ms)
+  File opened: MESHES\evgnnSMP\xmls\evgsmptraderbackpack.xml, 11 KB (5.4 ms)
+  File opened: TEXTURES\PBR\landscape\rivermud_n.dds, 5.3 MB (5.2 ms, in the background)
+  File opened: TEXTURES\PBR\landscape\rivermud.dds, 5.3 MB (4.4 ms, in the background)
+[14:00:22] Hitch 1062 ms - mostly game logic, scripts, HUD/menus or other mods. World 14.5 ms, GPU 2.3 ms, game/HUD/other 1045.0 ms. Video memory 11.1 of 14.2 GB (77%).
+  Main thread was in: the game itself (waiting for another thread) 99%; 415 samples from the slow part of the frame
+  File opened: TEXTURES\PBR\praedythxvi\Skeleton\skeleton.dds, 5.3 MB (6.0 ms, in the background)
+  File opened: TEXTURES\clutter\lumberwood01.dds, 5.3 MB (4.7 ms, in the background)
+  File opened: TEXTURES\weapons\imperial\imperialsword.dds, 2.7 MB (4.6 ms, in the background)
+[14:00:22] Hitch 52 ms - mostly game logic, scripts, HUD/menus or other mods. World 16.1 ms, GPU 1.0 ms, game/HUD/other 35.3 ms. Video memory 11.1 of 14.2 GB (77%).
+  Main thread was in: the game itself (waiting for another thread) 84%, nvngx_dlss.dll (waiting for the graphics driver) 7%, CommunityShaders.dll (waiting for the graphics driver) 7%; 13 samples from the slow part of the frame
+  File opened: INTERFACE\exported\widgets\iwant\widgets\iWantWidgets.swf, 147 KB (8.8 ms, in the background)
+  File opened: INTERFACE\exported\widgets\AdventurerXP\meter.swf, 14 KB (7.5 ms, in the background)
+  File opened: INTERFACE\exported\widgets\skyui\activeeffects.swf, 15 KB (6.6 ms, in the background)
+[14:00:22] Hitch 67 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 14.6 ms, GPU 47.2 ms, game/HUD/other 5.4 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 73%, CommunityShaders.dll (waiting for the graphics driver) 26%; 19 samples from the slow part of the frame
+[14:00:23] Hitch 250 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 16.1 ms, GPU 228.8 ms, game/HUD/other 5.3 ms. Video memory 11.1 of 14.2 GB (78%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 98%, PGLite.dll (its own code) 1%; 92 samples from the slow part of the frame
+[14:00:23] Hitch 177 ms - mostly SKSE plugin task. World 13.4 ms, GPU 1.1 ms, game/HUD/other 162.1 ms. Video memory 11.2 of 14.2 GB (78%).
+  Main thread was in: the game itself (waiting for another thread) 91%, steamclient64.dll (file access) 1%, XPMF.dll (its own code) 1%, NativeMeshLightFlickerFix.dll (waiting for the graphics driver) 1%; 61 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (164.0 ms)
+[14:00:25] Hitch 56 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 10.5 ms, GPU 40.5 ms, game/HUD/other 4.9 ms. Video memory 10.8 of 14.9 GB (72%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 14 samples from the slow part of the frame
+[14:00:27] Hitch 291 ms - mostly inside another mod: GridInventory.dll (file access). World 9.1 ms, GPU 0.8 ms, game/HUD/other 281.1 ms. Video memory 11.0 of 14.2 GB (77%).
+  Main thread was in: GridInventory.dll (file access) 92%, the game itself 2%; 108 samples from the slow part of the frame
+[14:00:28] Summary of the last 1 minute: 2202 frames, average 11.3 ms (88 fps), 1% low 21 fps, 19 hitches, longest 1279 ms. Main causes: rendering the world (including post-processing) (6), game logic, scripts, HUD/menus or other mods (5), SKSE plugin task (4), waiting for the GPU (GPU load, vsync or frame generation) (3), another mod: GridInventory.dll (1). Highest video memory use during a hitch: 91%.
+  Most hitches at: Whiterun (14), Dead Man's Drink (3)
+  NPC appearance rebuilds moved to a later frame: 13.
+  Loading screens: 2, average 13.2 s, longest 19.7 s.
+  fPostLoadUpdateTimeMS ([Papyrus] in the game's INI) is 2000 ms (default 500): scripts get that long after loading, so every loading screen stays open about 1500 ms longer than with the default.
+  Video memory: up to 12.6 of 13.8 GB; nearly full (90% or more) 4% of the time, over the limit 0%.
+  NPC appearance rebuilds during hitches: Atahbah (Skyrim.esm) (1 time, 8 ms in total)
+  SKSE plugin tasks during hitches: !ApocryphaMenuFramework.dll (6 times, 1037 ms in total); AudioOcclusion.dll (3 times, 10 ms in total)
+  Files the game waited for during hitches: MESHES\evgnnSMP\xmls\evgsmptraderbackpack.xml, 11 KB (1 time, 5 ms in total)
+  Mods named as the main cause of hitches: GridInventory.dll (1 time, 291 ms in total)
+[14:00:39] Hitch 73 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 10.4 ms, GPU 57.6 ms, game/HUD/other 5.1 ms. Video memory 11.2 of 14.2 GB (78%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 21 samples from the slow part of the frame
+[14:00:39] Hitch 52 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.5 ms, GPU 37.9 ms, game/HUD/other 5.9 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 92%, CommunityShaders.dll (its own code) 7%; 13 samples from the slow part of the frame
+[14:00:39] Hitch 59 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.4 ms, GPU 44.6 ms, game/HUD/other 5.7 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 15 samples from the slow part of the frame
+[14:00:43] Hitch 158 ms - mostly SKSE plugin task. World 9.4 ms, GPU 1.0 ms, game/HUD/other 147.8 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: the game itself (waiting for another thread) 92%, CommunityShaders.dll (its own code) 3%, hdtsmp64.dll (its own code) 1%, FUCK.dll (its own code) 1%; 55 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (164.1 ms)
+[14:00:44] Hitch 59 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.7 ms, GPU 44.7 ms, game/HUD/other 5.4 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 16 samples from the slow part of the frame
+[14:00:46] Hitch 67 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.9 ms, GPU 53.8 ms, game/HUD/other 4.7 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 19 samples from the slow part of the frame
+[14:00:50] Hitch 57 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.3 ms, GPU 43.1 ms, game/HUD/other 6.0 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 15 samples from the slow part of the frame
+[14:00:52] Hitch 52 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.3 ms, GPU 37.1 ms, game/HUD/other 5.9 ms. Video memory 11.2 of 14.2 GB (79%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 12 samples from the slow part of the frame
+[14:01:10] Hitch 67 ms - mostly game logic, scripts, HUD/menus or other mods. World 24.0 ms, GPU 1.4 ms, game/HUD/other 41.2 ms. Video memory 11.3 of 14.2 GB (79%).
+  Main thread was in: the game itself (waiting for another thread) 84%, CommunityShaders.dll (waiting for the graphics driver) 7%, PrismaUI.dll (waiting for another thread) 7%; 13 samples from the slow part of the frame
+[14:01:10] Hitch 60 ms - mostly rendering the world (including post-processing). World 34.0 ms, GPU 1.0 ms, game/HUD/other 25.2 ms. Video memory 11.3 of 14.2 GB (79%).
+  Main thread was in: the game itself (waiting for another thread) 42%, CommunityShaders.dll (its own code) 28%, nvngx_dlss.dll (its own code) 14%, HudNG.dll (inside Windows) 14%; 7 samples from the slow part of the frame
+[14:01:28] Summary of the last 1 minute: 2031 frames, average 29.6 ms (34 fps), 1% low 25 fps, 10 hitches, longest 158 ms. Main causes: waiting for the GPU (GPU load, vsync or frame generation) (7), SKSE plugin task (1), game logic, scripts, HUD/menus or other mods (1), rendering the world (including post-processing) (1). Highest video memory use during a hitch: 79%.
+  Most hitches at: Whiterun (10)
+  Video memory: up to 11.4 of 14.2 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+  SKSE plugin tasks during hitches: !ApocryphaMenuFramework.dll (1 time, 164 ms in total)
+[14:01:33] Hitch 52 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.9 ms, GPU 37.9 ms, game/HUD/other 4.9 ms. Video memory 11.2 of 14.2 GB (78%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 13 samples from the slow part of the frame
+[14:01:43] Hitch 163 ms - mostly SKSE plugin task. World 8.4 ms, GPU 0.8 ms, game/HUD/other 153.9 ms. Video memory 11.2 of 14.2 GB (78%).
+  Main thread was in: the game itself (waiting for another thread) 90%, CommunityShaders.dll (its own code) 4%, hdtsmp64.dll (sleeping) 2%, amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 2%; 43 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (165.1 ms)
+[14:02:18] Hitch 54 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.2 ms, GPU 38.3 ms, game/HUD/other 6.4 ms. Video memory 10.1 of 14.9 GB (68%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 14 samples from the slow part of the frame
+[14:02:19] Hitch 57 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.5 ms, GPU 41.8 ms, game/HUD/other 5.9 ms. Video memory 10.1 of 14.9 GB (68%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 15 samples from the slow part of the frame
+[14:02:20] Hitch 50 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.1 ms, GPU 35.6 ms, game/HUD/other 5.4 ms. Video memory 10.1 of 14.9 GB (68%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 12 samples from the slow part of the frame
+[14:02:20] Hitch 51 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.0 ms, GPU 36.4 ms, game/HUD/other 6.6 ms. Video memory 10.1 of 14.9 GB (68%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 12 samples from the slow part of the frame
+[14:02:21] Hitch 53 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 7.6 ms, GPU 38.6 ms, game/HUD/other 7.1 ms. Video memory 10.1 of 14.9 GB (68%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 14 samples from the slow part of the frame
+[14:02:21] Hitch 54 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 7.8 ms, GPU 39.6 ms, game/HUD/other 6.7 ms. Video memory 10.1 of 14.9 GB (68%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 13 samples from the slow part of the frame
+[14:02:23] Hitch 53 ms - mostly rendering the world (including post-processing). World 37.3 ms, GPU 1.4 ms, game/HUD/other 14.7 ms. Video memory 10.2 of 14.9 GB (68%).
+  Main thread was in: CommunityShaders.dll (its own code) 66%, Magelight.dll (inside Windows) 33%; 3 samples from the slow part of the frame
+[14:02:28] Summary of the last 1 minute: 2021 frames, average 29.7 ms (34 fps), 1% low 21 fps, 9 hitches, longest 163 ms. Main causes: waiting for the GPU (GPU load, vsync or frame generation) (7), SKSE plugin task (1), rendering the world (including post-processing) (1). Highest video memory use during a hitch: 78%.
+  Most hitches at: Whiterun (9)
+  Video memory: up to 11.2 of 14.2 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+  SKSE plugin tasks during hitches: !ApocryphaMenuFramework.dll (1 time, 165 ms in total)
+[14:03:23] Hitch 65 ms - mostly rendering the world (including post-processing). World 34.0 ms, GPU 1.1 ms, game/HUD/other 29.9 ms. Video memory 7.9 of 14.9 GB (53%).
+  Main thread was in: the game itself (waiting for another thread) 50%, CommunityShaders.dll (waiting for the graphics driver) 37%, NativeMeshLightFlickerFix.dll (its own code) 12%; 8 samples from the slow part of the frame
+[14:03:28] Summary of the last 1 minute: 2075 frames, average 28.9 ms (35 fps), 1% low 31 fps, 1 hitch, longest 65 ms. Main causes: rendering the world (including post-processing) (1). Highest video memory use during a hitch: 53%.
+  Most hitches at: Whiterun (1)
+  Video memory: up to 10.2 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+[14:03:30] Hitch 61 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.6 ms, GPU 47.7 ms, game/HUD/other 5.0 ms. Video memory 7.9 of 14.9 GB (53%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 17 samples from the slow part of the frame
+[14:03:43] Hitch 164 ms - mostly SKSE plugin task. World 8.5 ms, GPU 1.0 ms, game/HUD/other 154.4 ms. Video memory 7.9 of 14.9 GB (53%).
+  Main thread was in: the game itself (waiting for another thread) 93%, CommunityShaders.dll (waiting for the graphics driver) 5%, PerkEntryPointExtender.dll (its own code) 1%; 58 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (166.3 ms)
+[14:04:23] Hitch 60 ms - mostly game logic, scripts, HUD/menus or other mods. World 23.0 ms, GPU 1.2 ms, game/HUD/other 35.7 ms. Video memory 8.0 of 14.9 GB (53%).
+  Main thread was in: the game itself (waiting for another thread) 64%, CommunityShaders.dll (its own code) 28%, PrismaUI.dll (waiting for another thread) 7%; 14 samples from the slow part of the frame
+[14:04:25] Hitch 51 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.8 ms, GPU 37.5 ms, game/HUD/other 4.6 ms. Video memory 8.0 of 14.9 GB (53%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 12 samples from the slow part of the frame
+[14:04:25] Hitch 54 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.4 ms, GPU 40.1 ms, game/HUD/other 4.9 ms. Video memory 8.0 of 14.9 GB (53%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 14 samples from the slow part of the frame
+[14:04:25] Hitch 52 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.9 ms, GPU 37.4 ms, game/HUD/other 5.5 ms. Video memory 8.0 of 14.9 GB (53%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 13 samples from the slow part of the frame
+[14:04:28] Summary of the last 1 minute: 2052 frames, average 29.2 ms (34 fps), 1% low 27 fps, 6 hitches, longest 164 ms. Main causes: waiting for the GPU (GPU load, vsync or frame generation) (4), SKSE plugin task (1), game logic, scripts, HUD/menus or other mods (1). Highest video memory use during a hitch: 53%.
+  Most hitches at: Whiterun (6)
+  Video memory: up to 8.0 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+  SKSE plugin tasks during hitches: !ApocryphaMenuFramework.dll (1 time, 166 ms in total)
+[14:04:32] Hitch 52 ms - mostly game logic, scripts, HUD/menus or other mods. World 13.8 ms, GPU 2.1 ms, game/HUD/other 35.9 ms. Video memory 8.1 of 14.9 GB (54%).
+  Main thread was in: the game itself 60%, CommunityShaders.dll (its own code) 20%, d3dx9_42.dll (its own code) 10%, amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 10%; 10 samples from the slow part of the frame
+[14:04:42] Hitch 54 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.4 ms, GPU 38.6 ms, game/HUD/other 5.9 ms. Video memory 8.1 of 14.9 GB (54%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 13 samples from the slow part of the frame
+[14:04:42] Hitch 56 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 8.3 ms, GPU 41.4 ms, game/HUD/other 6.1 ms. Video memory 8.1 of 14.9 GB (54%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 15 samples from the slow part of the frame
+[14:05:28] Summary of the last 1 minute: 2063 frames, average 29.1 ms (34 fps), 1% low 27 fps, 3 hitches, longest 56 ms. Main causes: waiting for the GPU (GPU load, vsync or frame generation) (2), game logic, scripts, HUD/menus or other mods (1). Highest video memory use during a hitch: 54%.
+  Most hitches at: Whiterun (3)
+  Video memory: up to 8.1 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+[14:06:10] Hitch 64 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.1 ms, GPU 49.8 ms, game/HUD/other 5.0 ms. Video memory 7.9 of 14.9 GB (53%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 18 samples from the slow part of the frame
+[14:06:28] Summary of the last 1 minute: 2094 frames, average 28.7 ms (35 fps), 1% low 32 fps, 1 hitch, longest 64 ms. Main causes: waiting for the GPU (GPU load, vsync or frame generation) (1). Highest video memory use during a hitch: 53%.
+  Most hitches at: Whiterun (1)
+  Video memory: up to 7.9 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+[14:07:28] Summary of the last 1 minute: 2065 frames, average 29.1 ms (34 fps), 1% low 32 fps, 0 hitches.
+  Video memory: up to 7.9 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+[14:07:43] Hitch 163 ms - mostly SKSE plugin task. World 8.5 ms, GPU 0.9 ms, game/HUD/other 153.8 ms. Video memory 7.9 of 14.9 GB (53%).
+  Main thread was in: the game itself (waiting for another thread) 91%, CommunityShaders.dll (its own code) 3%, cbp.dll (inside Windows) 1%, hdtsmp64.dll (sleeping) 1%; 57 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (165.6 ms)

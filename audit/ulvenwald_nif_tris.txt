@@ -1,0 +1,752 @@
+  47879   41132   8   4974653 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderGiant01.nif
+  47879   41132   8   4974705 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderGiant01_autumn.nif
+  47879   41132   8   4974689 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderGiant01_winter.nif
+  25598   21993   4   2666016 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge01.nif
+  25598   21993   4   2666040 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge01_autumn.nif
+  25598   21993   4   2666034 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge01_winter.nif
+  21931   19225   4   2326341 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge02.nif
+  21931   19225   4   2326365 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge02_autumn.nif
+  21931   19225   4   2326359 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge02_winter.nif
+  21888   18713   4   2270919 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge03.nif
+  21888   18713   4   2270945 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge03_autumn.nif
+  21888   18713   4   2270937 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderLarge03_winter.nif
+  15719   13339   4   1621140 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium01.nif
+  15719   13339   4   1621166 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium01_autumn.nif
+  15719   13339   4   1621158 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium01_winter.nif
+  15316   13311   4   1614954 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium02.nif
+  15316   13311   4   1614980 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium02_autumn.nif
+  15316   13311   4   1614972 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium02_winter.nif
+  10720    9332   4   1135267 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium03.nif
+  10720    9332   4   1135293 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium03_autumn.nif
+  10720    9332   4   1135285 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium03_winter.nif
+  12901   11236   4   1364613 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium04.nif
+  12901   11236   4   1364639 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium04_autumn.nif
+  12901   11236   4   1364631 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderMedium04_winter.nif
+    726     588   2     22491 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling01.nif
+    726     588   2     22504 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling01_autumn.nif
+    726     588   2     22500 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling01_winter.nif
+   1490    1185   2     44407 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling02.nif
+   1490    1185   2     44420 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling02_autumn.nif
+   1490    1185   2     44416 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling02_winter.nif
+   1044     787   2     29999 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling03.nif
+   1044     787   2     30012 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling03_autumn.nif
+   1044     787   2     30008 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderSapling03_winter.nif
+  23134   19038   4   2321961 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderUnique01.nif
+  23134   19038   4   2321987 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderUnique01_autumn.nif
+  23134   19038   4   2321979 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderUnique01_winter.nif
+  24074   19690   4   2401617 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderUnique02.nif
+  24074   19690   4   2401643 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderUnique02_autumn.nif
+  24074   19690   4   2401635 Ulvenwald/meshes/landscape/trees/Alder Forest/AlderUnique02_winter.nif
+  10124    9441   6   1142822 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium01.nif
+  10124    9441   6   1142822 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium01_winter.nif
+  13450   12196   6   1478961 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium02.nif
+  13450   12196   6   1478961 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium02_winter.nif
+  12882   11858   6   1433581 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium03.nif
+  12882   11858   6   1433581 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium03_winter.nif
+  11638   10570   6   1280474 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium04.nif
+  11638   10570   6   1280474 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium04_winter.nif
+  14747   13037   6   1582226 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium05.nif
+  14747   13037   6   1582226 Ulvenwald/meshes/landscape/trees/Ash Forest/AshMedium05_winter.nif
+   7161    6126   6    750847 Ulvenwald/meshes/landscape/trees/Ash Forest/AshRotting01.nif
+   7161    6126   6    750847 Ulvenwald/meshes/landscape/trees/Ash Forest/AshRotting01_winter.nif
+   9122    7874   6    961963 Ulvenwald/meshes/landscape/trees/Ash Forest/AshRotting02.nif
+   9122    7874   6    961963 Ulvenwald/meshes/landscape/trees/Ash Forest/AshRotting02_winter.nif
+  19414   19390   6   2322346 Ulvenwald/meshes/landscape/trees/Ash Forest/AshTree01.nif
+  19414   19390   6   2322346 Ulvenwald/meshes/landscape/trees/Ash Forest/AshTree01_winter.nif
+  27739   28340   6   3390358 Ulvenwald/meshes/landscape/trees/Ash Forest/AshTree02.nif
+  27739   28340   6   3390358 Ulvenwald/meshes/landscape/trees/Ash Forest/AshTree02_winter.nif
+   5905    5281   2    196234 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung01.nif
+   5905    5281   2    196234 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung01_winter.nif
+   6159    5551   2    205870 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung02.nif
+   6159    5551   2    205870 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung02_winter.nif
+   3963    3419   2    127394 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung03.nif
+   3963    3419   2    127394 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung03_winter.nif
+   2222    1975   2     73516 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung04.nif
+   2222    1975   2     73516 Ulvenwald/meshes/landscape/trees/Ash Forest/AshYoung04_winter.nif
+  11078    8537   2    307881 Ulvenwald/meshes/landscape/trees/Ash Forest/sleepingtreecamp.nif
+  18458   16817   4   2032669 Ulvenwald/meshes/landscape/trees/Ash Forest/SwampTree01.nif
+  23768   22705   4   2732775 Ulvenwald/meshes/landscape/trees/Ash Forest/SwampTree02.nif
+  23768   22705   4   2732775 Ulvenwald/meshes/landscape/trees/Ash Forest/SwampTree03.nif
+   9042    8379   6   1011674 Ulvenwald/meshes/landscape/trees/Ash Forest/SwampTree04.nif
+   7621    7084   8    878750 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen01.nif
+   7621    7084   8    878752 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen01_autumn.nif
+   7621    7084   8    878754 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen01_winter.nif
+   7621    7084   8    878750 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen02.nif
+   7621    7084   8    878762 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen02_autumn.nif
+   7621    7084   8    878754 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen02_winter.nif
+  13552   12375   8   1524772 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen03.nif
+  13552   12375   8   1524784 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen03_autumn.nif
+  13552   12375   8   1524776 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen03_winter.nif
+  12728   11331   8   1404503 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen04.nif
+  12728   11331   8   1404501 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen04_autumn.nif
+  12728   11331   8   1404503 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen04_winter.nif
+  15024   13345   8   1653839 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen05.nif
+  15024   13345   8   1653841 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen05_autumn.nif
+  15024   13345   8   1653843 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen05_winter.nif
+  12728   11331   8   1404499 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen06.nif
+  12728   11331   8   1404511 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen06_autumn.nif
+  12728   11331   8   1404503 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspen06_winter.nif
+  16888   15229   8   1881398 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspenlush01.nif
+  16888   15229   8   1881408 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspenlush01_autumn.nif
+  16888   15229   8   1881402 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspenlush01_winter.nif
+  15510   14149   8   1745661 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/Forestaspenlush02.nif
+  15510   14149   8   1745673 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/Forestaspenlush02_autumn.nif
+  15510   14149   8   1745665 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/Forestaspenlush02_winter.nif
+  15758   14399   8   1782846 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/Forestaspenlush03.nif
+  15758   14399   8   1782858 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/Forestaspenlush03_autumn.nif
+  15758   14399   8   1782850 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/Forestaspenlush03_winter.nif
+   7621    7084   8    878750 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall01.nif
+   7621    7084   8    878752 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall01_autumn.nif
+   7621    7084   8    878754 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall01_winter.nif
+  12897   11563   8   1430001 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall02.nif
+  12897   11563   8   1430003 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall02_autumn.nif
+  12897   11563   8   1430005 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall02_winter.nif
+  13379   12468   8   1539426 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall03.nif
+  13379   12468   8   1539428 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall03_autumn.nif
+  13379   12468   8   1539430 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall03_winter.nif
+  10056    9299   8   1150308 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall04.nif
+  10056    9299   8   1150310 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall04_autumn.nif
+  10056    9299   8   1150312 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall04_winter.nif
+  10056    9299   8   1150308 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall05.nif
+  10056    9299   8   1150318 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall05_autumn.nif
+  10056    9299   8   1150312 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall05_winter.nif
+  13162   12211   8   1507417 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall06.nif
+  13162   12211   8   1507427 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall06_autumn.nif
+  13162   12211   8   1507421 Ulvenwald/meshes/landscape/trees/Aspen Pine Forest/forestaspentall06_winter.nif
+    458     362   1     15053 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_coastdriftwood01.nif
+    350     281   1     11813 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_coastdriftwood02.nif
+    235     176   1      7763 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_coastdriftwood03.nif
+   1026     881   3     36177 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_reachbranchpile01.nif
+   1027     948   3     38327 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_reachbranchpile02.nif
+  13665   11502   2    419702 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_reachclifftree01.nif
+  14655   11479   2    427545 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_reachtree01.nif
+   3156    2444   3    102990 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_reachtree02.nif
+   1523    1391   5     60427 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_reachtreestump01.nif
+  12048   10985   6   1330875 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforest01.nif
+  14390   12881   6   1566786 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforest02.nif
+  10254    9318   6   1132361 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforest03.nif
+   9042    8379   6   1011674 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforest04.nif
+  12167   11126   6   1347494 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforest05.nif
+    575     503   2     23832 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutlog01.nif
+    275     249   2     11633 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutlog01a.nif
+    386     365   2     15834 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutlog01b.nif
+   1914    4107   2    144228 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutlog02.nif
+   1170    1110   2     44043 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_Treepineforestcutlog02a.nif
+   1185    1132   2     44744 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_Treepineforestcutlog02b.nif
+   3147    2989   2    117496 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_Treepineforestcutlog03.nif
+   2000    1879   2     74789 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_Treepineforestcutlog03a.nif
+   1996    1886   2     75006 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutlog03b.nif
+   1736    1618   4     75390 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutstump01.nif
+    180     243   3     11640 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestcutstump02.nif
+   7439    7132   6    853582 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdead01.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdead02.nif
+   4872    4553   6    545764 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdead03.nif
+   3947    3654   6    441506 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdead04.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdead05.nif
+   7439    7132   6    853590 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnow01.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnow02.nif
+   4872    4553   6    545772 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnow03.nif
+   3947    3654   6    441514 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnow04.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnow05.nif
+   7439    7132   6    853590 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnowl01.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnowl02.nif
+   4872    4553   6    545772 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnowl03.nif
+   3947    3654   6    441514 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnowl04.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestdeadsnowl05.nif
+   3555    3828   4    151434 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforesthollow01.nif
+   3147    3250   2    130312 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforesthollow01snow.nif
+   1993    2017   4     81767 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlog01.nif
+   1822    1762   2     72744 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlog01blank.nif
+   2439    2587   4    101570 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_TreePineForestLog01BlankSulfur.nif
+   1822    1773   2     73130 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlog01snow.nif
+   2039    2211   3     86023 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlog02.nif
+   1817    1889   1     74863 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlog02blank.nif
+   2720    3123   5    117894 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_TreePineForestLog02Light_SN.nif
+   1817    1889   1     74891 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlog02snow.nif
+    452     489   7     22140 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlogsm01.nif
+    452     489   7     21518 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestlogsm01snow.nif
+  12048   10985   6   1330893 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnow01.nif
+  14390   12881   6   1566804 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnow02.nif
+  10254    9318   6   1127296 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnow03.nif
+   9042    8379   6   1011692 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnow04.nif
+  12167   11126   6   1347512 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnow05.nif
+  12048   10985   6   1330893 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnowl01.nif
+  14390   12881   6   1566804 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnowl02.nif
+  10254    9318   6   1127296 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnowl03.nif
+   9042    8379   6   1011692 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnowl04.nif
+  12167   11126   6   1347512 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestsnowl05.nif
+   2836    2327   3    102600 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforeststump01.nif
+   2109    1521   2     72030 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforeststump01blank.nif
+   2823    1987   3     91724 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforeststump01snow.nif
+   1279    1070   4     54292 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforeststump02a.nif
+    622     488   2     25360 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforeststump02b.nif
+   4952    4501   9    185798 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestuprooted01.nif
+   3277    2710   5    114850 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestuprootedstump01.nif
+   3181    2611   4    107128 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_treepineforestuprootedstump01sn.nif
+   3867    3025   3    124204 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_TreeReachTree01Snow.nif
+   1484    1118   2     47735 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_TreeTundraDriftWood02Sulfur.nif
+      0       0   0       293 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_tundradriftwood01.nif
+   1484    1118   2     47735 Ulvenwald/meshes/landscape/trees/Eastmarch/Eastmarch_tundradriftwood02.nif
+   2439    3327   2    122009 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush01.nif
+   2439    3327   2    122015 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush01_autumn.nif
+   2439    3327   2    122018 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush01_winter.nif
+   2638    3605   2    132099 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush02.nif
+   2638    3605   2    132105 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush02_autumn.nif
+   2638    3605   2    132108 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush02_winter.nif
+    856    1160   2     43167 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush03.nif
+    856    1160   2     43173 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush03_autumn.nif
+    856    1160   2     43176 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmBush03_winter.nif
+  14092   14284   4   1693821 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmMedium01.nif
+  14092   14284   4   1693833 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmMedium01_autumn.nif
+  14092   14284   4   1693835 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmMedium01_winter.nif
+  14691   14831   4   1760624 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmMedium02.nif
+  14691   14831   4   1760636 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmMedium02_autumn.nif
+  14691   14831   4   1760638 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmMedium02_winter.nif
+  20204   20227   6   2406566 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall01.nif
+  20204   20227   6   2406578 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall01_autumn.nif
+  19676   19914   4   2365919 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall01_winter.nif
+  14549   14091   6   1685322 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall02.nif
+  14549   14091   6   1685334 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall02_autumn.nif
+  13889   13723   4   1637171 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall02_winter.nif
+  14549   14091   6   1685322 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall03.nif
+  14549   14091   6   1685334 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall03_autumn.nif
+  14549   14091   6   1685336 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall03_winter.nif
+  14007   13670   4   1632488 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall04.nif
+  14007   13670   4   1632500 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall04_autumn.nif
+  14007   13670   4   1632502 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall04_winter.nif
+  11560   11571   4   1379400 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall05.nif
+  11560   11571   4   1379412 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall05_autumn.nif
+  11560   11571   4   1379414 Ulvenwald/meshes/landscape/trees/Elm Forest/ElmTall05_winter.nif
+   2167    2980   2    109177 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm01.nif
+   2167    2980   2    109183 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm01_autumn.nif
+   2167    2980   2    109186 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm01_winter.nif
+   1641    2171   2     80133 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm02.nif
+   1641    2171   2     80139 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm02_autumn.nif
+   1641    2171   2     80142 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm02_winter.nif
+   2213    3033   2    111117 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm03.nif
+   2213    3033   2    111123 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm03_autumn.nif
+   2213    3033   2    111126 Ulvenwald/meshes/landscape/trees/Elm Forest/SaplingElm03_winter.nif
+  13547   11279   4   1384145 Ulvenwald/meshes/landscape/trees/gkbreachclifftree01.nif
+  13547   11279   4   1384157 Ulvenwald/meshes/landscape/trees/gkbreachclifftree01_winter.nif
+  10534    9183   4   1118896 Ulvenwald/meshes/landscape/trees/gkbreachclifftree02.nif
+  10534    9183   4   1118908 Ulvenwald/meshes/landscape/trees/gkbreachclifftree02_winter.nif
+    458     362   1     15053 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_coastdriftwood01.nif
+    350     281   1     11813 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_coastdriftwood02.nif
+    235     176   1      7763 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_coastdriftwood03.nif
+   1026     881   3     36177 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_reachbranchpile01.nif
+   1027     948   3     38327 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_reachbranchpile02.nif
+   1523    1391   5     60427 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_reachtreestump01.nif
+  12048   10985   6   1330875 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforest01.nif
+  14390   12881   6   1566786 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforest02.nif
+  10254    9318   6   1132361 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforest03.nif
+   9042    8379   6   1011674 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforest04.nif
+  12167   11126   6   1347494 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforest05.nif
+    575     503   2     23832 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutlog01.nif
+    275     249   2     11633 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutlog01a.nif
+    386     365   2     15834 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutlog01b.nif
+   1914    4107   2    144228 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutlog02.nif
+   1170    1110   2     44043 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_Treepineforestcutlog02a.nif
+   1185    1132   2     44744 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_Treepineforestcutlog02b.nif
+   3147    2989   2    117496 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_Treepineforestcutlog03.nif
+   2000    1879   2     74789 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_Treepineforestcutlog03a.nif
+   1996    1886   2     75006 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutlog03b.nif
+   1736    1618   4     75390 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutstump01.nif
+   1736    1618   4     75414 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_TreePineForestCutStump01Heavy_SN.nif
+    180     243   3     11640 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestcutstump02.nif
+    180     243   3     11542 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_TreePineForestCutStump02_HeavySN.nif
+   7439    7132   6    853582 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdead01.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdead02.nif
+   4872    4553   6    545764 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdead03.nif
+   3947    3654   6    441506 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdead04.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdead05.nif
+   7439    7132   6    853590 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnow01.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnow02.nif
+   4872    4553   6    545772 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnow03.nif
+   3947    3654   6    441514 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnow04.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnow05.nif
+   7439    7132   6    853590 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnowl01.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnowl02.nif
+   4872    4553   6    545772 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnowl03.nif
+   3947    3654   6    441514 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnowl04.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestdeadsnowl05.nif
+   3555    3828   4    151434 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforesthollow01.nif
+   3147    3250   2    130312 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforesthollow01snow.nif
+   1993    2017   4     81767 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlog01.nif
+   1822    1762   2     72744 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlog01blank.nif
+   1822    1773   2     73130 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlog01snow.nif
+   2039    2211   3     86023 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlog02.nif
+   1817    1889   1     74863 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlog02blank.nif
+   2720    3123   5    117894 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_TreePineForestLog02Light_SN.nif
+   1817    1889   1     74891 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlog02snow.nif
+    452     489   7     22140 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlogsm01.nif
+    452     489   7     21518 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestlogsm01snow.nif
+  12048   10985   6   1330893 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnow01.nif
+  14390   12881   6   1566804 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnow02.nif
+  10254    9318   6   1127296 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnow03.nif
+   9042    8379   6   1011692 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnow04.nif
+  12167   11126   6   1347512 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnow05.nif
+  12048   10985   6   1330893 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnowl01.nif
+  14390   12881   6   1566804 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnowl02.nif
+  10254    9318   6   1127296 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnowl03.nif
+   9042    8379   6   1011692 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnowl04.nif
+  12167   11126   6   1347512 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestsnowl05.nif
+   2836    2327   3    102600 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforeststump01.nif
+   2109    1521   2     72030 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforeststump01blank.nif
+   2823    1987   3     91724 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforeststump01snow.nif
+   1279    1070   4     54292 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforeststump02a.nif
+    622     488   2     25360 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforeststump02b.nif
+   4952    4501   9    185798 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestuprooted01.nif
+   3277    2710   5    114850 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestuprootedstump01.nif
+   3181    2611   4    107128 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_treepineforestuprootedstump01sn.nif
+      0       0   0      1481 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_TreeReachTree01Snow.nif
+   1484    1118   2     47735 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_TreeTundraDriftWood02Sulfur.nif
+      0       0   0       293 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_tundradriftwood01.nif
+   1484    1118   2     47735 Ulvenwald/meshes/landscape/trees/Haafingar/Haafingar_tundradriftwood02.nif
+  10534    9183   4   1121361 Ulvenwald/meshes/landscape/trees/k747LargeJuniper03.nif
+  10534    9183   4   1121373 Ulvenwald/meshes/landscape/trees/k747LargeJuniper03_winter.nif
+  10534    9183   4   1121361 Ulvenwald/meshes/landscape/trees/k747MediumJuniper02.nif
+  10534    9183   4   1121373 Ulvenwald/meshes/landscape/trees/k747MediumJuniper02_winter.nif
+  10041    9248   4   1124215 Ulvenwald/meshes/landscape/trees/k747SmallJuniper01.nif
+  10041    9248   4   1124227 Ulvenwald/meshes/landscape/trees/k747SmallJuniper01_winter.nif
+   4522    4659   6    585737 Ulvenwald/meshes/landscape/trees/LEtreepineforestdead03.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnow01.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnow02.nif
+   7177    7382   6    926519 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnow03.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnow04.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnow05.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnowL02.nif
+   7177    7382   6    926519 Ulvenwald/meshes/landscape/trees/LEtreepineforestdeadsnowL03.nif
+  23347   22710   8   2896510 Ulvenwald/meshes/landscape/trees/NewScotsPine01.nif
+  47070   43475  16   5258036 Ulvenwald/meshes/landscape/trees/Oak Forest/AutumnOak01.nif
+  47070   43475  16   5257956 Ulvenwald/meshes/landscape/trees/Oak Forest/AutumnOak01_Autumn.nif
+  47070   43475  16   5258108 Ulvenwald/meshes/landscape/trees/Oak Forest/AutumnOak01_winter.nif
+  47070   43475  16   5258036 Ulvenwald/meshes/landscape/trees/Oak Forest/AutumnOak02.nif
+  47070   43475  16   5257956 Ulvenwald/meshes/landscape/trees/Oak Forest/AutumnOak02_Autumn.nif
+  47070   43475  16   5258108 Ulvenwald/meshes/landscape/trees/Oak Forest/AutumnOak02_winter.nif
+  64449   62932  16   7570427 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherDead01.nif
+  64449   62932  16   7570427 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherDead01_autumn.nif
+  64449   62932  16   7570427 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherDead01_winter.nif
+  73995   66422  12   8036969 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherDeadClump01.nif
+  73995   66422  12   8036969 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherDeadClump01_autumn.nif
+  73995   66422  12   8036969 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherDeadClump01_winter.nif
+  46294   43565  14   5256002 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherOak01.nif
+  64821   62917   2   2324471 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherOak01_autumn.nif
+  46294   43565  14   5256062 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherOak01_winter.nif
+  73995   66422  12   8036975 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherOakClump01.nif
+  73995   66422  12   8036969 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherOakClump01_autumn.nif
+  73995   66422  12   8036969 Ulvenwald/meshes/landscape/trees/Oak Forest/MotherOakClump01_winter.nif
+  47070   43475  16   5258036 Ulvenwald/meshes/landscape/trees/Oak Forest/Oak01.nif
+  47070   43475  16   5257956 Ulvenwald/meshes/landscape/trees/Oak Forest/Oak01_autumn.nif
+  47070   43475  16   5258108 Ulvenwald/meshes/landscape/trees/Oak Forest/Oak01_winter.nif
+  47070   43475  16   5258036 Ulvenwald/meshes/landscape/trees/Oak Forest/Oak02.nif
+  47070   43475  16   5257956 Ulvenwald/meshes/landscape/trees/Oak Forest/Oak02_autumn.nif
+  47070   43475  16   5258108 Ulvenwald/meshes/landscape/trees/Oak Forest/Oak02_winter.nif
+   8374    9161   4   1095181 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium01.nif
+   8374    9161   4   1095189 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium01_autumn.nif
+   8374    9161   4   1095199 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium01_winter.nif
+   8260    8994   4   1075121 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium02.nif
+   8260    8994   4   1075129 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium02_autumn.nif
+   8260    8994   4   1075139 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium02_winter.nif
+  10245   11117   4   1329025 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium03.nif
+  10245   11117   4   1329033 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium03_autumn.nif
+  10245   11117   4   1329043 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium03_winter.nif
+   4137    4303   4    521848 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium04.nif
+   4137    4303   4    521858 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium04_autumn.nif
+   3727    3699   4    451539 Ulvenwald/meshes/landscape/trees/Oak Forest/OakMedium04_winter.nif
+   2148    1885   2     70349 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling01.nif
+   2148    1885   2     70355 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling01_autumn.nif
+   2148    1885   2     70355 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling01_winter.nif
+   3114    2650   2     98489 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling02.nif
+   3114    2650   2     98495 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling02_autumn.nif
+   3114    2650   2     98495 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling02_winter.nif
+   4432    3767   2    140025 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling03.nif
+   4432    3767   2    140031 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling03_autumn.nif
+   4432    3767   2    140031 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling03_winter.nif
+   3952    3280   2    122305 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling04.nif
+   3952    3280   2    122311 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling04_autumn.nif
+   3952    3280   2    122311 Ulvenwald/meshes/landscape/trees/Oak Forest/OakSapling04_winter.nif
+  29425   32007   8   3824027 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall01.nif
+  29425   32007   8   3824035 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall01_autumn.nif
+  28991   31759   6   3791477 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall01_winter.nif
+  16072   17908   8   2138707 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall02.nif
+  16072   17908   8   2138715 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall02_autumn.nif
+  15878   17790   6   2122957 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall02_winter.nif
+  14189   41525   8   2649631 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall03.nif
+  14189   41525   8   2649639 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall03_autumn.nif
+  13897   40748   6   2610020 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall03_winter.nif
+  12637   13761   8   1648968 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall04.nif
+  12637   13761   8   1648976 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall04_autumn.nif
+  12423   13632   6   1631802 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall04_winter.nif
+  14189   41525   8   2649631 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall05.nif
+  14189   41525   8   2649639 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall05_autumn.nif
+  13897   40748   6   2610020 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall05_winter.nif
+  14189   41525   8   2649631 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall06.nif
+  14189   41525   8   2649639 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall06_autumn.nif
+  13897   40748   6   2610020 Ulvenwald/meshes/landscape/trees/Oak Forest/OakTall06_winter.nif
+   6854    7208   4    868726 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak01.nif
+   6854    7208   4    868734 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak01_autumn.nif
+   6854    7208   4    868744 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak01_winter.nif
+   3727    3699   4    451521 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak02.nif
+   3727    3699   4    451529 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak02_autumn.nif
+   3727    3699   4    451539 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak02_winter.nif
+   4137    4303   4    521848 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak03.nif
+   4137    4303   4    521856 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak03_autumn.nif
+   4137    4303   4    521866 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak03_winter.nif
+   4137    4303   4    521848 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak04.nif
+   4137    4303   4    521856 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak04_autumn - Copy.nif
+   4137    4303   4    521856 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak04_autumn.nif
+   4137    4303   4    521866 Ulvenwald/meshes/landscape/trees/Oak Forest/ThinOak04_winter.nif
+  16907   15101   3    559818 Ulvenwald/meshes/landscape/trees/Pine Forest/Ash/AshPine01.nif
+  13439   11963   3    443958 Ulvenwald/meshes/landscape/trees/Pine Forest/Ash/AshPine02.nif
+   9351    8475   3    316438 Ulvenwald/meshes/landscape/trees/Pine Forest/Ash/AshPine03.nif
+  13604   12466   3    458596 Ulvenwald/meshes/landscape/trees/Pine Forest/Ash/AshPine04.nif
+  15406   13622   3    505900 Ulvenwald/meshes/landscape/trees/Pine Forest/Ash/AshPine05.nif
+   8244    7643   3    285008 Ulvenwald/meshes/landscape/trees/Pine Forest/Ash/AshPineTall01.nif
+   4209    4078   6    517685 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine01.nif
+   4209    4078   6    517707 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine01_winter.nif
+   2539    2221   3     87539 Ulvenwald/meshes/landscape/trees/Pine Forest/CliffPine02.nif
+   2539    2221   3     87550 Ulvenwald/meshes/landscape/trees/Pine Forest/CliffPine02_winter.nif
+   6624    6836   6    878361 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine03.nif
+   6624    6836   6    878383 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine03_winter.nif
+   5624    5751   6    749757 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine04.nif
+   5624    5751   6    749779 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine04_winter.nif
+   6377    6491   6    841737 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine05.nif
+   6377    6491   6    841759 Ulvenwald/meshes/landscape/trees/Pine Forest/cliffpine05_winter.nif
+   7439    7132   6    853582 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine01.nif
+   7439    7132   6    853590 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine01_winter.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine02.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine02_winter.nif
+   4872    4553   6    545764 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine03.nif
+   4872    4553   6    545772 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine03_winter.nif
+   3947    3654   6    441506 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine04.nif
+   3947    3654   6    441514 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine04_winter.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine05.nif
+   5565    5021   4    599784 Ulvenwald/meshes/landscape/trees/Pine Forest/deadpine05_winter.nif
+  19594   17476   6   2120523 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine01.nif
+  19594   17476   6   2120545 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine01_winter.nif
+  37084   32773   6   3972548 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine02.nif
+  37084   32773   6   3972570 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine02_winter.nif
+  35410   32007   6   3868535 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine03.nif
+  35410   32007   6   3868557 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine03_winter.nif
+  34442   30328   6   3670581 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine04.nif
+  34442   30328   6   3670603 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldPine04_winter.nif
+  10254    9318   6   1127280 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldShrub01.nif
+  10254    9318   6   1127302 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldShrub01_winter.nif
+   7190    6586   6    798566 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldShrub02.nif
+   7190    6586   6    798588 Ulvenwald/meshes/landscape/trees/Pine Forest/FieldShrub02_winter.nif
+  12048   10985   6   1330875 Ulvenwald/meshes/landscape/trees/Pine Forest/PineMedium01.nif
+  12048   10985   6   1330883 Ulvenwald/meshes/landscape/trees/Pine Forest/PineMedium01_winter.nif
+  12167   11126   6   1347494 Ulvenwald/meshes/landscape/trees/Pine Forest/PineMedium02.nif
+  12167   11126   6   1347502 Ulvenwald/meshes/landscape/trees/Pine Forest/PineMedium02_winter.nif
+  10254    9318   6   1127278 Ulvenwald/meshes/landscape/trees/Pine Forest/PineShrub01.nif
+  10254    9318   6   1127286 Ulvenwald/meshes/landscape/trees/Pine Forest/PineShrub01_winter.nif
+   7190    6586   6    798564 Ulvenwald/meshes/landscape/trees/Pine Forest/PineShrub02.nif
+   7190    6586   6    798572 Ulvenwald/meshes/landscape/trees/Pine Forest/PineShrub02_winter.nif
+   8952    8126   6    986046 Ulvenwald/meshes/landscape/trees/Pine Forest/PineSmall01.nif
+   8952    8126   6    986054 Ulvenwald/meshes/landscape/trees/Pine Forest/PineSmall01_winter.nif
+   8952    8126   6    986046 Ulvenwald/meshes/landscape/trees/Pine Forest/PineSmall02.nif
+   8952    8126   6    986054 Ulvenwald/meshes/landscape/trees/Pine Forest/PineSmall02_winter.nif
+   9042    8379   6   1011674 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTall01.nif
+   9042    8379   6   1011682 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTall01_winter.nif
+  10209    9164   6   1120729 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTall02.nif
+  10209    9164   6   1120737 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTall02_winter.nif
+  12048   10985   6   1330875 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree01.nif
+  12048   10985   6   1330883 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree01_winter.nif
+  14390   12881   6   1566786 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree02.nif
+  14390   12881   6   1566794 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree02_winter.nif
+   9042    8379   6   1011674 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree04.nif
+   9042    8379   6   1011682 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree04_winter.nif
+  12167   11126   6   1347494 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree05.nif
+  12167   11126   6   1347502 Ulvenwald/meshes/landscape/trees/Pine Forest/PineTree05_winter.nif
+  16907   15101   3    559825 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPine01.nif
+  13439   11963   3    443965 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPine02.nif
+  13604   12466   3    458603 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPine04.nif
+  15406   13622   3    505907 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPine05.nif
+  16907   15101   3    559821 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineLight01.nif
+  13439   11963   3    443961 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineLight02.nif
+   9351    8475   3    316441 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineLight03.nif
+  13604   12466   3    458599 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineLight04.nif
+  15406   13622   3    505903 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineLight05.nif
+  11112   10105   3    376035 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineMedium01.nif
+  11246   10238   3    380147 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineMedium02.nif
+   9351    8475   3    316445 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineShrub01.nif
+   8106    7415   3    276799 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineSmall01.nif
+   8148    7396   3    276267 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineSmall02.nif
+   8244    7643   3    285015 Ulvenwald/meshes/landscape/trees/Pine Forest/Snow/SnowPineTall01.nif
+  13073   11903   6   1447589 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine01.nif
+  13073   11903   6   1447611 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine01_winter.nif
+   9254    8494   6   1037593 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine02.nif
+   9254    8494   6   1037615 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine02_winter.nif
+  12306   11476   6   1394876 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine03.nif
+  12306   11476   6   1394898 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine03_winter.nif
+   7462    6779   6    827857 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine04.nif
+   7462    6779   6    827879 Ulvenwald/meshes/landscape/trees/Pine Forest/TallCliffPine04_winter.nif
+  13547   11279   4   1384145 Ulvenwald/meshes/landscape/trees/Reach/gkbreachclifftree01.nif
+  13547   11279   4   1384157 Ulvenwald/meshes/landscape/trees/Reach/gkbreachclifftree01_winter.nif
+  10534    9183   4   1118896 Ulvenwald/meshes/landscape/trees/Reach/gkbreachclifftree02.nif
+  10534    9183   4   1118908 Ulvenwald/meshes/landscape/trees/Reach/gkbreachclifftree02_winter.nif
+  10534    9183   4   1121361 Ulvenwald/meshes/landscape/trees/Reach/k747LargeJuniper03.nif
+  10534    9183   4   1121373 Ulvenwald/meshes/landscape/trees/Reach/k747LargeJuniper03_winter.nif
+  10534    9183   4   1121361 Ulvenwald/meshes/landscape/trees/Reach/k747MediumJuniper02.nif
+  10534    9183   4   1121373 Ulvenwald/meshes/landscape/trees/Reach/k747MediumJuniper02_winter.nif
+  10041    9248   4   1124215 Ulvenwald/meshes/landscape/trees/Reach/k747SmallJuniper01.nif
+  10041    9248   4   1124227 Ulvenwald/meshes/landscape/trees/Reach/k747SmallJuniper01_winter.nif
+   8944    7030   4    862808 Ulvenwald/meshes/landscape/trees/Reach/ReachCliffTree01.nif
+   8944    7030   4    862820 Ulvenwald/meshes/landscape/trees/Reach/ReachCliffTree01_winter.nif
+  13547   11279   4   1384145 Ulvenwald/meshes/landscape/trees/Reach/ReachCliffTree02.nif
+  13547   11279   4   1384157 Ulvenwald/meshes/landscape/trees/Reach/ReachCliffTree02_winter.nif
+  12008   10349   4   1258098 Ulvenwald/meshes/landscape/trees/Reach/ReachTree01.nif
+  12008   10349   4   1258110 Ulvenwald/meshes/landscape/trees/Reach/ReachTree01_winter.nif
+   8944    7030   4    862808 Ulvenwald/meshes/landscape/trees/ReachCliffTree01.nif
+   8944    7030   4    862820 Ulvenwald/meshes/landscape/trees/ReachCliffTree01_winter.nif
+  13547   11279   4   1384145 Ulvenwald/meshes/landscape/trees/ReachCliffTree02.nif
+  13547   11279   4   1384157 Ulvenwald/meshes/landscape/trees/ReachCliffTree02_winter.nif
+  12008   10349   4   1258098 Ulvenwald/meshes/landscape/trees/ReachTree01.nif
+  12008   10349   4   1258110 Ulvenwald/meshes/landscape/trees/ReachTree01_winter.nif
+  17579   13575   4    514731 Ulvenwald/meshes/landscape/trees/reachtree02.nif
+  17579   13575   4    514737 Ulvenwald/meshes/landscape/trees/reachtree02_winter.nif
+  13547   11279   4   1384145 Ulvenwald/meshes/landscape/trees/reachtree0gkb1.nif
+  13547   11279   4   1384157 Ulvenwald/meshes/landscape/trees/reachtree0gkb1_winter.nif
+   1523    1391   5     60389 Ulvenwald/meshes/landscape/trees/reachtreestump01.nif
+  13692   13978   8   1838239 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavy01.nif
+  11142   11262   8   1484913 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavy02.nif
+   7177    7382   6    926521 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavy03.nif
+  11017   11017   8   1450507 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavy04.nif
+  11142   11262   8   1484913 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavy05.nif
+  13692   13978   8   1838239 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavyl01.nif
+  11142   11262   8   1484913 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavyl02.nif
+   7177    7382   6    926521 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavyl03.nif
+  11017   11017   8   1450507 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavyl04.nif
+  11142   11262   8   1484913 Ulvenwald/meshes/landscape/trees/SFO1treepineforestsnowheavyl05.nif
+  14463   14805   4    559838 Ulvenwald/meshes/landscape/trees/SFO3treepineforest03.nif
+  47855   41512   2   1522033 Ulvenwald/meshes/landscape/trees/sleepingtreecamp.nif
+  35228   31656   4   1166228 Ulvenwald/meshes/landscape/trees/Spruce Forest/AncientSpruce01.nif
+  34999   31515   3   1160523 Ulvenwald/meshes/landscape/trees/Spruce Forest/AncientSpruce01_winter.nif
+  17048   16456   8   2103759 Ulvenwald/meshes/landscape/trees/Spruce Forest/ClumpSpruce01.nif
+  16742   16254   6   2077863 Ulvenwald/meshes/landscape/trees/Spruce Forest/ClumpSpruce01_winter.nif
+  23347   22710   8   2896510 Ulvenwald/meshes/landscape/trees/Spruce Forest/ClumpSpruce02.nif
+  22888   22407   6   2858171 Ulvenwald/meshes/landscape/trees/Spruce Forest/ClumpSpruce02_winter.nif
+  14472   15206   8   1999353 Ulvenwald/meshes/landscape/trees/Spruce Forest/LargeSpruce01.nif
+  14319   15105   6   1985907 Ulvenwald/meshes/landscape/trees/Spruce Forest/LargeSpruce01_winter.nif
+   3838    3771   4    146198 Ulvenwald/meshes/landscape/trees/SRGtreepineforestdead05.nif
+  13162   12211   8   1507427 Ulvenwald/meshes/landscape/trees/srg_oak1.nif
+  13162   12211   8   1507427 Ulvenwald/meshes/landscape/trees/srg_oak1_autumn.nif
+  13162   12211   8   1507421 Ulvenwald/meshes/landscape/trees/srg_oak1_winter.nif
+  12897   11563   8   1430003 Ulvenwald/meshes/landscape/trees/srg_oak2.nif
+  12897   11563   8   1430003 Ulvenwald/meshes/landscape/trees/srg_oak2_autumn.nif
+  12897   11563   8   1430005 Ulvenwald/meshes/landscape/trees/srg_oak2_winter.nif
+  13552   12375   8   1524782 Ulvenwald/meshes/landscape/trees/srg_oak3.nif
+  13552   12375   8   1524782 Ulvenwald/meshes/landscape/trees/srg_oak3_autumn.nif
+  13552   12375   8   1524776 Ulvenwald/meshes/landscape/trees/srg_oak3_winter.nif
+  10056    9299   8   1150310 Ulvenwald/meshes/landscape/trees/srg_oak4.nif
+  10056    9299   8   1150310 Ulvenwald/meshes/landscape/trees/srg_oak4_autumn.nif
+  10056    9299   8   1150312 Ulvenwald/meshes/landscape/trees/srg_oak4_winter.nif
+   8925    7850   3    292136 Ulvenwald/meshes/landscape/trees/SRG_oak5.nif
+   8925    7850   3    292136 Ulvenwald/meshes/landscape/trees/SRG_oak5_autumn.nif
+   8925    7850   3    292136 Ulvenwald/meshes/landscape/trees/SRG_oak5_winter.nif
+   3415    3094   4    116900 Ulvenwald/meshes/landscape/trees/SRG_oak6.nif
+   3415    3094   4    116900 Ulvenwald/meshes/landscape/trees/SRG_oak6_autumn.nif
+   3415    3094   4    116901 Ulvenwald/meshes/landscape/trees/SRG_oak6_winter.nif
+  14597   15936   6   1902327 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium01.nif
+  14597   15936   6   1902331 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium01_autumn.nif
+  14597   15936   6   1902345 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium01_winter.nif
+  11818   13162   6   1570346 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium02.nif
+  11818   13162   6   1570350 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium02_autumn.nif
+  11818   13162   6   1570364 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium02_winter.nif
+  11309   12348   6   1476386 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium03.nif
+  11309   12348   6   1476390 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium03_autumn.nif
+  11309   12348   6   1476404 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreMedium03_winter.nif
+   8438    9389   3    348654 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreSmall01.nif
+   8438    9389   3    348656 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreSmall01_autumn.nif
+   8438    9389   3    348663 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreSmall01_winter.nif
+   6147    6897   6    826584 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreSmall02.nif
+   6147    6897   6    826588 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreSmall02_autumn.nif
+   6147    6897   6    826602 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreSmall02_winter.nif
+  12597   13599   6   1624765 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreTall01.nif
+  12597   13599   6   1624769 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreTall01_autumn.nif
+  12597   13599   6   1624783 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreTall01_winter.nif
+  10031   10574   6   1265737 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreTall02.nif
+  10031   10574   6   1265741 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreTall02_autumn.nif
+  10031   10574   6   1265755 Ulvenwald/meshes/landscape/trees/Sycamore Forest/AutumnSycamoreTall02_winter.nif
+  14597   15936   6   1902327 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium01.nif
+  14597   15936   6   1902331 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium01_autumn.nif
+  14597   15936   6   1902345 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium01_winter.nif
+  11818   13162   6   1570346 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium02.nif
+  11818   13162   6   1570350 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium02_autumn.nif
+  11818   13162   6   1570364 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium02_winter.nif
+  11309   12348   6   1476386 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium03.nif
+  11309   12348   6   1476390 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium03_autumn.nif
+  11309   12348   6   1476404 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreMedium03_winter.nif
+   8438    9389   3    348653 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreSmall01.nif
+   8438    9389   3    348655 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreSmall01_autumn.nif
+   8438    9389   3    348662 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreSmall01_winter.nif
+   6147    6897   6    826584 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreSmall02.nif
+   6147    6897   6    826588 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreSmall02_autumn.nif
+   6147    6897   6    826602 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreSmall02_winter.nif
+  12597   13599   6   1624765 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreTall01.nif
+  12597   13599   6   1624769 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreTall01_autumn.nif
+  12597   13599   6   1624783 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreTall01_winter.nif
+  10031   10574   6   1265737 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreTall02.nif
+  10031   10574   6   1265741 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreTall02_autumn.nif
+  10031   10574   6   1265755 Ulvenwald/meshes/landscape/trees/Sycamore Forest/SycamoreTall02_winter.nif
+  15655   15773   8   2073145 Ulvenwald/meshes/landscape/trees/treepineforest01.nif
+  15540   15692   6   2062221 Ulvenwald/meshes/landscape/trees/treepineforest01_winter.nif
+  15080   17463   8   1994866 Ulvenwald/meshes/landscape/trees/treepineforest02.nif
+  14889   17342   6   1978657 Ulvenwald/meshes/landscape/trees/treepineforest02_winter.nif
+  14463   14851   8   1860692 Ulvenwald/meshes/landscape/trees/treepineforest03.nif
+  14386   14790   6   1852032 Ulvenwald/meshes/landscape/trees/treepineforest03_winter.nif
+  17321   17533   8   2145794 Ulvenwald/meshes/landscape/trees/treepineforest04.nif
+  17168   17432   6   2132342 Ulvenwald/meshes/landscape/trees/treepineforest04_winter.nif
+  13869   16106   6   1962776 Ulvenwald/meshes/landscape/trees/treepineforest05.nif
+  13869   16106   6   1962772 Ulvenwald/meshes/landscape/trees/treepineforest05_winter.nif
+    575     503   2     23832 Ulvenwald/meshes/landscape/trees/treepineforestcutlog01.nif
+    275     249   2     11633 Ulvenwald/meshes/landscape/trees/treepineforestcutlog01a.nif
+    386     365   2     15834 Ulvenwald/meshes/landscape/trees/treepineforestcutlog01b.nif
+   1914    4107   2    144228 Ulvenwald/meshes/landscape/trees/treepineforestcutlog02.nif
+   1170    1110   2     44043 Ulvenwald/meshes/landscape/trees/Treepineforestcutlog02a.nif
+   1185    1132   2     44744 Ulvenwald/meshes/landscape/trees/Treepineforestcutlog02b.nif
+   3147    2989   2    117496 Ulvenwald/meshes/landscape/trees/Treepineforestcutlog03.nif
+   2000    1879   2     74789 Ulvenwald/meshes/landscape/trees/Treepineforestcutlog03a.nif
+   1996    1886   2     75006 Ulvenwald/meshes/landscape/trees/Treepineforestcutlog03b.nif
+   1736    1618   4     75390 Ulvenwald/meshes/landscape/trees/treepineforestcutstump01.nif
+    180     243   3     11640 Ulvenwald/meshes/landscape/trees/treepineforestcutstump02.nif
+   3271    3303   6    441607 Ulvenwald/meshes/landscape/trees/treepineforestdead01.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/treepineforestdead01_winter.nif
+   7511    7235  16    922859 Ulvenwald/meshes/landscape/trees/treepineforestdead02.nif
+   7511    7235  16    922835 Ulvenwald/meshes/landscape/trees/treepineforestdead02_winter.nif
+   4522    4659   6    585737 Ulvenwald/meshes/landscape/trees/treepineforestdead03.nif
+   4522    4659   6    585723 Ulvenwald/meshes/landscape/trees/treepineforestdead03_winter.nif
+   3271    3303   6    441607 Ulvenwald/meshes/landscape/trees/treepineforestdead04.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/treepineforestdead04_winter.nif
+   7511    7235  16    922859 Ulvenwald/meshes/landscape/trees/treepineforestdead05.nif
+   7511    7235  16    922835 Ulvenwald/meshes/landscape/trees/treepineforestdead05_winter.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnow01.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnow02.nif
+   7177    7382   6    926519 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnow03.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnow04.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnow05.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnowl01.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnowl02.nif
+   7177    7382   6    926519 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnowl03.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnowl04.nif
+   7511    7235  16    922851 Ulvenwald/meshes/landscape/trees/treepineforestdeadsnowl05.nif
+   3555    3828   4    151434 Ulvenwald/meshes/landscape/trees/treepineforesthollow01.nif
+   3147    3250   2    130312 Ulvenwald/meshes/landscape/trees/treepineforesthollow01snow.nif
+   1993    2017   4     81767 Ulvenwald/meshes/landscape/trees/treepineforestlog01.nif
+   1822    1762   2     72744 Ulvenwald/meshes/landscape/trees/treepineforestlog01blank.nif
+   1822    1773   2     73130 Ulvenwald/meshes/landscape/trees/treepineforestlog01snow.nif
+   2039    2211   3     86023 Ulvenwald/meshes/landscape/trees/treepineforestlog02.nif
+   1817    1889   1     74863 Ulvenwald/meshes/landscape/trees/treepineforestlog02blank.nif
+   1817    1889   1     74891 Ulvenwald/meshes/landscape/trees/treepineforestlog02snow.nif
+    452     489   7     22140 Ulvenwald/meshes/landscape/trees/treepineforestlogsm01.nif
+    452     489   7     21518 Ulvenwald/meshes/landscape/trees/treepineforestlogsm01snow.nif
+  13692   13978   8   1838239 Ulvenwald/meshes/landscape/trees/treepineforestsnow01.nif
+  11142   11262   8   1484913 Ulvenwald/meshes/landscape/trees/treepineforestsnow02.nif
+   7177    7382   6    926521 Ulvenwald/meshes/landscape/trees/treepineforestsnow03.nif
+   7177    7382   3    280666 Ulvenwald/meshes/landscape/trees/treepineforestsnow03lvt.nif
+  11017   11017   8   1450507 Ulvenwald/meshes/landscape/trees/treepineforestsnow04.nif
+  11142   11262   8   1484913 Ulvenwald/meshes/landscape/trees/treepineforestsnow05.nif
+  14319   15105   6   1985921 Ulvenwald/meshes/landscape/trees/treepineforestsnowl01.nif
+  14889   17342   6   2151642 Ulvenwald/meshes/landscape/trees/treepineforestsnowl02.nif
+   4522    4659   6    585737 Ulvenwald/meshes/landscape/trees/treepineforestsnowl03.nif
+   7177    7382   3    280626 Ulvenwald/meshes/landscape/trees/treepineforestsnowl03lvt.nif
+  17168   17432   6   2132356 Ulvenwald/meshes/landscape/trees/treepineforestsnowl04.nif
+  18324   19042   8   2507291 Ulvenwald/meshes/landscape/trees/treepineforestsnowl05.nif
+   2836    2327   3    102600 Ulvenwald/meshes/landscape/trees/treepineforeststump01.nif
+   2109    1521   2     72030 Ulvenwald/meshes/landscape/trees/treepineforeststump01blank.nif
+   2823    1987   3     91724 Ulvenwald/meshes/landscape/trees/treepineforeststump01snow.nif
+   1279    1070   4     54278 Ulvenwald/meshes/landscape/trees/treepineforeststump02a.nif
+    622     488   2     25346 Ulvenwald/meshes/landscape/trees/treepineforeststump02b.nif
+   4952    4501   9    185784 Ulvenwald/meshes/landscape/trees/treepineforestuprooted01.nif
+   3277    2710   5    114850 Ulvenwald/meshes/landscape/trees/treepineforestuprootedstump01.nif
+   3181    2611   4    107128 Ulvenwald/meshes/landscape/trees/treepineforestuprootedstump01sn.nif
+   2269    1995   3     84256 Ulvenwald/meshes/landscape/trees/treereachtree01magic.nif
+    824     714   1     30338 Ulvenwald/meshes/landscape/trees/tundradriftwood01.nif
+    824     714   1     30338 Ulvenwald/meshes/landscape/trees/tundradriftwood02.nif
+    458     362   1     15053 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_coastdriftwood01.nif
+    350     281   1     11813 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_coastdriftwood02.nif
+    235     176   1      7763 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_coastdriftwood03.nif
+   1026     881   3     36177 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachbranchpile01.nif
+   1027     948   3     38327 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachbranchpile02.nif
+  13665   11502   2    419702 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachclifftree01.nif
+  15290   12992   2    474132 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachclifftree02.nif
+  14655   11479   2    427545 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachtree01.nif
+   3156    2444   3    102990 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachtree02.nif
+   1523    1391   5     60389 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_reachtreestump01.nif
+  15655   15773   8   2073145 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforest01.nif
+  15080   17463   8   2167870 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforest02.nif
+   7217    7396   6    964301 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforest03.nif
+   7217    7396   6    964301 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforest04.nif
+  13869   16106   6   1962776 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforest05.nif
+    575     503   2     23832 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutlog01.nif
+    275     249   2     11633 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutlog01a.nif
+    386     365   2     15834 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutlog01b.nif
+   1914    4107   2    144228 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutlog02.nif
+   1170    1110   2     44043 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_Treepineforestcutlog02a.nif
+   1185    1132   2     44744 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_Treepineforestcutlog02b.nif
+   3147    2989   2    117496 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_Treepineforestcutlog03.nif
+   2000    1879   2     74789 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_Treepineforestcutlog03a.nif
+   1996    1886   2     75006 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutlog03b.nif
+   1736    1618   4     75390 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutstump01.nif
+    180     243   3     11640 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestcutstump02.nif
+   3271    3303   6    441607 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdead01.nif
+   7511    7235  16    922859 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdead02.nif
+   4522    4659   6    585737 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdead03.nif
+   3271    3303   6    441607 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdead04.nif
+   7511    7235  16    922859 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdead05.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnow01.nif
+   7511    7235  16    922835 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnow02.nif
+   4522    4659   6    585723 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnow03.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnow04.nif
+   7511    7235  16    922835 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnow05.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnowl01.nif
+   7511    7235  16    922835 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnowl02.nif
+   4522    4659   6    585723 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnowl03.nif
+   3271    3303   6    441595 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnowl04.nif
+   7511    7235  16    922835 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestdeadsnowl05.nif
+   3555    3828   4    151434 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforesthollow01.nif
+   3147    3250   2    130312 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforesthollow01snow.nif
+   1993    2017   4     81767 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlog01.nif
+   1822    1762   2     72744 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlog01blank.nif
+   2439    2587   4    101570 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_TreePineForestLog01BlankSulfur.nif
+   1822    1773   2     73130 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlog01snow.nif
+   2039    2211   3     86023 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlog02.nif
+   1817    1889   1     74863 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlog02blank.nif
+   2720    3123   5    117894 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_TreePineForestLog02Light_SN.nif
+   1817    1889   1     74891 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlog02snow.nif
+    452     489   7     22140 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlogsm01.nif
+    452     489   7     21518 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestlogsm01snow.nif
+  15540   15692   6   2062221 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnow01.nif
+  14889   17342   6   2151628 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnow02.nif
+   7217    7396   6    964287 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnow03.nif
+   7217    7396   6    964287 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnow04.nif
+  13869   16106   6   1962772 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnow05.nif
+  14319   15105   6   1985921 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnowl01.nif
+  13869   16106   6   1962786 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnowl02.nif
+   7217    7396   6    964301 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnowl03.nif
+   8245    8378   4    319638 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnowl04.nif
+  13869   16106   6   1962786 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestsnowl05.nif
+   2836    2327   3    102600 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforeststump01.nif
+   2109    1521   2     72030 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforeststump01blank.nif
+   2823    1987   3     91724 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforeststump01snow.nif
+   1279    1070   4     54292 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforeststump02a.nif
+    622     488   2     25360 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforeststump02b.nif
+   4952    4501   9    185798 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestuprooted01.nif
+   3277    2710   5    114850 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestuprootedstump01.nif
+   3181    2611   4    107128 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treepineforestuprootedstump01sn.nif
+   2269    1995   3     84256 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_treereachtree01magic.nif
+   3867    3025   3    124204 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_TreeReachTree01Snow.nif
+   1484    1118   2     47763 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_TreeTundraDriftWood02Sulfur.nif
+    824     714   1     30338 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_tundradriftwood01.nif
+    824     714   1     30338 Ulvenwald/meshes/landscape/trees/Whiterun/Whiterun_tundradriftwood02.nif
+  14889   17342   6   2151628 Ulvenwald/meshes/landscape/trees/WinterMain/SFOtreepineforest02_winter.nif
+  17168   17432   6   2132342 Ulvenwald/meshes/landscape/trees/WinterMain/SFOtreepineforest04_winter.nif
+  13869   16106   6   1962772 Ulvenwald/meshes/landscape/trees/WinterMain/SFOtreepineforest05_winter.nif
+  15540   15692   6   2062221 Ulvenwald/meshes/landscape/trees/WinterMain/treepineforest01_winter.nif
+  14386   14788   7   1928672 Ulvenwald/meshes/landscape/trees/WinterMain/treepineforest03_winter.nif
+   2439    3327   2    122009 Ulvenwald/meshes/landscape/plants/pineshrub01.nif
+   2439    3327   2    122018 Ulvenwald/meshes/landscape/plants/pineshrub01snow.nif
+   2638    3605   2    132099 Ulvenwald/meshes/landscape/plants/pineshrub02.nif
+   2638    3605   2    132108 Ulvenwald/meshes/landscape/plants/pineshrub02snow.nif
+   1002     985   2     43444 Ulvenwald/meshes/landscape/plants/pineshrub03.nif
+   1002     985   2     43452 Ulvenwald/meshes/landscape/plants/pineshrub03snow.nif

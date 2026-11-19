@@ -1,0 +1,95 @@
+selected refs: 26084  (8.3s)
+  mountains  {'refs': 7826, 'disabled': 4, 'small': 2, 'nomesh': 0, 'used': 7820}
+  rocks      {'refs': 36116, 'disabled': 130, 'small': 25647, 'nomesh': 0, 'used': 10339}
+  cliffs     {'refs': 5134, 'disabled': 10, 'small': 3, 'nomesh': 0, 'used': 5121}
+  dirtcliffs {'refs': 1410, 'disabled': 0, 'small': 0, 'nomesh': 0, 'used': 1410}
+  landforms  {'refs': 648, 'disabled': 0, 'small': 0, 'nomesh': 0, 'used': 648}
+  ice        {'refs': 746, 'disabled': 0, 'small': 0, 'nomesh': 0, 'used': 746}
+object/texel intervals: 8474135 (17.4s)
+{
+ "output": "C:\\Users\\foxnn\\dev\\terrain-heightmap\\mod-objects\\textures\\terrain\\HeightMaps\\Tamriel.Terrain.HeightMap.-57.-43.61.50.-4629.4924.dds",
+ "zmin_field": -4629,
+ "zmax_field": 4924,
+ "classes": [
+  "mountains",
+  "cliffs",
+  "dirtcliffs",
+  "ice",
+  "landforms",
+  "rocks"
+ ],
+ "min_footprint": 512.0,
+ "gap": 256.0,
+ "filter": "open",
+ "radius": 1,
+ "refs_used": 26084,
+ "class_stats": {
+  "mountains": {
+   "refs": 7826,
+   "disabled": 4,
+   "small": 2,
+   "nomesh": 0,
+   "used": 7820
+  },
+  "rocks": {
+   "refs": 36116,
+   "disabled": 130,
+   "small": 25647,
+   "nomesh": 0,
+   "used": 10339
+  },
+  "cliffs": {
+   "refs": 5134,
+   "disabled": 10,
+   "small": 3,
+   "nomesh": 0,
+   "used": 5121
+  },
+  "dirtcliffs": {
+   "refs": 1410,
+   "disabled": 0,
+   "small": 0,
+   "nomesh": 0,
+   "used": 1410
+  },
+  "landforms": {
+   "refs": 648,
+   "disabled": 0,
+   "small": 0,
+   "nomesh": 0,
+   "used": 648
+  },
+  "ice": {
+   "refs": 746,
+   "disabled": 0,
+   "small": 0,
+   "nomesh": 0,
+   "used": 746
+  }
+ },
+ "intervals": 8474135,
+ "intervals_rejected_unsupported": 60125,
+ "support_iterations": 6,
+ "texels_total": 11454464,
+ "raw_surface": {
+  "raised": 3209763,
+  "raised_gt128": 2395692,
+  "mean_raise": 667.9525146484375,
+  "max_raise": 10316.19140625,
+  "max_height": 39527.2734375
+ },
+ "final": {
+  "raised": 3143617,
+  "raised_gt128": 2304702,
+  "raised_gt512": 1277186,
+  "raised_gt2000": 213358,
+  "mean_raise": 662.6213989257812,
+  "median_raise": 368.0,
+  "p99_raise": 3840.0,
+  "max_raise": 10080.0,
+  "max_height": 39392.0,
+  "land_max": 39392.0,
+  "min_height": -37032.0
+ },
+ "seconds": 19.2
+}

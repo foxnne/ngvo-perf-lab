@@ -1,0 +1,148 @@
+13:06:49 game exited during shader compile
+13:06:49 SUITE ABORTED: shader wait failed
+13:16:35 === warmup --scenarios plains,spin,sprint,flight (236s, exit 1)
+
+game did not start
+
+13:20:30 === base --scenarios plains,spin,sprint,flight --reps 3 (234s, exit 1)
+
+game did not start
+
+13:30:16 === warmup --scenarios plains,spin,sprint,flight (342s, exit 1)
+
+save did not load
+
+13:30:17 === base --scenarios plains,spin,sprint,flight --reps 3 (1s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+13:30:18 === scenes --scenarios forest,city,interior (1s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+13:30:19 === tracy --scenarios plains,spin,sprint,flight --tracy (1s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+13:30:19 === nr-altframes --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"alternateFrames": true}} (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:20 === nr-off --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"enabled": false}} (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:20 === fg-off --scenarios plains,spin,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}} (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:20 === fg-nr-off --scenarios plains,spin,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}, "Neural Rendering": {"enabled": false}} (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:21 === treewind-off --scenarios plains,spin,sprint --cs-disable TreeWind (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:21 === psky-off --scenarios plains,spin,sprint --cs-disable PhysicalSky (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:21 === ssgi-ssr-off --scenarios plains,spin,sprint --cs-disable ScreenSpaceGI,ScreenSpaceReflections (0s, exit 1)
+
+close the game before applying a variant
+
+13:30:21 SUITE DONE
+13:42:49 === warmup --scenarios plains,spin,sprint,flight (607s, exit 0)
+C-warmup rep1 plains   fps 36.6  p99 35.83  max 57.0   >100ms 0   stall 0ms vram 12006 
+C-warmup rep1 spin     fps 35.2  p99 50.36  max 196.8  >100ms 7   stall 1146ms vram 11913 
+C-warmup rep1 sprint   fps 35.6  p99 47.7   max 579.4  >100ms 13  stall 3350ms vram 12953 
+C-warmup rep1 flight   fps 33.9  p99 39.94  max 261.4  >100ms 6   stall 878ms vram 12232 
+
+
+14:16:32 === base --scenarios plains,spin,sprint,flight --reps 3 (2023s, exit 0)
+C-base rep1 plains   fps 36.2  p99 34.52  max 52.6   >100ms 0   stall 0ms vram 10289 
+C-base rep1 spin     fps 37.2  p99 37.52  max 182.5  >100ms 3   stall 418ms vram 11507 
+C-base rep1 sprint   fps 39.6  p99 49.91  max 457.5  >100ms 14  stall 2822ms vram 12432 
+C-base rep1 flight   fps 37.5  p99 38.01  max 223.6  >100ms 5   stall 818ms vram 12769 
+C-base rep2 plains   fps 40.4  p99 32.9   max 51.3   >100ms 0   stall 0ms vram 10322 
+C-base rep2 spin     fps 39.0  p99 42.04  max 227.9  >100ms 8   stall 1211ms vram 11439 
+C-base rep2 sprint   fps 39.2  p99 44.01  max 858.8  >100ms 17  stall 5131ms vram 12765 
+C-base rep2 flight   fps None  p99 None   max None   >100ms None stall Nonems vram None could not reach WhiterunExterior04
+C-base rep3 plains   fps 40.6  p99 33.16  max 164.2  >100ms 1   stall 164ms vram 10523 
+C-base rep3 spin     fps 41.5  p99 54.27  max 219.0  >100ms 7   stall 1021ms vram 11483 
+C-base rep3 sprint   fps 39.1  p99 51.6   max 564.3  >100ms 11  stall 2354ms vram 12626 
+C-base rep3 flight   fps 38.1  p99 35.51  max 250.2  >100ms 3   stall 539ms vram 12881 
+
+
+14:22:52 === scenes --scenarios forest,city,interior (380s, exit 0)
+C-scenes rep1 forest   fps 31.2  p99 41.22  max 175.2  >100ms 1   stall 175ms vram 12376 
+C-scenes rep1 city     fps 36.0  p99 32.84  max 52.8   >100ms 0   stall 0ms vram 10535 
+C-scenes rep1 interior fps 50.0  p99 24.51  max 29.5   >100ms 0   stall 0ms vram 10998 
+
+
+14:33:56 === tracy --scenarios plains,spin,sprint,flight --tracy (664s, exit 0)
+C-tracy rep1 plains   fps 39.9  p99 32.66  max 171.0  >100ms 1   stall 171ms vram 10245 
+C-tracy rep1 spin     fps 40.4  p99 47.62  max 211.5  >100ms 6   stall 984ms vram 11314 
+C-tracy rep1 sprint   fps 38.6  p99 45.31  max 643.1  >100ms 12  stall 3517ms vram 12795 
+C-tracy rep1 flight   fps None  p99 None   max None   >100ms None stall Nonems vram None could not reach WhiterunExterior04
+
+
+14:41:58 === nr-altframes --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"alternateFrames": true}} (482s, exit 0)
+C-nr-altframes rep1 plains   fps 40.1  p99 33.99  max 50.9   >100ms 0   stall 0ms vram 9616 
+C-nr-altframes rep1 spin     fps 39.8  p99 48.34  max 192.2  >100ms 7   stall 1002ms vram 11304 
+C-nr-altframes rep1 sprint   fps 40.3  p99 42.55  max 492.0  >100ms 12  stall 2853ms vram 12441 
+
+
+14:50:18 === nr-off --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"enabled": false}} (501s, exit 0)
+C-nr-off rep1 plains   fps 43.1  p99 37.28  max 177.8  >100ms 1   stall 178ms vram 9950 
+C-nr-off rep1 spin     fps 45.5  p99 28.71  max 185.0  >100ms 7   stall 959ms vram 10176 
+C-nr-off rep1 sprint   fps 43.9  p99 45.52  max 860.4  >100ms 18  stall 4522ms vram 11895 
+
+
+14:58:57 === fg-off --scenarios plains,spin,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}} (519s, exit 0)
+C-fg-off rep1 plains   fps 46.9  p99 33.21  max 63.4   >100ms 0   stall 0ms vram 8208 
+C-fg-off rep1 spin     fps 45.6  p99 33.2   max 247.1  >100ms 10  stall 1641ms vram 10280 
+C-fg-off rep1 sprint   fps 45.9  p99 50.12  max 1240.6 >100ms 20  stall 5372ms vram 12160 
+
+
+15:07:44 === fg-nr-off --scenarios plains,spin,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}, "Neural Rendering": {"enabled": false}} (527s, exit 0)
+C-fg-nr-off rep1 plains   fps 59.1  p99 21.24  max 29.0   >100ms 0   stall 0ms vram 11320 
+C-fg-nr-off rep1 spin     fps 60.0  p99 40.54  max 218.0  >100ms 7   stall 1134ms vram 11412 
+C-fg-nr-off rep1 sprint   fps 60.2  p99 28.55  max 556.6  >100ms 6   stall 1774ms vram 11506 
+
+
+15:16:13 === treewind-off --scenarios plains,spin,sprint --cs-disable TreeWind (508s, exit 1)
+
+main menu not reached
+
+15:16:13 === psky-off --scenarios plains,spin,sprint --cs-disable PhysicalSky (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:14 === ssgi-ssr-off --scenarios plains,spin,sprint --cs-disable ScreenSpaceGI,ScreenSpaceReflections (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:14 SUITE DONE
+15:16:35 === nr-res75 --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"resolutionScale": 0.75}} (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:36 === nr-res75-alt --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"resolutionScale": 0.75, "alternateFrames": true}} (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:36 === nr-res50 --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"resolutionScale": 0.5}} (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:37 === psky-on --scenarios plains,spin,sprint --cs-set {"Physical Sky": {"enabled": true, "enableVolumetricClouds": false}} (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:38 === psky-volclouds --scenarios plains,spin,sprint --cs-set {"Physical Sky": {"enabled": true, "enableVolumetricClouds": true}} (1s, exit 1)
+
+close the game before applying a variant
+
+15:16:38 EXTRA DONE

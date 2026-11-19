@@ -1,0 +1,29 @@
+{
+ "label": "F-routes",
+ "rep": 2,
+ "scenario": "sprint2",
+ "config": "409cc22ad2",
+ "time": "2026-11-17 21:17:29",
+ "render": {
+  "frames": 4652,
+  "mean": 21.54,
+  "fps": 46.4,
+  "p50": 20.64,
+  "p95": 27.67,
+  "p99": 32.41,
+  "max": 170.3,
+  "over50": 15,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 170
+ },
+ "main_cpu_ms": 19.54,
+ "fg_share": 1.0,
+ "distance": 32534,
+ "cells": 9,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 29813
+}

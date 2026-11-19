@@ -1,0 +1,27 @@
+{
+ "label": "L-nrpreset2",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "b62acd4890",
+ "time": "2026-11-18 12:39:45",
+ "render": {
+  "frames": 534,
+  "mean": 28.58,
+  "fps": 35.0,
+  "p50": 26.32,
+  "p95": 36.6,
+  "p99": 42.89,
+  "max": 162.0,
+  "over50": 4,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 162
+ },
+ "main_cpu_ms": 25.39,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

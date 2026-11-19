@@ -1,0 +1,177 @@
+{
+ "Ysolda": {
+  "spawn": {
+   "baseFormID": "0x00013BAB",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3498.4345703125
+   },
+   "id": 0,
+   "loaded3D": false,
+   "refFormID": "0xFF000967",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19202.8671875,
+   "y": -7541.48779296875,
+   "z": -3488.072265625
+  }
+ },
+ "Camilla Valerius": {
+  "spawn": {
+   "baseFormID": "0x0001347B",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3498.296142578125
+   },
+   "id": 1,
+   "loaded3D": false,
+   "refFormID": "0xFF001884",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19203.154296875,
+   "y": -7541.65966796875,
+   "z": -3486.6142578125
+  }
+ },
+ "Jenassa": {
+  "spawn": {
+   "baseFormID": "0x000B9982",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3500.600341796875
+   },
+   "id": 2,
+   "loaded3D": false,
+   "refFormID": "0xFF001888",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19198.76171875,
+   "y": -7540.4833984375,
+   "z": -3491.390625
+  }
+ },
+ "Mjoll the Lioness": {
+  "spawn": {
+   "baseFormID": "0x0001336B",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3496.654541015625
+   },
+   "id": 3,
+   "loaded3D": false,
+   "refFormID": "0xFF00188B",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19201.771484375,
+   "y": -7540.43603515625,
+   "z": -3488.60009765625
+  }
+ },
+ "Serana": {
+  "spawn": {
+   "baseFormID": "0x02002B6C",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3496.061279296875
+   },
+   "id": 4,
+   "loaded3D": false,
+   "refFormID": "0xFF0019C6",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19196.83984375,
+   "y": -7535.39111328125,
+   "z": -3486.79345703125
+  }
+ },
+ "Hadvar": {
+  "spawn": {
+   "baseFormID": "0x0002BF9F",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3493.688232421875
+   },
+   "id": 5,
+   "loaded3D": false,
+   "refFormID": "0xFF0019E9",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19201.96484375,
+   "y": -7542.62646484375,
+   "z": -3488.1376953125
+  }
+ },
+ "Balgruuf the Greater": {
+  "spawn": {
+   "baseFormID": "0x00013BBD",
+   "eye": {
+    "x": 19201.4609375,
+    "y": -7541.16015625,
+    "z": -3612.34423828125
+   },
+   "id": 6,
+   "loaded3D": false,
+   "refFormID": "0xFF001A16",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) ai, npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19201.4609375,
+   "y": -7541.16015625,
+   "z": -3612.34423828125
+  },
+  "eye": {
+   "x": 19201.24609375,
+   "y": -7542.1181640625,
+   "z": -3482.486328125
+  }
+ }
+}

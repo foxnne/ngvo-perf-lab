@@ -1,0 +1,415 @@
+[
+ {
+  "name": "00_ref",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      16.0,
+      16.0
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "01_tile_24.7x16.7_author",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      24.66,
+      16.7
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "02_tile_40x27",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      40.0,
+      27.0
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "03_tile_61x37",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      61.0,
+      37.0
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "04_tile_33x47",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      33.0,
+      47.0
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "05_tile_97x53",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      97.0,
+      53.0
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "06_tile_12x9_smaller",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      12.0,
+      9.0
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ }
+]

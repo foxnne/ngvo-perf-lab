@@ -1,0 +1,72 @@
+{
+ "original": {
+  "enabled": false,
+  "alternateFrames": false,
+  "resolutionScale": 1.0,
+  "resolutionScaleX": 1.0,
+  "resolutionScaleY": 1.0
+ },
+ "shots": [
+  {
+   "file": "C:\\Users\\foxnn\\dev\\ngvo-perf-lab\\results\\nr_face\\face_tight_nr100.png",
+   "framing": "tight",
+   "wanted": {
+    "enabled": true,
+    "resolutionScale": 1.0,
+    "resolutionScaleX": 1.0,
+    "resolutionScaleY": 1.0
+   },
+   "readback": {
+    "enabled": true,
+    "resolutionScale": 1.0,
+    "alternateFrames": false
+   }
+  },
+  {
+   "file": "C:\\Users\\foxnn\\dev\\ngvo-perf-lab\\results\\nr_face\\face_tight_nr075.png",
+   "framing": "tight",
+   "wanted": {
+    "enabled": true,
+    "resolutionScale": 0.75,
+    "resolutionScaleX": 0.75,
+    "resolutionScaleY": 0.75
+   },
+   "readback": {
+    "enabled": true,
+    "resolutionScale": 0.75,
+    "alternateFrames": false
+   }
+  },
+  {
+   "file": "C:\\Users\\foxnn\\dev\\ngvo-perf-lab\\results\\nr_face\\face_tight_nr050.png",
+   "framing": "tight",
+   "wanted": {
+    "enabled": true,
+    "resolutionScale": 0.5,
+    "resolutionScaleX": 0.5,
+    "resolutionScaleY": 0.5
+   },
+   "readback": {
+    "enabled": true,
+    "resolutionScale": 0.5,
+    "alternateFrames": false
+   }
+  },
+  {
+   "file": "C:\\Users\\foxnn\\dev\\ngvo-perf-lab\\results\\nr_face\\face_tight_nroff.png",
+   "framing": "tight",
+   "wanted": {
+    "enabled": false
+   },
+   "readback": {
+    "enabled": false,
+    "resolutionScale": 1.0,
+    "alternateFrames": false
+   }
+  }
+ ],
+ "pose_check": {
+  "tight": 0.00354,
+  "bust": 0.02745
+ }
+}

@@ -1,0 +1,39 @@
+[15:08:14.285] [41244] [I] SPS v1-0-73-0
+[15:08:14.285] [41244] [I] SPS 1.0.73 loaded
+[15:08:14.285] [41244] [I] Skyrim base address 0x7FF628070000 (for tools/resolve_rva.py)
+[15:08:14.285] [41244] [I] SPS_User.ini (menu settings) loaded
+[15:08:14.285] [41244] [I] Occlusion: hiding ON | reproject on | pause from 2.0 deg / 64 units | margin 2.0 % + 16 | hidden in 2 images in a row | max 4096 tiles | characters never
+[15:08:14.285] [41244] [I] ShadowStableCascade (with far shadow cache): sun step 0.05 deg | extent step 64 x1.00 | margin 48 | depth step 64
+[15:08:14.285] [41244] [I] ShadowInstancing: OFF | verify mode false (offset 0) | techniques C046,C045 | two-sided false | debug mode 0
+[15:08:14.285] [41244] [I] ActorShadowCulling: ON | from distance 3500 | point lights true
+[15:08:14.285] [41244] [I] ActorPartShadowCulling: ON | radius < 8 | from distance 500
+[15:08:14.285] [41244] [I] LightGatherThrottle: ON | movement >= 8 | radius +-16 | at the latest after 500 ms
+[15:08:14.285] [41244] [I] SubtreePruning: ON | sun true | point light false | rain/sky true
+[15:08:14.285] [41244] [I] TextureStream: ON | report false | safety factor 2.0 | min. 1024 px | budget 0.40 ms | clothing/armor true | bodies/faces/hair true | excluded: interface\,\maps\,mapmarker,\lod\,terrain\,fonts\,book,\sky\,effects\,cubemaps\
+[15:08:14.285] [41244] [I] LightShadowCache: ON
+[15:08:14.285] [41244] [I] FarShadowCache (optional): OFF | trees still from 2000
+[15:08:14.285] [41244] [I] ShadowCulling: ON | from cascade 1 | distance > 1500 | radius < 150 | radius/distance < 0.035 | skinned excluded: true | only above sun elevation 10 deg
+[15:08:14.285] [41244] [I] PointLightShadowCulling: ON | distance > 1000 | radius < 150 | radius/distance < 0.035 | skinned excluded: true
+[15:08:14.285] [41244] [I] SkylightingCulling: ON | min. radius 128
+[15:08:14.285] [41244] [I] DecalCulling: ON | from distance 1500 | radius < 32
+[15:08:14.285] [41244] [I] MainViewCulling: OFF | distance > 3000 | radius < 100 | radius/distance < 0.0020 | skinned excluded: true
+[15:08:14.285] [41244] [I] DepthPrepassCulling: OFF | distance > 1500 | radius < 200 | radius/distance < 0.025 | skinned excluded: true
+[15:08:14.285] [41244] [I] Hook installed: VirtualMachine::Update (vfunc 0x4)
+[15:08:14.285] [41244] [I] Hook installed: VirtualMachine::UpdateTasklets (vfunc 0x5)
+[15:08:14.285] [41244] [I] Hook installed: VirtualMachine::SetOverstressed (vfunc 0x6)
+[15:08:14.286] [41244] [I] Hook installed: PlayerCharacter::Update (vfunc 0xAD)
+[15:08:14.286] [41244] [I] Hook installed: Character::Update (vfunc 0xAD)
+[15:08:14.286] [41244] [I] Hook installed: BSCullingProcess::AppendVirtual (vfunc 0x18)
+[15:08:14.286] [41244] [I] Hook installed: BSParabolicCullingProcess::AppendVirtual (vfunc 0x18)
+[15:08:14.286] [41244] [I] Hook installed: Process (vfunc 0x16) for BSCullingProcess, BSParabolicCullingProcess, BSGeometryListCullingProcess
+[15:08:14.286] [41244] [I] Hooks installed: BSShadowDirectionalLight::Accumulate (0x9) / Render (0xA)
+[15:08:14.286] [41244] [I] Hooks installed: BSShadowParabolicLight / BSShadowFrustumLight::Render (0xA) - GPU timing
+[15:08:14.286] [41244] [I] Shadow instancing off at startup - RenderBatches detour not installed
+[15:08:14.286] [41244] [I] Feature not used on this game version (by design): Shadow instancing - off at startup (restart after enabling)
+[15:08:14.286] [41244] [I] Hook installed: BSUtilityShader::SetupGeometry (vfunc 0x6)
+[15:08:14.286] [41244] [I] Hooks installed: RenderPassImmediately call sites 1 and 2
+[15:08:14.286] [41244] [I] LightGather: hook on light assignment of dynamic point lights installed
+[15:08:14.286] [41244] [I] Hook installed: shadow map draw (ID 107604+0x167) - shadow cache for static lights
+[15:08:14.291] [41244] [I] TextureStream: 2302 remembered texture sizes loaded
+[15:08:14.291] [41244] [I] Hook installed: DDS loader (Detour) - load reduced; only textures straight from DDS files are streamed
+[15:08:17.368] [41244] [I] WaitProbe: off (developer option bEngineProbes)

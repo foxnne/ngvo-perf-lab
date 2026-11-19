@@ -1,0 +1,605 @@
+[
+ {
+  "name": "01_default_density_1.0",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 1.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.7,
+            0.7,
+            0.0,
+            0.6
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 2,
+           "range": [
+            -1,
+            1,
+            0,
+            1
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 1.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "02_type_G_popcorn",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 1.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.7,
+            0.7,
+            0.0,
+            0.6
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 4,
+           "range": [
+            -1,
+            1,
+            1,
+            1
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 1.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "03_type_B_streaks_d2",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 2.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.7,
+            0.7,
+            0.0,
+            0.6
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 4,
+           "range": [
+            -1,
+            1,
+            0,
+            0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 1.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "04_B_connected_cover_d0.5",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 0.5,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 4,
+           "range": [
+            -1,
+            1,
+            0,
+            0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 1.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "05_as04_uvsize_3",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 0.5,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 4,
+           "range": [
+            -1,
+            1,
+            0,
+            0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "06_sparse_streaky_candidate",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 0.4,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.6,
+            0.5,
+            0.0,
+            0.75
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 4,
+           "range": [
+            -1,
+            1,
+            0,
+            0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0,
+     "altitude": 9000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "07_as05_mixed_fibre_tuft",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 0.5,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 3,
+           "range": [
+            -1,
+            0.2,
+            0.0,
+            0.5
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "08_cirrostratus_veil",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 0.15,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 1,
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "frequency": 1.0,
+           "offset": [
+            0,
+            0
+           ],
+           "noise": 4,
+           "range": [
+            -1,
+            1,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0,
+     "altitude": 8000
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ },
+ {
+  "name": "09_cirrus_off",
+  "set": {
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": [
+        0.2,
+        0.65,
+        0.0,
+        0.65
+       ]
+      }
+     }
+    }
+   },
+   "cloudLayer": {
+    "cirrus": {
+     "enabled": true,
+     "densityScale": 0.0
+    }
+   }
+  },
+  "features": {},
+  "settle": 18
+ }
+]

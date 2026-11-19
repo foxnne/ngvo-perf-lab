@@ -1,0 +1,261 @@
+{
+ "shots": {
+  "clear_sky__plains_west__h12": {
+   "weather": "SClearSkyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.535,
+   "p99": 0.961,
+   "clip%": 0.03
+  },
+  "clear_sky__plains_west__h18.2": {
+   "weather": "SClearSkyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.322,
+   "p99": 0.876,
+   "clip%": 0.0
+  },
+  "clear__plains_west__h12": {
+   "weather": "SunnyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.542,
+   "p99": 0.971,
+   "clip%": 0.25
+  },
+  "clear__plains_west__h18.2": {
+   "weather": "SunnyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.329,
+   "p99": 0.892,
+   "clip%": 0.0
+  },
+  "cloudy__plains_west__h12": {
+   "weather": "CloudyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.55,
+   "p99": 0.957,
+   "clip%": 0.03
+  },
+  "cloudy__plains_west__h18.2": {
+   "weather": "CloudyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.255,
+   "p99": 0.78,
+   "clip%": 0.01
+  },
+  "overcast__plains_west__h12": {
+   "weather": "OvercastPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.385,
+   "p99": 0.715,
+   "clip%": 0.0
+  },
+  "overcast__plains_west__h18.2": {
+   "weather": "OvercastPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.306,
+   "p99": 0.577,
+   "clip%": 0.0
+  },
+  "rain__plains_west__h12": {
+   "weather": "RainPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.259,
+   "p99": 0.448,
+   "clip%": 0.0
+  },
+  "rain__plains_west__h18.2": {
+   "weather": "RainPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.181,
+   "p99": 0.355,
+   "clip%": 0.0
+  },
+  "storm__plains_west__h12": {
+   "weather": "StormPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.284,
+   "p99": 0.368,
+   "clip%": 0.0
+  },
+  "storm__plains_west__h18.2": {
+   "weather": "StormPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.307,
+   "p99": 0.562,
+   "clip%": 0.0
+  },
+  "snow__plains_west__h12": {
+   "weather": "Snow",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.529,
+   "p99": 0.838,
+   "clip%": 0.0
+  },
+  "snow__plains_west__h18.2": {
+   "weather": "Snow",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.415,
+   "p99": 0.772,
+   "clip%": 0.0
+  },
+  "fog__plains_west__h12": {
+   "weather": "FogPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.634,
+   "p99": 0.759,
+   "clip%": 0.0
+  },
+  "fog__plains_west__h18.2": {
+   "weather": "FogPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.407,
+   "p99": 0.528,
+   "clip%": 0.0
+  },
+  "clear_sky__ilinalta_west__h12": {
+   "weather": "SClearSkyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.38,
+   "p99": 0.975,
+   "clip%": 0.87
+  },
+  "clear_sky__ilinalta_west__h18.2": {
+   "weather": "SClearSkyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.22,
+   "p99": 0.755,
+   "clip%": 0.0
+  },
+  "clear__ilinalta_west__h12": {
+   "weather": "SunnyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.387,
+   "p99": 0.976,
+   "clip%": 0.98
+  },
+  "clear__ilinalta_west__h18.2": {
+   "weather": "SunnyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.216,
+   "p99": 0.764,
+   "clip%": 0.0
+  },
+  "cloudy__ilinalta_west__h12": {
+   "weather": "CloudyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.326,
+   "p99": 0.937,
+   "clip%": 0.02
+  },
+  "cloudy__ilinalta_west__h18.2": {
+   "weather": "CloudyPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.174,
+   "p99": 0.653,
+   "clip%": 0.0
+  },
+  "overcast__ilinalta_west__h12": {
+   "weather": "OvercastPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.284,
+   "p99": 0.586,
+   "clip%": 0.0
+  },
+  "overcast__ilinalta_west__h18.2": {
+   "weather": "OvercastPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.215,
+   "p99": 0.513,
+   "clip%": 0.0
+  },
+  "rain__ilinalta_west__h12": {
+   "weather": "RainPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.218,
+   "p99": 0.423,
+   "clip%": 0.0
+  },
+  "rain__ilinalta_west__h18.2": {
+   "weather": "RainPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.151,
+   "p99": 0.37,
+   "clip%": 0.0
+  },
+  "storm__ilinalta_west__h12": {
+   "weather": "StormPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.287,
+   "p99": 0.425,
+   "clip%": 0.0
+  },
+  "storm__ilinalta_west__h18.2": {
+   "weather": "StormPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.104,
+   "p99": 0.188,
+   "clip%": 0.0
+  },
+  "snow__ilinalta_west__h12": {
+   "weather": "Snow",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.426,
+   "p99": 0.672,
+   "clip%": 0.0
+  },
+  "snow__ilinalta_west__h18.2": {
+   "weather": "Snow",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.25,
+   "p99": 0.557,
+   "clip%": 0.0
+  },
+  "fog__ilinalta_west__h12": {
+   "weather": "FogPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.549,
+   "p99": 0.778,
+   "clip%": 0.0
+  },
+  "fog__ilinalta_west__h18.2": {
+   "weather": "FogPF",
+   "set_ok": "{'action': 'set', 'applied': True, 'shortName': 'PhysicalSky'}",
+   "weather_ok": true,
+   "mean": 0.33,
+   "p99": 0.524,
+   "clip%": 0.0
+  }
+ },
+ "keys_not_in_live_settings": []
+}

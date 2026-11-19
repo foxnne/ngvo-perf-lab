@@ -1,0 +1,38 @@
+{
+ "label": "B-scenes",
+ "rep": 1,
+ "scenario": "interior",
+ "config": "5b309780b6",
+ "time": "2026-11-17 12:22:22",
+ "render": {
+  "frames": 568,
+  "mean": 26.79,
+  "fps": 37.3,
+  "p50": 26.51,
+  "p95": 29.91,
+  "p99": 33.78,
+  "max": 57.4,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 24.18,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 11268,
+  "proc_min": 11046,
+  "new_top": [
+   11,
+   0,
+   0,
+   0
+  ],
+  "geom_live_max": 1034
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

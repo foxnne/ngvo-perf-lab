@@ -1,0 +1,12 @@
+tilted ground-hugging refs tested: 400 (|rx| or |ry| > 0.2 rad and both > 0.08 rad)
+Rz*Ry*Rx clockwise (floating-mesh nif.py) spread of (object top - landscape) within footprint: median 92.8  p90 267.9 ; median offset 6.6
+Rx*Ry*Rz clockwise (USED)      spread of (object top - landscape) within footprint: median 37.7  p90 77.4 ; median offset -10.3
+Rz*Ry*Rx counter-clockwise     spread of (object top - landscape) within footprint: median 104.1  p90 279.4 ; median offset 12.0
+Rx*Ry*Rz counter-clockwise     spread of (object top - landscape) within footprint: median 152.2  p90 325.2 ; median offset 22.6
+Ry*Rx*Rz clockwise             spread of (object top - landscape) within footprint: median 38.1  p90 78.3 ; median offset -11.3
+Rx*Ry*Rz, Z cw, X/Y ccw        spread of (object top - landscape) within footprint: median 144.6  p90 314.0 ; median offset 24.7
+Rx*Ry*Rz, X cw, Y ccw          spread of (object top - landscape) within footprint: median 102.9  p90 250.5 ; median offset 10.1
+Rx*Ry*Rz, X ccw, Y cw          spread of (object top - landscape) within footprint: median 107.0  p90 268.5 ; median offset 8.1
+Rz*Rx*Ry clockwise             spread of (object top - landscape) within footprint: median 88.9  p90 269.1 ; median offset 3.7
+Rz only (tilt ignored)         spread of (object top - landscape) within footprint: median 87.4  p90 223.5 ; median offset -1.8
+Z clockwise, X/Y counter       spread of (object top - landscape) within footprint: median 102.3  p90 271.0 ; median offset 10.6

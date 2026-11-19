@@ -1,0 +1,30 @@
+ext/
+results/raw/
+__pycache__/
+*.tracy
+# test output and local-only material (added 2026-11-18 before publishing)
+results/**/*.png
+results/**/*.jpg
+results/**/*.jpeg
+results/sky_sweep/
+results/npc_portraits/
+results/load_shot/
+results/map_shot/
+results/whale_check/
+results/footprint_check/
+results/*.log
+gallery/
+/*.log
+harness/queue.txt
+# tool folders: generated or third-party-derived data stays local
+tools/**/*.dds
+tools/**/*.pkl
+tools/**/*.npz
+tools/**/*.esp
+tools/**/*.esm
+tools/**/*.nif
+tools/**/*.bto
+tools/nat3-volclouds/draft/_generator/nat-cs-wthr-records.json
+ref/
+configs/*/profile/
+configs/*/ini/

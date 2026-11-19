@@ -1,0 +1,429 @@
+[
+ {
+  "name": "00_no_map",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      24.66,
+      16.7
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4,
+   "cloudMap": {
+    "localCloud": {
+     "states": []
+    }
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 20
+ },
+ {
+  "name": "01_map_default_32m",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      24.66,
+      16.7
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4,
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 0.0,
+        "asset": "tamriel-orographic",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 300.0,
+        "heightSpan": 1056.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 0,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 1.0,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    }
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 20
+ },
+ {
+  "name": "02_map_texel_8m",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      24.66,
+      16.7
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4,
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 0.0,
+        "asset": "tamriel-orographic",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 300.0,
+        "heightSpan": 1056.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 0,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 1.0,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    },
+    "localTexelSize": 8.0
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 20
+ },
+ {
+  "name": "03_map_8m_strength_0.6",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      24.66,
+      16.7
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4,
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 0.0,
+        "asset": "tamriel-orographic",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 300.0,
+        "heightSpan": 1056.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 0,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 0.6,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    },
+    "localTexelSize": 8.0
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 20
+ },
+ {
+  "name": "04_map_8m_maximum_blend",
+  "set": {
+   "rayMarchRange": 32.0,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 0.75,
+     "ndfAltitudeOffset": 1200,
+     "ndfAltitudeScale": 900,
+     "ndfScale": [
+      24.66,
+      16.7
+     ],
+     "curvatureRadius": 74.946,
+     "bottomSpreadScale": 0.8133333
+    },
+    "lighting": {
+     "brightness": 1.0,
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0
+    },
+    "cirrus": {
+     "densityScale": 1.0
+    },
+    "wind": {
+     "lowVelocity": [
+      5.0,
+      0.0
+     ],
+     "highVelocity": [
+      10.0,
+      0.0
+     ]
+    }
+   },
+   "aerosolType": 1,
+   "enableVanillaClouds": false,
+   "sunlightColor": [
+    10.0,
+    9.7,
+    9.5
+   ],
+   "aerosolLoading": 0.4,
+   "cloudMap": {
+    "localCloud": {
+     "states": [
+      {
+       "value": {
+        "altitude": 0.0,
+        "asset": "tamriel-orographic",
+        "center": [
+         146.227,
+         233.964
+        ],
+        "enabled": true,
+        "feather": 300.0,
+        "heightSpan": 1056.0,
+        "heightWeight": 1.0,
+        "modelingAlpha": true,
+        "modelingBlend": 1,
+        "modelingWeight": 1.0,
+        "rotation": 0.0,
+        "size": [
+         6960.415,
+         5498.143
+        ],
+        "strength": 1.0,
+        "worldspace": "Tamriel"
+       },
+       "weight": 1.0
+      }
+     ]
+    },
+    "localTexelSize": 8.0
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 20
+ }
+]

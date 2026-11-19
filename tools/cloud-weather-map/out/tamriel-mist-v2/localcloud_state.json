@@ -1,0 +1,25 @@
+{
+  "value": {
+    "altitude": 240.0,
+    "asset": "tamriel-mist-v2",
+    "center": [
+      146.227,
+      233.964
+    ],
+    "enabled": true,
+    "feather": 0.0,
+    "heightSpan": 1824.0,
+    "heightWeight": 1.0,
+    "modelingAlpha": true,
+    "modelingBlend": 0,
+    "modelingWeight": 1.0,
+    "rotation": 0.0,
+    "size": [
+      6960.415,
+      5498.143
+    ],
+    "strength": 1.0,
+    "worldspace": "Tamriel"
+  },
+  "weight": 1.0
+}

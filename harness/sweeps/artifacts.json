@@ -1,0 +1,14 @@
+[
+ {"name": "00_draft", "set": {}},
+ {"name": "01_shadow_range_4", "set": {"shadowVolumeRange": 4.0}},
+ {"name": "02_shadow_range_16", "set": {"shadowVolumeRange": 16.0}},
+ {"name": "03_march_0.25", "set": {"marchStepScale": 0.25}},
+ {"name": "04_blur_2", "set": {"cloudBlurRadius": 2}},
+ {"name": "05_blur_0", "set": {"cloudBlurRadius": 0}},
+ {"name": "06_halfres_ap_shadow", "set": {"halfResApShadow": true}},
+ {"name": "07_map_scale_x3", "set": {"cloudLayer": {"low": {"ndfScale": [74.0, 50.1]}}}},
+ {"name": "08_map_scale_x0.5", "set": {"cloudLayer": {"low": {"ndfScale": [12.3, 8.35]}}}},
+ {"name": "09_local_cloud_off", "set": {"cloudMap": {"localCloud": {"states": []}}}},
+ {"name": "10_march_range_48", "set": {"rayMarchRange": 48.0}},
+ {"name": "11_disturbance_0.6", "set": {"cloudLayer": {"wind": {"disturbance": 0.6}}}}
+]

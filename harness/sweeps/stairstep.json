@@ -1,0 +1,94 @@
+[
+ {
+  "name": "00_current_mid64_jitter0",
+  "set": {}
+ },
+ {
+  "name": "01_sample_jitter_1",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0
+   }
+  }
+ },
+ {
+  "name": "02_mid_32px",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "middlePixelSize": 32
+   }
+  }
+ },
+ {
+  "name": "03_mid_16px",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "middlePixelSize": 16
+   }
+  }
+ },
+ {
+  "name": "04_mid_32px_jitter_1",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "middlePixelSize": 32,
+    "sampleJitter": 1.0
+   }
+  }
+ },
+ {
+  "name": "05_mid_16px_jitter_1",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "middlePixelSize": 16,
+    "sampleJitter": 1.0
+   }
+  }
+ },
+ {
+  "name": "06_mid_32_slices_64_jitter",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "middlePixelSize": 32,
+    "middleSlices": 64,
+    "sampleJitter": 1.0
+   }
+  }
+ },
+ {
+  "name": "07_distant_16px_jitter",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "middlePixelSize": 32,
+    "distantPixelSize": 16,
+    "sampleJitter": 1.0
+   }
+  }
+ },
+ {
+  "name": "08_terrain_shadows_off",
+  "set": {},
+  "features": {
+   "TerrainShadows": {
+    "EnableTerrainShadow": false
+   }
+  }
+ },
+ {
+  "name": "09_local_range_30000_jitter",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "localRange": 30000.0,
+    "sampleJitter": 1.0
+   }
+  }
+ }
+]

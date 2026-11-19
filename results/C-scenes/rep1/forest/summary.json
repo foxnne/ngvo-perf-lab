@@ -1,0 +1,38 @@
+{
+ "label": "C-scenes",
+ "rep": 1,
+ "scenario": "forest",
+ "config": "163a467ad0",
+ "time": "2026-11-17 14:21:02",
+ "render": {
+  "frames": 472,
+  "mean": 32.01,
+  "fps": 31.2,
+  "p50": 31.3,
+  "p95": 34.32,
+  "p99": 41.22,
+  "max": 175.2,
+  "over50": 2,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 175
+ },
+ "main_cpu_ms": 28.86,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 12376,
+  "proc_min": 12376,
+  "new_top": [
+   5,
+   4,
+   3,
+   2
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

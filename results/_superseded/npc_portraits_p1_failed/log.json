@@ -1,0 +1,92 @@
+{
+ "Ysolda": {
+  "spawn": {
+   "baseFormID": "0x00013BAB",
+   "id": 0,
+   "refFormID": "0xFF00098D",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19161.833984375,
+   "y": -7535.11865234375,
+   "z": -3615.251220703125
+  },
+  "talk": {
+   "error": "unknown or expired 'id', or not an actor"
+  },
+  "dialogue_open": false
+ },
+ "Camilla Valerius": {
+  "spawn": {
+   "baseFormID": "0x0001347B",
+   "id": 1,
+   "refFormID": "0xFF001884",
+   "rz": 160.0,
+   "warnings": [
+    "unknown key(s) npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19086.587890625,
+   "y": -7328.38623046875,
+   "z": -3615.251220703125
+  },
+  "talk": {
+   "ok": false
+  },
+  "dialogue_open": false
+ },
+ "Jenassa": {
+  "spawn": {
+   "baseFormID": "0x000B9982",
+   "id": 2,
+   "refFormID": "0xFF0018CB",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19161.83203125,
+   "y": -7535.1181640625,
+   "z": -3615.2509765625
+  },
+  "talk": {
+   "error": "unknown or expired 'id', or not an actor"
+  },
+  "dialogue_open": false
+ },
+ "Mjoll the Lioness": {
+  "spawn": {
+   "baseFormID": "0x0001336B",
+   "id": 3,
+   "refFormID": "0xFF001971",
+   "rz": 160.0,
+   "warnings": [
+    "unknown key(s) npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19086.5859375,
+   "y": -7328.3857421875,
+   "z": -3615.2509765625
+  },
+  "talk": {
+   "ok": false
+  },
+  "dialogue_open": false
+ },
+ "Serana": {
+  "spawn": {
+   "baseFormID": "0x02002B6C",
+   "id": 4,
+   "refFormID": "0xFF001A27",
+   "rz": 340.0,
+   "warnings": [
+    "unknown key(s) npc; accepted: action, equip, form, fov, id, items, mode, pitch, rz, x, y, yaw, z"
+   ],
+   "x": 19150.541015625,
+   "y": -7546.353515625,
+   "z": -3616.2509765625
+  },
+  "talk": {
+   "ok": true
+  },
+  "dialogue_open": true
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "label": "D-nr-res75",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "96601ac655",
+ "time": "2026-11-17 16:39:03",
+ "render": {
+  "frames": 4596,
+  "mean": 21.79,
+  "fps": 45.9,
+  "p50": 21.66,
+  "p95": 26.06,
+  "p99": 30.31,
+  "max": 175.0,
+  "over50": 8,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 175
+ },
+ "main_cpu_ms": 19.78,
+ "fg_share": 1.0,
+ "distance": 19591,
+ "cells": 7,
+ "vram": {
+  "proc_max": 12585,
+  "proc_min": 9751,
+  "new_top": [
+   1016,
+   966,
+   900,
+   872
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 16972
+}

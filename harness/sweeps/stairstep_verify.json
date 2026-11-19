@@ -1,0 +1,25 @@
+[
+ {
+  "name": "00_soft_terrain_shadow_in_haze",
+  "set": {}
+ },
+ {
+  "name": "01_plus_jitter_mid32",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   }
+  }
+ },
+ {
+  "name": "02_terrain_shadows_off",
+  "set": {},
+  "features": {
+   "TerrainShadows": {
+    "EnableTerrainShadow": false
+   }
+  }
+ }
+]

@@ -1,0 +1,40 @@
+{
+ "label": "smoke",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "fe68e81446",
+ "time": "2026-11-17 10:31:41",
+ "render": {
+  "frames": 2863,
+  "mean": 34.97,
+  "fps": 28.6,
+  "p50": 32.59,
+  "p95": 45.1,
+  "p99": 89.73,
+  "max": 501.8,
+  "over50": 105,
+  "over100": 26,
+  "over250": 2,
+  "stall_ms": 4397
+ },
+ "main_cpu_ms": 30.62,
+ "fg_share": 1.0,
+ "distance": 23631,
+ "cells": 10,
+ "vram": {
+  "proc_max": 12636,
+  "proc_min": 8646,
+  "new_top": [
+   1097,
+   973,
+   956,
+   900
+  ],
+  "geom_live_max": 2356
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "route_progress": 0.87,
+ "stuck_hops": 1
+}

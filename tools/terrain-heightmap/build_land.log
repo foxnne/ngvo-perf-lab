@@ -1,0 +1,93 @@
+active plugins in load order parsed 856 (with WRLD group 224), missing 0, 2.2s
+errors/skips: 1
+  ERR Skyrim.esm LAND 000B2797 in markarthworld: no VHGT (earlier record kept)
+DNAM (-27000.0, -14000.0, 'Occlusion.esp') (-27000.0, -14000.0, 'DynDOLOD.esp')
+markarthworld cells with LAND: 139 cells with two different LAND forms: 0
+  winning LAND by plugin:
+      139  Skyrim.esm
+  LAND forms present in more than one plugin: 0
+tamriel cells with LAND: 11186 cells with two different LAND forms: 2
+   DUP ((-44, 37), (2236962, 'skyrim.esm'), 'Dawnguard.esm', (10463, 'skyrim.esm'), 'Skyrim.esm')
+   DUP ((-43, 36), (96731, 'skyrim.esm'), 'Dawnguard.esm', (10493, 'skyrim.esm'), 'Skyrim.esm')
+  winning LAND by plugin:
+     8265  Skyrim.esm
+      728  Update.esm
+      528  Northern Roads.esp
+      334  Landscape Fixes For Grass Mods.esp
+      333  Northern Roads - Landscape Fixes for Grass Mods patch.esp
+      243  Complementary Grass Fixes.esp
+      164  Dawnguard.esm
+      149  Northern Roads - Lux Via patch.esp
+       74  Northern Roads - Complementary Grass Fixes patch.esp
+       69  Northern Roads - Lux Via - LFFGM patch.esp
+       48  Shadows over Ilinalta.esp
+       47  Northern Roads - Additional Roads.esp
+       41  Northern Roads - JKs Skyrim patch.esp
+       24  Northern Roads - Landscape Fix and Improvement.esp
+       17  HearthFires.esm
+       16  AamonTrinaMod.esp
+       16  NGVO - Northern Roads Patch.esp
+       11  JKs Skyrim.esp
+       11  Northern Roads - CC Farming patch.esp
+       10  Dragonborn.esm
+        8  Waterfalls Retreat.esp
+        6  Landscape For Grass Mods - Military Camps.esp
+        5  Northern Roads - CC Tundra Homestead patch.esp
+        5  Northern Roads - LFFGM - Complementary Grass Fix Patch.esp
+        5  MrissiTailOfTroubles.esp
+        4  PathsOfEmpyrean.esp
+        4  Northern Roads - Lux Via - LFFGM - Whiterun Repaired Bridge Patch.esp
+        4  Water for ENB (Shades of Skyrim).esp
+        4  Paragliding.esp
+        3  Riverside Treehouse.esp
+        2  Northern Roads - Water for ENB (Shades of Skyrim) - LFFGM patch.esp
+        2  Mage Towers of Skyrim.esp
+        2  Northern Roads - CC Myrwatch patch.esp
+        1  unofficial skyrim special edition patch.esp
+        1  Northern Roads - Water for ENB (Shades of Skyrim) patch.esp
+        1  man_DaedricShrines.esp
+        1  DynDOLOD.esm
+  LAND forms present in more than one plugin: 2919
+plugins with Tamriel/Markarth LAND records:
+    Skyrim.esm {'cells': 11334, 'land': 11325, 'land_skipped': 1}
+    Update.esm {'cells': 2030, 'land': 1649, 'land_skipped': 0}
+    Dawnguard.esm {'cells': 329, 'land': 178, 'land_skipped': 0}
+    HearthFires.esm {'cells': 172, 'land': 30, 'land_skipped': 0}
+    Dragonborn.esm {'cells': 34, 'land': 10, 'land_skipped': 0}
+    unofficial skyrim special edition patch.esp {'cells': 3150, 'land': 2, 'land_skipped': 0}
+    Lux Via.esp {'cells': 442, 'land': 14, 'land_skipped': 0}
+    DynDOLOD.esm {'cells': 1472, 'land': 1, 'land_skipped': 0}
+    JKs Skyrim.esp {'cells': 131, 'land': 35, 'land_skipped': 0}
+    Landscape Fixes For Grass Mods.esp {'cells': 874, 'land': 874, 'land_skipped': 0}
+    Complementary Grass Fixes.esp {'cells': 692, 'land': 692, 'land_skipped': 0}
+    Landscape For Grass Mods - Military Camps.esp {'cells': 7, 'land': 7, 'land_skipped': 0}
+    man_DaedricShrines.esp {'cells': 16, 'land': 5, 'land_skipped': 0}
+    Lux Via - plugin.esp {'cells': 171, 'land': 14, 'land_skipped': 0}
+    Lux Via - Whiterun Repaired Bridge.esp {'cells': 3, 'land': 2, 'land_skipped': 0}
+    Water for ENB (Shades of Skyrim).esp {'cells': 372, 'land': 4, 'land_skipped': 0}
+    Riverside Treehouse.esp {'cells': 9, 'land': 8, 'land_skipped': 0}
+    Northern Roads.esp {'cells': 1213, 'land': 1202, 'land_skipped': 0}
+    Northern Roads - Landscape Fix and Improvement.esp {'cells': 39, 'land': 39, 'land_skipped': 0}
+    Northern Roads - Landscape Fixes for Grass Mods patch.esp {'cells': 526, 'land': 526, 'land_skipped': 0}
+    Northern Roads - Water for ENB (Shades of Skyrim) patch.esp {'cells': 133, 'land': 8, 'land_skipped': 0}
+    Northern Roads - Water for ENB (Shades of Skyrim) - LFFGM patch.esp {'cells': 9, 'land': 8, 'land_skipped': 0}
+    Northern Roads - Complementary Grass Fixes patch.esp {'cells': 132, 'land': 132, 'land_skipped': 0}
+    Northern Roads - LFFGM - Complementary Grass Fix Patch.esp {'cells': 5, 'land': 5, 'land_skipped': 0}
+    Northern Roads - Additional Roads.esp {'cells': 53, 'land': 50, 'land_skipped': 0}
+    Northern Roads - Lux Via patch.esp {'cells': 304, 'land': 217, 'land_skipped': 0}
+    Northern Roads - Lux Via - LFFGM patch.esp {'cells': 82, 'land': 80, 'land_skipped': 0}
+    Northern Roads - CC Farming patch.esp {'cells': 12, 'land': 12, 'land_skipped': 0}
+    Northern Roads - CC Myrwatch patch.esp {'cells': 2, 'land': 2, 'land_skipped': 0}
+    Northern Roads - CC Tundra Homestead patch.esp {'cells': 5, 'land': 5, 'land_skipped': 0}
+    Northern Roads - Lux Via - LFFGM - Whiterun Repaired Bridge Patch.esp {'cells': 4, 'land': 4, 'land_skipped': 0}
+    Northern Roads - Ivarstead Tweak.esp {'cells': 5, 'land': 5, 'land_skipped': 0}
+    NGVO - Northern Roads Patch.esp {'cells': 24, 'land': 23, 'land_skipped': 0}
+    Northern Roads - JKs Skyrim patch.esp {'cells': 53, 'land': 41, 'land_skipped': 0}
+    Paragliding.esp {'cells': 11, 'land': 4, 'land_skipped': 0}
+    AamonTrinaMod.esp {'cells': 20, 'land': 16, 'land_skipped': 0}
+    Waterfalls Retreat.esp {'cells': 14, 'land': 8, 'land_skipped': 0}
+    PathsOfEmpyrean.esp {'cells': 8, 'land': 4, 'land_skipped': 0}
+    MrissiTailOfTroubles.esp {'cells': 28, 'land': 5, 'land_skipped': 0}
+    Shadows over Ilinalta.esp {'cells': 69, 'land': 48, 'land_skipped': 0}
+    Mage Towers of Skyrim.esp {'cells': 10, 'land': 2, 'land_skipped': 0}
+done 6.4s

@@ -1,0 +1,97 @@
+[
+ {
+  "name": "00_draft",
+  "set": {}
+ },
+ {
+  "name": "01_haze_1.3",
+  "set": {
+   "aerosolLoading": 1.3
+  }
+ },
+ {
+  "name": "02_haze_2.2",
+  "set": {
+   "aerosolLoading": 2.2
+  }
+ },
+ {
+  "name": "03_haze_2.2_glow_tight",
+  "set": {
+   "aerosolLoading": 2.2,
+   "aerosolPhaseG": 0.9
+  }
+ },
+ {
+  "name": "04_haze_2.2_glow_wide",
+  "set": {
+   "aerosolLoading": 2.2,
+   "aerosolPhaseG": 0.65
+  }
+ },
+ {
+  "name": "05_shadow_contrast",
+  "set": {
+   "aerosolLoading": 1.3,
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  }
+ },
+ {
+  "name": "06_shadow_grid_fine_4km",
+  "set": {
+   "aerosolLoading": 1.3,
+   "shadowVolumeRange": 4.0
+  }
+ },
+ {
+  "name": "07_shadow_grid_wide_16km",
+  "set": {
+   "aerosolLoading": 1.3,
+   "shadowVolumeRange": 16.0
+  }
+ },
+ {
+  "name": "08_halfres_shadow",
+  "set": {
+   "aerosolLoading": 1.3,
+   "halfResApShadow": true
+  }
+ },
+ {
+  "name": "09_denser_clouds",
+  "set": {
+   "aerosolLoading": 1.3,
+   "cloudLayer": {
+    "low": {
+     "densityScale": 1.2
+    }
+   }
+  }
+ },
+ {
+  "name": "10_fog_scatter_x2",
+  "set": {
+   "aerosolLoading": 1.3
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "volumetricDirectionalScatteringIntensity": 4.0
+   }
+  }
+ },
+ {
+  "name": "11_game_shafts_2.5",
+  "set": {
+   "aerosolLoading": 1.3
+  },
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorShaftDefinition": 2.5,
+    "ExteriorStrength": 2.5
+   }
+  }
+ }
+]

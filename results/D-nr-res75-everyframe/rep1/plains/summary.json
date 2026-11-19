@@ -1,0 +1,66 @@
+{
+ "label": "D-nr-res75-everyframe",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "c6e2f1c005",
+ "time": "2026-11-17 16:43:57",
+ "render": {
+  "frames": 654,
+  "mean": 23.07,
+  "fps": 43.3,
+  "p50": 22.63,
+  "p95": 24.64,
+  "p99": 30.58,
+  "max": 166.6,
+  "over50": 1,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 167
+ },
+ "main_cpu_ms": 20.91,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 9184,
+  "proc_min": 9184,
+  "new_top": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "present": {
+   "frames": 1468,
+   "mean": 11.56,
+   "fps": 86.5,
+   "p50": 11.24,
+   "p95": 12.32,
+   "p99": 21.41,
+   "max": 146.1,
+   "over50": 1,
+   "over100": 1,
+   "over250": 0,
+   "stall_ms": 146
+  },
+  "displayed": {
+   "frames": 1468,
+   "mean": 11.56,
+   "fps": 86.5,
+   "p50": 11.33,
+   "p95": 13.43,
+   "p99": 18.18,
+   "max": 147.0,
+   "over50": 1,
+   "over100": 1,
+   "over250": 0,
+   "stall_ms": 147
+  },
+  "frame_types": {
+   "Application": 1468
+  }
+ }
+}

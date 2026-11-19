@@ -1,0 +1,83 @@
+[
+ {
+  "name": "00_current",
+  "set": {}
+ },
+ {
+  "name": "01_continental_only",
+  "set": {
+   "aerosolType": 1
+  }
+ },
+ {
+  "name": "02_continental_again",
+  "set": {
+   "aerosolType": 1
+  }
+ },
+ {
+  "name": "03_continental_plus_ibl_feature",
+  "set": {
+   "aerosolType": 1
+  },
+  "features": {
+   "ImageBasedLighting": {
+    "DALCAmount": 0.5
+   }
+  }
+ },
+ {
+  "name": "04_continental_plus_shadow_range16",
+  "set": {
+   "aerosolType": 1,
+   "shadowVolumeRange": 16.0
+  }
+ },
+ {
+  "name": "05_continental_plus_vollight_feature",
+  "set": {
+   "aerosolType": 1
+  },
+  "features": {
+   "VolumetricLighting": {
+    "ExteriorEnabled": false
+   }
+  }
+ },
+ {
+  "name": "06_continental_loading_0.3",
+  "set": {
+   "aerosolType": 1,
+   "aerosolLoading": 0.3
+  }
+ },
+ {
+  "name": "07_continental_loading_1.5",
+  "set": {
+   "aerosolType": 1,
+   "aerosolLoading": 1.5
+  }
+ },
+ {
+  "name": "08_maritime",
+  "set": {
+   "aerosolType": 2
+  }
+ },
+ {
+  "name": "09_continental_air_x2",
+  "set": {
+   "aerosolType": 1,
+   "rayleighScatter": [
+    13.21,
+    24.69,
+    58.83
+   ],
+   "rayleighScatterAP1": [
+    13.87,
+    24.04,
+    57.82
+   ]
+  }
+ }
+]

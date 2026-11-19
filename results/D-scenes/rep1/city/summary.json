@@ -1,0 +1,38 @@
+{
+ "label": "D-scenes",
+ "rep": 1,
+ "scenario": "city",
+ "config": "2a947494b8",
+ "time": "2026-11-17 16:20:35",
+ "render": {
+  "frames": 526,
+  "mean": 28.59,
+  "fps": 35.0,
+  "p50": 28.3,
+  "p95": 35.2,
+  "p99": 38.93,
+  "max": 41.4,
+  "over50": 0,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 24.87,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 10454,
+  "proc_min": 10244,
+  "new_top": [
+   135,
+   12,
+   3,
+   2
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

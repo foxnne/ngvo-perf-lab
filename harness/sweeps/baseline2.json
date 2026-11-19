@@ -1,0 +1,193 @@
+[
+ {
+  "name": "00_draft",
+  "set": {}
+ },
+ {
+  "name": "01_air_x2_haze_0.3",
+  "set": {
+   "rayleighScatter": [
+    13.21,
+    24.69,
+    58.83
+   ],
+   "rayleighScatterAP1": [
+    13.87,
+    24.04,
+    57.82
+   ],
+   "aerosolLoading": 0.3
+  }
+ },
+ {
+  "name": "02_air_x2.5_haze_0.25",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25
+  }
+ },
+ {
+  "name": "03_air_x2.5_haze_0.25_glow_0.7",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25,
+   "aerosolPhaseG": 0.7
+  }
+ },
+ {
+  "name": "04_air_x2.5_haze_0.12",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.12
+  }
+ },
+ {
+  "name": "05_as03_sun_x1.5",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25,
+   "aerosolPhaseG": 0.7,
+   "sunlightColor": [
+    10.5,
+    10.2,
+    10.0
+   ]
+  }
+ },
+ {
+  "name": "06_as03_exposure_-2.2",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25,
+   "aerosolPhaseG": 0.7
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -2.2
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "07_as03_exposure_-3.4",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25,
+   "aerosolPhaseG": 0.7
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.4
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "08_as03_cloud_light",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25,
+   "aerosolPhaseG": 0.7,
+   "cloudLayer": {
+    "lighting": {
+     "ambientStrength": 1.4,
+     "sunExtinction": 0.75,
+     "brightness": 1.3
+    }
+   }
+  }
+ },
+ {
+  "name": "09_as03_cloud_light_soft",
+  "set": {
+   "rayleighScatter": [
+    16.51,
+    30.86,
+    73.53
+   ],
+   "rayleighScatterAP1": [
+    17.34,
+    30.05,
+    72.27
+   ],
+   "aerosolLoading": 0.25,
+   "aerosolPhaseG": 0.7,
+   "cloudLayer": {
+    "lighting": {
+     "ambientStrength": 1.8,
+     "sunExtinction": 0.5,
+     "brightness": 1.0
+    }
+   }
+  }
+ }
+]

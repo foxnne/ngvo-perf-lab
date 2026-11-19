@@ -1,0 +1,68 @@
+DDS C:\Users\foxnn\dev\terrain-heightmap\mod-objects\textures\terrain\HeightMaps\Tamriel.Terrain.HeightMap.-57.-43.61.50.-4629.4924.dds
+  3808x3008, pixel format flags 0x20000, 16 bpp, mask 0xFFFF, fourcc b'\x00\x00\x00\x00', 22909056 bytes (legacy L16 -> R16_UNORM, same header as the 16-bit landscape map)
+  name fields: world Tamriel cells -57..61 x -43..50, zRange -37032..39392 units
+  decoded (loader lerp) vs built grid: max |err| 4.60 units ; decoded range -37035.4..39387.4 ; texels above zRange max: 0, below zRange min: 10
+  never below the landscape map: True (min final-land = 0.0)
+
+STATISTICS (texel = 128 units, 11454464 texels)
+  raw top-down object surface above landscape: 3209763 texels (28.0%), mean +668, max +10316, highest point 39527 (landscape max 39392)
+  final map raised: 3143617 texels (27.4%)
+    raised by more than    64 units:  2624296 texels (22.91%)
+    raised by more than   128 units:  2304702 texels (20.12%)
+    raised by more than   256 units:  1854361 texels (16.19%)
+    raised by more than   512 units:  1277186 texels (11.15%)
+    raised by more than  1000 units:   687743 texels (6.00%)
+    raised by more than  2000 units:   213358 texels (1.86%)
+    raised by more than  4000 units:    26702 texels (0.23%)
+    raised by more than  8000 units:      765 texels (0.01%)
+  raise where raised: mean 663, median 368, p90 1672, p99 3840, max 10080 units
+  largest raise at world x 230528 y -74240 : land 7152 -> 17232
+  removed by the spike filter (raw surface - final): 2121417 texels lowered, mean 30, p99 273, max 5668 units
+  unsupported (overhang / bridge-like) object-texel intervals rejected: 60125 of 8474135
+  single-texel spikes (texel > all 8 neighbours + 256): landscape 8, raw object surface 19, final 1
+  max step between adjacent texels: landscape 5360, final 5688 ; steps > 1024: landscape 44, final 11327
+
+PLACEMENT SANITY (object vs landscape at its own footprint; a correctly placed rock straddles the ground:
+  its lowest sampled top is at/below the landscape while its highest is above)
+  mountains   7820 objects: p5(top-land) median    -720 | median(top-land) median    -25 | max(top-land) median    643 | objects with p5 > +256 (floating?): 20 (0.3%)
+  rocks      10339 objects: p5(top-land) median     -92 | median(top-land) median     -2 | max(top-land) median    113 | objects with p5 > +256 (floating?): 183 (1.8%)
+  cliffs      5121 objects: p5(top-land) median    -343 | median(top-land) median     30 | max(top-land) median    434 | objects with p5 > +256 (floating?): 32 (0.6%)
+  dirtcliffs  1410 objects: p5(top-land) median    -114 | median(top-land) median      8 | max(top-land) median    218 | objects with p5 > +256 (floating?): 0 (0.0%)
+  landforms    648 objects: p5(top-land) median    -168 | median(top-land) median      9 | max(top-land) median    201 | objects with p5 > +256 (floating?): 0 (0.0%)
+  ice          746 objects: p5(top-land) median    -207 | median(top-land) median    118 | max(top-land) median   1104 | objects with p5 > +256 (floating?): 179 (24.0%)
+  examples (first refs of a few models, incl. tilted ones):
+    skyrim.esm:0C20FF mountaintrim01.nif     pos (126112, 77563, -7908) rot deg (9, -30, 187) scale 0.75 : land at origin -7808 ; footprint 92 texels, top-land p5 -164 / median -27 / max 88
+    skyrim.esm:10E574 rockpilel01.nif        pos (10018, 29054, -1120) rot deg (13, 9, 309) scale 0.90 : land at origin -984 ; footprint 17 texels, top-land p5 -210 / median -18 / max 139
+    skyrim.esm:0C0796 rocktundraland01.nif   pos (30183, 28427, -6608) rot deg (1, 5, 28) scale 1.00 : land at origin -6448 ; footprint 116 texels, top-land p5 -340 / median -14 / max 144
+    skyrim.esm:046D19 rockcliff03.nif        pos (25270, 27903, -5461) rot deg (-14, 32, 346) scale 1.00 : land at origin -4888 ; footprint 95 texels, top-land p5 -317 / median 14 / max 334
+    skyrim.esm:06E225 mountaincliff02.nif    pos (9201, 26067, -1526) rot deg (9, -6, 138) scale 1.00 : land at origin -608 ; footprint 1048 texels, top-land p5 -1075 / median 33 / max 629
+    skyrim.esm:06E227 mountainpeak01.nif     pos (2634, 28052, -217) rot deg (-6, -6, 6) scale 0.74 : land at origin 184 ; footprint 689 texels, top-land p5 -1777 / median 32 / max 1509
+    skyrim.esm:0F42C9 glacierendlg01.nif     pos (72250, 91805, -11504) rot deg (10, -1, 33) scale 1.00 : land at origin -9208 ; footprint 1486 texels, top-land p5 -2476 / median -265 / max 1131
+    skyrim.esm:091A90 dirtcliffs03.nif       pos (23584, -83874, 10518) rot deg (7, -9, 301) scale 0.95 : land at origin 10696 ; footprint 53 texels, top-land p5 -20 / median 110 / max 247
+
+PREVIEWS in C:\Users\foxnn\dev\terrain-heightmap\validation
+  full_relief_landscape.png, full_relief_with_objects.png, full_difference.png (3808x3008, 1 px = 1 texel, north up; difference: black 0 -> red -> yellow -> white >= 4000 units)
+  crop_ilinalta_relief.png: world x -30000..-5000, y -75000..-45000 (196x235 texels, x4): raised 33.4% of texels, mean +319, max +2968 ; land max 9800 -> final max 10304
+  crop_throat_relief.png: world x 38000..70000, y -68000..-36000 (251x251 texels, x3): raised 57.0% of texels, mean +498, max +5744 ; land max 39392 -> final max 39392
+
+SHADOW SIMULATION (receiver = raw top-down surface of landscape+objects, i.e. what is visible from above;
+  shadowed where receiver z < propagated shadow height - 256 bias, as in TerrainShadows.hlsli; "truth" = caster is that same raw surface)
+  sun bearing 270 deg, elevation 8 deg  [west_el8]  Ilinalta crop (46060 texels, 26% covered by objects):
+    landscape-only map   shadowed  74.7% of crop | of object texels  56.8% | of landscape-only texels  81.1% | recall of true shadow  85.9% | shadow not in truth  0.0% of crop | shadow blobs   17 (largest  94.2% of shadow) | lit object islands 105
+    with-objects map     shadowed  85.2% of crop | of object texels  71.4% | of landscape-only texels  90.2% | recall of true shadow  98.0% | shadow not in truth  0.0% of crop | shadow blobs   20 (largest  90.4% of shadow) | lit object islands 79
+    ideal (raw surface)  shadowed  86.9% of crop | of object texels  74.9% | of landscape-only texels  91.2% | recall of true shadow 100.0% | shadow not in truth  0.0% of crop | shadow blobs   21 (largest  89.1% of shadow) | lit object islands 74
+    whole map: shadowed 59.3% (landscape-only) vs 64.9% (with objects) vs 66.0% (ideal); object texels shadowed 56.7% vs 67.4% vs 69.3%
+    with-objects map darkens 0.00% of truly lit texels (landscape-only map: 0.00%)
+  sun bearing 270 deg, elevation 12 deg  [west_el12]  Ilinalta crop (46060 texels, 26% covered by objects):
+    landscape-only map   shadowed  19.4% of crop | of object texels  19.9% | of landscape-only texels  19.2% | recall of true shadow  54.2% | shadow not in truth  0.0% of crop | shadow blobs   28 (largest  68.4% of shadow) | lit object islands 238
+    with-objects map     shadowed  32.5% of crop | of object texels  31.7% | of landscape-only texels  32.7% | recall of true shadow  90.6% | shadow not in truth  0.0% of crop | shadow blobs   42 (largest  56.0% of shadow) | lit object islands 220
+    ideal (raw surface)  shadowed  35.8% of crop | of object texels  35.5% | of landscape-only texels  36.0% | recall of true shadow 100.0% | shadow not in truth  0.0% of crop | shadow blobs   64 (largest  52.3% of shadow) | lit object islands 209
+  sun bearing 270 deg, elevation 15 deg  [west_el15]  Ilinalta crop (46060 texels, 26% covered by objects):
+    landscape-only map   shadowed   5.6% of crop | of object texels   5.1% | of landscape-only texels   5.7% | recall of true shadow  32.6% | shadow not in truth  0.0% of crop | shadow blobs   36 (largest  21.8% of shadow) | lit object islands 265
+    with-objects map     shadowed  13.9% of crop | of object texels  16.3% | of landscape-only texels  13.1% | recall of true shadow  81.9% | shadow not in truth  0.0% of crop | shadow blobs   56 (largest  23.1% of shadow) | lit object islands 260
+    ideal (raw surface)  shadowed  17.0% of crop | of object texels  20.9% | of landscape-only texels  15.7% | recall of true shadow 100.0% | shadow not in truth  0.0% of crop | shadow blobs   90 (largest  22.5% of shadow) | lit object islands 263
+  sun bearing 250 deg, elevation 12 deg  [wsw_el12]  Ilinalta crop (46060 texels, 26% covered by objects):
+    landscape-only map   shadowed  48.9% of crop | of object texels  37.4% | of landscape-only texels  53.0% | recall of true shadow  77.6% | shadow not in truth  0.0% of crop | shadow blobs   31 (largest  87.6% of shadow) | lit object islands 156
+    with-objects map     shadowed  60.9% of crop | of object texels  51.1% | of landscape-only texels  64.5% | recall of true shadow  96.8% | shadow not in truth  0.0% of crop | shadow blobs   32 (largest  83.7% of shadow) | lit object islands 132
+    ideal (raw surface)  shadowed  63.0% of crop | of object texels  53.8% | of landscape-only texels  66.3% | recall of true shadow 100.0% | shadow not in truth  0.0% of crop | shadow blobs   38 (largest  82.3% of shadow) | lit object islands 132
+  images: shadow_ilinalta_<sun>.png (3 panels), shadow_throat_west_el8.png

@@ -1,0 +1,68 @@
+{
+ "label": "D-fg-off",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "8d907fcb24",
+ "time": "2026-11-17 17:12:05",
+ "render": {
+  "frames": 5835,
+  "mean": 17.15,
+  "fps": 58.3,
+  "p50": 17.15,
+  "p95": 22.91,
+  "p99": 27.74,
+  "max": 184.2,
+  "over50": 7,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 184
+ },
+ "main_cpu_ms": 14.9,
+ "fg_share": 0.0,
+ "distance": 19697,
+ "cells": 8,
+ "vram": {
+  "proc_max": 11924,
+  "proc_min": 9502,
+  "new_top": [
+   1001,
+   887,
+   882,
+   867
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "present": {
+   "frames": 5941,
+   "mean": 17.15,
+   "fps": 58.3,
+   "p50": 17.51,
+   "p95": 25.24,
+   "p99": 31.18,
+   "max": 184.2,
+   "over50": 8,
+   "over100": 1,
+   "over250": 0,
+   "stall_ms": 184
+  },
+  "displayed": {
+   "frames": 5939,
+   "mean": 17.16,
+   "fps": 58.3,
+   "p50": 17.24,
+   "p95": 22.94,
+   "p99": 26.66,
+   "max": 178.0,
+   "over50": 5,
+   "over100": 1,
+   "over250": 0,
+   "stall_ms": 178
+  },
+  "frame_types": {
+   "Application": 5941
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 18603
+}

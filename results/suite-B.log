@@ -1,0 +1,71 @@
+=== warmup --scenarios plains,sprint,flight (2s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+=== base --scenarios plains,sprint,flight --reps 3 (2s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+=== scenes --scenarios forest,city,interior (2s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+=== tracy --scenarios plains,sprint,flight --tracy (2s, exit 1)
+
+game already running; quit it first or pass --no-launch
+
+=== fg-off --scenarios plains,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}} (1s, exit 1)
+
+close the game before applying a variant
+
+=== nr-off --scenarios plains,sprint --cs-set {"Upscaling": {"neuralRenderingEnabled": false}} (1s, exit 1)
+
+close the game before applying a variant
+
+=== fg-nr-off --scenarios plains,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0, "neuralRenderingEnabled": false}} (1s, exit 1)
+
+close the game before applying a variant
+
+=== treewind-off --scenarios plains,sprint --cs-disable TreeWind (1s, exit 1)
+
+close the game before applying a variant
+
+=== psky-off --scenarios plains,sprint --cs-disable PhysicalSky (1s, exit 1)
+
+close the game before applying a variant
+
+=== ssgi-ssr-off --scenarios plains,sprint --cs-disable ScreenSpaceGI,ScreenSpaceReflections (1s, exit 1)
+
+close the game before applying a variant
+
+SUITE DONE
+=== warmup --scenarios plains,sprint,flight (514s, exit 0)
+B-warmup rep1 plains   fps 31.5  p99 42.97  max 166.7  >100ms 1   stall 167ms vram 10600 
+B-warmup rep1 sprint   fps 29.9  p99 74.74  max 982.6  >100ms 22  stall 6281ms vram 12982 
+B-warmup rep1 flight   fps 32.6  p99 51.73  max 502.0  >100ms 10  stall 2034ms vram 12952 
+
+
+=== base --scenarios plains,sprint,flight --reps 3 (1661s, exit 0)
+B-base rep1 plains   fps 32.0  p99 43.5   max 168.9  >100ms 1   stall 169ms vram 10403 
+B-base rep1 sprint   fps 28.7  p99 64.21  max 1493.3 >100ms 13  stall 4785ms vram 12697 
+B-base rep1 flight   fps 30.5  p99 46.47  max 257.9  >100ms 5   stall 783ms vram 11438 
+B-base rep2 plains   fps 31.7  p99 40.89  max 60.0   >100ms 0   stall 0ms vram 8945 
+B-base rep2 sprint   fps 26.9  p99 65.75  max 1040.2 >100ms 12  stall 3287ms vram 12907 
+B-base rep2 flight   fps 30.7  p99 43.1   max 216.5  >100ms 5   stall 787ms vram 12920 
+B-base rep3 plains   fps 31.6  p99 42.26  max 56.5   >100ms 0   stall 0ms vram 9800 
+B-base rep3 sprint   fps 31.1  p99 57.59  max 304.1  >100ms 10  stall 1642ms vram 12320 
+B-base rep3 flight   fps 30.4  p99 42.38  max 217.6  >100ms 5   stall 811ms vram 11415 
+
+
+=== scenes --scenarios forest,city,interior (379s, exit 0)
+B-scenes rep1 forest   fps 27.7  p99 41.09  max 173.7  >100ms 1   stall 174ms vram 9220 
+B-scenes rep1 city     fps 29.8  p99 45.33  max 62.1   >100ms 0   stall 0ms vram 10518 
+B-scenes rep1 interior fps 37.3  p99 33.78  max 57.4   >100ms 0   stall 0ms vram 11268 
+
+
+=== tracy --scenarios plains,sprint,flight --tracy (559s, exit 0)
+B-tracy rep1 plains   fps 31.6  p99 38.4   max 172.4  >100ms 1   stall 172ms vram 11004 
+B-tracy rep1 sprint   fps 26.6  p99 112.15 max 1237.6 >100ms 30  stall 6906ms vram 12911 
+B-tracy rep1 flight   fps 30.2  p99 44.77  max 249.8  >100ms 5   stall 898ms vram 11806 
+
+

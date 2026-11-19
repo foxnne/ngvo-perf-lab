@@ -1,0 +1,23 @@
+{
+  "name": "foxnne NAT III clouds",
+  "version": "0.1.0",
+  "type": "CS",
+  "author": "foxnne",
+  "description": "UNTESTED DRAFT. Per-weather volumetric cloud settings (Physical Sky) for NAT.CS III: coverage, layer altitude, density, lighting, wind and cirrus per weather group; march quality in Baseline. Read notes/how-it-works.md before applying: applying a pack with scene files makes it the active pack.",
+  "tags": [
+    "NAT.CS III",
+    "Physical Sky",
+    "volumetric clouds",
+    "draft"
+  ],
+  "csVersion": "1.9.0",
+  "requiredFeatures": [
+    "PhysicalSky",
+    "SceneManager",
+    "SkySync"
+  ],
+  "requiredPlugins": [
+    "NAT-ENB.esp",
+    "NAT-CS.esp"
+  ]
+}

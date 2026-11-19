@@ -1,0 +1,29 @@
+{
+ "label": "J1-nr-really-on",
+ "rep": 1,
+ "scenario": "sprint2",
+ "config": "59d36f8d4e",
+ "time": "2026-11-18 09:29:34",
+ "render": {
+  "frames": 3165,
+  "mean": 31.62,
+  "fps": 31.6,
+  "p50": 31.35,
+  "p95": 39.06,
+  "p99": 53.88,
+  "max": 173.7,
+  "over50": 50,
+  "over100": 3,
+  "over250": 0,
+  "stall_ms": 469
+ },
+ "main_cpu_ms": 27.92,
+ "fg_share": 1.0,
+ "distance": 24939,
+ "cells": 9,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 21031
+}

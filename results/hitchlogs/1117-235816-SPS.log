@@ -1,0 +1,39 @@
+[23:58:16.823] [100212] [I] SPS v1-0-73-0
+[23:58:16.823] [100212] [I] SPS 1.0.73 loaded
+[23:58:16.823] [100212] [I] Skyrim base address 0x7FF628070000 (for tools/resolve_rva.py)
+[23:58:16.829] [100212] [I] SPS_User.ini (menu settings) loaded
+[23:58:16.829] [100212] [I] Occlusion: hiding ON | reproject on | pause from 2.0 deg / 64 units | margin 2.0 % + 16 | hidden in 2 images in a row | max 4096 tiles | characters never
+[23:58:16.829] [100212] [I] ShadowStableCascade (with far shadow cache): sun step 0.05 deg | extent step 64 x1.00 | margin 48 | depth step 64
+[23:58:16.829] [100212] [I] ShadowInstancing: OFF | verify mode false (offset 0) | techniques C046,C045 | two-sided false | debug mode 0
+[23:58:16.829] [100212] [I] ActorShadowCulling: ON | from distance 3500 | point lights true
+[23:58:16.829] [100212] [I] ActorPartShadowCulling: ON | radius < 8 | from distance 500
+[23:58:16.829] [100212] [I] LightGatherThrottle: ON | movement >= 8 | radius +-16 | at the latest after 500 ms
+[23:58:16.829] [100212] [I] SubtreePruning: ON | sun true | point light false | rain/sky true
+[23:58:16.829] [100212] [I] TextureStream: ON | report false | safety factor 2.0 | min. 1024 px | budget 0.40 ms | clothing/armor true | bodies/faces/hair true | excluded: interface\,\maps\,mapmarker,\lod\,terrain\,fonts\,book,\sky\,effects\,cubemaps\
+[23:58:16.829] [100212] [I] LightShadowCache: ON
+[23:58:16.829] [100212] [I] FarShadowCache (optional): OFF | trees still from 2000
+[23:58:16.829] [100212] [I] ShadowCulling: ON | from cascade 1 | distance > 1500 | radius < 150 | radius/distance < 0.035 | skinned excluded: true | only above sun elevation 10 deg
+[23:58:16.829] [100212] [I] PointLightShadowCulling: ON | distance > 1000 | radius < 150 | radius/distance < 0.035 | skinned excluded: true
+[23:58:16.829] [100212] [I] SkylightingCulling: ON | min. radius 128
+[23:58:16.829] [100212] [I] DecalCulling: ON | from distance 1500 | radius < 32
+[23:58:16.829] [100212] [I] MainViewCulling: OFF | distance > 3000 | radius < 100 | radius/distance < 0.0020 | skinned excluded: true
+[23:58:16.829] [100212] [I] DepthPrepassCulling: OFF | distance > 1500 | radius < 200 | radius/distance < 0.025 | skinned excluded: true
+[23:58:16.829] [100212] [I] Hook installed: VirtualMachine::Update (vfunc 0x4)
+[23:58:16.829] [100212] [I] Hook installed: VirtualMachine::UpdateTasklets (vfunc 0x5)
+[23:58:16.829] [100212] [I] Hook installed: VirtualMachine::SetOverstressed (vfunc 0x6)
+[23:58:16.829] [100212] [I] Hook installed: PlayerCharacter::Update (vfunc 0xAD)
+[23:58:16.829] [100212] [I] Hook installed: Character::Update (vfunc 0xAD)
+[23:58:16.829] [100212] [I] Hook installed: BSCullingProcess::AppendVirtual (vfunc 0x18)
+[23:58:16.829] [100212] [I] Hook installed: BSParabolicCullingProcess::AppendVirtual (vfunc 0x18)
+[23:58:16.829] [100212] [I] Hook installed: Process (vfunc 0x16) for BSCullingProcess, BSParabolicCullingProcess, BSGeometryListCullingProcess
+[23:58:16.829] [100212] [I] Hooks installed: BSShadowDirectionalLight::Accumulate (0x9) / Render (0xA)
+[23:58:16.829] [100212] [I] Hooks installed: BSShadowParabolicLight / BSShadowFrustumLight::Render (0xA) - GPU timing
+[23:58:16.829] [100212] [I] Shadow instancing off at startup - RenderBatches detour not installed
+[23:58:16.829] [100212] [I] Feature not used on this game version (by design): Shadow instancing - off at startup (restart after enabling)
+[23:58:16.829] [100212] [I] Hook installed: BSUtilityShader::SetupGeometry (vfunc 0x6)
+[23:58:16.829] [100212] [I] Hooks installed: RenderPassImmediately call sites 1 and 2
+[23:58:16.829] [100212] [I] LightGather: hook on light assignment of dynamic point lights installed
+[23:58:16.829] [100212] [I] Hook installed: shadow map draw (ID 107604+0x167) - shadow cache for static lights
+[23:58:16.831] [100212] [I] TextureStream: 2531 remembered texture sizes loaded
+[23:58:16.831] [100212] [I] Hook installed: DDS loader (Detour) - load reduced; only textures straight from DDS files are streamed
+[23:58:20.949] [100212] [I] WaitProbe: off (developer option bEngineProbes)

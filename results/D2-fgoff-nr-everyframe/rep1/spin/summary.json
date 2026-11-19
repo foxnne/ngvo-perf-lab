@@ -1,0 +1,27 @@
+{
+ "label": "D2-fgoff-nr-everyframe",
+ "rep": 1,
+ "scenario": "spin",
+ "config": "1ffcb93387",
+ "time": "2026-11-17 19:52:57",
+ "render": {
+  "frames": 1665,
+  "mean": 24.04,
+  "fps": 41.6,
+  "p50": 24.44,
+  "p95": 26.63,
+  "p99": 29.26,
+  "max": 192.7,
+  "over50": 1,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 193
+ },
+ "main_cpu_ms": 19.34,
+ "fg_share": 0.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

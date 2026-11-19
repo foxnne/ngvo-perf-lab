@@ -1,0 +1,128 @@
+15:20:25 === deploy treewind fix exit 0
+copy SKSE/Plugins/CommunityShaders.dll
+1 changed, 0 added; backups in C:/Modlists/backups/bottled-deploy-20261117-152023
+
+
+15:24:15 shader wait 3 min, main menu=True, compiles logged=0, last remaining=none
+15:34:23 === D-warmup --scenarios plains,spin,sprint,flight (579s, exit 0)
+D-warmup rep1 plains   fps 40.7  p99 30.31  max 38.2   >100ms 0   stall 0ms vram 12105 
+D-warmup rep1 spin     fps 40.3  p99 30.96  max 169.7  >100ms 1   stall 170ms vram 12269 
+D-warmup rep1 sprint   fps 41.0  p99 36.77  max 325.3  >100ms 3   stall 669ms vram 12595 
+D-warmup rep1 flight   fps 38.0  p99 33.73  max 97.4   >100ms 0   stall 0ms vram 13021 
+
+
+16:05:19 === D-base --scenarios plains,spin,sprint,flight --reps 3 (1856s, exit 0)
+D-base rep1 plains   fps 40.1  p99 31.29  max 178.8  >100ms 1   stall 179ms vram 9560 
+D-base rep1 spin     fps 41.2  p99 31.14  max 49.5   >100ms 0   stall 0ms vram 11292 
+D-base rep1 sprint   fps 39.4  p99 34.47  max 165.5  >100ms 2   stall 274ms vram 12767 
+D-base rep1 flight   fps 38.4  p99 32.59  max 65.9   >100ms 0   stall 0ms vram 12592 
+D-base rep2 plains   fps 41.4  p99 31.86  max 173.3  >100ms 1   stall 173ms vram 10938 
+D-base rep2 spin     fps 42.1  p99 29.87  max 48.6   >100ms 0   stall 0ms vram 11148 
+D-base rep2 sprint   fps 41.5  p99 33.56  max 165.0  >100ms 1   stall 165ms vram 12762 
+D-base rep2 flight   fps 39.2  p99 31.9   max 94.3   >100ms 0   stall 0ms vram 12698 
+D-base rep3 plains   fps 40.3  p99 30.76  max 177.7  >100ms 1   stall 178ms vram 9589 
+D-base rep3 spin     fps 40.7  p99 29.88  max 36.7   >100ms 0   stall 0ms vram 11011 
+D-base rep3 sprint   fps 43.2  p99 31.82  max 168.0  >100ms 1   stall 168ms vram 12948 
+D-base rep3 flight   fps 42.0  p99 29.42  max 70.6   >100ms 0   stall 0ms vram 12830 
+
+
+16:15:06 === D-tracy --scenarios spin,sprint,flight --tracy (586s, exit 0)
+D-tracy rep1 spin     fps 45.8  p99 26.43  max 179.5  >100ms 1   stall 179ms vram 10890 
+D-tracy rep1 sprint   fps 44.7  p99 30.94  max 183.1  >100ms 1   stall 183ms vram 12569 
+D-tracy rep1 flight   fps 43.2  p99 27.59  max 81.1   >100ms 0   stall 0ms vram 12867 
+
+
+16:21:35 === D-scenes --scenarios forest,city,interior (389s, exit 0)
+D-scenes rep1 forest   fps 34.2  p99 41.85  max 222.7  >100ms 1   stall 223ms vram 9013 
+D-scenes rep1 city     fps 35.0  p99 38.93  max 41.4   >100ms 0   stall 0ms vram 10454 
+D-scenes rep1 interior fps 46.6  p99 36.81  max 45.0   >100ms 0   stall 0ms vram 11302 
+
+
+16:29:42 === D-nr-everyframe --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"alternateFrames": false}} (488s, exit 0)
+D-nr-everyframe rep1 plains   fps 40.9  p99 27.65  max 43.7   >100ms 0   stall 0ms vram 12045 
+D-nr-everyframe rep1 spin     fps 41.6  p99 28.93  max 174.4  >100ms 1   stall 174ms vram 12066 
+D-nr-everyframe rep1 sprint   fps 42.1  p99 31.63  max 180.6  >100ms 1   stall 181ms vram 12327 
+
+
+16:39:27 === D-nr-res75 --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"resolutionScale": 0.75}} (584s, exit 0)
+D-nr-res75 rep1 plains   fps 46.8  p99 25.09  max 45.4   >100ms 0   stall 0ms vram 9196 
+D-nr-res75 rep1 spin     fps 48.7  p99 27.07  max 181.2  >100ms 1   stall 181ms vram 11047 
+D-nr-res75 rep1 sprint   fps 45.9  p99 30.31  max 175.0  >100ms 1   stall 175ms vram 12585 
+
+
+16:47:45 === D-nr-res75-everyframe --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"resolutionScale": 0.75, "alternateFrames": false}} (499s, exit 0)
+D-nr-res75-everyframe rep1 plains   fps 43.3  p99 30.58  max 166.6  >100ms 1   stall 167ms vram 9184 
+D-nr-res75-everyframe rep1 spin     fps 44.5  p99 26.45  max 159.9  >100ms 1   stall 160ms vram 11025 
+D-nr-res75-everyframe rep1 sprint   fps 43.8  p99 37.68  max 171.6  >100ms 1   stall 172ms vram 12540 
+
+
+16:56:01 === D-nr-res50 --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"resolutionScale": 0.5}} (496s, exit 0)
+D-nr-res50 rep1 plains   fps 47.9  p99 26.07  max 41.6   >100ms 0   stall 0ms vram 8898 
+D-nr-res50 rep1 spin     fps 48.8  p99 29.03  max 163.2  >100ms 1   stall 163ms vram 10862 
+D-nr-res50 rep1 sprint   fps 48.7  p99 27.95  max 158.9  >100ms 1   stall 159ms vram 11759 
+
+
+17:04:17 === D-nr-off --scenarios plains,spin,sprint --cs-set {"Neural Rendering": {"enabled": false}} (495s, exit 0)
+D-nr-off rep1 plains   fps 52.0  p99 23.89  max 171.2  >100ms 1   stall 171ms vram 8237 
+D-nr-off rep1 spin     fps 52.7  p99 23.31  max 177.9  >100ms 1   stall 178ms vram 10398 
+D-nr-off rep1 sprint   fps 50.3  p99 29.49  max 180.4  >100ms 2   stall 291ms vram 11770 
+
+
+17:12:28 === D-fg-off --scenarios plains,spin,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}} (492s, exit 0)
+D-fg-off rep1 plains   fps 53.9  p99 25.72  max 43.0   >100ms 0   stall 0ms vram 8757 
+D-fg-off rep1 spin     fps 54.5  p99 24.74  max 328.5  >100ms 1   stall 329ms vram 11884 
+D-fg-off rep1 sprint   fps 58.3  p99 27.74  max 184.2  >100ms 1   stall 184ms vram 11924 
+
+
+17:20:39 === D-fg-nr-off --scenarios plains,spin,sprint --cs-set {"Upscaling": {"frameGenerationMode": 0}, "Neural Rendering": {"enabled": false}} (491s, exit 0)
+D-fg-nr-off rep1 plains   fps 63.1  p99 21.41  max 181.0  >100ms 1   stall 181ms vram 11443 
+D-fg-nr-off rep1 spin     fps 64.6  p99 23.21  max 223.4  >100ms 1   stall 223ms vram 11306 
+D-fg-nr-off rep1 sprint   fps 67.0  p99 24.78  max 221.8  >100ms 1   stall 222ms vram 10988 
+
+
+17:28:20 === D-psky-on --scenarios plains,spin,sprint --cs-set {"Physical Sky": {"enabled": true, "enableVolumetricClouds": false}} (460s, exit 0)
+D-psky-on rep1 plains   fps 45.3  p99 28.25  max 170.6  >100ms 1   stall 171ms vram 9448 
+D-psky-on rep1 spin     fps 45.8  p99 26.32  max 39.8   >100ms 0   stall 0ms vram 11170 
+D-psky-on rep1 sprint   fps 46.7  p99 29.23  max 170.8  >100ms 2   stall 281ms vram 12523 
+
+
+17:37:41 === D-psky-volclouds --scenarios plains,spin,sprint --cs-set {"Physical Sky": {"enabled": true, "enableVolumetricClouds": true}} (561s, exit 0)
+D-psky-volclouds rep1 plains   fps 38.4  p99 29.59  max 39.0   >100ms 0   stall 0ms vram 11192 
+D-psky-volclouds rep1 spin     fps 42.8  p99 39.74  max 192.0  >100ms 1   stall 192ms vram 12179 
+D-psky-volclouds rep1 sprint   fps 42.5  p99 32.56  max 168.3  >100ms 1   stall 168ms vram 13175 
+
+
+17:37:41 D DONE
+17:38:12 === apply_queue exit 0
+modlist: +Settle - Seat Collision for SMP Cloth  above  +Faster HDT-SMP
+modlist: +Settle - FSMP Clothing Clipping Fix Merge  above  +Settle - Seat Collision for SMP Cloth
+modlist: +Dialogue Ducker  above  +Settle - FSMP Clothing Clipping Fix Merge
+modlist: +Goat's RaceMenu Overlay FPS Helper  above  +Dialogue Ducker
+modlist: +Khajiit Warpaints to Face Paints  above  +Vanilla Warpaints Absolution
+plugins.txt: *KhajiitWarpaintToFacepaint.esp after *VWA_VanillaWarpaintsAbsolution.esp
+loadorder.txt: KhajiitWarpaintToFacepaint.esp after VWA_VanillaWarpaintsAbsolution.esp
+OmniSight: enabled -> true
+modlist: enabled Combat Pathing Revolution AE
+modlist: enabled Combat Pathing Revolution
+HUD NG btps-prompt: x -0.01580614499777666 y -0.055596803608784356 scale 0.811791967354744 -> 0, 0, 1
+Floating Subtitles fHeadOffset: 12.000000 -> 20
+APPLIED
+
+
+17:47:25 === E-warmup --scenarios plains,sprint,city (554s, exit 0)
+E-warmup rep1 plains   fps 44.9  p99 31.33  max 162.6  >100ms 1   stall 163ms vram 9294 
+E-warmup rep1 sprint   fps None  p99 None   max None   >100ms None stall Nonems vram None HTTP Error 504: Gateway Timeout
+E-warmup rep1 city     fps None  p99 None   max None   >100ms None stall Nonems vram None could not reach WhiterunOrigin
+
+
+17:59:42 === E-newmods --scenarios plains,spin,sprint,flight,forest,city,interior (736s, exit 0)
+E-newmods rep1 plains   fps 45.3  p99 26.15  max 57.0   >100ms 0   stall 0ms vram 9551 
+E-newmods rep1 spin     fps 45.0  p99 26.5   max 172.0  >100ms 1   stall 172ms vram 11177 
+E-newmods rep1 sprint   fps 45.6  p99 36.29  max 184.8  >100ms 1   stall 185ms vram 12514 
+E-newmods rep1 flight   fps 42.0  p99 29.83  max 134.4  >100ms 1   stall 134ms vram 12422 
+E-newmods rep1 forest   fps 35.7  p99 30.52  max 40.3   >100ms 0   stall 0ms vram 11660 
+E-newmods rep1 city     fps 38.2  p99 46.27  max 185.3  >100ms 1   stall 185ms vram 10549 
+E-newmods rep1 interior fps 48.8  p99 28.92  max 53.2   >100ms 0   stall 0ms vram 10908 
+
+
+17:59:42 ALL DONE

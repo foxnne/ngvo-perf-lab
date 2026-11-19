@@ -1,0 +1,40 @@
+{
+ "label": "B-warmup",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "5b309780b6",
+ "time": "2026-11-17 11:46:05",
+ "render": {
+  "frames": 2994,
+  "mean": 33.42,
+  "fps": 29.9,
+  "p50": 31.19,
+  "p95": 43.81,
+  "p99": 74.74,
+  "max": 982.6,
+  "over50": 86,
+  "over100": 22,
+  "over250": 9,
+  "stall_ms": 6281
+ },
+ "main_cpu_ms": 29.08,
+ "fg_share": 1.0,
+ "distance": 4185,
+ "cells": 4,
+ "vram": {
+  "proc_max": 12982,
+  "proc_min": 9018,
+  "new_top": [
+   2664,
+   2664,
+   2664,
+   2608
+  ],
+  "geom_live_max": 3220
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 11,
+ "offroute": 4
+}

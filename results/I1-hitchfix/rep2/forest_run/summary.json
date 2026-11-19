@@ -1,0 +1,29 @@
+{
+ "label": "I1-hitchfix",
+ "rep": 2,
+ "scenario": "forest_run",
+ "config": "e9f4d0f69f",
+ "time": "2026-11-18 06:43:22",
+ "render": {
+  "frames": 2949,
+  "mean": 19.73,
+  "fps": 50.7,
+  "p50": 18.79,
+  "p95": 25.87,
+  "p99": 30.14,
+  "max": 178.0,
+  "over50": 6,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 178
+ },
+ "main_cpu_ms": 18.17,
+ "fg_share": 1.0,
+ "distance": 17285,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1247
+}

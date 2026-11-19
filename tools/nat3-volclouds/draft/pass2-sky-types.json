@@ -1,0 +1,1584 @@
+{
+  "_note": "UNTESTED. One representative weather per sky type with its Day settings, for one frame per type. Console: fw <formId>; NAT-ENB.esp ids need the load-order byte in place of the leading 00.",
+  "pack": "foxnne-nat3-clouds-pass2",
+  "calibration": {
+    "savedBase": {
+      "cloudLayer.low.ndfAltitudeOffset": 1200.0,
+      "cloudLayer.low.ndfAltitudeScale": 900.0,
+      "cloudLayer.low.ndfScale": [
+        24.66,
+        16.7
+      ],
+      "cloudLayer.low.densityScale": 0.75,
+      "cloudLayer.lighting.brightness/sunExtinction/viewExtinction": 1.0,
+      "cloudLayer.wind.lowVelocity": [
+        5.0,
+        0.0
+      ],
+      "cloudLayer.wind.highVelocity": [
+        10.0,
+        0.0
+      ],
+      "aerosolType": 1,
+      "aerosolLoading": 0.4,
+      "sunlightColor": [
+        10.0,
+        9.7,
+        9.5
+      ],
+      "enableVanillaClouds": false,
+      "cloudLayer.cirrus.densityScale": 0.3,
+      "cloudMap.procedural.parameters.primary.range": [
+        0.1,
+        0.65,
+        0.0,
+        0.65
+      ]
+    },
+    "coverage": "primary.range inMin is the working lever: -0.4 = full broken-to-overcast field, 0.1 = saved base, 0.2 with the high layer off = liked \"clear day with a few distinct cumulus\". coverageGain and outMax did little.",
+    "highLayer": "cirrus densityScale 1.0 = disliked dense popcorn; 0.3-0.4 faint; 0 off.",
+    "terrain": "Whiterun plain ~155 m, Lake Ilinalta ~215 m, peaks ~700-770 m above the map floor; base below ~600 m buries terrain.",
+    "haze": "Continental loading 0.4 = clear day; 0.7 was milky.",
+    "heightFog": "baseline vanillaFogStrength 0.3 is a white-out in foggy weather."
+  },
+  "types": {
+    "clear": {
+      "label": "Clear",
+      "rationale": "Fewer clouds than the liked inMin 0.2 sky: inMin pushed to 0.45 and the secondary field raised too; high layer off.",
+      "count": 5,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          0.45,
+          0.45
+        ],
+        "outMin": [
+          0.0,
+          0.0
+        ],
+        "outMax": [
+          0.65,
+          0.65
+        ],
+        "sec": [
+          0.3,
+          0.3
+        ],
+        "base": [
+          1400,
+          1400
+        ],
+        "thick": [
+          600,
+          600
+        ],
+        "dens": [
+          0.6,
+          0.6
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.4,
+          0.5
+        ],
+        "fogHalfM": null
+      },
+      "representative": {
+        "editorId": "SClearSkyPF",
+        "formKey": "0x7F00~NAT-ENB.esp",
+        "localFormId": "0x7F00",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": 0.45,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.3,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.wind.lowVelocity.x": 3.3,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 6.6,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2399,
+          "halfOpacityDistanceDayM.pass2": 2399
+        }
+      },
+      "heaviestMember": {
+        "editorId": "SunnyFV_A",
+        "formKey": "0x10E10~Dawnguard.esm",
+        "localFormId": "0x10E10",
+        "plugin": "Dawnguard.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": 0.45,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.3,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.wind.lowVelocity.x": 3.6,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2425,
+          "halfOpacityDistanceDayM.pass2": 2425
+        }
+      },
+      "members": [
+        {
+          "editorId": "SClearSkyCOMA",
+          "formKey": "0x23667~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SClearSkyPF",
+          "formKey": "0x7F00~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SClearSkySN",
+          "formKey": "0x53C2~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SClearSkyTU",
+          "formKey": "0x3DF4~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SunnyFV_A",
+          "formKey": "0x10E10~Dawnguard.esm",
+          "severity": 0.0
+        }
+      ]
+    },
+    "fair": {
+      "label": "Fair-weather cumulus",
+      "rationale": "The liked look itself: inMin 0.2 +/- 0.05 by NAT layer alpha, high layer off, base a little above the saved 1200.",
+      "count": 20,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          0.25,
+          0.15
+        ],
+        "outMin": [
+          0.0,
+          0.0
+        ],
+        "outMax": [
+          0.65,
+          0.65
+        ],
+        "sec": [
+          -0.2,
+          -0.2
+        ],
+        "base": [
+          1300,
+          1300
+        ],
+        "thick": [
+          700,
+          700
+        ],
+        "dens": [
+          0.7,
+          0.7
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.4,
+          0.5
+        ],
+        "fogHalfM": null
+      },
+      "representative": {
+        "editorId": "SunnyPF",
+        "formKey": "0x81A~Skyrim.esm",
+        "localFormId": "0x81A",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": 0.25,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudLayer.low.ndfAltitudeOffset": 1300.0,
+          "cloudLayer.low.ndfAltitudeScale": 700.0,
+          "cloudLayer.low.densityScale": 0.7,
+          "cloudLayer.wind.lowVelocity.x": 3.6,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2399,
+          "halfOpacityDistanceDayM.pass2": 2399
+        }
+      },
+      "heaviestMember": {
+        "editorId": "SunnyCO_A",
+        "formKey": "0x10E1E8~Skyrim.esm",
+        "localFormId": "0x10E1E8",
+        "plugin": "Skyrim.esm",
+        "severity": 1.0,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": 0.15,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudLayer.low.ndfAltitudeOffset": 1300.0,
+          "cloudLayer.low.ndfAltitudeScale": 700.0,
+          "cloudLayer.low.densityScale": 0.7,
+          "cloudLayer.wind.lowVelocity.x": 3.6,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2399,
+          "halfOpacityDistanceDayM.pass2": 2399
+        }
+      },
+      "members": [
+        {
+          "editorId": "SunnyPF",
+          "formKey": "0x81A~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SunnySN",
+          "formKey": "0x10A244~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SunnyTU_A",
+          "formKey": "0x10E1EE~Skyrim.esm",
+          "severity": 0.086
+        },
+        {
+          "editorId": "SunnyDLC2",
+          "formKey": "0x18471~Dragonborn.esm",
+          "severity": 0.143
+        },
+        {
+          "editorId": "SunnyDLC2_ALT",
+          "formKey": "0xD64B0~NAT-ENB.esp",
+          "severity": 0.143
+        },
+        {
+          "editorId": "SunnyCO",
+          "formKey": "0x10A234~Skyrim.esm",
+          "severity": 0.343
+        },
+        {
+          "editorId": "SunnyDLC1_Auriel",
+          "formKey": "0xF89C~Dawnguard.esm",
+          "severity": 0.343
+        },
+        {
+          "editorId": "SunnyVT",
+          "formKey": "0x10A7A5~Skyrim.esm",
+          "severity": 0.571
+        },
+        {
+          "editorId": "SunnyPF_A",
+          "formKey": "0x10E1F2~Skyrim.esm",
+          "severity": 0.586
+        },
+        {
+          "editorId": "SunnyFF",
+          "formKey": "0x10A23B~Skyrim.esm",
+          "severity": 0.614
+        },
+        {
+          "editorId": "SunnyFF_A",
+          "formKey": "0x10E1EC~Skyrim.esm",
+          "severity": 0.686
+        },
+        {
+          "editorId": "SunnyRE",
+          "formKey": "0x10A237~Skyrim.esm",
+          "severity": 0.686
+        },
+        {
+          "editorId": "SunnyTU",
+          "formKey": "0x10A240~Skyrim.esm",
+          "severity": 0.686
+        },
+        {
+          "editorId": "SunnyMA",
+          "formKey": "0x10A230~Skyrim.esm",
+          "severity": 0.8
+        },
+        {
+          "editorId": "SunnyVT_A",
+          "formKey": "0x10E1E4~Skyrim.esm",
+          "severity": 0.8
+        },
+        {
+          "editorId": "SunnyFV",
+          "formKey": "0x10E0F~Dawnguard.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnyMA_A",
+          "formKey": "0x10E1E6~Skyrim.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnyRE_A",
+          "formKey": "0x10E1EA~Skyrim.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnySN_A",
+          "formKey": "0x10E1F0~Skyrim.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnyCO_A",
+          "formKey": "0x10E1E8~Skyrim.esm",
+          "severity": 1.0
+        }
+      ]
+    },
+    "partly": {
+      "label": "Partly cloudy",
+      "rationale": "Starts at the saved global base (inMin 0.1, 1200/900, 0.75, faint high layer 0.3) and moves a third of the way toward the -0.4 broken field.",
+      "count": 27,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          0.1,
+          -0.15
+        ],
+        "outMin": [
+          0.0,
+          0.0
+        ],
+        "outMax": [
+          0.65,
+          0.65
+        ],
+        "sec": [
+          -0.2,
+          -0.2
+        ],
+        "base": [
+          1200,
+          1100
+        ],
+        "thick": [
+          900,
+          1000
+        ],
+        "dens": [
+          0.75,
+          0.75
+        ],
+        "cirrus": 0.3,
+        "haze": [
+          0.4,
+          0.55
+        ],
+        "fogHalfM": null
+      },
+      "representative": {
+        "editorId": "CloudyPF",
+        "formKey": "0x12F89~Skyrim.esm",
+        "localFormId": "0x12F89",
+        "plugin": "Skyrim.esm",
+        "severity": 0.521,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": -0.03,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudLayer.low.ndfAltitudeOffset": 1150.0,
+          "cloudLayer.low.ndfAltitudeScale": 950.0,
+          "cloudLayer.low.densityScale": 0.75,
+          "cloudLayer.wind.lowVelocity.x": 4.5,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 9.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.3
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2413,
+          "halfOpacityDistanceDayM.pass2": 2413
+        }
+      },
+      "heaviestMember": {
+        "editorId": "CloudyFF",
+        "formKey": "0x10A23F~Skyrim.esm",
+        "localFormId": "0x10A23F",
+        "plugin": "Skyrim.esm",
+        "severity": 0.875,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": -0.119,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudLayer.low.ndfAltitudeOffset": 1110.0,
+          "cloudLayer.low.ndfAltitudeScale": 990.0,
+          "cloudLayer.low.densityScale": 0.75,
+          "cloudLayer.wind.lowVelocity.x": 4.5,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 9.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.3
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2413,
+          "halfOpacityDistanceDayM.pass2": 2413
+        }
+      },
+      "members": [
+        {
+          "editorId": "CloudyCO_A",
+          "formKey": "0x10E1E7~Skyrim.esm",
+          "severity": 0.132
+        },
+        {
+          "editorId": "CloudyDLC2",
+          "formKey": "0x31AC0~Dragonborn.esm",
+          "severity": 0.254
+        },
+        {
+          "editorId": "CloudyDLC2_ALT",
+          "formKey": "0xD64B2~NAT-ENB.esp",
+          "severity": 0.254
+        },
+        {
+          "editorId": "CloudySN_A",
+          "formKey": "0x10E1EF~Skyrim.esm",
+          "severity": 0.261
+        },
+        {
+          "editorId": "CloudyMA_A",
+          "formKey": "0x10E1E5~Skyrim.esm",
+          "severity": 0.28
+        },
+        {
+          "editorId": "CloudyDLC2_A",
+          "formKey": "0x374B8~Dragonborn.esm",
+          "severity": 0.282
+        },
+        {
+          "editorId": "CloudyFV_A",
+          "formKey": "0x10E0B~Dawnguard.esm",
+          "severity": 0.307
+        },
+        {
+          "editorId": "CloudyFF_A",
+          "formKey": "0x10E1EB~Skyrim.esm",
+          "severity": 0.325
+        },
+        {
+          "editorId": "CloudyFV",
+          "formKey": "0x10E0E~Dawnguard.esm",
+          "severity": 0.352
+        },
+        {
+          "editorId": "KarthspireRedoubtFog",
+          "formKey": "0x106635~Skyrim.esm",
+          "severity": 0.36
+        },
+        {
+          "editorId": "CloudyRE",
+          "formKey": "0x10A23A~Skyrim.esm",
+          "severity": 0.406
+        },
+        {
+          "editorId": "CloudyRE_A",
+          "formKey": "0x10E1E9~Skyrim.esm",
+          "severity": 0.409
+        },
+        {
+          "editorId": "CloudyPF_A",
+          "formKey": "0x10E1F1~Skyrim.esm",
+          "severity": 0.42
+        },
+        {
+          "editorId": "CloudySN",
+          "formKey": "0x10A245~Skyrim.esm",
+          "severity": 0.42
+        },
+        {
+          "editorId": "SkyrimDA02Weather",
+          "formKey": "0x105F40~Skyrim.esm",
+          "severity": 0.442
+        },
+        {
+          "editorId": "CloudyDLC1_Auriel",
+          "formKey": "0xF89D~Dawnguard.esm",
+          "severity": 0.451
+        },
+        {
+          "editorId": "CloudyPF",
+          "formKey": "0x12F89~Skyrim.esm",
+          "severity": 0.521
+        },
+        {
+          "editorId": "CloudyTU_A",
+          "formKey": "0x10E1ED~Skyrim.esm",
+          "severity": 0.559
+        },
+        {
+          "editorId": "CloudyVT_A",
+          "formKey": "0x10E1E3~Skyrim.esm",
+          "severity": 0.563
+        },
+        {
+          "editorId": "CloudyMA",
+          "formKey": "0x10A233~Skyrim.esm",
+          "severity": 0.566
+        },
+        {
+          "editorId": "CloudyTU",
+          "formKey": "0x10A243~Skyrim.esm",
+          "severity": 0.573
+        },
+        {
+          "editorId": "CloudyDLC2_TU_A",
+          "formKey": "0x374BA~Dragonborn.esm",
+          "severity": 0.652
+        },
+        {
+          "editorId": "CloudyDLC2_TU_A_ALT",
+          "formKey": "0xD64B3~NAT-ENB.esp",
+          "severity": 0.652
+        },
+        {
+          "editorId": "CloudyVT",
+          "formKey": "0x10A7A8~Skyrim.esm",
+          "severity": 0.658
+        },
+        {
+          "editorId": "CloudyDLC2_A",
+          "formKey": "0x374B9~Dragonborn.esm",
+          "severity": 0.732
+        },
+        {
+          "editorId": "CloudyCO",
+          "formKey": "0x10A236~Skyrim.esm",
+          "severity": 0.763
+        },
+        {
+          "editorId": "CloudyFF",
+          "formKey": "0x10A23F~Skyrim.esm",
+          "severity": 0.875
+        }
+      ]
+    },
+    "overcast": {
+      "label": "Overcast",
+      "rationale": "Around and past the tested -0.4 full field, flat (800-1000 m) deck with its base still above the peaks; high layer off because it is hidden.",
+      "count": 14,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          -0.35,
+          -0.6
+        ],
+        "outMin": [
+          0.0,
+          0.15
+        ],
+        "outMax": [
+          0.65,
+          0.7
+        ],
+        "sec": [
+          -0.3,
+          -0.5
+        ],
+        "base": [
+          1000,
+          900
+        ],
+        "thick": [
+          800,
+          1000
+        ],
+        "dens": [
+          0.75,
+          0.85
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.5,
+          0.7
+        ],
+        "fogHalfM": 1200
+      },
+      "representative": {
+        "editorId": "OvercastPF",
+        "formKey": "0x53B6~NAT-ENB.esp",
+        "localFormId": "0x53B6",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.668,
+        "aerosolLoadingEquivalent": 0.565,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 7.125,
+          "aerosolScatter.y": 9.6584,
+          "aerosolScatter.z": 12.925,
+          "aerosolAbsorption.x": 0.37488,
+          "aerosolAbsorption.y": 0.41403,
+          "aerosolAbsorption.z": 0.45315,
+          "cloudMap.procedural.parameters.primary.range.x": -0.517,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.1,
+          "cloudMap.procedural.parameters.primary.range.w": 0.683,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.434,
+          "cloudLayer.low.ndfAltitudeOffset": 930.0,
+          "cloudLayer.low.ndfAltitudeScale": 930.0,
+          "cloudLayer.low.densityScale": 0.817,
+          "cloudLayer.wind.lowVelocity.x": 5.1,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 10.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.191,
+          "vanillaFogStrength.Night": 0.181,
+          "halfOpacityDistanceDayM.atBaseline0.3": 629,
+          "halfOpacityDistanceDayM.pass2": 989
+        }
+      },
+      "heaviestMember": {
+        "editorId": "OvercastVT",
+        "formKey": "0x5943~NAT-ENB.esp",
+        "localFormId": "0x5943",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.861,
+        "aerosolLoadingEquivalent": 0.565,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 7.125,
+          "aerosolScatter.y": 9.6584,
+          "aerosolScatter.z": 12.925,
+          "aerosolAbsorption.x": 0.37488,
+          "aerosolAbsorption.y": 0.41403,
+          "aerosolAbsorption.z": 0.45315,
+          "cloudMap.procedural.parameters.primary.range.x": -0.565,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.129,
+          "cloudMap.procedural.parameters.primary.range.w": 0.693,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.472,
+          "cloudLayer.low.ndfAltitudeOffset": 910.0,
+          "cloudLayer.low.ndfAltitudeScale": 970.0,
+          "cloudLayer.low.densityScale": 0.836,
+          "cloudLayer.wind.lowVelocity.x": 5.1,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 10.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.191,
+          "vanillaFogStrength.Night": 0.181,
+          "halfOpacityDistanceDayM.atBaseline0.3": 629,
+          "halfOpacityDistanceDayM.pass2": 989
+        }
+      },
+      "members": [
+        {
+          "editorId": "OvercastFF",
+          "formKey": "0x53D1~NAT-ENB.esp",
+          "severity": 0.318
+        },
+        {
+          "editorId": "OvercastRE",
+          "formKey": "0x53BE~NAT-ENB.esp",
+          "severity": 0.391
+        },
+        {
+          "editorId": "StormDLC2_ALT",
+          "formKey": "0xD64B4~NAT-ENB.esp",
+          "severity": 0.436
+        },
+        {
+          "editorId": "HelgenAttackWeather",
+          "formKey": "0xD9329~Skyrim.esm",
+          "severity": 0.461
+        },
+        {
+          "editorId": "SkyrimOvercastWar",
+          "formKey": "0xD299E~Skyrim.esm",
+          "severity": 0.461
+        },
+        {
+          "editorId": "StormDLC2",
+          "formKey": "0x32336~Dragonborn.esm",
+          "severity": 0.47
+        },
+        {
+          "editorId": "DLC1Eclipse",
+          "formKey": "0x6AEC~Dawnguard.esm",
+          "severity": 0.514
+        },
+        {
+          "editorId": "SkyrimMQ206weather",
+          "formKey": "0x10199F~Skyrim.esm",
+          "severity": 0.514
+        },
+        {
+          "editorId": "BloatedMansGrottoFog",
+          "formKey": "0x105941~Skyrim.esm",
+          "severity": 0.542
+        },
+        {
+          "editorId": "OvercastMA",
+          "formKey": "0x53C4~NAT-ENB.esp",
+          "severity": 0.551
+        },
+        {
+          "editorId": "OvercastCO",
+          "formKey": "0x53D2~NAT-ENB.esp",
+          "severity": 0.61
+        },
+        {
+          "editorId": "OvercastTU",
+          "formKey": "0x53BD~NAT-ENB.esp",
+          "severity": 0.62
+        },
+        {
+          "editorId": "OvercastPF",
+          "formKey": "0x53B6~NAT-ENB.esp",
+          "severity": 0.668
+        },
+        {
+          "editorId": "OvercastVT",
+          "formKey": "0x5943~NAT-ENB.esp",
+          "severity": 0.861
+        }
+      ]
+    },
+    "rain": {
+      "label": "Rain",
+      "rationale": "Showers (bright-sun rain records) are a broken field; dark rain is a closed, lower, thicker, denser deck with milky distance.",
+      "count": 8,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          -0.3,
+          -0.7
+        ],
+        "outMin": [
+          0.0,
+          0.2
+        ],
+        "outMax": [
+          0.65,
+          0.72
+        ],
+        "sec": [
+          -0.3,
+          -0.6
+        ],
+        "base": [
+          950,
+          800
+        ],
+        "thick": [
+          1100,
+          1500
+        ],
+        "dens": [
+          0.8,
+          0.95
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.6,
+          0.85
+        ],
+        "fogHalfM": 900
+      },
+      "representative": {
+        "editorId": "RainPF",
+        "formKey": "0xC821F~Skyrim.esm",
+        "localFormId": "0xC821F",
+        "plugin": "Skyrim.esm",
+        "severity": 0.76,
+        "aerosolLoadingEquivalent": 0.681,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 8.5878,
+          "aerosolScatter.y": 11.6414,
+          "aerosolScatter.z": 15.5786,
+          "aerosolAbsorption.x": 0.45184,
+          "aerosolAbsorption.y": 0.49904,
+          "aerosolAbsorption.z": 0.54619,
+          "cloudMap.procedural.parameters.primary.range.x": -0.604,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.152,
+          "cloudMap.procedural.parameters.primary.range.w": 0.703,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.528,
+          "cloudLayer.low.ndfAltitudeOffset": 840.0,
+          "cloudLayer.low.ndfAltitudeScale": 1400.0,
+          "cloudLayer.low.densityScale": 0.914,
+          "cloudLayer.wind.lowVelocity.x": 7.5,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 15.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.229,
+          "vanillaFogStrength.Night": 0.254,
+          "halfOpacityDistanceDayM.atBaseline0.3": 611,
+          "halfOpacityDistanceDayM.pass2": 801
+        }
+      },
+      "heaviestMember": null,
+      "members": [
+        {
+          "editorId": "RainCloudy_DLC2",
+          "formKey": "0x1D760~Dragonborn.esm",
+          "severity": 0.249
+        },
+        {
+          "editorId": "RainCloudy_DLC2_ALT",
+          "formKey": "0xD64B1~NAT-ENB.esp",
+          "severity": 0.249
+        },
+        {
+          "editorId": "RainFF",
+          "formKey": "0x10A23D~Skyrim.esm",
+          "severity": 0.249
+        },
+        {
+          "editorId": "RainMA",
+          "formKey": "0x10A231~Skyrim.esm",
+          "severity": 0.663
+        },
+        {
+          "editorId": "RainRE",
+          "formKey": "0x10A238~Skyrim.esm",
+          "severity": 0.663
+        },
+        {
+          "editorId": "RainTU",
+          "formKey": "0x10A242~Skyrim.esm",
+          "severity": 0.674
+        },
+        {
+          "editorId": "RainVT",
+          "formKey": "0x10A7A6~Skyrim.esm",
+          "severity": 0.736
+        },
+        {
+          "editorId": "RainPF",
+          "formKey": "0xC821F~Skyrim.esm",
+          "severity": 0.76
+        }
+      ]
+    },
+    "storm": {
+      "label": "Thunderstorm",
+      "rationale": "Darkest and deepest: closed field with a coverage floor, base just above the peaks, 1.8-2.4 km deep, full density.",
+      "count": 5,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          -0.7,
+          -0.9
+        ],
+        "outMin": [
+          0.2,
+          0.3
+        ],
+        "outMax": [
+          0.72,
+          0.78
+        ],
+        "sec": [
+          -0.6,
+          -0.8
+        ],
+        "base": [
+          800,
+          700
+        ],
+        "thick": [
+          1800,
+          2400
+        ],
+        "dens": [
+          0.95,
+          1.0
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.8,
+          1.0
+        ],
+        "fogHalfM": 500
+      },
+      "representative": {
+        "editorId": "StormPF",
+        "formKey": "0xC8220~Skyrim.esm",
+        "localFormId": "0xC8220",
+        "plugin": "Skyrim.esm",
+        "severity": 0.696,
+        "aerosolLoadingEquivalent": 0.949,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 11.9674,
+          "aerosolScatter.y": 16.2227,
+          "aerosolScatter.z": 21.7094,
+          "aerosolAbsorption.x": 0.62966,
+          "aerosolAbsorption.y": 0.69543,
+          "aerosolAbsorption.z": 0.76113,
+          "cloudMap.procedural.parameters.primary.range.x": -0.839,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.27,
+          "cloudMap.procedural.parameters.primary.range.w": 0.762,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.739,
+          "cloudLayer.low.ndfAltitudeOffset": 730.0,
+          "cloudLayer.low.ndfAltitudeScale": 2220.0,
+          "cloudLayer.low.densityScale": 0.985,
+          "cloudLayer.wind.lowVelocity.x": 12.0,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 24.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.122,
+          "vanillaFogStrength.Night": 0.079,
+          "halfOpacityDistanceDayM.atBaseline0.3": 139,
+          "halfOpacityDistanceDayM.pass2": 340
+        }
+      },
+      "heaviestMember": {
+        "editorId": "StormTU",
+        "formKey": "0x10A241~Skyrim.esm",
+        "localFormId": "0x10A241",
+        "plugin": "Skyrim.esm",
+        "severity": 0.727,
+        "aerosolLoadingEquivalent": 0.949,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 11.9674,
+          "aerosolScatter.y": 16.2227,
+          "aerosolScatter.z": 21.7094,
+          "aerosolAbsorption.x": 0.62966,
+          "aerosolAbsorption.y": 0.69543,
+          "aerosolAbsorption.z": 0.76113,
+          "cloudMap.procedural.parameters.primary.range.x": -0.845,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.273,
+          "cloudMap.procedural.parameters.primary.range.w": 0.764,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.745,
+          "cloudLayer.low.ndfAltitudeOffset": 730.0,
+          "cloudLayer.low.ndfAltitudeScale": 2240.0,
+          "cloudLayer.low.densityScale": 0.986,
+          "cloudLayer.wind.lowVelocity.x": 12.0,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 24.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.122,
+          "vanillaFogStrength.Night": 0.079,
+          "halfOpacityDistanceDayM.atBaseline0.3": 139,
+          "halfOpacityDistanceDayM.pass2": 340
+        }
+      },
+      "members": [
+        {
+          "editorId": "FXSkyrimStormBlowingGrass",
+          "formKey": "0x10C32F~Skyrim.esm",
+          "severity": 0.382
+        },
+        {
+          "editorId": "FXMagicStormRain",
+          "formKey": "0xD4886~Skyrim.esm",
+          "severity": 0.41
+        },
+        {
+          "editorId": "StormFF",
+          "formKey": "0x10A23C~Skyrim.esm",
+          "severity": 0.613
+        },
+        {
+          "editorId": "StormPF",
+          "formKey": "0xC8220~Skyrim.esm",
+          "severity": 0.696
+        },
+        {
+          "editorId": "StormTU",
+          "formKey": "0x10A241~Skyrim.esm",
+          "severity": 0.727
+        }
+      ]
+    },
+    "snow": {
+      "label": "Snow",
+      "rationale": "From thin broken cloud with light snow to a blizzard deck; less dense than rain so the deck stays bright.",
+      "count": 9,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          -0.1,
+          -0.7
+        ],
+        "outMin": [
+          0.0,
+          0.2
+        ],
+        "outMax": [
+          0.65,
+          0.72
+        ],
+        "sec": [
+          -0.2,
+          -0.6
+        ],
+        "base": [
+          950,
+          750
+        ],
+        "thick": [
+          900,
+          1500
+        ],
+        "dens": [
+          0.65,
+          0.85
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.55,
+          0.9
+        ],
+        "fogHalfM": 700
+      },
+      "representative": {
+        "editorId": "Snow",
+        "formKey": "0x4D7FB~Skyrim.esm",
+        "localFormId": "0x4D7FB",
+        "plugin": "Skyrim.esm",
+        "severity": 0.529,
+        "aerosolLoadingEquivalent": 0.55,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 6.9358,
+          "aerosolScatter.y": 9.402,
+          "aerosolScatter.z": 12.5818,
+          "aerosolAbsorption.x": 0.36492,
+          "aerosolAbsorption.y": 0.40304,
+          "aerosolAbsorption.z": 0.44112,
+          "cloudMap.procedural.parameters.primary.range.x": -0.418,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.106,
+          "cloudMap.procedural.parameters.primary.range.w": 0.687,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.412,
+          "cloudLayer.low.ndfAltitudeOffset": 840.0,
+          "cloudLayer.low.ndfAltitudeScale": 1220.0,
+          "cloudLayer.low.densityScale": 0.756,
+          "cloudLayer.wind.lowVelocity.x": 6.0,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 12.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.017,
+          "halfOpacityDistanceDayM.atBaseline0.3": 2807,
+          "halfOpacityDistanceDayM.pass2": 2807
+        }
+      },
+      "heaviestMember": {
+        "editorId": "Snowstorm_Alt",
+        "formKey": "0xD64D6~NAT-ENB.esp",
+        "localFormId": "0xD64D6",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.964,
+        "aerosolLoadingEquivalent": 0.787,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 9.9245,
+          "aerosolScatter.y": 13.4534,
+          "aerosolScatter.z": 18.0034,
+          "aerosolAbsorption.x": 0.52217,
+          "aerosolAbsorption.y": 0.57671,
+          "aerosolAbsorption.z": 0.6312,
+          "cloudMap.procedural.parameters.primary.range.x": -0.678,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.193,
+          "cloudMap.procedural.parameters.primary.range.w": 0.717,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.586,
+          "cloudLayer.low.ndfAltitudeOffset": 760.0,
+          "cloudLayer.low.ndfAltitudeScale": 1480.0,
+          "cloudLayer.low.densityScale": 0.843,
+          "cloudLayer.wind.lowVelocity.x": 15.6,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 31.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.134,
+          "vanillaFogStrength.Night": 0.024,
+          "halfOpacityDistanceDayM.atBaseline0.3": 222,
+          "halfOpacityDistanceDayM.pass2": 496
+        }
+      },
+      "members": [
+        {
+          "editorId": "SkuldafnCloudy",
+          "formKey": "0x104AB4~Skyrim.esm",
+          "severity": 0.103
+        },
+        {
+          "editorId": "SnowClear",
+          "formKey": "0x8476~NAT-ENB.esp",
+          "severity": 0.25
+        },
+        {
+          "editorId": "SnowClear_Alt",
+          "formKey": "0xD64D4~NAT-ENB.esp",
+          "severity": 0.25
+        },
+        {
+          "editorId": "Snow",
+          "formKey": "0x4D7FB~Skyrim.esm",
+          "severity": 0.529
+        },
+        {
+          "editorId": "SnowOvercast",
+          "formKey": "0x6B387~NAT-ENB.esp",
+          "severity": 0.529
+        },
+        {
+          "editorId": "SnowOvercast_Alt",
+          "formKey": "0xD64D5~NAT-ENB.esp",
+          "severity": 0.529
+        },
+        {
+          "editorId": "Snow_Alt",
+          "formKey": "0xD64D3~NAT-ENB.esp",
+          "severity": 0.529
+        },
+        {
+          "editorId": "Snowstorm",
+          "formKey": "0xC8221~Skyrim.esm",
+          "severity": 0.964
+        },
+        {
+          "editorId": "Snowstorm_Alt",
+          "formKey": "0xD64D6~NAT-ENB.esp",
+          "severity": 0.964
+        }
+      ]
+    },
+    "fog": {
+      "label": "Fog",
+      "rationale": "Low thin stratus that takes the peaks (base 650-700 m, never below the 600 m limit); the ground fog itself is height fog, strongly reduced.",
+      "count": 10,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          -0.3,
+          -0.5
+        ],
+        "outMin": [
+          0.0,
+          0.1
+        ],
+        "outMax": [
+          0.65,
+          0.65
+        ],
+        "sec": [
+          -0.3,
+          -0.4
+        ],
+        "base": [
+          700,
+          650
+        ],
+        "thick": [
+          500,
+          600
+        ],
+        "dens": [
+          0.5,
+          0.6
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.8,
+          1.1
+        ],
+        "fogHalfM": 350
+      },
+      "representative": {
+        "editorId": "FogPF",
+        "formKey": "0xC821E~Skyrim.esm",
+        "localFormId": "0xC821E",
+        "plugin": "Skyrim.esm",
+        "severity": 0.169,
+        "aerosolLoadingEquivalent": 1.023,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 12.9006,
+          "aerosolScatter.y": 17.4877,
+          "aerosolScatter.z": 23.4022,
+          "aerosolAbsorption.x": 0.67876,
+          "aerosolAbsorption.y": 0.74965,
+          "aerosolAbsorption.z": 0.82048,
+          "cloudMap.procedural.parameters.primary.range.x": -0.334,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.017,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.317,
+          "cloudLayer.low.ndfAltitudeOffset": 690.0,
+          "cloudLayer.low.ndfAltitudeScale": 520.0,
+          "cloudLayer.low.densityScale": 0.517,
+          "cloudLayer.wind.lowVelocity.x": 3.9,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.8,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.153,
+          "vanillaFogStrength.Night": 0.101,
+          "halfOpacityDistanceDayM.atBaseline0.3": 134,
+          "halfOpacityDistanceDayM.pass2": 263
+        }
+      },
+      "heaviestMember": {
+        "editorId": "DLC1FalmerValley_bf",
+        "formKey": "0x19599~Dawnguard.esm",
+        "localFormId": "0x19599",
+        "plugin": "Dawnguard.esm",
+        "severity": 1.0,
+        "aerosolLoadingEquivalent": 1.1,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 13.8716,
+          "aerosolScatter.y": 18.804,
+          "aerosolScatter.z": 25.1636,
+          "aerosolAbsorption.x": 0.72985,
+          "aerosolAbsorption.y": 0.80608,
+          "aerosolAbsorption.z": 0.88224,
+          "cloudMap.procedural.parameters.primary.range.x": -0.5,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.1,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.4,
+          "cloudLayer.low.ndfAltitudeOffset": 650.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.wind.lowVelocity.x": 5.28,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 10.56,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.053,
+          "vanillaFogStrength.Night": 0.032,
+          "halfOpacityDistanceDayM.atBaseline0.3": 29,
+          "halfOpacityDistanceDayM.pass2": 166
+        }
+      },
+      "members": [
+        {
+          "editorId": "FogCO",
+          "formKey": "0x10A235~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogFF",
+          "formKey": "0x10A23E~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogMA",
+          "formKey": "0x10A232~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogPF",
+          "formKey": "0xC821E~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogRE",
+          "formKey": "0x10A239~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogRain",
+          "formKey": "0x53C7~NAT-ENB.esp",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogVT",
+          "formKey": "0x10A7A7~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "RiftenOvercastFog",
+          "formKey": "0x10FE7E~Skyrim.esm",
+          "severity": 0.307
+        },
+        {
+          "editorId": "DLC1FalmerValley_bfDark",
+          "formKey": "0x195A0~Dawnguard.esm",
+          "severity": 0.693
+        },
+        {
+          "editorId": "DLC1FalmerValley_bf",
+          "formKey": "0x19599~Dawnguard.esm",
+          "severity": 1.0
+        }
+      ]
+    },
+    "special": {
+      "label": "Other realm / map",
+      "rationale": "Worldspace is not in the Physical Sky whitelist, so the file most likely never applies; clear values so nothing surprising happens if it does.",
+      "count": 13,
+      "definition_lightest_to_heaviest": {
+        "inMin": [
+          0.45,
+          0.45
+        ],
+        "outMin": [
+          0.0,
+          0.0
+        ],
+        "outMax": [
+          0.65,
+          0.65
+        ],
+        "sec": [
+          0.3,
+          0.3
+        ],
+        "base": [
+          1400,
+          1400
+        ],
+        "thick": [
+          600,
+          600
+        ],
+        "dens": [
+          0.6,
+          0.6
+        ],
+        "cirrus": 0.0,
+        "haze": [
+          0.4,
+          0.4
+        ],
+        "fogHalfM": null
+      },
+      "representative": {
+        "editorId": "SovngardeClear",
+        "formKey": "0x10D9EC~Skyrim.esm",
+        "localFormId": "0x10D9EC",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": 0.45,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.3,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.wind.lowVelocity.x": 3.3,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 6.6,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 3197,
+          "halfOpacityDistanceDayM.pass2": 3197
+        }
+      },
+      "heaviestMember": {
+        "editorId": "WorldMapWeather",
+        "formKey": "0xA6858~Skyrim.esm",
+        "localFormId": "0xA6858",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.4,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 5.0442,
+          "aerosolScatter.y": 6.8378,
+          "aerosolScatter.z": 9.1504,
+          "aerosolAbsorption.x": 0.2654,
+          "aerosolAbsorption.y": 0.29312,
+          "aerosolAbsorption.z": 0.32081,
+          "cloudMap.procedural.parameters.primary.range.x": 0.45,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.3,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.wind.lowVelocity.x": 3.6,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.2,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.densityScale": 0.0
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.3,
+          "vanillaFogStrength.Night": 0.3,
+          "halfOpacityDistanceDayM.atBaseline0.3": 3197,
+          "halfOpacityDistanceDayM.pass2": 3197
+        }
+      },
+      "members": [
+        {
+          "editorId": "BlackreachWeather",
+          "formKey": "0x48C14~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "DLC2ApocryphaWeather",
+          "formKey": "0x1DFF5~Dragonborn.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "DLC2ApocryphaWeatherNew",
+          "formKey": "0x34CFB~Dragonborn.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb01",
+          "formKey": "0x1407~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb01_Rain",
+          "formKey": "0x14551~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb02",
+          "formKey": "0x18DBB~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb03",
+          "formKey": "0x18DBC~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb04",
+          "formKey": "0x18DBD~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAurora",
+          "formKey": "0x959F~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SovngardeClear",
+          "formKey": "0x10D9EC~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SovngardeDark",
+          "formKey": "0x10FEF8~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SovngardeFog",
+          "formKey": "0x923FD~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "WorldMapWeather",
+          "formKey": "0xA6858~Skyrim.esm",
+          "severity": 0.0
+        }
+      ]
+    }
+  }
+}

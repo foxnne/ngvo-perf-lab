@@ -1,0 +1,11 @@
+[15:08:12.127] [info] FasterTextures 1.0.2.0
+[15:08:12.128] [info] [stream] measuring texture loads on 1.6.1170.0
+[15:08:12.409] [info] [stream] indexed 88 archives, 0 repacked, 110898 compressed entries, in 279 ms
+[15:08:12.529] [info] [stream] small mips cache in C:\modlists\NGVO 8.0 Beta\Stock Game\FasterTextures Cache: 8421 textures, 2466 MiB
+[15:08:12.823] [info] [stream] read the paths of 232 archives (0 without), 360367 entries, 68772 excluded, 10580 more armor and clothing, in 294 ms
+[15:08:15.023] [info] [menu] Faster Textures page added to SKSE Menu Framework's menu
+[15:20:13.252] [info] [stream] Present hooked in a table of CommunityShaders.dll (page protection 0x2), continuing into FabulousPoser.dll
+[15:20:13.253] [info] [stream] Skyrim Performance Solution's texture streaming is on: textures it can manage are handed to it after loading small
+[15:20:13.253] [info] [stream] RaceMenu copies armor textures as they load, so armor and clothing load whole
+[15:20:13.253] [info] [stream] loading textures small first: up to 2 top mips, sides of at least 512, 256 KiB saved at least, 2 workers
+[15:20:14.532] [info] [stream] small mips cache filled: 0 added, 0 failed, in 1 s; it holds 8421 textures, 2466 MiB

@@ -1,0 +1,121 @@
+{
+  "_metadata": {
+    "version": "0.1.0",
+    "description": "foxnne-nat3-clouds (performance): volumetric clouds on, vanilla cloud meshes hidden, march quality, fair-weather fallback sky. UNTESTED DRAFT 2026-11-17. About half the march samples (step x1.0), shorter range, wider final blur to hide the coarser steps, half-resolution aerial-perspective cloud shadow. Smaller shadow volume means finer shadow texels (6 km / 256 = 23 m) but an earlier hand-off to the mean far shadow."
+  },
+  "enableVolumetricClouds": true,
+  "enableVanillaClouds": false,
+  "rayMarchRange": 24.0,
+  "shadowVolumeRange": 6.0,
+  "marchStepScale": 1.0,
+  "cloudBlurRadius": 2,
+  "halfResApShadow": true,
+  "cloudMap": {
+    "version": 3,
+    "procedural": {
+      "parameters": {
+        "primary": {
+          "range": [
+            0.3,
+            1.0,
+            0.0,
+            0.45
+          ]
+        },
+        "secondary": {
+          "range": [
+            0.5,
+            1.0,
+            0.0,
+            0.3
+          ]
+        },
+        "coverageGain": {
+          "range": [
+            -1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "cloudLayer": {
+    "low": {
+      "ndfAltitudeOffset": 1300.0,
+      "ndfAltitudeScale": 700.0,
+      "densityScale": 0.35,
+      "topExpansionScale": 0.3
+    },
+    "middle": {
+      "enabled": false
+    },
+    "cirrus": {
+      "enabled": true,
+      "altitude": 9000.0,
+      "densityScale": 0.5,
+      "weather": {
+        "states": [
+          {
+            "value": {
+              "layers": [
+                {
+                  "noise": 1,
+                  "frequency": 1.0,
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "range": [
+                    -0.2,
+                    0.9,
+                    0.0,
+                    0.55
+                  ]
+                },
+                {
+                  "noise": 2,
+                  "frequency": 1.0,
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "range": [
+                    -1.0,
+                    1.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "localMap": "",
+              "localWeight": 0.0,
+              "localWindScale": 1.0,
+              "localBlendMode": 0
+            },
+            "weight": 1.0
+          }
+        ]
+      }
+    },
+    "lighting": {
+      "brightness": 1.0,
+      "sunExtinction": 0.6,
+      "viewExtinction": 0.8,
+      "ambientStrength": 1.0
+    },
+    "wind": {
+      "lowVelocity": [
+        3.78,
+        1.13
+      ],
+      "highVelocity": [
+        9.18,
+        2.75
+      ],
+      "development": 0.2,
+      "disturbance": 0.15
+    }
+  }
+}

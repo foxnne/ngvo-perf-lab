@@ -1,0 +1,147 @@
+11/17/26 - 23:58:05.640757 [info] Loading ApocryphaMenuFramework 2.4.1.0...
+11/17/26 - 23:58:05.640853 [info] Original framework embedding Dear ImGui (MIT); not a fork of SKSE Menu Framework
+11/17/26 - 23:58:05.640860 [info] Build line: SE 1.5.97 / AE 1.6.x (CommonLibSSE-NG 3.7.0); game 1.6.1170.0
+11/17/26 - 23:58:05.640896 [info] SMF alias: the real SKSE Menu Framework is installed (C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\SKSEMenuFramework.dll) - lookups of SKSEMenuFramework (module name and file) are left to it, so its consumers bind to it and not to AMF
+11/17/26 - 23:58:05.640902 [info] [AddressLibrary] runtime 1-6-1170-0 (AE) read from "C:\modlists\NGVO 8.0 Beta\Stock Game\SkyrimSE.exe"; will open "Data/SKSE/Plugins/versionlib-1-6-1170-0.bin" relative to "C:\modlists\NGVO 8.0 Beta\Stock Game": present
+11/17/26 - 23:58:05.646547 [info] settings: defaults from Data/SKSE/Plugins/ApocryphaMenuFramework.ini (read); your settings from Data/SKSE/Plugins/ApocryphaMenuFramework/User.ini (not saved yet - written the first time a setting changes)
+11/17/26 - 23:58:05.646581 [info] menu personalization loaded: 0 alias(es), custom order off (0 remembered position(s)), 0 favourite(s), sort list order
+11/17/26 - 23:58:05.646591 [info] bindings: 0 of 20 read from the INI; the rest are the shipped defaults
+11/17/26 - 23:58:05.646600 [info] settings: menu key 59 (F1) - from shipped
+11/17/26 - 23:58:05.646613 [info] settings loaded: uToggleKey=0x3B, bSystemMenuRow=true, fTextScale=1.30, uLogLevel=2
+11/17/26 - 23:58:05.646619 [info] settings: log level applied (2)
+11/17/26 - 23:58:05.647262 [info] flick: the real FLICK's FUCK.dll is version 1.8.2.0
+11/17/26 - 23:58:05.647281 [info] flick: host ON (303 slots, API version 7) - the real FLICK (FUCK.dll) is installed too: AMF holds every FLICK mod that has no FLICK windows and is not left to FLICK; a mod with FLICK windows goes to FLICK unless kept here (Settings > Converted menus > FLICK)
+11/17/26 - 23:58:05.651777 [info] flick: the last session sent 1 mod(s) with FLICK windows to FLICK and left no crash log - no notice
+11/17/26 - 23:58:05.652407 [info] SMF module-name alias: load-time patching armed (LdrRegisterDllNotification) - plugins loading after this point are patched before their entry point runs
+11/17/26 - 23:58:05.654858 [info] SMF alias: scanned 3 module(s) (SKSE plugins that name the framework + msvcp140), redirected 20 import entr(ies) this pass (20 total; 0 module(s) / 0 entr(ies) patched at load time; 0 module-name hit(s), 0 file-name hit(s) so far; 2 plugin check(s) skipped as not consumers, 0 import entr(ies) left alone as another plugin's hook)
+11/17/26 - 23:58:05.654935 [info] DXGI present hooked at 0x7ff628eb4779
+11/17/26 - 23:58:05.654946 [info] D3D init hooked at 0x7ff628eb2655
+11/17/26 - 23:58:05.654952 [info] D3D-init offset dispute resolved on this runtime: Wheeler (BSD-3) matched (offset 0x275)
+11/17/26 - 23:58:05.654956 [info] Renderer hooks installed
+11/17/26 - 23:58:05.654975 [info] PollInputDevices hook installed (ID 68617+0x7B); input capture live
+11/17/26 - 23:58:05.654979 [info] Input capture installed (M2)
+11/17/26 - 23:58:05.654986 [info] Successfully loaded!
+11/17/26 - 23:58:17.166026 [info] flick: waityourturn.dll asks for FLICK API 1 (read from its code) - the installed FLICK 1.8.2.0 answers API newer than 7
+11/17/26 - 23:58:17.166041 [info] flick: waityourturn.dll -> this menu (no FLICK windows)
+11/17/26 - 23:58:17.166047 [info] flick: waityourturn.dll asked for FLICK - answered with this menu's table
+11/17/26 - 23:58:17.166061 [info] SMF module-name alias: answered a lookup of "FUCK.dll" from WaitYourTurn.dll with our own module
+11/17/26 - 23:58:17.166087 [info] flick: waityourturn.dll - FLICK header era: current (2026-05-28 or later) - AMF's table, version 7
+11/17/26 - 23:58:17.166092 [info] flick: RequestFUCK from waityourturn.dll -> AMF's table (version 7), request #1
+11/17/26 - 23:58:17.166274 [info] flick: RegisterTool plugin=WaitYourTurn (waityourturn.dll) name="Wait Your Turn" group="Wait Your Turn" sidebar=true -> entry "Wait Your Turn (FLICK)" page "Wait Your Turn"
+11/17/26 - 23:58:17.166306 [info] first page registered for "Wait Your Turn (FLICK)": "Wait Your Turn" (1 mod(s) in the registry)
+11/17/26 - 23:58:17.478783 [info] SMF alias: scanned 90 module(s) (SKSE plugins that name the framework + msvcp140), redirected 683 import entr(ies) this pass (683 total; 85 module(s) / 663 entr(ies) patched at load time; 1 module-name hit(s), 0 file-name hit(s) so far; 566 plugin check(s) skipped as not consumers, 0 import entr(ies) left alone as another plugin's hook)
+11/17/26 - 23:58:17.478829 [warning] Failed to dispatch message to devbench
+11/17/26 - 23:58:17.490887 [info] flick: autoaudioswitch.dll asks for FLICK API 5 (read from its code) - the installed FLICK 1.8.2.0 answers API newer than 7
+11/17/26 - 23:58:17.490901 [info] flick: autoaudioswitch.dll -> this menu (no FLICK windows)
+11/17/26 - 23:58:17.490906 [info] flick: autoaudioswitch.dll asked for FLICK - answered with this menu's table
+11/17/26 - 23:58:17.490916 [info] SMF module-name alias: answered a lookup of "FUCK.dll" from AutoAudioSwitch.dll with our own module
+11/17/26 - 23:58:17.491015 [info] flick: autoaudioswitch.dll - FLICK header era: current (2026-05-28 or later) - AMF's table, version 7
+11/17/26 - 23:58:17.491020 [info] flick: RequestFUCK from autoaudioswitch.dll -> AMF's table (version 7), request #2
+11/17/26 - 23:58:17.491195 [info] flick: 38 lines of text from Data/Interface/Translations\AutoAudioSwitch_english.txt
+11/17/26 - 23:58:17.491242 [info] flick: RegisterTool plugin=AutoAudioSwitch (autoaudioswitch.dll) name="Mod Info" group="Auto Audio Switch" sidebar=true -> entry "Auto Audio Switch (FLICK)" page "Mod Info"
+11/17/26 - 23:58:17.491250 [info] first page registered for "Auto Audio Switch (FLICK)": "Mod Info" (2 mod(s) in the registry)
+11/17/26 - 23:58:17.491260 [info] flick: RegisterTool plugin=AutoAudioSwitch (autoaudioswitch.dll) name="General" group="Auto Audio Switch" sidebar=true -> entry "Auto Audio Switch (FLICK)" page "General"
+11/17/26 - 23:58:17.491267 [info] page registered: "Auto Audio Switch (FLICK)" -> "General" (mod now has 2 page(s), rendered as tabs - one menu per mod)
+11/17/26 - 23:58:17.548479 [info] flick: classicsprintingredone.dll asks for FLICK API 4 (read from its code) - the installed FLICK 1.8.2.0 answers API newer than 7
+11/17/26 - 23:58:17.548493 [info] flick: classicsprintingredone.dll -> this menu (no FLICK windows)
+11/17/26 - 23:58:17.548498 [info] flick: classicsprintingredone.dll asked for FLICK - answered with this menu's table
+11/17/26 - 23:58:17.548509 [info] SMF module-name alias: answered a lookup of "FUCK.dll" from ClassicSprintingRedone.dll with our own module
+11/17/26 - 23:58:17.548538 [info] flick: classicsprintingredone.dll - FLICK header era: current (2026-05-28 or later) - AMF's table, version 7
+11/17/26 - 23:58:17.548543 [info] flick: RequestFUCK from classicsprintingredone.dll -> AMF's table (version 7), request #3
+11/17/26 - 23:58:17.548701 [info] flick: 34 lines of text from Data/Interface/Translations\ClassicSprintingRedone_english.txt
+11/17/26 - 23:58:17.548739 [info] flick: RegisterTool plugin=ClassicSprintingRedone (classicsprintingredone.dll) name="Mod Info" group="Classic Sprinting Redone" sidebar=true -> entry "Classic Sprinting Redone (FLICK)" page "Mod Info"
+11/17/26 - 23:58:17.548748 [info] first page registered for "Classic Sprinting Redone (FLICK)": "Mod Info" (3 mod(s) in the registry)
+11/17/26 - 23:58:17.548759 [info] flick: RegisterTool plugin=ClassicSprintingRedone (classicsprintingredone.dll) name="Settings" group="Classic Sprinting Redone" sidebar=true -> entry "Classic Sprinting Redone (FLICK)" page "Settings"
+11/17/26 - 23:58:17.548764 [info] page registered: "Classic Sprinting Redone (FLICK)" -> "Settings" (mod now has 2 page(s), rendered as tabs - one menu per mod)
+11/17/26 - 23:58:17.601479 [info] flick: mcmmemory.dll asks for FLICK API 6 (read from its code) - the installed FLICK 1.8.2.0 answers API newer than 7
+11/17/26 - 23:58:17.602152 [info] flick: mcmmemory.dll -> the real FLICK (it has FLICK windows (its DLL carries FLICK's IWindow class), which only FLICK draws)
+11/17/26 - 23:58:17.602162 [info] flick: mcmmemory.dll asked for FLICK - left to the real FLICK
+11/17/26 - 23:58:19.627091 [info] SMF module-name alias: answered a lookup of "ApocryphaMenuFramework.dll" from RisaAllInOneMenu.dll with our own module
+11/17/26 - 23:58:19.632910 [info] flick: risaallinonemenu.dll asks for FLICK API 1 (read from its code) - the installed FLICK 1.8.2.0 answers API newer than 7
+11/17/26 - 23:58:19.632926 [info] flick: risaallinonemenu.dll -> this menu (no FLICK windows)
+11/17/26 - 23:58:19.632931 [info] flick: risaallinonemenu.dll asked for FLICK - answered with this menu's table
+11/17/26 - 23:58:19.632943 [info] SMF module-name alias: answered a lookup of "FUCK" from RisaAllInOneMenu.dll with our own module
+11/17/26 - 23:58:19.655723 [info] SMF module-name alias: answered a lookup of "FUCK.dll" from RisaAllInOneMenu.dll with our own module
+11/17/26 - 23:58:19.656570 [info] flick: risaallinonemenu.dll - no FLICK header markers (a FLICK client of its own) - AMF's table; a page it registers is refused
+11/17/26 - 23:58:19.656577 [info] flick: RequestFUCK from risaallinonemenu.dll -> AMF's table (version 7), request #4
+11/17/26 - 23:58:19.656591 [info] flick: a FLICK mod called SetHotkeyEnabled - there is no FLICK key under AMF; AMF's own key is untouched - the value is kept for IsHotkeyEnabled
+11/17/26 - 23:58:19.656620 [info] menu toggle key taken over by an external launcher (runtime only - the INI is untouched)
+11/17/26 - 23:58:20.997084 [info] first page registered for "Deep Snow": "Settings" (4 mod(s) in the registry)
+11/17/26 - 23:58:20.997112 [info] AddSectionItem (SMF-compat): "Deep Snow/Settings" -> section "Deep Snow", page "Settings"
+11/17/26 - 23:58:21.242556 [info] SMF module-name alias: answered a lookup of "ApocryphaMenuFramework" from LocalMapUpgrade.dll with our own module
+11/17/26 - 23:58:21.242584 [info] first page registered for "Local Map Upgrade": "Settings" (5 mod(s) in the registry)
+11/17/26 - 23:58:21.242594 [info] AddSectionItem (SMF-compat): "Local Map Upgrade/Settings" -> section "Local Map Upgrade", page "Settings"
+11/17/26 - 23:58:21.256592 [info] flick: po3_killfeed.dll asks for FLICK API 3 (read from its code) - the installed FLICK 1.8.2.0 answers API newer than 7
+11/17/26 - 23:58:21.256609 [info] flick: po3_killfeed.dll -> this menu (no FLICK windows)
+11/17/26 - 23:58:21.256614 [info] flick: po3_killfeed.dll asked for FLICK - answered with this menu's table
+11/17/26 - 23:58:21.256628 [info] SMF module-name alias: answered a lookup of "FUCK.dll" from po3_KillFeed.dll with our own module
+11/17/26 - 23:58:21.256838 [info] flick: po3_killfeed.dll - FLICK header era: current (2026-05-28 or later) - AMF's table, version 7
+11/17/26 - 23:58:21.256844 [info] flick: RequestFUCK from po3_killfeed.dll -> AMF's table (version 7), request #5
+11/17/26 - 23:58:21.261942 [info] flick: 79 lines of text from Data/Interface/Translations\KillFeed_english.txt
+11/17/26 - 23:58:21.262001 [info] flick: RegisterTool plugin=KillFeed (po3_killfeed.dll) name="Kill Feed" group="" sidebar=true -> entry "Kill Feed (FLICK)" page "Kill Feed"
+11/17/26 - 23:58:21.262008 [info] first page registered for "Kill Feed (FLICK)": "Kill Feed" (6 mod(s) in the registry)
+11/17/26 - 23:59:13.734478 [info] d3d: the game's immediate context is NOT multithread-protected (render thread 100212)
+11/17/26 - 23:59:13.734520 [info] window move: title bar only = true
+11/17/26 - 23:59:13.734552 [info] typing: window procedure installed on the game window 0xd603b2 (window thread 100212, this thread 100212); window unicode before no / after no; the game's procedure 0x7ffd8fcbda40 gets every message AMF does not type; ImGui's IME hook replaced
+11/17/26 - 23:59:13.734566 [info] art: ImGui art hook installed (boxes, buttons, tick boxes, sliders, scroll bars, section lines, tabs, arrows, popups)
+11/17/26 - 23:59:13.734954 [info] theme "Untarnished" (untarnished) registered (1 theme(s) total)
+11/17/26 - 23:59:13.734974 [info] theme "Skyrim" (skyrim) registered (2 theme(s) total)
+11/17/26 - 23:59:13.739562 [info] theme "Dear Diary - Dark" (dear-diary-dark) registered (3 theme(s) total)
+11/17/26 - 23:59:13.743244 [info] theme "Dear Diary" (dear-diary) registered (4 theme(s) total)
+11/17/26 - 23:59:13.747038 [info] theme "Edge" (edge) registered (5 theme(s) total)
+11/17/26 - 23:59:13.750625 [info] theme "Norden - Black" (norden-black) registered (6 theme(s) total)
+11/17/26 - 23:59:13.754614 [info] theme "Norden" (norden) registered (7 theme(s) total)
+11/17/26 - 23:59:13.758379 [info] theme "Nordic" (nordic) registered (8 theme(s) total)
+11/17/26 - 23:59:13.762302 [info] theme "Oathvein" (oathvein) registered (9 theme(s) total)
+11/17/26 - 23:59:13.765835 [info] theme "Oblivion" (oblivion) registered (10 theme(s) total)
+11/17/26 - 23:59:13.769037 [info] theme "Vel'dun" (veldun) registered (11 theme(s) total)
+11/17/26 - 23:59:13.769086 [info] theme scan: 9 user theme(s) loaded from Data/SKSE/Plugins/ApocryphaMenuFramework/themes
+11/17/26 - 23:59:13.769091 [info] active theme -> "Skyrim" (skyrim)
+11/17/26 - 23:59:13.769125 [info] HUD Opacity setting resolved as "fHUDOpacity" in SkyrimPrefs.ini
+11/17/26 - 23:59:13.769132 [info] Theme applied: "Skyrim" (skyrim); knotwork=true; game HUD opacity 1.00; window opacity 100%
+11/17/26 - 23:59:13.771998 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/boxes/skyrim.png" loaded (128x128)
+11/17/26 - 23:59:13.775398 [info] skin: Box part "skyrim" loaded (128x128)
+11/17/26 - 23:59:13.776119 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/buttons/skyrim.png" loaded (128x128)
+11/17/26 - 23:59:13.776876 [info] skin: Button part "skyrim" loaded (128x128)
+11/17/26 - 23:59:13.777470 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/tickboxes/skyrim.png" loaded (96x96)
+11/17/26 - 23:59:13.778219 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/tickboxes/skyrim-mark.png" loaded (96x96)
+11/17/26 - 23:59:13.781658 [info] skin: TickBox part "skyrim" loaded (96x96, extra)
+11/17/26 - 23:59:13.782178 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/sliders/skyrim.png" loaded (48x96)
+11/17/26 - 23:59:13.782809 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/sliders/skyrim-edge.png" loaded (48x96)
+11/17/26 - 23:59:13.785740 [info] skin: Slider part "skyrim" loaded (48x96, edge)
+11/17/26 - 23:59:13.786121 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/scrollbars/skyrim.png" loaded (48x192)
+11/17/26 - 23:59:13.786718 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/scrollbars/skyrim-edge.png" loaded (48x192)
+11/17/26 - 23:59:13.789988 [info] skin: Scrollbar part "skyrim" loaded (48x192, edge)
+11/17/26 - 23:59:13.791140 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/sections/skyrim.png" loaded (1536x96)
+11/17/26 - 23:59:13.794498 [info] skin: Section part "skyrim" loaded (1536x96)
+11/17/26 - 23:59:13.795042 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/tabs/skyrim.png" loaded (192x96)
+11/17/26 - 23:59:13.795927 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/tabs/skyrim-edge.png" loaded (192x96)
+11/17/26 - 23:59:13.796591 [info] skin: Tab part "skyrim" loaded (192x96, edge)
+11/17/26 - 23:59:13.797259 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/arrows/skyrim.png" loaded (128x128)
+11/17/26 - 23:59:13.797409 [info] skin: Arrow part "skyrim" loaded (128x128)
+11/17/26 - 23:59:13.798053 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/cursors/skyrim.png" loaded (128x128)
+11/17/26 - 23:59:13.802099 [info] skin: Cursor part "skyrim" loaded (128x128)
+11/17/26 - 23:59:13.802964 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/knobs/skyrim.png" loaded (128x128)
+11/17/26 - 23:59:13.803153 [info] skin: Knob part "skyrim" loaded (128x128)
+11/17/26 - 23:59:13.803693 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/slidertracks/skyrim.png" loaded (256x64)
+11/17/26 - 23:59:13.804154 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/slidertracks/skyrim-edge.png" loaded (256x64)
+11/17/26 - 23:59:13.808028 [info] skin: SliderTrack part "skyrim" loaded (256x64, edge)
+11/17/26 - 23:59:13.808644 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/scrolltracks/skyrim.png" loaded (48x128)
+11/17/26 - 23:59:13.809438 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/scrolltracks/skyrim-edge.png" loaded (48x128)
+11/17/26 - 23:59:13.812726 [info] skin: ScrollTrack part "skyrim" loaded (48x128, edge)
+11/17/26 - 23:59:13.812743 [info] skin: loading art from theme
+11/17/26 - 23:59:13.813737 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/frames/skyrim-knotwork.png" loaded (78x78)
+11/17/26 - 23:59:13.813784 [info] skin: frame loaded from "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/frames/skyrim-knotwork.png" (78x78)
+11/17/26 - 23:59:13.818297 [info] LoadTexture (SMF-compat): "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/toggles/skyrim.png" loaded (256x128)
+11/17/26 - 23:59:13.818314 [info] skin: toggle loaded from "Data\SKSE/Plugins/ApocryphaMenuFramework/assets/toggles/skyrim.png" (256x128)
+11/17/26 - 23:59:13.818701 [info] font picker: 10 face(s) available
+11/17/26 - 23:59:13.819527 [info] font: rasterised "C:/Windows/Fonts/segoeui.ttf" at 27.7px
+11/17/26 - 23:59:13.827235 [info] font: atlas 1 built for "english" (game "english"): 983 glyphs, 512x808 (fit step 1 of 4: full sets, 2x oversampling, 1 tries), 0 on demand, kana false hangul false hanzi false traditional false cyrillic true latin-ext-a true
+11/17/26 - 23:59:13.827291 [info] watchdog: monitor started (enabled=true, window=120s)
+11/17/26 - 23:59:13.827349 [info] fast exit: kernel32!ExitProcess now jumps to the framework, which ends the process outright (enabled=true)
+11/17/26 - 23:59:13.827357 [info] UI scale set to 1.33 for a 1440px-tall display (1080p baseline)
+11/17/26 - 23:59:13.827363 [info] ImGui initialized on the game's device (window 0xd603b2, 3440x1440); theme applied
+11/17/26 - 23:59:22.843921 [info] startup curtain: covering the screen until the main menu is ready (lifts by itself after 120s, or the moment play begins)
+11/17/26 - 23:59:22.844608 [info] startup curtain: using the modlist's own splash art at C:\modlists\NGVO 8.0 Beta\splash.png - the closest shape to the 2.389 screen (set sCurtainImage to override, or 'none' for plain black)
+11/17/26 - 23:59:22.853070 [info] startup curtain: showing C:\modlists\NGVO 8.0 Beta\splash.png (1000x1000)
+11/17/26 - 23:59:23.589440 [info] typing: on the game window's thread (100212): input context present, window unicode no, input code page 1252

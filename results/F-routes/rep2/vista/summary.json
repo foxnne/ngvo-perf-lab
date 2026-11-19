@@ -1,0 +1,27 @@
+{
+ "label": "F-routes",
+ "rep": 2,
+ "scenario": "vista",
+ "config": "409cc22ad2",
+ "time": "2026-11-17 21:15:11",
+ "render": {
+  "frames": 520,
+  "mean": 28.91,
+  "fps": 34.6,
+  "p50": 28.76,
+  "p95": 30.53,
+  "p99": 31.57,
+  "max": 48.7,
+  "over50": 0,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 27.1,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

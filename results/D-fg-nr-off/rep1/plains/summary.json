@@ -1,0 +1,66 @@
+{
+ "label": "D-fg-nr-off",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "797785d361",
+ "time": "2026-11-17 17:16:48",
+ "render": {
+  "frames": 956,
+  "mean": 15.85,
+  "fps": 63.1,
+  "p50": 15.29,
+  "p95": 18.51,
+  "p99": 21.41,
+  "max": 181.0,
+  "over50": 1,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 181
+ },
+ "main_cpu_ms": 14.57,
+ "fg_share": 0.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 11443,
+  "proc_min": 11424,
+  "new_top": [
+   2,
+   0,
+   0,
+   0
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "present": {
+   "frames": 1071,
+   "mean": 15.82,
+   "fps": 63.2,
+   "p50": 15.33,
+   "p95": 18.52,
+   "p99": 21.49,
+   "max": 181.8,
+   "over50": 1,
+   "over100": 1,
+   "over250": 0,
+   "stall_ms": 182
+  },
+  "displayed": {
+   "frames": 1071,
+   "mean": 15.82,
+   "fps": 63.2,
+   "p50": 15.36,
+   "p95": 17.88,
+   "p99": 21.0,
+   "max": 174.0,
+   "over50": 1,
+   "over100": 1,
+   "over250": 0,
+   "stall_ms": 174
+  },
+  "frame_types": {
+   "Application": 1071
+  }
+ }
+}

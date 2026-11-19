@@ -1,0 +1,31 @@
+[20:10:14] Hitch Hunter and Fixes 1.2.0 - hitch report, game 1.6.1170. Frames that take 50 ms or longer are listed with where the time went; a summary follows every 1 minute. Loading screens are not counted as hitches; their duration is listed separately.
+[20:12:49] Graphics add-ons found: DLSS, Community Shaders
+[20:12:49] Hitch 160 ms - mostly SKSE plugin task. World 0.0 ms, GPU 1.0 ms, game/HUD/other 158.7 ms. Video memory 2.4 of 14.9 GB (16%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 98%, amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 1%; 56 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (157.0 ms)
+[20:12:54] Hitch 329 ms - mostly SKSE plugin task. World 0.0 ms, GPU 10.7 ms, game/HUD/other 317.9 ms. Video memory 2.4 of 14.9 GB (16%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 95%, amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 3%; 123 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (158.5 ms)
+  SKSE plugin task: !ApocryphaMenuFramework.dll (157.8 ms)
+[20:13:09] Loading screen: 6.7 s (Dead Man's Drink). The game read 2.3 GB of files (357 MB/s on average, up to 762 MB/s). Loading work: reading files 15%, the game itself 35%, opening and finding files 30%, graphics driver 3%, PGLite.dll 8%.
+[20:13:12] Hitch 1017 ms - mostly game logic, scripts, HUD/menus or other mods. World 3.2 ms, GPU 1.7 ms, game/HUD/other 1012.5 ms. Video memory 7.8 of 14.9 GB (52%).
+  Main thread was in: the game itself (waiting for another thread) 99%; 403 samples from the slow part of the frame
+[20:13:12] Hitch 87 ms - mostly rendering the world (including post-processing). World 63.5 ms, GPU 1.2 ms, game/HUD/other 22.2 ms. Video memory 7.7 of 14.9 GB (51%).
+  Main thread was in: the game itself 100%; 4 samples from the slow part of the frame
+[20:13:14] Hitch 398 ms - mostly SKSE plugin task. World 2.9 ms, GPU 0.9 ms, game/HUD/other 394.3 ms. Video memory 8.0 of 14.9 GB (53%).
+  Main thread was in: the game itself (waiting for another thread) 98%; 151 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (209.8 ms)
+  SKSE plugin task: !ApocryphaMenuFramework.dll (189.0 ms)
+[20:13:43] Loading screen: 26.8 s (Whiterun). The game read 4.6 GB of files (175 MB/s on average, up to 1165 MB/s). Loading work: reading files 10%, the game itself 19%, opening and finding files 47%, graphics driver 3%, PGLite.dll 16%.
+[20:13:49] Summary of the last 1 minute: 1973 frames, average 8.4 ms (118 fps), 1% low 38 fps, 5 hitches, longest 1017 ms. Main causes: SKSE plugin task (3), game logic, scripts, HUD/menus or other mods (1), rendering the world (including post-processing) (1). Highest video memory use during a hitch: 53%.
+  Most hitches at: Dead Man's Drink (3)
+  NPC appearance rebuilds moved to a later frame: 18.
+  Loading screens: 2, average 16.7 s, longest 26.8 s.
+  fPostLoadUpdateTimeMS ([Papyrus] in the game's INI) is 2000 ms (default 500): scripts get that long after loading, so every loading screen stays open about 1500 ms longer than with the default.
+  Video memory: up to 8.9 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+  SKSE plugin tasks during hitches: !ApocryphaMenuFramework.dll (5 times, 872 ms in total)
+[20:13:58] Hitch 58 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 9.6 ms, GPU 43.3 ms, game/HUD/other 4.8 ms. Video memory 9.4 of 14.9 GB (63%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (waiting for the graphics driver) 100%; 15 samples from the slow part of the frame
+[20:14:04] Hitch 162 ms - mostly SKSE plugin task. World 7.6 ms, GPU 0.9 ms, game/HUD/other 153.8 ms. Video memory 9.6 of 14.9 GB (64%).
+  Main thread was in: the game itself (waiting for another thread) 92%, CommunityShaders.dll (its own code) 3%, hdtsmp64.dll (waiting for another thread) 1%, ComprehensiveAttackRatePatch.dll (inside Windows) 1%; 56 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (159.6 ms)

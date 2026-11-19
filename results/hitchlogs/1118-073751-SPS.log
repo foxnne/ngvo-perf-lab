@@ -1,0 +1,70 @@
+[07:37:51.407] [91076] [I] SPS v1-0-73-0
+[07:37:51.407] [91076] [I] SPS 1.0.73 loaded
+[07:37:51.407] [91076] [I] Skyrim base address 0x7FF628070000 (for tools/resolve_rva.py)
+[07:37:51.408] [91076] [I] SPS_User.ini (menu settings) loaded
+[07:37:51.408] [91076] [I] Occlusion: hiding ON | reproject on | pause from 2.0 deg / 64 units | margin 2.0 % + 16 | hidden in 2 images in a row | max 4096 tiles | characters never
+[07:37:51.408] [91076] [I] ShadowStableCascade (with far shadow cache): sun step 0.05 deg | extent step 64 x1.00 | margin 48 | depth step 64
+[07:37:51.408] [91076] [I] ShadowInstancing: OFF | verify mode false (offset 0) | techniques C046,C045 | two-sided false | debug mode 0
+[07:37:51.408] [91076] [I] ActorShadowCulling: ON | from distance 3500 | point lights true
+[07:37:51.408] [91076] [I] ActorPartShadowCulling: ON | radius < 8 | from distance 500
+[07:37:51.408] [91076] [I] LightGatherThrottle: ON | movement >= 8 | radius +-16 | at the latest after 500 ms
+[07:37:51.408] [91076] [I] SubtreePruning: ON | sun true | point light false | rain/sky true
+[07:37:51.408] [91076] [I] TextureStream: ON | report false | safety factor 2.0 | min. 1024 px | budget 0.40 ms | clothing/armor true | bodies/faces/hair true | excluded: interface\,\maps\,mapmarker,\lod\,terrain\,fonts\,book,\sky\,effects\,cubemaps\
+[07:37:51.408] [91076] [I] LightShadowCache: ON
+[07:37:51.408] [91076] [I] FarShadowCache (optional): OFF | trees still from 2000
+[07:37:51.408] [91076] [I] ShadowCulling: ON | from cascade 1 | distance > 1500 | radius < 150 | radius/distance < 0.035 | skinned excluded: true | only above sun elevation 10 deg
+[07:37:51.408] [91076] [I] PointLightShadowCulling: ON | distance > 1000 | radius < 150 | radius/distance < 0.035 | skinned excluded: true
+[07:37:51.408] [91076] [I] SkylightingCulling: ON | min. radius 128
+[07:37:51.408] [91076] [I] DecalCulling: ON | from distance 1500 | radius < 32
+[07:37:51.408] [91076] [I] MainViewCulling: OFF | distance > 3000 | radius < 100 | radius/distance < 0.0020 | skinned excluded: true
+[07:37:51.408] [91076] [I] DepthPrepassCulling: OFF | distance > 1500 | radius < 200 | radius/distance < 0.025 | skinned excluded: true
+[07:37:51.408] [91076] [I] Hook installed: VirtualMachine::Update (vfunc 0x4)
+[07:37:51.408] [91076] [I] Hook installed: VirtualMachine::UpdateTasklets (vfunc 0x5)
+[07:37:51.408] [91076] [I] Hook installed: VirtualMachine::SetOverstressed (vfunc 0x6)
+[07:37:51.408] [91076] [I] Hook installed: PlayerCharacter::Update (vfunc 0xAD)
+[07:37:51.408] [91076] [I] Hook installed: Character::Update (vfunc 0xAD)
+[07:37:51.408] [91076] [I] Hook installed: BSCullingProcess::AppendVirtual (vfunc 0x18)
+[07:37:51.408] [91076] [I] Hook installed: BSParabolicCullingProcess::AppendVirtual (vfunc 0x18)
+[07:37:51.408] [91076] [I] Hook installed: Process (vfunc 0x16) for BSCullingProcess, BSParabolicCullingProcess, BSGeometryListCullingProcess
+[07:37:51.408] [91076] [I] Hooks installed: BSShadowDirectionalLight::Accumulate (0x9) / Render (0xA)
+[07:37:51.408] [91076] [I] Hooks installed: BSShadowParabolicLight / BSShadowFrustumLight::Render (0xA) - GPU timing
+[07:37:51.408] [91076] [I] Shadow instancing off at startup - RenderBatches detour not installed
+[07:37:51.408] [91076] [I] Feature not used on this game version (by design): Shadow instancing - off at startup (restart after enabling)
+[07:37:51.408] [91076] [I] Hook installed: BSUtilityShader::SetupGeometry (vfunc 0x6)
+[07:37:51.408] [91076] [I] Hooks installed: RenderPassImmediately call sites 1 and 2
+[07:37:51.408] [91076] [I] LightGather: hook on light assignment of dynamic point lights installed
+[07:37:51.408] [91076] [I] Hook installed: shadow map draw (ID 107604+0x167) - shadow cache for static lights
+[07:37:51.410] [91076] [I] TextureStream: 2531 remembered texture sizes loaded
+[07:37:51.410] [91076] [I] Hook installed: DDS loader (Detour) - load reduced; only textures straight from DDS files are streamed
+[07:37:53.413] [91076] [I] WaitProbe: off (developer option bEngineProbes)
+[07:39:40.375] [89952] [I] Event sinks registered
+[07:39:40.375] [89952] [I] Hook installed: IDXGISwapChain::Present (vfunc 8) - wait time
+[07:39:40.375] [89952] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses (vfunc 0x2A, after Community Shaders)
+[07:39:40.375] [89952] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses_Occlusion (vfunc 0x2D, after Community Shaders)
+[07:39:40.375] [89952] [I] Hook installed: Main::RenderWorld call site - hide occluded objects at draw time
+[07:39:40.375] [89952] [I] Hook installed: Main::Begin call site - occlusion pyramid starts before the main view is collected
+[07:39:40.375] [89952] [I] Hook installed: Main::RenderDepth (Detours)
+[07:39:40.375] [89952] [W] [LightShadowCache] Bottled Shaders is installed - shadow cache for static lights is off (interior shadows flickered with it; allow in the menu or with bAllowWithBottledShaders)
+[07:39:40.375] [89952] [W] [Occlusion] Bottled Shaders HiZ Occlusion Culling is active - SPS Hide occluded objects stays off (allow in the menu or with bAllowWithBottledHiZ)
+[07:39:40.375] [89952] [I] [Occlusion] Faster Objects (SkyrimPrecombines.dll) is loaded - its Hi-Z culling pauses while SPS Hide occluded objects is on, its precombines stay
+[07:39:40.375] [89952] [I] Hotkey registered: key 0xC9 toggles all optimizations on/off (0 = none, master switch only in the menu)
+[07:39:40.375] [89952] [I] Game language: ENGLISH -> menu English
+[07:39:40.375] [89952] [I] Menu registered in SKSE Menu Framework (version 3.8)
+[07:39:40.375] [89952] [I] Hook installed: BSShaderResourceManager::CreateTexture (vtable 0xD0, previously 0x7FFDB5639430) - remember texture for DDS loader
+[07:39:41.974] [91076] [I] [TextureStream] Reset (main menu):0 held textures and pass released, 0 jobs discarded
+[07:39:43.140] [91076] [I] [TextureStream] Reset (loading save game):0 held textures and pass released, 0 jobs discarded
+[07:39:59.146] [91076] [I] [TextureStream] Reset (loading save game):0 held textures and pass released, 0 jobs discarded
+[07:39:59.176] [91076] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[07:40:05.722] [91076] [I] [Load] loading screen 6.5 s | textures loaded 930 (of these reduced 218) | texture streaming on | SPS on
+[07:40:14.302] [91076] [I] [TextureStream] Reset (loading screen):364 held textures and pass released, 0 jobs discarded
+[07:40:30.108] [91076] [I] [Load] loading screen 15.8 s | textures loaded 786 (of these reduced 134) | texture streaming on | SPS on
+[07:41:29.440] [91076] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[07:41:34.147] [91076] [I] [Load] loading screen 4.7 s | textures loaded 454 (of these reduced 111) | texture streaming on | SPS on
+[07:42:43.515] [91076] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[07:42:55.779] [91076] [I] [Load] loading screen 12.3 s | textures loaded 1262 (of these reduced 272) | texture streaming on | SPS on
+[07:43:57.952] [91076] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[07:44:07.632] [91076] [I] [Load] loading screen 9.7 s | textures loaded 1388 (of these reduced 301) | texture streaming on | SPS on
+[07:45:12.063] [91076] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[07:45:25.924] [91076] [I] [Load] loading screen 13.9 s | textures loaded 892 (of these reduced 138) | texture streaming on | SPS on
+[07:46:26.458] [91076] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[07:46:37.191] [91076] [I] [Load] loading screen 10.7 s | textures loaded 1248 (of these reduced 276) | texture streaming on | SPS on

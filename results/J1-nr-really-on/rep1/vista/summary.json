@@ -1,0 +1,27 @@
+{
+ "label": "J1-nr-really-on",
+ "rep": 1,
+ "scenario": "vista",
+ "config": "59d36f8d4e",
+ "time": "2026-11-18 09:32:44",
+ "render": {
+  "frames": 424,
+  "mean": 35.68,
+  "fps": 28.0,
+  "p50": 35.43,
+  "p95": 37.3,
+  "p99": 44.25,
+  "max": 72.0,
+  "over50": 2,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 32.32,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

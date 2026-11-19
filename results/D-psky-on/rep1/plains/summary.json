@@ -1,0 +1,38 @@
+{
+ "label": "D-psky-on",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "5c61a33067",
+ "time": "2026-11-17 17:24:42",
+ "render": {
+  "frames": 681,
+  "mean": 22.06,
+  "fps": 45.3,
+  "p50": 21.61,
+  "p95": 24.11,
+  "p99": 28.25,
+  "max": 170.6,
+  "over50": 1,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 171
+ },
+ "main_cpu_ms": 19.68,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 9448,
+  "proc_min": 9428,
+  "new_top": [
+   8,
+   7,
+   2,
+   0
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

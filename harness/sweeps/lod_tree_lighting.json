@@ -1,0 +1,123 @@
+[
+ {
+  "name": "00_off",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": false
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "01_on_defaults",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "02_neutral",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.0,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "03_brightness_1.7",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.7,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "04_wrap_0.5",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.0,
+    "LODTreeWrap": 0.5,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "05_transmission_0.5",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.0,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.5,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "06_shadow_soft_0.7",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.0,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.7,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "07_up_bias_0.3",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.0,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.3
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "08_defaults_no_billboards",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeLightBillboards": false
+   }
+  },
+  "settle": 12
+ }
+]

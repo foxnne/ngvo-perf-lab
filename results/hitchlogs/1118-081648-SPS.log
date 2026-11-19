@@ -1,0 +1,54 @@
+[08:16:48.881] [68884] [I] SPS v1-0-73-0
+[08:16:48.881] [68884] [I] SPS 1.0.73 loaded
+[08:16:48.881] [68884] [I] Skyrim base address 0x7FF628070000 (for tools/resolve_rva.py)
+[08:16:48.892] [68884] [I] SPS_User.ini (menu settings) loaded
+[08:16:48.892] [68884] [I] Occlusion: hiding ON | reproject on | pause from 2.0 deg / 64 units | margin 2.0 % + 16 | hidden in 2 images in a row | max 4096 tiles | characters never
+[08:16:48.892] [68884] [I] ShadowStableCascade (with far shadow cache): sun step 0.05 deg | extent step 64 x1.00 | margin 48 | depth step 64
+[08:16:48.892] [68884] [I] ShadowInstancing: OFF | verify mode false (offset 0) | techniques C046,C045 | two-sided false | debug mode 0
+[08:16:48.892] [68884] [I] ActorShadowCulling: ON | from distance 3500 | point lights true
+[08:16:48.892] [68884] [I] ActorPartShadowCulling: ON | radius < 8 | from distance 500
+[08:16:48.892] [68884] [I] LightGatherThrottle: ON | movement >= 8 | radius +-16 | at the latest after 500 ms
+[08:16:48.892] [68884] [I] SubtreePruning: ON | sun true | point light false | rain/sky true
+[08:16:48.892] [68884] [I] TextureStream: ON | report false | safety factor 2.0 | min. 1024 px | budget 0.40 ms | clothing/armor true | bodies/faces/hair true | excluded: interface\,\maps\,mapmarker,\lod\,terrain\,fonts\,book,\sky\,effects\,cubemaps\
+[08:16:48.892] [68884] [I] LightShadowCache: ON
+[08:16:48.892] [68884] [I] FarShadowCache (optional): OFF | trees still from 2000
+[08:16:48.892] [68884] [I] ShadowCulling: ON | from cascade 1 | distance > 1500 | radius < 150 | radius/distance < 0.035 | skinned excluded: true | only above sun elevation 10 deg
+[08:16:48.892] [68884] [I] PointLightShadowCulling: ON | distance > 1000 | radius < 150 | radius/distance < 0.035 | skinned excluded: true
+[08:16:48.892] [68884] [I] SkylightingCulling: ON | min. radius 128
+[08:16:48.892] [68884] [I] DecalCulling: ON | from distance 1500 | radius < 32
+[08:16:48.892] [68884] [I] MainViewCulling: OFF | distance > 3000 | radius < 100 | radius/distance < 0.0020 | skinned excluded: true
+[08:16:48.892] [68884] [I] DepthPrepassCulling: OFF | distance > 1500 | radius < 200 | radius/distance < 0.025 | skinned excluded: true
+[08:16:48.892] [68884] [I] Hook installed: VirtualMachine::Update (vfunc 0x4)
+[08:16:48.892] [68884] [I] Hook installed: VirtualMachine::UpdateTasklets (vfunc 0x5)
+[08:16:48.892] [68884] [I] Hook installed: VirtualMachine::SetOverstressed (vfunc 0x6)
+[08:16:48.892] [68884] [I] Hook installed: PlayerCharacter::Update (vfunc 0xAD)
+[08:16:48.892] [68884] [I] Hook installed: Character::Update (vfunc 0xAD)
+[08:16:48.892] [68884] [I] Hook installed: BSCullingProcess::AppendVirtual (vfunc 0x18)
+[08:16:48.892] [68884] [I] Hook installed: BSParabolicCullingProcess::AppendVirtual (vfunc 0x18)
+[08:16:48.892] [68884] [I] Hook installed: Process (vfunc 0x16) for BSCullingProcess, BSParabolicCullingProcess, BSGeometryListCullingProcess
+[08:16:48.892] [68884] [I] Hooks installed: BSShadowDirectionalLight::Accumulate (0x9) / Render (0xA)
+[08:16:48.892] [68884] [I] Hooks installed: BSShadowParabolicLight / BSShadowFrustumLight::Render (0xA) - GPU timing
+[08:16:48.892] [68884] [I] Shadow instancing off at startup - RenderBatches detour not installed
+[08:16:48.892] [68884] [I] Feature not used on this game version (by design): Shadow instancing - off at startup (restart after enabling)
+[08:16:48.892] [68884] [I] Hook installed: BSUtilityShader::SetupGeometry (vfunc 0x6)
+[08:16:48.892] [68884] [I] Hooks installed: RenderPassImmediately call sites 1 and 2
+[08:16:48.892] [68884] [I] LightGather: hook on light assignment of dynamic point lights installed
+[08:16:48.892] [68884] [I] Hook installed: shadow map draw (ID 107604+0x167) - shadow cache for static lights
+[08:16:48.898] [68884] [I] TextureStream: 2545 remembered texture sizes loaded
+[08:16:48.898] [68884] [I] Hook installed: DDS loader (Detour) - load reduced; only textures straight from DDS files are streamed
+[08:16:52.977] [68884] [I] WaitProbe: off (developer option bEngineProbes)
+[08:19:19.717] [99508] [I] Event sinks registered
+[08:19:19.717] [99508] [I] Hook installed: IDXGISwapChain::Present (vfunc 8) - wait time
+[08:19:19.717] [99508] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses (vfunc 0x2A, after Community Shaders)
+[08:19:19.717] [99508] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses_Occlusion (vfunc 0x2D, after Community Shaders)
+[08:19:19.717] [99508] [I] Hook installed: Main::RenderWorld call site - hide occluded objects at draw time
+[08:19:19.717] [99508] [I] Hook installed: Main::Begin call site - occlusion pyramid starts before the main view is collected
+[08:19:19.717] [99508] [I] Hook installed: Main::RenderDepth (Detours)
+[08:19:19.718] [99508] [W] [LightShadowCache] Bottled Shaders is installed - shadow cache for static lights is off (interior shadows flickered with it; allow in the menu or with bAllowWithBottledShaders)
+[08:19:19.718] [99508] [W] [Occlusion] Bottled Shaders HiZ Occlusion Culling is active - SPS Hide occluded objects stays off (allow in the menu or with bAllowWithBottledHiZ)
+[08:19:19.718] [99508] [I] [Occlusion] Faster Objects (SkyrimPrecombines.dll) is loaded - its Hi-Z culling pauses while SPS Hide occluded objects is on, its precombines stay
+[08:19:19.718] [99508] [I] Hotkey registered: key 0xC9 toggles all optimizations on/off (0 = none, master switch only in the menu)
+[08:19:19.718] [99508] [I] Game language: ENGLISH -> menu English
+[08:19:19.718] [99508] [I] Menu registered in SKSE Menu Framework (version 3.8)
+[08:19:19.718] [99508] [I] Hook installed: BSShaderResourceManager::CreateTexture (vtable 0xD0, previously 0x7FFDB6479430) - remember texture for DDS loader
+[08:19:21.390] [68884] [I] [TextureStream] Reset (main menu):0 held textures and pass released, 0 jobs discarded

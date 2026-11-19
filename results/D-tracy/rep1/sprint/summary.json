@@ -1,0 +1,40 @@
+{
+ "label": "D-tracy",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "2a947494b8",
+ "time": "2026-11-17 16:12:15",
+ "render": {
+  "frames": 4480,
+  "mean": 22.36,
+  "fps": 44.7,
+  "p50": 21.89,
+  "p95": 26.85,
+  "p99": 30.94,
+  "max": 183.1,
+  "over50": 10,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 183
+ },
+ "main_cpu_ms": 20.27,
+ "fg_share": 1.0,
+ "distance": 20224,
+ "cells": 8,
+ "vram": {
+  "proc_max": 12569,
+  "proc_min": 9504,
+  "new_top": [
+   1412,
+   1074,
+   1038,
+   946
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 17653
+}

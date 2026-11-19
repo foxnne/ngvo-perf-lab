@@ -1,0 +1,636 @@
+{
+ "aerosolAbsorption": [
+  4.440000057220459,
+  4.440000057220459,
+  4.440000057220459
+ ],
+ "aerosolFalloff": 0.8333333134651184,
+ "aerosolHumidity": 50.0,
+ "aerosolLoading": 0.699999988079071,
+ "aerosolPhaseG": 0.800000011920929,
+ "aerosolScatter": [
+  39.959999084472656,
+  39.959999084472656,
+  39.959999084472656
+ ],
+ "aerosolType": 0,
+ "apLumMix": 1.0,
+ "apTrMix": 1.0,
+ "atmosphereRadius": 6420.0,
+ "cloudBlurRadius": 1,
+ "cloudLayer": {
+  "cirrus": {
+   "altitude": 8000.0,
+   "densityScale": 1.5959999561309814,
+   "enabled": true,
+   "uvSize": 1.0,
+   "weather": {
+    "states": [
+     {
+      "value": {
+       "layers": [
+        {
+         "frequency": 1.0,
+         "noise": 1,
+         "offset": [
+          0.0,
+          0.0
+         ],
+         "range": [
+          -0.699999988079071,
+          0.699999988079071,
+          0.0,
+          0.6000000238418579
+         ]
+        },
+        {
+         "frequency": 1.0,
+         "noise": 2,
+         "offset": [
+          0.0,
+          0.0
+         ],
+         "range": [
+          -1.0,
+          1.0,
+          0.0,
+          1.0
+         ]
+        }
+       ],
+       "localBlendMode": 0,
+       "localMap": "",
+       "localWeight": 0.0,
+       "localWindScale": 1.0
+      },
+      "weight": 1.0
+     }
+    ]
+   }
+  },
+  "lighting": {
+   "ambientStrength": 1.0,
+   "brightness": 2.5829999446868896,
+   "cirrusLightThickness": 200.0,
+   "dropletDiameter": 20.0,
+   "msAlbedo": 0.9990000128746033,
+   "msBoundaryWidth": 100.0,
+   "msStrength": 1.0,
+   "phaseBackwardG": -0.30000001192092896,
+   "phaseForwardG": 0.8500000238418579,
+   "scatterDensityPower": 1.0,
+   "scatterDensityThreshold": 0.0010000000474974513,
+   "sunExtinction": 0.5590000152587891,
+   "viewExtinction": 1.0329999923706055
+  },
+  "low": {
+   "bottomSoftness": 1.0,
+   "bottomSoftnessHeight": 0.6800000071525574,
+   "bottomSpreadHeight": 0.30000001192092896,
+   "bottomSpreadScale": 0.7940000295639038,
+   "curvatureRadius": 384.92999267578125,
+   "densityScale": 0.05900000035762787,
+   "ndfAltitudeOffset": 236.0,
+   "ndfAltitudeScale": 1911.0,
+   "ndfScale": [
+    24.65999984741211,
+    16.700000762939453
+   ],
+   "topExpansionScale": 1.0
+  },
+  "middle": {
+   "altitude": 3500.0,
+   "bands": {
+    "coverage": 0.0,
+    "direction": 0.0,
+    "displacement": 0.0,
+    "thickness": 0.0,
+    "warp": 0.25,
+    "wavelength": 2000.0
+   },
+   "cellFrequency": 2.0,
+   "cellStrength": 0.8999999761581421,
+   "densityScale": 0.019999999552965164,
+   "detailMode": 1,
+   "detailScale": 256.0,
+   "edgeSoftness": 0.10000000149011612,
+   "enabled": false,
+   "heightPower": 1.0,
+   "stratusCellStrength": 0.10000000149011612,
+   "thickness": 800.0,
+   "uvSize": 1.0,
+   "warpStrength": 0.10000000149011612,
+   "weather": {
+    "states": [
+     {
+      "value": {
+       "coverageGain": {
+        "frequency": 1.0,
+        "noise": 2,
+        "offset": [
+         0.0,
+         0.0
+        ],
+        "range": [
+         -1.0,
+         1.0,
+         1.0,
+         1.0
+        ]
+       },
+       "layers": [
+        {
+         "frequency": 1.0,
+         "noise": 1,
+         "offset": [
+          0.0,
+          0.0
+         ],
+         "range": [
+          -0.699999988079071,
+          0.699999988079071,
+          0.0,
+          0.6000000238418579
+         ]
+        },
+        {
+         "frequency": 1.0,
+         "noise": 2,
+         "offset": [
+          0.0,
+          0.0
+         ],
+         "range": [
+          -1.0,
+          1.0,
+          0.6499999761581421,
+          0.6499999761581421
+         ]
+        }
+       ],
+       "localBlendMode": 0,
+       "localMap": "",
+       "localWeight": 0.0,
+       "localWindScale": 1.0,
+       "secondaryCoverage": {
+        "frequency": 1.0,
+        "noise": 3,
+        "offset": [
+         0.0,
+         0.0
+        ],
+        "range": [
+         -1.0,
+         1.0,
+         0.0,
+         0.0
+        ]
+       },
+       "thicknessVariation": {
+        "frequency": 1.0,
+        "noise": 0,
+        "offset": [
+         0.0,
+         0.0
+        ],
+        "range": [
+         -1.0,
+         1.0,
+         0.0,
+         0.0
+        ]
+       }
+      },
+      "weight": 1.0
+     }
+    ]
+   }
+  },
+  "wind": {
+   "development": 0.25,
+   "disturbance": 0.20000000298023224,
+   "highVelocity": [
+    16.799999237060547,
+    0.0
+   ],
+   "lowVelocity": [
+    14.100000381469727,
+    0.0
+   ]
+  }
+ },
+ "cloudMap": {
+  "localCloud": {
+   "states": [
+    {
+     "value": {
+      "altitude": 256.0,
+      "asset": "",
+      "center": [
+       128.4127655029297,
+       -150.2786407470703
+      ],
+      "enabled": true,
+      "feather": 200.0,
+      "heightSpan": 1792.0,
+      "heightWeight": 1.0,
+      "modelingAlpha": true,
+      "modelingBlend": 0,
+      "modelingWeight": 1.0,
+      "rotation": 0.0,
+      "size": [
+       16384.0,
+       16384.0
+      ],
+      "strength": 1.0,
+      "worldspace": "Tamriel"
+     },
+     "weight": 1.0
+    }
+   ]
+  },
+  "localTexelSize": 32.0,
+  "procedural": {
+   "local": {
+    "heightPath": "",
+    "modelingPath": ""
+   },
+   "localMaskPath": "",
+   "noise": [
+    {
+     "parameters": {
+      "bias": 0.0,
+      "contrast": 1.0,
+      "frequency": 4,
+      "lacunarity": 2,
+      "octaves": 4,
+      "persistence": 0.5,
+      "repetitions": 1,
+      "responseExponent": 1.0,
+      "seed": 1337,
+      "type": 0
+     },
+     "texturePath": ""
+    },
+    {
+     "parameters": {
+      "bias": -0.019999999552965164,
+      "contrast": 1.600000023841858,
+      "frequency": 4,
+      "lacunarity": 2,
+      "octaves": 6,
+      "persistence": 0.6000000238418579,
+      "repetitions": 2,
+      "responseExponent": 1.7999999523162842,
+      "seed": 1337,
+      "type": 1
+     },
+     "texturePath": ""
+    },
+    {
+     "parameters": {
+      "bias": 0.0,
+      "contrast": 1.0,
+      "frequency": 32,
+      "lacunarity": 2,
+      "octaves": 4,
+      "persistence": 0.5,
+      "repetitions": 1,
+      "responseExponent": 1.0,
+      "seed": 1337,
+      "type": 1
+     },
+     "texturePath": ""
+    },
+    {
+     "parameters": {
+      "bias": -0.05000000074505806,
+      "contrast": 1.100000023841858,
+      "frequency": 12,
+      "lacunarity": 2,
+      "octaves": 4,
+      "persistence": 0.5,
+      "repetitions": 1,
+      "responseExponent": 2.0,
+      "seed": 1337,
+      "type": 2
+     },
+     "texturePath": ""
+    }
+   ],
+   "parameters": {
+    "baseHeight": [
+     0.0,
+     0.949999988079071
+    ],
+    "bottomTypeExponent": 1.0,
+    "bottomTypeRange": [
+     -0.4000000059604645,
+     0.5,
+     0.0,
+     0.25
+    ],
+    "coverageGain": {
+     "exponent": 1.0,
+     "frequency": 1.0,
+     "noise": 2,
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "range": [
+      -1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "heightAuxiliaryRange": [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    "heightFromCoverage": 1,
+    "heightVariation": {
+     "exponent": 1.0,
+     "frequency": 1.0,
+     "noise": 2,
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "range": [
+      0.0,
+      1.0,
+      0.0,
+      0.019999999552965164
+     ]
+    },
+    "localBlendMode": 0,
+    "localHeightWeight": 1.0,
+    "localModelingWeight": 1.0,
+    "localWindScale": 1.0,
+    "modeling": {
+     "exponent": 1.600000023841858,
+     "frequency": 1.0,
+     "noise": 2,
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "range": [
+      -0.5,
+      0.6000000238418579,
+      0.0,
+      0.5
+     ]
+    },
+    "modelingGain": {
+     "exponent": 1.0,
+     "frequency": 1.0,
+     "noise": 2,
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "range": [
+      -1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "primary": {
+     "exponent": 1.399999976158142,
+     "frequency": 1.0,
+     "noise": 3,
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "range": [
+      -0.4000000059604645,
+      0.6499999761581421,
+      0.0,
+      0.6499999761581421
+     ]
+    },
+    "secondary": {
+     "exponent": 1.0,
+     "frequency": 1.0,
+     "noise": 1,
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "range": [
+      -0.20000000298023224,
+      0.800000011920929,
+      0.0,
+      0.4000000059604645
+     ]
+    },
+    "windOffset": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "texture": {
+   "heightPath": "",
+   "modelingPath": ""
+  },
+  "type": 1,
+  "version": 3
+ },
+ "cloudNoise": {
+  "procedural": true,
+  "seed": 1337,
+  "shape": [
+   {
+    "bias": 0.13300000131130219,
+    "contrast": 0.9599999785423279,
+    "exponent": 3.489000082015991,
+    "frequency": 3,
+    "octaves": 5,
+    "perlinMix": 1.0,
+    "persistence": 0.625
+   },
+   {
+    "bias": 0.31700000166893005,
+    "contrast": 1.628000020980835,
+    "exponent": 1.1640000343322754,
+    "frequency": 3,
+    "octaves": 4,
+    "perlinMix": 0.0,
+    "persistence": 0.5
+   },
+   {
+    "bias": 0.11500000208616257,
+    "contrast": 1.2619999647140503,
+    "exponent": 0.9959999918937683,
+    "frequency": 4,
+    "octaves": 4,
+    "perlinMix": 0.0,
+    "persistence": 0.5
+   },
+   {
+    "bias": 0.22599999606609344,
+    "contrast": 1.4630000591278076,
+    "exponent": 1.031000018119812,
+    "frequency": 9,
+    "octaves": 4,
+    "perlinMix": 0.0,
+    "persistence": 0.6000000238418579
+   }
+  ],
+  "skipShapeNoise": false,
+  "useVoxelNoise": false,
+  "warp": [
+   {
+    "bias": 0.17599999904632568,
+    "contrast": 1.5160000324249268,
+    "exponent": 2.4170000553131104,
+    "frequency": 4,
+    "octaves": 4,
+    "perlinMix": 0.0,
+    "persistence": 0.6499999761581421
+   },
+   {
+    "bias": 0.8169999718666077,
+    "contrast": 2.7079999446868896,
+    "exponent": 2.368000030517578,
+    "frequency": 3,
+    "octaves": 4,
+    "perlinMix": 0.0,
+    "persistence": 1.0
+   }
+  ],
+  "warpCorrelation": -0.3499999940395355
+ },
+ "cloudOriginalMix": 0.5,
+ "cloudRelightMix": 0.699999988079071,
+ "cloudShadowRemapRange": [
+  0.0,
+  1.0
+ ],
+ "enableAllExteriorCells": false,
+ "enableVanillaClouds": true,
+ "enableVolumetricClouds": true,
+ "enabled": true,
+ "fallbackZBottom": 0.0,
+ "forceEnableAllInteriorCells": false,
+ "groundAlbedo": [
+  0.20000000298023224,
+  0.20000000298023224,
+  0.20000000298023224
+ ],
+ "halfResApShadow": false,
+ "lightSkyStatics": true,
+ "lightning": {
+  "channelLuminance": 10000000.0,
+  "channelRadius": 0.11999999731779099,
+  "cloudBaseChance": 35.0,
+  "cloudLuminance": 1000.0,
+  "color": [
+   0.8600000143051147,
+   0.8999999761581421,
+   1.0
+  ],
+  "distanceRange": [
+   0.3499999940395355,
+   7.0
+  ],
+  "groundChance": 35.0,
+  "radius": 600.0,
+  "rate": 3.0,
+  "strokeCount": 3,
+  "strokeDecay": 0.6499999761581421,
+  "strokeDuration": 20.0,
+  "strokeInterval": 90.0
+ },
+ "lightningIntensity": 0.0,
+ "marchStepScale": 0.5,
+ "masserColor": [
+  0.10000000149011612,
+  0.06000000238418579,
+  0.06000000238418579
+ ],
+ "overrideDirLight": true,
+ "ozoneAbsorption": [
+  2.291100025177002,
+  1.5404000282287598,
+  0.0
+ ],
+ "ozoneAbsorptionAP1": [
+  2.2499001026153564,
+  1.6601999998092651,
+  0.0
+ ],
+ "ozoneAltitude": 40.18025207519531,
+ "ozoneThickness": 35.660709381103516,
+ "planetRadius": 6360.0,
+ "proceduralSun": true,
+ "rayMarchRange": 41.0,
+ "rayleighFalloff": 0.11498944461345673,
+ "rayleighScatter": [
+  6.604899883270264,
+  12.345000267028809,
+  29.413000106811523
+ ],
+ "rayleighScatterAP1": [
+  6.9344000816345215,
+  12.020299911499023,
+  28.90999984741211
+ ],
+ "secundaColor": [
+  0.04000000283122063,
+  0.05000000074505806,
+  0.05000000074505806
+ ],
+ "shadowVolumeRange": 8.0,
+ "silverLiningMix": 1.0,
+ "silverLiningSpread": 0.0,
+ "skyStaticsBrightness": 1.0,
+ "sunDiskRad": 0.009250244125723839,
+ "sunlightColor": [
+  7.0,
+  6.789999961853027,
+  6.650000095367432
+ ],
+ "trMix": 1.0,
+ "vanillaMix": 0.0,
+ "voxelClouds": {
+  "states": []
+ },
+ "worldspaceWhitelist": {
+  "DLC01FalmerValley": {
+   "zBottom": 3000.0
+  },
+  "DLC2SolstheimWorld": {
+   "zBottom": 256.0
+  },
+  "MarkarthWorld": {
+   "zBottom": -14500.0
+  },
+  "RiftenWorld": {
+   "zBottom": -14500.0
+  },
+  "SolitudeWorld": {
+   "zBottom": -14500.0
+  },
+  "Tamriel": {
+   "zBottom": -14500.0
+  },
+  "WhiterunDragonsreachWorld": {
+   "zBottom": -14500.0
+  },
+  "WhiterunWorld": {
+   "zBottom": -14500.0
+  },
+  "WindhelmWorld": {
+   "zBottom": -14500.0
+  }
+ }
+}

@@ -1,0 +1,24 @@
+options: {"advect_length": 220.0, "alpha_clear": 0.65, "alpha_max": 0.9, "asset": "tamriel-orographic", "atlas_texel": 8.0, "bank_coverage": 0.6, "bank_spacing": 400.0, "bank_type": 0.4, "banks": 60, "depletion": 0.5, "depletion_length": 1400.0, "feather": 300.0, "fog": 0.6, "global_base": 1200.0, "global_thickness": 900.0, "global_top_frac": 0.95, "heightmap": "C:\\Users\\foxnn\\dev\\terrain-heightmap\\mod\\textures\\terrain\\HeightMaps\\Tamriel.Terrain.HeightMap.-57.-43.61.50.-4629.4924.dds", "lcl": 300.0, "marine": 0.32, "marine_base": 150.0, "max_coverage": 0.85, "mode": "orographic", "noise": 0.35, "noise_seed": 20261118, "orographic": 0.7, "out": "C:\\Users\\foxnn\\dev\\cloud-weather-map\\out", "peaks": 0.55, "plugin": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\NAT.ENB - ESP WEATHER PLUGIN\\NAT-ENB.esp", "rain_shadow": 0.85, "sea_level": -14000.0, "seed_radius": 16.0, "seeds": 0.5, "shadow_drop": 0.22, "shear_margin": 0.0, "slope_scale": 0.4, "width": 952, "wind_from": 330.0, "worldspace": "Tamriel", "z_bottom": -14500.0}
+grid 952 x 752 texels, 7.31 m per texel, mips 10
+extent game units x -233472..253952  y -176128..208896
+center m 146.227, 233.964  size m 6960.415 x 5498.143
+sea level z -14000 = 7.1 m; sea fraction 0.270
+seeds in Tamriel: 811 (35 mist), on map: 811
+rain shadow iterations 370
+advected upslope percentiles (land): -0.32 -0.06 0.06 0.20 0.41 0.59 0.90
+altitude window 0 .. 1056 m (heightSpan 1056)
+coverage percentiles 5/25/50/75/95/99/100  all: 0.00 0.13 0.26 0.36 0.63 0.75 0.85
+                                          land: 0.00 0.07 0.23 0.43 0.66 0.77 0.85
+alpha percentiles                          all: 0.00 0.30 0.60 0.86 0.90 0.90 0.90
+coverage*alpha                             all: 0.00 0.02 0.16 0.31 0.56 0.67 0.76
+fraction cov>0.5: 0.123  cov>0.8: 0.003  alpha>0.5: 0.610
+term means: orographic 0.061, peaks 0.035, fog 0.027, marine 0.077, seed_cloud 0.094, seed_mist 0.001, lee 0.082
+  whiterun     terrain  157 m  cov 0.04  alpha 0.00  lee 0.00  base  178  top  624  type 0.58
+  throat       terrain  703 m  cov 0.81  alpha 0.90  lee 0.00  base  564  top 1044  type 0.53
+  morthal      terrain   23 m  cov 0.37  alpha 0.88  lee 0.00  base   43  top  298  type 0.16
+  riften       terrain  359 m  cov 0.01  alpha 0.00  lee 0.00  base  454  top  970  type 0.55
+  solitude     terrain   79 m  cov 0.35  alpha 0.85  lee 0.33  base  116  top  568  type 0.55
+  markarth     terrain  168 m  cov 0.45  alpha 0.90  lee 0.80  base  210  top  683  type 0.60
+  windhelm     terrain   14 m  cov 0.27  alpha 0.62  lee 0.76  base   23  top  315  type 0.21
+  falkreath    terrain  166 m  cov 0.14  alpha 0.17  lee 0.12  base  203  top  506  type 0.19
+  sea_north    terrain    7 m  cov 0.28  alpha 0.66  lee 0.00  base  150  top  530  type 0.30

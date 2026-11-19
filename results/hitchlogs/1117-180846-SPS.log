@@ -1,0 +1,261 @@
+[18:08:46.529] [46368] [I] SPS v1-0-73-0
+[18:08:46.529] [46368] [I] SPS 1.0.73 loaded
+[18:08:46.529] [46368] [I] Skyrim base address 0x7FF628070000 (for tools/resolve_rva.py)
+[18:08:46.530] [46368] [I] SPS_User.ini (menu settings) loaded
+[18:08:46.530] [46368] [I] Occlusion: hiding ON | reproject on | pause from 2.0 deg / 64 units | margin 2.0 % + 16 | hidden in 2 images in a row | max 4096 tiles | characters never
+[18:08:46.530] [46368] [I] ShadowStableCascade (with far shadow cache): sun step 0.05 deg | extent step 64 x1.00 | margin 48 | depth step 64
+[18:08:46.530] [46368] [I] ShadowInstancing: OFF | verify mode false (offset 0) | techniques C046,C045 | two-sided false | debug mode 0
+[18:08:46.530] [46368] [I] ActorShadowCulling: ON | from distance 3500 | point lights true
+[18:08:46.530] [46368] [I] ActorPartShadowCulling: ON | radius < 8 | from distance 500
+[18:08:46.530] [46368] [I] LightGatherThrottle: ON | movement >= 8 | radius +-16 | at the latest after 500 ms
+[18:08:46.530] [46368] [I] SubtreePruning: ON | sun true | point light false | rain/sky true
+[18:08:46.530] [46368] [I] TextureStream: ON | report false | safety factor 2.0 | min. 1024 px | budget 0.40 ms | clothing/armor true | bodies/faces/hair true | excluded: interface\,\maps\,mapmarker,\lod\,terrain\,fonts\,book,\sky\,effects\,cubemaps\
+[18:08:46.530] [46368] [I] LightShadowCache: ON
+[18:08:46.530] [46368] [I] FarShadowCache (optional): OFF | trees still from 2000
+[18:08:46.530] [46368] [I] ShadowCulling: ON | from cascade 1 | distance > 1500 | radius < 150 | radius/distance < 0.035 | skinned excluded: true | only above sun elevation 10 deg
+[18:08:46.530] [46368] [I] PointLightShadowCulling: ON | distance > 1000 | radius < 150 | radius/distance < 0.035 | skinned excluded: true
+[18:08:46.530] [46368] [I] SkylightingCulling: ON | min. radius 128
+[18:08:46.530] [46368] [I] DecalCulling: ON | from distance 1500 | radius < 32
+[18:08:46.530] [46368] [I] MainViewCulling: OFF | distance > 3000 | radius < 100 | radius/distance < 0.0020 | skinned excluded: true
+[18:08:46.530] [46368] [I] DepthPrepassCulling: OFF | distance > 1500 | radius < 200 | radius/distance < 0.025 | skinned excluded: true
+[18:08:46.530] [46368] [I] Hook installed: VirtualMachine::Update (vfunc 0x4)
+[18:08:46.530] [46368] [I] Hook installed: VirtualMachine::UpdateTasklets (vfunc 0x5)
+[18:08:46.530] [46368] [I] Hook installed: VirtualMachine::SetOverstressed (vfunc 0x6)
+[18:08:46.530] [46368] [I] Hook installed: PlayerCharacter::Update (vfunc 0xAD)
+[18:08:46.530] [46368] [I] Hook installed: Character::Update (vfunc 0xAD)
+[18:08:46.530] [46368] [I] Hook installed: BSCullingProcess::AppendVirtual (vfunc 0x18)
+[18:08:46.530] [46368] [I] Hook installed: BSParabolicCullingProcess::AppendVirtual (vfunc 0x18)
+[18:08:46.530] [46368] [I] Hook installed: Process (vfunc 0x16) for BSCullingProcess, BSParabolicCullingProcess, BSGeometryListCullingProcess
+[18:08:46.530] [46368] [I] Hooks installed: BSShadowDirectionalLight::Accumulate (0x9) / Render (0xA)
+[18:08:46.530] [46368] [I] Hooks installed: BSShadowParabolicLight / BSShadowFrustumLight::Render (0xA) - GPU timing
+[18:08:46.530] [46368] [I] Shadow instancing off at startup - RenderBatches detour not installed
+[18:08:46.530] [46368] [I] Feature not used on this game version (by design): Shadow instancing - off at startup (restart after enabling)
+[18:08:46.530] [46368] [I] Hook installed: BSUtilityShader::SetupGeometry (vfunc 0x6)
+[18:08:46.530] [46368] [I] Hooks installed: RenderPassImmediately call sites 1 and 2
+[18:08:46.530] [46368] [I] LightGather: hook on light assignment of dynamic point lights installed
+[18:08:46.530] [46368] [I] Hook installed: shadow map draw (ID 107604+0x167) - shadow cache for static lights
+[18:08:46.536] [46368] [I] TextureStream: 2347 remembered texture sizes loaded
+[18:08:46.536] [46368] [I] Hook installed: DDS loader (Detour) - load reduced; only textures straight from DDS files are streamed
+[18:08:49.222] [46368] [I] WaitProbe: off (developer option bEngineProbes)
+[18:10:49.152] [32528] [I] Event sinks registered
+[18:10:49.152] [32528] [I] Hook installed: IDXGISwapChain::Present (vfunc 8) - wait time
+[18:10:49.152] [32528] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses (vfunc 0x2A, after Community Shaders)
+[18:10:49.152] [32528] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses_Occlusion (vfunc 0x2D, after Community Shaders)
+[18:10:49.152] [32528] [I] Hook installed: Main::RenderWorld call site - hide occluded objects at draw time
+[18:10:49.152] [32528] [I] Hook installed: Main::Begin call site - occlusion pyramid starts before the main view is collected
+[18:10:49.152] [32528] [I] Hook installed: Main::RenderDepth (Detours)
+[18:10:49.153] [32528] [W] [LightShadowCache] Bottled Shaders is installed - shadow cache for static lights is off (interior shadows flickered with it; allow in the menu or with bAllowWithBottledShaders)
+[18:10:49.153] [32528] [W] [Occlusion] Bottled Shaders HiZ Occlusion Culling is active - SPS Hide occluded objects stays off (allow in the menu or with bAllowWithBottledHiZ)
+[18:10:49.153] [32528] [I] [Occlusion] Faster Objects (SkyrimPrecombines.dll) is loaded - its Hi-Z culling pauses while SPS Hide occluded objects is on, its precombines stay
+[18:10:49.153] [32528] [I] Hotkey registered: key 0xC9 toggles all optimizations on/off (0 = none, master switch only in the menu)
+[18:10:49.153] [32528] [I] Game language: ENGLISH -> menu English
+[18:10:49.153] [32528] [I] Menu registered in SKSE Menu Framework (version 3.8)
+[18:10:49.153] [32528] [I] Hook installed: BSShaderResourceManager::CreateTexture (vtable 0xD0, previously 0x7FFDB6B29430) - remember texture for DDS loader
+[18:10:50.772] [46368] [I] [TextureStream] Reset (main menu):0 held textures and pass released, 0 jobs discarded
+[18:10:52.794] [46368] [I] [TextureStream] Reset (loading save game):0 held textures and pass released, 0 jobs discarded
+[18:11:08.792] [46368] [I] [TextureStream] Reset (loading save game):0 held textures and pass released, 0 jobs discarded
+[18:11:08.823] [46368] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[18:11:15.811] [46368] [I] [Load] loading screen 7.0 s | textures loaded 930 (of these reduced 190) | texture streaming on | SPS on
+[18:11:20.757] [46368] [I] [Hitch] 110 ms | SPS this frame: nothing (0.4 ms) | frame before: downscaled 0 (0 MB), reloaded 156 (214 MB), released 95 (23 MB), 0.4 ms | VRAM 48 %, paged out 319 MB | times per area only with analysis logging (Debug page)
+[18:11:20.930] [46368] [I] [TextureStream] cannot be downscaled: textures\actors\character\bretonmale\malehead_msn.dds (file 4096x4096 13 mips, in game 4096x4096 13 mips)
+[18:11:20.930] [46368] [I] [TextureStream] cannot be downscaled: textures\actors\character\male\malehead.dds (file 4096x4096 13 mips, in game 4096x4096 13 mips)
+[18:11:21.652] [46368] [I] Main view detection: by world camera
+[18:11:24.425] [46368] [I] [Hitch] 510 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 53 %, paged out 544 MB | times per area only with analysis logging (Debug page)
+[18:11:25.527] [89176] [I] [TextureStream] Reset (loading screen):213 held textures and pass released, 0 jobs discarded
+[18:11:37.728] [89176] [I] [Load] loading screen 12.2 s | textures loaded 2091 (of these reduced 564) | texture streaming on | SPS on
+[18:11:39.882] [46368] [I] [Hitch] 145 ms | SPS this frame: downscaled 0 (0 MB), reloaded 55 (48 MB), released 0 (0 MB), 0.4 ms | frame before: downscaled 0 (0 MB), reloaded 42 (43 MB), released 0 (0 MB), 0.4 ms | VRAM 85 %, paged out 585 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[18:11:40.081] [46368] [I] [Hitch] 107 ms | SPS this frame: nothing (0.4 ms) | frame before: downscaled 0 (0 MB), reloaded 30 (48 MB), released 0 (0 MB), 0.4 ms | VRAM 85 %, paged out 585 MB | times per area only with analysis logging (Debug page)
+[18:11:40.501] [46368] [I] [Hitch] 392 ms | SPS this frame: downscaled 0 (0 MB), reloaded 17 (63 MB), released 127 (31 MB), 0.5 ms | frame before: downscaled 0 (0 MB), reloaded 25 (35 MB), released 0 (0 MB), 0.5 ms | VRAM 89 %, paged out 392 MB | times per area only with analysis logging (Debug page)
+[18:11:40.933] [46368] [I] [TextureStream] cannot be downscaled: textures\actors\character\hg_mow\head\head\maleheaddetail_rough01_msn.dds (file 2048x2048 12 mips, in game 2048x2048 12 mips)
+[18:11:44.106] [46368] [I] [Hitch] 190 ms | SPS this frame: downscaled 0 (0 MB), reloaded 54 (58 MB), released 56 (14 MB), 0.5 ms, pass evaluated | frame before: downscaled 0 (0 MB), reloaded 6 (6 MB), released 4 (4 MB), 0.4 ms | VRAM 89 %, paged out 398 MB | times per area only with analysis logging (Debug page)
+[18:11:54.098] [46368] [I] [Hitch] 185 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 85 %, paged out 391 MB | times per area only with analysis logging (Debug page)
+[18:12:14.114] [46368] [I] [Hitch] 193 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.0 ms) | VRAM 85 %, paged out 391 MB | times per area only with analysis logging (Debug page)
+[18:12:15.940] [46368] [I] ---- 2045 Frames | 51.2 FPS | Frame avg 19.53 ms, p99 39.43 ms, max 510.11 ms | NPC updates/frame 17.3 | VM overstressed 18 | cell loads 27 | hitches >= 100 ms: 8
+[18:12:15.941] [46368] [I] [TextureStream] VRAM 12.6/14.9 GB (85 %, paged out 391 MB) | downscaled 707 textures, 2510 MB saved (by max. size 2048: 4, 64 MB) | last minute: downscaled 80 (skipped 0), reloaded 1547 (2348 MB), ping-pong 0, refilled 0, loaded reduced 826, from RAM 2, load errors 0, recognized after reset 1518
+[18:13:14.123] [46368] [I] [Hitch] 209 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 84 %, paged out 400 MB | times per area only with analysis logging (Debug page)
+[18:13:15.956] [46368] [I] ---- 3404 Frames | 56.7 FPS | Frame avg 17.63 ms, p99 21.16 ms, max 208.84 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[18:13:15.957] [46368] [I] [TextureStream] VRAM 12.4/14.9 GB (84 %, paged out 400 MB) | downscaled 756 textures, 2685 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 61 (skipped 0), reloaded 11 (45 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:14:15.959] [46368] [I] ---- 3582 Frames | 59.7 FPS | Frame avg 16.75 ms, p99 28.63 ms, max 63.01 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:14:15.959] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 400 MB) | downscaled 722 textures, 2572 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 45 (skipped 0), reloaded 75 (345 MB), ping-pong 16, refilled 0, loaded reduced 0, from RAM 15, load errors 0, recognized after reset 0
+[18:15:14.105] [46368] [I] [Hitch] 186 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 83 %, paged out 403 MB | times per area only with analysis logging (Debug page)
+[18:15:15.966] [46368] [I] ---- 3492 Frames | 58.2 FPS | Frame avg 17.18 ms, p99 23.70 ms, max 185.59 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[18:15:15.966] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 403 MB) | downscaled 716 textures, 2550 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 68 (skipped 0), reloaded 74 (348 MB), ping-pong 68, refilled 0, loaded reduced 0, from RAM 47, load errors 0, recognized after reset 0
+[18:16:15.975] [46368] [I] ---- 3475 Frames | 57.9 FPS | Frame avg 17.27 ms, p99 21.00 ms, max 34.58 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:16:15.975] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 368 MB) | downscaled 725 textures, 2584 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 9 (skipped 0), reloaded 0 (0 MB), ping-pong 9, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:17:15.983] [46368] [I] ---- 3489 Frames | 58.1 FPS | Frame avg 17.20 ms, p99 20.59 ms, max 77.13 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:17:15.984] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 368 MB) | downscaled 725 textures, 2584 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:18:15.998] [46368] [I] ---- 3524 Frames | 58.7 FPS | Frame avg 17.03 ms, p99 20.11 ms, max 50.70 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:18:15.998] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 368 MB) | downscaled 725 textures, 2584 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:19:14.099] [46368] [I] [Hitch] 182 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 82 %, paged out 367 MB | times per area only with analysis logging (Debug page)
+[18:19:16.012] [46368] [I] ---- 3517 Frames | 58.6 FPS | Frame avg 17.06 ms, p99 20.11 ms, max 181.98 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[18:19:16.012] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 367 MB) | downscaled 723 textures, 2576 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 2 (11 MB), ping-pong 0, refilled 0, loaded reduced 2, from RAM 0, load errors 0, recognized after reset 0
+[18:20:16.016] [46368] [I] ---- 3523 Frames | 58.7 FPS | Frame avg 17.03 ms, p99 20.08 ms, max 47.65 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:20:16.016] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 367 MB) | downscaled 723 textures, 2576 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:21:16.017] [46368] [I] ---- 3404 Frames | 56.7 FPS | Frame avg 17.63 ms, p99 23.43 ms, max 47.90 ms | NPC updates/frame 18.5 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:21:16.017] [46368] [I] [TextureStream] VRAM 12.5/14.9 GB (84 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 42 (skipped 0), reloaded 23 (109 MB), ping-pong 9, refilled 0, loaded reduced 4, from RAM 14, load errors 0, recognized after reset 0
+[18:22:16.033] [46368] [I] ---- 3378 Frames | 56.3 FPS | Frame avg 17.77 ms, p99 21.55 ms, max 26.93 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:22:16.034] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:23:16.036] [46368] [I] ---- 3424 Frames | 57.1 FPS | Frame avg 17.52 ms, p99 21.09 ms, max 48.05 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:23:16.036] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:24:16.044] [46368] [I] ---- 3429 Frames | 57.1 FPS | Frame avg 17.50 ms, p99 21.05 ms, max 29.09 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:24:16.044] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:25:16.056] [46368] [I] ---- 3455 Frames | 57.6 FPS | Frame avg 17.37 ms, p99 20.95 ms, max 33.06 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:25:16.056] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 367 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:26:16.060] [46368] [I] ---- 3427 Frames | 57.1 FPS | Frame avg 17.51 ms, p99 21.18 ms, max 54.95 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:26:16.060] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 367 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:27:16.073] [46368] [I] ---- 3419 Frames | 57.0 FPS | Frame avg 17.55 ms, p99 21.26 ms, max 28.80 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:27:16.074] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 367 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:28:16.085] [46368] [I] ---- 3437 Frames | 57.3 FPS | Frame avg 17.46 ms, p99 20.97 ms, max 47.08 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:28:16.085] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:28:36.608] [46368] [I] [Hitch] 106 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.0 ms) | VRAM 83 %, paged out 368 MB | times per area only with analysis logging (Debug page)
+[18:29:16.095] [46368] [I] ---- 3430 Frames | 57.2 FPS | Frame avg 17.50 ms, p99 21.14 ms, max 105.97 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[18:29:16.095] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:30:16.095] [46368] [I] ---- 3451 Frames | 57.5 FPS | Frame avg 17.39 ms, p99 20.88 ms, max 22.00 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:30:16.095] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:31:16.096] [46368] [I] ---- 3451 Frames | 57.5 FPS | Frame avg 17.39 ms, p99 20.89 ms, max 52.26 ms | NPC updates/frame 19.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:31:16.096] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 368 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:32:16.112] [46368] [I] ---- 3459 Frames | 57.6 FPS | Frame avg 17.35 ms, p99 20.87 ms, max 24.69 ms | NPC updates/frame 18.9 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:32:16.113] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 366 MB) | downscaled 744 textures, 2645 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 2, from RAM 0, load errors 0, recognized after reset 0
+[18:33:16.115] [46368] [I] ---- 3379 Frames | 56.3 FPS | Frame avg 17.76 ms, p99 22.69 ms, max 58.97 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:33:16.115] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 367 MB) | downscaled 735 textures, 2613 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 29 (skipped 0), reloaded 36 (168 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 13, load errors 0, recognized after reset 0
+[18:33:41.050] [46368] [I] [Hitch] 159 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 83 %, paged out 367 MB | times per area only with analysis logging (Debug page)
+[18:33:41.505] [46368] [I] [Hitch] 127 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 80 %, paged out 367 MB | times per area only with analysis logging (Debug page)
+[18:34:16.134] [46368] [I] ---- 3036 Frames | 50.6 FPS | Frame avg 19.77 ms, p99 22.08 ms, max 159.44 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 2
+[18:34:16.134] [46368] [I] [TextureStream] VRAM 12.3/14.9 GB (83 %, paged out 367 MB) | downscaled 733 textures, 2598 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 74 (skipped 0), reloaded 73 (345 MB), ping-pong 4, refilled 0, loaded reduced 2, from RAM 39, load errors 0, recognized after reset 0
+[18:34:27.258] [46368] [I] [Hitch] 521 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 82 %, paged out 391 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[18:34:32.396] [46368] [I] [Hitch] 635 ms | SPS this frame: downscaled 0 (0 MB), reloaded 0 (0 MB), released 3 (16 MB), 0.0 ms | frame before: nothing (0.0 ms) | VRAM 82 %, paged out 378 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[18:34:38.159] [46368] [I] [Hitch] 230 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 81 %, paged out 389 MB | times per area only with analysis logging (Debug page)
+[18:35:16.135] [46368] [I] ---- 2653 Frames | 44.2 FPS | Frame avg 22.62 ms, p99 27.30 ms, max 635.09 ms | NPC updates/frame 18.4 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 3
+[18:35:16.136] [46368] [I] [TextureStream] VRAM 12.2/14.9 GB (82 %, paged out 394 MB) | downscaled 757 textures, 2668 MB saved (by max. size 2048: 3, 48 MB) | last minute: downscaled 46 (skipped 0), reloaded 42 (157 MB), ping-pong 32, refilled 0, loaded reduced 18, from RAM 24, load errors 0, recognized after reset 10
+[18:35:22.810] [46368] [I] [TextureStream] cannot be downscaled: textures\actors\character\hg_mow\head\head\maleheadcomplexion_age50_msn.dds (file 2048x2048 12 mips, in game 2048x2048 12 mips)
+[18:35:25.219] [46368] [I] [Hitch] 403 ms | SPS this frame: downscaled 0 (0 MB), reloaded 0 (0 MB), released 26 (31 MB), 0.0 ms | frame before: nothing (0.0 ms) | VRAM 87 %, paged out 404 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[18:36:11.663] [46368] [I] [Hitch] 765 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 95 %, paged out 514 MB | times per area only with analysis logging (Debug page)
+[18:36:16.144] [46368] [I] ---- 2503 Frames | 41.7 FPS | Frame avg 23.97 ms, p99 30.24 ms, max 765.43 ms | NPC updates/frame 25.1 | VM overstressed 0 | cell loads 9 | hitches >= 100 ms: 2
+[18:36:16.144] [46368] [I] [TextureStream] VRAM 13.4/14.3 GB (94 %, paged out 515 MB) | downscaled 893 textures, 3385 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 194 (skipped 0), reloaded 215 (734 MB), ping-pong 116, refilled 0, loaded reduced 63, from RAM 68, load errors 0, recognized after reset 102
+[18:37:01.778] [46368] [I] [Hitch] 101 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 79 %, paged out 395 MB | times per area only with analysis logging (Debug page)
+[18:56:23.080] [46368] [I] ---- 1896 Frames | 41.1 FPS | Frame avg 24.36 ms, p99 42.94 ms, max 101.25 ms | NPC updates/frame 25.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[18:56:23.080] [46368] [I] [TextureStream] VRAM 11.6/14.9 GB (78 %, paged out 302 MB) | downscaled 911 textures, 3444 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 21 (skipped 0), reloaded 3 (4 MB), ping-pong 17, refilled 0, loaded reduced 1, from RAM 0, load errors 0, recognized after reset 4
+[18:56:39.309] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[18:56:40.310] [46368] [I] Main view detection: by world camera
+[18:57:08.987] [46368] [I] [Hitch] 180 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 76 %, paged out 394 MB | times per area only with analysis logging (Debug page)
+[18:57:10.004] [46368] [I] [Hitch] 163 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 80 %, paged out 503 MB | times per area only with analysis logging (Debug page)
+[18:57:11.506] [46368] [I] [Hitch] 136 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 76 %, paged out 391 MB | times per area only with analysis logging (Debug page)
+[18:57:13.074] [46368] [I] [Hitch] 106 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 80 %, paged out 502 MB | times per area only with analysis logging (Debug page)
+[18:57:14.235] [46368] [I] [Hitch] 109 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 80 %, paged out 502 MB | times per area only with analysis logging (Debug page)
+[18:57:15.902] [46368] [I] [Hitch] 115 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 80 %, paged out 502 MB | times per area only with analysis logging (Debug page)
+[18:57:23.084] [46368] [I] ---- 2717 Frames | 45.3 FPS | Frame avg 22.08 ms, p99 35.83 ms, max 180.07 ms | NPC updates/frame 25.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 6
+[18:57:23.084] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 502 MB) | downscaled 687 textures, 2711 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 22 (skipped 0), reloaded 133 (567 MB), ping-pong 13, refilled 0, loaded reduced 20, from RAM 72, load errors 0, recognized after reset 520
+[18:58:23.089] [46368] [I] ---- 2423 Frames | 40.4 FPS | Frame avg 24.76 ms, p99 29.96 ms, max 52.04 ms | NPC updates/frame 25.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:58:23.089] [46368] [I] [TextureStream] VRAM 12.0/14.9 GB (81 %, paged out 397 MB) | downscaled 703 textures, 2764 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 16 (skipped 0), reloaded 0 (0 MB), ping-pong 16, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[18:59:23.093] [46368] [I] ---- 2361 Frames | 39.3 FPS | Frame avg 25.41 ms, p99 28.35 ms, max 35.79 ms | NPC updates/frame 25.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[18:59:23.093] [46368] [I] [TextureStream] VRAM 12.0/14.9 GB (81 %, paged out 397 MB) | downscaled 692 textures, 2646 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:00:03.894] [46368] [I] [Hitch] 107 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 81 %, paged out 403 MB | times per area only with analysis logging (Debug page)
+[19:00:15.532] [46368] [I] [Hitch] 104 ms | SPS this frame: downscaled 5 (20 MB), reloaded 0 (0 MB), released 0 (0 MB), 28.7 ms | frame before: nothing (0.5 ms, pass evaluated) | VRAM 81 %, paged out 373 MB | times per area only with analysis logging (Debug page)
+[19:00:31.279] [46368] [I] ---- 2249 Frames | 39.1 FPS | Frame avg 25.54 ms, p99 35.52 ms, max 106.55 ms | NPC updates/frame 25.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 2
+[19:00:31.279] [46368] [I] [TextureStream] VRAM 11.9/14.9 GB (80 %, paged out 373 MB) | downscaled 739 textures, 2775 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 63 (skipped 0), reloaded 30 (109 MB), ping-pong 0, refilled 0, loaded reduced 5, from RAM 19, load errors 0, recognized after reset 10
+[19:01:31.288] [46368] [I] ---- 2112 Frames | 36.9 FPS | Frame avg 27.10 ms, p99 41.92 ms, max 67.94 ms | NPC updates/frame 27.2 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:01:31.288] [46368] [I] [TextureStream] VRAM 11.3/14.9 GB (76 %, paged out 401 MB) | downscaled 827 textures, 3256 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 109 (skipped 0), reloaded 100 (321 MB), ping-pong 73, refilled 0, loaded reduced 42, from RAM 56, load errors 0, recognized after reset 47
+[19:02:31.296] [46368] [I] ---- 2043 Frames | 34.0 FPS | Frame avg 29.37 ms, p99 39.48 ms, max 66.88 ms | NPC updates/frame 28.1 | VM overstressed 0 | cell loads 5 | hitches >= 100 ms: 0
+[19:02:31.296] [46368] [I] [TextureStream] VRAM 11.5/14.9 GB (78 %, paged out 416 MB) | downscaled 845 textures, 3291 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 5 (skipped 0), reloaded 91 (208 MB), ping-pong 0, refilled 0, loaded reduced 50, from RAM 17, load errors 0, recognized after reset 60
+[19:02:52.220] [46368] [I] [Hitch] 471 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 79 %, paged out 413 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[19:03:31.318] [46368] [I] ---- 2184 Frames | 36.4 FPS | Frame avg 27.48 ms, p99 36.21 ms, max 471.36 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:03:31.318] [46368] [I] [TextureStream] VRAM 11.5/14.9 GB (77 %, paged out 413 MB) | downscaled 819 textures, 3021 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 68 (skipped 0), reloaded 87 (412 MB), ping-pong 53, refilled 0, loaded reduced 0, from RAM 66, load errors 0, recognized after reset 0
+[19:04:31.318] [46368] [I] ---- 2269 Frames | 37.8 FPS | Frame avg 26.44 ms, p99 30.76 ms, max 47.25 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:04:31.318] [46368] [I] [TextureStream] VRAM 11.4/14.9 GB (77 %, paged out 412 MB) | downscaled 787 textures, 2926 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 3 (skipped 0), reloaded 0 (0 MB), ping-pong 3, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:05:25.774] [46368] [I] [Hitch] 118 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 79 %, paged out 465 MB | times per area only with analysis logging (Debug page)
+[19:05:31.329] [46368] [I] ---- 1962 Frames | 37.0 FPS | Frame avg 27.00 ms, p99 37.61 ms, max 117.58 ms | NPC updates/frame 32.8 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:05:31.329] [46368] [I] [TextureStream] VRAM 11.6/14.9 GB (78 %, paged out 416 MB) | downscaled 807 textures, 3011 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 61 (skipped 0), reloaded 61 (250 MB), ping-pong 0, refilled 0, loaded reduced 17, from RAM 46, load errors 0, recognized after reset 12
+[19:06:31.343] [46368] [I] ---- 1857 Frames | 38.2 FPS | Frame avg 26.15 ms, p99 37.19 ms, max 91.76 ms | NPC updates/frame 32.6 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:06:31.344] [46368] [I] [TextureStream] VRAM 11.8/14.9 GB (79 %, paged out 397 MB) | downscaled 808 textures, 2985 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 67 (skipped 0), reloaded 100 (414 MB), ping-pong 41, refilled 0, loaded reduced 27, from RAM 40, load errors 0, recognized after reset 19
+[19:06:32.475] [46368] [I] [Hitch] 564 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.0 ms) | VRAM 79 %, paged out 397 MB | times per area only with analysis logging (Debug page)
+[19:07:31.369] [46368] [I] ---- 2300 Frames | 38.3 FPS | Frame avg 26.10 ms, p99 30.01 ms, max 564.43 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:07:31.370] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 399 MB) | downscaled 799 textures, 2958 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 10 (skipped 0), reloaded 6 (29 MB), ping-pong 10, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:08:31.385] [46368] [I] ---- 2218 Frames | 37.0 FPS | Frame avg 27.06 ms, p99 31.31 ms, max 77.77 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:08:31.385] [46368] [I] [TextureStream] VRAM 11.5/14.9 GB (78 %, paged out 398 MB) | downscaled 825 textures, 2976 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 32 (skipped 0), reloaded 4 (19 MB), ping-pong 3, refilled 0, loaded reduced 0, from RAM 2, load errors 0, recognized after reset 0
+[19:08:42.137] [46368] [I] [Hitch] 118 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 78 %, paged out 398 MB | times per area only with analysis logging (Debug page)
+[19:09:31.402] [46368] [I] ---- 2127 Frames | 35.4 FPS | Frame avg 28.22 ms, p99 36.24 ms, max 117.91 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:09:31.402] [46368] [I] [TextureStream] VRAM 11.2/14.9 GB (76 %, paged out 398 MB) | downscaled 793 textures, 2862 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 5 (skipped 0), reloaded 37 (176 MB), ping-pong 0, refilled 0, loaded reduced 2, from RAM 37, load errors 0, recognized after reset 0
+[19:09:33.604] [46368] [I] [Hitch] 212 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 75 %, paged out 398 MB | times per area only with analysis logging (Debug page)
+[19:10:31.422] [46368] [I] ---- 2141 Frames | 35.7 FPS | Frame avg 28.03 ms, p99 37.62 ms, max 211.64 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:10:31.422] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 399 MB) | downscaled 822 textures, 2962 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 118 (skipped 0), reloaded 89 (439 MB), ping-pong 83, refilled 0, loaded reduced 0, from RAM 85, load errors 0, recognized after reset 0
+[19:11:33.137] [46368] [I] ---- 575 Frames | 36.6 FPS | Frame avg 27.30 ms, p99 35.27 ms, max 44.97 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:11:33.137] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 397 MB) | downscaled 787 textures, 2836 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 8 (skipped 0), reloaded 43 (208 MB), ping-pong 8, refilled 0, loaded reduced 0, from RAM 41, load errors 0, recognized after reset 0
+[19:12:33.146] [46368] [I] ---- 2118 Frames | 35.3 FPS | Frame avg 28.33 ms, p99 31.88 ms, max 53.54 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:12:33.147] [46368] [I] [TextureStream] VRAM 11.6/14.9 GB (78 %, paged out 395 MB) | downscaled 803 textures, 2897 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 32 (skipped 0), reloaded 17 (72 MB), ping-pong 0, refilled 0, loaded reduced 2, from RAM 16, load errors 0, recognized after reset 1
+[19:12:42.232] [46368] [I] [Hitch] 102 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 78 %, paged out 395 MB | times per area only with analysis logging (Debug page)
+[19:13:33.163] [46368] [I] ---- 2064 Frames | 34.4 FPS | Frame avg 29.08 ms, p99 48.84 ms, max 101.76 ms | NPC updates/frame 35.3 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:13:33.163] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 397 MB) | downscaled 822 textures, 3040 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 18 (skipped 0), reloaded 19 (57 MB), ping-pong 0, refilled 0, loaded reduced 14, from RAM 0, load errors 0, recognized after reset 9
+[19:14:04.049] [46368] [I] [Hitch] 120 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 79 %, paged out 398 MB | times per area only with analysis logging (Debug page)
+[19:14:33.187] [46368] [I] ---- 2096 Frames | 34.9 FPS | Frame avg 28.64 ms, p99 36.73 ms, max 120.18 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:14:33.187] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 398 MB) | downscaled 817 textures, 3031 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 1 (3 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:15:33.207] [46368] [I] ---- 2066 Frames | 34.4 FPS | Frame avg 29.05 ms, p99 37.04 ms, max 62.01 ms | NPC updates/frame 34.7 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:15:33.207] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 398 MB) | downscaled 813 textures, 3017 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:16:33.211] [46368] [I] ---- 2086 Frames | 34.8 FPS | Frame avg 28.77 ms, p99 30.18 ms, max 94.00 ms | NPC updates/frame 34.1 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:16:33.212] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 396 MB) | downscaled 817 textures, 3031 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 4
+[19:17:33.230] [46368] [I] ---- 2104 Frames | 35.1 FPS | Frame avg 28.53 ms, p99 29.93 ms, max 51.09 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:17:33.231] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 396 MB) | downscaled 789 textures, 2857 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:18:33.240] [46368] [I] ---- 2098 Frames | 35.0 FPS | Frame avg 28.60 ms, p99 29.87 ms, max 55.28 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:18:33.240] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 396 MB) | downscaled 789 textures, 2857 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 2, from RAM 0, load errors 0, recognized after reset 0
+[19:19:33.249] [46368] [I] ---- 2107 Frames | 35.1 FPS | Frame avg 28.48 ms, p99 29.61 ms, max 65.75 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:19:33.249] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 397 MB) | downscaled 789 textures, 2857 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:20:33.256] [46368] [I] ---- 2088 Frames | 34.8 FPS | Frame avg 28.74 ms, p99 30.14 ms, max 45.82 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:20:33.256] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 397 MB) | downscaled 789 textures, 2857 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:21:33.277] [46368] [I] ---- 2096 Frames | 34.9 FPS | Frame avg 28.64 ms, p99 29.75 ms, max 56.16 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:21:33.277] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 397 MB) | downscaled 789 textures, 2857 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:22:33.281] [46368] [I] ---- 2087 Frames | 34.8 FPS | Frame avg 28.75 ms, p99 30.05 ms, max 65.94 ms | NPC updates/frame 35.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:22:33.281] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 397 MB) | downscaled 789 textures, 2857 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 0 (skipped 0), reloaded 0 (0 MB), ping-pong 0, refilled 0, loaded reduced 0, from RAM 0, load errors 0, recognized after reset 0
+[19:22:46.806] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:22:50.860] [46368] [I] Main view detection: by world camera
+[19:22:56.915] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:23:05.004] [46368] [I] Main view detection: by world camera
+[19:23:24.250] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:23:32.362] [46368] [I] Main view detection: by world camera
+[19:23:33.304] [46368] [I] ---- 2534 Frames | 42.2 FPS | Frame avg 23.69 ms, p99 31.15 ms, max 55.38 ms | NPC updates/frame 33.3 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:23:33.304] [46368] [I] [TextureStream] VRAM 11.5/14.9 GB (77 %, paged out 399 MB) | downscaled 814 textures, 2937 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 55 (skipped 0), reloaded 30 (168 MB), ping-pong 0, refilled 0, loaded reduced 2, from RAM 21, load errors 0, recognized after reset 0
+[19:23:43.526] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:24:03.715] [46368] [I] Main view detection: by world camera
+[19:24:15.925] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:24:21.005] [46368] [I] Main view detection: by world camera
+[19:24:27.106] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:24:33.318] [46368] [I] ---- 2654 Frames | 44.2 FPS | Frame avg 22.61 ms, p99 30.88 ms, max 50.39 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:24:33.318] [46368] [I] [TextureStream] VRAM 11.5/14.9 GB (77 %, paged out 389 MB) | downscaled 820 textures, 2963 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 39 (skipped 0), reloaded 33 (187 MB), ping-pong 37, refilled 0, loaded reduced 0, from RAM 31, load errors 0, recognized after reset 1
+[19:24:36.210] [46368] [I] Main view detection: by world camera
+[19:24:44.387] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:24:59.527] [46368] [I] Main view detection: by world camera
+[19:25:08.639] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:25:21.781] [46368] [I] Main view detection: by world camera
+[19:25:26.857] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:25:33.320] [46368] [I] ---- 2802 Frames | 46.7 FPS | Frame avg 21.41 ms, p99 34.13 ms, max 69.69 ms | NPC updates/frame 33.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:25:33.320] [46368] [I] [TextureStream] VRAM 11.5/14.9 GB (77 %, paged out 385 MB) | downscaled 818 textures, 2957 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 36 (skipped 0), reloaded 37 (183 MB), ping-pong 30, refilled 0, loaded reduced 0, from RAM 32, load errors 0, recognized after reset 1
+[19:25:51.046] [46368] [I] Main view detection: by world camera
+[19:25:57.118] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:26:03.186] [46368] [I] Main view detection: by world camera
+[19:26:29.428] [46368] [I] [Hitch] 124 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 78 %, paged out 398 MB | times per area only with analysis logging (Debug page)
+[19:26:31.503] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:26:33.327] [46368] [I] ---- 2580 Frames | 43.0 FPS | Frame avg 23.26 ms, p99 39.10 ms, max 124.28 ms | NPC updates/frame 33.3 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 1
+[19:26:33.328] [46368] [I] [TextureStream] VRAM 11.7/14.9 GB (79 %, paged out 386 MB) | downscaled 764 textures, 2769 MB saved (by max. size 2048: 2, 32 MB) | last minute: downscaled 89 (skipped 0), reloaded 170 (750 MB), ping-pong 88, refilled 0, loaded reduced 12, from RAM 121, load errors 0, recognized after reset 15
+[19:26:39.576] [46368] [I] Main view detection: by world camera
+[19:27:06.893] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:27:11.939] [46368] [I] Main view detection: by world camera
+[19:27:33.239] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:27:33.340] [46368] [I] ---- 2345 Frames | 39.1 FPS | Frame avg 25.59 ms, p99 34.21 ms, max 95.26 ms | NPC updates/frame 34.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:27:33.340] [46368] [I] [TextureStream] VRAM 13.0/14.2 GB (91 %, paged out 391 MB) | downscaled 817 textures, 2961 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 85 (skipped 0), reloaded 34 (173 MB), ping-pong 85, refilled 0, loaded reduced 3, from RAM 32, load errors 0, recognized after reset 4
+[19:27:43.349] [46368] [I] Main view detection: by world camera
+[19:27:57.496] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:28:00.524] [46368] [I] Main view detection: by world camera
+[19:28:05.565] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:28:18.681] [46368] [I] Main view detection: by world camera
+[19:28:29.810] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:28:33.356] [46368] [I] ---- 2625 Frames | 43.7 FPS | Frame avg 22.86 ms, p99 32.15 ms, max 58.67 ms | NPC updates/frame 34.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:28:33.357] [46368] [I] [TextureStream] VRAM 11.3/14.9 GB (76 %, paged out 389 MB) | downscaled 845 textures, 3077 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 66 (skipped 0), reloaded 36 (197 MB), ping-pong 64, refilled 0, loaded reduced 0, from RAM 36, load errors 0, recognized after reset 0
+[19:28:34.859] [46368] [I] Main view detection: by world camera
+[19:28:35.867] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:28:36.879] [46368] [I] Main view detection: by world camera
+[19:28:41.925] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:28:47.965] [46368] [I] Main view detection: by world camera
+[19:29:02.135] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:29:15.250] [46368] [I] Main view detection: by world camera
+[19:29:30.406] [46368] [I] Main view detection: by object count (main view does not use the world camera)
+[19:29:33.358] [46368] [I] ---- 2557 Frames | 42.6 FPS | Frame avg 23.47 ms, p99 33.96 ms, max 82.37 ms | NPC updates/frame 34.0 | VM overstressed 0 | cell loads 0 | hitches >= 100 ms: 0
+[19:29:33.359] [46368] [I] [TextureStream] VRAM 12.8/14.2 GB (90 %, paged out 389 MB) | downscaled 843 textures, 3069 MB saved (by max. size 2048: 0, 0 MB) | last minute: downscaled 28 (skipped 0), reloaded 34 (173 MB), ping-pong 28, refilled 0, loaded reduced 2, from RAM 34, load errors 0, recognized after reset 4
+[19:29:42.567] [46368] [I] Main view detection: by world camera

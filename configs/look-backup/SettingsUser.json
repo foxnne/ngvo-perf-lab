@@ -1,0 +1,332 @@
+{
+  "Advanced": {
+    "Background Compiler Threads": 8,
+    "Compiler Threads": 14,
+    "Developer Mode": false,
+    "Dump Shaders": false,
+    "Frame Annotations": false,
+    "Log Level": 2,
+    "Partial Precision": false,
+    "Shader Defines": "",
+    "Throttle Water Cubemap": true,
+    "Use FileWatcher": false
+  },
+  "Camera FX": {
+    "ColdFrost": false,
+    "Enabled": false
+  },
+  "Capsule Shadows": {
+    "Enabled": false
+  },
+  "Disable at Boot": {
+    "UnifiedWater": false
+  },
+  "Favorites": {},
+  "General": {
+    "Enable Async": true,
+    "Enable Disk Cache": true,
+    "Enable Shaders": true,
+    "Language": "en",
+    "Post Processing Mode": "PostProcessing",
+    "Post Processing Mode Pack Revision": 2,
+    "Show Background Compile Overlay": true
+  },
+  "HDR Display": {
+    "hdrAutoDetected": true
+  },
+  "HiZ Occlusion Culling": {
+    "conservativeBias": 0.019999999552965164,
+    "motionMarginFrames": 5.0
+  },
+  "Image Based Lighting": {
+    "DALCMode": 2,
+    "SkylightingAffectsEnv": 1
+  },
+  "Menu": {
+    "AnimationSpeed": 1.0,
+    "AutoHideFeatureList": false,
+    "CSEditorToggleKey": 126,
+    "EffectToggleKey": 135,
+    "Effects11EditorKey": 132,
+    "Effects11ToggleKey": 131,
+    "EnableShaderBlocking": false,
+    "FeatureListFilter": 0,
+    "FeatureListSort": 0,
+    "FirstTimeSetupCompleted": true,
+    "NeuralRenderingCompareKey": 0,
+    "NeuralRenderingScaleDownKey": 0,
+    "NeuralRenderingScaleUpKey": 0,
+    "NeuralRenderingToggleKey": 117,
+    "OverlayToggleKey": 134,
+    "ReduceUIAnimations": false,
+    "RequireShiftToDock": true,
+    "ScreenshotKey": 44,
+    "SelectedThemePreset": "Default",
+    "ShaderBlockNextKey": 34,
+    "ShaderBlockPrevKey": 33,
+    "SkipClearCacheConfirmation": false,
+    "SkipCompilationKey": 27,
+    "SkipConstraintWarning": false,
+    "ToggleKey": 130,
+    "ToggleKeyAlt": 46,
+    "UseResolutionFont": true
+  },
+  "Performance Overlay": {
+    "Position": [
+      13.0,
+      13.0
+    ],
+    "PositionSet": true
+  },
+  "Physical Sky": {
+    "aerosolLoading": 0.699999988079071,
+    "cloudLayer": {
+      "cirrus": {
+        "densityScale": 1.5959999561309814
+      },
+      "lighting": {
+        "brightness": 2.5829999446868896,
+        "sunExtinction": 0.5590000152587891,
+        "viewExtinction": 1.0329999923706055
+      },
+      "low": {
+        "bottomSpreadScale": 0.7940000295639038,
+        "curvatureRadius": 384.92999267578125,
+        "densityScale": 0.05900000035762787,
+        "ndfAltitudeOffset": 236.0,
+        "ndfAltitudeScale": 1911.0,
+        "ndfScale": [
+          24.65999984741211,
+          16.700000762939453
+        ]
+      },
+      "wind": {
+        "highVelocity": [
+          16.799999237060547,
+          0.0
+        ],
+        "lowVelocity": [
+          14.100000381469727,
+          0.0
+        ]
+      }
+    },
+    "cloudMap": {
+      "localCloud": {
+        "states": [
+          {
+            "value": {
+              "altitude": 256.0,
+              "asset": "",
+              "center": [
+                128.4127655029297,
+                -150.2786407470703
+              ],
+              "enabled": true,
+              "feather": 200.0,
+              "heightSpan": 1792.0,
+              "heightWeight": 1.0,
+              "modelingAlpha": true,
+              "modelingBlend": 0,
+              "modelingWeight": 1.0,
+              "rotation": 0.0,
+              "size": [
+                16384.0,
+                16384.0
+              ],
+              "strength": 1.0,
+              "worldspace": "Tamriel"
+            },
+            "weight": 1.0
+          }
+        ]
+      }
+    },
+    "cloudRelightMix": 0.699999988079071,
+    "enableVolumetricClouds": true,
+    "rayMarchRange": 41.0,
+    "sunlightColor": [
+      7.0,
+      6.789999961853027,
+      6.650000095367432
+    ]
+  },
+  "Post Processing": {
+    "COD Bloom": {
+      "settings": {
+        "Threshold": 2.140000104904175
+      }
+    },
+    "Depth of Field": {
+      "settings": {
+        "NearPlaneMaxBlur": 0.019999999552965164
+      }
+    },
+    "Fire": {
+      "enabled": true,
+      "settings": {
+        "FireCurve": 0.800000011920929,
+        "FireIntensity": 5.0,
+        "LightSpriteIntensity": 1.100000023841858
+      }
+    },
+    "Histogram Auto Exposure": {
+      "settings": {
+        "ExposureCompensation": -2.809999942779541,
+        "NightExposureCompensation": -0.4000000059604645
+      }
+    },
+    "Local Exposure": {
+      "settings": {
+        "Exposure": 0.6299999952316284,
+        "Strength": 0.4000000059604645
+      }
+    },
+    "Look Grade": {
+      "settings": {
+        "Contrast": 1.0499999523162842,
+        "Exposure": 0.20000000298023224,
+        "HighlightHue": 39.0,
+        "Highlights": 0.9700000286102295,
+        "Midtones": 0.8999999761581421,
+        "ShadowsLift": -0.035999998450279236,
+        "ShoulderStart": 0.699999988079071,
+        "ShoulderStrength": 0.5
+      }
+    },
+    "Motion Blur": {
+      "enabled": true
+    }
+  },
+  "Presets": {
+    "activePackId": "e11:fnenb Cabbage",
+    "baselinePackIds": [
+      "foxnne-look"
+    ],
+    "pipeline": "PostProcessing",
+    "pipelineRevision": 2
+  },
+  "Procedural Night Sky": {
+    "starIntensity": 2.240000009536743
+  },
+  "Replace Original Shaders": {
+    "BloodSplatter": true,
+    "DistantTree": true,
+    "Effect": true,
+    "Grass": true,
+    "ImageSpace": true,
+    "Lighting": true,
+    "Particle": true,
+    "Sky": true,
+    "Utility": true,
+    "Water": true
+  },
+  "Reverse Z-Buffer": {
+    "NearPlane": 6.0,
+    "ViewportBiasShift": 3
+  },
+  "Screenshot": {
+    "CropPresets": [
+      {
+        "name": "Full Frame",
+        "uv": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "Sky Sync": {
+    "MinShadowElevation": 7.199999809265137
+  },
+  "Upscaling": {
+    "frameGenerationAllowInMenus": true,
+    "frameGenerationForceEnable": 1,
+    "presetDLSS": 4
+  },
+  "Version": "1-9-0-0",
+  "Volumetric Lighting": {
+    "ExteriorQuality": 1,
+    "InteriorQuality": 1
+  },
+  "Neural Rendering": {
+    "alternateFrames": false,
+    "automaticMask": true,
+    "bandRadius": 8.0,
+    "broadLuminosity": 1.0,
+    "colorStrength": 1.0,
+    "debugCategoryView": false,
+    "depthAwareResolve": false,
+    "detailLuminosity": 1.0,
+    "enabled": true,
+    "equipmentStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 1.0,
+      "detailLuminosity": 1.0,
+      "hueGuard": false,
+      "transferStrength": 1.0
+    },
+    "everythingElseStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 1.0,
+      "detailLuminosity": 1.0,
+      "hueGuard": false,
+      "transferStrength": 1.0
+    },
+    "eyesStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 1.0,
+      "detailLuminosity": 1.0,
+      "hueGuard": false,
+      "transferStrength": 1.0
+    },
+    "foliageStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 1.0,
+      "detailLuminosity": 1.0,
+      "hueGuard": false,
+      "transferStrength": 1.0
+    },
+    "hairStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 1.0,
+      "detailLuminosity": 1.0,
+      "hueGuard": true,
+      "transferStrength": 1.0
+    },
+    "intensity": 1.0,
+    "landscapeStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 1.0,
+      "detailLuminosity": 1.0,
+      "hueGuard": false,
+      "transferStrength": 1.0
+    },
+    "localStructureStrength": 1.0,
+    "localToneStrength": 1.0,
+    "maxRatio": 2.0,
+    "placement": 3,
+    "preset": 0,
+    "proxyCurve": 0,
+    "ratioGuardEnabled": false,
+    "rawModelOutput": false,
+    "resolutionMode": 0,
+    "resolutionScale": 1.0,
+    "resolutionScaleX": 1.0,
+    "resolutionScaleY": 1.0,
+    "showAdvanced": false,
+    "skinStrengths": {
+      "broadLuminosity": 1.0,
+      "colorStrength": 0.6000000238418579,
+      "detailLuminosity": 1.0,
+      "hueGuard": false,
+      "transferStrength": 1.0
+    },
+    "skinStructureStrength": -1.0,
+    "style": 0,
+    "transferStrength": 1.0,
+    "userPreset": ""
+  }
+}

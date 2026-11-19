@@ -1,0 +1,99 @@
+[12:34:57.732] [info] FasterTextures 1.0.2.0
+[12:34:57.733] [info] [stream] measuring texture loads on 1.6.1170.0
+[12:34:58.080] [info] [stream] indexed 88 archives, 0 repacked, 110898 compressed entries, in 347 ms
+[12:34:58.215] [info] [stream] small mips cache in C:\modlists\NGVO 8.0 Beta\Stock Game\FasterTextures Cache: 8421 textures, 2466 MiB
+[12:34:58.533] [info] [stream] read the paths of 232 archives (0 without), 360367 entries, 68772 excluded, 10580 more armor and clothing, in 318 ms
+[12:35:01.205] [info] [menu] Faster Textures page added to SKSE Menu Framework's menu
+[12:36:51.803] [info] [stream] Present hooked in a table of CommunityShaders.dll (page protection 0x2), continuing into FabulousPoser.dll
+[12:36:51.803] [info] [stream] Skyrim Performance Solution's texture streaming is on: textures it can manage are handed to it after loading small
+[12:36:51.803] [info] [stream] RaceMenu copies armor textures as they load, so armor and clothing load whole
+[12:36:51.803] [info] [stream] loading textures small first: up to 2 top mips, sides of at least 512, 256 KiB saved at least, 2 workers
+[12:36:52.813] [info] [stream] small mips cache filled: 0 added, 0 failed, in 0 s; it holds 8421 textures, 2466 MiB
+[12:37:17.484] [info] [session] 0.00 s | 104 textures: busy 0.64 s (0 %), sum 0.64 s = read and unpack 0.31 s + create 0.33 s, read 435 MiB
+[12:37:17.484] [info] [session]   loaded small: 4 from the end of the file, 0 from the cache; left out 20 MiB | kept whole: excluded 81, unnamed 0, nothing to gain 14, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:37:17.484] [info] [session]   loose 87 (437 MiB, 0.27 s) | stored 0 (0 MiB, 0.00 s) | compressed 17 (18 MiB, 0.04 s) | could leave out 112 MiB, 112 MiB of it without unpacking; excluded paths hold 148 MiB more, unnamed 0 MiB
+[12:37:17.484] [info] [session]   whole: under 1 MiB 46 (8 MiB, 0.05 s read, 0.09 s create) | 1-4 MiB 20 (43 MiB, 0.03 s read, 0.05 s create) | 4-16 MiB 29 (155 MiB, 0.09 s read, 0.10 s create) | over 16 MiB 5 (228 MiB, 0.12 s read, 0.08 s create)
+[12:37:17.484] [info] [session]   small first: 4-16 MiB 4 (21 MiB, 0.02 s read, 0.00 s create)
+[12:37:17.484] [info] [session]   handed to Skyrim Performance Solution: 4
+[12:37:17.484] [info] [session]   on the render thread: 2 textures, 0.02 s, worst 9.1 ms
+[12:37:33.104] [info] [play] 155.37 s | 107 textures: busy 0.65 s (0 %), sum 0.65 s = read and unpack 0.32 s + create 0.33 s, read 436 MiB
+[12:37:33.104] [info] [play]   loaded small: 7 from the end of the file, 0 from the cache; left out 29 MiB | kept whole: excluded 81, unnamed 0, nothing to gain 14, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:37:33.104] [info] [play]   loose 90 (448 MiB, 0.29 s) | stored 0 (0 MiB, 0.00 s) | compressed 17 (18 MiB, 0.04 s) | could leave out 112 MiB, 112 MiB of it without unpacking; excluded paths hold 148 MiB more, unnamed 0 MiB
+[12:37:33.104] [info] [play]   whole: under 1 MiB 46 (8 MiB, 0.05 s read, 0.09 s create) | 1-4 MiB 20 (43 MiB, 0.03 s read, 0.05 s create) | 4-16 MiB 29 (155 MiB, 0.09 s read, 0.10 s create) | over 16 MiB 5 (228 MiB, 0.12 s read, 0.08 s create)
+[12:37:33.104] [info] [play]   small first: under 1 MiB 2 (1 MiB, 0.01 s read, 0.00 s create) | 4-16 MiB 5 (30 MiB, 0.02 s read, 0.00 s create)
+[12:37:33.104] [info] [play]   handed to Skyrim Performance Solution: 7
+[12:37:33.104] [info] [play]   on the render thread: 5 textures, 0.03 s, worst 9.1 ms
+[12:37:33.104] [info] [stream] of 7 textures handed to Skyrim Performance Solution and still loaded: 7 as loaded, 0 replaced by it (0 at full size), 0 changed by something else
+[12:37:40.352] [info] [session] 0.00 s | 1016 textures: busy 3.39 s (0 %), sum 3.39 s = read and unpack 2.38 s + create 1.02 s, read 1855 MiB
+[12:37:40.352] [info] [session]   loaded small: 377 from the end of the file, 68 from the cache; left out 1133 MiB | kept whole: excluded 418, unnamed 0, nothing to gain 148, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:37:40.352] [info] [session]   loose 727 (2751 MiB, 2.24 s) | stored 9 (18 MiB, 0.00 s) | compressed 280 (220 MiB, 0.14 s) | could leave out 112 MiB, 112 MiB of it without unpacking; excluded paths hold 148 MiB more, unnamed 0 MiB
+[12:37:40.352] [info] [session]   whole: under 1 MiB 347 (58 MiB, 0.29 s read, 0.29 s create) | 1-4 MiB 87 (158 MiB, 0.13 s read, 0.16 s create) | 4-16 MiB 119 (632 MiB, 0.36 s read, 0.28 s create) | over 16 MiB 18 (890 MiB, 0.46 s read, 0.21 s create)
+[12:37:40.352] [info] [session]   small first: under 1 MiB 81 (51 MiB, 0.20 s read, 0.01 s create) | 1-4 MiB 218 (412 MiB, 0.57 s read, 0.03 s create) | 4-16 MiB 146 (788 MiB, 0.38 s read, 0.03 s create)
+[12:37:40.352] [info] [session]   handed to Skyrim Performance Solution: 427
+[12:37:40.352] [info] [session]   on the render thread: 5 textures, 0.03 s, worst 9.1 ms
+[12:37:42.166] [info] [load] 9.06 s | 930 textures: busy 2.76 s (30 %), sum 2.76 s = read and unpack 2.07 s + create 0.69 s, read 1425 MiB
+[12:37:42.166] [info] [load]   loaded small: 386 from the end of the file, 68 from the cache; left out 1140 MiB | kept whole: excluded 339, unnamed 0, nothing to gain 137, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:37:42.166] [info] [load]   loose 656 (2346 MiB, 1.96 s) | stored 9 (18 MiB, 0.00 s) | compressed 265 (203 MiB, 0.10 s) | could leave out 0 MiB, 0 MiB of it without unpacking; excluded paths hold 0 MiB more, unnamed 0 MiB
+[12:37:42.166] [info] [load]   whole: under 1 MiB 305 (51 MiB, 0.25 s read, 0.20 s create) | 1-4 MiB 68 (116 MiB, 0.10 s read, 0.11 s create) | 4-16 MiB 90 (477 MiB, 0.27 s read, 0.18 s create) | over 16 MiB 13 (661 MiB, 0.34 s read, 0.13 s create)
+[12:37:42.166] [info] [load]   small first: under 1 MiB 84 (52 MiB, 0.19 s read, 0.01 s create) | 1-4 MiB 223 (419 MiB, 0.57 s read, 0.04 s create) | 4-16 MiB 147 (789 MiB, 0.36 s read, 0.03 s create)
+[12:37:42.166] [info] [load]   handed to Skyrim Performance Solution: 436
+[12:37:42.166] [info] [load]   on 4 threads, 18 full textures still to come
+[12:37:42.563] [info] [stream] Skyrim Performance Solution is managing the textures handed to it
+[12:37:46.446] [info] [hitch] 4211.3 ms, 4.28 s after the loading screen: this plugin 0.0 ms, Present 0.7 ms; 9 full textures created (19 MiB), longest 4.6 ms, worker idle; 2 swapped and 2 released the frame before
+[12:37:46.458] [info] [stream] all full textures in place 4.29 s after the loading screen (worker read 29 MiB in 0.04 s, create 0.03 s)
+[12:37:46.899] [info] [hitch] 452.1 ms, 4.73 s after the loading screen: this plugin 0.0 ms, Present 3.9 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 9 swapped and 2 released the frame before
+[12:37:47.055] [info] [hitch] 156.3 ms, 4.89 s after the loading screen: this plugin 0.0 ms, Present 2.0 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:37:47.180] [info] [hitch] 125.0 ms, 5.01 s after the loading screen: this plugin 0.0 ms, Present 0.8 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:37:47.309] [info] [hitch] 129.5 ms, 5.14 s after the loading screen: this plugin 0.0 ms, Present 0.7 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 1 released the frame before
+[12:37:47.416] [info] [hitch] 106.4 ms, 5.25 s after the loading screen: this plugin 0.0 ms, Present 0.9 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 0 released the frame before
+[12:37:47.510] [info] [hitch] 37.7 ms, 5.34 s after the loading screen: this plugin 0.0 ms, Present 9.4 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 0 released the frame before
+[12:37:47.679] [info] [hitch] 40.8 ms, 5.51 s after the loading screen: this plugin 0.0 ms, Present 14.7 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 0 released the frame before
+[12:37:51.895] [info] [play] 9.73 s | 40 textures: busy 0.10 s (1 %), sum 0.10 s = read and unpack 0.06 s + create 0.04 s, read 84 MiB
+[12:37:51.895] [info] [play]   loaded small: 12 from the end of the file, 0 from the cache; left out 20 MiB | kept whole: excluded 22, unnamed 0, nothing to gain 6, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:37:51.895] [info] [play]   loose 38 (83 MiB, 0.05 s) | stored 0 (0 MiB, 0.00 s) | compressed 2 (21 MiB, 0.01 s) | could leave out 0 MiB, 0 MiB of it without unpacking; excluded paths hold 0 MiB more, unnamed 0 MiB
+[12:37:51.895] [info] [play]   whole: under 1 MiB 12 (1 MiB, 0.01 s read, 0.00 s create) | 1-4 MiB 7 (16 MiB, 0.01 s read, 0.01 s create) | 4-16 MiB 8 (43 MiB, 0.03 s read, 0.02 s create) | over 16 MiB 1 (21 MiB, 0.01 s read, 0.00 s create)
+[12:37:51.895] [info] [play]   small first: under 1 MiB 3 (2 MiB, 0.00 s read, 0.00 s create) | 1-4 MiB 7 (11 MiB, 0.00 s read, 0.00 s create) | 4-16 MiB 2 (11 MiB, 0.00 s read, 0.00 s create)
+[12:37:51.895] [info] [play]   handed to Skyrim Performance Solution: 12
+[12:37:51.895] [info] [stream] of 455 textures handed to Skyrim Performance Solution and still loaded: 101 as loaded, 354 replaced by it (215 at full size), 0 changed by something else
+[12:37:51.895] [info] [frames] first 5 s: 6 frames, average 812.6 ms, worst 4211.3 ms, over 33 ms 3, over 50 ms 3, over 100 ms 3 | after: 117 frames, average 40.3 ms, worst 1018.9 ms, over 33 ms 27, over 50 ms 10, over 100 ms 5 | full textures swapped in: 18 in 0.1 ms, worst frame's 0.0 ms | released: 18 in 0.0 ms, worst frame's 0.0 ms | created: 18 (29 MiB), longest 4.6 ms | uploads held for 25 late frames
+[12:38:20.593] [info] [load] 28.70 s | 2073 textures: busy 4.76 s (17 %), sum 4.76 s = read and unpack 3.79 s + create 0.97 s, read 1579 MiB
+[12:38:20.593] [info] [load]   loaded small: 1003 from the end of the file, 437 from the cache; left out 4605 MiB | kept whole: excluded 379, unnamed 0, nothing to gain 254, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:38:20.593] [info] [load]   loose 1268 (4390 MiB, 3.41 s) | stored 38 (71 MiB, 0.02 s) | compressed 767 (1723 MiB, 0.36 s) | could leave out 0 MiB, 0 MiB of it without unpacking; excluded paths hold 0 MiB more, unnamed 0 MiB
+[12:38:20.593] [info] [load]   whole: under 1 MiB 475 (93 MiB, 0.35 s read, 0.21 s create) | 1-4 MiB 60 (109 MiB, 0.07 s read, 0.12 s create) | 4-16 MiB 71 (375 MiB, 0.17 s read, 0.26 s create) | over 16 MiB 27 (576 MiB, 0.30 s read, 0.15 s create)
+[12:38:20.593] [info] [load]   small first: under 1 MiB 246 (158 MiB, 0.50 s read, 0.04 s create) | 1-4 MiB 584 (1099 MiB, 0.91 s read, 0.08 s create) | 4-16 MiB 583 (3134 MiB, 1.46 s read, 0.10 s create) | over 16 MiB 27 (640 MiB, 0.04 s read, 0.01 s create)
+[12:38:20.593] [info] [load]   handed to Skyrim Performance Solution: 1337
+[12:38:20.593] [info] [load]   on 5 threads, 103 full textures still to come
+[12:38:22.050] [info] [hitch] 121.4 ms, 1.46 s after the loading screen: this plugin 0.0 ms, Present 37.8 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 0 released the frame before
+[12:38:22.119] [info] [hitch] 68.2 ms, 1.53 s after the loading screen: this plugin 0.1 ms, Present 2.8 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 4 released the frame before
+[12:38:22.277] [info] [hitch] 158.2 ms, 1.68 s after the loading screen: this plugin 0.1 ms, Present 0.7 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 4 released the frame before
+[12:38:22.286] [info] [stream] all full textures in place 1.69 s after the loading screen (worker read 184 MiB in 0.24 s, create 0.04 s)
+[12:38:22.325] [info] [hitch] 47.7 ms, 1.73 s after the loading screen: this plugin 0.1 ms, Present 0.7 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 9 swapped and 4 released the frame before
+[12:38:22.377] [info] [hitch] 52.2 ms, 1.78 s after the loading screen: this plugin 0.1 ms, Present 0.8 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:38:22.415] [info] [hitch] 38.4 ms, 1.82 s after the loading screen: this plugin 0.0 ms, Present 0.7 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:38:22.460] [info] [hitch] 44.9 ms, 1.87 s after the loading screen: this plugin 0.0 ms, Present 0.8 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:38:22.494] [info] [hitch] 33.4 ms, 1.90 s after the loading screen: this plugin 0.0 ms, Present 1.1 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:38:53.016] [info] [play] 32.42 s | 149 textures: busy 0.86 s (3 %), sum 0.86 s = read and unpack 0.31 s + create 0.55 s, read 169 MiB
+[12:38:53.016] [info] [play]   loaded small: 70 from the end of the file, 5 from the cache; left out 238 MiB | kept whole: excluded 64, unnamed 0, nothing to gain 10, whole frame 0, not located 0, failed 0, other mods' files 0
+[12:38:53.016] [info] [play]   loose 106 (362 MiB, 0.28 s) | stored 13 (25 MiB, 0.01 s) | compressed 30 (21 MiB, 0.02 s) | could leave out 0 MiB, 0 MiB of it without unpacking; excluded paths hold 0 MiB more, unnamed 0 MiB
+[12:38:53.016] [info] [play]   whole: under 1 MiB 41 (9 MiB, 0.02 s read, 0.12 s create) | 1-4 MiB 18 (31 MiB, 0.02 s read, 0.16 s create) | 4-16 MiB 13 (69 MiB, 0.02 s read, 0.14 s create) | over 16 MiB 2 (37 MiB, 0.03 s read, 0.02 s create)
+[12:38:53.016] [info] [play]   small first: under 1 MiB 14 (9 MiB, 0.04 s read, 0.01 s create) | 1-4 MiB 20 (32 MiB, 0.05 s read, 0.02 s create) | 4-16 MiB 41 (219 MiB, 0.12 s read, 0.08 s create)
+[12:38:53.016] [info] [play]   handed to Skyrim Performance Solution: 62
+[12:38:53.016] [info] [play]   on the render thread: 2 textures, 0.01 s, worst 6.7 ms
+[12:38:53.016] [info] [stream] of 1320 textures handed to Skyrim Performance Solution and still loaded: 86 as loaded, 1234 replaced by it (665 at full size), 0 changed by something else
+[12:38:53.016] [info] [frames] first 5 s: 70 frames, average 52.1 ms, worst 430.3 ms, over 33 ms 48, over 50 ms 17, over 100 ms 5 | after: 691 frames, average 39.5 ms, worst 188.6 ms, over 33 ms 682, over 50 ms 10, over 100 ms 1 | full textures swapped in: 116 in 0.2 ms, worst frame's 0.0 ms | released: 116 in 0.2 ms, worst frame's 0.0 ms | created: 116 (219 MiB), longest 5.3 ms | uploads held for 21 late frames
+[12:39:11.410] [info] [load] 18.39 s | 1680 textures: busy 4.00 s (22 %), sum 4.03 s = read and unpack 2.78 s + create 1.25 s, read 1258 MiB
+[12:39:11.410] [info] [load]   loaded small: 812 from the end of the file, 284 from the cache; left out 2822 MiB | kept whole: excluded 389, unnamed 0, nothing to gain 194, whole frame 0, not located 0, failed 1, other mods' files 0
+[12:39:11.410] [info] [load]   loose 1121 (3312 MiB, 2.51 s) | stored 18 (15 MiB, 0.00 s) | compressed 541 (753 MiB, 0.26 s) | could leave out 0 MiB, 0 MiB of it without unpacking; excluded paths hold 0 MiB more, unnamed 0 MiB
+[12:39:11.410] [info] [load]   whole: under 1 MiB 388 (75 MiB, 0.20 s read, 0.43 s create) | 1-4 MiB 89 (143 MiB, 0.08 s read, 0.20 s create) | 4-16 MiB 99 (524 MiB, 0.20 s read, 0.36 s create) | over 16 MiB 8 (229 MiB, 0.13 s read, 0.08 s create)
+[12:39:11.410] [info] [load]   small first: under 1 MiB 227 (141 MiB, 0.51 s read, 0.04 s create) | 1-4 MiB 531 (1011 MiB, 0.86 s read, 0.09 s create) | 4-16 MiB 333 (1787 MiB, 0.78 s read, 0.05 s create) | over 16 MiB 5 (171 MiB, 0.02 s read, 0.00 s create)
+[12:39:11.410] [info] [load]   handed to Skyrim Performance Solution: 917
+[12:39:11.410] [info] [load]   on 3 threads, 179 full textures still to come
+[12:39:12.232] [info] [hitch] 120.6 ms, 0.82 s after the loading screen: this plugin 0.1 ms, Present 39.4 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 0 released the frame before
+[12:39:12.270] [info] [hitch] 38.3 ms, 0.86 s after the loading screen: this plugin 0.1 ms, Present 1.3 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 4 released the frame before
+[12:39:12.379] [info] [hitch] 76.3 ms, 0.97 s after the loading screen: this plugin 0.1 ms, Present 1.0 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 4 released the frame before
+[12:39:12.428] [info] [stream] all full textures in place 1.02 s after the loading screen (worker read 384 MiB in 0.42 s, create 0.06 s)
+[12:39:12.473] [info] [hitch] 65.3 ms, 1.06 s after the loading screen: this plugin 0.1 ms, Present 3.5 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 32 swapped and 4 released the frame before
+[12:39:12.566] [info] [hitch] 41.9 ms, 1.16 s after the loading screen: this plugin 0.0 ms, Present 10.1 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:39:12.630] [info] [hitch] 37.5 ms, 1.22 s after the loading screen: this plugin 0.0 ms, Present 12.5 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:39:12.669] [info] [hitch] 39.9 ms, 1.26 s after the loading screen: this plugin 0.0 ms, Present 9.8 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before
+[12:39:12.704] [info] [hitch] 34.3 ms, 1.29 s after the loading screen: this plugin 0.1 ms, Present 11.2 ms; 0 full textures created (0 MiB), longest 0.0 ms, worker idle; 0 swapped and 4 released the frame before

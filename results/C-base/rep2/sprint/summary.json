@@ -1,0 +1,40 @@
+{
+ "label": "C-base",
+ "rep": 2,
+ "scenario": "sprint",
+ "config": "58a0af9478",
+ "time": "2026-11-17 14:00:53",
+ "render": {
+  "frames": 3932,
+  "mean": 25.49,
+  "fps": 39.2,
+  "p50": 23.6,
+  "p95": 31.8,
+  "p99": 44.01,
+  "max": 858.8,
+  "over50": 31,
+  "over100": 17,
+  "over250": 7,
+  "stall_ms": 5131
+ },
+ "main_cpu_ms": 23.06,
+ "fg_share": 1.0,
+ "distance": 17850,
+ "cells": 7,
+ "vram": {
+  "proc_max": 12765,
+  "proc_min": 10502,
+  "new_top": [
+   1273,
+   989,
+   987,
+   821
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 2,
+ "offroute": 15178
+}

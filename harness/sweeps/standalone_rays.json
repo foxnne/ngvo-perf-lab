@@ -1,0 +1,84 @@
+[
+ {
+  "name": "00_rays_off",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  }
+ },
+ {
+  "name": "01_sun_0.05",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 0.05
+   }
+  }
+ },
+ {
+  "name": "02_sun_0.1",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 0.1
+   }
+  }
+ },
+ {
+  "name": "03_sun_0.3",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 0.3
+   }
+  }
+ },
+ {
+  "name": "04_sun_1.0",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 1.0
+   }
+  }
+ },
+ {
+  "name": "05_sun_0.3_type1",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 0.3,
+    "StandaloneType": 1
+   }
+  }
+ },
+ {
+  "name": "06_sun_0.3_type4",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 0.3,
+    "StandaloneType": 4
+   }
+  }
+ },
+ {
+  "name": "07_sun_0.3_quality2",
+  "set": {},
+  "features": {
+   "Effects11": {
+    "StandaloneRays": true,
+    "StandaloneSunMultiplier": 0.3,
+    "StandaloneQuality": 2
+   }
+  }
+ }
+]

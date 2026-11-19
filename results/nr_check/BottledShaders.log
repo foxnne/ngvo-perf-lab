@@ -1,0 +1,1015 @@
+[2026-11-18 06:14:16.391] [info] [97276] [XSEPlugin.cpp:53] Loaded CommunityShaders 1-9-0-0
+[2026-11-18 06:14:16.391] [info] [97276] [XSEPlugin.cpp:55] Bottled Shaders 1.9.0 | branch: foxnne/nr-pr6* | describe: backup-prelookreset-20261116-243-gb68ded610-dirty | hash: b68ded610 (dirty)
+[2026-11-18 06:14:16.462] [info] [97276] [I18n.cpp:298] [I18n] Loaded 6122 keys from 'C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Translations\en.json'
+[2026-11-18 06:14:16.463] [info] [97276] [I18n.cpp:48] [I18n] Initialized. Locale: en  |  10 available locale(s)  |  6122 fallback keys
+[2026-11-18 06:14:16.464] [info] [97276] [State.cpp:602] Applied user settings from: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\SettingsUser.json
+[2026-11-18 06:14:16.465] [info] [97276] [BaselineManager.cpp:110] Discovering Baseline files in: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Presets\foxnne-look\Baseline
+[2026-11-18 06:14:16.471] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ExponentialHeightFog
+[2026-11-18 06:14:16.475] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ExtendedMaterials
+[2026-11-18 06:14:16.479] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for FootstepParticles
+[2026-11-18 06:14:16.483] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for GrassLighting
+[2026-11-18 06:14:16.487] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for GrassOptimizations
+[2026-11-18 06:14:16.491] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for HairBacklighting
+[2026-11-18 06:14:16.495] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for HeatHaze
+[2026-11-18 06:14:16.499] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ImageBasedLighting
+[2026-11-18 06:14:16.503] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for LightLimitFix
+[2026-11-18 06:14:16.506] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for LinearLighting
+[2026-11-18 06:14:16.510] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for PostProcessing
+[2026-11-18 06:14:16.514] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ProceduralLightning
+[2026-11-18 06:14:16.517] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ProceduralNightSky
+[2026-11-18 06:14:16.521] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ScreenSpaceGI
+[2026-11-18 06:14:16.524] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for ScreenSpaceShadows
+[2026-11-18 06:14:16.528] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for Skin
+[2026-11-18 06:14:16.531] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for SkySync
+[2026-11-18 06:14:16.535] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for Skylighting
+[2026-11-18 06:14:16.538] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for SnowCover
+[2026-11-18 06:14:16.542] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for SubsurfaceScattering
+[2026-11-18 06:14:16.545] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for VanillaFresnel
+[2026-11-18 06:14:16.549] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for VolumetricLighting
+[2026-11-18 06:14:16.552] [info] [97276] [BaselineManager.cpp:172] Loaded Baseline file: foxnne-look for WetnessEffects
+[2026-11-18 06:14:16.552] [info] [97276] [BaselineManager.cpp:188] Loaded 23 Baseline files from C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Presets\foxnne-look\Baseline (23 processed)
+[2026-11-18 06:14:16.552] [info] [97276] [BaselineManager.cpp:85] Discovered 23 Baseline files
+[2026-11-18 06:14:16.552] [info] [97276] [State.cpp:641] Loading core settings
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:741] Checking base themes directory: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Themes
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:744] Base themes directory exists, added to search paths
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:753] Data path: C:\modlists\NGVO 8.0 Beta\Stock Game\Data
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:754] Parent path: C:\modlists\NGVO 8.0 Beta\Stock Game
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:758] Checking MO2 Overwrite path: C:\modlists\NGVO 8.0 Beta\Stock Game\overwrite\SKSE\Plugins\CommunityShaders\Themes
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:763] MO2 Overwrite themes directory does not exist
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:772] Discovering themes in 1 directories
+[2026-11-18 06:14:16.553] [info] [97276] [ThemeManager.cpp:776] Searching for themes in: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Themes
+[2026-11-18 06:14:16.554] [info] [97276] [ThemeManager.cpp:792] Discovered theme: Default (Default Dark)
+[2026-11-18 06:14:16.559] [info] [97276] [ThemeManager.cpp:792] Discovered theme: DragonBlood (Dragon Blood)
+[2026-11-18 06:14:16.563] [info] [97276] [ThemeManager.cpp:792] Discovered theme: DwemerBronze (Dwemer Bronze)
+[2026-11-18 06:14:16.568] [info] [97276] [ThemeManager.cpp:792] Discovered theme: HighContrast (High Contrast)
+[2026-11-18 06:14:16.572] [info] [97276] [ThemeManager.cpp:792] Discovered theme: Light (Default Light)
+[2026-11-18 06:14:16.576] [info] [97276] [ThemeManager.cpp:792] Discovered theme: NordicFrost (Nordic Frost)
+[2026-11-18 06:14:16.576] [info] [97276] [ThemeManager.cpp:806] Theme discovery complete. Found 6 themes
+[2026-11-18 06:14:16.576] [info] [97276] [ThemeManager.cpp:850] Loaded theme: Default (Default Dark)
+[2026-11-18 06:14:16.576] [info] [97276] [Menu.cpp:677] Applied theme preset: Default
+[2026-11-18 06:14:16.576] [info] [97276] [Menu.cpp:537] Loaded saved theme preset: Default
+[2026-11-18 06:14:16.576] [info] [97276] [State.cpp:650] Loading 'Disable at Boot' settings
+[2026-11-18 06:14:16.576] [info] [97276] [State.cpp:680] Loading Feature: 'TruePBR'
+[2026-11-18 06:14:16.579] [info] [97276] [Feature.cpp:123] TruePBR.ini 1-6-0 successfully loaded
+[2026-11-18 06:14:16.579] [info] [97276] [Feature.cpp:185] Loading True PBR settings
+[2026-11-18 06:14:16.579] [info] [97276] [State.cpp:680] Loading Feature: 'VolumetricShadows'
+[2026-11-18 06:14:16.582] [info] [97276] [Feature.cpp:123] VolumetricShadows.ini 2-1-2 successfully loaded
+[2026-11-18 06:14:16.582] [info] [97276] [Feature.cpp:203] Loading default settings for Volumetric Shadows
+[2026-11-18 06:14:16.582] [info] [97276] [State.cpp:680] Loading Feature: 'GrassLighting'
+[2026-11-18 06:14:16.586] [info] [97276] [Feature.cpp:123] GrassLighting.ini 2-5-0 successfully loaded
+[2026-11-18 06:14:16.586] [info] [97276] [Feature.cpp:185] Loading Grass Lighting settings
+[2026-11-18 06:14:16.586] [info] [97276] [State.cpp:680] Loading Feature: 'GrassCollision'
+[2026-11-18 06:14:16.589] [info] [97276] [Feature.cpp:123] GrassCollision.ini 3-2-2 successfully loaded
+[2026-11-18 06:14:16.589] [info] [97276] [Feature.cpp:185] Loading Grass Collision settings
+[2026-11-18 06:14:16.589] [info] [97276] [State.cpp:680] Loading Feature: 'GrassOptimizations'
+[2026-11-18 06:14:16.592] [info] [97276] [Feature.cpp:123] GrassOptimizations.ini 1-3-0 successfully loaded
+[2026-11-18 06:14:16.592] [info] [97276] [Feature.cpp:185] Loading Grass Optimizations settings
+[2026-11-18 06:14:16.592] [info] [97276] [State.cpp:680] Loading Feature: 'ScreenSpaceShadows'
+[2026-11-18 06:14:16.595] [info] [97276] [Feature.cpp:123] ScreenSpaceShadows.ini 2-7-0 successfully loaded
+[2026-11-18 06:14:16.595] [info] [97276] [Feature.cpp:185] Loading Screen Space Shadows settings
+[2026-11-18 06:14:16.595] [info] [97276] [State.cpp:680] Loading Feature: 'ExtendedMaterials'
+[2026-11-18 06:14:16.599] [info] [97276] [Feature.cpp:123] ExtendedMaterials.ini 1-6-0 successfully loaded
+[2026-11-18 06:14:16.599] [info] [97276] [Feature.cpp:185] Loading Extended Materials settings
+[2026-11-18 06:14:16.599] [info] [97276] [State.cpp:680] Loading Feature: 'WetnessEffects'
+[2026-11-18 06:14:16.603] [info] [97276] [Feature.cpp:123] WetnessEffects.ini 4-0-0 successfully loaded
+[2026-11-18 06:14:16.603] [info] [97276] [Feature.cpp:185] Loading Wetness Effects settings
+[2026-11-18 06:14:16.603] [info] [97276] [State.cpp:680] Loading Feature: 'LightLimitFix'
+[2026-11-18 06:14:16.607] [info] [97276] [Feature.cpp:123] LightLimitFix.ini 3-9-0 successfully loaded
+[2026-11-18 06:14:16.607] [info] [97276] [Feature.cpp:185] Loading Light Limit Fix settings
+[2026-11-18 06:14:16.607] [info] [97276] [State.cpp:680] Loading Feature: 'DynamicCubemaps'
+[2026-11-18 06:14:16.610] [info] [97276] [Feature.cpp:123] DynamicCubemaps.ini 2-6-2 successfully loaded
+[2026-11-18 06:14:16.610] [info] [97276] [Feature.cpp:185] Loading Dynamic Cubemaps settings
+[2026-11-18 06:14:16.610] [info] [97276] [State.cpp:680] Loading Feature: 'CloudShadows'
+[2026-11-18 06:14:16.613] [info] [97276] [Feature.cpp:123] CloudShadows.ini 1-7-0 successfully loaded
+[2026-11-18 06:14:16.613] [info] [97276] [Feature.cpp:185] Loading Cloud Shadows settings
+[2026-11-18 06:14:16.614] [info] [97276] [State.cpp:680] Loading Feature: 'WaterEffects'
+[2026-11-18 06:14:16.614] [info] [97276] [Feature.cpp:123] WaterEffects.ini 1-3-2 successfully loaded
+[2026-11-18 06:14:16.614] [info] [97276] [Feature.cpp:203] Loading default settings for Water Effects
+[2026-11-18 06:14:16.614] [info] [97276] [State.cpp:680] Loading Feature: 'PerformanceOverlay'
+[2026-11-18 06:14:16.617] [info] [97276] [Feature.cpp:123] PerformanceOverlay.ini 1-4-0 successfully loaded
+[2026-11-18 06:14:16.617] [info] [97276] [Feature.cpp:185] Loading Performance Overlay settings
+[2026-11-18 06:14:16.617] [info] [97276] [State.cpp:680] Loading Feature: 'SubsurfaceScattering'
+[2026-11-18 06:14:16.620] [info] [97276] [Feature.cpp:123] SubsurfaceScattering.ini 3-4-1 successfully loaded
+[2026-11-18 06:14:16.620] [info] [97276] [Feature.cpp:185] Loading Subsurface Scattering settings
+[2026-11-18 06:14:16.621] [info] [97276] [State.cpp:680] Loading Feature: 'TerrainShadows'
+[2026-11-18 06:14:16.623] [info] [97276] [Feature.cpp:123] TerrainShadows.ini 1-2-3 successfully loaded
+[2026-11-18 06:14:16.623] [info] [97276] [Feature.cpp:185] Loading Terrain Shadows settings
+[2026-11-18 06:14:16.623] [info] [97276] [State.cpp:680] Loading Feature: 'NRD'
+[2026-11-18 06:14:16.627] [info] [97276] [Feature.cpp:123] NRD.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.627] [info] [97276] [Feature.cpp:185] Loading NRD settings
+[2026-11-18 06:14:16.627] [info] [97276] [State.cpp:680] Loading Feature: 'ScreenSpaceGI'
+[2026-11-18 06:14:16.629] [info] [97276] [Feature.cpp:123] ScreenSpaceGI.ini 5-1-0 successfully loaded
+[2026-11-18 06:14:16.629] [info] [97276] [Feature.cpp:185] Loading Screen Space GI settings
+[2026-11-18 06:14:16.630] [info] [97276] [State.cpp:680] Loading Feature: 'ScreenSpaceReflections'
+[2026-11-18 06:14:16.633] [info] [97276] [Feature.cpp:123] ScreenSpaceReflections.ini 1-1-0 successfully loaded
+[2026-11-18 06:14:16.633] [info] [97276] [Feature.cpp:185] Loading Screen Space Reflections settings
+[2026-11-18 06:14:16.633] [info] [97276] [State.cpp:680] Loading Feature: 'Skylighting'
+[2026-11-18 06:14:16.636] [info] [97276] [Feature.cpp:123] Skylighting.ini 1-7-2 successfully loaded
+[2026-11-18 06:14:16.636] [info] [97276] [Feature.cpp:185] Loading Skylighting settings
+[2026-11-18 06:14:16.636] [info] [97276] [State.cpp:680] Loading Feature: 'SkySync'
+[2026-11-18 06:14:16.639] [info] [97276] [Feature.cpp:123] SkySync.ini 1-4-1 successfully loaded
+[2026-11-18 06:14:16.639] [info] [97276] [Feature.cpp:185] Loading Sky Sync settings
+[2026-11-18 06:14:16.639] [info] [97276] [State.cpp:680] Loading Feature: 'TerrainBlending'
+[2026-11-18 06:14:16.643] [info] [97276] [Feature.cpp:123] TerrainBlending.ini 1-2-0 successfully loaded
+[2026-11-18 06:14:16.643] [info] [97276] [Feature.cpp:185] Loading Terrain Blending settings
+[2026-11-18 06:14:16.643] [info] [97276] [State.cpp:680] Loading Feature: 'TerrainHelper'
+[2026-11-18 06:14:16.646] [info] [97276] [Feature.cpp:123] TerrainHelper.ini 1-0-1 successfully loaded
+[2026-11-18 06:14:16.646] [info] [97276] [Feature.cpp:203] Loading default settings for Terrain Helper
+[2026-11-18 06:14:16.646] [info] [97276] [State.cpp:680] Loading Feature: 'VanillaFresnel'
+[2026-11-18 06:14:16.649] [info] [97276] [Feature.cpp:123] VanillaFresnel.ini 1-1-0 successfully loaded
+[2026-11-18 06:14:16.649] [info] [97276] [Feature.cpp:185] Loading Vanilla Fresnel settings
+[2026-11-18 06:14:16.649] [info] [97276] [State.cpp:680] Loading Feature: 'VolumetricLighting'
+[2026-11-18 06:14:16.652] [info] [97276] [Feature.cpp:123] VolumetricLighting.ini 1-3-0 successfully loaded
+[2026-11-18 06:14:16.652] [info] [97276] [Feature.cpp:185] Loading Volumetric Lighting settings
+[2026-11-18 06:14:16.652] [info] [97276] [State.cpp:680] Loading Feature: 'ViewAtmosphere'
+[2026-11-18 06:14:16.656] [info] [97276] [Feature.cpp:123] ViewAtmosphere.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.656] [info] [97276] [Feature.cpp:185] Loading Atmosphere and Fog settings
+[2026-11-18 06:14:16.656] [info] [97276] [State.cpp:680] Loading Feature: 'LODBlending'
+[2026-11-18 06:14:16.656] [info] [97276] [Feature.cpp:123] LODBlending.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.656] [info] [97276] [Feature.cpp:185] Loading LOD Blending settings
+[2026-11-18 06:14:16.656] [info] [97276] [State.cpp:680] Loading Feature: 'HairSpecular'
+[2026-11-18 06:14:16.659] [info] [97276] [Feature.cpp:123] HairSpecular.ini 1-1-3 successfully loaded
+[2026-11-18 06:14:16.659] [info] [97276] [Feature.cpp:185] Loading Hair Specular settings
+[2026-11-18 06:14:16.659] [info] [97276] [State.cpp:680] Loading Feature: 'InteriorSun'
+[2026-11-18 06:14:16.663] [info] [97276] [Feature.cpp:123] InteriorSun.ini 1-0-2 successfully loaded
+[2026-11-18 06:14:16.663] [info] [97276] [Feature.cpp:185] Loading Interior Sun settings
+[2026-11-18 06:14:16.663] [info] [97276] [State.cpp:680] Loading Feature: 'TerrainVariation'
+[2026-11-18 06:14:16.665] [info] [97276] [Feature.cpp:123] TerrainVariation.ini 1-3-0 successfully loaded
+[2026-11-18 06:14:16.665] [info] [97276] [Feature.cpp:185] Loading Terrain Variation settings
+[2026-11-18 06:14:16.666] [info] [97276] [State.cpp:680] Loading Feature: 'ImageBasedLighting'
+[2026-11-18 06:14:16.666] [info] [97276] [Feature.cpp:123] ImageBasedLighting.ini 1-6-0 successfully loaded
+[2026-11-18 06:14:16.666] [info] [97276] [Feature.cpp:185] Loading Image Based Lighting settings
+[2026-11-18 06:14:16.666] [info] [97276] [State.cpp:680] Loading Feature: 'ExtendedTranslucency'
+[2026-11-18 06:14:16.667] [info] [97276] [Feature.cpp:123] ExtendedTranslucency.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.667] [info] [97276] [Feature.cpp:185] Loading Extended Translucency settings
+[2026-11-18 06:14:16.667] [info] [97276] [State.cpp:680] Loading Feature: 'ReverseZ'
+[2026-11-18 06:14:16.670] [info] [97276] [Feature.cpp:123] ReverseZ.ini 1-1-0 successfully loaded
+[2026-11-18 06:14:16.670] [info] [97276] [Feature.cpp:185] Loading Reverse Z-Buffer settings
+[2026-11-18 06:14:16.670] [info] [97276] [State.cpp:680] Loading Feature: 'Upscaling'
+[2026-11-18 06:14:16.673] [info] [97276] [Feature.cpp:123] Upscaling.ini 1-5-0 successfully loaded
+[2026-11-18 06:14:16.673] [info] [97276] [Feature.cpp:185] Loading Upscaling settings
+[2026-11-18 06:14:16.673] [info] [97276] [State.cpp:680] Loading Feature: 'DeveloperTools'
+[2026-11-18 06:14:16.674] [info] [97276] [Feature.cpp:123] DeveloperTools.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.674] [info] [97276] [Feature.cpp:185] Loading Developer Tools settings
+[2026-11-18 06:14:16.674] [info] [97276] [State.cpp:680] Loading Feature: 'HiZOcclusion'
+[2026-11-18 06:14:16.677] [info] [97276] [Feature.cpp:123] HiZOcclusion.ini 0-3-0 successfully loaded
+[2026-11-18 06:14:16.677] [info] [97276] [Feature.cpp:185] Loading HiZ Occlusion Culling settings
+[2026-11-18 06:14:16.677] [info] [97276] [State.cpp:680] Loading Feature: 'CSEditor'
+[2026-11-18 06:14:16.680] [info] [97276] [Feature.cpp:123] CSEditor.ini 2-0-3 successfully loaded
+[2026-11-18 06:14:16.680] [info] [97276] [Feature.cpp:203] Loading default settings for CS Editor
+[2026-11-18 06:14:16.680] [info] [97276] [State.cpp:680] Loading Feature: 'SceneManager'
+[2026-11-18 06:14:16.681] [info] [97276] [Feature.cpp:123] SceneManager.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.681] [info] [97276] [State.cpp:680] Loading Feature: 'Screenshot'
+[2026-11-18 06:14:16.684] [info] [97276] [Feature.cpp:123] Screenshot.ini 1-4-1 successfully loaded
+[2026-11-18 06:14:16.684] [info] [97276] [Feature.cpp:185] Loading Screenshot settings
+[2026-11-18 06:14:16.684] [info] [97276] [State.cpp:680] Loading Feature: 'LinearLighting'
+[2026-11-18 06:14:16.686] [info] [97276] [Feature.cpp:123] LinearLighting.ini 1-4-0 successfully loaded
+[2026-11-18 06:14:16.686] [info] [97276] [Feature.cpp:185] Loading Linear Lighting settings
+[2026-11-18 06:14:16.687] [info] [97276] [State.cpp:680] Loading Feature: 'Effects11'
+[2026-11-18 06:14:16.690] [info] [97276] [Feature.cpp:123] Effects11.ini 1-4-0 successfully loaded
+[2026-11-18 06:14:16.690] [info] [97276] [Feature.cpp:185] Loading Effects11 settings
+[2026-11-18 06:14:16.690] [info] [97276] [State.cpp:680] Loading Feature: 'RainRefraction'
+[2026-11-18 06:14:16.690] [info] [97276] [Feature.cpp:123] RainRefraction.ini 1-3-0 successfully loaded
+[2026-11-18 06:14:16.690] [info] [97276] [Feature.cpp:185] Loading Rain Refraction settings
+[2026-11-18 06:14:16.691] [info] [97276] [State.cpp:680] Loading Feature: 'UnifiedWater'
+[2026-11-18 06:14:16.691] [info] [97276] [Feature.cpp:123] UnifiedWater.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.691] [info] [97276] [Feature.cpp:203] Loading default settings for Unified Water
+[2026-11-18 06:14:16.691] [info] [97276] [State.cpp:680] Loading Feature: 'HorizonFix'
+[2026-11-18 06:14:16.692] [info] [97276] [Feature.cpp:123] HorizonFix.ini 1-1-0 successfully loaded
+[2026-11-18 06:14:16.692] [info] [97276] [Feature.cpp:185] Loading Horizon Fix settings
+[2026-11-18 06:14:16.692] [info] [97276] [State.cpp:680] Loading Feature: 'TreeWind'
+[2026-11-18 06:14:16.692] [info] [97276] [Feature.cpp:123] TreeWind.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.692] [info] [97276] [Feature.cpp:185] Loading Tree Wind settings
+[2026-11-18 06:14:16.692] [info] [97276] [State.cpp:680] Loading Feature: 'ExponentialHeightFog'
+[2026-11-18 06:14:16.695] [info] [97276] [Feature.cpp:123] ExponentialHeightFog.ini 2-0-0 successfully loaded
+[2026-11-18 06:14:16.695] [info] [97276] [Feature.cpp:185] Loading Exponential Height Fog settings
+[2026-11-18 06:14:16.695] [info] [97276] [State.cpp:680] Loading Feature: 'HDRDisplay'
+[2026-11-18 06:14:16.699] [info] [97276] [Feature.cpp:123] HDRDisplay.ini 1-3-1 successfully loaded
+[2026-11-18 06:14:16.699] [info] [97276] [Feature.cpp:185] Loading HDR Display settings
+[2026-11-18 06:14:16.699] [info] [97276] [State.cpp:680] Loading Feature: 'PhysicalSky'
+[2026-11-18 06:14:16.700] [info] [97276] [Feature.cpp:123] PhysicalSky.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.700] [info] [97276] [Feature.cpp:185] Loading Physical Sky settings
+[2026-11-18 06:14:16.700] [info] [97276] [State.cpp:680] Loading Feature: 'PostProcessing'
+[2026-11-18 06:14:16.703] [info] [97276] [Feature.cpp:123] PostProcessing.ini 1-5-0 successfully loaded
+[2026-11-18 06:14:16.703] [info] [97276] [Feature.cpp:185] Loading Post Processing settings
+[2026-11-18 06:14:16.703] [info] [97276] [State.cpp:680] Loading Feature: 'Skin'
+[2026-11-18 06:14:16.706] [info] [97276] [Feature.cpp:123] Skin.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.706] [info] [97276] [Feature.cpp:185] Loading Advanced Skin settings
+[2026-11-18 06:14:16.706] [info] [97276] [State.cpp:680] Loading Feature: 'SnowCover'
+[2026-11-18 06:14:16.711] [info] [97276] [Feature.cpp:123] SnowCover.ini 1-6-0 successfully loaded
+[2026-11-18 06:14:16.711] [info] [97276] [Feature.cpp:185] Loading Snow Cover settings
+[2026-11-18 06:14:16.711] [info] [97276] [State.cpp:680] Loading Feature: 'FootstepParticles'
+[2026-11-18 06:14:16.714] [info] [97276] [Feature.cpp:123] FootstepParticles.ini 1-2-0 successfully loaded
+[2026-11-18 06:14:16.714] [info] [97276] [Feature.cpp:185] Loading Footstep Particles settings
+[2026-11-18 06:14:16.714] [info] [97276] [State.cpp:680] Loading Feature: 'ProceduralLightning'
+[2026-11-18 06:14:16.717] [info] [97276] [Feature.cpp:123] ProceduralLightning.ini 0-2-0 successfully loaded
+[2026-11-18 06:14:16.717] [info] [97276] [Feature.cpp:185] Loading Procedural Lightning settings
+[2026-11-18 06:14:16.717] [info] [97276] [State.cpp:680] Loading Feature: 'ProceduralNightSky'
+[2026-11-18 06:14:16.720] [info] [97276] [Feature.cpp:123] ProceduralNightSky.ini 0-4-0 successfully loaded
+[2026-11-18 06:14:16.720] [info] [97276] [Feature.cpp:185] Loading Procedural Night Sky settings
+[2026-11-18 06:14:16.720] [info] [97276] [State.cpp:680] Loading Feature: 'HeatHaze'
+[2026-11-18 06:14:16.721] [info] [97276] [Feature.cpp:123] HeatHaze.ini 0-2-0 successfully loaded
+[2026-11-18 06:14:16.721] [info] [97276] [Feature.cpp:185] Loading Heat Haze settings
+[2026-11-18 06:14:16.721] [info] [97276] [State.cpp:680] Loading Feature: 'Rainbows'
+[2026-11-18 06:14:16.724] [info] [97276] [Feature.cpp:123] Rainbows.ini 0-1-0 successfully loaded
+[2026-11-18 06:14:16.724] [info] [97276] [Feature.cpp:185] Loading Rainbows settings
+[2026-11-18 06:14:16.724] [info] [97276] [State.cpp:680] Loading Feature: 'CameraFX'
+[2026-11-18 06:14:16.727] [info] [97276] [Feature.cpp:123] CameraFX.ini 0-4-1 successfully loaded
+[2026-11-18 06:14:16.727] [info] [97276] [Feature.cpp:185] Loading Camera FX settings
+[2026-11-18 06:14:16.727] [info] [97276] [State.cpp:680] Loading Feature: 'CapsuleShadows'
+[2026-11-18 06:14:16.728] [info] [97276] [Feature.cpp:123] CapsuleShadows.ini 0-2-0 successfully loaded
+[2026-11-18 06:14:16.728] [info] [97276] [Feature.cpp:185] Loading Capsule Shadows settings
+[2026-11-18 06:14:16.728] [info] [97276] [State.cpp:680] Loading Feature: 'NeuralRendering'
+[2026-11-18 06:14:16.731] [info] [97276] [Feature.cpp:123] NeuralRendering.ini 1-3-0 successfully loaded
+[2026-11-18 06:14:16.731] [info] [97276] [Feature.cpp:185] Loading Neural Rendering settings
+[2026-11-18 06:14:16.731] [info] [97276] [State.cpp:680] Loading Feature: 'HairBacklighting'
+[2026-11-18 06:14:16.734] [info] [97276] [Feature.cpp:123] HairBacklighting.ini 0-1-0 successfully loaded
+[2026-11-18 06:14:16.734] [info] [97276] [Feature.cpp:185] Loading Hair Backlighting settings
+[2026-11-18 06:14:16.734] [info] [97276] [State.cpp:680] Loading Feature: 'NightEye'
+[2026-11-18 06:14:16.735] [info] [97276] [Feature.cpp:123] NightEye.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.735] [info] [97276] [Feature.cpp:185] Loading Night Eye settings
+[2026-11-18 06:14:16.735] [info] [97276] [State.cpp:680] Loading Feature: 'FurShells'
+[2026-11-18 06:14:16.738] [info] [97276] [Feature.cpp:123] FurShells.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.738] [info] [97276] [Feature.cpp:185] Loading Fur Shells settings
+[2026-11-18 06:14:16.738] [info] [97276] [State.cpp:680] Loading Feature: 'DetailMaps'
+[2026-11-18 06:14:16.741] [info] [97276] [Feature.cpp:123] DetailMaps.ini 0-2-0 successfully loaded
+[2026-11-18 06:14:16.741] [info] [97276] [Feature.cpp:185] Loading Detail Maps settings
+[2026-11-18 06:14:16.741] [info] [97276] [State.cpp:680] Loading Feature: 'LandscapeSeams'
+[2026-11-18 06:14:16.742] [info] [97276] [Feature.cpp:123] LandscapeSeams.ini 1-0-0 successfully loaded
+[2026-11-18 06:14:16.742] [info] [97276] [Feature.cpp:185] Loading Landscape Seams settings
+[2026-11-18 06:14:16.742] [info] [97276] [State.cpp:680] Loading Feature: 'SnowDeformation'
+[2026-11-18 06:14:16.745] [info] [97276] [Feature.cpp:123] SnowDeformation.ini 0-5-0 successfully loaded
+[2026-11-18 06:14:16.745] [info] [97276] [Feature.cpp:185] Loading Snow Deformation settings
+[2026-11-18 06:14:16.750] [info] [97276] [State.cpp:705] Loading Settings Complete
+[2026-11-18 06:14:16.751] [info] [97276] [ThemeManager.cpp:947] Ensured themes directory exists: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Themes
+[2026-11-18 06:14:16.752] [info] [97276] [ThemeManager.cpp:967] Theme files already exist, skipping default creation
+[2026-11-18 06:14:16.752] [info] [97276] [State.cpp:1840] Loading active theme preset: 'Default'
+[2026-11-18 06:14:16.752] [info] [97276] [ThemeManager.cpp:850] Loaded theme: Default (Default Dark)
+[2026-11-18 06:14:16.752] [info] [97276] [Menu.cpp:677] Applied theme preset: Default
+[2026-11-18 06:14:16.753] [info] [97276] [ThemeManager.cpp:947] Ensured themes directory exists: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Themes
+[2026-11-18 06:14:16.753] [info] [97276] [ThemeManager.cpp:967] Theme files already exist, skipping default creation
+[2026-11-18 06:14:16.755] [info] [97276] [Hooks.cpp:1462] Hooking CreateDXGIFactory
+[2026-11-18 06:14:16.755] [info] [97276] [XSEPlugin.cpp:256] Calling feature Load methods
+[2026-11-18 06:14:16.755] [info] [97276] [TerrainHelper.cpp:313] [Terrain Helper] Hooking TESObjectLAND
+[2026-11-18 06:14:16.756] [info] [97276] [CameraFX.cpp:599] [CameraFX] Installed interface hook
+[2026-11-18 06:14:28.588] [info] [97276] [Deferred.h:219] [Deferred] Installed hooks
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1332] Hooking BSImageSpace::Init::IBLF
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1336] Hooking BSInputDeviceManager::PollInputDevices
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1339] Hooking BSShader::LoadShaders
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1342] Hooking BSShader::BeginTechnique
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1348] Hooking BSGraphics::SetDirtyStates
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1351] Hooking BSGraphics::Renderer::InitD3D
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1354] Hooking WndProcHandler
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1357] Hooking BSShaderRenderTargets::Create
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1360] Hooking BSShaderRenderTargets::Create::CreateRenderTarget(s)
+[2026-11-18 06:14:28.588] [info] [97276] [Hooks.cpp:1379] Hooking BSImagespaceShader
+[2026-11-18 06:14:28.588] [info] [97276] [LegacyGraphicsCompatibilityShaders.cpp:192] Installing legacy image-space shader contract adapters
+[2026-11-18 06:14:28.589] [info] [97276] [LegacyGraphicsCompatibility.cpp:476] Installed legacy AlphaBlend bounds-to-extents adapter
+[2026-11-18 06:14:28.589] [info] [97276] [LegacyGraphicsCompatibility.cpp:490] Installed legacy shadow bounds-to-extents adapter
+[2026-11-18 06:14:28.589] [info] [97276] [LegacyGraphicsCompatibility.cpp:526] Installed legacy jitter-preservation and State::SetCameraData adapters
+[2026-11-18 06:14:28.589] [info] [97276] [LegacyGraphicsCompatibility.cpp:622] Installed legacy Skyrim 1.7 FullScreenBlur CPU chain
+[2026-11-18 06:14:28.589] [info] [97276] [LegacyGraphicsCompatibility.cpp:643] Installed legacy ShadowSceneNode 1.7 tail initialization
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1385] Hooking BSComputeShader
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1388] Hooking Renderer::DispatchCSShader
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1391] Hooking TESWaterReflections::Update_Actor::GetLOSPosition for Sky Reflection Fix
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1394] Hooking weather extensions
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1400] Hooking MenuManager::DrawInterfaceStart for menu TAA
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1403] Installing SetupGeometry hooks
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1411] Installing post-processing hooks
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1420] Patching BSLightingShader::SetupGeometry::updateEyePosition
+[2026-11-18 06:14:28.589] [info] [97276] [Hooks.cpp:1444] Hooking BSAccumProcess::RegisterObject for HiZ Occlusion
+[2026-11-18 06:14:28.589] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Alpha GeometryGroup Ceiling Fix
+[2026-11-18 06:14:28.589] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Cull Pool Exhaustion Fix
+[2026-11-18 06:14:28.589] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Effect Shader No Decals Fix
+[2026-11-18 06:14:28.589] [info] [97276] [EmptyOverlayCullFix.cpp:48] [Engine Fixes] Empty Overlay Cull Fix skips skinned SrcAlpha/InvSrcAlpha shapes whose diffuse is textures\actors\character\overlays\default.dds
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Empty Overlay Cull Fix
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed LOD Blend Ring Fix
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Light List Search Fix
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Shadowmap Cascade Culling Fix
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Shadowmap Cascade Rasterizer Fix
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Sun Shadow Mask Fix
+[2026-11-18 06:14:28.590] [warning] [97276] [SunOcclusionPollFix.cpp:20] [Engine Fixes] Sun Occlusion Poll Fix not applied: unexpected code at the sun occlusion poll (another mod or an unverified runtime)
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Sun Occlusion Poll Fix
+[2026-11-18 06:14:28.590] [info] [97276] [EngineFix.cpp:66] [Engine Fixes] Installed Water Reflection Cubemap Fix
+[2026-11-18 06:14:28.590] [info] [97276] [XSEPlugin.cpp:96] FlatMapMarkersSSE detected, Effects11, Post Processing and Linear Lighting are disabled on the world map
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:1971] [TruePBR] Hooking BGSTextureSet
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:1974] [TruePBR] Hooking BSLightingShaderProperty
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:1981] [TruePBR] Hooking BSLightingShader
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:1985] [TruePBR] Hooking TESLandTexture
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:1997] [TruePBR] Hooking BSTempEffectSimpleDecal
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:2000] [TruePBR] Hooking BSTempEffectGeometryDecal
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:2003] [TruePBR] Hooking BSGrassShaderProperty
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:2006] [TruePBR] Hooking BSGrassShader
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:2010] [TruePBR] Hooking TESObjectSTAT
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:2013] [TruePBR] Hooking TESObjectLAND
+[2026-11-18 06:14:28.590] [info] [97276] [TruePBR.cpp:2016] [TruePBR] Hooking BSLightingShader::SetupMaterial
+[2026-11-18 06:14:28.590] [info] [97276] [GrassCollision.h:125] [GRASS COLLISION] Installed hooks
+[2026-11-18 06:14:28.590] [info] [97276] [GrassOptimizations.cpp:693] [GRASS OPTIMIZATIONS] Installed hooks
+[2026-11-18 06:14:28.590] [info] [97276] [WetnessEffects.cpp:433] [Wetness Effects] Splashes of Storms detected, compatibility enabled
+[2026-11-18 06:14:28.590] [info] [97276] [LightLimitFix.cpp:1085] [LLF] Particle lights config conflict policy: first-win
+[2026-11-18 06:14:28.590] [info] [97276] [LightLimitFix.cpp:1088] [LLF] Loading particle lights configs
+[2026-11-18 06:14:28.591] [info] [97276] [LightLimitFix.cpp:1098] [LLF] 6 matching inis found
+[2026-11-18 06:14:28.591] [info] [97276] [LightLimitFix.cpp:1101] [LLF] loading ini: Data\ParticleLights\black.ini
+[2026-11-18 06:14:28.594] [info] [97276] [LightLimitFix.cpp:1101] [LLF] loading ini: Data\ParticleLights\enblightglow.ini
+[2026-11-18 06:14:28.595] [info] [97276] [LightLimitFix.cpp:1101] [LLF] loading ini: Data\ParticleLights\fxevgnnsmpglow.ini
+[2026-11-18 06:14:28.598] [info] [97276] [LightLimitFix.cpp:1101] [LLF] loading ini: Data\ParticleLights\fxglowenb.ini
+[2026-11-18 06:14:28.599] [info] [97276] [LightLimitFix.cpp:1101] [LLF] loading ini: Data\ParticleLights\glowsoft01_enbl.ini
+[2026-11-18 06:14:28.599] [info] [97276] [LightLimitFix.cpp:1101] [LLF] loading ini: Data\ParticleLights\po3_fullalpha.ini
+[2026-11-18 06:14:28.600] [info] [97276] [LightLimitFix.cpp:2192] [LLF] Installed hooks
+[2026-11-18 06:14:28.600] [info] [97276] [LightAttach.cpp:128] [LLF] Installed light attach gate, chained onto another plugin's hook
+[2026-11-18 06:14:28.600] [info] [97276] [CloudShadows.h:116] [Cloud Shadows] Installed hooks
+[2026-11-18 06:14:28.600] [info] [97276] [SubsurfaceScattering.h:188] [SSS] Installed hooks
+[2026-11-18 06:14:28.600] [info] [97276] [TerrainShadows.cpp:117] [Terrain Shadows] Installed console time-change hook
+[2026-11-18 06:14:28.600] [info] [97276] [TerrainShadows.cpp:139] [Terrain Shadows] Installed Papyrus GameHour change hook
+[2026-11-18 06:14:28.600] [info] [97276] [Skylighting.cpp:362] [SKYLIGHTING] Hooking BSLightingShaderProperty::GetPrecipitationOcclusionMapRenderPassesImp
+[2026-11-18 06:14:28.600] [info] [97276] [Skylighting.cpp:825] [SKYLIGHTING] Alpha group pool grown from 512 to 1024
+[2026-11-18 06:14:28.600] [info] [97276] [Skylighting.h:205] Registered class Skylighting::MenuOpenCloseEventHandler
+[2026-11-18 06:14:28.600] [info] [97276] [SkySync.cpp:193] [Sky Sync] Moon and Stars detected, compatibility enabled
+[2026-11-18 06:14:28.600] [info] [97276] [SkySync.cpp:208] [Sky Sync] Installed hooks
+[2026-11-18 06:14:28.600] [info] [97276] [TerrainBlending.h:132] [Terrain Blending] Installed hooks
+[2026-11-18 06:14:28.600] [info] [97276] [TerrainHelper.cpp:319] [Terrain Helper] Hooking BSLightingShader::SetupMaterial
+[2026-11-18 06:14:28.600] [info] [97276] [VanillaFresnel.cpp:89] [VanillaFresnel] Installed hooks - BSLightingShader_SetupGeometry
+[2026-11-18 06:14:28.600] [info] [97276] [InteriorSun.cpp:86] [Interior Sun] Installed hooks
+[2026-11-18 06:14:28.600] [info] [97276] [TerrainVariation.cpp:228] TerrainVariation: Installed hooks - BSLightingShader_SetupGeometry
+[2026-11-18 06:14:28.600] [info] [97276] [TerrainVariation.cpp:236] TerrainVariation: Feature initialized
+[2026-11-18 06:14:28.600] [info] [97276] [ExtendedTranslucency.cpp:80] [ExtendedTranslucency] Installed hooks - BSLightingShader_SetupGeometry
+[2026-11-18 06:14:28.600] [info] [97276] [ReverseZ.cpp:294] ReverseZ: enabled
+[2026-11-18 06:14:28.600] [info] [97276] [ReverseZ.cpp:952] ReverseZ: installed camera state build and publish hooks
+[2026-11-18 06:14:28.601] [info] [97276] [Upscaling.cpp:692] [Upscaling] Installed hooks
+[2026-11-18 06:14:28.625] [info] [97276] [EditorWindow.cpp:2011] [CSEditor] Weather lock hooked 2 SetWeather and 2 ForceWeather call sites
+[2026-11-18 06:14:28.626] [info] [97276] [UnifiedWater.cpp:477] [Unified Water] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [HorizonFix.cpp:115] [Horizon Fix] HorizonFix plugin detected, compatibility enabled
+[2026-11-18 06:14:28.626] [info] [97276] [TreeWind.cpp:232] [Tree Wind] Installed hooks - BSLightingShader and BSUtilityShader Setup/RestoreGeometry
+[2026-11-18 06:14:28.626] [info] [97276] [PostProcessing.cpp:923] Hooking preprocess passes
+[2026-11-18 06:14:28.626] [info] [97276] [ImageSpaceModifiers.cpp:109] [PostProcessing] Hooked imagespace modifier accumulation
+[2026-11-18 06:14:28.626] [info] [97276] [Skin.cpp:268] [Advanced Skin] Hooking BSLightingShader::SetupMaterial
+[2026-11-18 06:14:28.626] [info] [97276] [Skin.h:190] [Advanced Skin] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [SnowCover.h:319] [SnowCover] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [FootstepParticles.cpp:499] [FootstepParticles] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [ProceduralLightning.cpp:206] [ProceduralLightning] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [ProceduralNightSky.cpp:390] [ProceduralNightSky] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [HeatHaze.cpp:239] [HeatHaze] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [Rainbows.cpp:223] [Rainbows] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [CameraFX.cpp:607] [CameraFX] Hooked world post-processing
+[2026-11-18 06:14:28.626] [info] [97276] [NeuralRendering.cpp:1379] [NeuralRendering] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [FurShells.cpp:1007] [Fur Shells] Installed hooks
+[2026-11-18 06:14:28.626] [info] [97276] [LandscapeSeams.cpp:917] [Landscape Seams] Installed hooks
+[2026-11-18 06:14:28.626] [warning] [97276] [SnowDeformation.cpp:3029] [SnowDeformation] Trampoline has 16 bytes free; gathering footprints on the render thread instead
+[2026-11-18 06:14:28.626] [info] [97276] [SnowDeformation.cpp:3031] [SnowDeformation] Installed hooks
+[2026-11-18 06:15:15.597] [info] [97276] [Streamline.cpp:90] [Streamline] Interposer loaded at address: 0x7ffd7ed50000
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] nvngx_dlss.dll version: 310.9.16
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] nvngx_dlssnr.dll version: 310.9.16
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] sl.common.dll version: 2.10.3
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] sl.dlss.dll version: 2.10.3
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] sl.interposer.dll version: 2.10.3
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] sl.pcl.dll version: 2.10.3
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:97] [Streamline] sl.reflex.dll version: 2.10.3
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:99] [Streamline] Initializing Streamline
+[2026-11-18 06:15:15.621] [info] [97276] [Streamline.cpp:133] [Streamline] Plugin search path: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\Shaders\Upscaling\Streamline
+[2026-11-18 06:15:16.523] [info] [97276] [Streamline.cpp:171] [Streamline] Successfully initialized Streamline
+[2026-11-18 06:15:16.538] [info] [97276] [FidelityFX.cpp:95] [FidelityFX] amd_fidelityfx_framegeneration_dx12.dll version: 4.0.1
+[2026-11-18 06:15:16.538] [info] [97276] [FidelityFX.cpp:95] [FidelityFX] amd_fidelityfx_loader_dx12.dll version: 2.3.0
+[2026-11-18 06:15:16.538] [info] [97276] [FidelityFX.cpp:95] [FidelityFX] amd_fidelityfx_upscaler_dx12.dll version: 4.1.1
+[2026-11-18 06:15:16.539] [info] [97276] [FidelityFX.cpp:122] [FidelityFX] Loader DLL loaded from 'C:\modlists\NGVO 8.0 Beta\Stock Game\Data\Shaders\Upscaling\FidelityFX\amd_fidelityfx_loader_dx12.dll'
+[2026-11-18 06:15:16.541] [info] [97276] [FidelityFX.cpp:122] [FidelityFX] Frame generation DLL loaded from 'C:\modlists\NGVO 8.0 Beta\Stock Game\Data\Shaders\Upscaling\FidelityFX\amd_fidelityfx_framegeneration_dx12.dll'
+[2026-11-18 06:15:16.547] [info] [97276] [FidelityFX.cpp:122] [FidelityFX] Runtime upscaler DLL loaded from 'C:\modlists\NGVO 8.0 Beta\Stock Game\Data\Shaders\Upscaling\FidelityFX\amd_fidelityfx_upscaler_dx12.dll'
+[2026-11-18 06:15:16.547] [info] [97276] [Upscaling.cpp:101] [Upscaling] Upgrading swap chain format from 28 to R10G10B10A2_UNORM for HDR
+[2026-11-18 06:15:16.547] [info] [97276] [Upscaling.cpp:135] [Frame Generation] Frame Generation enabled, using D3D12 proxy
+[2026-11-18 06:15:17.577] [info] [97276] [DX12SwapChain.cpp:61] [DX12SwapChain] Swap chain format negotiation: attempted=24, negotiated=24, fallback=false
+[2026-11-18 06:15:17.625] [info] [97276] [DX12SwapChain.cpp:526] [DX12SwapChain] Set color space to SDR (sRGB)
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:177] [Streamline] Checking features
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:203] [Streamline] DLSS feature is loaded
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:203] [Streamline] Reflex feature is loaded
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:203] [Streamline] PCL feature is loaded
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:222] [Streamline] Newer RTX GPU detected, default presets use DLSS 4 (K) up to Balanced and DLSS 4.5 (M/L) for Performance/Ultra Performance
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:225] [Streamline] DLSS is available
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:227] [Streamline] Reflex is available
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:228] [Streamline] PCL is available
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:284] [Streamline] Reflex runtime controls are available
+[2026-11-18 06:15:18.625] [info] [97276] [Streamline.cpp:292] [Streamline] PCL marker interface is available
+[2026-11-18 06:15:19.643] [info] [97276] [HDRDisplay.cpp:633] [HDR Display] Enabled bUse64bitsHDRRenderTarget - all required render targets will use R16G16B16A16_FLOAT
+[2026-11-18 06:15:19.647] [info] [97276] [ReverseZ.cpp:419] ReverseZ: converted 3 depth targets to D32_FLOAT_S8X24_UINT
+[2026-11-18 06:15:19.648] [info] [97276] [ReverseZ.cpp:942] ReverseZ: installed depth-state, depth-clear and state read-back hooks
+[2026-11-18 06:15:20.115] [info] [97276] [TruePBR.cpp:139] [TruePBR] All .jsons loaded successfully.
+[2026-11-18 06:15:20.160] [info] [97276] [TruePBR.cpp:139] [TruePBR] All .jsons loaded successfully.
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1310] [TypedUAVLoad] Probing per-format UAV typed-load support:
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R11G11B10_FLOAT — supported (Dynamic Cubemaps (envCapture/Raw/Position) — non-HDR)
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R16G16B16A16_FLOAT — supported (Dynamic Cubemaps (HDR), Skylighting outProbeArray)
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R16G16B16A16_UNORM — supported (Grass Collision (collisionTexture))
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R16G16_UNORM — supported (Terrain Shadows (RWTexShadowHeights))
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R8G8B8A8_UNORM — supported (HDR Display UI brightness (uiTexture))
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R8_UINT — supported (Skylighting accumulation frames (outAccumFramesArray))
+[2026-11-18 06:15:20.244] [info] [97276] [State.cpp:1322] [TypedUAVLoad] R16_FLOAT — supported (Vanilla volumetric lighting density (DensityRW))
+[2026-11-18 06:15:20.311] [info] [97276] [TruePBR.cpp:139] [TruePBR] All .jsons loaded successfully.
+[2026-11-18 06:15:20.317] [info] [97276] [TruePBR.cpp:139] [TruePBR] All .jsons loaded successfully.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] Blackreach.Terrain.HeightMap.-7.-8.7.12.-284.861.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] ccBGSSSE067DeadlandsWorld.Terrain.HeightMap.-6.-4.4.7.-140.353.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] ccKRTSSE001QNWorld.Terrain.HeightMap.-3.-4.2.2.-972.265.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] DeepwoodRedoubtWorld.Terrain.HeightMap.-39.15.-27.24.-618.472.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] DLC01FalmerValley.Terrain.HeightMap.-16.-13.10.13.-530.2212.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] DLC01SoulCairn.Terrain.HeightMap.-52.-43.30.44.-188.245.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] DLC1HunterHQWorld.Terrain.HeightMap.-31.-8.3.5.-662.308.dds loaded.
+[2026-11-18 06:15:20.484] [info] [97276] [TerrainShadows.cpp:295] DLC2ApocryphaWorld.Terrain.HeightMap.-6.-1.7.9.-250.-206.dds loaded.
+[2026-11-18 06:15:20.485] [info] [97276] [TerrainShadows.cpp:295] DLC2SolstheimWorld.Terrain.HeightMap.-64.-64.127.127.-1024.6342.dds loaded.
+[2026-11-18 06:15:20.485] [info] [97276] [TerrainShadows.cpp:295] JaphetsFollyWorld.Terrain.HeightMap.-7.-6.6.6.-210.163.dds loaded.
+[2026-11-18 06:15:20.485] [info] [97276] [TerrainShadows.cpp:295] MarkarthWorld.Terrain.HeightMap.-48.-3.-31.5.-3375.2609.dds loaded.
+[2026-11-18 06:15:20.485] [info] [97276] [TerrainShadows.cpp:295] SkuldafnWorld.Terrain.HeightMap.40.-21.62.-1.-285.1876.dds loaded.
+[2026-11-18 06:15:20.485] [info] [97276] [TerrainShadows.cpp:295] Sovngarde.Terrain.HeightMap.-23.-32.34.40.-1331.4715.dds loaded.
+[2026-11-18 06:15:20.485] [info] [97276] [TerrainShadows.cpp:295] Tamriel.Terrain.HeightMap.-57.-43.61.50.-4629.4924.dds loaded.
+[2026-11-18 06:15:20.930] [info] [97276] [NRDReblurIntegration.cpp:96] NRDReblurIntegration: initialized 3440x1440
+[2026-11-18 06:15:21.001] [info] [97276] [NRDReblurIntegration.cpp:96] NRDReblurIntegration: initialized 3440x1440
+[2026-11-18 06:15:21.145] [info] [97276] [RCAS.cpp:24] [RCAS] Creating resources
+[2026-11-18 06:15:21.188] [info] [97276] [SceneSettingsSerialization.cpp:418] [SceneSettings] Loading user settings from: C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\SceneSettings\SceneManager.json
+[2026-11-18 06:15:21.239] [info] [97276] [SceneSettingsSerialization.cpp:495] [SceneSettings] Loaded 11 InteriorOnly user settings
+[2026-11-18 06:15:21.240] [info] [97276] [SceneSettingsSerialization.cpp:495] [SceneSettings] Loaded 19 TimeOfDay user settings
+[2026-11-18 06:15:21.240] [info] [97276] [SceneSettingsSerialization.cpp:500] [SceneSettings] Loaded SceneManager.json (non-weather)
+[2026-11-18 06:15:21.249] [info] [97276] [PresetManager.cpp:160] [Effects11] Discovered 1 preset(s); active='Legacy'
+[2026-11-18 06:15:21.249] [warning] [97276] [PresetManager.cpp:224] [Effects11] Unknown preset id 'fnenb Cabbage'
+[2026-11-18 06:15:21.265] [info] [97276] [TextureManager.cpp:269] [TextureManager] Created downsample texture: 1024x1024 with 3 mips (1024, 512, 256)
+[2026-11-18 06:15:21.265] [warning] [97276] [SettingManager.cpp:801] [SettingManager] Settings file not found: C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries.ini, using defaults
+[2026-11-18 06:15:21.265] [warning] [97276] [WeatherManager.cpp:30] [WeatherManager] _weatherlist.ini not found at C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\_weatherlist.ini
+[2026-11-18 06:15:21.265] [info] [97276] [WeatherManager.cpp:143] [WeatherManager] _locationweather.ini not found, location weather disabled
+[2026-11-18 06:15:21.273] [info] [97276] [EffectManager.cpp:804] [EFFECTS11] Created texture copy shaders successfully
+[2026-11-18 06:15:21.285] [info] [97276] [EffectManager.cpp:854] [EFFECTS11] Created color correction compute shader successfully
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbeffectprepass.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbeffectprepass.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbeffectprepass.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbdepthoffield.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbdepthoffield.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbdepthoffield.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbbloom.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbbloom.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbbloom.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enblens.fx'
+[2026-11-18 06:15:21.291] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enblens.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enblens.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbadaptation.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbadaptation.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbadaptation.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbsunsprite.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbsunsprite.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbsunsprite.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbeffect.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbeffect.fx'
+[2026-11-18 06:15:21.292] [error] [97276] [Effect.cpp:309] [EFFECTS11] Required effect file not found: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbeffect.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbunderwater.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbunderwater.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbunderwater.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:301] [EFFECTS11] Applying effect 'enbeffectpostpass.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:360] [EFFECTS11] Unloaded effect 'enbeffectpostpass.fx'
+[2026-11-18 06:15:21.292] [info] [97276] [Effect.cpp:312] [EFFECTS11] Effect file not found, skipping: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbeffectpostpass.fx'
+[2026-11-18 06:15:21.292] [warning] [97276] [EffectManager.cpp:116] [EFFECTS11] No preset in use: 'C:\modlists\NGVO 8.0 Beta\Stock Game\enbseries\enbeffect.fx' not found
+[2026-11-18 06:15:21.303] [info] [97276] [RainRefraction.cpp:95] [Rain Refraction] Loaded raindrop texture: Data\Shaders\RainRefraction\Raindrops.png (32x32, BC7, 6 mips)
+[2026-11-18 06:15:21.304] [info] [97276] [HDRDisplay.cpp:290] [HDR] HDR display detection: supported=true, enabled=true
+[2026-11-18 06:15:21.306] [info] [97276] [DX12SwapChain.cpp:526] [DX12SwapChain] Set color space to SDR (sRGB)
+[2026-11-18 06:15:21.497] [info] [97276] [MotionBlur.cpp:75] Motion blur resources initialized
+[2026-11-18 06:15:21.928] [info] [97276] [FurShells.cpp:998] [Fur Shells] Installed draw hook
+[2026-11-18 06:15:21.928] [info] [97276] [DetailMaps.cpp:256] [Detail Maps] Loaded 0 detail sets
+[2026-11-18 06:15:21.928] [info] [97276] [DetailMaps.cpp:316] [Detail Maps] Loaded 0 rules and 0 exclusions from 0 files
+[2026-11-18 06:15:21.929] [info] [97276] [Hooks.cpp:828] Calling original Init3D
+[2026-11-18 06:15:21.930] [info] [97276] [Hooks.cpp:832] Accessing render device information
+[2026-11-18 06:15:21.930] [info] [97276] [Hooks.cpp:835] Detouring virtual function tables
+[2026-11-18 06:15:21.930] [info] [97276] [ThemeManager.cpp:850] Loaded theme: Default (Default Dark)
+[2026-11-18 06:15:21.930] [info] [97276] [Menu.cpp:711] Applied Default.json theme immediately after ImGui context creation
+[2026-11-18 06:15:21.930] [info] [97276] [ThemeManager.cpp:850] Loaded theme: Default (Default Dark)
+[2026-11-18 06:15:21.930] [info] [97276] [Menu.cpp:677] Applied theme preset: Default
+[2026-11-18 06:15:21.930] [info] [97276] [Menu.cpp:728] Re-applied preset 'Default' during Menu::Init
+[2026-11-18 06:15:21.939] [warning] [97276] [ThemeManager.cpp:524] [I18n] No supplemental CJK font path candidates for locale display 'es': Español
+[2026-11-18 06:15:21.939] [warning] [97276] [ThemeManager.cpp:524] [I18n] No supplemental CJK font path candidates for locale display 'fr': Français
+[2026-11-18 06:15:21.965] [info] [97276] [CursorLoader.cpp:162] CursorLoader::Reload: Loaded 9 custom cursor image(s)
+[2026-11-18 06:15:21.994] [info] [97276] [SceneWidgetInterceptor.cpp:427] SceneWidgetInterceptor: installed 22 entry points
+[2026-11-18 06:15:21.994] [info] [97276] [UIHooks.cpp:71] UIHooks: installed
+[2026-11-18 06:15:22.321] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on BloodSplatter - ps count 2
+[2026-11-18 06:15:22.322] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on DistantTree - ps count 4
+[2026-11-18 06:15:22.324] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on RunGrass - ps count 18
+[2026-11-18 06:15:22.324] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on Particle - ps count 6
+[2026-11-18 06:15:22.325] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on Sky - ps count 9
+[2026-11-18 06:15:22.652] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on Effect - ps count 3217
+[2026-11-18 06:15:24.343] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on Lighting - ps count 6924
+[2026-11-18 06:15:24.358] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on Utility - ps count 165
+[2026-11-18 06:15:24.627] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on Water - ps count 2172
+[2026-11-18 06:15:24.629] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISFXAA - ps count 1
+[2026-11-18 06:15:24.631] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCopy - ps count 1
+[2026-11-18 06:15:24.634] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCopyDynamicFetchDisabled - ps count 1
+[2026-11-18 06:15:24.636] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCopyScaleBias - ps count 1
+[2026-11-18 06:15:24.641] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCopyCustomViewport - ps count 1
+[2026-11-18 06:15:24.642] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISRefraction - ps count 1
+[2026-11-18 06:15:24.644] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDoubleVision - ps count 1
+[2026-11-18 06:15:24.646] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCopyTextureMask - ps count 1
+[2026-11-18 06:15:24.647] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDepthOfField - ps count 1
+[2026-11-18 06:15:24.653] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDistantBlur - ps count 1
+[2026-11-18 06:15:24.655] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISMap - ps count 1
+[2026-11-18 06:15:24.659] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWorldMap - ps count 1
+[2026-11-18 06:15:24.661] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWorldMapNoSkyBlur - ps count 1
+[2026-11-18 06:15:24.662] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISRadialBlur - ps count 1
+[2026-11-18 06:15:24.665] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISRadialBlurMedium - ps count 1
+[2026-11-18 06:15:24.667] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISRadialBlurHigh - ps count 1
+[2026-11-18 06:15:24.669] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCopyGreyScale - ps count 1
+[2026-11-18 06:15:24.670] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRTonemapBlendCinematic - ps count 1
+[2026-11-18 06:15:24.673] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRTonemapBlendCinematicFade - ps count 1
+[2026-11-18 06:15:24.674] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample16 - ps count 1
+[2026-11-18 06:15:24.681] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample4 - ps count 1
+[2026-11-18 06:15:24.683] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample16Lum - ps count 1
+[2026-11-18 06:15:24.685] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample4RGB2Lum - ps count 1
+[2026-11-18 06:15:24.687] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample4LightAdapt - ps count 1
+[2026-11-18 06:15:24.690] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample4LumClamp - ps count 1
+[2026-11-18 06:15:24.691] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample16LightAdapt - ps count 1
+[2026-11-18 06:15:24.694] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISHDRDownSample16LumClamp - ps count 1
+[2026-11-18 06:15:24.695] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur3 - ps count 1
+[2026-11-18 06:15:24.697] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur5 - ps count 1
+[2026-11-18 06:15:24.699] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur7 - ps count 1
+[2026-11-18 06:15:24.701] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur9 - ps count 1
+[2026-11-18 06:15:24.703] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur11 - ps count 1
+[2026-11-18 06:15:24.706] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur13 - ps count 1
+[2026-11-18 06:15:24.708] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur15 - ps count 1
+[2026-11-18 06:15:24.711] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur3 - ps count 1
+[2026-11-18 06:15:24.712] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur5 - ps count 1
+[2026-11-18 06:15:24.714] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur7 - ps count 1
+[2026-11-18 06:15:24.716] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur9 - ps count 1
+[2026-11-18 06:15:24.717] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur11 - ps count 1
+[2026-11-18 06:15:24.719] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur13 - ps count 1
+[2026-11-18 06:15:24.720] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNonHDRBlur15 - ps count 1
+[2026-11-18 06:15:24.721] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur3 - ps count 1
+[2026-11-18 06:15:24.723] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur5 - ps count 1
+[2026-11-18 06:15:24.725] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur7 - ps count 1
+[2026-11-18 06:15:24.726] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur9 - ps count 1
+[2026-11-18 06:15:24.728] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur11 - ps count 1
+[2026-11-18 06:15:24.730] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur13 - ps count 1
+[2026-11-18 06:15:24.732] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBrightPassBlur15 - ps count 1
+[2026-11-18 06:15:24.734] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterDisplacementClearSimulation - ps count 1
+[2026-11-18 06:15:24.737] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterDisplacementTexOffset - ps count 1
+[2026-11-18 06:15:24.739] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterDisplacementWadingRipple - ps count 1
+[2026-11-18 06:15:24.741] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterDisplacementRainRipple - ps count 1
+[2026-11-18 06:15:24.743] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterWadingHeightmap - ps count 1
+[2026-11-18 06:15:24.746] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterRainHeightmap - ps count 1
+[2026-11-18 06:15:24.748] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterBlendHeightmaps - ps count 1
+[2026-11-18 06:15:24.750] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterSmoothHeightmap - ps count 1
+[2026-11-18 06:15:24.753] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterDisplacementNormals - ps count 1
+[2026-11-18 06:15:24.757] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNoiseScrollAndBlend - ps count 1
+[2026-11-18 06:15:24.759] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISNoiseNormalmap - ps count 1
+[2026-11-18 06:15:24.761] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISLocalMap - ps count 1
+[2026-11-18 06:15:24.763] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISAlphaBlend - ps count 1
+[2026-11-18 06:15:24.765] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDepthOfFieldFogged - ps count 1
+[2026-11-18 06:15:24.767] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDepthOfFieldMaskedFogged - ps count 1
+[2026-11-18 06:15:24.770] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDistantBlurFogged - ps count 1
+[2026-11-18 06:15:24.772] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDistantBlurMaskedFogged - ps count 1
+[2026-11-18 06:15:24.777] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISVolumetricLighting - ps count 1
+[2026-11-18 06:15:24.779] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ApplyReflections - ps count 1
+[2026-11-18 06:15:24.781] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISApplyVolumetricLighting - ps count 1
+[2026-11-18 06:15:24.782] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBasicCopy - ps count 1
+[2026-11-18 06:15:24.784] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISBlur - ps count 1
+[2026-11-18 06:15:24.788] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCompositeVolumetricLighting - ps count 1
+[2026-11-18 06:15:24.790] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCompositeLensFlare - ps count 1
+[2026-11-18 06:15:24.792] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISCompositeLensFlareVolumetricLighting - ps count 1
+[2026-11-18 06:15:24.793] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDebugSnow - ps count 1
+[2026-11-18 06:15:24.796] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDownsample - ps count 1
+[2026-11-18 06:15:24.800] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDownsampleIgnoreBrightest - ps count 1
+[2026-11-18 06:15:24.803] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISExp - ps count 1
+[2026-11-18 06:15:24.805] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISIBLensFlares - ps count 1
+[2026-11-18 06:15:24.808] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISLightingComposite - ps count 1
+[2026-11-18 06:15:24.810] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISLightingCompositeNoDirectionalLight - ps count 1
+[2026-11-18 06:15:24.813] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISLightingCompositeMenu - ps count 1
+[2026-11-18 06:15:24.815] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ReflectionsRayTracing - ps count 1
+[2026-11-18 06:15:24.816] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ReflectionsDebugSpecMask - ps count 1
+[2026-11-18 06:15:24.818] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAOBlurH - ps count 1
+[2026-11-18 06:15:24.820] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAOBlurV - ps count 1
+[2026-11-18 06:15:24.822] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAOCameraZ - ps count 1
+[2026-11-18 06:15:24.824] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAOCompositeSAO - ps count 1
+[2026-11-18 06:15:24.827] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAOCompositeFog - ps count 1
+[2026-11-18 06:15:24.829] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAOCompositeSAOFog - ps count 1
+[2026-11-18 06:15:24.831] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISMinify - ps count 1
+[2026-11-18 06:15:24.833] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISMinifyContrast - ps count 1
+[2026-11-18 06:15:24.835] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAORawAO - ps count 1
+[2026-11-18 06:15:24.838] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSAORawAONoTemporal - ps count 1
+[2026-11-18 06:15:24.842] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSILComposite - ps count 1
+[2026-11-18 06:15:24.845] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSILRawInd - ps count 1
+[2026-11-18 06:15:24.847] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSimpleColor - ps count 1
+[2026-11-18 06:15:24.848] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISDisplayDepth - ps count 1
+[2026-11-18 06:15:24.851] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISSnowSSS - ps count 1
+[2026-11-18 06:15:24.853] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISTemporalAA - ps count 1
+[2026-11-18 06:15:24.855] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISTemporalAA_UI - ps count 1
+[2026-11-18 06:15:24.858] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISTemporalAA_Water - ps count 1
+[2026-11-18 06:15:24.860] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISUpsampleDynamicResolution - ps count 1
+[2026-11-18 06:15:24.864] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterBlend - ps count 1
+[2026-11-18 06:15:24.866] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISUnderwaterMask - ps count 1
+[2026-11-18 06:15:24.868] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on LensFlare - ps count 1
+[2026-11-18 06:15:24.870] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on LensFlareVisibility - ps count 1
+[2026-11-18 06:15:24.872] [info] [97276] [BSShaderHooks.cpp:8] BSShader::LoadShaders called on ISWaterFlow - ps count 1
+[2026-11-18 06:15:27.308] [info] [69696] [ReverseZ.cpp:683] ReverseZ: camera 0x2542d5d4f00 publishes standard projection with depth target 0 (float)
+[2026-11-18 06:15:27.308] [info] [69696] [ReverseZ.cpp:683] ReverseZ: camera 0x2542d58be40 publishes orthographic projection with depth target 4
+[2026-11-18 06:15:27.308] [info] [69696] [ReverseZ.cpp:683] ReverseZ: camera 0x2542d58bc80 publishes orthographic projection with depth target 4
+[2026-11-18 06:15:27.374] [info] [69696] [CursorLoader.cpp:162] CursorLoader::Reload: Loaded 9 custom cursor image(s)
+[2026-11-18 06:16:13.396] [info] [99760] [TruePBR.cpp:2030] [TruePBR] replacing default land texture set record with DefaultPBRLand
+[2026-11-18 06:16:13.396] [info] [99760] [LightLimitFix.cpp:740] [LLF] Unlocked magic light limit
+[2026-11-18 06:16:13.396] [info] [99760] [DynamicCubemaps.cpp:177] Registered class MenuOpenCloseEventHandler
+[2026-11-18 06:16:13.396] [info] [99760] [TerrainHelper.cpp:12] [Terrain Helper] LandscapeDefault EDID texture set found
+[2026-11-18 06:16:13.396] [info] [99760] [InteriorSun.h:105] Registered class InteriorSun::MenuOpenCloseEventHandler
+[2026-11-18 06:16:13.396] [info] [99760] [TerrainVariation.cpp:127] TerrainVariation: Collected 116 landscape diffuse texture paths (116 file names) from 186 land texture records
+[2026-11-18 06:16:13.396] [info] [99760] [DevBenchBridge.cpp:1486] DevBenchBridge: devbench build 13200 present — registering CS tools
+[2026-11-18 06:16:13.396] [info] [99760] [EditorWindow.cpp:2249] [CSEditor] Registered MenuOpenCloseEventHandler
+[2026-11-18 06:16:13.433] [info] [99760] [SceneSettingsManager.h:149] [SceneSettings] Registered MenuOpenCloseEventHandler
+[2026-11-18 06:16:13.440] [info] [69696] [SceneSettingsSerialization.cpp:651] [SceneSettings] Weather section found with 271 entries
+[2026-11-18 06:16:13.441] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x101910~Skyrim.esm
+[2026-11-18 06:16:13.442] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10199F~Skyrim.esm
+[2026-11-18 06:16:13.443] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x104AB4~Skyrim.esm
+[2026-11-18 06:16:13.445] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x105831~ccbgssse067-daedinv.esm
+[2026-11-18 06:16:13.446] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x105941~Skyrim.esm
+[2026-11-18 06:16:13.447] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x105942~Skyrim.esm
+[2026-11-18 06:16:13.449] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x105943~Skyrim.esm
+[2026-11-18 06:16:13.450] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x105944~Skyrim.esm
+[2026-11-18 06:16:13.452] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x105945~Skyrim.esm
+[2026-11-18 06:16:13.453] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x105F40~Skyrim.esm
+[2026-11-18 06:16:13.454] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x106635~Skyrim.esm
+[2026-11-18 06:16:13.456] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A230~Skyrim.esm
+[2026-11-18 06:16:13.456] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A231~Skyrim.esm
+[2026-11-18 06:16:13.458] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A232~Skyrim.esm
+[2026-11-18 06:16:13.459] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A233~Skyrim.esm
+[2026-11-18 06:16:13.460] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A234~Skyrim.esm
+[2026-11-18 06:16:13.462] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A235~Skyrim.esm
+[2026-11-18 06:16:13.463] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A236~Skyrim.esm
+[2026-11-18 06:16:13.464] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A237~Skyrim.esm
+[2026-11-18 06:16:13.465] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A238~Skyrim.esm
+[2026-11-18 06:16:13.466] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A239~Skyrim.esm
+[2026-11-18 06:16:13.467] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A23A~Skyrim.esm
+[2026-11-18 06:16:13.469] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A23B~Skyrim.esm
+[2026-11-18 06:16:13.469] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A23C~Skyrim.esm
+[2026-11-18 06:16:13.470] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A23D~Skyrim.esm
+[2026-11-18 06:16:13.472] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A23E~Skyrim.esm
+[2026-11-18 06:16:13.473] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A23F~Skyrim.esm
+[2026-11-18 06:16:13.474] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A240~Skyrim.esm
+[2026-11-18 06:16:13.475] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A241~Skyrim.esm
+[2026-11-18 06:16:13.475] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A242~Skyrim.esm
+[2026-11-18 06:16:13.477] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A243~Skyrim.esm
+[2026-11-18 06:16:13.478] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A244~Skyrim.esm
+[2026-11-18 06:16:13.479] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A245~Skyrim.esm
+[2026-11-18 06:16:13.481] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A7A5~Skyrim.esm
+[2026-11-18 06:16:13.481] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10A7A6~Skyrim.esm
+[2026-11-18 06:16:13.483] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10A7A7~Skyrim.esm
+[2026-11-18 06:16:13.484] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10A7A8~Skyrim.esm
+[2026-11-18 06:16:13.485] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x10C32F~Skyrim.esm
+[2026-11-18 06:16:13.486] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10D9EC~Skyrim.esm
+[2026-11-18 06:16:13.487] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10DA13~Skyrim.esm
+[2026-11-18 06:16:13.489] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E0B~Dawnguard.esm
+[2026-11-18 06:16:13.490] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E0E~Dawnguard.esm
+[2026-11-18 06:16:13.491] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E0F~Dawnguard.esm
+[2026-11-18 06:16:13.493] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E10~Dawnguard.esm
+[2026-11-18 06:16:13.494] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1E3~Skyrim.esm
+[2026-11-18 06:16:13.495] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1E4~Skyrim.esm
+[2026-11-18 06:16:13.496] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1E5~Skyrim.esm
+[2026-11-18 06:16:13.498] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1E6~Skyrim.esm
+[2026-11-18 06:16:13.499] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1E7~Skyrim.esm
+[2026-11-18 06:16:13.500] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1E8~Skyrim.esm
+[2026-11-18 06:16:13.501] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1E9~Skyrim.esm
+[2026-11-18 06:16:13.504] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1EA~Skyrim.esm
+[2026-11-18 06:16:13.505] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1EB~Skyrim.esm
+[2026-11-18 06:16:13.507] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1EC~Skyrim.esm
+[2026-11-18 06:16:13.509] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1ED~Skyrim.esm
+[2026-11-18 06:16:13.510] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1EE~Skyrim.esm
+[2026-11-18 06:16:13.511] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1EF~Skyrim.esm
+[2026-11-18 06:16:13.513] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1F0~Skyrim.esm
+[2026-11-18 06:16:13.514] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E1F1~Skyrim.esm
+[2026-11-18 06:16:13.516] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x10E1F2~Skyrim.esm
+[2026-11-18 06:16:13.517] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10E3D4~Skyrim.esm
+[2026-11-18 06:16:13.519] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 54 weather entries for 0x10FE7E~Skyrim.esm
+[2026-11-18 06:16:13.520] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x10FEF8~Skyrim.esm
+[2026-11-18 06:16:13.522] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x12C4~unofficial skyrim special edition patch.esp
+[2026-11-18 06:16:13.523] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x12F89~Skyrim.esm
+[2026-11-18 06:16:13.524] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x1407~Dawnguard.esm
+[2026-11-18 06:16:13.525] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x14551~Dawnguard.esm
+[2026-11-18 06:16:13.526] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x15E~Skyrim.esm
+[2026-11-18 06:16:13.527] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x18471~Dragonborn.esm
+[2026-11-18 06:16:13.529] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x18DBB~Dawnguard.esm
+[2026-11-18 06:16:13.530] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x18DBC~Dawnguard.esm
+[2026-11-18 06:16:13.531] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x18DBD~Dawnguard.esm
+[2026-11-18 06:16:13.532] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x19599~Dawnguard.esm
+[2026-11-18 06:16:13.533] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x195A0~Dawnguard.esm
+[2026-11-18 06:16:13.534] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x1D760~Dragonborn.esm
+[2026-11-18 06:16:13.535] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x1DCB~Lux.esp
+[2026-11-18 06:16:13.537] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x1DCC~Lux.esp
+[2026-11-18 06:16:13.538] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x1DFF5~Dragonborn.esm
+[2026-11-18 06:16:13.539] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x23667~NAT-ENB.esp
+[2026-11-18 06:16:13.540] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0x2E7AB~Skyrim.esm
+[2026-11-18 06:16:13.541] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x31AC0~Dragonborn.esm
+[2026-11-18 06:16:13.542] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x32336~Dragonborn.esm
+[2026-11-18 06:16:13.544] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x3416F~ccbgssse067-daedinv.esm
+[2026-11-18 06:16:13.545] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x34CFB~Dragonborn.esm
+[2026-11-18 06:16:13.546] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x374B8~Dragonborn.esm
+[2026-11-18 06:16:13.547] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x374B9~Dragonborn.esm
+[2026-11-18 06:16:13.548] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x374BA~Dragonborn.esm
+[2026-11-18 06:16:13.550] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x3DF4~NAT-ENB.esp
+[2026-11-18 06:16:13.551] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x408447~Lux.esp
+[2026-11-18 06:16:13.552] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x48C14~Skyrim.esm
+[2026-11-18 06:16:13.555] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 60 weather entries for 0x49476~Lux.esp
+[2026-11-18 06:16:13.556] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x4D7FB~Skyrim.esm
+[2026-11-18 06:16:13.558] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x53B6~NAT-ENB.esp
+[2026-11-18 06:16:13.560] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x53BD~NAT-ENB.esp
+[2026-11-18 06:16:13.561] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x53BE~NAT-ENB.esp
+[2026-11-18 06:16:13.563] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x53C2~NAT-ENB.esp
+[2026-11-18 06:16:13.565] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x53C4~NAT-ENB.esp
+[2026-11-18 06:16:13.566] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x53C7~NAT-ENB.esp
+[2026-11-18 06:16:13.568] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x53D1~NAT-ENB.esp
+[2026-11-18 06:16:13.570] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x53D2~NAT-ENB.esp
+[2026-11-18 06:16:13.572] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0x5943~NAT-ENB.esp
+[2026-11-18 06:16:13.573] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x5ED7A~Skyrim.esm
+[2026-11-18 06:16:13.574] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x677F87~Lux.esp
+[2026-11-18 06:16:13.575] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x6AEC~Dawnguard.esm
+[2026-11-18 06:16:13.578] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 60 weather entries for 0x6B387~NAT-ENB.esp
+[2026-11-18 06:16:13.579] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x6E4B0B~Window Shadows Ultimate.esp
+[2026-11-18 06:16:13.580] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x6ED5A~Skyrim.esm
+[2026-11-18 06:16:13.581] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x6ED5B~Skyrim.esm
+[2026-11-18 06:16:13.583] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x7548F~Skyrim.esm
+[2026-11-18 06:16:13.584] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x75491~Skyrim.esm
+[2026-11-18 06:16:13.586] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x75DE5~Skyrim.esm
+[2026-11-18 06:16:13.587] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x777CF~Skyrim.esm
+[2026-11-18 06:16:13.588] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x7F00~NAT-ENB.esp
+[2026-11-18 06:16:13.589] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x800~WEC - Core.esp
+[2026-11-18 06:16:13.591] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x802~WEC - Core.esp
+[2026-11-18 06:16:13.592] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x811~WEC - Core.esp
+[2026-11-18 06:16:13.593] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x81A~Skyrim.esm
+[2026-11-18 06:16:13.594] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x8277A~Skyrim.esm
+[2026-11-18 06:16:13.595] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x8282A~Skyrim.esm
+[2026-11-18 06:16:13.597] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x8476~NAT-ENB.esp
+[2026-11-18 06:16:13.598] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x923FD~Skyrim.esm
+[2026-11-18 06:16:13.599] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x954~Helios.esp
+[2026-11-18 06:16:13.600] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0x959F~Dawnguard.esm
+[2026-11-18 06:16:13.600] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x95E~Helios.esp
+[2026-11-18 06:16:13.600] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x96A~Helios.esp
+[2026-11-18 06:16:13.601] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x997~Helios_NAT III.esp
+[2026-11-18 06:16:13.601] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x998~Helios_NAT III.esp
+[2026-11-18 06:16:13.601] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x999~Helios_NAT III.esp
+[2026-11-18 06:16:13.602] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x99A~Helios_NAT III.esp
+[2026-11-18 06:16:13.602] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x99B~Helios_NAT III.esp
+[2026-11-18 06:16:13.602] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x99C~Helios_NAT III.esp
+[2026-11-18 06:16:13.603] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0x99D714~Lux.esp
+[2026-11-18 06:16:13.604] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 3 weather entries for 0x99D~Helios_NAT III.esp
+[2026-11-18 06:16:13.604] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x99E~Helios_NAT III.esp
+[2026-11-18 06:16:13.604] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x99F~Helios_NAT III.esp
+[2026-11-18 06:16:13.604] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x9A8~Helios_NAT III.esp
+[2026-11-18 06:16:13.605] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x9A9~Helios_NAT III.esp
+[2026-11-18 06:16:13.605] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x9AA~Helios_NAT III.esp
+[2026-11-18 06:16:13.605] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0x9AB~Helios_NAT III.esp
+[2026-11-18 06:16:13.606] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 10 weather entries for 0x9B0~Helios_NAT III.esp
+[2026-11-18 06:16:13.606] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x9BA~Helios_NAT III.esp
+[2026-11-18 06:16:13.606] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x9BB~Helios_NAT III.esp
+[2026-11-18 06:16:13.606] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x9BC~Helios_NAT III.esp
+[2026-11-18 06:16:13.607] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x9BD~Helios_NAT III.esp
+[2026-11-18 06:16:13.607] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 10 weather entries for 0x9BE~Helios_NAT III.esp
+[2026-11-18 06:16:13.607] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0x9C6~Helios_NAT III.esp
+[2026-11-18 06:16:13.608] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0x9E3~Helios_NAT III.esp
+[2026-11-18 06:16:13.609] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xA6858~Skyrim.esm
+[2026-11-18 06:16:13.609] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA70~Helios.esp
+[2026-11-18 06:16:13.609] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA71~Helios.esp
+[2026-11-18 06:16:13.609] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 10 weather entries for 0xA72~Helios.esp
+[2026-11-18 06:16:13.610] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA73~Helios.esp
+[2026-11-18 06:16:13.610] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0xA74~Helios.esp
+[2026-11-18 06:16:13.610] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 3 weather entries for 0xA75~Helios.esp
+[2026-11-18 06:16:13.610] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA76~Helios.esp
+[2026-11-18 06:16:13.611] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA77~Helios.esp
+[2026-11-18 06:16:13.611] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0xA78~Helios.esp
+[2026-11-18 06:16:13.611] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA79~Helios.esp
+[2026-11-18 06:16:13.611] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA7A~Helios.esp
+[2026-11-18 06:16:13.612] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA7B~Helios.esp
+[2026-11-18 06:16:13.612] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA7C~Helios.esp
+[2026-11-18 06:16:13.612] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA7D~Helios.esp
+[2026-11-18 06:16:13.612] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA7E~Helios.esp
+[2026-11-18 06:16:13.613] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0xA7F~Helios.esp
+[2026-11-18 06:16:13.613] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA80~Helios.esp
+[2026-11-18 06:16:13.613] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA81~Helios.esp
+[2026-11-18 06:16:13.613] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA82~Helios.esp
+[2026-11-18 06:16:13.613] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 3 weather entries for 0xA83~Helios.esp
+[2026-11-18 06:16:13.614] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0xA84~Helios.esp
+[2026-11-18 06:16:13.614] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA85~Helios.esp
+[2026-11-18 06:16:13.614] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA86~Helios.esp
+[2026-11-18 06:16:13.614] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA87~Helios.esp
+[2026-11-18 06:16:13.614] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 3 weather entries for 0xA88~Helios.esp
+[2026-11-18 06:16:13.615] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0xA89~Helios.esp
+[2026-11-18 06:16:13.615] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA8A~Helios.esp
+[2026-11-18 06:16:13.615] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA8B~Helios.esp
+[2026-11-18 06:16:13.615] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA8C~Helios.esp
+[2026-11-18 06:16:13.616] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA8D~Helios.esp
+[2026-11-18 06:16:13.616] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 8 weather entries for 0xA8E~Helios.esp
+[2026-11-18 06:16:13.616] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA8F~Helios.esp
+[2026-11-18 06:16:13.616] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA90~Helios.esp
+[2026-11-18 06:16:13.617] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA91~Helios.esp
+[2026-11-18 06:16:13.617] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA92~Helios.esp
+[2026-11-18 06:16:13.617] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA93~Helios.esp
+[2026-11-18 06:16:13.617] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA94~Helios.esp
+[2026-11-18 06:16:13.618] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA95~Helios.esp
+[2026-11-18 06:16:13.618] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA96~Helios.esp
+[2026-11-18 06:16:13.618] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA97~Helios.esp
+[2026-11-18 06:16:13.618] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA98~Helios.esp
+[2026-11-18 06:16:13.618] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA99~Helios.esp
+[2026-11-18 06:16:13.619] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA9A~Helios.esp
+[2026-11-18 06:16:13.619] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA9B~Helios.esp
+[2026-11-18 06:16:13.619] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA9C~Helios.esp
+[2026-11-18 06:16:13.619] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA9D~Helios.esp
+[2026-11-18 06:16:13.620] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xA9E~Helios.esp
+[2026-11-18 06:16:13.620] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xA9F~Helios.esp
+[2026-11-18 06:16:13.620] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA0~Helios.esp
+[2026-11-18 06:16:13.620] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 9 weather entries for 0xAA1~Helios.esp
+[2026-11-18 06:16:13.621] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA2~Helios.esp
+[2026-11-18 06:16:13.621] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA3~Helios.esp
+[2026-11-18 06:16:13.621] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA4~Helios.esp
+[2026-11-18 06:16:13.621] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA6~Helios.esp
+[2026-11-18 06:16:13.621] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA7~Helios.esp
+[2026-11-18 06:16:13.622] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xAA8~Helios.esp
+[2026-11-18 06:16:13.623] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xAEE84~Skyrim.esm
+[2026-11-18 06:16:13.624] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xB02DEF~Window Shadows Ultimate.esp
+[2026-11-18 06:16:13.626] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xB02DF0~Window Shadows Ultimate.esp
+[2026-11-18 06:16:13.627] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB85~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.628] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB87~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.629] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB8B~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.630] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB8C~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.632] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB8D~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.633] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB8E~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.634] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB8F~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.635] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB90~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.636] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB91~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.637] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB92~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.639] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB93~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.640] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB94~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.641] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xB95~A Clear Map of Skyrim.esp
+[2026-11-18 06:16:13.642] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xC821E~Skyrim.esm
+[2026-11-18 06:16:13.643] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0xC821F~Skyrim.esm
+[2026-11-18 06:16:13.644] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0xC8220~Skyrim.esm
+[2026-11-18 06:16:13.645] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xC8221~Skyrim.esm
+[2026-11-18 06:16:13.647] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 48 weather entries for 0xD299E~Skyrim.esm
+[2026-11-18 06:16:13.648] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0xD4886~Skyrim.esm
+[2026-11-18 06:16:13.649] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xD64B0~NAT-ENB.esp
+[2026-11-18 06:16:13.650] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 18 weather entries for 0xD64B1~NAT-ENB.esp
+[2026-11-18 06:16:13.651] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xD64B2~NAT-ENB.esp
+[2026-11-18 06:16:13.652] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xD64B3~NAT-ENB.esp
+[2026-11-18 06:16:13.653] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xD64B4~NAT-ENB.esp
+[2026-11-18 06:16:13.655] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xD64D3~NAT-ENB.esp
+[2026-11-18 06:16:13.656] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xD64D4~NAT-ENB.esp
+[2026-11-18 06:16:13.658] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 60 weather entries for 0xD64D5~NAT-ENB.esp
+[2026-11-18 06:16:13.660] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xD64D6~NAT-ENB.esp
+[2026-11-18 06:16:13.661] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xD7971B~Lux.esp
+[2026-11-18 06:16:13.662] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xD9329~Skyrim.esm
+[2026-11-18 06:16:13.663] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xD9CE69~Lux.esp
+[2026-11-18 06:16:13.664] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xDA5~WEC - Core.esp
+[2026-11-18 06:16:13.666] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xDA6~WEC - Core.esp
+[2026-11-18 06:16:13.667] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xDA7~WEC - Core.esp
+[2026-11-18 06:16:13.668] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xDA8~WEC - Core.esp
+[2026-11-18 06:16:13.669] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xECC96~Skyrim.esm
+[2026-11-18 06:16:13.669] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEE6~Helios.esp
+[2026-11-18 06:16:13.670] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEE9~Helios.esp
+[2026-11-18 06:16:13.670] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEEB~Helios.esp
+[2026-11-18 06:16:13.670] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEEC~Helios.esp
+[2026-11-18 06:16:13.670] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEED~Helios.esp
+[2026-11-18 06:16:13.670] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xEEE~Helios.esp
+[2026-11-18 06:16:13.671] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEEF~Helios.esp
+[2026-11-18 06:16:13.671] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF0~Helios.esp
+[2026-11-18 06:16:13.671] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xEF1~Helios.esp
+[2026-11-18 06:16:13.671] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xEF2~Helios.esp
+[2026-11-18 06:16:13.672] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF3~Helios.esp
+[2026-11-18 06:16:13.672] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 3 weather entries for 0xEF4~Helios.esp
+[2026-11-18 06:16:13.672] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF5~Helios.esp
+[2026-11-18 06:16:13.672] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF6~Helios.esp
+[2026-11-18 06:16:13.672] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF7~Helios.esp
+[2026-11-18 06:16:13.673] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF8~Helios.esp
+[2026-11-18 06:16:13.673] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEF9~Helios.esp
+[2026-11-18 06:16:13.673] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEFA~Helios.esp
+[2026-11-18 06:16:13.673] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEFB~Helios.esp
+[2026-11-18 06:16:13.674] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEFC~Helios.esp
+[2026-11-18 06:16:13.674] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEFD~Helios.esp
+[2026-11-18 06:16:13.674] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xEFE~Helios.esp
+[2026-11-18 06:16:13.674] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 6 weather entries for 0xF18~Helios.esp
+[2026-11-18 06:16:13.674] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 5 weather entries for 0xF2A~Helios.esp
+[2026-11-18 06:16:13.675] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 3 weather entries for 0xF32~Helios.esp
+[2026-11-18 06:16:13.676] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 36 weather entries for 0xF89C~Dawnguard.esm
+[2026-11-18 06:16:13.677] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xF89D~Dawnguard.esm
+[2026-11-18 06:16:13.678] [info] [69696] [SceneSettingsSerialization.cpp:697] [SceneSettings] Loaded 30 weather entries for 0xFABBDB~Lux.esp
+[2026-11-18 06:16:13.678] [info] [69696] [SceneSettingsSerialization.cpp:701] [SceneSettings] Loaded weather user settings
+[2026-11-18 06:16:13.698] [warning] [99760] [WaterCache.cpp:200] [Unified Water] [Cache] WorldSpace has no EditorID - skipping
+[2026-11-18 06:16:13.706] [info] [99760] [WaterCache.cpp:256] [Unified Water] [Cache] Caches loaded in 189 ms
+[2026-11-18 06:16:13.706] [info] [99760] [UnifiedWater.cpp:313] [Unified Water] Registered MenuOpenCloseEventHandler
+[2026-11-18 06:16:13.710] [info] [99760] [SnowCover.cpp:1184] [Snow Cover] Survival Mode region conditions now read ground snow
+[2026-11-18 06:16:13.710] [info] [99760] [FootstepParticles.cpp:506] [FootstepParticles] Registered footstep event sink
+[2026-11-18 06:16:13.710] [info] [99760] [Modifiers.cpp:99] [CameraFX] Recognised 32 themed imagespace modifiers
+[2026-11-18 06:16:13.710] [info] [99760] [NightEye.cpp:468] [NightEye] Resolved 2 listed Night Eye magic effects and 3 imagespace modifiers
+[2026-11-18 06:16:13.714] [info] [99760] [NightEye.cpp:712] [NightEye] Read 21 eyeshine mask entries
+[2026-11-18 06:16:13.714] [info] [99760] [SnowDeformation.cpp:3070] [SnowDeformation] Firm roads: 17 of 17 GrassControl.ini landscape textures resolved
+[2026-11-18 06:16:13.714] [info] [99760] [SystemMenuHook.cpp:144] NativeMenu: System menu hooks installed
+[2026-11-18 06:16:14.747] [info] [93356] [ShaderDDC.cpp:438] [DDC] 18090 entries (996.2 MiB), evicted 0 (0.0 MiB)
+[2026-11-18 06:16:45.803] [info] [69696] [ReverseZ.cpp:683] ReverseZ: camera 0x25a82c2fe40 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:45.803] [info] [69696] [ReverseZ.cpp:683] ReverseZ: camera 0x25a82c2fc80 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:175] ReverseZ: before z axis m[*][2] (row-vector)
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: before projMat[0] = 0.812137 0.000000 0.000000 0.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: before projMat[1] = 0.000000 1.940104 0.000000 0.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: before projMat[2] = -0.000000 -0.000000 1.000042 1.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: before projMat[3] = 0.000000 0.000000 -15.000636 0.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:528] ReverseZ: matrix near/far = 15.000/353467.562, CameraData near/far = 15.000/353840.000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:175] ReverseZ: after z axis m[*][2] (row-vector)
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: after projMat[0] = 0.812137 0.000000 0.000000 0.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: after projMat[1] = 0.000000 1.940104 0.000000 0.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: after projMat[2] = -0.000000 -0.000000 -0.000042 1.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:179] ReverseZ: after projMat[3] = 0.000000 0.000000 15.000636 0.000000
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:251] ReverseZ: near plane override 6.00 (engine default 15.00)
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x2533ed06e80 (world root) publishes reversed projection with depth target -1
+[2026-11-18 06:16:53.338] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b3335db40 publishes standard projection with depth target 4
+[2026-11-18 06:16:53.342] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96aebc80 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:53.342] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96aeae80 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:53.342] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96aebac0 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:53.342] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b394597c0 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:53.342] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b39459600 publishes orthographic projection with depth target 4
+[2026-11-18 06:16:53.343] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x2533ed06e80 (world root) publishes reversed projection with depth target 4
+[2026-11-18 06:16:53.343] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x2533ed06e80 (world root) publishes reversed projection with depth target 0 (float)
+[2026-11-18 06:16:53.353] [info] [97276] [CSEditor.cpp:76] [CSEditor] Detected widget settings in 'C:\modlists\NGVO 8.0 Beta\Stock Game\Data\SKSE\Plugins\CommunityShaders\Weathers'
+[2026-11-18 06:16:53.449] [info] [97276] [WeatherWidget.cpp:457] Weather DefaultWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.467] [info] [97276] [WeatherWidget.cpp:457] Weather Helios_DefaultWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.480] [info] [97276] [WeatherWidget.cpp:457] Weather arnimaDUPLICATE003MapWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.480] [info] [97276] [WeatherWidget.cpp:457] Weather BSHeartlandMapWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.481] [info] [97276] [WeatherWidget.cpp:457] Weather FalskaarMapWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.481] [info] [97276] [WeatherWidget.cpp:457] Weather MidwoodIsleMapWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.482] [info] [97276] [WeatherWidget.cpp:457] Weather WyrmstoothWorldMapWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.483] [info] [97276] [WeatherWidget.cpp:457] Weather VominheimMapWeather: Loaded settings - 13 weather properties, 1 colors, 8 fog properties
+[2026-11-18 06:16:53.524] [info] [97276] [FurShells.cpp:183] [Fur Shells] textures\pbr\actors\elk\elkbody.dds uses textures\actors\elk\elkbody_shell.dds
+[2026-11-18 06:16:53.533] [info] [97276] [NRDReblurIntegration.cpp:96] NRDReblurIntegration: initialized 2304x960
+[2026-11-18 06:16:53.535] [info] [97276] [NRDReblurIntegration.cpp:96] NRDReblurIntegration: initialized 2304x960
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:650] ReverseZ: reversing an uploaded standard projection (near 1.000) for a reversed pass
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:593] ReverseZ: reversing a non-world camera published for depth target 0
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:175] ReverseZ: published before z axis m[*][2] (row-vector)
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:179] ReverseZ: published before projMat[0] = 0.837209 0.000000 0.000000 0.000000
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:179] ReverseZ: published before projMat[1] = 0.000000 2.000000 0.000000 0.000000
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:179] ReverseZ: published before projMat[2] = -0.000000 -0.000000 1.000100 1.000000
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:179] ReverseZ: published before projMat[3] = 0.000000 0.000000 -1.000100 0.000000
+[2026-11-18 06:16:53.542] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x259ace7f580 publishes reversed projection with depth target 0 (float)
+[2026-11-18 06:16:56.420] [info] [97276] [LookGrade.cpp:189] [LookGrade] wrote 294 weathers to LookWeathers.json
+[2026-11-18 06:16:56.421] [info] [97276] [LookGrade.cpp:201] [LookGrade] wrote 47 location types
+[2026-11-18 06:16:56.834] [info] [97276] [FurShells.cpp:183] [Fur Shells] textures\actors\rabbit\rabbitblackwhite.dds uses textures\actors\rabbit\rabbitblackwhite_shell.dds
+[2026-11-18 06:17:23.287] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96b23740 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:23.287] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96b23580 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:24.243] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b32dfa600 publishes standard projection with depth target 6
+[2026-11-18 06:17:24.253] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x2533ed06e80 (world root) publishes reversed projection with depth target 6
+[2026-11-18 06:17:24.319] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad97c0 publishes orthographic projection with depth target 3
+[2026-11-18 06:17:24.319] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad9600 publishes orthographic projection with depth target 3
+[2026-11-18 06:17:24.319] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad97c0 publishes orthographic projection with depth target 2
+[2026-11-18 06:17:24.320] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad9600 publishes orthographic projection with depth target 2
+[2026-11-18 06:17:24.322] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad9b40 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:24.322] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad9980 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:24.322] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b96ad9ec0 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:24.322] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b3945a5c0 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:24.322] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25b3945a780 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:24.331] [info] [97276] [TerrainShadows.cpp:443] Creating shadow texture...
+[2026-11-18 06:17:24.992] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25a825050c0 publishes orthographic projection with depth target -1
+[2026-11-18 06:17:24.992] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25a825050c0 publishes orthographic projection with depth target 10
+[2026-11-18 06:17:24.992] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x2533ed06e80 (world root) publishes reversed projection with depth target 10
+[2026-11-18 06:17:29.464] [info] [34628] [EditorWindow.cpp:2058] Weather locked: SunnyTU
+[2026-11-18 06:17:29.529] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25bb3d3f900 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:29.529] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25bb3d3e400 publishes orthographic projection with depth target 4
+[2026-11-18 06:17:30.544] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 307 built (+307, 0 of them rebuilds, 386.4 ms, worst frame 29.1 ms), 0 reused (+0), 58320 waits (+58320), 307 shapes, 307 shared, 90 blocks
+[2026-11-18 06:17:37.550] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 425 built (+118, 0 of them rebuilds, 209.1 ms, worst frame 5.2 ms), 0 reused (+0), 69064 waits (+10744), 425 shapes, 425 shared, 90 blocks
+[2026-11-18 06:17:42.429] [info] [97276] [UnifiedPresetCatalog.cpp:537] [Presets] Discovered 1 pack(s); active='e11:fnenb Cabbage'
+[2026-11-18 06:17:42.447] [info] [97276] [Menu.cpp:1742] Vanity camera disabled while CS UI is open (saved delay: 200)
+[2026-11-18 06:17:44.228] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 667 built (+242, 2 of them rebuilds, 323.6 ms, worst frame 3.4 ms), 0 reused (+0), 97208 waits (+28144), 454 shapes, 454 shared, 131 blocks
+[2026-11-18 06:17:46.517] [info] [97276] [Runtime.cpp:346] [DLSSNR] Runtime nvngx_dlssnr.dll version=310.9.16 appId=0x0E658703 api=0x13
+[2026-11-18 06:17:46.517] [info] [97276] [Runtime.cpp:354] [DLSSNR] GetFeatureRequirements export present
+[2026-11-18 06:17:46.622] [info] [97276] [DevBenchBridge.cpp:332] DevBenchBridge: feature(set, NeuralRendering) applied
+[2026-11-18 06:17:46.669] [info] [97276] [D3D12Interop.cpp:62] [DLSSNR] D3D12 interop initialized commandContexts=3 cpuFenceWait=backpressure-only
+[2026-11-18 06:17:46.672] [info] [97276] [Runtime.cpp:346] [DLSSNR] Runtime nvngx_dlssnr.dll version=310.9.16 appId=0x0E658703 api=0x13
+[2026-11-18 06:17:46.672] [info] [97276] [Runtime.cpp:354] [DLSSNR] GetFeatureRequirements export present
+[2026-11-18 06:17:46.786] [info] [40032] [Runtime.cpp:116] [DLSSNR] Runtime nvngx_dlssnr.dll sha256=2bc19bc09a7b89dd44f73e2ac0108fcc586e2154bdd0830f242f4f040e28789f
+[2026-11-18 06:17:47.813] [info] [97276] [Runtime.cpp:470] [DLSSNR] NGX core D3D12 initialized featurePath=C:\modlists\NGVO 8.0 Beta\Stock Game\Data\Shaders\Upscaling\Streamline
+[2026-11-18 06:17:47.813] [info] [97276] [Runtime.cpp:511] [DLSSNR] DLSSNR snippet D3D12 initialized sdk=0x15 proxyHits=1
+[2026-11-18 06:17:47.817] [info] [97276] [Runtime.cpp:405] [DLSSNR] Feature 18 requirements: support=0x0 minArchitecture=0x1B0 minOS=10.0.0
+[2026-11-18 06:17:47.818] [info] [97276] [Backend.cpp:359] [NeuralRendering] Runtime initialized version=310.9.16 appId=0x0E658703 api=0x13
+[2026-11-18 06:17:47.825] [info] [97276] [Backend.cpp:448] [NeuralRendering] Shared resources allocated model=3440x1440 (active 3440x1440) depth=2293x960 motion=2293x960
+[2026-11-18 06:18:04.081] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_nrcheck-on1_2026-11-18_06-18-03_682.png
+[2026-11-18 06:18:05.232] [info] [97276] [DevBenchBridge.cpp:332] DevBenchBridge: feature(set, NeuralRendering) applied
+[2026-11-18 06:18:22.689] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_nrcheck-off_2026-11-18_06-18-22_327.png
+[2026-11-18 06:18:23.793] [info] [97276] [DevBenchBridge.cpp:332] DevBenchBridge: feature(set, NeuralRendering) applied
+[2026-11-18 06:18:23.805] [info] [97276] [Backend.cpp:448] [NeuralRendering] Shared resources allocated model=3440x1440 (active 3440x1440) depth=2293x960 motion=2293x960
+[2026-11-18 06:18:41.266] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_nrcheck-on2_2026-11-18_06-18-40_876.png
+[2026-11-18 06:18:42.366] [info] [97276] [DevBenchBridge.cpp:332] DevBenchBridge: feature(set, NeuralRendering) applied
+[2026-11-18 06:18:44.243] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 776 built (+109, 0 of them rebuilds, 121.7 ms, worst frame 3.2 ms), 0 reused (+0), 115492 waits (+18284), 188 shapes, 188 shared, 49 blocks
+[2026-11-18 06:18:50.847] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 966 built (+190, 0 of them rebuilds, 285.5 ms, worst frame 3.4 ms), 0 reused (+0), 129158 waits (+13666), 378 shapes, 378 shared, 66 blocks
+[2026-11-18 06:18:50.884] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-0_2026-11-18_06-18-50_536.png
+[2026-11-18 06:18:56.370] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-45_2026-11-18_06-18-55_988.png
+[2026-11-18 06:18:56.969] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1067 built (+101, 0 of them rebuilds, 138.9 ms, worst frame 3.6 ms), 0 reused (+0), 134836 waits (+5678), 474 shapes, 474 shared, 78 blocks
+[2026-11-18 06:19:01.860] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-90_2026-11-18_06-19-01_462.png
+[2026-11-18 06:19:03.119] [info] [97276] [Backend.cpp:448] [NeuralRendering] Shared resources allocated model=3440x1440 (active 3440x1440) depth=2293x960 motion=2293x960
+[2026-11-18 06:19:03.765] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1085 built (+18, 1 of them rebuilds, 34.2 ms, worst frame 2.7 ms), 0 reused (+0), 135076 waits (+240), 427 shapes, 427 shared, 77 blocks
+[2026-11-18 06:19:07.407] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-135_2026-11-18_06-19-06_988.png
+[2026-11-18 06:19:07.613] [info] [97276] [Menu.cpp:1746] Vanity camera restored (delay: 200)
+[2026-11-18 06:19:11.835] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1152 built (+67, 0 of them rebuilds, 84.4 ms, worst frame 3.0 ms), 0 reused (+0), 138224 waits (+3148), 436 shapes, 436 shared, 79 blocks
+[2026-11-18 06:19:12.893] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-180_2026-11-18_06-19-12_507.png
+[2026-11-18 06:19:18.340] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-225_2026-11-18_06-19-17_978.png
+[2026-11-18 06:19:21.482] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1463 built (+311, 0 of them rebuilds, 418.1 ms, worst frame 4.6 ms), 0 reused (+0), 170002 waits (+31778), 523 shapes, 523 shared, 123 blocks
+[2026-11-18 06:19:23.823] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-270_2026-11-18_06-19-23_429.png
+[2026-11-18 06:19:29.268] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-700-315_2026-11-18_06-19-28_879.png
+[2026-11-18 06:19:30.764] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1539 built (+76, 2 of them rebuilds, 62.4 ms, worst frame 3.4 ms), 0 reused (+0), 174903 waits (+4901), 549 shapes, 549 shared, 119 blocks
+[2026-11-18 06:19:34.729] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-0_2026-11-18_06-19-34_349.png
+[2026-11-18 06:19:39.941] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1754 built (+215, 0 of them rebuilds, 297.0 ms, worst frame 3.2 ms), 0 reused (+0), 191306 waits (+16403), 606 shapes, 606 shared, 125 blocks
+[2026-11-18 06:19:40.189] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-45_2026-11-18_06-19-39_805.png
+[2026-11-18 06:19:45.663] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-90_2026-11-18_06-19-45_279.png
+[2026-11-18 06:19:48.430] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1871 built (+117, 0 of them rebuilds, 162.8 ms, worst frame 3.2 ms), 0 reused (+0), 198292 waits (+6986), 415 shapes, 415 shared, 123 blocks
+[2026-11-18 06:19:51.138] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-135_2026-11-18_06-19-50_736.png
+[2026-11-18 06:19:56.654] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-180_2026-11-18_06-19-56_265.png
+[2026-11-18 06:19:56.992] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 1952 built (+81, 0 of them rebuilds, 107.5 ms, worst frame 3.2 ms), 0 reused (+0), 201564 waits (+3272), 438 shapes, 438 shared, 79 blocks
+[2026-11-18 06:20:02.124] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-225_2026-11-18_06-20-01_744.png
+[2026-11-18 06:20:05.940] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 2264 built (+312, 1 of them rebuilds, 371.4 ms, worst frame 3.2 ms), 0 reused (+0), 233254 waits (+31690), 524 shapes, 524 shared, 123 blocks
+[2026-11-18 06:20:07.594] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-270_2026-11-18_06-20-07_206.png
+[2026-11-18 06:20:13.078] [info] [75436] [ScreenshotFeature.cpp:1066] Saved screenshot to C:\modlists\NGVO 8.0 Beta\Stock Game\Screenshots\CS_plains-2000-315_2026-11-18_06-20-12_688.png
+[2026-11-18 06:20:14.135] [info] [97276] [ReverseZ.cpp:683] ReverseZ: camera 0x25a6835bac0 publishes orthographic projection with depth target 4
+[2026-11-18 06:20:14.984] [info] [97276] [TreeShapes.cpp:727] [TreeWind] bend weights: 2313 built (+49, 1 of them rebuilds, 51.7 ms, worst frame 3.1 ms), 0 reused (+0), 235012 waits (+1758), 524 shapes, 524 shared, 98 blocks

@@ -1,0 +1,112 @@
+    300     408   1     15549 NGVO - DynDOLOD Output/Meshes/landscape/grass/aegopodiumbouquetdrj.nif
+    152     236   1      9153 NGVO - DynDOLOD Output/Meshes/landscape/grass/aegopodiumdrj_sn.nif
+     50      68   1      3167 NGVO - DynDOLOD Output/Meshes/landscape/grass/aegopodiumflowerdrj.nif
+    129     198   1      7779 NGVO - DynDOLOD Output/Meshes/landscape/grass/alliariadrj.nif
+    129     198   1      7781 NGVO - DynDOLOD Output/Meshes/landscape/grass/alliariadrj_p.nif
+    129     198   1      7784 NGVO - DynDOLOD Output/Meshes/landscape/grass/alliariadrj_tall.nif
+     25      55   1      2586 NGVO - DynDOLOD Output/Meshes/landscape/grass/alpinebluegrassdrj.nif
+     35      65   1      3055 NGVO - DynDOLOD Output/Meshes/landscape/grass/alpinebluegrassdrj_sn.nif
+     25      55   1      2588 NGVO - DynDOLOD Output/Meshes/landscape/grass/alpinebluegrassdrj_y.nif
+     38      37   1      2129 NGVO - DynDOLOD Output/Meshes/landscape/grass/alpineweeddrj_y.nif
+    122     174   1      7025 NGVO - DynDOLOD Output/Meshes/landscape/grass/arnicabouquet02drj.nif
+     22      31   1      1833 NGVO - DynDOLOD Output/Meshes/landscape/grass/arnicadrj.nif
+     16      32   1      1839 NGVO - DynDOLOD Output/Meshes/landscape/grass/beachgrassobj01.nif
+     14      28   1      1699 NGVO - DynDOLOD Output/Meshes/landscape/grass/beachgrassobj02.nif
+    124     170   1      6859 NGVO - DynDOLOD Output/Meshes/landscape/grass/bilberrydrj_d.nif
+    124     170   1      6860 NGVO - DynDOLOD Output/Meshes/landscape/grass/bilberrydrj_sn.nif
+     25      36   1      1828 NGVO - DynDOLOD Output/Meshes/landscape/grass/buttercupdrj.nif
+     80     134   1      5486 NGVO - DynDOLOD Output/Meshes/landscape/grass/clovers3d_dmed.nif
+     80     134   1      5449 NGVO - DynDOLOD Output/Meshes/landscape/grass/clovers3d_med_d.nif
+     80     134   1      5486 NGVO - DynDOLOD Output/Meshes/landscape/grass/clovers3d_pmed.nif
+    162     256   1      9874 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj10_sg.nif
+    162     256   1      9851 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11.nif
+    162     256   1      9873 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_d.nif
+    162     256   1      9878 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_d_tall.nif
+    162     256   1      9874 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_og.nif
+    162     256   1      9879 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_og_tall.nif
+    162     256   1      9873 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_r.nif
+    162     256   1      9874 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_sg.nif
+    162     256   1      9879 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_sn_tall.nif
+    162     256   1      9876 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_tall.nif
+    162     256   1      9873 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_y.nif
+    162     256   1      9874 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_yg.nif
+    162     256   1      9879 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_yg_tall.nif
+    162     256   1      9878 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj11_y_tall.nif
+     21      30   1      1773 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj15.nif
+     65      92   1      4021 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrassdrj16.nif
+    137     197   1      7807 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrasssndrj10.nif
+    161     255   1      9827 NGVO - DynDOLOD Output/Meshes/landscape/grass/complexgrasssndrj11.nif
+    180     228   1      9065 NGVO - DynDOLOD Output/Meshes/landscape/grass/dandelion03puffdrj.nif
+     59     118   1      4809 NGVO - DynDOLOD Output/Meshes/landscape/grass/deadpinedrj03.nif
+     35      64   1      2937 NGVO - DynDOLOD Output/Meshes/landscape/grass/deadpinedrj04.nif
+     26      52   1      2591 NGVO - DynDOLOD Output/Meshes/landscape/grass/fallforestgrassobj01.nif
+     91      93   1      4200 NGVO - DynDOLOD Output/Meshes/landscape/grass/fernbrackendrj.nif
+     91      93   1      4202 NGVO - DynDOLOD Output/Meshes/landscape/grass/fernbrackendrj_d.nif
+      9      15   1      1241 NGVO - DynDOLOD Output/Meshes/landscape/grass/ferngrass01.nif
+     12      18   1      1395 NGVO - DynDOLOD Output/Meshes/landscape/grass/fieldgrass01.nif
+     12      18   1      1416 NGVO - DynDOLOD Output/Meshes/landscape/grass/fieldgrassflowers02.nif
+    612     882   1     32577 NGVO - DynDOLOD Output/Meshes/landscape/grass/greentreedrj21.nif
+    612     882   1     32579 NGVO - DynDOLOD Output/Meshes/landscape/grass/greentreedrj21_d.nif
+    612     882   1     32579 NGVO - DynDOLOD Output/Meshes/landscape/grass/greentreedrj21_o.nif
+    612     882   1     32579 NGVO - DynDOLOD Output/Meshes/landscape/grass/greentreedrj21_r.nif
+    612     882   1     32580 NGVO - DynDOLOD Output/Meshes/landscape/grass/greentreedrj21_sn.nif
+    612     882   1     32579 NGVO - DynDOLOD Output/Meshes/landscape/grass/greentreedrj21_y.nif
+     60      85   1      3763 NGVO - DynDOLOD Output/Meshes/landscape/grass/linumlewisiidrj.nif
+     60      85   1      3765 NGVO - DynDOLOD Output/Meshes/landscape/grass/linumlewisiidrj_b.nif
+     60      85   1      3765 NGVO - DynDOLOD Output/Meshes/landscape/grass/linumlewisiidrj_p.nif
+     60      85   1      3765 NGVO - DynDOLOD Output/Meshes/landscape/grass/linumlewisiidrj_r.nif
+     49      87   1      3797 NGVO - DynDOLOD Output/Meshes/landscape/grass/marshgrassobj01.nif
+    404     622   1     22999 NGVO - DynDOLOD Output/Meshes/landscape/grass/nettledrj.nif
+    404     622   1     23001 NGVO - DynDOLOD Output/Meshes/landscape/grass/nettledrj_d.nif
+    404     622   1     23002 NGVO - DynDOLOD Output/Meshes/landscape/grass/nettledrj_sn.nif
+    404     622   1     23001 NGVO - DynDOLOD Output/Meshes/landscape/grass/nettledrj_y.nif
+    670     770   1     29333 NGVO - DynDOLOD Output/Meshes/landscape/grass/nettlehpdrj.nif
+     84     114   1      4831 NGVO - DynDOLOD Output/Meshes/landscape/grass/oxeyedaisydrj.nif
+     84     114   1      4833 NGVO - DynDOLOD Output/Meshes/landscape/grass/oxeyedaisydrj_d.nif
+     73     106   1      4502 NGVO - DynDOLOD Output/Meshes/landscape/grass/paris02drj_d.nif
+    396     366   1     14777 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj01.nif
+    396     366   1     14779 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj01_r.nif
+    396     366   1     14780 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj01_sn.nif
+    342     318   1     12917 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj02.nif
+    342     318   1     12919 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj02_d.nif
+    342     318   1     12919 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj02_y.nif
+    216     196   1      8257 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj03.nif
+    216     196   1      8259 NGVO - DynDOLOD Output/Meshes/landscape/grass/raspberryvinedrj03_d.nif
+     21      33   1      1938 NGVO - DynDOLOD Output/Meshes/landscape/grass/reachgrassobj01.nif
+    342     570   1     20993 NGVO - DynDOLOD Output/Meshes/landscape/grass/rockymountaingrassdrj05_d.nif
+     87     165   1      6477 NGVO - DynDOLOD Output/Meshes/landscape/grass/scabiosadrj.nif
+    112     163   1      6638 NGVO - DynDOLOD Output/Meshes/landscape/grass/sierranevadeberrydrj.nif
+    112     163   1      6640 NGVO - DynDOLOD Output/Meshes/landscape/grass/sierranevadeberrydrj_y.nif
+      6      12   1      1164 NGVO - DynDOLOD Output/Meshes/landscape/grass/snowgrass01.nif
+      6      12   1      1164 NGVO - DynDOLOD Output/Meshes/landscape/grass/snowgrass02.nif
+    864     936   1     35822 NGVO - DynDOLOD Output/Meshes/landscape/grass/sorbusshrubdrj_p.nif
+    864     936   1     35823 NGVO - DynDOLOD Output/Meshes/landscape/grass/sorbusshrubdrj_sn.nif
+    340     280   1     11677 NGVO - DynDOLOD Output/Meshes/landscape/grass/swordferndrj.nif
+    196     219   1      8952 NGVO - DynDOLOD Output/Meshes/landscape/grass/thalictrumfendleridrj.nif
+    196     219   1      8954 NGVO - DynDOLOD Output/Meshes/landscape/grass/thalictrumfendleridrj_d.nif
+    185     248   1      9725 NGVO - DynDOLOD Output/Meshes/landscape/grass/tundragrass01.nif
+    257     282   1     11257 NGVO - DynDOLOD Output/Meshes/landscape/grass/tundragrassobj03.nif
+     62      80   1      3617 NGVO - DynDOLOD Output/Meshes/landscape/grass/tundragrassobj04.nif
+     62      80   1      3619 NGVO - DynDOLOD Output/Meshes/landscape/grass/tundragrassobj04_p.nif
+    338     391   1     15253 NGVO - DynDOLOD Output/Meshes/landscape/grass/veratrumdrj.nif
+    338     391   1     15257 NGVO - DynDOLOD Output/Meshes/landscape/grass/veratrumdrj_d.nif
+    264     354   1     13603 NGVO - DynDOLOD Output/Meshes/landscape/grass/volcanicgrassobj01.nif
+    285     330   1     12981 NGVO - DynDOLOD Output/Meshes/landscape/grass/volcanicgrassobj02.nif
+    120     180   1      7197 NGVO - DynDOLOD Output/Meshes/landscape/grass/volcanicgrassobj02_big_d.nif
+     78     120   1      4981 NGVO - DynDOLOD Output/Meshes/landscape/grass/wolfsbanedrj.nif
+     78     120   1      4983 NGVO - DynDOLOD Output/Meshes/landscape/grass/wolfsbanedrj_d.nif
+     78     120   1      4984 NGVO - DynDOLOD Output/Meshes/landscape/grass/wolfsbanedrj_sn.nif
+    137     197   1      7769 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10.nif
+    137     197   1      7769 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10_b.nif
+    137     197   1      7771 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10_D.nif
+    137     197   1      7769 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10_L.nif
+    137     197   1      7769 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10_M.nif
+    137     197   1      7769 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10_XL.nif
+    137     197   1      7769 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ10_XXL.nif
+    162     256   1      9822 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ11.nif
+    161     255   1      9788 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ11_D.nif
+     21      30   1      1744 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ15.nif
+     65      92   1      3992 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ16.nif
+     42      63   1      2930 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/ComplexGrassDrJ16_D.nif
+    207     232   1      9321 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/tundragrassobj03.nif
+     62      80   1      3581 Cathedral - 3D Landscapes and Grass Library/meshes/landscape/grass/tundragrassobj04.nif

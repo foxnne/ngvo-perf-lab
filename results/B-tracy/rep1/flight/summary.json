@@ -1,0 +1,38 @@
+{
+ "label": "B-tracy",
+ "rep": 1,
+ "scenario": "flight",
+ "config": "5b309780b6",
+ "time": "2026-11-17 12:31:41",
+ "render": {
+  "frames": 3028,
+  "mean": 33.08,
+  "fps": 30.2,
+  "p50": 32.48,
+  "p95": 36.07,
+  "p99": 44.77,
+  "max": 249.8,
+  "over50": 23,
+  "over100": 5,
+  "over250": 0,
+  "stall_ms": 898
+ },
+ "main_cpu_ms": 29.76,
+ "fg_share": 1.0,
+ "distance": 35653,
+ "cells": 8,
+ "vram": {
+  "proc_max": 11806,
+  "proc_min": 9746,
+  "new_top": [
+   1257,
+   988,
+   665,
+   650
+  ],
+  "geom_live_max": 3163
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

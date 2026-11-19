@@ -1,0 +1,6 @@
+[23:58:13.787] [info] FasterTextures 1.0.2.0
+[23:58:13.787] [info] [stream] measuring texture loads on 1.6.1170.0
+[23:58:14.174] [info] [stream] indexed 88 archives, 0 repacked, 110898 compressed entries, in 385 ms
+[23:58:14.304] [info] [stream] small mips cache in C:\modlists\NGVO 8.0 Beta\Stock Game\FasterTextures Cache: 8421 textures, 2466 MiB
+[23:58:14.606] [info] [stream] read the paths of 232 archives (0 without), 360367 entries, 68772 excluded, 10580 more armor and clothing, in 302 ms
+[23:58:17.569] [info] [menu] Faster Textures page added to SKSE Menu Framework's menu

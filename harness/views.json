@@ -1,0 +1,109 @@
+{
+ "ilinalta_west": {
+  "note": "Reference view chosen by the user 2026-11-18: Lake Ilinalta looking west at the mountains (clouds, far tree LOD, water).",
+  "cell": "GuardianStones",
+  "player": {
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 612.0,
+   "rx": 0.0,
+   "rz": 270.0
+  },
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 1100.0,
+   "pitch": -3.0,
+   "yaw": 252.0,
+   "fov": 65.0
+  },
+  "sample": "results/viewfinder_west/ilinalta_up1100_yaw252.png"
+ },
+ "plains_west": {
+  "note": "Reference view chosen by the user 2026-11-18: Whiterun tundra looking west to the mountain range (clouds, distant LOD).",
+  "cell": "WhiterunExterior04",
+  "player": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3612.0,
+   "rx": 0.0,
+   "rz": 160.0
+  },
+  "settle_seconds": 12,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 700.0,
+   "pitch": -3.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png"
+ },
+ "ilinalta_shore": {
+  "note": "Low camera on the Guardian Stones shore looking west: the low sun sits behind the far trees (sun rays, glare, water glint).",
+  "cell": "GuardianStones",
+  "player": {
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 612.0,
+   "rx": 0.0,
+   "rz": 270.0
+  },
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 150.0,
+   "pitch": -4.0,
+   "yaw": 262.0,
+   "fov": 65.0
+  }
+ },
+ "plains_throat": {
+  "note": "Whiterun tundra looking south-east to the Throat of the World (cloud cap / weather map check), added 2026-11-18 (raised to 2600 after the 700 version faced a wall); tilted up 14 deg (negative pitch = up) and widened to 85 so the summit and sky are in frame",
+  "cell": "WhiterunExterior04",
+  "player": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3612.0,
+   "rx": 0.0,
+   "rz": 160.0
+  },
+  "settle_seconds": 12,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 2600.0,
+   "pitch": -14.0,
+   "yaw": 135.0,
+   "fov": 85.0
+  }
+ },
+ "ilinalta_sky": {
+  "note": "Ilinalta looking up 35 degrees at the high cloud layer (added 2026-11-18)",
+  "cell": "GuardianStones",
+  "player": {
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 612.0,
+   "rx": 0.0,
+   "rz": 270.0
+  },
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 1100.0,
+   "pitch": -35.0,
+   "yaw": 252.0,
+   "fov": 80.0
+  }
+ }
+}

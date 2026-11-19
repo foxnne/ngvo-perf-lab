@@ -1,0 +1,38 @@
+{
+ "label": "D-base",
+ "rep": 2,
+ "scenario": "flight",
+ "config": "2a947494b8",
+ "time": "2026-11-17 15:54:44",
+ "render": {
+  "frames": 3925,
+  "mean": 25.51,
+  "fps": 39.2,
+  "p50": 25.23,
+  "p95": 28.64,
+  "p99": 31.9,
+  "max": 94.3,
+  "over50": 8,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.46,
+ "fg_share": 1.0,
+ "distance": 34838,
+ "cells": 8,
+ "vram": {
+  "proc_max": 12698,
+  "proc_min": 10063,
+  "new_top": [
+   888,
+   802,
+   782,
+   753
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

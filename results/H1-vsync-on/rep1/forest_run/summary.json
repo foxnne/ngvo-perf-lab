@@ -1,0 +1,29 @@
+{
+ "label": "H1-vsync-on",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "409cc22ad2",
+ "time": "2026-11-18 00:03:58",
+ "render": {
+  "frames": 2688,
+  "mean": 21.64,
+  "fps": 46.2,
+  "p50": 20.28,
+  "p95": 28.8,
+  "p99": 33.21,
+  "max": 169.6,
+  "over50": 9,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 170
+ },
+ "main_cpu_ms": 19.67,
+ "fg_share": 1.0,
+ "distance": 16208,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1460
+}

@@ -1,0 +1,10 @@
+[15:20:09] Hitch Hunter and Fixes 1.2.0 - hitch report, game 1.6.1170. Frames that take 50 ms or longer are listed with where the time went; a summary follows every 1 minute. Loading screens are not counted as hitches; their duration is listed separately.
+[15:22:54] Graphics add-ons found: DLSS, Community Shaders
+[15:22:54] Hitch 164 ms - mostly SKSE plugin task. World 0.0 ms, GPU 0.9 ms, game/HUD/other 163.2 ms. Video memory 2.7 of 14.9 GB (18%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 98%, BattleSummaries.dll (its own code) 1%; 57 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (161.5 ms)
+[15:22:59] Hitch 327 ms - mostly SKSE plugin task. World 0.0 ms, GPU 3.1 ms, game/HUD/other 323.5 ms. Video memory 2.7 of 14.9 GB (18%).
+  Main thread was in: !ApocryphaMenuFramework.dll (inside Windows) 99%; 122 samples from the slow part of the frame
+  SKSE plugin task: !ApocryphaMenuFramework.dll (162.3 ms)
+  SKSE plugin task: !ApocryphaMenuFramework.dll (159.6 ms)
+[15:23:16] Loading screen: 6.8 s (Dead Man's Drink). The game read 2.3 GB of files (354 MB/s on average, up to 740 MB/s). Loading work: reading files 16%, the game itself 30%, opening and finding files 33%, graphics driver 3%, PGLite.dll 7%.

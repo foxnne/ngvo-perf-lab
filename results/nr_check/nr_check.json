@@ -1,0 +1,96 @@
+{
+ "settings": {
+  "alternateFrames": false,
+  "automaticMask": true,
+  "bandRadius": 8.0,
+  "broadLuminosity": 1.0,
+  "colorStrength": 1.0,
+  "debugCategoryView": false,
+  "depthAwareResolve": false,
+  "detailLuminosity": 1.0,
+  "enabled": false,
+  "equipmentStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 1.0,
+   "detailLuminosity": 1.0,
+   "hueGuard": false,
+   "transferStrength": 1.0
+  },
+  "everythingElseStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 1.0,
+   "detailLuminosity": 1.0,
+   "hueGuard": false,
+   "transferStrength": 1.0
+  },
+  "eyesStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 1.0,
+   "detailLuminosity": 1.0,
+   "hueGuard": false,
+   "transferStrength": 1.0
+  },
+  "foliageStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 1.0,
+   "detailLuminosity": 1.0,
+   "hueGuard": false,
+   "transferStrength": 1.0
+  },
+  "hairStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 1.0,
+   "detailLuminosity": 1.0,
+   "hueGuard": true,
+   "transferStrength": 1.0
+  },
+  "intensity": 1.0,
+  "landscapeStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 1.0,
+   "detailLuminosity": 1.0,
+   "hueGuard": false,
+   "transferStrength": 1.0
+  },
+  "localStructureStrength": 1.0,
+  "localToneStrength": 1.0,
+  "maxRatio": 2.0,
+  "placement": 3,
+  "preset": 0,
+  "proxyCurve": 0,
+  "ratioGuardEnabled": false,
+  "rawModelOutput": false,
+  "resolutionMode": 0,
+  "resolutionScale": 1.0,
+  "resolutionScaleX": 1.0,
+  "resolutionScaleY": 1.0,
+  "showAdvanced": false,
+  "skinStrengths": {
+   "broadLuminosity": 1.0,
+   "colorStrength": 0.6000000238418579,
+   "detailLuminosity": 1.0,
+   "hueGuard": false,
+   "transferStrength": 1.0
+  },
+  "skinStructureStrength": -1.0,
+  "style": 0,
+  "transferStrength": 1.0,
+  "userPreset": ""
+ },
+ "steps": [
+  {
+   "state": "on1",
+   "frame_ms": 29.79
+  },
+  {
+   "state": "off",
+   "frame_ms": 24.5
+  },
+  {
+   "state": "on2",
+   "frame_ms": 29.87
+  }
+ ],
+ "diff_on_vs_off": 0.03616,
+ "diff_on_vs_on": 0.04839
+}

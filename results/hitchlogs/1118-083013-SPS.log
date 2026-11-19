@@ -1,0 +1,80 @@
+[08:30:13.134] [6476 ] [I] SPS v1-0-73-0
+[08:30:13.134] [6476 ] [I] SPS 1.0.73 loaded
+[08:30:13.135] [6476 ] [I] Skyrim base address 0x7FF628070000 (for tools/resolve_rva.py)
+[08:30:13.135] [6476 ] [I] SPS_User.ini (menu settings) loaded
+[08:30:13.135] [6476 ] [I] Occlusion: hiding ON | reproject on | pause from 2.0 deg / 64 units | margin 2.0 % + 16 | hidden in 2 images in a row | max 4096 tiles | characters never
+[08:30:13.135] [6476 ] [I] ShadowStableCascade (with far shadow cache): sun step 0.05 deg | extent step 64 x1.00 | margin 48 | depth step 64
+[08:30:13.135] [6476 ] [I] ShadowInstancing: OFF | verify mode false (offset 0) | techniques C046,C045 | two-sided false | debug mode 0
+[08:30:13.135] [6476 ] [I] ActorShadowCulling: ON | from distance 3500 | point lights true
+[08:30:13.135] [6476 ] [I] ActorPartShadowCulling: ON | radius < 8 | from distance 500
+[08:30:13.135] [6476 ] [I] LightGatherThrottle: ON | movement >= 8 | radius +-16 | at the latest after 500 ms
+[08:30:13.135] [6476 ] [I] SubtreePruning: ON | sun true | point light false | rain/sky true
+[08:30:13.135] [6476 ] [I] TextureStream: ON | report false | safety factor 2.0 | min. 1024 px | budget 0.40 ms | clothing/armor true | bodies/faces/hair true | excluded: interface\,\maps\,mapmarker,\lod\,terrain\,fonts\,book,\sky\,effects\,cubemaps\
+[08:30:13.135] [6476 ] [I] LightShadowCache: ON
+[08:30:13.135] [6476 ] [I] FarShadowCache (optional): OFF | trees still from 2000
+[08:30:13.135] [6476 ] [I] ShadowCulling: ON | from cascade 1 | distance > 1500 | radius < 150 | radius/distance < 0.035 | skinned excluded: true | only above sun elevation 10 deg
+[08:30:13.135] [6476 ] [I] PointLightShadowCulling: ON | distance > 1000 | radius < 150 | radius/distance < 0.035 | skinned excluded: true
+[08:30:13.135] [6476 ] [I] SkylightingCulling: ON | min. radius 128
+[08:30:13.135] [6476 ] [I] DecalCulling: ON | from distance 1500 | radius < 32
+[08:30:13.135] [6476 ] [I] MainViewCulling: OFF | distance > 3000 | radius < 100 | radius/distance < 0.0020 | skinned excluded: true
+[08:30:13.135] [6476 ] [I] DepthPrepassCulling: OFF | distance > 1500 | radius < 200 | radius/distance < 0.025 | skinned excluded: true
+[08:30:13.136] [6476 ] [I] Hook installed: VirtualMachine::Update (vfunc 0x4)
+[08:30:13.136] [6476 ] [I] Hook installed: VirtualMachine::UpdateTasklets (vfunc 0x5)
+[08:30:13.136] [6476 ] [I] Hook installed: VirtualMachine::SetOverstressed (vfunc 0x6)
+[08:30:13.136] [6476 ] [I] Hook installed: PlayerCharacter::Update (vfunc 0xAD)
+[08:30:13.136] [6476 ] [I] Hook installed: Character::Update (vfunc 0xAD)
+[08:30:13.136] [6476 ] [I] Hook installed: BSCullingProcess::AppendVirtual (vfunc 0x18)
+[08:30:13.136] [6476 ] [I] Hook installed: BSParabolicCullingProcess::AppendVirtual (vfunc 0x18)
+[08:30:13.136] [6476 ] [I] Hook installed: Process (vfunc 0x16) for BSCullingProcess, BSParabolicCullingProcess, BSGeometryListCullingProcess
+[08:30:13.136] [6476 ] [I] Hooks installed: BSShadowDirectionalLight::Accumulate (0x9) / Render (0xA)
+[08:30:13.136] [6476 ] [I] Hooks installed: BSShadowParabolicLight / BSShadowFrustumLight::Render (0xA) - GPU timing
+[08:30:13.136] [6476 ] [I] Shadow instancing off at startup - RenderBatches detour not installed
+[08:30:13.136] [6476 ] [I] Feature not used on this game version (by design): Shadow instancing - off at startup (restart after enabling)
+[08:30:13.136] [6476 ] [I] Hook installed: BSUtilityShader::SetupGeometry (vfunc 0x6)
+[08:30:13.136] [6476 ] [I] Hooks installed: RenderPassImmediately call sites 1 and 2
+[08:30:13.136] [6476 ] [I] LightGather: hook on light assignment of dynamic point lights installed
+[08:30:13.136] [6476 ] [I] Hook installed: shadow map draw (ID 107604+0x167) - shadow cache for static lights
+[08:30:13.142] [6476 ] [I] TextureStream: 2545 remembered texture sizes loaded
+[08:30:13.142] [6476 ] [I] Hook installed: DDS loader (Detour) - load reduced; only textures straight from DDS files are streamed
+[08:30:17.263] [6476 ] [I] WaitProbe: off (developer option bEngineProbes)
+[08:32:38.976] [61908] [I] Event sinks registered
+[08:32:38.976] [61908] [I] Hook installed: IDXGISwapChain::Present (vfunc 8) - wait time
+[08:32:38.976] [61908] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses (vfunc 0x2A, after Community Shaders)
+[08:32:38.976] [61908] [I] Hook installed: BSLightingShaderProperty::GetRenderPasses_Occlusion (vfunc 0x2D, after Community Shaders)
+[08:32:38.976] [61908] [I] Hook installed: Main::RenderWorld call site - hide occluded objects at draw time
+[08:32:38.976] [61908] [I] Hook installed: Main::Begin call site - occlusion pyramid starts before the main view is collected
+[08:32:38.976] [61908] [I] Hook installed: Main::RenderDepth (Detours)
+[08:32:38.976] [61908] [W] [LightShadowCache] Bottled Shaders is installed - shadow cache for static lights is off (interior shadows flickered with it; allow in the menu or with bAllowWithBottledShaders)
+[08:32:38.976] [61908] [W] [Occlusion] Bottled Shaders HiZ Occlusion Culling is active - SPS Hide occluded objects stays off (allow in the menu or with bAllowWithBottledHiZ)
+[08:32:38.976] [61908] [I] [Occlusion] Faster Objects (SkyrimPrecombines.dll) is loaded - its Hi-Z culling pauses while SPS Hide occluded objects is on, its precombines stay
+[08:32:38.976] [61908] [I] Hotkey registered: key 0xC9 toggles all optimizations on/off (0 = none, master switch only in the menu)
+[08:32:38.976] [61908] [I] Game language: ENGLISH -> menu English
+[08:32:38.976] [61908] [I] Menu registered in SKSE Menu Framework (version 3.8)
+[08:32:38.976] [61908] [I] Hook installed: BSShaderResourceManager::CreateTexture (vtable 0xD0, previously 0x7FFDA4F79430) - remember texture for DDS loader
+[08:32:40.681] [6476 ] [I] [TextureStream] Reset (main menu):0 held textures and pass released, 0 jobs discarded
+[08:32:44.280] [6476 ] [I] [TextureStream] Reset (loading save game):0 held textures and pass released, 0 jobs discarded
+[08:33:00.281] [6476 ] [I] [TextureStream] Reset (loading save game):0 held textures and pass released, 0 jobs discarded
+[08:33:00.310] [6476 ] [I] [TextureStream] Reset (loading screen):0 held textures and pass released, 0 jobs discarded
+[08:33:07.089] [6476 ] [I] [Load] loading screen 6.8 s | textures loaded 930 (of these reduced 187) | texture streaming on | SPS on
+[08:33:11.232] [6476 ] [I] [Hitch] 192 ms | SPS this frame: downscaled 0 (0 MB), reloaded 18 (53 MB), released 0 (0 MB), 0.4 ms | frame before: downscaled 0 (0 MB), reloaded 183 (301 MB), released 74 (19 MB), 0.4 ms | VRAM 50 %, paged out 407 MB | times per area only with analysis logging (Debug page)
+[08:33:11.362] [6476 ] [I] [Hitch] 130 ms | SPS this frame: nothing (0.4 ms) | frame before: downscaled 0 (0 MB), reloaded 18 (53 MB), released 0 (0 MB), 0.4 ms | VRAM 50 %, paged out 407 MB | times per area only with analysis logging (Debug page)
+[08:33:11.362] [6476 ] [I] [TextureStream] cannot be downscaled: textures\actors\character\bretonmale\malehead_msn.dds (file 4096x4096 13 mips, in game 4096x4096 13 mips)
+[08:33:11.362] [6476 ] [I] [TextureStream] cannot be downscaled: textures\actors\character\male\malehead.dds (file 4096x4096 13 mips, in game 4096x4096 13 mips)
+[08:33:11.496] [6476 ] [I] [Hitch] 133 ms | SPS this frame: downscaled 0 (0 MB), reloaded 76 (97 MB), released 109 (26 MB), 0.6 ms, pass evaluated | frame before: nothing (0.4 ms) | VRAM 51 %, paged out 407 MB | times per area only with analysis logging (Debug page)
+[08:33:11.660] [6476 ] [I] [Hitch] 165 ms | SPS this frame: downscaled 0 (0 MB), reloaded 43 (49 MB), released 0 (0 MB), 0.1 ms | frame before: downscaled 0 (0 MB), reloaded 76 (97 MB), released 109 (26 MB), 0.6 ms, pass evaluated | VRAM 51 %, paged out 407 MB | times per area only with analysis logging (Debug page)
+[08:33:12.066] [6476 ] [I] Main view detection: by world camera
+[08:33:15.645] [6476 ] [I] [Hitch] 382 ms | SPS this frame: nothing (0.0 ms) | frame before: nothing (0.0 ms) | VRAM 53 %, paged out 500 MB | times per area only with analysis logging (Debug page)
+[08:33:16.032] [49084] [I] [TextureStream] Reset (loading screen):28 held textures and pass released, 0 jobs discarded
+[08:33:35.076] [49084] [I] [Load] loading screen 19.0 s | textures loaded 2075 (of these reduced 515) | texture streaming on | SPS on
+[08:33:37.208] [6476 ] [I] [Hitch] 119 ms | SPS this frame: downscaled 0 (0 MB), reloaded 43 (56 MB), released 0 (0 MB), 0.4 ms | frame before: downscaled 0 (0 MB), reloaded 48 (49 MB), released 0 (0 MB), 0.4 ms | VRAM 90 %, paged out 578 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[08:33:37.565] [6476 ] [I] [TextureStream] cannot be downscaled: textures\actors\character\hg_mow\head\head\maleheaddetail_rough01_msn.dds (file 2048x2048 12 mips, in game 2048x2048 12 mips)
+[08:33:39.145] [6476 ] [I] [Hitch] 369 ms | SPS this frame: downscaled 0 (0 MB), reloaded 66 (66 MB), released 160 (36 MB), 0.4 ms | frame before: downscaled 0 (0 MB), reloaded 16 (12 MB), released 0 (0 MB), 0.0 ms | VRAM 91 %, paged out 500 MB | times per area only with analysis logging (Debug page)
+[08:33:45.442] [6476 ] [I] [Hitch] 186 ms | SPS this frame: nothing (0.4 ms) | frame before: nothing (0.4 ms) | VRAM 84 %, paged out 501 MB | times per area only with analysis logging (Debug page)
+[08:38:08.587] [6476 ] [I] ---- 759 Frames | 36.6 FPS | Frame avg 27.35 ms, p99 88.76 ms, max 382.05 ms | NPC updates/frame 17.2 | VM overstressed 15 | cell loads 27 | hitches >= 100 ms: 8
+[08:38:08.588] [6476 ] [I] [TextureStream] VRAM 12.6/14.9 GB (85 %, paged out 509 MB) | downscaled 707 textures, 2517 MB saved (by max. size 2048: 2, 32 MB) | last minute: downscaled 87 (skipped 0), reloaded 1547 (2345 MB), ping-pong 0, refilled 0, loaded reduced 789, from RAM 6, load errors 0, recognized after reset 1489
+[08:38:08.737] [54484] [I] [TextureStream] Reset (loading screen):1621 held textures and pass released, 0 jobs discarded
+[08:38:22.391] [54484] [I] [Load] loading screen 13.7 s | textures loaded 1641 (of these reduced 511) | texture streaming on | SPS on
+[08:38:24.751] [6476 ] [I] [Hitch] 118 ms | SPS this frame: downscaled 0 (0 MB), reloaded 57 (88 MB), released 0 (0 MB), 0.5 ms | frame before: nothing (0.4 ms) | VRAM 99 %, paged out 497 MB | menu opened/closed | times per area only with analysis logging (Debug page)
+[08:38:25.927] [6476 ] [I] [Hitch] 135 ms | SPS this frame: downscaled 0 (0 MB), reloaded 7 (6 MB), released 0 (0 MB), 0.0 ms | frame before: downscaled 0 (0 MB), reloaded 8 (10 MB), released 5 (2 MB), 0.0 ms | VRAM 93 %, paged out 555 MB | times per area only with analysis logging (Debug page)
+[08:42:55.490] [6476 ] [I] ---- 619 Frames | 38.0 FPS | Frame avg 26.31 ms, p99 44.40 ms, max 134.63 ms | NPC updates/frame 18.0 | VM overstressed 0 | cell loads 26 | hitches >= 100 ms: 2
+[08:42:55.490] [6476 ] [I] [TextureStream] VRAM 11.1/14.9 GB (75 %, paged out 495 MB) | downscaled 707 textures, 2903 MB saved (by max. size 2048: 1, 16 MB) | last minute: downscaled 94 (skipped 0), reloaded 949 (1479 MB), ping-pong 0, refilled 0, loaded reduced 534, from RAM 39, load errors 0, recognized after reset 1060

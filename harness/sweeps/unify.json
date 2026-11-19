@@ -1,0 +1,226 @@
+[
+ {
+  "name": "00_current",
+  "set": {},
+  "features": {},
+  "settle": 14
+ },
+ {
+  "name": "01_haze_grid_jitter_mid32",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "02_sun_not_dimmed_twice",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "03_fog_sun_attenuation_off",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "04_vanilla_clouds_and_cubemap_shadow_off",
+  "set": {
+   "enableVanillaClouds": false
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "05_haze_type_continental",
+  "set": {
+   "enableVanillaClouds": false,
+   "aerosolType": 1
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "06_ambient_from_sky",
+  "set": {
+   "enableVanillaClouds": false,
+   "aerosolType": 1
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.5
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "07_cloud_shadow_range_16",
+  "set": {
+   "enableVanillaClouds": false,
+   "aerosolType": 1,
+   "shadowVolumeRange": 16.0
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.5
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "08_game_shafts_off",
+  "set": {
+   "enableVanillaClouds": false,
+   "aerosolType": 1,
+   "shadowVolumeRange": 16.0
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.5
+   },
+   "VolumetricLighting": {
+    "ExteriorEnabled": false
+   }
+  },
+  "settle": 14
+ },
+ {
+  "name": "09_air_scatter_x2",
+  "set": {
+   "enableVanillaClouds": false,
+   "aerosolType": 1,
+   "shadowVolumeRange": 16.0,
+   "rayleighScatter": [
+    13.21,
+    24.69,
+    58.83
+   ],
+   "rayleighScatterAP1": [
+    13.87,
+    24.04,
+    57.82
+   ]
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "sampleJitter": 1.0,
+    "middlePixelSize": 32
+   },
+   "SkySync": {
+    "HorizonFadeElevation": 1.5,
+    "MinShadowElevation": 3.5
+   },
+   "ExponentialHeightFog": {
+    "sunlightAttenuationAmount": 0.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.0
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.5
+   },
+   "VolumetricLighting": {
+    "ExteriorEnabled": false
+   }
+  },
+  "settle": 14
+ }
+]

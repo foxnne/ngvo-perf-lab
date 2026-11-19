@@ -1,0 +1,38 @@
+{
+ "label": "E-newmods",
+ "rep": 1,
+ "scenario": "spin",
+ "config": "04889fd9a1",
+ "time": "2026-11-17 17:52:41",
+ "render": {
+  "frames": 1803,
+  "mean": 22.23,
+  "fps": 45.0,
+  "p50": 21.98,
+  "p95": 24.99,
+  "p99": 26.5,
+  "max": 172.0,
+  "over50": 1,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 172
+ },
+ "main_cpu_ms": 20.23,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "vram": {
+  "proc_max": 11177,
+  "proc_min": 9815,
+  "new_top": [
+   134,
+   28,
+   22,
+   18
+  ],
+  "geom_live_max": 0
+ },
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}
