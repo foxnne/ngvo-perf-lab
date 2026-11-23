@@ -1,0 +1,63 @@
+[
+ {
+  "name": "0_as_now",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "1_ground_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "2_ground_fog_on_drift_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "NoiseStrength": 0.0,
+    "BankStrength": 0.0,
+    "WindDriftSpeed": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "3_screen_space_lighting_off",
+  "set": {},
+  "features": {
+   "ScreenSpaceGI": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "4_neural_rendering_off",
+  "set": {},
+  "features": {
+   "NeuralRendering": {
+    "enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "5_as_now_again",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 25
+ }
+]

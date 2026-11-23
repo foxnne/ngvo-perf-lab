@@ -16,4 +16,6 @@ if p.returncode: sys.exit('deploy failed')
 dst = 'C:/Modlists/NGVO 8.0 Beta/mods/foxnne - Cloud Weather Map/textures/PhysicalSky/LocalNdf/tamriel-mist-separate'; os.makedirs(dst, exist_ok=True)
 for f in ('Height.dds', 'Modeling.dds'): shutil.copy2('C:/Users/foxnn/dev/cloud-weather-map/out/tamriel-mist-separate/' + f, dst)
 print('asset staged', flush=True)
-p = subprocess.run([sys.executable, 'first_launch.py'], cwd=HERE, capture_output=True, text=True); print(p.stdout[-1500:], p.stderr[-500:], flush=True)
+env = dict(os.environ, NGVO_MENU_WAIT='2400')        # the first launch after a build recompiles every shader before the main menu appears
+p = subprocess.run([sys.executable, 'first_launch.py'], cwd=HERE, capture_output=True, text=True, env=env); print(p.stdout[-1500:], p.stderr[-500:], flush=True)
+if p.returncode: sys.exit('first launch after the build failed')

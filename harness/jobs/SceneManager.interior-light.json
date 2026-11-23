@@ -1,0 +1,33 @@
+{
+ "interiorOnly": [
+  {
+   "feature": "LinearLighting",
+   "originalValue": 1.0,
+   "path": [],
+   "paused": false,
+   "setting": "ambientMult",
+   "value": 0.3
+  },
+  {
+   "feature": "LinearLighting",
+   "originalValue": 1.0,
+   "path": [],
+   "paused": false,
+   "setting": "directionalLightMult",
+   "value": 0.5
+  },
+  {
+   "feature": "ImageBasedLighting",
+   "originalValue": 1.0,
+   "path": [],
+   "paused": false,
+   "setting": "EnvIBLScale",
+   "value": 0.4
+  }
+ ],
+ "location": {
+  "locationTypes": {}
+ },
+ "timeOfDay": [],
+ "weather": {}
+}

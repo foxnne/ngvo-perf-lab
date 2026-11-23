@@ -1,0 +1,791 @@
+[
+ {
+  "name": "0_neutral_now",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_tonemap_A",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_tonemap_A_lookgrade_v1",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.04,
+      "Tint": 0.0,
+      "Saturation": 1.06,
+      "Vibrance": 0.18,
+      "Contrast": 1.06,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_A_v1_ibl_colour",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.04,
+      "Tint": 0.0,
+      "Saturation": 1.06,
+      "Vibrance": 0.18,
+      "Contrast": 1.06,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "SkyIBLSaturation": 0.8,
+    "EnvIBLSaturation": 0.9
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "4_tonemap_neutral_v1_soft",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.04,
+      "Tint": 0.0,
+      "Saturation": 1.0,
+      "Vibrance": 0.1,
+      "Contrast": 1.03,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       1.0,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "SkyIBLSaturation": 0.8,
+    "EnvIBLSaturation": 0.9
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "5_A_v1_ibl_warm",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.08,
+      "Tint": 0.0,
+      "Saturation": 1.06,
+      "Vibrance": 0.18,
+      "Contrast": 1.06,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "SkyIBLSaturation": 0.8,
+    "EnvIBLSaturation": 0.9
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "7_A_v1_ibl_fnenb30",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\fnenb30_lin128.dds"
+     }
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.04,
+      "Tint": 0.0,
+      "Saturation": 1.06,
+      "Vibrance": 0.18,
+      "Contrast": 1.06,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "SkyIBLSaturation": 0.8,
+    "EnvIBLSaturation": 0.9
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "8_A_v1_ibl_fnenb45",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\fnenb45_lin128.dds"
+     }
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.04,
+      "Tint": 0.0,
+      "Saturation": 1.06,
+      "Vibrance": 0.18,
+      "Contrast": 1.06,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "SkyIBLSaturation": 0.8,
+    "EnvIBLSaturation": 0.9
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "9_A_v1_ibl_fnenb60",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\fnenb60_lin128.dds"
+     }
+    },
+    "Look Grade": {
+     "enabled": true,
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.03,
+      "Midtones": 1.0,
+      "ShadowsLift": 0.0,
+      "Warmth": 0.04,
+      "Tint": 0.0,
+      "Saturation": 1.06,
+      "Vibrance": 0.18,
+      "Contrast": 1.06,
+      "ContrastPivot": 0.4,
+      "BlackPoint": 0.012,
+      "WhitePoint": 1.0,
+      "ShadowHue": 215.0,
+      "ShadowAmount": 0.012,
+      "HighlightHue": 38.0,
+      "HighlightAmount": 0.012,
+      "ShoulderStrength": 0.45,
+      "ShoulderStart": 0.72,
+      "BandRed": [
+       0.0,
+       0.05,
+       0.0
+      ],
+      "BandOrange": [
+       0.0,
+       0.18,
+       0.04
+      ],
+      "BandYellow": [
+       -0.05,
+       0.08,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.0,
+       -0.03
+      ],
+      "BandAqua": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandBlue": [
+       0.0,
+       0.1,
+       -0.03
+      ],
+      "BandPurple": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "BandMagenta": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "SkyIBLSaturation": 0.8,
+    "EnvIBLSaturation": 0.9
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ }
+]

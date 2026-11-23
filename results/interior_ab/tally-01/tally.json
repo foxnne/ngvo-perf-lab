@@ -1,0 +1,170 @@
+{
+ "dragonsreach": {
+  "a_as_is": {
+   "tally": {
+    "droppedFaded": 17,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 16388,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 6,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 107,
+    "seen": 124,
+    "shadowLights": 9,
+    "spots": 2
+   },
+   "stats": {
+    "mean": 0.168,
+    "p1": 0.061,
+    "p50": 0.112,
+    "p99": 0.634,
+    "clip%": 0.03,
+    "sat": 0.481
+   }
+  },
+  "b_keep_shadowless_spots": {
+   "tally": {
+    "droppedFaded": 17,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 16631,
+    "keepShadowlessSpots": true,
+    "keptLocalShadow": 6,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 107,
+    "seen": 124,
+    "shadowLights": 9,
+    "spots": 2
+   },
+   "stats": {
+    "mean": 0.168,
+    "p1": 0.061,
+    "p50": 0.112,
+    "p99": 0.633,
+    "clip%": 0.02,
+    "sat": 0.482
+   }
+  }
+ },
+ "bleakfalls": {
+  "a_as_is": {
+   "tally": {
+    "droppedFaded": 9,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 2,
+    "droppedShadowlessSpots": 2,
+    "frame": 18124,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 2,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 219,
+    "seen": 230,
+    "shadowLights": 5,
+    "spots": 4
+   },
+   "stats": {
+    "mean": 0.134,
+    "p1": 0.033,
+    "p50": 0.087,
+    "p99": 0.479,
+    "clip%": 0.0,
+    "sat": 0.293
+   }
+  },
+  "b_keep_shadowless_spots": {
+   "tally": {
+    "droppedFaded": 9,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 18381,
+    "keepShadowlessSpots": true,
+    "keptLocalShadow": 2,
+    "keptShadowMask": 0,
+    "keptShadowless": 2,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 221,
+    "seen": 230,
+    "shadowLights": 5,
+    "spots": 4
+   },
+   "stats": {
+    "mean": 0.134,
+    "p1": 0.033,
+    "p50": 0.086,
+    "p99": 0.479,
+    "clip%": 0.0,
+    "sat": 0.292
+   }
+  }
+ },
+ "inn": {
+  "a_as_is": {
+   "tally": {
+    "droppedFaded": 1,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 20046,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 5,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 80,
+    "seen": 81,
+    "shadowLights": 5,
+    "spots": 3
+   },
+   "stats": {
+    "mean": 0.16,
+    "p1": 0.057,
+    "p50": 0.137,
+    "p99": 0.305,
+    "clip%": 0.0,
+    "sat": 0.245
+   }
+  },
+  "b_keep_shadowless_spots": {
+   "tally": {
+    "droppedFaded": 1,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 20326,
+    "keepShadowlessSpots": true,
+    "keptLocalShadow": 5,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 80,
+    "seen": 81,
+    "shadowLights": 5,
+    "spots": 3
+   },
+   "stats": {
+    "mean": 0.16,
+    "p1": 0.057,
+    "p50": 0.138,
+    "p99": 0.305,
+    "clip%": 0.0,
+    "sat": 0.245
+   }
+  }
+ }
+}

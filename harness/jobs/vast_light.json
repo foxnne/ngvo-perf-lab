@@ -1,0 +1,1 @@
+{"PhysicalSky": {"sunlightColor": [20.0, 19.4, 19.0]}, "ScreenSpaceGI": {"FallbackSkyBoost": 0.0}, "Skylighting": {"MinDiffuseVisibility": 0.1}, "ImageBasedLighting": {"SkyIBLScale": 1.0, "DALCAmount": 0.25}}

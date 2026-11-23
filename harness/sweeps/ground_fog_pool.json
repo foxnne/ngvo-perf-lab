@@ -1,0 +1,133 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_pool_0.45m_density_1.5_new_default",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "2_pool_0.45m_density_0.7",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 0.7
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "3_pool_0.45m_density_3",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 3.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "4_pool_0.3m_density_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 0.3,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "5_pool_0.7m_density_1",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 0.7,
+    "NearDensity": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "6_pool_fine_swirls_1.2m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "DriftScale": 1.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "7_pool_strong_reaction_x2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "ReactiveStrength": 2.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "8_pool_no_reaction",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "Reactive": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "9_tall_soft_volume_3.5m_for_comparison",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 3.5,
+    "NearDensity": 0.025,
+    "DriftScale": 9.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ }
+]

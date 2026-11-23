@@ -1,0 +1,75 @@
+[
+ {
+  "name": "0_off",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_why_not",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "DebugView": 2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "2_runs_on",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "DebugView": 11
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "3_height_over_plain",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "DebugView": 4
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "4_weight",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "DebugView": 1
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "5_weight_grey0.6_white0.95",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "DebugView": 1,
+    "GreyLimit": 0.6,
+    "WhiteLimit": 0.95
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

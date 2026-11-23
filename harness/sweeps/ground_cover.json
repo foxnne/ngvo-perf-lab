@@ -1,0 +1,123 @@
+[
+ {
+  "name": "0_ground_cover_off",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_debug_where_it_applies",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "DebugView": 1
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "2_on_defaults",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "3_band_3000",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "BandHeight": 3000.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "4_band_8000",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "BandHeight": 8000.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "5_strength_1_keep_rock_shading_0.8",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "Strength": 1.0,
+    "LuminanceMatch": 0.8
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "6_strength_1_luminance_0.2",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "Strength": 1.0,
+    "LuminanceMatch": 0.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "7_terrain_too",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "AffectTerrain": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "8_terrain_and_scree",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "AffectTerrain": true,
+    "Scree": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "9_object_lod_off",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "AffectObjectLOD": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

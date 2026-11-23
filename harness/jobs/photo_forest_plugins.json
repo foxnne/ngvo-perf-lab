@@ -1,0 +1,31 @@
+{"insert_after": [
+  ["DawnGuardDoors.esp",
+   "Remove Hanging Moss From Trees.esp",
+   "Enhanced Landscapes.esp",
+   "LessPineTree50.esp", "LessReachTree50.esp", "LessTundraTree33.esp", "Less Trees - Cell data patch.esp",
+   "DenseNordicForests.esp",
+   "Whiterun Forest Borealis.esp",
+   "forestsofskyrim-morthal.esp",
+   "fallentreebridgesSSE.esp", "fallenbridgesSSE-Patch.esp",
+   "River Debris.esp",
+   "Ulvenwald.esp",
+   "Nature of the Wild Lands.esp", "Nature of the Wild Lands - Autumn Birches.esp",
+   "Diverse Logs BOS.esp",
+   "NotWL - Ulvenwald Patch.esp",
+   "DLBurningDriftWoodNotWLPatch.esp",
+   "Photo_Test.esp"],
+  ["Tree of Life.esp",
+   "Nature of the Wild Lands - JKs Skyrim.esp", "Nature of the Wild Lands - Song of the Green.esp",
+   "ShoresofSkyrim.esp", "WiZkiD Plants Addon.esp", "Cathedral - 3D Mountain Flowers.esp"]
+ ],
+ "deactivate": [
+   "foxnne - WardenWood Pines.esp",
+   "NotWL - Autumn Rift.esp", "Nature of the Wild Lands - CC Tundra Homestead.esp", "Nature of the Wild Lands - Daedric Shrines.esp",
+   "Nature of the Wild Lands - Lux Via.esp", "Nature of the Wild Lands - Northern Roads Patch.esp",
+   "Nature of the Wild Lands - PBR.esp", "Nature of the Wild Lands - PBR0.esp",
+   "DL_NotWL_InitiallyDisable_Reference_Patch.esp", "Missile Riverwood Dock Addon - Nature of the Wild Lands Patch.esp",
+   "Mage Towers of Skyrim - NOTWL - Patch.esp", "Ruins Over Riverwood - NOTWL Patch.esp",
+   "Arboreum - Windhelm.esp", "Arboreum - Falkreath.esp", "Arboreum - Riften.esp", "Arboreum - Dawnstar.esp", "Arboreum - Markarth.esp",
+   "Arboreum - Morthal.esp", "Arboreum - Orc Settlements.esp", "Arboreum - Settlements.esp", "Arboreum - Solitude.esp",
+   "Arboreum - Whiterun.esp", "Arboreum - Winterhold.esp", "Arboreum - JK Skyrim.esp", "Arboreum - Outskirts - Reach Environment.esp"
+ ]}

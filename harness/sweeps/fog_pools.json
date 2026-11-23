@@ -1,0 +1,97 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_now_density_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "2_density_1.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "3_density_1.5_hollows_2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.5,
+    "BasinStrength": 2.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "4_density_2_wisp_size_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.0,
+    "WispSize": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "5_density_2_wisp_8_hollows_2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.0,
+    "WispSize": 8.0,
+    "BasinStrength": 2.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "6_density_3_wisp_6_hollows_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 3.0,
+    "WispSize": 6.0,
+    "BasinStrength": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ }
+]

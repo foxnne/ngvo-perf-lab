@@ -1,0 +1,46 @@
+{
+ "PostProcessing": {
+  "Color Grading and Tone Mapping": {
+   "settings": {
+    "tonemapParams": [
+     [
+      1.0,
+      0.88,
+      1.0,
+      0.96
+     ],
+     [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+     ]
+    ],
+    "oklchSaturation": [
+     0.92,
+     1.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "Look Grade": {
+   "settings": {
+    "BandBlue": [
+     0.0,
+     0.2,
+     -0.1
+    ],
+    "BandAqua": [
+     0.0,
+     0.1,
+     -0.05
+    ],
+    "Highlights": 1.0,
+    "ShoulderStrength": 0.5,
+    "ShoulderStart": 0.6,
+    "Exposure": 0.6
+   }
+  }
+ }
+}

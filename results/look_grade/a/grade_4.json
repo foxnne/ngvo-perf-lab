@@ -1,0 +1,40 @@
+{
+ "Exposure": 0.0,
+ "Vibrance": 0.0,
+ "ShadowsLift": 0.0,
+ "ShadowAmount": 0.035,
+ "HighlightAmount": 0.0,
+ "BlackPoint": 0.07,
+ "WhitePoint": 0.86,
+ "Contrast": 1.15,
+ "Saturation": 1.06,
+ "ShoulderStrength": 0.35,
+ "BandAqua": [
+  0,
+  0,
+  0
+ ],
+ "BandBlue": [
+  0,
+  0,
+  0
+ ],
+ "BandOrange": [
+  0,
+  0,
+  0
+ ],
+ "BandRed": [
+  0,
+  0,
+  0
+ ],
+ "BandYellow": [
+  0,
+  0,
+  0
+ ],
+ "Midtones": 0.86,
+ "ShadowHue": 28.0,
+ "ShoulderStart": 0.7
+}

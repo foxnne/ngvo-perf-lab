@@ -1,0 +1,108 @@
+{
+ "_about": "Shot plan for baseline_shoot.py: the neutral (no Look Grade, no LUT) reference set the Looks Lab is built from. Edit freely; run 'python baseline_shoot.py TAG --dry-run' to see the resulting matrix and count before queueing it.",
+ "schema": "ngvo-baseline-plan/1",
+
+ "times": {
+  "_note": "One row per shot time. 'hour' is what you edit. 'period' is only the row's name in the lab; the real Scene Manager period weights are computed from 'period_model' and written to the manifest (a row inside a blend shows in both period layers). In this setup 07:00 is still dark, sunset colour peaks about 18:00-18:25 and it is dark by 18:50.",
+  "Dawn":    {"hour": 7.25, "note": "first light; Scene Manager: about 90% Dawn, 10% Sunrise (pure Dawn 06:00-07:00 is still dark here)"},
+  "Sunrise": {"hour": 8.25, "note": "low morning sun; pure Sunrise (08:00-09:00)"},
+  "Day":     {"hour": 13.0, "note": "pure Day (10:00-16:00)"},
+  "Sunset":  {"hour": 18.1, "note": "peak sunset colour; about 99% Sunset (pure Sunset 17:00-18:00, then blends to Dusk until 19:00)"},
+  "Dusk":    {"hour": 18.7, "note": "after-glow, nearly dark; about 84% Dusk, 16% Sunset (pure Dusk 19:00-20:00 is already night-dark here)"},
+  "Night":   {"hour": 23.0, "note": "pure Night (21:00-05:00)"}
+ },
+
+ "period_model": {
+  "_note": "How the fork's Scene Manager turns the game hour into period weights (SceneSettingsManager.cpp: GetPeriodStartHours, GetBlendedPeriods, FindBlendPeriod, GetTimeOfDayFactors). 'starts' come from the active climate: SkyrimClimate as overridden by NAT-ENB.esp keeps the vanilla timing (sunrise 5:30-10:00, sunset 16:00-20:30) and fDaytimeColorExtension is assumed vanilla (0.5). Not read from the running game: check once in the CS Editor.",
+  "names": ["Dawn", "Sunrise", "Day", "Sunset", "Dusk", "Night"],
+  "starts": [5.0, 7.5, 10.0, 16.0, 18.5, 21.0],
+  "blend_offsets": [0.5, 0.0, -0.5, 0.5, 0.0, -0.5],
+  "blend_hours": 1.0,
+  "ease": 1.0
+ },
+
+ "sky": {
+  "_note": "mode 'types_json': apply each sky type's Physical Sky / fog / ambient values from the pass-3 types file on top of the saved settings (Day values plus the override of the dominant period), like sky_sweep.py --stock with sweeps/pass3_types_*.json. mode 'scene': set only weather and hour and let an installed pack drive the sky (use this once the cloud pack is installed).",
+  "mode": "types_json",
+  "types_file": "C:/Users/foxnn/dev/nat3-volclouds/draft/pass3-sky-types.json",
+  "weather_settle_seconds": 16,
+  "hour_settle_seconds": 10,
+  "types": {
+   "clear":    {"weather": "SClearSkyPF"},
+   "fair":     {"weather": "SunnyPF"},
+   "partly":   {"weather": "CloudyPF"},
+   "rain":     {"weather": "RainPF"},
+   "overcast": {"weather": "OvercastPF"},
+   "storm":    {"weather": "StormPF"},
+   "snow":     {"weather": "Snow"},
+   "fog":      {"weather": "FogPF"}
+  }
+ },
+
+ "stages": {
+  "1": {"sky_types": ["clear", "fair", "partly", "rain"], "note": "fair-weather half: can be shot now"},
+  "2": {"sky_types": ["overcast", "storm", "snow", "fog"], "note": "after the storm / overcast / snow / fog skies are fixed"}
+ },
+
+ "sites": {
+  "plains":   {"cell": "WhiterunExterior04", "player": {"x": 19157.0, "y": -7419.0, "z": -3612.0, "rx": 0.0, "rz": 160.0}, "settle_seconds": 12},
+  "ilinalta": {"cell": "GuardianStones", "player": {"x": 662.0, "y": -59220.0, "z": 612.0, "rx": 0.0, "rz": 270.0}, "settle_seconds": 14},
+  "mill":     {"cell": "HalfMoonMillExterior", "settle_seconds": 14},
+  "city":     {"cell": "WhiterunOrigin", "settle_seconds": 14},
+  "inn":      {"cell": "WhiterunBanneredMare", "interior": true, "settle_seconds": 12},
+  "barrow":   {"cell": "BleakFallsBarrow01", "interior": true, "settle_seconds": 12}
+ },
+
+ "views": [
+  {"id": "plains_west",   "site": "plains",   "kind": "exterior", "views_json": "plains_west",
+   "near": [0.0, 0.75, 1.0, 1.0], "far": [0.0, 0.40, 1.0, 0.58]},
+  {"id": "face_tight",    "site": "plains",   "kind": "face", "face": {"distance": 60.0, "height": 112.0, "pitch": -2.0, "fov": 35.0},
+   "near": [0.30, 0.10, 0.70, 0.95], "far": [0.0, 0.25, 0.18, 0.75]},
+  {"id": "face_bust",     "site": "plains",   "kind": "face", "face": {"distance": 95.0, "height": 105.0, "pitch": -2.0, "fov": 40.0},
+   "near": [0.32, 0.10, 0.68, 1.0], "far": [0.0, 0.25, 0.20, 0.75]},
+  {"id": "ilinalta_west", "site": "ilinalta", "kind": "exterior", "views_json": "ilinalta_west",
+   "near": [0.0, 0.75, 1.0, 1.0], "far": [0.0, 0.38, 1.0, 0.55]},
+  {"id": "mill_west",     "site": "mill",     "kind": "exterior", "views_json": "mill_west",
+   "near": [0.0, 0.70, 1.0, 1.0], "far": [0.25, 0.35, 0.75, 0.55]},
+  {"id": "city_whiterun", "site": "city",     "kind": "exterior",
+   "camera": {"dx": 0, "dy": 0, "dz": 130.0, "pitch": -4.0, "yaw": "player", "fov": 75.0},
+   "_note": "UNVERIFIED framing: free camera at the WhiterunOrigin spawn looking where the player faces. Check the first shot and set an explicit yaw.",
+   "near": [0.0, 0.70, 1.0, 1.0], "far": [0.25, 0.30, 0.75, 0.55]},
+  {"id": "inn_mare",      "site": "inn",      "kind": "interior",
+   "camera": {"dx": 0, "dy": 0, "dz": 120.0, "pitch": -2.0, "yaw": "player", "fov": 75.0},
+   "_note": "UNVERIFIED framing (spawn point of the Bannered Mare).",
+   "near": [0.0, 0.65, 1.0, 1.0], "far": [0.30, 0.25, 0.70, 0.60]},
+  {"id": "barrow_bleakfalls", "site": "barrow", "kind": "dungeon",
+   "camera": {"dx": 0, "dy": 0, "dz": 120.0, "pitch": -2.0, "yaw": "player", "fov": 75.0},
+   "_note": "UNVERIFIED framing (spawn point of Bleak Falls Barrow).",
+   "near": [0.0, 0.65, 1.0, 1.0], "far": [0.30, 0.25, 0.70, 0.60]}
+ ],
+
+ "interior_matrix": {
+  "_note": "Interior and dungeon views do not follow the outdoor matrix: they are shot once per listed time, with the first sky type of the stage as the outdoor weather (windows).",
+  "interior": ["Day", "Night"],
+  "dungeon": ["Day"]
+ },
+
+ "neutral": {
+  "_note": "What makes a shot neutral for the lab: the two stages after tone mapping that the lab replaces are OFF. The script sets and reads these back before every shot and aborts on a mismatch.",
+  "post_processing_off": ["Look Grade", "LUT"],
+  "post_processing_warn_if_on": ["Camera", "Border"],
+  "hdr_must_be_off": true,
+  "scene_manager_file": "C:/Modlists/NGVO 8.0 Beta/mods/CS Settings/SKSE/Plugins/CommunityShaders/SceneSettings/SceneManager.json",
+  "settings_user_file": "C:/Modlists/NGVO 8.0 Beta/mods/CS Settings/SKSE/Plugins/CommunityShaders/SettingsUser.json"
+ },
+
+ "capture": {
+  "camera_settle_seconds": 4,
+  "face_pose_check": true,
+  "face_pose_max_diff": 0.012,
+  "expect_resolution": [3440, 1440],
+  "dark_percentiles": [0.1, 1, 5]
+ },
+
+ "build": {
+  "dll": "C:/Modlists/NGVO 8.0 Beta/mods/Bottled Shaders - foxnne/SKSE/Plugins/CommunityShaders.dll",
+  "fork": "C:/Users/foxnn/dev/skyrim-community-shaders"
+ }
+}

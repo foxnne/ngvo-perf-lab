@@ -1,0 +1,159 @@
+{
+ "nr_live": {
+  "alternateFrames": false,
+  "automaticMask": true,
+  "bandRadius": 8.0,
+  "broadLuminosity": 1.0,
+  "colorStrength": 1.0,
+  "debugCategoryView": false,
+  "depthAwareResolve": false,
+  "detailLuminosity": 1.0,
+  "enabled": true,
+  "intensity": 1.0,
+  "localStructureStrength": 1.0,
+  "localToneStrength": 1.0,
+  "maxRatio": 2.0,
+  "placement": 3,
+  "preset": 0,
+  "proxyCurve": 0,
+  "ratioGuardEnabled": false,
+  "rawModelOutput": false,
+  "resolutionMode": 0,
+  "resolutionScale": 0.75,
+  "resolutionScaleX": 1.0,
+  "resolutionScaleY": 1.0,
+  "showAdvanced": true,
+  "skinStructureStrength": -1.0,
+  "style": 0,
+  "transferStrength": 1.0,
+  "userPreset": "foxnne"
+ },
+ "shots": [
+  {
+   "place": "dragonsreach",
+   "variant": "comp-4.7",
+   "stats": {
+    "mean": 0.192,
+    "p1": 0.067,
+    "p50": 0.129,
+    "p99": 0.657,
+    "clip%": 0.02,
+    "sat": 0.421
+   },
+   "meteredEV100": -6.779821395874023,
+   "preExposure": 6.087673187255859
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "comp-3.7",
+   "stats": {
+    "mean": 0.258,
+    "p1": 0.089,
+    "p50": 0.175,
+    "p99": 0.823,
+    "clip%": 0.19,
+    "sat": 0.414
+   },
+   "meteredEV100": -6.770673751831055,
+   "preExposure": 12.098383903503418
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "comp-3.2",
+   "stats": {
+    "mean": 0.295,
+    "p1": 0.101,
+    "p50": 0.198,
+    "p99": 0.876,
+    "clip%": 0.51,
+    "sat": 0.438
+   },
+   "meteredEV100": -6.778980255126953,
+   "preExposure": 17.20848846435547
+  },
+  {
+   "place": "inn",
+   "variant": "comp-4.7",
+   "stats": {
+    "mean": 0.184,
+    "p1": 0.065,
+    "p50": 0.149,
+    "p99": 0.363,
+    "clip%": 0.0,
+    "sat": 0.364
+   },
+   "meteredEV100": -7.4172163009643555,
+   "preExposure": 9.469483375549316
+  },
+  {
+   "place": "inn",
+   "variant": "comp-3.7",
+   "stats": {
+    "mean": 0.255,
+    "p1": 0.093,
+    "p50": 0.208,
+    "p99": 0.494,
+    "clip%": 0.0,
+    "sat": 0.363
+   },
+   "meteredEV100": -7.41461181640625,
+   "preExposure": 18.904796600341797
+  },
+  {
+   "place": "inn",
+   "variant": "comp-3.2",
+   "stats": {
+    "mean": 0.263,
+    "p1": 0.097,
+    "p50": 0.222,
+    "p99": 0.479,
+    "clip%": 0.0,
+    "sat": 0.285
+   },
+   "meteredEV100": -8.336235046386719,
+   "preExposure": 50.64346694946289
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "comp-4.7",
+   "stats": {
+    "mean": 0.146,
+    "p1": 0.044,
+    "p50": 0.107,
+    "p99": 0.486,
+    "clip%": 0.0,
+    "sat": 0.282
+   },
+   "meteredEV100": -9.591268539428711,
+   "preExposure": 42.734745025634766
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "comp-3.7",
+   "stats": {
+    "mean": 0.2,
+    "p1": 0.062,
+    "p50": 0.146,
+    "p99": 0.625,
+    "clip%": 0.0,
+    "sat": 0.277
+   },
+   "meteredEV100": -9.58987808227539,
+   "preExposure": 85.38714599609375
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "comp-3.2",
+   "stats": {
+    "mean": 0.18,
+    "p1": 0.025,
+    "p50": 0.076,
+    "p99": 0.724,
+    "clip%": 0.0,
+    "sat": 0.371
+   },
+   "meteredEV100": -9.663375854492188,
+   "preExposure": 127.06694793701172
+  }
+ ]
+}

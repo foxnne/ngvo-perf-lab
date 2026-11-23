@@ -1,0 +1,26 @@
+{
+  "name": "foxnne NAT III clouds (pass 4)",
+  "version": "0.4.0",
+  "type": "CS",
+  "author": "foxnne",
+  "description": "UNTESTED DRAFT, pass 4. Per-weather, per-period sky for the 111 NAT.CS III weathers: haze, air, ozone, glow and sun strength follow the sun height and a per-weather moisture value; closed heavy-sky decks for overcast, rain, storm, snow and fog; storm lightning (Physical Sky); height-fog strength (Exponential Height Fog); ambient mix (Image Based Lighting); Ground Fog amounts. Needs a build that contains foxnne/heavy-sky, foxnne/lightning-fix and foxnne/ground-fog-near. Read notes/install-pass-4.md first.",
+  "tags": [
+    "NAT.CS III",
+    "Physical Sky",
+    "volumetric clouds",
+    "draft"
+  ],
+  "csVersion": "1.9.0",
+  "requiredFeatures": [
+    "PhysicalSky",
+    "ExponentialHeightFog",
+    "ImageBasedLighting",
+    "GroundFog",
+    "SceneManager",
+    "SkySync"
+  ],
+  "requiredPlugins": [
+    "NAT-ENB.esp",
+    "NAT-CS.esp"
+  ]
+}

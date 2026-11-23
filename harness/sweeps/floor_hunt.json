@@ -1,0 +1,542 @@
+[
+ {
+  "name": "pin+04_ref",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_ssgi_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "Enabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_ibl_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.0,
+    "SkyIBLScale": 0.0,
+    "EnvIBLScale": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_ambient_0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "LinearLighting": {
+    "ambientMult": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_volumetric_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "VolumetricLighting": {
+    "ExteriorEnabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_skylighting_vis0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.0,
+    "MinSpecularVisibility": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_sun_0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "LinearLighting": {
+    "directionalLightMult": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_groundcover_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "GroundCover": {
+    "Enabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+04_nr_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "NeuralRendering": {
+    "enabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_ref",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_ssgi_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "Enabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_ibl_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.0,
+    "SkyIBLScale": 0.0,
+    "EnvIBLScale": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_ambient_0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "LinearLighting": {
+    "ambientMult": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_volumetric_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "VolumetricLighting": {
+    "ExteriorEnabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_skylighting_vis0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.0,
+    "MinSpecularVisibility": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_sun_0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "LinearLighting": {
+    "directionalLightMult": 0.0
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_groundcover_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "GroundCover": {
+    "Enabled": false
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin+10_nr_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Local Exposure": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0
+     }
+    }
+   },
+   "NeuralRendering": {
+    "enabled": false
+   }
+  },
+  "settle": 7
+ }
+]

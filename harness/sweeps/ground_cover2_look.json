@@ -1,0 +1,82 @@
+[
+ {
+  "name": "0_off",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_defaults",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "2_strength1_lum0.3_band6000",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "Strength": 1.0,
+    "LuminanceMatch": 0.3,
+    "BandHeight": 6000.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "3_plus_terrain",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "Strength": 1.0,
+    "LuminanceMatch": 0.3,
+    "BandHeight": 6000.0,
+    "AffectTerrain": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "4_radius3000_rise600",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "MinObjectRadius": 3000.0,
+    "RiseHeight": 600.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "5_loose_limits",
+  "set": {},
+  "features": {
+   "GroundCover": {
+    "Enabled": true,
+    "Strength": 1.0,
+    "LuminanceMatch": 0.3,
+    "BandHeight": 6000.0,
+    "GreyLimit": 0.6,
+    "WhiteLimit": 0.95
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

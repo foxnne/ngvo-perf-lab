@@ -1,0 +1,43 @@
+{
+ "install": [
+  [
+   "C:/Users/foxnn/dev/staged-mods/PenguLOD Output - LOD (fork tree flags)",
+   "PenguLOD Output - LOD (fork tree flags)"
+  ],
+  [
+   "C:/Users/foxnn/dev/staged-mods/PenguLOD Output - LOD",
+   "PenguLOD Output - LOD"
+  ],
+  [
+   "C:/Users/foxnn/dev/staged-mods/PenguLOD Output - Textures",
+   "PenguLOD Output - Textures"
+  ],
+  [
+   "C:/Users/foxnn/dev/staged-mods/PenguLOD SKSE Plugin",
+   "PenguLOD SKSE Plugin"
+  ],
+  [
+   "C:/Users/foxnn/dev/staged-mods/foxnne - Aspen LOD (PenguLOD)",
+   "foxnne - Aspen LOD (PenguLOD)"
+  ],
+  [
+   "C:/Users/foxnn/dev/staged-mods/foxnne - No Ivy Trees LOD (PenguLOD)",
+   "foxnne - No Ivy Trees LOD (PenguLOD)"
+  ]
+ ],
+ "above": "foxnne - 3D Map Restore",
+ "enable": [
+  "PenguLOD Output - LOD (fork tree flags)",
+  "PenguLOD Output - LOD",
+  "PenguLOD Output - Textures",
+  "PenguLOD SKSE Plugin",
+  "foxnne - Aspen LOD (PenguLOD)",
+  "foxnne - No Ivy Trees LOD (PenguLOD)"
+ ],
+ "disable": [
+  "NGVO - DynDOLOD Output",
+  "NGVO - TexGen Output",
+  "DynDOLOD DLL NG and Scripts 3.00",
+  "DynDOLOD - Settings Loader"
+ ]
+}

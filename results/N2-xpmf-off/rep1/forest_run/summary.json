@@ -1,0 +1,29 @@
+{
+ "label": "N2-xpmf-off",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "80b01917e6",
+ "time": "2026-11-19 15:47:53",
+ "render": {
+  "frames": 2034,
+  "mean": 28.67,
+  "fps": 34.9,
+  "p50": 28.43,
+  "p95": 36.11,
+  "p99": 41.08,
+  "max": 170.7,
+  "over50": 2,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 171
+ },
+ "main_cpu_ms": 26.1,
+ "fg_share": 1.0,
+ "distance": 5098,
+ "cells": 3,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 1,
+ "offroute": 389
+}

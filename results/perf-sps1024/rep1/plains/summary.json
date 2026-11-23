@@ -1,0 +1,55 @@
+{
+ "label": "perf-sps1024",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "83e429e905",
+ "time": "2026-11-21 20:33:12",
+ "render": {
+  "frames": 598,
+  "mean": 25.25,
+  "fps": 39.6,
+  "p50": 25.26,
+  "p95": 26.49,
+  "p99": 28.16,
+  "max": 59.9,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.52,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1344,
+   "mean": 12.61,
+   "fps": 79.3,
+   "p50": 12.4,
+   "p95": 13.53,
+   "p99": 13.92,
+   "max": 24.3,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1344,
+   "mean": 12.6,
+   "fps": 79.3,
+   "p50": 12.38,
+   "p95": 13.96,
+   "p99": 15.23,
+   "max": 22.6,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1344
+  }
+ }
+}

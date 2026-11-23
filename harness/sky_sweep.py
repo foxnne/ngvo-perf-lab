@@ -32,8 +32,11 @@ atexit.register(lambda: (not DONE) and bench.running() and bench.quit_game())   
 g = cs.call('communityshaders.feature', {'action': 'get', 'shortName': 'PhysicalSky'}); orig = g.get('settings', g)
 base = json.load(open(DRAFT + '/draft/foxnne-nat3-clouds/Baseline/PhysicalSky.json'))
 if bench.LOADED_SAVE != VIEW_SAVE:
-    bench.goto(V['cell']); cs.world(action='teleport', **V['player']); time.sleep(V.get('settle_seconds', 12))
-    if '--no-view-save' not in sys.argv:
+    if V.get('cell'): bench.goto(V['cell'])
+    else: bench.console(V['travel']); time.sleep(8); bench.settle()
+    if V.get('player'): cs.world(action='teleport', **V['player'])
+    time.sleep(V.get('settle_seconds', 12))
+    if '--no-view-save' not in sys.argv and not bench.ATTACHED:
         try: print('view save', cs.call('game', {'action': 'save', 'name': VIEW_SAVE}), flush=True); time.sleep(6)
         except Exception as e: print('view save failed', str(e)[:120], flush=True)
 else: time.sleep(8)
@@ -80,6 +83,8 @@ try:
             for short in var.get('features', {}): cs.call('communityshaders.feature', {'action': 'set', 'shortName': short, 'settings': OTHER[short]})
 finally:
     cs.call('communityshaders.feature', {'action': 'set', 'shortName': 'PhysicalSky', 'settings': orig})
+    try: cs.world(action='timescale', value=20)      # the sweep runs at timescale 1: put the game clock back, or the sky looks frozen in play
+    except Exception: pass
     if SHADER_TOUCHED:
         hot.restore()
         try: hot.reload()

@@ -1,0 +1,16 @@
+{
+ "insert_after": [
+  [
+   "FabulousPoser.esl",
+   "DynDOLOD.esm"
+  ],
+  [
+   "NGVO - Flat Maps Patch.esp",
+   "DynDOLOD.esp",
+   "Occlusion.esp"
+  ]
+ ],
+ "deactivate": [
+  "PenguLOD.esp"
+ ]
+}

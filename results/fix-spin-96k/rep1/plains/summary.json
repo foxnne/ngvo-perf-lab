@@ -1,0 +1,55 @@
+{
+ "label": "fix-spin-96k",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "9862159d36",
+ "time": "2026-11-22 11:02:55",
+ "render": {
+  "frames": 853,
+  "mean": 17.87,
+  "fps": 55.9,
+  "p50": 18.0,
+  "p95": 18.94,
+  "p99": 19.34,
+  "max": 55.1,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 16.57,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1904,
+   "mean": 8.91,
+   "fps": 112.2,
+   "p50": 8.74,
+   "p95": 9.73,
+   "p99": 9.97,
+   "max": 12.7,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1904,
+   "mean": 8.91,
+   "fps": 112.2,
+   "p50": 8.89,
+   "p95": 10.66,
+   "p99": 11.12,
+   "max": 16.4,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1904
+  }
+ }
+}

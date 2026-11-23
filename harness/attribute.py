@@ -16,7 +16,7 @@ SCENES = opt('--scenes', 'plains,forest').split(',')
 SECONDS_OVERRIDE = opt('--seconds')
 OUT = os.path.join(os.path.dirname(HERE), 'results', f'attribution-{TAG}'); os.makedirs(OUT, exist_ok=True)
 POSES = {'plains': ('WhiterunExterior04', dict(x=bench.START[0], y=bench.START[1], z=bench.START[2], rx=4.0, rz=247.0)),
-         'forest': ('HalfMoonMillExterior', None), 'city': ('WhiterunOrigin', None)}
+         'forest': ('HalfMoonMillExterior', None), 'city': ('WhiterunOrigin', None), 'riften': ('RiftenOrigin', None), 'rift': ('ShorsStone', None)}
 SECONDS = int(opt('--seconds', '8'))
 
 

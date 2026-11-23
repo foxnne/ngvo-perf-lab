@@ -1,0 +1,841 @@
+{
+ "dragonsreach": {
+  "a_as_is": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 0.006475153379142284,
+      "distance": 1286.6397705078125,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "ol",
+      "niFade": 0.699999988079071,
+      "radius": 827.6793823242188,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.006475153379142284,
+      "distance": 2402.780517578125,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "ol",
+      "niFade": 0.8400000333786011,
+      "radius": 623.568115234375,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 2566.896728515625,
+      "finalFade": -5.827730655670166,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.4569326639175415,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 2633.94921875,
+      "finalFade": -5.547730922698975,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.3869327306747437,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 355.49542236328125,
+      "finalFade": -5.827730655670166,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.4569326639175415,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.08080994337797165,
+      "distance": 997.3209228515625,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "LP_Light[CS Light\\CS Light -  Interior Windows Dragonsreach|DefaultSunlight01NS]#0",
+      "niFade": 12.0,
+      "radius": 863.0179443359375,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.08080994337797165,
+      "distance": 2086.940673828125,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "LP_Light[CS Light\\CS Light -  Interior Windows Dragonsreach|DefaultSunlight01NS]#0",
+      "niFade": 12.0,
+      "radius": 863.0179443359375,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 7,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 16651,
+    "ignoreLightLODDimmer": false,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 6,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 117,
+    "seen": 124,
+    "shadowLights": 9,
+    "spots": 2
+   },
+   "stats": {
+    "mean": 0.192,
+    "p1": 0.066,
+    "p50": 0.129,
+    "p99": 0.672,
+    "clip%": 0.02,
+    "sat": 0.413
+   }
+  },
+  "b_keep_shadowless_spots": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 0.006475153379142284,
+      "distance": 1286.6397705078125,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "ol",
+      "niFade": 0.699999988079071,
+      "radius": 827.6793823242188,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.006475153379142284,
+      "distance": 2402.780517578125,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "ol",
+      "niFade": 0.8400000333786011,
+      "radius": 623.568115234375,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 2566.896728515625,
+      "finalFade": -5.827730655670166,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.4569326639175415,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 2633.94921875,
+      "finalFade": -5.547730922698975,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.3869327306747437,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 355.49542236328125,
+      "finalFade": -5.827730655670166,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.4569326639175415,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.08080994337797165,
+      "distance": 997.3209228515625,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "LP_Light[CS Light\\CS Light -  Interior Windows Dragonsreach|DefaultSunlight01NS]#0",
+      "niFade": 12.0,
+      "radius": 863.0179443359375,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.08080994337797165,
+      "distance": 2086.940673828125,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "LP_Light[CS Light\\CS Light -  Interior Windows Dragonsreach|DefaultSunlight01NS]#0",
+      "niFade": 12.0,
+      "radius": 863.0179443359375,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 7,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 16887,
+    "ignoreLightLODDimmer": false,
+    "keepShadowlessSpots": true,
+    "keptLocalShadow": 6,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 117,
+    "seen": 124,
+    "shadowLights": 9,
+    "spots": 2
+   },
+   "stats": {
+    "mean": 0.192,
+    "p1": 0.066,
+    "p50": 0.129,
+    "p99": 0.673,
+    "clip%": 0.03,
+    "sat": 0.414
+   }
+  },
+  "c_ignore_lod_dimmer": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 2566.896728515625,
+      "finalFade": -5.827730655670166,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.4569326639175415,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 2633.94921875,
+      "finalFade": -5.547730922698975,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.3869327306747437,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.00750964879989624,
+      "distance": 355.49542236328125,
+      "finalFade": -5.827730655670166,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -1.4569326639175415,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 3,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 17119,
+    "ignoreLightLODDimmer": true,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 6,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 121,
+    "seen": 124,
+    "shadowLights": 9,
+    "spots": 2
+   },
+   "stats": {
+    "mean": 0.192,
+    "p1": 0.066,
+    "p50": 0.129,
+    "p99": 0.672,
+    "clip%": 0.02,
+    "sat": 0.414
+   }
+  }
+ },
+ "bleakfalls": {
+  "a_as_is": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 1614.5439453125,
+      "finalFade": -0.2075192630290985,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.05187981575727463,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0008559167617931962,
+      "distance": 10508.7373046875,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "ol",
+      "niFade": 0.13999998569488525,
+      "radius": 393.1849060058594,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 10315.00390625,
+      "finalFade": -1.410881519317627,
+      "global": false,
+      "lodDimmer": 0.877676248550415,
+      "name": "ol",
+      "niFade": -0.40187981724739075,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 2990.08740234375,
+      "finalFade": -1.047519326210022,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.2618798315525055,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 612.4420166015625,
+      "finalFade": -1.047519326210022,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.2618798315525055,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 11772.0537109375,
+      "finalFade": -0.9941964745521545,
+      "global": false,
+      "lodDimmer": 0.8372044563293457,
+      "name": "ol",
+      "niFade": -0.2968798279762268,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 12072.2001953125,
+      "finalFade": -0.5195745825767517,
+      "global": false,
+      "lodDimmer": 0.8279819488525391,
+      "name": "ol",
+      "niFade": -0.15687979757785797,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.265838384628296,
+      "distance": 15052.3359375,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLFire with Embers",
+      "niFade": 1.2311999797821045,
+      "radius": 167.41600036621094,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.8000000715255737,
+      "distance": 15066.7119140625,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "LP_Light[Lux CS Patch\\Lux CS - Embers ISL|Lux_EmberFireOmniNS]#0",
+      "niFade": 1.5,
+      "radius": 431.50897216796875,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 9,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 2,
+    "droppedShadowlessSpots": 2,
+    "frame": 18653,
+    "ignoreLightLODDimmer": false,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 2,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 219,
+    "seen": 230,
+    "shadowLights": 5,
+    "spots": 4
+   },
+   "stats": {
+    "mean": 0.128,
+    "p1": 0.032,
+    "p50": 0.083,
+    "p99": 0.454,
+    "clip%": 0.0,
+    "sat": 0.263
+   }
+  },
+  "b_keep_shadowless_spots": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 1614.5439453125,
+      "finalFade": -0.2075192630290985,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.05187981575727463,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0008559167617931962,
+      "distance": 10508.7373046875,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "ol",
+      "niFade": 0.13999998569488525,
+      "radius": 393.1849060058594,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 10315.00390625,
+      "finalFade": -1.410881519317627,
+      "global": false,
+      "lodDimmer": 0.877676248550415,
+      "name": "ol",
+      "niFade": -0.40187981724739075,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 2990.08740234375,
+      "finalFade": -1.047519326210022,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.2618798315525055,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 612.4420166015625,
+      "finalFade": -1.047519326210022,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.2618798315525055,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 11772.0537109375,
+      "finalFade": -0.9941964745521545,
+      "global": false,
+      "lodDimmer": 0.8372044563293457,
+      "name": "ol",
+      "niFade": -0.2968798279762268,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 12072.2001953125,
+      "finalFade": -0.5195745825767517,
+      "global": false,
+      "lodDimmer": 0.8279819488525391,
+      "name": "ol",
+      "niFade": -0.15687979757785797,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.265838384628296,
+      "distance": 15052.3359375,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLFire with Embers",
+      "niFade": 1.2311999797821045,
+      "radius": 167.41600036621094,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.8000000715255737,
+      "distance": 15066.7119140625,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "LP_Light[Lux CS Patch\\Lux CS - Embers ISL|Lux_EmberFireOmniNS]#0",
+      "niFade": 1.5,
+      "radius": 431.50897216796875,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 9,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 18906,
+    "ignoreLightLODDimmer": false,
+    "keepShadowlessSpots": true,
+    "keptLocalShadow": 2,
+    "keptShadowMask": 0,
+    "keptShadowless": 2,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 221,
+    "seen": 230,
+    "shadowLights": 5,
+    "spots": 4
+   },
+   "stats": {
+    "mean": 0.128,
+    "p1": 0.032,
+    "p50": 0.083,
+    "p99": 0.452,
+    "clip%": 0.0,
+    "sat": 0.263
+   }
+  },
+  "c_ignore_lod_dimmer": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 1614.5439453125,
+      "finalFade": -0.2075192630290985,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.05187981575727463,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 10315.00390625,
+      "finalFade": -1.607519268989563,
+      "global": false,
+      "lodDimmer": 0.877676248550415,
+      "name": "ol",
+      "niFade": -0.40187981724739075,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 2990.08740234375,
+      "finalFade": -1.047519326210022,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.2618798315525055,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 612.4420166015625,
+      "finalFade": -1.047519326210022,
+      "global": false,
+      "lodDimmer": 1.0,
+      "name": "ol",
+      "niFade": -0.2618798315525055,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 11772.0537109375,
+      "finalFade": -1.1875193119049072,
+      "global": false,
+      "lodDimmer": 0.8372044563293457,
+      "name": "ol",
+      "niFade": -0.2968798279762268,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 0.0009992937557399273,
+      "distance": 12072.2001953125,
+      "finalFade": -0.6275191903114319,
+      "global": false,
+      "lodDimmer": 0.8279819488525391,
+      "name": "ol",
+      "niFade": -0.15687979757785797,
+      "radius": 1.0,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 6,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 2,
+    "droppedShadowlessSpots": 2,
+    "frame": 19162,
+    "ignoreLightLODDimmer": true,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 2,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 222,
+    "seen": 230,
+    "shadowLights": 5,
+    "spots": 4
+   },
+   "stats": {
+    "mean": 0.128,
+    "p1": 0.032,
+    "p50": 0.083,
+    "p99": 0.454,
+    "clip%": 0.0,
+    "sat": 0.262
+   }
+  }
+ },
+ "inn": {
+  "a_as_is": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 1.5333070755004883,
+      "distance": 1486.4398193359375,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLCandles",
+      "niFade": 0.8119906187057495,
+      "radius": 99.16000366210938,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.5333070755004883,
+      "distance": 394.37646484375,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLCandles",
+      "niFade": 0.810395359992981,
+      "radius": 99.16000366210938,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.5333070755004883,
+      "distance": 404.12225341796875,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLCandles",
+      "niFade": 0.8328803777694702,
+      "radius": 99.16000366210938,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 3,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 20804,
+    "ignoreLightLODDimmer": false,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 5,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 78,
+    "seen": 81,
+    "shadowLights": 5,
+    "spots": 3
+   },
+   "stats": {
+    "mean": 0.184,
+    "p1": 0.057,
+    "p50": 0.159,
+    "p99": 0.411,
+    "clip%": 0.0,
+    "sat": 0.239
+   }
+  },
+  "b_keep_shadowless_spots": {
+   "tally": {
+    "dropped": [
+     {
+      "colorSum": 1.5333070755004883,
+      "distance": 1486.4398193359375,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLCandles",
+      "niFade": 0.8119906187057495,
+      "radius": 99.16000366210938,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.5333070755004883,
+      "distance": 394.37646484375,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLCandles",
+      "niFade": 0.810395359992981,
+      "radius": 99.16000366210938,
+      "shadow": false,
+      "spot": false
+     },
+     {
+      "colorSum": 1.5333070755004883,
+      "distance": 404.12225341796875,
+      "finalFade": 0.0,
+      "global": false,
+      "lodDimmer": 0.0,
+      "name": "RLCandles",
+      "niFade": 0.8328803777694702,
+      "radius": 99.16000366210938,
+      "shadow": false,
+      "spot": false
+     }
+    ],
+    "droppedFaded": 3,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 21071,
+    "ignoreLightLODDimmer": false,
+    "keepShadowlessSpots": true,
+    "keptLocalShadow": 5,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 78,
+    "seen": 81,
+    "shadowLights": 5,
+    "spots": 3
+   },
+   "stats": {
+    "mean": 0.185,
+    "p1": 0.057,
+    "p50": 0.16,
+    "p99": 0.412,
+    "clip%": 0.0,
+    "sat": 0.239
+   }
+  },
+  "c_ignore_lod_dimmer": {
+   "tally": {
+    "dropped": [],
+    "droppedFaded": 0,
+    "droppedFadedShadowLights": 0,
+    "droppedShadowless": 0,
+    "droppedShadowlessSpots": 0,
+    "frame": 21341,
+    "ignoreLightLODDimmer": true,
+    "keepShadowlessSpots": false,
+    "keptLocalShadow": 5,
+    "keptShadowMask": 0,
+    "keptShadowless": 0,
+    "loaded": true,
+    "localShadowCacheActive": true,
+    "pushed": 81,
+    "seen": 81,
+    "shadowLights": 5,
+    "spots": 3
+   },
+   "stats": {
+    "mean": 0.184,
+    "p1": 0.057,
+    "p50": 0.16,
+    "p99": 0.412,
+    "clip%": 0.0,
+    "sat": 0.24
+   }
+  }
+ }
+}

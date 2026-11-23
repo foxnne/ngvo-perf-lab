@@ -1,0 +1,81 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_body_defaults",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "2_body_0_film",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.5,
+    "NearBody": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "3_body_1.7",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.5,
+    "NearBody": 1.7
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "4_glow_0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.5,
+    "SunGlow": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "5_density_2.2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ }
+]

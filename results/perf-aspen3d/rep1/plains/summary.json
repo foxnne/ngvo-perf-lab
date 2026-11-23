@@ -1,0 +1,55 @@
+{
+ "label": "perf-aspen3d",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "495f7a2bf3",
+ "time": "2026-11-21 21:53:29",
+ "render": {
+  "frames": 509,
+  "mean": 29.68,
+  "fps": 33.7,
+  "p50": 29.08,
+  "p95": 32.74,
+  "p99": 40.64,
+  "max": 213.6,
+  "over50": 1,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 214
+ },
+ "main_cpu_ms": 26.02,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1141,
+   "mean": 14.67,
+   "fps": 68.2,
+   "p50": 14.27,
+   "p95": 16.36,
+   "p99": 25.94,
+   "max": 41.6,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1141,
+   "mean": 14.67,
+   "fps": 68.2,
+   "p50": 17.13,
+   "p95": 17.18,
+   "p99": 22.9,
+   "max": 39.9,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1141
+  }
+ }
+}

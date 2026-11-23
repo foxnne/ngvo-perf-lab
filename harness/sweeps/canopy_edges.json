@@ -1,0 +1,38 @@
+[
+ {
+  "name": "00_as_is",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "01_clouds_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "02_near_tree_wind_off",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "NearTrees": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "03_cloud_blur_0",
+  "set": {
+   "cloudBlurRadius": 0
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

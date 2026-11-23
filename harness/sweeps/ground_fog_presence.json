@@ -1,0 +1,150 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_wispy_defaults",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "2_wispiness_0_soft_patches",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "Wispiness": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "3_wisp_size_2m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "WispSize": 2.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "4_wisp_size_8m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "WispSize": 8.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "5_sun_limit_0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "SunLimit": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "6_sun_limit_3",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "SunLimit": 3.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "7_pooling_0_even",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "Pooling": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "8_density_3.0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 3.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "9_impulses_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.6,
+    "ImpulseStrength": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "10_burn_off_on_natural_morning",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ }
+]

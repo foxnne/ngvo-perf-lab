@@ -1,0 +1,1427 @@
+[
+ {
+  "name": "b0_snow_s4_asis",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.2,
+     "deckLight": 2.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ },
+ {
+  "name": "b1_brightness_1p4",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.2,
+     "deckLight": 2.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9,
+     "brightness": 1.4
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ },
+ {
+  "name": "b2_brightness_1p8",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.2,
+     "deckLight": 2.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9,
+     "brightness": 1.8
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ },
+ {
+  "name": "b3_decklight_3",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.2,
+     "deckLight": 3.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ },
+ {
+  "name": "b4_decklight_3_bright_1p4",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.2,
+     "deckLight": 3.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9,
+     "brightness": 1.4
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ },
+ {
+  "name": "b5_ambient_2",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 2.0,
+     "deckLight": 2.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ },
+ {
+  "name": "b6_bright_1p4_ambient_1p6_deck_3",
+  "set": {
+   "aerosolScatter": {
+    "x": 3.0265,
+    "y": 4.1027,
+    "z": 5.4902
+   },
+   "aerosolAbsorption": {
+    "x": 0.15924,
+    "y": 0.17587,
+    "z": 0.19249
+   },
+   "aerosolPhaseG": 0.6164,
+   "rayleighScatter": {
+    "x": 6.6049,
+    "y": 12.345,
+    "z": 29.413
+   },
+   "rayleighScatterAP1": {
+    "x": 6.9344,
+    "y": 12.0203,
+    "z": 28.91
+   },
+   "ozoneAbsorption": {
+    "x": 2.2911,
+    "y": 1.5404,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 2.2499,
+    "y": 1.6602,
+    "z": 0.0
+   },
+   "sunlightColor": {
+    "x": 10.0,
+    "y": 9.7,
+    "z": 9.5
+   },
+   "lightning": {
+    "rate": 0.0,
+    "weatherMode": 0
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": -0.8,
+        "y": 0.1,
+        "z": 1.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": 0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.45,
+        "y": 0.45,
+        "z": 0.3,
+        "w": 0.65
+       },
+       "exponent": 1.0
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.1
+      },
+      "baseRelief": {
+       "range": {
+        "x": -0.9,
+        "y": 0.2,
+        "z": 0.0,
+        "w": 0.3
+       },
+       "exponent": 1.0,
+       "frequency": 1.0
+      },
+      "baseReliefThickness": 0.5
+     }
+    }
+   },
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 600.0,
+     "ndfAltitudeScale": 600.0,
+     "densityScale": 0.45,
+     "bottomSpreadScale": 0.4,
+     "bottomSpreadHeight": 0.2,
+     "bottomSoftness": 0.8,
+     "bottomSoftnessHeight": 0.4,
+     "baseBillowHeight": 60.0
+    },
+    "lighting": {
+     "sunExtinction": 0.5,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.6,
+     "deckLight": 3.0,
+     "deckHalfDepth": 600.0,
+     "deckHorizonLight": 0.3,
+     "deckGroundLight": 0.9,
+     "brightness": 1.4
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 5.38,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 10.76,
+      "y": 0.0
+     }
+    },
+    "cirrus": {
+     "altitude": 8000.0,
+     "densityScale": 0.0,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            0.0,
+            0.45,
+            0.9
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.25,
+            0.25
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     },
+     "uvSize": 3.0
+    }
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   },
+   "ImageBasedLighting": {
+    "DALCAmount": 0.3,
+    "SkyIBLSaturation": 0.6,
+    "SkyIBLScale": 1.21,
+    "EnvIBLSaturation": 0.8
+   },
+   "GroundFog": {
+    "Amount": 0.225,
+    "FarAmount": 0.307,
+    "MiddayAmount": 0.5,
+    "ShadowRetention": 0.6,
+    "BurnOffStrength": 0.5
+   }
+  },
+  "weather": "Snow",
+  "settle": 16
+ }
+]

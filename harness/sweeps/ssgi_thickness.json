@@ -1,0 +1,46 @@
+[
+ {
+  "name": "00_thickness_0.1_as_is",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "settle": 8
+ },
+ {
+  "name": "01_thickness_0.05",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.05
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "02_thickness_0.02",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.02
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "03_ssgi_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "Enabled": false
+   }
+  },
+  "settle": 8
+ }
+]

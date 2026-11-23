@@ -1,0 +1,29 @@
+{
+ "label": "N4-shadow4k",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "157ac30532",
+ "time": "2026-11-19 20:33:03",
+ "render": {
+  "frames": 2245,
+  "mean": 25.89,
+  "fps": 38.6,
+  "p50": 25.43,
+  "p95": 30.1,
+  "p99": 33.18,
+  "max": 175.5,
+  "over50": 4,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 175
+ },
+ "main_cpu_ms": 23.55,
+ "fg_share": 1.0,
+ "distance": 17254,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1252
+}

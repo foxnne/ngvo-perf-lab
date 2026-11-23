@@ -1,0 +1,74 @@
+[
+ {
+  "name": "0_k12_haze0.35",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationHaze": 0.35
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_k10_haze0.35",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 10.0,
+    "distanceExaggerationHaze": 0.35
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_k12_haze0.25",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationHaze": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_k12_haze0.5",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationHaze": 0.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "4_k8_start300",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 8.0,
+    "distanceExaggerationStart": 300.0,
+    "distanceExaggerationFull": 2500.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "5_off_cost_ref",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ }
+]

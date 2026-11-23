@@ -1,0 +1,10 @@
+[
+ {"name": "0_now", "set": {}, "features": {}, "weather": "SunnyPF", "settle": 16},
+ {"name": "1_distance_12_early", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "2_grade_lut_off", "set": {}, "features": {"PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "3_dist12_grade_off", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "4_dist12_grade_off_groundfog_off", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}, "GroundFog": {"Enabled": false}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "5_dist12_grade_off_groundcover_off", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}, "GroundCover": {"Enabled": false}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "6_dist12_lut_only", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "7_dist12_grade_only", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"LUT": {"enabled": false}}}, "weather": "SunnyPF", "settle": 16}
+]

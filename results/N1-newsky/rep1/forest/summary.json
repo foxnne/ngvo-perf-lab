@@ -1,0 +1,27 @@
+{
+ "label": "N1-newsky",
+ "rep": 1,
+ "scenario": "forest",
+ "config": "93faafb0ce",
+ "time": "2026-11-19 12:09:05",
+ "render": {
+  "frames": 411,
+  "mean": 36.54,
+  "fps": 27.4,
+  "p50": 35.43,
+  "p95": 40.99,
+  "p99": 48.67,
+  "max": 198.8,
+  "over50": 4,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 199
+ },
+ "main_cpu_ms": 24.62,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

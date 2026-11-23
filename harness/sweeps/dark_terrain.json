@@ -1,0 +1,101 @@
+[
+ {
+  "name": "00_as_is",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "settle": 8
+ },
+ {
+  "name": "01_as_is_again",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "settle": 8
+ },
+ {
+  "name": "02_terrain_shadows_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TerrainShadows": {
+    "EnableTerrainShadow": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "03_lod_terrain_brightness_2",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "LODBlending": {
+    "LODTerrainBrightness": 2.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "04_lod_terrain_vertex_colours_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "LODBlending": {
+    "DisableTerrainVertexColors": 1
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "05_lod_terrain_gamma_0.6",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "LODBlending": {
+    "LODTerrainGamma": 0.6
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "06_distant_terrain_hidden_tll",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "settle": 8,
+  "console": [
+   "tll"
+  ]
+ },
+ {
+  "name": "07_ssgi_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "Enabled": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "08_snow_cover_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "SnowCover": {
+    "Enabled": false
+   }
+  },
+  "settle": 8
+ }
+]

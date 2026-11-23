@@ -1,0 +1,57 @@
+{
+ "label": "perf-80k-medthin",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "1def8d485c",
+ "time": "2026-11-22 10:03:11",
+ "render": {
+  "frames": 3797,
+  "mean": 26.34,
+  "fps": 38.0,
+  "p50": 27.68,
+  "p95": 33.31,
+  "p99": 43.61,
+  "max": 255.6,
+  "over50": 24,
+  "over100": 5,
+  "over250": 1,
+  "stall_ms": 823
+ },
+ "main_cpu_ms": 23.72,
+ "fg_share": 1.0,
+ "distance": 25163,
+ "cells": 6,
+ "presented": {
+  "present": {
+   "frames": 7737,
+   "mean": 13.18,
+   "fps": 75.9,
+   "p50": 13.91,
+   "p95": 16.66,
+   "p99": 21.09,
+   "max": 215.3,
+   "over50": 12,
+   "over100": 4,
+   "over250": 0,
+   "stall_ms": 694
+  },
+  "displayed": {
+   "frames": 7737,
+   "mean": 13.18,
+   "fps": 75.9,
+   "p50": 13.56,
+   "p95": 17.76,
+   "p99": 23.73,
+   "max": 214.6,
+   "over50": 10,
+   "over100": 4,
+   "over250": 0,
+   "stall_ms": 706
+  },
+  "frame_types": {
+   "Application": 7737
+  }
+ },
+ "onward_restarts": 4,
+ "offroute": 22981
+}

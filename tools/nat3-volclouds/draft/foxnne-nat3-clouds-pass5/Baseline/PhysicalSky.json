@@ -1,0 +1,10 @@
+{
+  "_metadata": {
+    "version": "0.5.0",
+    "description": "foxnne-nat3-clouds-pass5: ONLY the lightning switch closed weathers need: \"any weather\" (mode 0, an integer a weather entry cannot carry) with a global rate of 0; storm weathers carry their own rate. No cloud, haze or high-layer value: the saved fair-weather look is not touched."
+  },
+  "lightning": {
+    "weatherMode": 0,
+    "rate": 0.0
+  }
+}

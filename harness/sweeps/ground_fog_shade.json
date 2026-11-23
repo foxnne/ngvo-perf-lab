@@ -1,0 +1,108 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_defaults_natural_burn_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 1.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "2_defaults_full_strength",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "3_no_shade_under_cover",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.2,
+    "CanopyShade": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "4_sky_light_0.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.2,
+    "SkyAmbientScale": 0.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "5_density_1.8",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.8
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "6_wisp_size_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.2,
+    "WispSize": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "7_wispiness_0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.2,
+    "Wispiness": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ }
+]

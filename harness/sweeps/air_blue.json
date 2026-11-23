@@ -1,0 +1,63 @@
+[
+ {
+  "name": "00_saved_base",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "air_x1.3",
+  "set": {
+   "rayleighScatter": [
+    8.58637,
+    16.0485,
+    38.2369
+   ],
+   "rayleighScatterAP1": [
+    9.01472,
+    15.62639,
+    37.583
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "air_x1.6",
+  "set": {
+   "rayleighScatter": [
+    10.56784,
+    19.752000000000002,
+    47.0608
+   ],
+   "rayleighScatterAP1": [
+    11.095040000000001,
+    19.232480000000002,
+    46.256
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "air_x2.0",
+  "set": {
+   "rayleighScatter": [
+    13.2098,
+    24.69,
+    58.826
+   ],
+   "rayleighScatterAP1": [
+    13.8688,
+    24.0406,
+    57.82
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

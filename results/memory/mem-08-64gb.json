@@ -1,0 +1,44 @@
+[
+ {
+  "step": "0_loaded_save",
+  "private_mb": 23631,
+  "working_set_mb": 14378,
+  "system_free_mb": 34094
+ },
+ {
+  "step": "plains",
+  "private_mb": 33056,
+  "working_set_mb": 19277,
+  "system_free_mb": 28247
+ },
+ {
+  "step": "riverwood",
+  "private_mb": 34046,
+  "working_set_mb": 21735,
+  "system_free_mb": 25940
+ },
+ {
+  "step": "forest_south",
+  "private_mb": 35659,
+  "working_set_mb": 23639,
+  "system_free_mb": 24232
+ },
+ {
+  "step": "falkreath",
+  "private_mb": 37939,
+  "working_set_mb": 24516,
+  "system_free_mb": 22974
+ },
+ {
+  "step": "rift",
+  "private_mb": 35907,
+  "working_set_mb": 24610,
+  "system_free_mb": 22830
+ },
+ {
+  "step": "plains_again",
+  "private_mb": 38239,
+  "working_set_mb": 26446,
+  "system_free_mb": 21469
+ }
+]

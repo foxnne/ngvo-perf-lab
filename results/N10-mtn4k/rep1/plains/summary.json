@@ -1,0 +1,27 @@
+{
+ "label": "N10-mtn4k",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "f914c34378",
+ "time": "2026-11-20 03:31:52",
+ "render": {
+  "frames": 497,
+  "mean": 30.51,
+  "fps": 32.8,
+  "p50": 27.51,
+  "p95": 34.54,
+  "p99": 136.07,
+  "max": 454.6,
+  "over50": 9,
+  "over100": 7,
+  "over250": 1,
+  "stall_ms": 1393
+ },
+ "main_cpu_ms": 26.76,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

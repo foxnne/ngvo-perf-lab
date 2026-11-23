@@ -1,0 +1,96 @@
+[
+ {
+  "name": "0_old_exp0p7_exag3",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7
+    }
+   }
+  }
+ },
+ {
+  "name": "1_exp0p7_exag2",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7
+    }
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 2.0
+   }
+  }
+ },
+ {
+  "name": "2_exp0p7_exag1",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7
+    }
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 1.0
+   }
+  }
+ },
+ {
+  "name": "3_exp0p7_exag3_shoulder",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "ShoulderStart": 0.55,
+     "ShoulderStrength": 0.85
+    }
+   }
+  }
+ },
+ {
+  "name": "4_exp0p55_exag2",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.55
+    }
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 2.0
+   }
+  }
+ },
+ {
+  "name": "5_exp0p55_exag2_shoulder",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.55,
+     "ShoulderStart": 0.55,
+     "ShoulderStrength": 0.85
+    }
+   }
+  },
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 2.0
+   }
+  }
+ },
+ {
+  "name": "6_old_again",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7
+    }
+   }
+  }
+ }
+]

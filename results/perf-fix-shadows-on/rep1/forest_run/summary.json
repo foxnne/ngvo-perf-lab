@@ -1,0 +1,57 @@
+{
+ "label": "perf-fix-shadows-on",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "44f813593d",
+ "time": "2026-11-22 02:27:47",
+ "render": {
+  "frames": 1917,
+  "mean": 30.3,
+  "fps": 33.0,
+  "p50": 29.98,
+  "p95": 32.91,
+  "p99": 43.16,
+  "max": 72.3,
+  "over50": 10,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 28.28,
+ "fg_share": 1.0,
+ "distance": 17285,
+ "cells": 6,
+ "presented": {
+  "present": {
+   "frames": 3963,
+   "mean": 15.13,
+   "fps": 66.1,
+   "p50": 14.88,
+   "p95": 16.52,
+   "p99": 17.91,
+   "max": 50.7,
+   "over50": 1,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 3963,
+   "mean": 15.13,
+   "fps": 66.1,
+   "p50": 14.91,
+   "p95": 17.14,
+   "p99": 19.26,
+   "max": 51.0,
+   "over50": 1,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 3963
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 1238
+}

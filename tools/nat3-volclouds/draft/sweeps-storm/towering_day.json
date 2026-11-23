@@ -1,0 +1,900 @@
+[
+ {
+  "name": "00_live",
+  "label": "Reference: the saved fair-weather sky, nothing changed.",
+  "look_for": "Baseline for every other tile.",
+  "scene": "per-weather scene: yes",
+  "cost": "same as live",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {}
+ },
+ {
+  "name": "01_tall_slab_tall_types",
+  "label": "Thickness: slab 1.0-4.5 km (live 1.2-2.1) and top types 0.3-1.0 (live 0-0.33), same coverage map.",
+  "look_for": "Every existing cumulus becomes a 1.5-3.5 km column; heights vary at random (type noise is not tied to the cells). Expect a crowd of thin towers, not one mass.",
+  "scene": "per-weather scene: yes",
+  "cost": "HIGH: slab 3.9x thicker, every horizontal ray stays inside it",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.5,
+        "z": 0.3,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "02_core_towers",
+  "label": "Top type driven by the SAME noise as coverage (modeling.noise 3): each cell is a dome, tallest in its middle, low at its rim.",
+  "look_for": "Cells read as single cumulus congestus with a rounded summit instead of flat-topped columns of random height.",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather (modeling.noise)",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "03_solid_cores",
+  "label": "02 + steep coverage (primary 0.35..0.55 -> 0..1, exponent 1) and the small-fragment layer off.",
+  "look_for": "Fewer cells with clear sky between; hard cauliflower outline (coverage reaches the solid 0.7) instead of soft, see-through edges.",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather (modeling.noise)",
+  "cost": "HIGH (thick slab), fewer occupied rays",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "04_few_large_cells",
+  "label": "03 + coverage noise input at frequency 5 instead of 12: cells ~5 x 3.3 km instead of 2 x 1.4 km.",
+  "look_for": "One or two huge isolated clouds in the province, like the reference picture. Is the dome too smooth (no mid-size lobes)?",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather (noise input 3 + modeling.noise)",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     },
+     "noise": [
+      {
+       "parameters": {
+        "type": 0,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 6,
+        "persistence": 0.6,
+        "lacunarity": 2,
+        "contrast": 1.6,
+        "bias": -0.02,
+        "repetitions": 2,
+        "responseExponent": 1.8
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 32,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 2,
+        "seed": 1337,
+        "frequency": 5,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.1,
+        "bias": -0.05,
+        "repetitions": 1,
+        "responseExponent": 2.0
+       },
+       "texturePath": ""
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "05_big_tile",
+  "label": "03 + weather-map tile 50 x 33.9 km instead of 24.66 x 16.7 (everything 2x bigger): the scene-drivable way to larger cells.",
+  "look_for": "Same question as 04. Compare cell size and edge softness with 04 (the map is 512 px: 98 m per texel here).",
+  "scene": "per-weather scene: ndfScale yes, but a transition zooms the field; modeling.noise is GLOBAL",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0,
+     "ndfScale": {
+      "x": 50.0,
+      "y": 33.86
+     }
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "06_flat_dark_base",
+  "label": "04 + flat hard base: no base lift with coverage, wide bottoms (bottomSpread 1.0 / 0.15), dense bottom type, short base ramp.",
+  "look_for": "One level, flat, dark underside under the whole cloud; a wider foot than the tower (shelf).",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0,
+     "bottomSpreadScale": 1.0,
+     "bottomSpreadHeight": 0.15,
+     "bottomSoftness": 0.15,
+     "bottomSoftnessHeight": 0.12
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.05
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     },
+     "noise": [
+      {
+       "parameters": {
+        "type": 0,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 6,
+        "persistence": 0.6,
+        "lacunarity": 2,
+        "contrast": 1.6,
+        "bias": -0.02,
+        "repetitions": 2,
+        "responseExponent": 1.8
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 32,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 2,
+        "seed": 1337,
+        "frequency": 5,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.1,
+        "bias": -0.05,
+        "repetitions": 1,
+        "responseExponent": 2.0
+       },
+       "texturePath": ""
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "07_contrast",
+  "label": "06 + lighting contrast: sunExtinction 1.8, ambientStrength 0.55, msAlbedo 0.994, densityScale 1.0.",
+  "look_for": "Near-black shadowed flank and base against a bright sunlit side. Watch for crushed blacks and a dirty grey sunlit face (msAlbedo).",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0,
+     "bottomSpreadScale": 1.0,
+     "bottomSpreadHeight": 0.15,
+     "bottomSoftness": 0.15,
+     "bottomSoftnessHeight": 0.12,
+     "densityScale": 1.0
+    },
+    "lighting": {
+     "sunExtinction": 1.8,
+     "ambientStrength": 0.55,
+     "msAlbedo": 0.994
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.05
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     },
+     "noise": [
+      {
+       "parameters": {
+        "type": 0,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 6,
+        "persistence": 0.6,
+        "lacunarity": 2,
+        "contrast": 1.6,
+        "bias": -0.02,
+        "repetitions": 2,
+        "responseExponent": 1.8
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 32,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 2,
+        "seed": 1337,
+        "frequency": 5,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.1,
+        "bias": -0.05,
+        "repetitions": 1,
+        "responseExponent": 2.0
+       },
+       "texturePath": ""
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "08_no_top_expansion",
+  "label": "06 with topExpansionScale 0: the plain cone profile instead of the expanded (bulged) top.",
+  "look_for": "Does the upper half lose its shoulder / anvil-like bulge? Tells how much of the \"anvil\" the expansion LUT gives.",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0,
+     "bottomSpreadScale": 1.0,
+     "bottomSpreadHeight": 0.15,
+     "bottomSoftness": 0.15,
+     "bottomSoftnessHeight": 0.12,
+     "topExpansionScale": 0.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.05
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     },
+     "noise": [
+      {
+       "parameters": {
+        "type": 0,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 6,
+        "persistence": 0.6,
+        "lacunarity": 2,
+        "contrast": 1.6,
+        "bias": -0.02,
+        "repetitions": 2,
+        "responseExponent": 1.8
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 32,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 2,
+        "seed": 1337,
+        "frequency": 5,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.1,
+        "bias": -0.05,
+        "repetitions": 1,
+        "responseExponent": 2.0
+       },
+       "texturePath": ""
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "09_big_billows",
+  "label": "06 + detail noise at lower base frequencies (3,3,4,9 -> 1,2,3,6 cells per 230 m tile). EXPERIMENTAL: the response curves were tuned for the defaults.",
+  "look_for": "Larger cauliflower lobes (up to 230 m instead of ~77 m), less \"popcorn\". May thin or thicken all cloud; judge only the lobe size.",
+  "scene": "GLOBAL ONLY (noise slot / noise input / cloudNoise are not scene keys): would change every weather (cloudNoise)",
+  "cost": "HIGH (thick slab); noise regenerates over ~32 frames",
+  "weather": "SunnyPF",
+  "settle": 20,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 3500.0,
+     "bottomSpreadScale": 1.0,
+     "bottomSpreadHeight": 0.15,
+     "bottomSoftness": 0.15,
+     "bottomSoftnessHeight": 0.12
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "modeling": {
+       "noise": 3,
+       "frequency": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": 0.35,
+        "y": 0.95,
+        "z": 0.15,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "primary": {
+       "range": {
+        "x": 0.35,
+        "y": 0.55,
+        "z": 0.0,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.05
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+       }
+      }
+     },
+     "noise": [
+      {
+       "parameters": {
+        "type": 0,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 4,
+        "octaves": 6,
+        "persistence": 0.6,
+        "lacunarity": 2,
+        "contrast": 1.6,
+        "bias": -0.02,
+        "repetitions": 2,
+        "responseExponent": 1.8
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 1,
+        "seed": 1337,
+        "frequency": 32,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.0,
+        "bias": 0.0,
+        "repetitions": 1,
+        "responseExponent": 1.0
+       },
+       "texturePath": ""
+      },
+      {
+       "parameters": {
+        "type": 2,
+        "seed": 1337,
+        "frequency": 5,
+        "octaves": 4,
+        "persistence": 0.5,
+        "lacunarity": 2,
+        "contrast": 1.1,
+        "bias": -0.05,
+        "repetitions": 1,
+        "responseExponent": 2.0
+       },
+       "texturePath": ""
+      }
+     ]
+    }
+   },
+   "cloudNoise": {
+    "shape": [
+     {
+      "frequency": 1,
+      "octaves": 5,
+      "persistence": 0.625,
+      "exponent": 3.489,
+      "contrast": 0.96,
+      "bias": 0.133,
+      "perlinMix": 1.0
+     },
+     {
+      "frequency": 2,
+      "octaves": 4,
+      "persistence": 0.5,
+      "exponent": 1.164,
+      "contrast": 1.628,
+      "bias": 0.317,
+      "perlinMix": 0.0
+     },
+     {
+      "frequency": 3,
+      "octaves": 4,
+      "persistence": 0.5,
+      "exponent": 0.996,
+      "contrast": 1.262,
+      "bias": 0.115,
+      "perlinMix": 0.0
+     },
+     {
+      "frequency": 6,
+      "octaves": 4,
+      "persistence": 0.6,
+      "exponent": 1.031,
+      "contrast": 1.463,
+      "bias": 0.226,
+      "perlinMix": 0.0
+     }
+    ]
+   }
+  }
+ }
+]

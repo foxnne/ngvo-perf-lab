@@ -1,0 +1,50 @@
+[
+ {
+  "name": "0_now",
+  "set": {},
+  "features": {},
+  "settle": 8
+ },
+ {
+  "name": "A_dir0.5_env0.4",
+  "set": {},
+  "features": {
+   "LinearLighting": {
+    "directionalLightMult": 0.5,
+    "pointLightMult": 1.0
+   },
+   "ImageBasedLighting": {
+    "EnvIBLScale": 0.4
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "B_dir0.35_env0.3_pt1.5",
+  "set": {},
+  "features": {
+   "LinearLighting": {
+    "directionalLightMult": 0.35,
+    "pointLightMult": 1.5
+   },
+   "ImageBasedLighting": {
+    "EnvIBLScale": 0.3
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "C_dir0.5_env0.4_pt2",
+  "set": {},
+  "features": {
+   "LinearLighting": {
+    "directionalLightMult": 0.5,
+    "pointLightMult": 2.0
+   },
+   "ImageBasedLighting": {
+    "EnvIBLScale": 0.4
+   }
+  },
+  "settle": 8
+ }
+]

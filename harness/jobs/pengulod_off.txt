@@ -1,0 +1,7 @@
+# Switch profile foxnne-nsfw back from PenguLOD to the DynDOLOD output. Paste these lines into queue.txt.
+# 1) unticks the six PenguLOD mods and re-ticks the four DynDOLOD mods, all in place (no priority changes; the mod folders stay installed).
+# 2) re-activates DynDOLOD.esm after FabulousPoser.esl and DynDOLOD.esp + Occlusion.esp (DynDOLOD's again) after
+#    "NGVO - Flat Maps Patch.esp" (their positions on 2026-11-20), deactivates PenguLOD.esp.
+#    If those two anchors have moved or gone since, fix jobs/pengulod_off_plugins.json first (the job stops on a missing anchor).
+mod_state_job.py pengulod-off jobs/pengulod_off_mods.json
+plugin_order_job.py pengulod-off jobs/pengulod_off_plugins.json

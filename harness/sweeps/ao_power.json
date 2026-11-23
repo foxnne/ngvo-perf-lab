@@ -1,0 +1,46 @@
+[
+ {
+  "name": "00_ao_power_2.0_as_is",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "settle": 8
+ },
+ {
+  "name": "01_ao_power_1.5",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "AOPower": 1.5
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "02_ao_power_1.0",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "AOPower": 1.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "03_ao_power_0.6",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "AOPower": 0.6
+   }
+  },
+  "settle": 8
+ }
+]

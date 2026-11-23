@@ -1,0 +1,55 @@
+{
+ "label": "merge1122-final",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "9b288ea2bd",
+ "time": "2026-11-22 18:09:18",
+ "render": {
+  "frames": 575,
+  "mean": 26.25,
+  "fps": 38.1,
+  "p50": 26.16,
+  "p95": 27.7,
+  "p99": 35.72,
+  "max": 46.0,
+  "over50": 0,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 24.62,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1292,
+   "mean": 13.12,
+   "fps": 76.2,
+   "p50": 12.9,
+   "p95": 14.08,
+   "p99": 14.62,
+   "max": 33.9,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1292,
+   "mean": 13.12,
+   "fps": 76.2,
+   "p50": 12.87,
+   "p95": 15.1,
+   "p99": 16.79,
+   "max": 33.3,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1292
+  }
+ }
+}

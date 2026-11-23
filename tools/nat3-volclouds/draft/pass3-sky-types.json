@@ -1,0 +1,5582 @@
+{
+  "_note": "UNTESTED as scene files. One representative weather per sky type with its Day settings (flat dotted paths; vector components .x/.y/.z/.w). \"cloudLayer.cirrus.weather\" is ONE value: the whole {\"states\": [...]} blend object. \"PhysicalSky.periodOverrides\" lists, per other period, only the keys that differ from Day. \"globalOnly\" must be set once globally (it cannot be driven per weather). Console: fw <formId>; NAT-ENB.esp ids need the load-order byte in place of the leading 00.",
+  "pack": "foxnne-nat3-clouds-pass3",
+  "globalOnly": {
+    "PhysicalSky": {
+      "cloudLayer.cirrus.uvSize": 3.0
+    },
+    "why": "cloudLayer.cirrus.uvSize is scene-blacklisted; all three high-layer looks were tested at 3.0. It is in the pack Baseline."
+  },
+  "savedBase": {
+    "aerosolLoading": 0.2,
+    "ExponentialHeightFog.vanillaFogStrength": 0.1,
+    "ImageBasedLighting.DALCAmount": 0.5,
+    "rayleighScatter": [
+      6.6049,
+      12.345,
+      29.413
+    ],
+    "rayleighScatterAP1": [
+      6.9344,
+      12.0203,
+      28.91
+    ]
+  },
+  "anchors": {
+    "globalBase": "Saved in game: haze Continental loading 0.2 (aerosolScatter [2.522, 3.419, 4.575], aerosolAbsorption [0.1327, 0.1466, 0.1604]); height fog vanillaFogStrength 0.1 (0.4 / 0.3 washed out the Whiterun plain); low layer 1200 + 900 m, ndfScale [24.66, 16.7], primary.range [0.1, 0.65, 0, 0.65], cirrus densityScale 0.3.",
+    "haze": "Heavy haze hides all cloud structure: storm at 2.4x the old base (loading 0.95) = featureless grey wall at midday; at 0.45x of that (loading 0.38 = 1.9x the new base) readable at dusk, still murky at midday. Ceilings used here, as multiples of the new base: overcast 1.5, rain 1.8, storm 1.6, snow 2.0, fog 3.0.",
+    "heightFog": "Fog type at pass-2 values (FogPF strength 0.153, half-opacity ~260 m, haze loading 1.02) = near white-out at 13:00.",
+    "modeling": "The modeling layer decides how much of the slab is filled; default [-0.5, 0.6, 0, 0.5] exponent 1.6 keeps every cloud in the lowest 10-40 % of its slab. Pass 2 never set it.",
+    "storm": "Liked at dusk: sweeps/storm_towers.json 04_as03_low_wide_bases (primary [0, 0.5, 0, 0.95] exp 1, secondary [0.2, 0.8, 0, 0], modeling [-0.5, 0.5, 0.35, 1.0] exp 1, heightVariation [0.15, 0.75, 0.14, 0] exp 1, bottomTypeRange [-0.4, 0.5, 0, 0.1], 800 + 2600 m, density 1.0, bottomSpread 1.0 / 0.2, sunExtinction 1.6, viewExtinction 1.2, msAlbedo 0.992, ambientStrength 0.7) and 06_as04_more_cloud_narrow_gaps (same, primary.range.x -0.25).",
+    "rain": "Liked at 17:30, fairly uniform at 13:00: sweeps/rain_structure.json 13_as12_dark_lighting (primary [-0.3, 0.45, 0, 0.9] exp 1, secondary [-0.3, 0.8, 0, 0.45], modeling [-0.5, 0.5, 0.2, 0.8] exp 1, 800 + 1700 m, density 0.9, sunExtinction 1.3, viewExtinction 1.1, msAlbedo 0.995, ambientStrength 0.8; heightVariation and bottomSpread at their defaults). AVOID (wavy streaks at low sun): 14_as13_low_wide_bases (heightVariation [0.15, 0.75, 0.10, 0] + bottomSpread 1.0 / 0.25) and 15 (the same with a coverage floor of 0.25).",
+    "fair": "Liked: sweeps/small_fragments.json 07 (primary.range [0.25, 0.5, 0, 0.65], secondary off [-0.2, 0.8, 0, 0]): fewer, bolder, well-shaped cumulus with clean sky between.",
+    "overcast": "Pass-2 overcast was too open (blue gaps).",
+    "cirrus": "Popcorn = the dense-cell pattern channel. Tested looks (sweeps/high_cloud.json): 06 sparse streaks, 05 large streaky sheets (0.5 glared near the sun at midday), 08 thin veil. All with uvSize 3.",
+    "lightning": "Whole-screen white flashes came from strikes as close as 0.35 km lighting thick fog near the camera.",
+    "ambient": "Under a dark storm sky snow and terrain stayed brightly lit: part of the fill is the game weather ambient (ImageBasedLighting DALCAmount, Baseline 0.5). 0.25 was used in the liked storm and rain frames.",
+    "rayleigh": "Rayleigh x2 = golden sunset at 17:30 but a pale midday sky.",
+    "terrain": "Whiterun plain ~155 m, Ilinalta ~215 m, peaks ~770 m (scaled metres above the map floor).",
+    "drift": "Pass-2 drift up to 15.6 / 31.2 m/s was never judged; capped at 9 m/s (low layer) here."
+  },
+  "types": {
+    "clear": {
+      "label": "Clear",
+      "rationale": "The liked fair-weather cut-off with a higher threshold: a few bold cumulus, small-fragment layer off; sparse high streaks.",
+      "count": 5,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.0,
+          "pri": [
+            0.4,
+            0.65,
+            0.0,
+            0.65
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1400.0,
+          "thick": 600.0,
+          "dens": 0.6,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.4
+        }
+      ],
+      "highLayerLook": "sparse streaks (high_cloud 06)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.0,
+        1.0
+      ],
+      "heightFog_floorM_minM": [
+        1500,
+        1000
+      ],
+      "rayleighTwilightX2": true,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "SClearSkyPF",
+        "formKey": "0x7F00~NAT-ENB.esp",
+        "localFormId": "0x7F00",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.4,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.69,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.38,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.4,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7197,
+          "halfOpacityDistanceDayM.pass3": 7197,
+          "halfOpacityDistanceNightM.pass3": 3585
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.5,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 1.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "SClearSkyCOMA",
+        "formKey": "0x23667~NAT-ENB.esp",
+        "localFormId": "0x23667",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.4,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.69,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.38,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.4,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7197,
+          "halfOpacityDistanceDayM.pass3": 7197,
+          "halfOpacityDistanceNightM.pass3": 3585
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.5,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 1.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "heaviestMember": {
+        "editorId": "SunnyFV_A",
+        "formKey": "0x10E10~Dawnguard.esm",
+        "localFormId": "0x10E10",
+        "plugin": "Dawnguard.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.4,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.88,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.76,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.4,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudMap.procedural.parameters.primary.range.x": 0.55,
+            "cloudMap.procedural.parameters.primary.range.y": 0.8,
+            "cloudLayer.cirrus.densityScale": 0.0
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudMap.procedural.parameters.primary.range.x": 0.55,
+            "cloudMap.procedural.parameters.primary.range.y": 0.8,
+            "cloudLayer.cirrus.densityScale": 0.0
+          },
+          "Night": {
+            "cloudMap.procedural.parameters.primary.range.x": 0.55,
+            "cloudMap.procedural.parameters.primary.range.y": 0.8,
+            "cloudLayer.cirrus.densityScale": 0.0
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7274,
+          "halfOpacityDistanceDayM.pass3": 7274,
+          "halfOpacityDistanceNightM.pass3": 6566
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.5,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 1.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "SClearSkyCOMA",
+          "formKey": "0x23667~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SClearSkyPF",
+          "formKey": "0x7F00~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SClearSkySN",
+          "formKey": "0x53C2~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SClearSkyTU",
+          "formKey": "0x3DF4~NAT-ENB.esp",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SunnyFV_A",
+          "formKey": "0x10E10~Dawnguard.esm",
+          "severity": 0.0
+        }
+      ]
+    },
+    "fair": {
+      "label": "Fair-weather cumulus",
+      "rationale": "Lightest member = the liked small_fragments 07 look exactly; heavier members lower the threshold a little. Sparse high streaks.",
+      "count": 20,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.0,
+          "pri": [
+            0.25,
+            0.5,
+            0.0,
+            0.65
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1300.0,
+          "thick": 700.0,
+          "dens": 0.7,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.4
+        },
+        {
+          "severity": 1.0,
+          "pri": [
+            0.19,
+            0.44,
+            0.0,
+            0.65
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1300.0,
+          "thick": 700.0,
+          "dens": 0.7,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.4
+        }
+      ],
+      "highLayerLook": "sparse streaks (high_cloud 06)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.0,
+        1.0
+      ],
+      "heightFog_floorM_minM": [
+        1500,
+        1000
+      ],
+      "rayleighTwilightX2": true,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "SunnyPF",
+        "formKey": "0x81A~Skyrim.esm",
+        "localFormId": "0x81A",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.25,
+          "cloudMap.procedural.parameters.primary.range.y": 0.5,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1300.0,
+          "cloudLayer.low.ndfAltitudeScale": 700.0,
+          "cloudLayer.low.densityScale": 0.7,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.88,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.76,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.4,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7197,
+          "halfOpacityDistanceDayM.pass3": 7197,
+          "halfOpacityDistanceNightM.pass3": 6510
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.5,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 1.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": null,
+      "heaviestMember": {
+        "editorId": "SunnyCO_A",
+        "formKey": "0x10E1E8~Skyrim.esm",
+        "localFormId": "0x10E1E8",
+        "plugin": "Skyrim.esm",
+        "severity": 1.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.19,
+          "cloudMap.procedural.parameters.primary.range.y": 0.44,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1300.0,
+          "cloudLayer.low.ndfAltitudeScale": 700.0,
+          "cloudLayer.low.densityScale": 0.7,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.88,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.76,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.4,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudMap.procedural.parameters.primary.range.x": 0.34,
+            "cloudMap.procedural.parameters.primary.range.y": 0.59,
+            "cloudLayer.cirrus.densityScale": 0.0
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudMap.procedural.parameters.primary.range.x": 0.34,
+            "cloudMap.procedural.parameters.primary.range.y": 0.59,
+            "cloudLayer.cirrus.densityScale": 0.0
+          },
+          "Night": {
+            "cloudMap.procedural.parameters.primary.range.x": 0.34,
+            "cloudMap.procedural.parameters.primary.range.y": 0.59,
+            "cloudLayer.cirrus.densityScale": 0.0
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7197,
+          "halfOpacityDistanceDayM.pass3": 7197,
+          "halfOpacityDistanceNightM.pass3": 6667
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.5,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 1.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "SunnyPF",
+          "formKey": "0x81A~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SunnySN",
+          "formKey": "0x10A244~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SunnyTU_A",
+          "formKey": "0x10E1EE~Skyrim.esm",
+          "severity": 0.086
+        },
+        {
+          "editorId": "SunnyDLC2",
+          "formKey": "0x18471~Dragonborn.esm",
+          "severity": 0.143
+        },
+        {
+          "editorId": "SunnyDLC2_ALT",
+          "formKey": "0xD64B0~NAT-ENB.esp",
+          "severity": 0.143
+        },
+        {
+          "editorId": "SunnyCO",
+          "formKey": "0x10A234~Skyrim.esm",
+          "severity": 0.343
+        },
+        {
+          "editorId": "SunnyDLC1_Auriel",
+          "formKey": "0xF89C~Dawnguard.esm",
+          "severity": 0.343
+        },
+        {
+          "editorId": "SunnyVT",
+          "formKey": "0x10A7A5~Skyrim.esm",
+          "severity": 0.571
+        },
+        {
+          "editorId": "SunnyPF_A",
+          "formKey": "0x10E1F2~Skyrim.esm",
+          "severity": 0.586
+        },
+        {
+          "editorId": "SunnyFF",
+          "formKey": "0x10A23B~Skyrim.esm",
+          "severity": 0.614
+        },
+        {
+          "editorId": "SunnyFF_A",
+          "formKey": "0x10E1EC~Skyrim.esm",
+          "severity": 0.686
+        },
+        {
+          "editorId": "SunnyRE",
+          "formKey": "0x10A237~Skyrim.esm",
+          "severity": 0.686
+        },
+        {
+          "editorId": "SunnyTU",
+          "formKey": "0x10A240~Skyrim.esm",
+          "severity": 0.686
+        },
+        {
+          "editorId": "SunnyMA",
+          "formKey": "0x10A230~Skyrim.esm",
+          "severity": 0.8
+        },
+        {
+          "editorId": "SunnyVT_A",
+          "formKey": "0x10E1E4~Skyrim.esm",
+          "severity": 0.8
+        },
+        {
+          "editorId": "SunnyFV",
+          "formKey": "0x10E0F~Dawnguard.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnyMA_A",
+          "formKey": "0x10E1E6~Skyrim.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnyRE_A",
+          "formKey": "0x10E1EA~Skyrim.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnySN_A",
+          "formKey": "0x10E1F0~Skyrim.esm",
+          "severity": 0.943
+        },
+        {
+          "editorId": "SunnyCO_A",
+          "formKey": "0x10E1E8~Skyrim.esm",
+          "severity": 1.0
+        }
+      ]
+    },
+    "partly": {
+      "label": "Partly cloudy",
+      "rationale": "Same sharp cut-off as fair with a lower threshold (consistent cloud shapes), on the saved 1200 + 900 slab; large streaky high sheets, thinner by day (glare).",
+      "count": 27,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.1,
+          "pri": [
+            0.14,
+            0.42,
+            0.0,
+            0.65
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1200.0,
+          "thick": 900.0,
+          "dens": 0.75,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.5
+        },
+        {
+          "severity": 0.52,
+          "pri": [
+            0.05,
+            0.35,
+            0.0,
+            0.68
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1200.0,
+          "thick": 900.0,
+          "dens": 0.75,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.5
+        },
+        {
+          "severity": 0.9,
+          "pri": [
+            -0.08,
+            0.25,
+            0.0,
+            0.7
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1100.0,
+          "thick": 1000.0,
+          "dens": 0.75,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.5
+        }
+      ],
+      "highLayerLook": "large streaky sheets (high_cloud 05)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.0,
+        1.15
+      ],
+      "heightFog_floorM_minM": [
+        1500,
+        1000
+      ],
+      "rayleighTwilightX2": true,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "CloudyPF",
+        "formKey": "0x12F89~Skyrim.esm",
+        "localFormId": "0x12F89",
+        "plugin": "Skyrim.esm",
+        "severity": 0.521,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.05,
+          "cloudMap.procedural.parameters.primary.range.y": 0.35,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.68,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1200.0,
+          "cloudLayer.low.ndfAltitudeScale": 900.0,
+          "cloudLayer.low.densityScale": 0.75,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.44,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 8.88,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.3,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.9,
+                        0.3,
+                        0.25,
+                        0.8
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7238,
+          "halfOpacityDistanceDayM.pass3": 7238,
+          "halfOpacityDistanceNightM.pass3": 6510
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.2,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 0.8,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "CloudyCO_A",
+        "formKey": "0x10E1E7~Skyrim.esm",
+        "localFormId": "0x10E1E7",
+        "plugin": "Skyrim.esm",
+        "severity": 0.132,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": 0.133,
+          "cloudMap.procedural.parameters.primary.range.y": 0.415,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.652,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1200.0,
+          "cloudLayer.low.ndfAltitudeScale": 900.0,
+          "cloudLayer.low.densityScale": 0.75,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.44,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 8.88,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.3,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.9,
+                        0.3,
+                        0.25,
+                        0.8
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudMap.procedural.parameters.primary.range.x": 0.283,
+            "cloudMap.procedural.parameters.primary.range.y": 0.565,
+            "cloudLayer.cirrus.densityScale": 0.0
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudMap.procedural.parameters.primary.range.x": 0.283,
+            "cloudMap.procedural.parameters.primary.range.y": 0.565,
+            "cloudLayer.cirrus.densityScale": 0.0
+          },
+          "Night": {
+            "cloudMap.procedural.parameters.primary.range.x": 0.283,
+            "cloudMap.procedural.parameters.primary.range.y": 0.565,
+            "cloudLayer.cirrus.densityScale": 0.0
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7197,
+          "halfOpacityDistanceDayM.pass3": 7197,
+          "halfOpacityDistanceNightM.pass3": 6449
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.2,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 0.8,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "heaviestMember": {
+        "editorId": "CloudyFF",
+        "formKey": "0x10A23F~Skyrim.esm",
+        "localFormId": "0x10A23F",
+        "plugin": "Skyrim.esm",
+        "severity": 0.875,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "rayleighScatter.x": 6.6049,
+          "rayleighScatter.y": 12.345,
+          "rayleighScatter.z": 29.413,
+          "rayleighScatterAP1.x": 6.9344,
+          "rayleighScatterAP1.y": 12.0203,
+          "rayleighScatterAP1.z": 28.91,
+          "cloudMap.procedural.parameters.primary.range.x": -0.071,
+          "cloudMap.procedural.parameters.primary.range.y": 0.257,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.699,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1110.0,
+          "cloudLayer.low.ndfAltitudeScale": 990.0,
+          "cloudLayer.low.densityScale": 0.75,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.44,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 8.88,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.3,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.9,
+                        0.3,
+                        0.25,
+                        0.8
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Sunrise": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Sunset": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          },
+          "Dusk": {
+            "rayleighScatter.x": 13.2098,
+            "rayleighScatter.y": 24.69,
+            "rayleighScatter.z": 58.826,
+            "rayleighScatterAP1.x": 13.8688,
+            "rayleighScatterAP1.y": 24.0406,
+            "rayleighScatterAP1.z": 57.82,
+            "cloudLayer.cirrus.densityScale": 0.5
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7238,
+          "halfOpacityDistanceDayM.pass3": 7238,
+          "halfOpacityDistanceNightM.pass3": 6510
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 1.2,
+            "Thickness": 2.0
+          },
+          "Sunrise": {
+            "Amount": 0.8,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "CloudyCO_A",
+          "formKey": "0x10E1E7~Skyrim.esm",
+          "severity": 0.132
+        },
+        {
+          "editorId": "CloudyDLC2",
+          "formKey": "0x31AC0~Dragonborn.esm",
+          "severity": 0.254
+        },
+        {
+          "editorId": "CloudyDLC2_ALT",
+          "formKey": "0xD64B2~NAT-ENB.esp",
+          "severity": 0.254
+        },
+        {
+          "editorId": "CloudySN_A",
+          "formKey": "0x10E1EF~Skyrim.esm",
+          "severity": 0.261
+        },
+        {
+          "editorId": "CloudyMA_A",
+          "formKey": "0x10E1E5~Skyrim.esm",
+          "severity": 0.28
+        },
+        {
+          "editorId": "CloudyDLC2_A",
+          "formKey": "0x374B8~Dragonborn.esm",
+          "severity": 0.282
+        },
+        {
+          "editorId": "CloudyFV_A",
+          "formKey": "0x10E0B~Dawnguard.esm",
+          "severity": 0.307
+        },
+        {
+          "editorId": "CloudyFF_A",
+          "formKey": "0x10E1EB~Skyrim.esm",
+          "severity": 0.325
+        },
+        {
+          "editorId": "CloudyFV",
+          "formKey": "0x10E0E~Dawnguard.esm",
+          "severity": 0.352
+        },
+        {
+          "editorId": "KarthspireRedoubtFog",
+          "formKey": "0x106635~Skyrim.esm",
+          "severity": 0.36
+        },
+        {
+          "editorId": "CloudyRE",
+          "formKey": "0x10A23A~Skyrim.esm",
+          "severity": 0.406
+        },
+        {
+          "editorId": "CloudyRE_A",
+          "formKey": "0x10E1E9~Skyrim.esm",
+          "severity": 0.409
+        },
+        {
+          "editorId": "CloudyPF_A",
+          "formKey": "0x10E1F1~Skyrim.esm",
+          "severity": 0.42
+        },
+        {
+          "editorId": "CloudySN",
+          "formKey": "0x10A245~Skyrim.esm",
+          "severity": 0.42
+        },
+        {
+          "editorId": "SkyrimDA02Weather",
+          "formKey": "0x105F40~Skyrim.esm",
+          "severity": 0.442
+        },
+        {
+          "editorId": "CloudyDLC1_Auriel",
+          "formKey": "0xF89D~Dawnguard.esm",
+          "severity": 0.451
+        },
+        {
+          "editorId": "CloudyPF",
+          "formKey": "0x12F89~Skyrim.esm",
+          "severity": 0.521
+        },
+        {
+          "editorId": "CloudyTU_A",
+          "formKey": "0x10E1ED~Skyrim.esm",
+          "severity": 0.559
+        },
+        {
+          "editorId": "CloudyVT_A",
+          "formKey": "0x10E1E3~Skyrim.esm",
+          "severity": 0.563
+        },
+        {
+          "editorId": "CloudyMA",
+          "formKey": "0x10A233~Skyrim.esm",
+          "severity": 0.566
+        },
+        {
+          "editorId": "CloudyTU",
+          "formKey": "0x10A243~Skyrim.esm",
+          "severity": 0.573
+        },
+        {
+          "editorId": "CloudyDLC2_TU_A",
+          "formKey": "0x374BA~Dragonborn.esm",
+          "severity": 0.652
+        },
+        {
+          "editorId": "CloudyDLC2_TU_A_ALT",
+          "formKey": "0xD64B3~NAT-ENB.esp",
+          "severity": 0.652
+        },
+        {
+          "editorId": "CloudyVT",
+          "formKey": "0x10A7A8~Skyrim.esm",
+          "severity": 0.658
+        },
+        {
+          "editorId": "CloudyDLC2_A",
+          "formKey": "0x374B9~Dragonborn.esm",
+          "severity": 0.732
+        },
+        {
+          "editorId": "CloudyCO",
+          "formKey": "0x10A236~Skyrim.esm",
+          "severity": 0.763
+        },
+        {
+          "editorId": "CloudyFF",
+          "formKey": "0x10A23F~Skyrim.esm",
+          "severity": 0.875
+        }
+      ]
+    },
+    "overcast": {
+      "label": "Overcast",
+      "rationale": "Closed deck: coverage reaches solid over most of the field (low input range, secondary layer filling the gaps, floor <= 0.12), modeling layer fills 25-75 % of the slab so thickness varies (light and dark underside). Rain-13 style defaults for heightVariation / bottomSpread (no low wide bases). Thin veil above the lightest members only.",
+      "count": 14,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.3,
+          "pri": [
+            -0.5,
+            0.35,
+            0.0,
+            0.88
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.45,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.2,
+            0.65
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.45
+          ],
+          "base": 1000.0,
+          "thick": 900.0,
+          "dens": 0.75,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.1,
+          "viewExt": 1.0,
+          "msAlb": 0.998,
+          "amb": 0.95,
+          "cirrus": 0.15,
+          "dalc": 0.35
+        },
+        {
+          "severity": 0.5,
+          "pri": [
+            -0.6,
+            0.32,
+            0.04,
+            0.9
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.5,
+            0.55,
+            0.0,
+            0.55
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.22,
+            0.7
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.45
+          ],
+          "base": 970.0,
+          "thick": 950.0,
+          "dens": 0.78,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.15,
+          "viewExt": 1.05,
+          "msAlb": 0.9975,
+          "amb": 0.92,
+          "cirrus": 0.0,
+          "dalc": 0.32
+        },
+        {
+          "severity": 0.67,
+          "pri": [
+            -0.7,
+            0.3,
+            0.08,
+            0.92
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.55,
+            0.5,
+            0.0,
+            0.6
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.25,
+            0.75
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.45
+          ],
+          "base": 950.0,
+          "thick": 1000.0,
+          "dens": 0.8,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.2,
+          "viewExt": 1.05,
+          "msAlb": 0.997,
+          "amb": 0.9,
+          "cirrus": 0.0,
+          "dalc": 0.3
+        },
+        {
+          "severity": 0.9,
+          "pri": [
+            -0.8,
+            0.22,
+            0.12,
+            0.95
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.6,
+            0.45,
+            0.0,
+            0.65
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.3,
+            0.8
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.45
+          ],
+          "base": 900.0,
+          "thick": 1100.0,
+          "dens": 0.85,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.3,
+          "viewExt": 1.1,
+          "msAlb": 0.996,
+          "amb": 0.85,
+          "cirrus": 0.0,
+          "dalc": 0.25
+        }
+      ],
+      "highLayerLook": "thin veil (high_cloud 08)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.1,
+        1.5
+      ],
+      "heightFog_floorM_minM": [
+        1800,
+        900
+      ],
+      "rayleighTwilightX2": false,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "OvercastPF",
+        "formKey": "0x53B6~NAT-ENB.esp",
+        "localFormId": "0x53B6",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.668,
+        "aerosolLoadingEquivalent": 0.2458,
+        "hazeMultipleOfSavedBase": 1.229,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.0997,
+          "aerosolScatter.y": 4.2018,
+          "aerosolScatter.z": 5.6229,
+          "aerosolAbsorption.x": 0.16309,
+          "aerosolAbsorption.y": 0.18012,
+          "aerosolAbsorption.z": 0.19714,
+          "cloudMap.procedural.parameters.primary.range.x": -0.7,
+          "cloudMap.procedural.parameters.primary.range.y": 0.3,
+          "cloudMap.procedural.parameters.primary.range.z": 0.08,
+          "cloudMap.procedural.parameters.primary.range.w": 0.92,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.55,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.5,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.25,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.75,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.45,
+          "cloudLayer.low.ndfAltitudeOffset": 950.0,
+          "cloudLayer.low.ndfAltitudeScale": 1000.0,
+          "cloudLayer.low.densityScale": 0.8,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.2,
+          "cloudLayer.lighting.viewExtinction": 1.05,
+          "cloudLayer.lighting.msAlbedo": 0.997,
+          "cloudLayer.lighting.ambientStrength": 0.9,
+          "cloudLayer.wind.lowVelocity.x": 4.81,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 9.62,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.0986,
+          "vanillaFogStrength.DawnDusk": 0.0993,
+          "halfOpacityDistanceDayM.atBaseline0.1": 1888,
+          "halfOpacityDistanceDayM.pass3": 1888,
+          "halfOpacityDistanceNightM.pass3": 1776
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.3,
+          "DALCAmount.DawnDusk": 0.4,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.8,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "OvercastFF",
+        "formKey": "0x53D1~NAT-ENB.esp",
+        "localFormId": "0x53D1",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.318,
+        "aerosolLoadingEquivalent": 0.2458,
+        "hazeMultipleOfSavedBase": 1.229,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.0997,
+          "aerosolScatter.y": 4.2018,
+          "aerosolScatter.z": 5.6229,
+          "aerosolAbsorption.x": 0.16309,
+          "aerosolAbsorption.y": 0.18012,
+          "aerosolAbsorption.z": 0.19714,
+          "cloudMap.procedural.parameters.primary.range.x": -0.509,
+          "cloudMap.procedural.parameters.primary.range.y": 0.347,
+          "cloudMap.procedural.parameters.primary.range.z": 0.004,
+          "cloudMap.procedural.parameters.primary.range.w": 0.882,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.454,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.596,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.504,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.202,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.654,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.45,
+          "cloudLayer.low.ndfAltitudeOffset": 1000.0,
+          "cloudLayer.low.ndfAltitudeScale": 900.0,
+          "cloudLayer.low.densityScale": 0.7527,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.1045,
+          "cloudLayer.lighting.viewExtinction": 1.0045,
+          "cloudLayer.lighting.msAlbedo": 0.998,
+          "cloudLayer.lighting.ambientStrength": 0.9473,
+          "cloudLayer.wind.lowVelocity.x": 4.81,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 9.62,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.137,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.0986,
+          "vanillaFogStrength.DawnDusk": 0.0993,
+          "halfOpacityDistanceDayM.atBaseline0.1": 1888,
+          "halfOpacityDistanceDayM.pass3": 1888,
+          "halfOpacityDistanceNightM.pass3": 1776
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.347,
+          "DALCAmount.DawnDusk": 0.423,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.8,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "heaviestMember": {
+        "editorId": "OvercastVT",
+        "formKey": "0x5943~NAT-ENB.esp",
+        "localFormId": "0x5943",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.861,
+        "aerosolLoadingEquivalent": 0.2458,
+        "hazeMultipleOfSavedBase": 1.229,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.0997,
+          "aerosolScatter.y": 4.2018,
+          "aerosolScatter.z": 5.6229,
+          "aerosolAbsorption.x": 0.16309,
+          "aerosolAbsorption.y": 0.18012,
+          "aerosolAbsorption.z": 0.19714,
+          "cloudMap.procedural.parameters.primary.range.x": -0.783,
+          "cloudMap.procedural.parameters.primary.range.y": 0.233,
+          "cloudMap.procedural.parameters.primary.range.z": 0.113,
+          "cloudMap.procedural.parameters.primary.range.w": 0.945,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.592,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.458,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.642,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.292,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.792,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.45,
+          "cloudLayer.low.ndfAltitudeOffset": 910.0,
+          "cloudLayer.low.ndfAltitudeScale": 1080.0,
+          "cloudLayer.low.densityScale": 0.8416,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.2832,
+          "cloudLayer.lighting.viewExtinction": 1.0916,
+          "cloudLayer.lighting.msAlbedo": 0.9962,
+          "cloudLayer.lighting.ambientStrength": 0.8584,
+          "cloudLayer.wind.lowVelocity.x": 4.81,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 9.62,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.0986,
+          "vanillaFogStrength.DawnDusk": 0.0993,
+          "halfOpacityDistanceDayM.atBaseline0.1": 1888,
+          "halfOpacityDistanceDayM.pass3": 1888,
+          "halfOpacityDistanceNightM.pass3": 1776
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.258,
+          "DALCAmount.DawnDusk": 0.379,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.8,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "OvercastFF",
+          "formKey": "0x53D1~NAT-ENB.esp",
+          "severity": 0.318
+        },
+        {
+          "editorId": "OvercastRE",
+          "formKey": "0x53BE~NAT-ENB.esp",
+          "severity": 0.391
+        },
+        {
+          "editorId": "StormDLC2_ALT",
+          "formKey": "0xD64B4~NAT-ENB.esp",
+          "severity": 0.436
+        },
+        {
+          "editorId": "HelgenAttackWeather",
+          "formKey": "0xD9329~Skyrim.esm",
+          "severity": 0.461
+        },
+        {
+          "editorId": "SkyrimOvercastWar",
+          "formKey": "0xD299E~Skyrim.esm",
+          "severity": 0.461
+        },
+        {
+          "editorId": "StormDLC2",
+          "formKey": "0x32336~Dragonborn.esm",
+          "severity": 0.47
+        },
+        {
+          "editorId": "DLC1Eclipse",
+          "formKey": "0x6AEC~Dawnguard.esm",
+          "severity": 0.514
+        },
+        {
+          "editorId": "SkyrimMQ206weather",
+          "formKey": "0x10199F~Skyrim.esm",
+          "severity": 0.514
+        },
+        {
+          "editorId": "BloatedMansGrottoFog",
+          "formKey": "0x105941~Skyrim.esm",
+          "severity": 0.542
+        },
+        {
+          "editorId": "OvercastMA",
+          "formKey": "0x53C4~NAT-ENB.esp",
+          "severity": 0.551
+        },
+        {
+          "editorId": "OvercastCO",
+          "formKey": "0x53D2~NAT-ENB.esp",
+          "severity": 0.61
+        },
+        {
+          "editorId": "OvercastTU",
+          "formKey": "0x53BD~NAT-ENB.esp",
+          "severity": 0.62
+        },
+        {
+          "editorId": "OvercastPF",
+          "formKey": "0x53B6~NAT-ENB.esp",
+          "severity": 0.668
+        },
+        {
+          "editorId": "OvercastVT",
+          "formKey": "0x5943~NAT-ENB.esp",
+          "severity": 0.861
+        }
+      ]
+    },
+    "rain": {
+      "label": "Rain",
+      "rationale": "Dark rain (RainPF) = the liked rain_structure 13 exactly, with a little more top-type spread in the Day period only (uniform at 13:00). Showers (bright-sun rain records) = a broken field with sunlit breaks under a thin veil.",
+      "count": 8,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.25,
+          "pri": [
+            -0.05,
+            0.5,
+            0.0,
+            0.85
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.3
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.2,
+            0.8
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 900.0,
+          "thick": 1400.0,
+          "dens": 0.8,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.15,
+          "viewExt": 1.05,
+          "msAlb": 0.997,
+          "amb": 0.9,
+          "cirrus": 0.15,
+          "dalc": 0.35
+        },
+        {
+          "severity": 0.5,
+          "pri": [
+            -0.18,
+            0.47,
+            0.0,
+            0.88
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.25,
+            0.8,
+            0.0,
+            0.38
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.2,
+            0.8
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 850.0,
+          "thick": 1550.0,
+          "dens": 0.85,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.22,
+          "viewExt": 1.08,
+          "msAlb": 0.996,
+          "amb": 0.85,
+          "cirrus": 0.0,
+          "dalc": 0.3
+        },
+        {
+          "severity": 0.76,
+          "pri": [
+            -0.3,
+            0.45,
+            0.0,
+            0.9
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.3,
+            0.8,
+            0.0,
+            0.45
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.2,
+            0.8
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 800.0,
+          "thick": 1700.0,
+          "dens": 0.9,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.3,
+          "viewExt": 1.1,
+          "msAlb": 0.995,
+          "amb": 0.8,
+          "cirrus": 0.0,
+          "dalc": 0.25
+        }
+      ],
+      "highLayerLook": "thin veil (high_cloud 08)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.2,
+        1.8
+      ],
+      "heightFog_floorM_minM": [
+        1500,
+        800
+      ],
+      "rayleighTwilightX2": false,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "RainPF",
+        "formKey": "0xC821F~Skyrim.esm",
+        "localFormId": "0xC821F",
+        "plugin": "Skyrim.esm",
+        "severity": 0.76,
+        "aerosolLoadingEquivalent": 0.2788,
+        "hazeMultipleOfSavedBase": 1.394,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.5158,
+          "aerosolScatter.y": 4.7659,
+          "aerosolScatter.z": 6.3778,
+          "aerosolAbsorption.x": 0.18498,
+          "aerosolAbsorption.y": 0.2043,
+          "aerosolAbsorption.z": 0.22361,
+          "cloudMap.procedural.parameters.primary.range.x": -0.3,
+          "cloudMap.procedural.parameters.primary.range.y": 0.45,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.9,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.3,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.45,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.12,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.9,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 800.0,
+          "cloudLayer.low.ndfAltitudeScale": 1700.0,
+          "cloudLayer.low.densityScale": 0.9,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.3,
+          "cloudLayer.lighting.viewExtinction": 1.1,
+          "cloudLayer.lighting.msAlbedo": 0.995,
+          "cloudLayer.lighting.ambientStrength": 0.8,
+          "cloudLayer.wind.lowVelocity.x": 6.31,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 12.62,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {
+          "Dawn": {
+            "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+            "cloudMap.procedural.parameters.modeling.range.w": 0.8
+          },
+          "Sunrise": {
+            "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+            "cloudMap.procedural.parameters.modeling.range.w": 0.8
+          },
+          "Sunset": {
+            "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+            "cloudMap.procedural.parameters.modeling.range.w": 0.8
+          },
+          "Dusk": {
+            "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+            "cloudMap.procedural.parameters.modeling.range.w": 0.8
+          },
+          "Night": {
+            "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+            "cloudMap.procedural.parameters.modeling.range.w": 0.8
+          }
+        },
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 1832,
+          "halfOpacityDistanceDayM.pass3": 1832,
+          "halfOpacityDistanceNightM.pass3": 2130
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.25,
+          "DALCAmount.DawnDusk": 0.375,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "RainCloudy_DLC2",
+        "formKey": "0x1D760~Dragonborn.esm",
+        "localFormId": "0x1D760",
+        "plugin": "Dragonborn.esm",
+        "severity": 0.249,
+        "aerosolLoadingEquivalent": 0.2788,
+        "hazeMultipleOfSavedBase": 1.394,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.5158,
+          "aerosolScatter.y": 4.7659,
+          "aerosolScatter.z": 6.3778,
+          "aerosolAbsorption.x": 0.18498,
+          "aerosolAbsorption.y": 0.2043,
+          "aerosolAbsorption.z": 0.22361,
+          "cloudMap.procedural.parameters.primary.range.x": -0.05,
+          "cloudMap.procedural.parameters.primary.range.y": 0.5,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.85,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.3,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.8,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 900.0,
+          "cloudLayer.low.ndfAltitudeScale": 1400.0,
+          "cloudLayer.low.densityScale": 0.8,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.15,
+          "cloudLayer.lighting.viewExtinction": 1.05,
+          "cloudLayer.lighting.msAlbedo": 0.997,
+          "cloudLayer.lighting.ambientStrength": 0.9,
+          "cloudLayer.wind.lowVelocity.x": 6.31,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 12.62,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.15,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 1777,
+          "halfOpacityDistanceDayM.pass3": 1777,
+          "halfOpacityDistanceNightM.pass3": 1656
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.35,
+          "DALCAmount.DawnDusk": 0.425,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.6,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.5,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "heaviestMember": null,
+      "members": [
+        {
+          "editorId": "RainCloudy_DLC2",
+          "formKey": "0x1D760~Dragonborn.esm",
+          "severity": 0.249
+        },
+        {
+          "editorId": "RainCloudy_DLC2_ALT",
+          "formKey": "0xD64B1~NAT-ENB.esp",
+          "severity": 0.249
+        },
+        {
+          "editorId": "RainFF",
+          "formKey": "0x10A23D~Skyrim.esm",
+          "severity": 0.249
+        },
+        {
+          "editorId": "RainMA",
+          "formKey": "0x10A231~Skyrim.esm",
+          "severity": 0.663
+        },
+        {
+          "editorId": "RainRE",
+          "formKey": "0x10A238~Skyrim.esm",
+          "severity": 0.663
+        },
+        {
+          "editorId": "RainTU",
+          "formKey": "0x10A242~Skyrim.esm",
+          "severity": 0.674
+        },
+        {
+          "editorId": "RainVT",
+          "formKey": "0x10A7A6~Skyrim.esm",
+          "severity": 0.736
+        },
+        {
+          "editorId": "RainPF",
+          "formKey": "0xC821F~Skyrim.esm",
+          "severity": 0.76
+        }
+      ]
+    },
+    "storm": {
+      "label": "Thunderstorm",
+      "rationale": "Lightest members = the liked storm_towers 04 (separate dark towers, low wide bases); StormPF and heavier = 06 (same with narrow gaps). Haze near the base value so the towers stay readable; own lightning, kept away from the camera.",
+      "count": 5,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.41,
+          "pri": [
+            0.0,
+            0.5,
+            0.0,
+            0.95
+          ],
+          "priExp": 1.0,
+          "sec": [
+            0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.35,
+            1.0
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.15,
+            0.75,
+            0.14,
+            0.0
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.1
+          ],
+          "base": 800.0,
+          "thick": 2600.0,
+          "dens": 1.0,
+          "spread": 1.0,
+          "spreadH": 0.2,
+          "sunExt": 1.6,
+          "viewExt": 1.2,
+          "msAlb": 0.992,
+          "amb": 0.7,
+          "cirrus": 0.0,
+          "dalc": 0.25,
+          "ltI": 0.15,
+          "ltRate": 6.0
+        },
+        {
+          "severity": 0.696,
+          "pri": [
+            -0.25,
+            0.5,
+            0.0,
+            0.95
+          ],
+          "priExp": 1.0,
+          "sec": [
+            0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.35,
+            1.0
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.15,
+            0.75,
+            0.14,
+            0.0
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.1
+          ],
+          "base": 800.0,
+          "thick": 2600.0,
+          "dens": 1.0,
+          "spread": 1.0,
+          "spreadH": 0.2,
+          "sunExt": 1.6,
+          "viewExt": 1.2,
+          "msAlb": 0.992,
+          "amb": 0.7,
+          "cirrus": 0.0,
+          "dalc": 0.25,
+          "ltI": 0.22,
+          "ltRate": 10.0
+        },
+        {
+          "severity": 0.75,
+          "pri": [
+            -0.25,
+            0.5,
+            0.0,
+            0.95
+          ],
+          "priExp": 1.0,
+          "sec": [
+            0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.35,
+            1.0
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.15,
+            0.75,
+            0.14,
+            0.0
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.1
+          ],
+          "base": 800.0,
+          "thick": 2600.0,
+          "dens": 1.0,
+          "spread": 1.0,
+          "spreadH": 0.2,
+          "sunExt": 1.6,
+          "viewExt": 1.2,
+          "msAlb": 0.992,
+          "amb": 0.7,
+          "cirrus": 0.0,
+          "dalc": 0.25,
+          "ltI": 0.25,
+          "ltRate": 12.0
+        }
+      ],
+      "highLayerLook": "thin veil (high_cloud 08)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.0,
+        1.5
+      ],
+      "heightFog_floorM_minM": [
+        1000,
+        600
+      ],
+      "rayleighTwilightX2": false,
+      "lightningDistanceKm": [
+        2.5,
+        9.0
+      ],
+      "representative": {
+        "editorId": "StormPF",
+        "formKey": "0xC8220~Skyrim.esm",
+        "localFormId": "0xC8220",
+        "plugin": "Skyrim.esm",
+        "severity": 0.696,
+        "aerosolLoadingEquivalent": 0.2742,
+        "hazeMultipleOfSavedBase": 1.371,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.4578,
+          "aerosolScatter.y": 4.6873,
+          "aerosolScatter.z": 6.2726,
+          "aerosolAbsorption.x": 0.18193,
+          "aerosolAbsorption.y": 0.20093,
+          "aerosolAbsorption.z": 0.21992,
+          "lightningIntensity": 0.22,
+          "lightning.rate": 10.0,
+          "lightning.distanceRange.x": 2.5,
+          "lightning.distanceRange.y": 9.0,
+          "cloudMap.procedural.parameters.primary.range.x": -0.25,
+          "cloudMap.procedural.parameters.primary.range.y": 0.5,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.95,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.35,
+          "cloudMap.procedural.parameters.modeling.range.w": 1.0,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.15,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 0.75,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.14,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.1,
+          "cloudLayer.low.ndfAltitudeOffset": 800.0,
+          "cloudLayer.low.ndfAltitudeScale": 2600.0,
+          "cloudLayer.low.densityScale": 1.0,
+          "cloudLayer.low.bottomSpreadScale": 1.0,
+          "cloudLayer.low.bottomSpreadHeight": 0.2,
+          "cloudLayer.lighting.sunExtinction": 1.6,
+          "cloudLayer.lighting.viewExtinction": 1.2,
+          "cloudLayer.lighting.msAlbedo": 0.992,
+          "cloudLayer.lighting.ambientStrength": 0.7,
+          "cloudLayer.wind.lowVelocity.x": 9.0,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 18.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.0645,
+          "vanillaFogStrength.Night": 0.037,
+          "vanillaFogStrength.DawnDusk": 0.0489,
+          "halfOpacityDistanceDayM.atBaseline0.1": 416,
+          "halfOpacityDistanceDayM.pass3": 645,
+          "halfOpacityDistanceNightM.pass3": 601
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.25,
+          "DALCAmount.DawnDusk": 0.375,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "FXSkyrimStormBlowingGrass",
+        "formKey": "0x10C32F~Skyrim.esm",
+        "localFormId": "0x10C32F",
+        "plugin": "Skyrim.esm",
+        "severity": 0.382,
+        "aerosolLoadingEquivalent": 0.2742,
+        "hazeMultipleOfSavedBase": 1.371,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.4578,
+          "aerosolScatter.y": 4.6873,
+          "aerosolScatter.z": 6.2726,
+          "aerosolAbsorption.x": 0.18193,
+          "aerosolAbsorption.y": 0.20093,
+          "aerosolAbsorption.z": 0.21992,
+          "lightningIntensity": 0.15,
+          "lightning.rate": 6.0,
+          "lightning.distanceRange.x": 2.5,
+          "lightning.distanceRange.y": 9.0,
+          "cloudMap.procedural.parameters.primary.range.x": 0.0,
+          "cloudMap.procedural.parameters.primary.range.y": 0.5,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.95,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.35,
+          "cloudMap.procedural.parameters.modeling.range.w": 1.0,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.15,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 0.75,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.14,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.1,
+          "cloudLayer.low.ndfAltitudeOffset": 800.0,
+          "cloudLayer.low.ndfAltitudeScale": 2600.0,
+          "cloudLayer.low.densityScale": 1.0,
+          "cloudLayer.low.bottomSpreadScale": 1.0,
+          "cloudLayer.low.bottomSpreadHeight": 0.2,
+          "cloudLayer.lighting.sunExtinction": 1.6,
+          "cloudLayer.lighting.viewExtinction": 1.2,
+          "cloudLayer.lighting.msAlbedo": 0.992,
+          "cloudLayer.lighting.ambientStrength": 0.7,
+          "cloudLayer.wind.lowVelocity.x": 7.32,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 14.64,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.062,
+          "vanillaFogStrength.Night": 0.004,
+          "vanillaFogStrength.DawnDusk": 0.0157,
+          "halfOpacityDistanceDayM.atBaseline0.1": 384,
+          "halfOpacityDistanceDayM.pass3": 619,
+          "halfOpacityDistanceNightM.pass3": 68
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.25,
+          "DALCAmount.DawnDusk": 0.375,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "heaviestMember": {
+        "editorId": "StormTU",
+        "formKey": "0x10A241~Skyrim.esm",
+        "localFormId": "0x10A241",
+        "plugin": "Skyrim.esm",
+        "severity": 0.727,
+        "aerosolLoadingEquivalent": 0.2742,
+        "hazeMultipleOfSavedBase": 1.371,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.4578,
+          "aerosolScatter.y": 4.6873,
+          "aerosolScatter.z": 6.2726,
+          "aerosolAbsorption.x": 0.18193,
+          "aerosolAbsorption.y": 0.20093,
+          "aerosolAbsorption.z": 0.21992,
+          "lightningIntensity": 0.237,
+          "lightning.rate": 11.158,
+          "lightning.distanceRange.x": 2.5,
+          "lightning.distanceRange.y": 9.0,
+          "cloudMap.procedural.parameters.primary.range.x": -0.25,
+          "cloudMap.procedural.parameters.primary.range.y": 0.5,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.95,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": 0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.35,
+          "cloudMap.procedural.parameters.modeling.range.w": 1.0,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.15,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 0.75,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.14,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.1,
+          "cloudLayer.low.ndfAltitudeOffset": 800.0,
+          "cloudLayer.low.ndfAltitudeScale": 2600.0,
+          "cloudLayer.low.densityScale": 1.0,
+          "cloudLayer.low.bottomSpreadScale": 1.0,
+          "cloudLayer.low.bottomSpreadHeight": 0.2,
+          "cloudLayer.lighting.sunExtinction": 1.6,
+          "cloudLayer.lighting.viewExtinction": 1.2,
+          "cloudLayer.lighting.msAlbedo": 0.992,
+          "cloudLayer.lighting.ambientStrength": 0.7,
+          "cloudLayer.wind.lowVelocity.x": 9.0,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 18.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.0645,
+          "vanillaFogStrength.Night": 0.037,
+          "vanillaFogStrength.DawnDusk": 0.0489,
+          "halfOpacityDistanceDayM.atBaseline0.1": 416,
+          "halfOpacityDistanceDayM.pass3": 645,
+          "halfOpacityDistanceNightM.pass3": 601
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.25,
+          "DALCAmount.DawnDusk": 0.375,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.0,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "FXSkyrimStormBlowingGrass",
+          "formKey": "0x10C32F~Skyrim.esm",
+          "severity": 0.382
+        },
+        {
+          "editorId": "FXMagicStormRain",
+          "formKey": "0xD4886~Skyrim.esm",
+          "severity": 0.41
+        },
+        {
+          "editorId": "StormFF",
+          "formKey": "0x10A23C~Skyrim.esm",
+          "severity": 0.613
+        },
+        {
+          "editorId": "StormPF",
+          "formKey": "0xC8220~Skyrim.esm",
+          "severity": 0.696
+        },
+        {
+          "editorId": "StormTU",
+          "formKey": "0x10A241~Skyrim.esm",
+          "severity": 0.727
+        }
+      ]
+    },
+    "snow": {
+      "label": "Snow",
+      "rationale": "Light snow = thin broken cloud under a veil; steady snow = a closed, bright deck (overcast shapes, lighter lighting); blizzard = a deeper deck with its base at 800 m (peaks in cloud is right for a snowstorm).",
+      "count": 9,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.1,
+          "pri": [
+            0.0,
+            0.45,
+            0.0,
+            0.75
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.25
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.15,
+            0.6
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1000.0,
+          "thick": 900.0,
+          "dens": 0.65,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.15,
+          "dalc": 0.4
+        },
+        {
+          "severity": 0.25,
+          "pri": [
+            -0.15,
+            0.4,
+            0.0,
+            0.8
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.3,
+            0.7,
+            0.0,
+            0.35
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.18,
+            0.62
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 970.0,
+          "thick": 1000.0,
+          "dens": 0.7,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.05,
+          "viewExt": 1.0,
+          "msAlb": 0.9985,
+          "amb": 0.97,
+          "cirrus": 0.1,
+          "dalc": 0.38
+        },
+        {
+          "severity": 0.53,
+          "pri": [
+            -0.55,
+            0.28,
+            0.04,
+            0.9
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.5,
+            0.55,
+            0.0,
+            0.55
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.22,
+            0.7
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 900.0,
+          "thick": 1200.0,
+          "dens": 0.75,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.1,
+          "viewExt": 1.0,
+          "msAlb": 0.998,
+          "amb": 0.95,
+          "cirrus": 0.0,
+          "dalc": 0.3
+        },
+        {
+          "severity": 0.96,
+          "pri": [
+            -0.75,
+            0.18,
+            0.1,
+            0.94
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.6,
+            0.45,
+            0.0,
+            0.65
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.28,
+            0.85
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 800.0,
+          "thick": 1600.0,
+          "dens": 0.85,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.25,
+          "viewExt": 1.1,
+          "msAlb": 0.996,
+          "amb": 0.85,
+          "cirrus": 0.0,
+          "dalc": 0.25
+        }
+      ],
+      "highLayerLook": "thin veil (high_cloud 08)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.2,
+        2.0
+      ],
+      "heightFog_floorM_minM": [
+        1200,
+        500
+      ],
+      "rayleighTwilightX2": false,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "Snow",
+        "formKey": "0x4D7FB~Skyrim.esm",
+        "localFormId": "0x4D7FB",
+        "plugin": "Skyrim.esm",
+        "severity": 0.529,
+        "aerosolLoadingEquivalent": 0.24,
+        "hazeMultipleOfSavedBase": 1.2,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.0265,
+          "aerosolScatter.y": 4.1027,
+          "aerosolScatter.z": 5.4902,
+          "aerosolAbsorption.x": 0.15924,
+          "aerosolAbsorption.y": 0.17587,
+          "aerosolAbsorption.z": 0.19249,
+          "cloudMap.procedural.parameters.primary.range.x": -0.55,
+          "cloudMap.procedural.parameters.primary.range.y": 0.28,
+          "cloudMap.procedural.parameters.primary.range.z": 0.04,
+          "cloudMap.procedural.parameters.primary.range.w": 0.9,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.5,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.55,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.55,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.22,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.7,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 900.0,
+          "cloudLayer.low.ndfAltitudeScale": 1200.0,
+          "cloudLayer.low.densityScale": 0.75,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.1,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.998,
+          "cloudLayer.lighting.ambientStrength": 0.95,
+          "cloudLayer.wind.lowVelocity.x": 5.38,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 10.76,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.0069,
+          "vanillaFogStrength.DawnDusk": 0.0263,
+          "halfOpacityDistanceDayM.atBaseline0.1": 8420,
+          "halfOpacityDistanceDayM.pass3": 8420,
+          "halfOpacityDistanceNightM.pass3": 497
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.3,
+          "DALCAmount.DawnDusk": 0.4,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "SkuldafnCloudy",
+        "formKey": "0x104AB4~Skyrim.esm",
+        "localFormId": "0x104AB4",
+        "plugin": "Skyrim.esm",
+        "severity": 0.103,
+        "aerosolLoadingEquivalent": 0.24,
+        "hazeMultipleOfSavedBase": 1.2,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 3.0265,
+          "aerosolScatter.y": 4.1027,
+          "aerosolScatter.z": 5.4902,
+          "aerosolAbsorption.x": 0.15924,
+          "aerosolAbsorption.y": 0.17587,
+          "aerosolAbsorption.z": 0.19249,
+          "cloudMap.procedural.parameters.primary.range.x": 0.0,
+          "cloudMap.procedural.parameters.primary.range.y": 0.45,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.75,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.25,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.15,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.6,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1000.0,
+          "cloudLayer.low.ndfAltitudeScale": 900.0,
+          "cloudLayer.low.densityScale": 0.65,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.44,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 8.88,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.15,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 7069,
+          "halfOpacityDistanceDayM.pass3": 7069,
+          "halfOpacityDistanceNightM.pass3": 3457
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.4,
+          "DALCAmount.DawnDusk": 0.45,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "heaviestMember": {
+        "editorId": "Snowstorm_Alt",
+        "formKey": "0xD64D6~NAT-ENB.esp",
+        "localFormId": "0xD64D6",
+        "plugin": "NAT-ENB.esp",
+        "severity": 0.964,
+        "aerosolLoadingEquivalent": 0.3484,
+        "hazeMultipleOfSavedBase": 1.742,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 4.3935,
+          "aerosolScatter.y": 5.9557,
+          "aerosolScatter.z": 7.97,
+          "aerosolAbsorption.x": 0.23116,
+          "aerosolAbsorption.y": 0.25531,
+          "aerosolAbsorption.z": 0.27943,
+          "cloudMap.procedural.parameters.primary.range.x": -0.75,
+          "cloudMap.procedural.parameters.primary.range.y": 0.18,
+          "cloudMap.procedural.parameters.primary.range.z": 0.1,
+          "cloudMap.procedural.parameters.primary.range.w": 0.94,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.6,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.45,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.65,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.28,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.85,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 800.0,
+          "cloudLayer.low.ndfAltitudeScale": 1600.0,
+          "cloudLayer.low.densityScale": 0.85,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.25,
+          "cloudLayer.lighting.viewExtinction": 1.1,
+          "cloudLayer.lighting.msAlbedo": 0.996,
+          "cloudLayer.lighting.ambientStrength": 0.85,
+          "cloudLayer.wind.lowVelocity.x": 9.0,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 18.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.0745,
+          "vanillaFogStrength.Night": 0.0111,
+          "vanillaFogStrength.DawnDusk": 0.0288,
+          "halfOpacityDistanceDayM.atBaseline0.1": 667,
+          "halfOpacityDistanceDayM.pass3": 895,
+          "halfOpacityDistanceNightM.pass3": 502
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.25,
+          "DALCAmount.DawnDusk": 0.375,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 0.4,
+            "Thickness": 1.5
+          },
+          "Sunrise": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Day": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Sunset": {
+            "Amount": 0.2,
+            "Thickness": 1.5
+          },
+          "Dusk": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          },
+          "Night": {
+            "Amount": 0.3,
+            "Thickness": 1.5
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "SkuldafnCloudy",
+          "formKey": "0x104AB4~Skyrim.esm",
+          "severity": 0.103
+        },
+        {
+          "editorId": "SnowClear",
+          "formKey": "0x8476~NAT-ENB.esp",
+          "severity": 0.25
+        },
+        {
+          "editorId": "SnowClear_Alt",
+          "formKey": "0xD64D4~NAT-ENB.esp",
+          "severity": 0.25
+        },
+        {
+          "editorId": "Snow",
+          "formKey": "0x4D7FB~Skyrim.esm",
+          "severity": 0.529
+        },
+        {
+          "editorId": "SnowOvercast",
+          "formKey": "0x6B387~NAT-ENB.esp",
+          "severity": 0.529
+        },
+        {
+          "editorId": "SnowOvercast_Alt",
+          "formKey": "0xD64D5~NAT-ENB.esp",
+          "severity": 0.529
+        },
+        {
+          "editorId": "Snow_Alt",
+          "formKey": "0xD64D3~NAT-ENB.esp",
+          "severity": 0.529
+        },
+        {
+          "editorId": "Snowstorm",
+          "formKey": "0xC8221~Skyrim.esm",
+          "severity": 0.964
+        },
+        {
+          "editorId": "Snowstorm_Alt",
+          "formKey": "0xD64D6~NAT-ENB.esp",
+          "severity": 0.964
+        }
+      ]
+    },
+    "fog": {
+      "label": "Fog",
+      "rationale": "The fog itself is haze + height fog (+ the optional Ground Fog); the cloud is a thin closed stratus deck with its base at 900 m or higher, clear of the peaks, lit softly so it reads as bright grey.",
+      "count": 10,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.17,
+          "pri": [
+            -0.55,
+            0.28,
+            0.04,
+            0.88
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.5,
+            0.55,
+            0.0,
+            0.55
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.2,
+            0.6
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 950.0,
+          "thick": 600.0,
+          "dens": 0.6,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.0,
+          "dalc": 0.32
+        },
+        {
+          "severity": 1.0,
+          "pri": [
+            -0.7,
+            0.2,
+            0.08,
+            0.92
+          ],
+          "priExp": 1.0,
+          "sec": [
+            -0.55,
+            0.5,
+            0.0,
+            0.6
+          ],
+          "mod": [
+            -0.5,
+            0.5,
+            0.22,
+            0.65
+          ],
+          "modExp": 1.0,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 900.0,
+          "thick": 700.0,
+          "dens": 0.7,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.05,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.0,
+          "dalc": 0.28
+        }
+      ],
+      "highLayerLook": "thin veil (high_cloud 08)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        2.0,
+        3.0
+      ],
+      "heightFog_floorM_minM": [
+        800,
+        400
+      ],
+      "rayleighTwilightX2": false,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "FogPF",
+        "formKey": "0xC821E~Skyrim.esm",
+        "localFormId": "0xC821E",
+        "plugin": "Skyrim.esm",
+        "severity": 0.169,
+        "aerosolLoadingEquivalent": 0.5486,
+        "hazeMultipleOfSavedBase": 2.743,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 6.9182,
+          "aerosolScatter.y": 9.378,
+          "aerosolScatter.z": 12.5498,
+          "aerosolAbsorption.x": 0.364,
+          "aerosolAbsorption.y": 0.40201,
+          "aerosolAbsorption.z": 0.44,
+          "cloudMap.procedural.parameters.primary.range.x": -0.55,
+          "cloudMap.procedural.parameters.primary.range.y": 0.28,
+          "cloudMap.procedural.parameters.primary.range.z": 0.04,
+          "cloudMap.procedural.parameters.primary.range.w": 0.88,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.5,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.55,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.55,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.6,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 950.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.06,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 8.12,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.0709,
+          "vanillaFogStrength.Night": 0.0525,
+          "vanillaFogStrength.DawnDusk": 0.061,
+          "halfOpacityDistanceDayM.atBaseline0.1": 403,
+          "halfOpacityDistanceDayM.pass3": 568,
+          "halfOpacityDistanceNightM.pass3": 420
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.32,
+          "DALCAmount.DawnDusk": 0.41,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          },
+          "Sunrise": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          },
+          "Day": {
+            "Amount": 2.64,
+            "Thickness": 3.0
+          },
+          "Sunset": {
+            "Amount": 2.64,
+            "Thickness": 3.0
+          },
+          "Dusk": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          },
+          "Night": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          }
+        }
+      },
+      "lightestMember": {
+        "editorId": "FogCO",
+        "formKey": "0x10A235~Skyrim.esm",
+        "localFormId": "0x10A235",
+        "plugin": "Skyrim.esm",
+        "severity": 0.169,
+        "aerosolLoadingEquivalent": 0.5486,
+        "hazeMultipleOfSavedBase": 2.743,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 6.9182,
+          "aerosolScatter.y": 9.378,
+          "aerosolScatter.z": 12.5498,
+          "aerosolAbsorption.x": 0.364,
+          "aerosolAbsorption.y": 0.40201,
+          "aerosolAbsorption.z": 0.44,
+          "cloudMap.procedural.parameters.primary.range.x": -0.55,
+          "cloudMap.procedural.parameters.primary.range.y": 0.28,
+          "cloudMap.procedural.parameters.primary.range.z": 0.04,
+          "cloudMap.procedural.parameters.primary.range.w": 0.88,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.5,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.55,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.55,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.2,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.6,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 950.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.06,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 8.12,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.0709,
+          "vanillaFogStrength.Night": 0.0525,
+          "vanillaFogStrength.DawnDusk": 0.061,
+          "halfOpacityDistanceDayM.atBaseline0.1": 403,
+          "halfOpacityDistanceDayM.pass3": 568,
+          "halfOpacityDistanceNightM.pass3": 420
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.32,
+          "DALCAmount.DawnDusk": 0.41,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          },
+          "Sunrise": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          },
+          "Day": {
+            "Amount": 2.64,
+            "Thickness": 3.0
+          },
+          "Sunset": {
+            "Amount": 2.64,
+            "Thickness": 3.0
+          },
+          "Dusk": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          },
+          "Night": {
+            "Amount": 3.14,
+            "Thickness": 3.0
+          }
+        }
+      },
+      "heaviestMember": {
+        "editorId": "DLC1FalmerValley_bf",
+        "formKey": "0x19599~Dawnguard.esm",
+        "localFormId": "0x19599",
+        "plugin": "Dawnguard.esm",
+        "severity": 1.0,
+        "aerosolLoadingEquivalent": 0.6,
+        "hazeMultipleOfSavedBase": 3.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 7.5663,
+          "aerosolScatter.y": 10.2567,
+          "aerosolScatter.z": 13.7256,
+          "aerosolAbsorption.x": 0.3981,
+          "aerosolAbsorption.y": 0.43968,
+          "aerosolAbsorption.z": 0.48122,
+          "cloudMap.procedural.parameters.primary.range.x": -0.7,
+          "cloudMap.procedural.parameters.primary.range.y": 0.2,
+          "cloudMap.procedural.parameters.primary.range.z": 0.08,
+          "cloudMap.procedural.parameters.primary.range.w": 0.92,
+          "cloudMap.procedural.parameters.primary.exponent": 1.0,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.55,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.5,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.5,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.22,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.65,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 900.0,
+          "cloudLayer.low.ndfAltitudeScale": 700.0,
+          "cloudLayer.low.densityScale": 0.7,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.05,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 4.92,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 9.84,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 8000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        0.0,
+                        0.45,
+                        0.9
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.25,
+                        0.25
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.0218,
+          "vanillaFogStrength.Night": 0.0109,
+          "vanillaFogStrength.DawnDusk": 0.0154,
+          "halfOpacityDistanceDayM.atBaseline0.1": 87,
+          "halfOpacityDistanceDayM.pass3": 400,
+          "halfOpacityDistanceNightM.pass3": 402
+        },
+        "ImageBasedLighting": {
+          "DALCAmount.Day": 0.28,
+          "DALCAmount.DawnDusk": 0.39,
+          "DALCAmount.Night": 0.5
+        },
+        "GroundFog.optionalUntested": {
+          "Dawn": {
+            "Amount": 3.8,
+            "Thickness": 3.0
+          },
+          "Sunrise": {
+            "Amount": 3.8,
+            "Thickness": 3.0
+          },
+          "Day": {
+            "Amount": 3.3,
+            "Thickness": 3.0
+          },
+          "Sunset": {
+            "Amount": 3.3,
+            "Thickness": 3.0
+          },
+          "Dusk": {
+            "Amount": 3.8,
+            "Thickness": 3.0
+          },
+          "Night": {
+            "Amount": 3.8,
+            "Thickness": 3.0
+          }
+        }
+      },
+      "members": [
+        {
+          "editorId": "FogCO",
+          "formKey": "0x10A235~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogFF",
+          "formKey": "0x10A23E~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogMA",
+          "formKey": "0x10A232~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogPF",
+          "formKey": "0xC821E~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogRE",
+          "formKey": "0x10A239~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogRain",
+          "formKey": "0x53C7~NAT-ENB.esp",
+          "severity": 0.169
+        },
+        {
+          "editorId": "FogVT",
+          "formKey": "0x10A7A7~Skyrim.esm",
+          "severity": 0.169
+        },
+        {
+          "editorId": "RiftenOvercastFog",
+          "formKey": "0x10FE7E~Skyrim.esm",
+          "severity": 0.307
+        },
+        {
+          "editorId": "DLC1FalmerValley_bfDark",
+          "formKey": "0x195A0~Dawnguard.esm",
+          "severity": 0.693
+        },
+        {
+          "editorId": "DLC1FalmerValley_bf",
+          "formKey": "0x19599~Dawnguard.esm",
+          "severity": 1.0
+        }
+      ]
+    },
+    "special": {
+      "label": "Other realm / map",
+      "rationale": "Worldspace is not in the Physical Sky whitelist, so the file most likely never applies; clear values without a high layer.",
+      "count": 13,
+      "definition_points_by_severity": [
+        {
+          "severity": 0.0,
+          "pri": [
+            0.4,
+            0.65,
+            0.0,
+            0.65
+          ],
+          "priExp": 1.4,
+          "sec": [
+            -0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "mod": [
+            -0.5,
+            0.6,
+            0.0,
+            0.5
+          ],
+          "modExp": 1.6,
+          "hv": [
+            0.0,
+            1.0,
+            0.0,
+            0.02
+          ],
+          "hvExp": 1.0,
+          "btr": [
+            -0.4,
+            0.5,
+            0.0,
+            0.25
+          ],
+          "base": 1400.0,
+          "thick": 600.0,
+          "dens": 0.6,
+          "spread": 0.8133,
+          "spreadH": 0.3,
+          "sunExt": 1.0,
+          "viewExt": 1.0,
+          "msAlb": 0.999,
+          "amb": 1.0,
+          "cirrus": 0.0
+        }
+      ],
+      "highLayerLook": "sparse streaks (high_cloud 06)",
+      "hazeMultipleRange_fogFar150000_to_5000": [
+        1.0,
+        1.0
+      ],
+      "heightFog_floorM_minM": [
+        1500,
+        1000
+      ],
+      "rayleighTwilightX2": false,
+      "lightningDistanceKm": null,
+      "representative": {
+        "editorId": "SovngardeClear",
+        "formKey": "0x10D9EC~Skyrim.esm",
+        "localFormId": "0x10D9EC",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "cloudMap.procedural.parameters.primary.range.x": 0.4,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.69,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.38,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 9591,
+          "halfOpacityDistanceDayM.pass3": 9591,
+          "halfOpacityDistanceNightM.pass3": 3584
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": null
+      },
+      "lightestMember": {
+        "editorId": "BlackreachWeather",
+        "formKey": "0x48C14~Skyrim.esm",
+        "localFormId": "0x48C14",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "cloudMap.procedural.parameters.primary.range.x": 0.4,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.5,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.0,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 1554,
+          "halfOpacityDistanceDayM.pass3": 1554,
+          "halfOpacityDistanceNightM.pass3": 1554
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": null
+      },
+      "heaviestMember": {
+        "editorId": "WorldMapWeather",
+        "formKey": "0xA6858~Skyrim.esm",
+        "localFormId": "0xA6858",
+        "plugin": "Skyrim.esm",
+        "severity": 0.0,
+        "aerosolLoadingEquivalent": 0.2,
+        "hazeMultipleOfSavedBase": 1.0,
+        "PhysicalSky.Day": {
+          "aerosolScatter.x": 2.5221,
+          "aerosolScatter.y": 3.4189,
+          "aerosolScatter.z": 4.5752,
+          "aerosolAbsorption.x": 0.1327,
+          "aerosolAbsorption.y": 0.14656,
+          "aerosolAbsorption.z": 0.16041,
+          "cloudMap.procedural.parameters.primary.range.x": 0.4,
+          "cloudMap.procedural.parameters.primary.range.y": 0.65,
+          "cloudMap.procedural.parameters.primary.range.z": 0.0,
+          "cloudMap.procedural.parameters.primary.range.w": 0.65,
+          "cloudMap.procedural.parameters.primary.exponent": 1.4,
+          "cloudMap.procedural.parameters.secondary.range.x": -0.2,
+          "cloudMap.procedural.parameters.secondary.range.y": 0.8,
+          "cloudMap.procedural.parameters.secondary.range.z": 0.0,
+          "cloudMap.procedural.parameters.secondary.range.w": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.x": -0.5,
+          "cloudMap.procedural.parameters.modeling.range.y": 0.6,
+          "cloudMap.procedural.parameters.modeling.range.z": 0.0,
+          "cloudMap.procedural.parameters.modeling.range.w": 0.5,
+          "cloudMap.procedural.parameters.modeling.exponent": 1.6,
+          "cloudMap.procedural.parameters.heightVariation.range.x": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.y": 1.0,
+          "cloudMap.procedural.parameters.heightVariation.range.z": 0.0,
+          "cloudMap.procedural.parameters.heightVariation.range.w": 0.02,
+          "cloudMap.procedural.parameters.heightVariation.exponent": 1.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.x": -0.4,
+          "cloudMap.procedural.parameters.bottomTypeRange.y": 0.5,
+          "cloudMap.procedural.parameters.bottomTypeRange.z": 0.0,
+          "cloudMap.procedural.parameters.bottomTypeRange.w": 0.25,
+          "cloudLayer.low.ndfAltitudeOffset": 1400.0,
+          "cloudLayer.low.ndfAltitudeScale": 600.0,
+          "cloudLayer.low.densityScale": 0.6,
+          "cloudLayer.low.bottomSpreadScale": 0.8133,
+          "cloudLayer.low.bottomSpreadHeight": 0.3,
+          "cloudLayer.lighting.sunExtinction": 1.0,
+          "cloudLayer.lighting.viewExtinction": 1.0,
+          "cloudLayer.lighting.msAlbedo": 0.999,
+          "cloudLayer.lighting.ambientStrength": 1.0,
+          "cloudLayer.wind.lowVelocity.x": 3.88,
+          "cloudLayer.wind.lowVelocity.y": 0.0,
+          "cloudLayer.wind.highVelocity.x": 7.76,
+          "cloudLayer.wind.highVelocity.y": 0.0,
+          "cloudLayer.cirrus.altitude": 9000.0,
+          "cloudLayer.cirrus.densityScale": 0.0,
+          "cloudLayer.cirrus.weather": {
+            "states": [
+              {
+                "weight": 1.0,
+                "value": {
+                  "layers": [
+                    {
+                      "noise": 1,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -0.6,
+                        0.5,
+                        0.0,
+                        0.75
+                      ]
+                    },
+                    {
+                      "noise": 4,
+                      "frequency": 1.0,
+                      "offset": [
+                        0.0,
+                        0.0
+                      ],
+                      "range": [
+                        -1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ],
+                  "localMap": "",
+                  "localWeight": 0.0,
+                  "localWindScale": 1.0,
+                  "localBlendMode": 0
+                }
+              }
+            ]
+          }
+        },
+        "PhysicalSky.periodOverrides": {},
+        "ExponentialHeightFog": {
+          "vanillaFogStrength.Day": 0.1,
+          "vanillaFogStrength.Night": 0.1,
+          "vanillaFogStrength.DawnDusk": 0.1,
+          "halfOpacityDistanceDayM.atBaseline0.1": 9591,
+          "halfOpacityDistanceDayM.pass3": 9591,
+          "halfOpacityDistanceNightM.pass3": 8910
+        },
+        "ImageBasedLighting": null,
+        "GroundFog.optionalUntested": null
+      },
+      "members": [
+        {
+          "editorId": "BlackreachWeather",
+          "formKey": "0x48C14~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "DLC2ApocryphaWeather",
+          "formKey": "0x1DFF5~Dragonborn.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "DLC2ApocryphaWeatherNew",
+          "formKey": "0x34CFB~Dragonborn.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb01",
+          "formKey": "0x1407~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb01_Rain",
+          "formKey": "0x14551~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb02",
+          "formKey": "0x18DBB~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb03",
+          "formKey": "0x18DBC~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAmb04",
+          "formKey": "0x18DBD~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SoulCairnAurora",
+          "formKey": "0x959F~Dawnguard.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SovngardeClear",
+          "formKey": "0x10D9EC~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SovngardeDark",
+          "formKey": "0x10FEF8~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "SovngardeFog",
+          "formKey": "0x923FD~Skyrim.esm",
+          "severity": 0.0
+        },
+        {
+          "editorId": "WorldMapWeather",
+          "formKey": "0xA6858~Skyrim.esm",
+          "severity": 0.0
+        }
+      ]
+    }
+  }
+}

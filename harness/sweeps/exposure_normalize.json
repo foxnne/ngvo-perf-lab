@@ -1,0 +1,198 @@
+[
+ {
+  "name": "0_pinned_exposure_now",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "1_auto_exposure_neutral",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -2.0,
+       6.0
+      ],
+      "ExposureCompensation": 0.0,
+      "InteriorAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "InteriorExposureCompensation": 0.0,
+      "NightAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "NightExposureCompensation": 0.0
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "2_auto_day_-0.3_interior_-0.7_night_-1.0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -2.0,
+       6.0
+      ],
+      "ExposureCompensation": -0.3,
+      "InteriorAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "InteriorExposureCompensation": -0.7,
+      "NightAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "NightExposureCompensation": -1.0
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "3_auto_day_0_interior_-1.0_night_-1.5",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -2.0,
+       6.0
+      ],
+      "ExposureCompensation": 0.0,
+      "InteriorAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "InteriorExposureCompensation": -1.0,
+      "NightAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "NightExposureCompensation": -1.5
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "4_as2_narrow_ranges",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       0.0,
+       5.0
+      ],
+      "ExposureCompensation": -0.3,
+      "InteriorAdaptationRange": [
+       -1.0,
+       3.0
+      ],
+      "InteriorExposureCompensation": -0.7,
+      "NightAdaptationRange": [
+       -1.5,
+       2.0
+      ],
+      "NightExposureCompensation": -1.0
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ },
+ {
+  "name": "5_as2_grade_exposure_0",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -2.0,
+       6.0
+      ],
+      "ExposureCompensation": -0.3,
+      "InteriorAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "InteriorExposureCompensation": -0.7,
+      "NightAdaptationRange": [
+       -1.65,
+       4.5
+      ],
+      "NightExposureCompensation": -1.0
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "Exposure": 0.0
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22
+ }
+]

@@ -1,0 +1,99 @@
+[
+ {
+  "name": "00_tree_lighting_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "01_defaults",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.7,
+    "LODTreeWrap": 0.5,
+    "LODTreeTransmission": 0.5,
+    "LODTreeShadowSoftening": 0.7,
+    "LODTreeNormalUpBias": 0.3
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "02_no_wrap_no_upbias",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.7,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.5,
+    "LODTreeShadowSoftening": 0.7,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "03_as02_hard_contact_shadow",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.7,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.5,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "04_as03_brightness_1.3",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.3,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.5,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "05_as03_no_transmission",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 1.7,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 8
+ }
+]

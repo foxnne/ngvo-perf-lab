@@ -1,0 +1,380 @@
+[
+ {
+  "name": "0_vast_as_shot",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "1_tonemap_saturation_1.0",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       1.0,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "2_as1_vibrance_0.15",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "Vibrance": 0.15
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       1.0,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "3_as1_vibrance_0.25_contrast_1.04",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "Vibrance": 0.25,
+      "Contrast": 1.04
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       1.0,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "4_as1_saturation_1.1",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "Saturation": 1.1
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       1.0,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "5_as2_warm_bands",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "Vibrance": 0.15,
+      "BandOrange": [
+       0.0,
+       0.15,
+       0.0
+      ],
+      "BandYellow": [
+       0.0,
+       0.12,
+       0.0
+      ],
+      "BandGreen": [
+       0.0,
+       0.1,
+       -0.03
+      ]
+     }
+    },
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       1.0,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ }
+]

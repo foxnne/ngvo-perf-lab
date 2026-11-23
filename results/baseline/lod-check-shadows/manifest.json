@@ -1,0 +1,484 @@
+{
+ "schema": "ngvo-baseline-manifest/1",
+ "tag": "lod-check-shadows",
+ "plan_file": "C:\\Users\\foxnn\\dev\\ngvo-perf-lab\\harness\\baseline_plan.json",
+ "plan_hash": "14566518405c",
+ "updated": "2026-11-21 23:08:52",
+ "build": {
+  "dll": "C:/Modlists/NGVO 8.0 Beta/mods/Bottled Shaders - foxnne/SKSE/Plugins/CommunityShaders.dll",
+  "dll_date": "2026-11-21 22:27:39",
+  "dll_size": 40588800,
+  "dll_sha1": "1429f7e54dc3a8ec",
+  "fork_head": "9abb38e05",
+  "fork_branch": "foxnne/llf-shadowless-spots",
+  "fork_head_date": "2026-11-21T22:14:34-06:00",
+  "fork_dirty": true
+ },
+ "period_model": {
+  "kind": "sun",
+  "names": [
+   "Dawn",
+   "Sunrise",
+   "Day",
+   "Sunset",
+   "Dusk",
+   "Night"
+  ],
+  "sun": {
+   "path": "alternate",
+   "timing": [
+    33,
+    60,
+    96,
+    123
+   ],
+   "tilt_deg": 55.0
+  },
+  "day_elevation": 10.0,
+  "horizon_elevation": 0.0,
+  "night_elevation": -5.0,
+  "blend_degrees": 3.0,
+  "ease": 1.0
+ },
+ "times": {
+  "Dawn": {
+   "hour": 7.33,
+   "note": "07:20, sun -1.9 deg rising: brightest part of pure Dawn (100% Dawn), first usable twilight before the direct light arrives"
+  },
+  "Sunrise": {
+   "hour": 7.85,
+   "note": "07:51, sun +4.7 deg rising: middle of pure Sunrise (100%), richest warm low sun"
+  },
+  "Day": {
+   "hour": 13.0,
+   "note": "solar noon, sun 55 deg: pure Day"
+  },
+  "Sunset": {
+   "hour": 18.15,
+   "note": "18:09, sun +4.7 deg setting: middle of pure Sunset (100%), inside the observed colour peak 18:00-18:25"
+  },
+  "Dusk": {
+   "hour": 18.67,
+   "note": "18:40, sun -1.9 deg setting: brightest part of pure Dusk (100%), last usable twilight (dark by about 18:50)"
+  },
+  "Night": {
+   "hour": 23.0,
+   "note": "sun -46 deg: pure Night (19:05-06:56)"
+  }
+ },
+ "views": {
+  "plains_west": {
+   "site": "plains",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.75,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.4,
+    1.0,
+    0.58
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "face_tight": {
+   "site": "plains",
+   "kind": "face",
+   "near": [
+    0.3,
+    0.1,
+    0.7,
+    0.95
+   ],
+   "far": [
+    0.0,
+    0.25,
+    0.18,
+    0.75
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "face_bust": {
+   "site": "plains",
+   "kind": "face",
+   "near": [
+    0.32,
+    0.1,
+    0.68,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.25,
+    0.2,
+    0.75
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "ilinalta_west": {
+   "site": "ilinalta",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.75,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.38,
+    1.0,
+    0.55
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "mill_west": {
+   "site": "mill",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.7,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.25,
+    0.35,
+    0.75,
+    0.55
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "city_whiterun": {
+   "site": "city",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.7,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.25,
+    0.3,
+    0.75,
+    0.55
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "inn_mare": {
+   "site": "inn",
+   "kind": "interior",
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ],
+   "category": "interior",
+   "place_layers": [
+    "Interior"
+   ]
+  },
+  "barrow_bleakfalls": {
+   "site": "barrow",
+   "kind": "dungeon",
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ],
+   "category": "dungeon",
+   "place_layers": [
+    "Interior",
+    "Dungeon"
+   ]
+  }
+ },
+ "sky_mode": "types_json",
+ "neutral": {
+  "definition": "Post Processing stages ['Look Grade', 'LUT'] disabled live, not saved (read back before every shot); everything else as saved",
+  "post_processing_enabled": {
+   "Border": false,
+   "COD Bloom": true,
+   "Camera": false,
+   "Color Grading and Tone Mapping": true,
+   "Composite": true,
+   "Depth of Field": false,
+   "Fire": true,
+   "Histogram Auto Exposure": true,
+   "LUT": false,
+   "Lens Flare": false,
+   "Local Exposure": true,
+   "Look Grade": false,
+   "Motion Blur": true,
+   "Physical Glare": false,
+   "Physical Lens": false,
+   "Vignette": false
+  },
+  "after_grade_stages_on": [],
+  "hdr": false,
+  "offline_notes": [
+   "Scene Manager user file: 0 entries on ['LUT', 'Look Grade'], 0 not paused",
+   "saved user setting  Post Processing / LUT / enabled = False",
+   "saved user setting  Post Processing / Look Grade / enabled = False",
+   "saved presets: {\"activePackId\": \"e11:fnenb Cabbage\", \"baselinePackIds\": [\"foxnne-look\"], \"pipeline\": \"PostProcessing\", \"pipelineRevision\": 2}",
+   "saved HDR Display: {\"hdrAutoDetected\": true}"
+  ]
+ },
+ "everything_on": {
+  "nr_enabled": true,
+  "nr_scale": 0.75,
+  "nr_alternate": false,
+  "frame_generation": 1,
+  "volumetric_clouds": true,
+  "physical_sky": true
+ },
+ "created": "2026-11-21 23:07:35",
+ "shots": [
+  {
+   "id": "ilinalta_west__clear__day_h13",
+   "file": "ilinalta_west__clear__day_h13.png",
+   "view": "ilinalta_west",
+   "site": "ilinalta",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "GuardianStones",
+   "stage": "1",
+   "sky_type": "clear",
+   "sky_label": "clear",
+   "weather": "SClearSkyPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": "0x7F00~NAT-ENB.esp",
+   "sky_source": "types_json",
+   "sky_period_used": "Day",
+   "hour_readback": 13.000317573547363,
+   "weather_readback": {
+    "editorID": "SClearSkyPF",
+    "formID": "0x2D007F00"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "GuardianStones",
+    "formID": "0x00009B91",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 662.0,
+    "y": -59220.0,
+    "z": 1712.0,
+    "pitch": -3.0,
+    "yaw": 252.0,
+    "fov": 65.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 662.0,
+     "y": -59220.0,
+     "z": 612.0,
+     "rz": 270.0
+    }
+   },
+   "taken": "2026-11-21 23:08:29",
+   "settings_hash": "00921d895634",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.5048,
+    "p1": 0.245,
+    "p50": 0.433,
+    "p99": 0.9393,
+    "clip_pct": 0.0,
+    "sat": 0.1066,
+    "mean_rgb": [
+     0.4929,
+     0.5065,
+     0.5231
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.215,
+      "p1": 0.245,
+      "p5": 0.2768,
+      "min": 0.183,
+      "mean": 0.5048,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.2155,
+      "p1": 0.2457,
+      "p5": 0.2676,
+      "min": 0.183,
+      "mean": 0.496,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.2209,
+      "p1": 0.2489,
+      "p5": 0.2877,
+      "min": 0.2027,
+      "mean": 0.4729,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.38,
+      1.0,
+      0.55
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "ilinalta_west__partly__day_h13",
+   "file": "ilinalta_west__partly__day_h13.png",
+   "view": "ilinalta_west",
+   "site": "ilinalta",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "GuardianStones",
+   "stage": "1",
+   "sky_type": "partly",
+   "sky_label": "partly",
+   "weather": "CloudyPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": "0x12F89~Skyrim.esm",
+   "sky_source": "types_json",
+   "sky_period_used": "Day",
+   "hour_readback": 13.006208419799805,
+   "weather_readback": {
+    "editorID": "CloudyPF",
+    "formID": "0x00012F89"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "GuardianStones",
+    "formID": "0x00009B91",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 661.9999389648438,
+    "y": -59219.99609375,
+    "z": 1711.5975952148438,
+    "pitch": -3.0,
+    "yaw": 252.0,
+    "fov": 65.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 661.9999389648438,
+     "y": -59219.99609375,
+     "z": 611.5975952148438,
+     "rz": 270.0
+    }
+   },
+   "taken": "2026-11-21 23:08:52",
+   "settings_hash": "2957f9ad5ec6",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.4051,
+    "p1": 0.0924,
+    "p50": 0.3527,
+    "p99": 0.7858,
+    "clip_pct": 0.0,
+    "sat": 0.1539,
+    "mean_rgb": [
+     0.3809,
+     0.4097,
+     0.4309
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0714,
+      "p1": 0.0924,
+      "p5": 0.1305,
+      "min": 0.002,
+      "mean": 0.4051,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0667,
+      "p1": 0.0843,
+      "p5": 0.1079,
+      "min": 0.0188,
+      "mean": 0.3011,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.0787,
+      "p1": 0.1034,
+      "p5": 0.153,
+      "min": 0.0163,
+      "mean": 0.3402,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.38,
+      1.0,
+      0.55
+     ]
+    }
+   },
+   "flags": []
+  }
+ ]
+}

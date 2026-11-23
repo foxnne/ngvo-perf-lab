@@ -1,0 +1,57 @@
+{
+ "label": "perf-lodshadows",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "48d3c08ec4",
+ "time": "2026-11-21 23:23:01",
+ "render": {
+  "frames": 3426,
+  "mean": 29.25,
+  "fps": 34.2,
+  "p50": 27.53,
+  "p95": 40.83,
+  "p99": 67.54,
+  "max": 133.8,
+  "over50": 71,
+  "over100": 7,
+  "over250": 0,
+  "stall_ms": 817
+ },
+ "main_cpu_ms": 25.69,
+ "fg_share": 1.0,
+ "distance": 34552,
+ "cells": 8,
+ "presented": {
+  "present": {
+   "frames": 6968,
+   "mean": 14.63,
+   "fps": 68.4,
+   "p50": 13.77,
+   "p95": 18.28,
+   "p99": 36.17,
+   "max": 112.3,
+   "over50": 35,
+   "over100": 3,
+   "over250": 0,
+   "stall_ms": 320
+  },
+  "displayed": {
+   "frames": 6968,
+   "mean": 14.63,
+   "fps": 68.4,
+   "p50": 13.79,
+   "p95": 19.56,
+   "p99": 34.24,
+   "max": 112.6,
+   "over50": 33,
+   "over100": 3,
+   "over250": 0,
+   "stall_ms": 322
+  },
+  "frame_types": {
+   "Application": 6968
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 31179
+}

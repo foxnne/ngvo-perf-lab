@@ -1,0 +1,29 @@
+{
+ "label": "N13-wardenwood",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "b4700243c3",
+ "time": "2026-11-20 07:53:53",
+ "render": {
+  "frames": 2290,
+  "mean": 25.42,
+  "fps": 39.3,
+  "p50": 24.43,
+  "p95": 30.48,
+  "p99": 34.49,
+  "max": 182.1,
+  "over50": 4,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 182
+ },
+ "main_cpu_ms": 23.11,
+ "fg_share": 1.0,
+ "distance": 17205,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1270
+}

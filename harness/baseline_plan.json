@@ -1,0 +1,131 @@
+{
+ "_about": "Shot plan for baseline_shoot.py: the neutral (no Look Grade, no LUT) reference set the Looks Lab is built from. Edit freely; run 'python baseline_shoot.py TAG --dry-run' to see the resulting matrix and count before queueing it.",
+ "schema": "ngvo-baseline-plan/1",
+
+ "times": {
+  "_note": "One row per shot time, for the SUN-DRIVEN period model below (fork branch foxnne/scene-periods-sun, periodsFollowSun on). 'hour' is what you edit; the real Scene Manager period weights are computed from 'period_model' and written to the manifest. Each hour sits where its period has full weight AND the scene shows that period's light: the sun here rises 07:30 and sets 18:30 (alternate path, 55 deg at 13:00), climbs about 13 deg per hour near the horizon by day and 11 deg per hour below it. Pure periods with the defaults: Dawn 07:12-07:22, Sunrise 07:37-08:08, Day 08:22-17:38, Sunset 17:52-18:23, Dusk 18:38-18:48, Night 19:05-06:56. The table used before is kept as 'times_clock' (python baseline_shoot.py TAG --period-model clock).",
+  "Dawn":    {"hour": 7.33, "note": "07:20, sun -1.9 deg rising: brightest part of pure Dawn (100% Dawn), first usable twilight before the direct light arrives"},
+  "Sunrise": {"hour": 7.85, "note": "07:51, sun +4.7 deg rising: middle of pure Sunrise (100%), richest warm low sun"},
+  "Day":     {"hour": 13.0, "note": "solar noon, sun 55 deg: pure Day"},
+  "Sunset":  {"hour": 18.15, "note": "18:09, sun +4.7 deg setting: middle of pure Sunset (100%), inside the observed colour peak 18:00-18:25"},
+  "Dusk":    {"hour": 18.67, "note": "18:40, sun -1.9 deg setting: brightest part of pure Dusk (100%), last usable twilight (dark by about 18:50)"},
+  "Night":   {"hour": 23.0, "note": "sun -46 deg: pure Night (19:05-06:56)"}
+ },
+
+ "times_clock": {
+  "_note": "The previous table, for the CLOCK period model ('period_model_clock'; the fork with periodsFollowSun off, and every build before foxnne/scene-periods-sun). Used with --period-model clock. In this setup 07:00 is still dark, sunset colour peaks about 18:00-18:25 and it is dark by 18:50, so pure clock Dawn and Dusk are dark and these hours sit inside blends.",
+  "Dawn":    {"hour": 7.25, "note": "first light; Scene Manager: about 90% Dawn, 10% Sunrise (pure Dawn 06:00-07:00 is still dark here)"},
+  "Sunrise": {"hour": 8.25, "note": "low morning sun; pure Sunrise (08:00-09:00)"},
+  "Day":     {"hour": 13.0, "note": "pure Day (10:00-16:00)"},
+  "Sunset":  {"hour": 18.1, "note": "peak sunset colour; about 99% Sunset (pure Sunset 17:00-18:00, then blends to Dusk until 19:00)"},
+  "Dusk":    {"hour": 18.7, "note": "after-glow, nearly dark; about 84% Dusk, 16% Sunset (pure Dusk 19:00-20:00 is already night-dark here)"},
+  "Night":   {"hour": 23.0, "note": "pure Night (21:00-05:00)"}
+ },
+
+ "period_model": {
+  "_note": "kind 'sun': the fork's sun-driven periods (src/CSEditor/SceneManager/ScenePeriodSun.h, SceneSettingsManager::GetSunPeriodFactors). The weights come from the sun's elevation on Sky Sync's path: Night below night_elevation, Dawn / Dusk up to horizon_elevation, Sunrise / Sunset up to day_elevation, Day above, each boundary blended over blend_degrees (full width, centred). 'sun' describes that path: 'alternate' = Sky Sync's alternate sun path (pack foxnne-look sets UseAlternateSunPath), tilt 55 = SunPath Southern; 'timing' = the climate's TNAM sunrise begin/end, sunset begin/end in 10-minute units (SkyrimClimate, winner NAT-ENB.esp, vanilla values). The elevations / blend must equal the Scene Manager's 'Day Above', 'Night Below' and 'Sun Period Blend' sliders (defaults 10, -5, 3). The clock fields below are unused while kind is 'sun'. Not read from the running game: check the Scene Manager debug section once.",
+  "kind": "sun",
+  "names": ["Dawn", "Sunrise", "Day", "Sunset", "Dusk", "Night"],
+  "sun": {"path": "alternate", "timing": [33, 60, 96, 123], "tilt_deg": 55.0},
+  "day_elevation": 10.0,
+  "horizon_elevation": 0.0,
+  "night_elevation": -5.0,
+  "blend_degrees": 3.0,
+  "ease": 1.0
+ },
+
+ "period_model_clock": {
+  "_note": "The model before periods followed the sun: how the fork's Scene Manager turns the game hour into period weights from the climate's clock timing (SceneSettingsManager.cpp: GetPeriodStartHours, GetBlendedPeriods, FindBlendPeriod, GetTimeOfDayFactors). 'starts' come from the active climate: SkyrimClimate as overridden by NAT-ENB.esp keeps the vanilla timing (sunrise 5:30-10:00, sunset 16:00-20:30) and fDaytimeColorExtension is assumed vanilla (0.5). Still what the game does with 'Periods Follow the Sun' off or where Sky Sync places no sun.",
+  "kind": "clock",
+  "names": ["Dawn", "Sunrise", "Day", "Sunset", "Dusk", "Night"],
+  "starts": [5.0, 7.5, 10.0, 16.0, 18.5, 21.0],
+  "blend_offsets": [0.5, 0.0, -0.5, 0.5, 0.0, -0.5],
+  "blend_hours": 1.0,
+  "ease": 1.0
+ },
+
+ "sky": {
+  "_note": "mode 'types_json': apply each sky type's Physical Sky / fog / ambient values from the pass-3 types file on top of the saved settings (Day values plus the override of the dominant period), like sky_sweep.py --stock with sweeps/pass3_types_*.json. mode 'scene': set only weather and hour and let an installed pack drive the sky (use this once the cloud pack is installed).",
+  "mode": "types_json",
+  "types_file": "C:/Users/foxnn/dev/nat3-volclouds/draft/pass3-sky-types.json",
+  "weather_settle_seconds": 16,
+  "hour_settle_seconds": 10,
+  "types": {
+   "clear":    {"weather": "SClearSkyPF"},
+   "fair":     {"weather": "SunnyPF"},
+   "partly":   {"weather": "CloudyPF"},
+   "rain":     {"weather": "RainPF"},
+   "overcast": {"weather": "OvercastPF"},
+   "storm":    {"weather": "StormPF"},
+   "snow":     {"weather": "Snow"},
+   "fog":      {"weather": "FogPF"}
+  }
+ },
+
+ "stages": {
+  "1": {"sky_types": ["clear", "fair", "partly", "rain"], "note": "fair-weather half: can be shot now"},
+  "2": {"sky_types": ["overcast", "storm", "snow", "fog"], "note": "after the storm / overcast / snow / fog skies are fixed"}
+ },
+
+ "sites": {
+  "plains":   {"cell": "WhiterunExterior04", "player": {"x": 19157.0, "y": -7419.0, "z": -3612.0, "rx": 0.0, "rz": 160.0}, "settle_seconds": 12},
+  "ilinalta": {"cell": "GuardianStones", "player": {"x": 662.0, "y": -59220.0, "z": 612.0, "rx": 0.0, "rz": 270.0}, "settle_seconds": 14},
+  "mill":     {"cell": "HalfMoonMillExterior", "settle_seconds": 14},
+  "city":     {"cell": "WhiterunOrigin", "settle_seconds": 14},
+  "inn":      {"cell": "WhiterunBanneredMare", "interior": true, "settle_seconds": 12},
+  "barrow":   {"cell": "BleakFallsBarrow01", "interior": true, "settle_seconds": 12}
+ },
+
+ "views": [
+  {"id": "plains_west",   "site": "plains",   "kind": "exterior", "views_json": "plains_west",
+   "near": [0.0, 0.75, 1.0, 1.0], "far": [0.0, 0.40, 1.0, 0.58]},
+  {"id": "face_tight",    "site": "plains",   "kind": "face", "face": {"distance": 60.0, "height": 112.0, "pitch": -2.0, "fov": 35.0},
+   "near": [0.30, 0.10, 0.70, 0.95], "far": [0.0, 0.25, 0.18, 0.75]},
+  {"id": "face_bust",     "site": "plains",   "kind": "face", "face": {"distance": 95.0, "height": 105.0, "pitch": -2.0, "fov": 40.0},
+   "near": [0.32, 0.10, 0.68, 1.0], "far": [0.0, 0.25, 0.20, 0.75]},
+  {"id": "ilinalta_west", "site": "ilinalta", "kind": "exterior", "views_json": "ilinalta_west",
+   "near": [0.0, 0.75, 1.0, 1.0], "far": [0.0, 0.38, 1.0, 0.55]},
+  {"id": "mill_west",     "site": "mill",     "kind": "exterior", "views_json": "mill_west",
+   "near": [0.0, 0.70, 1.0, 1.0], "far": [0.25, 0.35, 0.75, 0.55]},
+  {"id": "city_whiterun", "site": "city",     "kind": "exterior",
+   "camera": {"dx": 0, "dy": 0, "dz": 130.0, "pitch": -4.0, "yaw": "player", "fov": 75.0},
+   "_note": "UNVERIFIED framing: free camera at the WhiterunOrigin spawn looking where the player faces. Check the first shot and set an explicit yaw.",
+   "near": [0.0, 0.70, 1.0, 1.0], "far": [0.25, 0.30, 0.75, 0.55]},
+  {"id": "inn_mare",      "site": "inn",      "kind": "interior",
+   "camera": {"dx": 0, "dy": 0, "dz": 120.0, "pitch": -2.0, "yaw": "player", "fov": 75.0},
+   "_note": "UNVERIFIED framing (spawn point of the Bannered Mare).",
+   "near": [0.0, 0.65, 1.0, 1.0], "far": [0.30, 0.25, 0.70, 0.60]},
+  {"id": "barrow_bleakfalls", "site": "barrow", "kind": "dungeon",
+   "camera": {"dx": 0, "dy": 0, "dz": 120.0, "pitch": -2.0, "yaw": "player", "fov": 75.0},
+   "_note": "UNVERIFIED framing (spawn point of Bleak Falls Barrow).",
+   "near": [0.0, 0.65, 1.0, 1.0], "far": [0.30, 0.25, 0.70, 0.60]}
+ ],
+
+ "interior_matrix": {
+  "_note": "Interior and dungeon views do not follow the outdoor matrix: they are shot once per listed time. Since 2026-11-20 the script sets no weather for them (and releases a weather lock before going indoors): the cell keeps its own interior weather.",
+  "interior": ["Day", "Night"],
+  "dungeon": ["Day"]
+ },
+
+ "neutral": {
+  "_note": "What makes a shot neutral for the lab: the two stages after tone mapping that the lab replaces are OFF. The script sets and reads these back before every shot and aborts on a mismatch.",
+  "post_processing_off": ["Look Grade", "LUT"],
+  "post_processing_warn_if_on": ["Camera", "Border"],
+  "hdr_must_be_off": true,
+  "scene_manager_file": "C:/Modlists/NGVO 8.0 Beta/mods/CS Settings/SKSE/Plugins/CommunityShaders/SceneSettings/SceneManager.json",
+  "settings_user_file": "C:/Modlists/NGVO 8.0 Beta/mods/CS Settings/SKSE/Plugins/CommunityShaders/SettingsUser.json"
+ },
+
+ "capture": {
+  "camera_settle_seconds": 4,
+  "face_pose_check": true,
+  "face_pose_max_diff": 0.012,
+  "expect_resolution": [3440, 1440],
+  "dark_percentiles": [0.1, 1, 5]
+ },
+
+ "build": {
+  "dll": "C:/Modlists/NGVO 8.0 Beta/mods/Bottled Shaders - foxnne/SKSE/Plugins/CommunityShaders.dll",
+  "fork": "C:/Users/foxnn/dev/skyrim-community-shaders"
+ }
+}

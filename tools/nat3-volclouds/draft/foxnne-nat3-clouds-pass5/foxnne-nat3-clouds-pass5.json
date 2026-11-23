@@ -1,0 +1,26 @@
+{
+  "name": "foxnne NAT III clouds (pass 5, closed skies)",
+  "version": "0.5.0",
+  "type": "CS",
+  "author": "foxnne",
+  "description": "DRAFT, pass 5, not tested in game as a pack. Per-weather, per-period sky ONLY for closed skies: overcast and fog (pass-4 values, approved), rain and storm (pass-4 values, not reviewed), snow (the approved overcast deck + a day exposure raise; SnowClear = bright broken cumulus). Clear, fair, partly cloudy and other-realm weathers have no entries and the Baseline holds only the lightning switch. No Ground Fog entries. Read notes/install-pass-5.md first.",
+  "tags": [
+    "NAT.CS III",
+    "Physical Sky",
+    "volumetric clouds",
+    "draft"
+  ],
+  "csVersion": "1.9.0",
+  "requiredFeatures": [
+    "PhysicalSky",
+    "ExponentialHeightFog",
+    "ImageBasedLighting",
+    "PostProcessing",
+    "SceneManager",
+    "SkySync"
+  ],
+  "requiredPlugins": [
+    "NAT-ENB.esp",
+    "NAT-CS.esp"
+  ]
+}

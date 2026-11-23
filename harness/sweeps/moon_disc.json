@@ -1,0 +1,88 @@
+[
+ {
+  "name": "0_now_red_moon",
+  "set": {},
+  "shader": {
+   "file": "Sky.hlsl",
+   "defines": {
+    "MOON_DISK_GAIN": 0.0001
+   }
+  },
+  "features": {
+   "LightShafts": {
+    "MoonStrength": 0.1
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "1_disc_phys_red_shafts0.25",
+  "set": {},
+  "shader": {
+   "file": "Sky.hlsl",
+   "defines": {
+    "MOON_DISK_GAIN": 1.0
+   }
+  },
+  "features": {
+   "LightShafts": {
+    "MoonStrength": 0.25
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "2_disc_phys_blue_shafts0.25",
+  "set": {
+   "masserColor": [
+    0.26,
+    0.3,
+    0.39
+   ],
+   "secundaColor": [
+    0.11,
+    0.135,
+    0.18
+   ]
+  },
+  "shader": {
+   "file": "Sky.hlsl",
+   "defines": {
+    "MOON_DISK_GAIN": 1.0
+   }
+  },
+  "features": {
+   "LightShafts": {
+    "MoonStrength": 0.25
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "3_disc_x3_blue_shafts0.25",
+  "set": {
+   "masserColor": [
+    0.26,
+    0.3,
+    0.39
+   ],
+   "secundaColor": [
+    0.11,
+    0.135,
+    0.18
+   ]
+  },
+  "shader": {
+   "file": "Sky.hlsl",
+   "defines": {
+    "MOON_DISK_GAIN": 3.0
+   }
+  },
+  "features": {
+   "LightShafts": {
+    "MoonStrength": 0.25
+   }
+  },
+  "settle": 10
+ }
+]

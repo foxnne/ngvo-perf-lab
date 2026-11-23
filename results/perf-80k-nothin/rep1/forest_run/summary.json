@@ -1,0 +1,57 @@
+{
+ "label": "perf-80k-nothin",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "1def8d485c",
+ "time": "2026-11-22 10:00:18",
+ "render": {
+  "frames": 2054,
+  "mean": 28.36,
+  "fps": 35.3,
+  "p50": 29.8,
+  "p95": 35.32,
+  "p99": 53.33,
+  "max": 98.6,
+  "over50": 27,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 25.17,
+ "fg_share": 0.91,
+ "distance": 11421,
+ "cells": 5,
+ "presented": {
+  "present": {
+   "frames": 4049,
+   "mean": 14.8,
+   "fps": 67.6,
+   "p50": 14.91,
+   "p95": 17.25,
+   "p99": 25.01,
+   "max": 70.2,
+   "over50": 6,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 4049,
+   "mean": 14.8,
+   "fps": 67.6,
+   "p50": 14.81,
+   "p95": 18.54,
+   "p99": 25.48,
+   "max": 66.0,
+   "over50": 6,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 4049
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 9856
+}

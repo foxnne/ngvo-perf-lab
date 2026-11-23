@@ -1,0 +1,57 @@
+{
+ "label": "perf-lodoff",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "d18ca63854",
+ "time": "2026-11-21 20:46:27",
+ "render": {
+  "frames": 2339,
+  "mean": 24.82,
+  "fps": 40.3,
+  "p50": 24.58,
+  "p95": 26.49,
+  "p99": 31.62,
+  "max": 57.9,
+  "over50": 6,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 22.97,
+ "fg_share": 1.0,
+ "distance": 17298,
+ "cells": 6,
+ "presented": {
+  "present": {
+   "frames": 4840,
+   "mean": 12.38,
+   "fps": 80.7,
+   "p50": 12.26,
+   "p95": 13.16,
+   "p99": 14.19,
+   "max": 46.1,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 4840,
+   "mean": 12.38,
+   "fps": 80.7,
+   "p50": 12.33,
+   "p95": 14.21,
+   "p99": 16.39,
+   "max": 46.5,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 4840
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 1230
+}

@@ -1,0 +1,10 @@
+[
+ {"name": "0_base"},
+ {"name": "1_lift_0", "pp": {"Look Grade": {"settings": {"ShadowsLift": 0.0}}}},
+ {"name": "2_lift_p02", "pp": {"Look Grade": {"settings": {"ShadowsLift": 0.02}}}},
+ {"name": "3_ambient_1p0", "features": {"LinearLighting": {"ambientMult": 1.0}}},
+ {"name": "4_ambient_1p2", "features": {"LinearLighting": {"ambientMult": 1.2}}},
+ {"name": "5_skyvis_0p3", "features": {"Skylighting": {"MinDiffuseVisibility": 0.3}}},
+ {"name": "6_ambient_1p0_lift_0", "pp": {"Look Grade": {"settings": {"ShadowsLift": 0.0}}}, "features": {"LinearLighting": {"ambientMult": 1.0}}},
+ {"name": "7_base_again"}
+]

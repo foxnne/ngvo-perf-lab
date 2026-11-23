@@ -1,0 +1,1365 @@
+{
+ "schema": "ngvo-baseline-manifest/1",
+ "tag": "lab-baseline-02",
+ "plan_file": "C:\\Users\\foxnn\\dev\\ngvo-perf-lab\\harness\\baseline_plan_lab.json",
+ "plan_hash": "aa40f4a6b2a1",
+ "updated": "2026-11-21 18:54:54",
+ "build": {
+  "dll": "C:/Modlists/NGVO 8.0 Beta/mods/Bottled Shaders - foxnne/SKSE/Plugins/CommunityShaders.dll",
+  "dll_date": "2026-11-21 09:30:11",
+  "dll_size": 40494080,
+  "dll_sha1": "11d883716ef5e33b",
+  "fork_head": "15f8ad18e",
+  "fork_branch": "foxnne/llf-shadowless-spots",
+  "fork_head_date": "2026-11-21T09:26:48-06:00",
+  "fork_dirty": true
+ },
+ "period_model": {
+  "kind": "sun",
+  "names": [
+   "Dawn",
+   "Sunrise",
+   "Day",
+   "Sunset",
+   "Dusk",
+   "Night"
+  ],
+  "sun": {
+   "path": "alternate",
+   "timing": [
+    33,
+    60,
+    96,
+    123
+   ],
+   "tilt_deg": 55.0
+  },
+  "day_elevation": 10.0,
+  "horizon_elevation": 0.0,
+  "night_elevation": -5.0,
+  "blend_degrees": 3.0,
+  "ease": 1.0
+ },
+ "times": {
+  "Day": {
+   "hour": 13.0,
+   "note": "solar noon, sun 55 deg: pure Day"
+  },
+  "Golden": {
+   "hour": 16.5,
+   "note": "16:30, low warm afternoon sun; Scene Manager period Day"
+  },
+  "Night": {
+   "hour": 22.0,
+   "note": "22:00, pure Night (19:05-06:56)"
+  }
+ },
+ "views": {
+  "inn_bannered_mare": {
+   "site": "inn",
+   "kind": "interior",
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ],
+   "category": "interior",
+   "place_layers": [
+    "Interior"
+   ]
+  },
+  "hall_dragonsreach": {
+   "site": "dragonsreach",
+   "kind": "interior",
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ],
+   "category": "interior",
+   "place_layers": [
+    "Interior"
+   ]
+  },
+  "dungeon_bleak_falls": {
+   "site": "barrow",
+   "kind": "dungeon",
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ],
+   "category": "dungeon",
+   "place_layers": [
+    "Interior",
+    "Dungeon"
+   ]
+  },
+  "plains_west": {
+   "site": "plains",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.75,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.4,
+    1.0,
+    0.58
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "plains_west_overcast": {
+   "site": "plains",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.75,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.4,
+    1.0,
+    0.58
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "face_bust": {
+   "site": "plains",
+   "kind": "face",
+   "near": [
+    0.32,
+    0.1,
+    0.68,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.25,
+    0.2,
+    0.75
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "riverwood_floor": {
+   "site": "riverwood",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.7,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.25,
+    0.3,
+    0.75,
+    0.55
+   ],
+   "category": "exterior",
+   "place_layers": []
+  },
+  "rift_aspens": {
+   "site": "rift",
+   "kind": "exterior",
+   "near": [
+    0.0,
+    0.7,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.25,
+    0.1,
+    0.75,
+    0.45
+   ],
+   "category": "exterior",
+   "place_layers": []
+  }
+ },
+ "sky_mode": "scene",
+ "neutral": {
+  "definition": "Post Processing stages ['Look Grade', 'LUT'] disabled live, not saved (read back before every shot); everything else as saved",
+  "post_processing_enabled": {
+   "Border": false,
+   "COD Bloom": true,
+   "Camera": false,
+   "Color Grading and Tone Mapping": true,
+   "Composite": true,
+   "Depth of Field": false,
+   "Fire": true,
+   "Histogram Auto Exposure": true,
+   "LUT": false,
+   "Lens Flare": false,
+   "Local Exposure": true,
+   "Look Grade": false,
+   "Motion Blur": true,
+   "Physical Glare": false,
+   "Physical Lens": false,
+   "Vignette": false
+  },
+  "after_grade_stages_on": [],
+  "hdr": false,
+  "offline_notes": [
+   "Scene Manager user file: 0 entries on ['LUT', 'Look Grade'], 0 not paused",
+   "saved user setting  Post Processing / LUT / enabled = False",
+   "saved user setting  Post Processing / Look Grade / enabled = False",
+   "saved presets: {\"activePackId\": \"e11:fnenb Cabbage\", \"baselinePackIds\": [\"foxnne-look\"], \"pipeline\": \"PostProcessing\", \"pipelineRevision\": 2}",
+   "saved HDR Display: {\"hdrAutoDetected\": true}"
+  ]
+ },
+ "everything_on": {
+  "nr_enabled": true,
+  "nr_scale": 0.75,
+  "nr_alternate": false,
+  "frame_generation": 1,
+  "volumetric_clouds": true,
+  "physical_sky": true
+ },
+ "created": "2026-11-21 07:35:34",
+ "shots": [
+  {
+   "id": "face_bust__fair__day_h13",
+   "file": "face_bust__fair__day_h13.png",
+   "view": "face_bust",
+   "site": "plains",
+   "kind": "face",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "WhiterunExterior04",
+   "stage": "1",
+   "sky_type": "fair",
+   "sky_label": "fair",
+   "weather": "SunnyPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Day",
+   "hour_readback": 13.008957862854004,
+   "weather_readback": {
+    "editorID": "SunnyPF",
+    "formID": "0x0000081A"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "WhiterunExterior04",
+    "formID": "0x000095FC",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "face": {
+     "distance": 95.0,
+     "height": 105.0,
+     "pitch": -2.0,
+     "fov": 40.0
+    }
+   },
+   "taken": "2026-11-21 07:39:21",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.3441,
+    "p1": 0.0692,
+    "p50": 0.2994,
+    "p99": 0.9359,
+    "clip_pct": 0.178,
+    "sat": 0.2038,
+    "mean_rgb": [
+     0.379,
+     0.3365,
+     0.3158
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0403,
+      "p1": 0.0692,
+      "p5": 0.1137,
+      "min": 0.0,
+      "mean": 0.3441,
+      "crushed_pct": 0.004
+     },
+     "near": {
+      "p0.1": 0.0356,
+      "p1": 0.0569,
+      "p5": 0.0966,
+      "min": 0.0,
+      "mean": 0.2916,
+      "crushed_pct": 0.009
+     },
+     "far": {
+      "p0.1": 0.0793,
+      "p1": 0.1089,
+      "p5": 0.1468,
+      "min": 0.0398,
+      "mean": 0.3321,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.32,
+      0.1,
+      0.68,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.25,
+      0.2,
+      0.75
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "plains_west__fair__night_h22",
+   "file": "plains_west__fair__night_h22.png",
+   "view": "plains_west",
+   "site": "plains",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "WhiterunExterior04",
+   "stage": "1",
+   "sky_type": "fair",
+   "sky_label": "fair",
+   "weather": "SunnyPF",
+   "time_row": "Night",
+   "hour": 22.0,
+   "period": "Night",
+   "period_weights": {
+    "Night": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Night",
+   "hour_readback": 22.00530242919922,
+   "weather_readback": {
+    "editorID": "SunnyPF",
+    "formID": "0x0000081A"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "WhiterunExterior04",
+    "formID": "0x000095FC",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 19156.998046875,
+    "y": -7419.0,
+    "z": -2912.34423828125,
+    "pitch": -3.0,
+    "yaw": 270.0,
+    "fov": 65.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 19156.998046875,
+     "y": -7419.0,
+     "z": -3612.34423828125,
+     "rz": 160.0
+    }
+   },
+   "taken": "2026-11-21 07:39:58",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.2053,
+    "p1": 0.0899,
+    "p50": 0.1765,
+    "p99": 0.5706,
+    "clip_pct": 0.0,
+    "sat": 0.2135,
+    "mean_rgb": [
+     0.1895,
+     0.2064,
+     0.2408
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0813,
+      "p1": 0.0899,
+      "p5": 0.0989,
+      "min": 0.067,
+      "mean": 0.2053,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0773,
+      "p1": 0.0857,
+      "p5": 0.097,
+      "min": 0.067,
+      "mean": 0.139,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.0824,
+      "p1": 0.0908,
+      "p5": 0.1241,
+      "min": 0.0745,
+      "mean": 0.203,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.4,
+      1.0,
+      0.58
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "plains_west_overcast__overcast__day_h13",
+   "file": "plains_west_overcast__overcast__day_h13.png",
+   "view": "plains_west_overcast",
+   "site": "plains",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "WhiterunExterior04",
+   "stage": "1",
+   "sky_type": "overcast",
+   "sky_label": "overcast",
+   "weather": "OvercastPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Day",
+   "hour_readback": 13.007478713989258,
+   "weather_readback": {
+    "editorID": "OvercastPF",
+    "formID": "0x2D0053B6"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "WhiterunExterior04",
+    "formID": "0x000095FC",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 19156.998046875,
+    "y": -7419.0,
+    "z": -2912.34423828125,
+    "pitch": -3.0,
+    "yaw": 270.0,
+    "fov": 65.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 19156.998046875,
+     "y": -7419.0,
+     "z": -3612.34423828125,
+     "rz": 160.0
+    }
+   },
+   "taken": "2026-11-21 07:40:25",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.3266,
+    "p1": 0.0577,
+    "p50": 0.3254,
+    "p99": 0.6406,
+    "clip_pct": 0.0,
+    "sat": 0.1501,
+    "mean_rgb": [
+     0.3104,
+     0.3289,
+     0.3509
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0361,
+      "p1": 0.0577,
+      "p5": 0.0818,
+      "min": 0.0023,
+      "mean": 0.3266,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0322,
+      "p1": 0.0403,
+      "p5": 0.0664,
+      "min": 0.0023,
+      "mean": 0.1937,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.0602,
+      "p1": 0.0902,
+      "p5": 0.1757,
+      "min": 0.0471,
+      "mean": 0.398,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.4,
+      1.0,
+      0.58
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "inn_bannered_mare__indoor__day_h13",
+   "file": "inn_bannered_mare__indoor__day_h13.png",
+   "view": "inn_bannered_mare",
+   "site": "inn",
+   "kind": "interior",
+   "category": "interior",
+   "place_layers": [
+    "Interior"
+   ],
+   "cell": "WhiterunBanneredMare",
+   "stage": "1",
+   "sky_type": null,
+   "sky_label": "indoor",
+   "weather": null,
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "cell (Helios interior weather, hour set before entry)",
+   "sky_period_used": "Day",
+   "hour_readback": 13.010956764221191,
+   "weather_readback": {
+    "editorID": "Helios_SkyrimClear",
+    "formID": "0xFE061A70"
+   },
+   "weather_locked": false,
+   "cell_readback": {
+    "editorID": "WhiterunBanneredMare",
+    "formID": "0x0001605E",
+    "interior": true,
+    "name": "The Bannered Mare"
+   },
+   "camera": {
+    "x": 124.06400299072266,
+    "y": -722.3588256835938,
+    "z": 253.33944702148438,
+    "pitch": 2.0,
+    "yaw": 0.0,
+    "fov": 75.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 124.06400299072266,
+     "y": -722.3588256835938,
+     "z": 68.33944702148438,
+     "rz": 236.92904663085938
+    }
+   },
+   "taken": "2026-11-21 10:16:15",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.1506,
+    "p1": 0.0484,
+    "p50": 0.1044,
+    "p99": 0.7283,
+    "clip_pct": 0.037,
+    "sat": 0.5338,
+    "mean_rgb": [
+     0.1986,
+     0.1427,
+     0.0885
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0353,
+      "p1": 0.0484,
+      "p5": 0.0596,
+      "min": 0.0,
+      "mean": 0.1506,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0322,
+      "p1": 0.044,
+      "p5": 0.0571,
+      "min": 0.0,
+      "mean": 0.1542,
+      "crushed_pct": 0.001
+     },
+     "far": {
+      "p0.1": 0.0456,
+      "p1": 0.0566,
+      "p5": 0.0683,
+      "min": 0.0058,
+      "mean": 0.2447,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.65,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.3,
+      0.25,
+      0.7,
+      0.6
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "hall_dragonsreach__indoor__day_h13",
+   "file": "hall_dragonsreach__indoor__day_h13.png",
+   "view": "hall_dragonsreach",
+   "site": "dragonsreach",
+   "kind": "interior",
+   "category": "interior",
+   "place_layers": [
+    "Interior"
+   ],
+   "cell": "WhiterunDragonsreach",
+   "stage": "1",
+   "sky_type": null,
+   "sky_label": "indoor",
+   "weather": null,
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "needs_camera_check": true,
+   "weather_form_key": null,
+   "sky_source": "cell (Helios interior weather, hour set before entry)",
+   "sky_period_used": "Day",
+   "hour_readback": 13.010122299194336,
+   "weather_readback": {
+    "editorID": "Helios_SkyrimClear",
+    "formID": "0xFE061A70"
+   },
+   "weather_locked": false,
+   "cell_readback": {
+    "editorID": "WhiterunDragonsreach",
+    "formID": "0x000165A3",
+    "interior": true,
+    "name": "Dragonsreach"
+   },
+   "camera": {
+    "x": -447.9999694824219,
+    "y": -127.99999237060547,
+    "z": -133.0,
+    "pitch": 2.0,
+    "yaw": 359.0375671386719,
+    "fov": 75.0,
+    "yaw_from": "player facing",
+    "player": {
+     "x": -447.9999694824219,
+     "y": -127.99999237060547,
+     "z": -318.0,
+     "rz": 359.0375671386719
+    }
+   },
+   "taken": "2026-11-21 10:16:57",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.1882,
+    "p1": 0.0655,
+    "p50": 0.1271,
+    "p99": 0.6508,
+    "clip_pct": 0.011,
+    "sat": 0.3688,
+    "mean_rgb": [
+     0.2204,
+     0.1841,
+     0.1343
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0375,
+      "p1": 0.0655,
+      "p5": 0.0778,
+      "min": 0.0188,
+      "mean": 0.1882,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.049,
+      "p1": 0.063,
+      "p5": 0.0748,
+      "min": 0.0261,
+      "mean": 0.1564,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.0308,
+      "p1": 0.0448,
+      "p5": 0.079,
+      "min": 0.0204,
+      "mean": 0.2033,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.65,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.3,
+      0.25,
+      0.7,
+      0.6
+     ]
+    }
+   },
+   "flags": [
+    "camera not checked: framed along the player facing"
+   ]
+  },
+  {
+   "id": "dungeon_bleak_falls__indoor__day_h13",
+   "file": "dungeon_bleak_falls__indoor__day_h13.png",
+   "view": "dungeon_bleak_falls",
+   "site": "barrow",
+   "kind": "dungeon",
+   "category": "dungeon",
+   "place_layers": [
+    "Interior",
+    "Dungeon"
+   ],
+   "cell": "BleakFallsBarrow01",
+   "stage": "1",
+   "sky_type": null,
+   "sky_label": "indoor",
+   "weather": null,
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "cell (Helios interior weather, hour set before entry)",
+   "sky_period_used": "Day",
+   "hour_readback": 13.010784149169922,
+   "weather_readback": {
+    "editorID": "SunnySN",
+    "formID": "0x0010A244"
+   },
+   "weather_locked": false,
+   "cell_readback": {
+    "editorID": "BleakFallsBarrow01",
+    "formID": "0x000371DE",
+    "interior": true,
+    "name": "Bleak Falls Temple"
+   },
+   "camera": {
+    "x": -7410.99951171875,
+    "y": 1082.0,
+    "z": 758.5223388671875,
+    "pitch": -4.0,
+    "yaw": 90.0,
+    "fov": 75.0,
+    "yaw_from": "view",
+    "player": {
+     "x": -7410.99951171875,
+     "y": 1082.0,
+     "z": 573.5223388671875,
+     "rz": 90.0
+    }
+   },
+   "taken": "2026-11-21 10:39:36",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.1246,
+    "p1": 0.0286,
+    "p50": 0.0756,
+    "p99": 0.4584,
+    "clip_pct": 0.0,
+    "sat": 0.3025,
+    "mean_rgb": [
+     0.1393,
+     0.1222,
+     0.105
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0238,
+      "p1": 0.0286,
+      "p5": 0.0333,
+      "min": 0.0003,
+      "mean": 0.1246,
+      "crushed_pct": 0.001
+     },
+     "near": {
+      "p0.1": 0.021,
+      "p1": 0.0322,
+      "p5": 0.0437,
+      "min": 0.0003,
+      "mean": 0.0819,
+      "crushed_pct": 0.002
+     },
+     "far": {
+      "p0.1": 0.021,
+      "p1": 0.0286,
+      "p5": 0.0353,
+      "min": 0.005,
+      "mean": 0.1247,
+      "crushed_pct": 0.001
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.65,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.3,
+      0.25,
+      0.7,
+      0.6
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "plains_west__fair__golden_h16.5",
+   "file": "plains_west__fair__golden_h16.5.png",
+   "view": "plains_west",
+   "site": "plains",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "WhiterunExterior04",
+   "stage": "1",
+   "sky_type": "fair",
+   "sky_label": "fair",
+   "weather": "SunnyPF",
+   "time_row": "Golden",
+   "hour": 16.5,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Day",
+   "hour_readback": 16.505516052246094,
+   "weather_readback": {
+    "editorID": "SunnyPF",
+    "formID": "0x0000081A"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "WhiterunExterior04",
+    "formID": "0x000095FC",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 19156.998046875,
+    "y": -7419.0,
+    "z": -2912.34423828125,
+    "pitch": -3.0,
+    "yaw": 270.0,
+    "fov": 65.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 19156.998046875,
+     "y": -7419.0,
+     "z": -3612.34423828125,
+     "rz": 160.0
+    }
+   },
+   "taken": "2026-11-21 13:28:05",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.3535,
+    "p1": 0.0868,
+    "p50": 0.3072,
+    "p99": 0.7565,
+    "clip_pct": 0.0,
+    "sat": 0.132,
+    "mean_rgb": [
+     0.3411,
+     0.3555,
+     0.3699
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.07,
+      "p1": 0.0868,
+      "p5": 0.1053,
+      "min": 0.0339,
+      "mean": 0.3535,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0616,
+      "p1": 0.0826,
+      "p5": 0.0952,
+      "min": 0.0339,
+      "mean": 0.2139,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.0759,
+      "p1": 0.0916,
+      "p5": 0.179,
+      "min": 0.0454,
+      "mean": 0.3666,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.4,
+      1.0,
+      0.58
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "plains_west__fair__day_h13",
+   "file": "plains_west__fair__day_h13.png",
+   "view": "plains_west",
+   "site": "plains",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "WhiterunExterior04",
+   "stage": "1",
+   "sky_type": "fair",
+   "sky_label": "fair",
+   "weather": "SunnyPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Day",
+   "hour_readback": 13.007384300231934,
+   "weather_readback": {
+    "editorID": "SunnyPF",
+    "formID": "0x0000081A"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "WhiterunExterior04",
+    "formID": "0x000095FC",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 19156.998046875,
+    "y": -7419.0,
+    "z": -2912.34423828125,
+    "pitch": -3.0,
+    "yaw": 270.0,
+    "fov": 65.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 19156.998046875,
+     "y": -7419.0,
+     "z": -3612.34423828125,
+     "rz": 160.0
+    }
+   },
+   "taken": "2026-11-21 15:26:22",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.3682,
+    "p1": 0.0919,
+    "p50": 0.3586,
+    "p99": 0.6964,
+    "clip_pct": 0.0,
+    "sat": 0.1619,
+    "mean_rgb": [
+     0.3522,
+     0.3704,
+     0.3939
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0773,
+      "p1": 0.0919,
+      "p5": 0.1185,
+      "min": 0.0361,
+      "mean": 0.3682,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0734,
+      "p1": 0.0807,
+      "p5": 0.1098,
+      "min": 0.0361,
+      "mean": 0.3069,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.0916,
+      "p1": 0.1137,
+      "p5": 0.2006,
+      "min": 0.0728,
+      "mean": 0.4005,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.0,
+      0.4,
+      1.0,
+      0.58
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "riverwood_floor__fair__day_h13",
+   "file": "riverwood_floor__fair__day_h13.png",
+   "view": "riverwood_floor",
+   "site": "riverwood",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "Riverwood",
+   "stage": "1",
+   "sky_type": "fair",
+   "sky_label": "fair",
+   "weather": "SunnyPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Day",
+   "hour_readback": 13.007200241088867,
+   "weather_readback": {
+    "editorID": "SunnyPF",
+    "formID": "0x0000081A"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "Riverwood",
+    "formID": "0x00009732",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 17224.771484375,
+    "y": -47204.44921875,
+    "z": -4.526397705078125,
+    "pitch": -10.0,
+    "yaw": 180.0,
+    "fov": 75.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 17224.771484375,
+     "y": -47204.44921875,
+     "z": -144.52639770507812,
+     "rz": 58.72872543334961
+    }
+   },
+   "taken": "2026-11-21 15:27:28",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.3071,
+    "p1": 0.1132,
+    "p50": 0.2835,
+    "p99": 0.7265,
+    "clip_pct": 0.144,
+    "sat": 0.1056,
+    "mean_rgb": [
+     0.3098,
+     0.3084,
+     0.2864
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.0905,
+      "p1": 0.1132,
+      "p5": 0.1414,
+      "min": 0.0,
+      "mean": 0.3071,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.0894,
+      "p1": 0.105,
+      "p5": 0.1246,
+      "min": 0.0501,
+      "mean": 0.2594,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.1134,
+      "p1": 0.1384,
+      "p5": 0.1829,
+      "min": 0.0728,
+      "mean": 0.3018,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.7,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.25,
+      0.3,
+      0.75,
+      0.55
+     ]
+    }
+   },
+   "flags": []
+  },
+  {
+   "id": "rift_aspens__fair__day_h13",
+   "file": "rift_aspens__fair__day_h13.png",
+   "view": "rift_aspens",
+   "site": "rift",
+   "kind": "exterior",
+   "category": "exterior",
+   "place_layers": [],
+   "cell": "cow Tamriel 40 -24",
+   "stage": "1",
+   "sky_type": "fair",
+   "sky_label": "fair",
+   "weather": "SunnyPF",
+   "time_row": "Day",
+   "hour": 13.0,
+   "period": "Day",
+   "period_weights": {
+    "Day": 1.0
+   },
+   "weather_form_key": null,
+   "sky_source": "scene",
+   "sky_period_used": "Day",
+   "hour_readback": 13.00725269317627,
+   "weather_readback": {
+    "editorID": "SunnyPF",
+    "formID": "0x0000081A"
+   },
+   "weather_locked": true,
+   "cell_readback": {
+    "editorID": "RiftenPlankside03",
+    "formID": "0x0000BCD2",
+    "interior": false,
+    "name": ""
+   },
+   "camera": {
+    "x": 167755.984375,
+    "y": -97399.9921875,
+    "z": 10952.3505859375,
+    "pitch": -4.0,
+    "yaw": 180.0,
+    "fov": 70.0,
+    "yaw_from": "view",
+    "player": {
+     "x": 167755.984375,
+     "y": -97399.9921875,
+     "z": 10752.3505859375,
+     "rz": 0.0
+    }
+   },
+   "taken": "2026-11-21 18:54:54",
+   "settings_hash": "1d7254ca17fe",
+   "stats": {
+    "resolution": [
+     3440,
+     1440
+    ],
+    "mode": "RGB",
+    "mean": 0.3588,
+    "p1": 0.1532,
+    "p50": 0.324,
+    "p99": 0.7779,
+    "clip_pct": 0.019,
+    "sat": 0.2404,
+    "mean_rgb": [
+     0.3983,
+     0.3532,
+     0.2977
+    ],
+    "dark": {
+     "all": {
+      "p0.1": 0.1247,
+      "p1": 0.1532,
+      "p5": 0.1838,
+      "min": 0.0871,
+      "mean": 0.3588,
+      "crushed_pct": 0.0
+     },
+     "near": {
+      "p0.1": 0.1163,
+      "p1": 0.1409,
+      "p5": 0.167,
+      "min": 0.0871,
+      "mean": 0.2979,
+      "crushed_pct": 0.0
+     },
+     "far": {
+      "p0.1": 0.198,
+      "p1": 0.2191,
+      "p5": 0.2624,
+      "min": 0.1709,
+      "mean": 0.4365,
+      "crushed_pct": 0.0
+     }
+    },
+    "regions": {
+     "near": [
+      0.0,
+      0.7,
+      1.0,
+      1.0
+     ],
+     "far": [
+      0.25,
+      0.1,
+      0.75,
+      0.45
+     ]
+    }
+   },
+   "flags": []
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "label": "perf-g32-nothin",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "1def8d485c",
+ "time": "2026-11-22 09:53:20",
+ "render": {
+  "frames": 528,
+  "mean": 28.77,
+  "fps": 34.8,
+  "p50": 26.92,
+  "p95": 37.29,
+  "p99": 38.51,
+  "max": 40.5,
+  "over50": 0,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 24.2,
+ "fg_share": 1.0,
+ "distance": 3,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1189,
+   "mean": 14.25,
+   "fps": 70.2,
+   "p50": 13.17,
+   "p95": 17.74,
+   "p99": 21.0,
+   "max": 26.9,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1189,
+   "mean": 14.25,
+   "fps": 70.2,
+   "p50": 13.81,
+   "p95": 19.17,
+   "p99": 21.52,
+   "max": 29.2,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1189
+  }
+ }
+}

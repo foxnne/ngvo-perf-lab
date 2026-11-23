@@ -1,0 +1,55 @@
+{
+ "label": "perf-80k-medthin",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "1def8d485c",
+ "time": "2026-11-22 10:01:01",
+ "render": {
+  "frames": 564,
+  "mean": 26.92,
+  "fps": 37.1,
+  "p50": 26.65,
+  "p95": 29.5,
+  "p99": 39.71,
+  "max": 46.3,
+  "over50": 0,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 24.27,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1232,
+   "mean": 13.77,
+   "fps": 72.6,
+   "p50": 13.17,
+   "p95": 14.63,
+   "p99": 24.72,
+   "max": 317.1,
+   "over50": 1,
+   "over100": 1,
+   "over250": 1,
+   "stall_ms": 317
+  },
+  "displayed": {
+   "frames": 1232,
+   "mean": 13.77,
+   "fps": 72.6,
+   "p50": 13.17,
+   "p95": 16.53,
+   "p99": 24.64,
+   "max": 318.2,
+   "over50": 1,
+   "over100": 1,
+   "over250": 1,
+   "stall_ms": 318
+  },
+  "frame_types": {
+   "Application": 1232
+  }
+ }
+}

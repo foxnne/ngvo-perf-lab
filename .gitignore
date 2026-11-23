@@ -28,3 +28,12 @@ tools/nat3-volclouds/draft/_generator/nat-cs-wthr-records.json
 ref/
 configs/*/profile/
 configs/*/ini/
+# added 2026-11-22: local backups, queue state, shortcuts, raw logs
+*.bak*
+harness/queue.*.txt
+harness/*.lock
+*.lnk
+results/hitchlogs/
+results/views/
+results/region_shots/
+results/look_step/

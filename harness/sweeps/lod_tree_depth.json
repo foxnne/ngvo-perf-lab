@@ -1,0 +1,127 @@
+[
+ {
+  "name": "00_tree_lighting_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "01_old_look_A",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 0.0,
+    "LODTreeCrownOcclusion": 0.0,
+    "LODTreeWrapFrontLit": 1.0,
+    "LODTreeVariation": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "02_new_defaults_B",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 0.6,
+    "LODTreeCrownOcclusion": 0.5,
+    "LODTreeWrapFrontLit": 0.2,
+    "LODTreeVariation": 0.08
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "03_round_normal_1",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 1.0,
+    "LODTreeCrownOcclusion": 0.0,
+    "LODTreeWrapFrontLit": 1.0,
+    "LODTreeVariation": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "04_crown_occlusion_1",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 0.0,
+    "LODTreeCrownOcclusion": 1.0,
+    "LODTreeWrapFrontLit": 1.0,
+    "LODTreeVariation": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "05_wrap_front_0",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 0.0,
+    "LODTreeCrownOcclusion": 0.0,
+    "LODTreeWrapFrontLit": 0.0,
+    "LODTreeVariation": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "06_variation_0.3",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 0.0,
+    "LODTreeCrownOcclusion": 0.0,
+    "LODTreeWrapFrontLit": 1.0,
+    "LODTreeVariation": 0.3
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "07_strong_B",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeRoundNormal": 0.85,
+    "LODTreeCrownOcclusion": 0.8,
+    "LODTreeWrapFrontLit": 0.1,
+    "LODTreeVariation": 0.12,
+    "LODTreeBrightness": 2.1
+   }
+  },
+  "settle": 8
+ }
+]

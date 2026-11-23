@@ -1,0 +1,84 @@
+[
+ {
+  "name": "00_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "01_per_pixel_defaults",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "02_old_volume_path",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "VolumeInjection": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "03_no_valley_layer",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarAmount": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "04_valley_x2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarAmount": 2.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "05_valley_thick_40",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarThickness": 40.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "06_full_resolution",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "HalfResolution": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

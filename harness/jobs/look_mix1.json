@@ -1,0 +1,73 @@
+{
+ "PostProcessing": {
+  "Look Grade": {
+   "enabled": true,
+   "settings": {
+    "Exposure": 0.8,
+    "Highlights": 1.1,
+    "Midtones": 1.0,
+    "BlackPoint": 0.0,
+    "ShadowsLift": -0.02,
+    "Contrast": 1.0,
+    "ContrastPivot": 0.45,
+    "WhitePoint": 1.0,
+    "ShoulderStrength": 0.0,
+    "ShoulderStart": 0.7,
+    "Warmth": 0.0,
+    "Tint": 0.0,
+    "Saturation": 1.0,
+    "Vibrance": 0.0,
+    "ShadowHue": 220.0,
+    "ShadowAmount": 0.03,
+    "HighlightHue": 40.0,
+    "HighlightAmount": 0.019,
+    "BandRed": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandOrange": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandYellow": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandGreen": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandAqua": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandBlue": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandPurple": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandMagenta": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "LUT": {
+   "enabled": true,
+   "settings": {
+    "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix1_20261120_lin128.dds"
+   }
+  }
+ }
+}

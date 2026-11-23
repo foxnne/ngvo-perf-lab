@@ -1,0 +1,98 @@
+[
+ {
+  "step": "0_arrival",
+  "gameHour": 14.198887825012207,
+  "weather": {
+   "editorID": "Helios_SClearSkyPF",
+   "formID": "0xFE1EA99B"
+  },
+  "stats": {
+   "mean": 0.225,
+   "p1": 0.067,
+   "p50": 0.158,
+   "p99": 0.929,
+   "clip%": 0.31,
+   "sat": 0.378
+  }
+ },
+ {
+  "step": "1_hour13_free",
+  "gameHour": 13.044242858886719,
+  "weather": {
+   "editorID": "Helios_SkyrimClear",
+   "formID": "0xFE061A70"
+  },
+  "stats": {
+   "mean": 0.188,
+   "p1": 0.058,
+   "p50": 0.125,
+   "p99": 0.923,
+   "clip%": 0.11,
+   "sat": 0.317
+  }
+ },
+ {
+  "step": "2_sunny_locked",
+  "gameHour": 13.095616340637207,
+  "weather": {
+   "editorID": "SunnyPF",
+   "formID": "0x0000081A"
+  },
+  "stats": {
+   "mean": 0.329,
+   "p1": 0.078,
+   "p50": 0.246,
+   "p99": 0.805,
+   "clip%": 0.08,
+   "sat": 0.309
+  }
+ },
+ {
+  "step": "3_hour16_sunny_locked",
+  "gameHour": 16.044452667236328,
+  "weather": {
+   "editorID": "SunnyPF",
+   "formID": "0x0000081A"
+  },
+  "stats": {
+   "mean": 0.248,
+   "p1": 0.059,
+   "p50": 0.237,
+   "p99": 0.583,
+   "clip%": 0.01,
+   "sat": 0.323
+  }
+ },
+ {
+  "step": "4_overcast_locked",
+  "gameHour": 16.09538459777832,
+  "weather": {
+   "editorID": "OvercastPF",
+   "formID": "0x2D0053B6"
+  },
+  "stats": {
+   "mean": 0.223,
+   "p1": 0.078,
+   "p50": 0.189,
+   "p99": 0.799,
+   "clip%": 0.04,
+   "sat": 0.313
+  }
+ },
+ {
+  "step": "5_sunny_again",
+  "gameHour": 16.14670753479004,
+  "weather": {
+   "editorID": "SunnyPF",
+   "formID": "0x0000081A"
+  },
+  "stats": {
+   "mean": 0.248,
+   "p1": 0.06,
+   "p50": 0.237,
+   "p99": 0.583,
+   "clip%": 0.02,
+   "sat": 0.328
+  }
+ }
+]

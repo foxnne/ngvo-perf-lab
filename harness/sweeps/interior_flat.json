@@ -1,0 +1,73 @@
+[
+ {
+  "name": "0_now",
+  "set": {},
+  "features": {},
+  "settle": 10
+ },
+ {
+  "name": "1_ssgi_thickness_0.1",
+  "set": {},
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.1
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "2_thick0.1_ao1.5",
+  "set": {},
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.1,
+    "AOPower": 1.5
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "3_thick0.1_fallback0.5",
+  "set": {},
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.1,
+    "DiffuseCubemapMult": 0.5
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "4_thick0.1_ambient0.6",
+  "set": {},
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.1
+   },
+   "LinearLighting": {
+    "ambientMult": 0.6
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "5_thick0.1_less_adaptation",
+  "set": {},
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.1
+   },
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "BrightSceneCompression": 0.3,
+      "ExposureCompensation": -3.4,
+      "InteriorExposureCompensation": -3.9,
+      "NightExposureCompensation": -3.9
+     }
+    }
+   }
+  },
+  "settle": 10
+ }
+]

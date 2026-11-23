@@ -1,0 +1,116 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_fixed_pool_defaults_pooling_1",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "2_pooling_0_even_layer",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "Pooling": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "3_pooling_0.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "Pooling": 0.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "4_sun_diffusion_0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "SunDiffusion": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "5_sun_diffusion_1",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "SunDiffusion": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "6_density_1.0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "7_thickness_0.7m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 0.7
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "8_downhill_3",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "DownhillFlow": 3.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ }
+]

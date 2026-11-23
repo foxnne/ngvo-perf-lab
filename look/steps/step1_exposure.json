@@ -1,0 +1,78 @@
+[
+ {
+  "name": "0_base",
+  "pp": {}
+ },
+ {
+  "name": "1_exp_0p3",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3
+    }
+   }
+  }
+ },
+ {
+  "name": "2_exp_0p0",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.0
+    }
+   }
+  }
+ },
+ {
+  "name": "3_exp0_shoulder",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.0,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 0.85
+    }
+   }
+  }
+ },
+ {
+  "name": "4_exp0p2_shoulder",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.2,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 0.85
+    }
+   }
+  }
+ },
+ {
+  "name": "5_exp0p2_shoulder_black",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.2,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 0.85,
+     "BlackPoint": 0.03,
+     "ShadowsLift": -0.04
+    }
+   }
+  }
+ },
+ {
+  "name": "6_exp0_shoulder_black",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.0,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 0.85,
+     "BlackPoint": 0.03,
+     "ShadowsLift": -0.04
+    }
+   }
+  }
+ }
+]

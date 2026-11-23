@@ -1,0 +1,87 @@
+[
+ {
+  "name": "0_exp0p3",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3
+    }
+   }
+  }
+ },
+ {
+  "name": "1_blue_neutral",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3,
+     "BandBlue": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "2_blue_hue_m0p05",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3,
+     "BandBlue": [
+      -0.05,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "3_blue_hue_p0p05",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3,
+     "BandBlue": [
+      0.05,
+      0.0,
+      0.0
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "4_blue_hue_m0p1_sat_m0p15",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3,
+     "BandBlue": [
+      -0.1,
+      -0.15,
+      0.05
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "5_blue_hue_p0p1_sat_m0p15",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.3,
+     "BandBlue": [
+      0.1,
+      -0.15,
+      0.05
+     ]
+    }
+   }
+  }
+ }
+]

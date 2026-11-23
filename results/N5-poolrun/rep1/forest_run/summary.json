@@ -1,0 +1,29 @@
+{
+ "label": "N5-poolrun",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "24fc45a341",
+ "time": "2026-11-19 19:57:21",
+ "render": {
+  "frames": 2180,
+  "mean": 26.73,
+  "fps": 37.4,
+  "p50": 25.93,
+  "p95": 33.53,
+  "p99": 41.39,
+  "max": 212.1,
+  "over50": 2,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 212
+ },
+ "main_cpu_ms": 24.03,
+ "fg_share": 1.0,
+ "distance": 17193,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1278
+}

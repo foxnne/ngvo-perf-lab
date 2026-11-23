@@ -1,0 +1,104 @@
+[
+ {
+  "test": "baseline",
+  "game_dedicated": 13916,
+  "game_shared": 347,
+  "adapter": 15330
+ },
+ {
+  "test": "NeuralRendering.enabled off",
+  "game_dedicated": 13462,
+  "game_shared": 253,
+  "adapter": 14890,
+  "delta_mb": -454,
+  "after_restore": 13762
+ },
+ {
+  "test": "PhysicalSky.enableVolumetricClouds off",
+  "game_dedicated": 13553,
+  "game_shared": 306,
+  "adapter": 14963,
+  "delta_mb": -363,
+  "after_restore": 13608
+ },
+ {
+  "test": "PhysicalSky.enabled off",
+  "game_dedicated": 13686,
+  "game_shared": 274,
+  "adapter": 15075,
+  "delta_mb": -230,
+  "after_restore": 13677
+ },
+ {
+  "test": "VolumetricLighting.ExteriorEnabled off",
+  "game_dedicated": 13622,
+  "game_shared": 260,
+  "adapter": 15075,
+  "delta_mb": -294,
+  "after_restore": 13874
+ },
+ {
+  "test": "ScreenSpaceGI.Enabled off",
+  "game_dedicated": 13655,
+  "game_shared": 307,
+  "adapter": 15130,
+  "delta_mb": -261,
+  "after_restore": 13591
+ },
+ {
+  "test": "GroundFog.Enabled off",
+  "game_dedicated": 13675,
+  "game_shared": 264,
+  "adapter": 15157,
+  "delta_mb": -241,
+  "after_restore": 13654
+ },
+ {
+  "test": "ExponentialHeightFog.enabled off",
+  "game_dedicated": 13650,
+  "game_shared": 254,
+  "adapter": 15100,
+  "delta_mb": -266,
+  "after_restore": 13650
+ },
+ {
+  "test": "GrassOptimizations.EnableMeshLOD off",
+  "game_dedicated": 13602,
+  "game_shared": 258,
+  "adapter": 15077,
+  "delta_mb": -314,
+  "after_restore": 13615
+ },
+ {
+  "test": "TreeWind.Enabled off",
+  "game_dedicated": 13751,
+  "game_shared": 257,
+  "adapter": 15188,
+  "delta_mb": -165,
+  "after_restore": 13702
+ },
+ {
+  "test": "ScreenSpaceShadows.Enable off",
+  "game_dedicated": 13658,
+  "game_shared": 253,
+  "adapter": 15069,
+  "delta_mb": -258,
+  "after_restore": 13613
+ },
+ {
+  "test": "SnowDeformation.Enabled off",
+  "game_dedicated": 13748,
+  "game_shared": 263,
+  "adapter": 15197,
+  "delta_mb": -168,
+  "after_restore": 13782
+ },
+ {
+  "test": "GroundCover.Enabled off",
+  "game_dedicated": 13621,
+  "game_shared": 256,
+  "adapter": 15057,
+  "delta_mb": -295,
+  "after_restore": 13647
+ }
+]

@@ -1,0 +1,115 @@
+[
+ {
+  "name": "k01_off",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "k06_limit_1.0",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 6.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 1.0
+   }
+  }
+ },
+ {
+  "name": "k06_limit_2.5",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 6.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 2.5
+   }
+  }
+ },
+ {
+  "name": "k06_limit_5.0",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 6.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 5.0
+   }
+  }
+ },
+ {
+  "name": "k12_limit_1.0",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 1.0
+   }
+  }
+ },
+ {
+  "name": "k12_limit_2.5",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 2.5
+   }
+  }
+ },
+ {
+  "name": "k12_limit_5.0",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 5.0
+   }
+  }
+ }
+]

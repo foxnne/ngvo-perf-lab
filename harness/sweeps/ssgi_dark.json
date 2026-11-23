@@ -1,0 +1,106 @@
+[
+ {
+  "name": "00_as_is",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {},
+  "settle": 8
+ },
+ {
+  "name": "01_gi_off_ao_only",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "EnableGI": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "02_gi_strength_0",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "GIStrength": 0.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "03_no_cubemap_fallback",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "UseDynamicCubemapsAsFallback": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "04_cubemap_mult_2",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "DiffuseCubemapMult": 2.0
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "05_multibounce",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "EnableMultiBounce": true
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "06_sh_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "EnableSH": false
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "07_thickness_0.02",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "Thickness": 0.02
+   }
+  },
+  "settle": 8
+ },
+ {
+  "name": "08_ssgi_off",
+  "set": {
+   "enableVolumetricClouds": false
+  },
+  "features": {
+   "ScreenSpaceGI": {
+    "Enabled": false
+   }
+  },
+  "settle": 8
+ }
+]

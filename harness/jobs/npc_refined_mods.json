@@ -1,0 +1,6 @@
+{"install": [["C:/Users/foxnn/dev/npc-mods/out/True Sons of Skyrim Refined", "True Sons of Skyrim Refined"],
+             ["C:/Users/foxnn/dev/npc-mods/out/Men of Skyrim Refined", "Men of Skyrim Refined"],
+             ["C:/Users/foxnn/dev/npc-mods/out/Women of Skyrim Refined", "Women of Skyrim Refined"],
+             ["C:/Users/foxnn/dev/npc-mods/out/RedguardDiaspora Resources", "RedguardDiaspora Resources"]],
+ "above": "Echoes of Oblivion High Poly NPCs",
+ "enable": ["True Sons of Skyrim Refined", "Men of Skyrim Refined", "Women of Skyrim Refined", "RedguardDiaspora Resources"]}

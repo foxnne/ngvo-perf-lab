@@ -1,0 +1,157 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_new_pool_defaults_0.45m_density_0.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "2_density_0.25",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "3_density_1.0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "4_thickness_0.3m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 0.3
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "5_thickness_0.7m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 0.7
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "6_downhill_0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "DownhillFlow": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "7_downhill_3",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "DownhillFlow": 3.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "8_swirl_0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "Swirl": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "9_swirl_2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "Swirl": 2.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "10_no_movers",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "Reactive": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "11_old_volume_3.5m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearThickness": 3.5,
+    "NearDensity": 0.025,
+    "DriftScale": 9.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ }
+]

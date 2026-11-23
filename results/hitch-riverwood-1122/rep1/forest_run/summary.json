@@ -1,0 +1,57 @@
+{
+ "label": "hitch-riverwood-1122",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "9358c6c112",
+ "time": "2026-11-22 18:23:03",
+ "render": {
+  "frames": 1897,
+  "mean": 30.67,
+  "fps": 32.6,
+  "p50": 30.44,
+  "p95": 33.41,
+  "p99": 43.42,
+  "max": 56.7,
+  "over50": 13,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 27.93,
+ "fg_share": 1.0,
+ "distance": 17167,
+ "cells": 6,
+ "presented": {
+  "present": {
+   "frames": 3919,
+   "mean": 15.3,
+   "fps": 65.4,
+   "p50": 15.12,
+   "p95": 16.73,
+   "p99": 18.31,
+   "max": 42.1,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 3919,
+   "mean": 15.3,
+   "fps": 65.4,
+   "p50": 15.1,
+   "p95": 17.38,
+   "p99": 19.14,
+   "max": 41.7,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 3919
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 1275
+}

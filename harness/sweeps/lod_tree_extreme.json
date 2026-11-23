@@ -1,0 +1,51 @@
+[
+ {
+  "name": "00_off",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": false
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "01_extreme_brightness_4",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 4.0,
+    "LODTreeWrap": 0.0,
+    "LODTreeTransmission": 0.0,
+    "LODTreeShadowSoftening": 0.0,
+    "LODTreeNormalUpBias": 0.0
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "02_extreme_no_tree_mod_support",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 4.0,
+    "TreeModSupport": false
+   }
+  },
+  "settle": 10
+ },
+ {
+  "name": "03_extreme_billboards_off",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeLighting": true,
+    "LODTreeBrightness": 4.0,
+    "LODTreeLightBillboards": false
+   }
+  },
+  "settle": 10
+ }
+]

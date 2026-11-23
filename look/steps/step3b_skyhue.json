@@ -1,0 +1,136 @@
+[
+ {
+  "name": "0_base_noclouds",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false
+   }
+  }
+ },
+ {
+  "name": "1_ozone_x0p5",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false,
+    "ozoneAbsorption": [
+     1.145550012588501,
+     0.7702000141143799,
+     0.0
+    ],
+    "ozoneAbsorptionAP1": [
+     1.1249500513076782,
+     0.8300999999046326,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "name": "2_ozone_0",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false,
+    "ozoneAbsorption": [
+     0,
+     0,
+     0
+    ],
+    "ozoneAbsorptionAP1": [
+     0,
+     0,
+     0
+    ]
+   }
+  }
+ },
+ {
+  "name": "3_rayleigh_green_x1p15",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false,
+    "rayleighScatter": [
+     6.604899883270264,
+     14.196750307083128,
+     29.413000106811523
+    ],
+    "rayleighScatterAP1": [
+     6.9344000816345215,
+     13.823344898223876,
+     28.90999984741211
+    ]
+   }
+  }
+ },
+ {
+  "name": "4_rayleigh_blue_x0p85",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false,
+    "rayleighScatter": [
+     6.604899883270264,
+     12.345000267028809,
+     25.001050090789793
+    ],
+    "rayleighScatterAP1": [
+     6.9344000816345215,
+     12.020299911499023,
+     24.573499870300292
+    ]
+   }
+  }
+ },
+ {
+  "name": "5_green_x1p3",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false,
+    "rayleighScatter": [
+     6.604899883270264,
+     16.048500347137452,
+     29.413000106811523
+    ],
+    "rayleighScatterAP1": [
+     6.9344000816345215,
+     15.62638988494873,
+     28.90999984741211
+    ]
+   }
+  }
+ },
+ {
+  "name": "6_ozone_x0p5_green_x1p15",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false,
+    "ozoneAbsorption": [
+     1.145550012588501,
+     0.7702000141143799,
+     0.0
+    ],
+    "ozoneAbsorptionAP1": [
+     1.1249500513076782,
+     0.8300999999046326,
+     0.0
+    ],
+    "rayleighScatter": [
+     6.604899883270264,
+     14.196750307083128,
+     29.413000106811523
+    ],
+    "rayleighScatterAP1": [
+     6.9344000816345215,
+     13.823344898223876,
+     28.90999984741211
+    ]
+   }
+  }
+ },
+ {
+  "name": "7_base_again",
+  "features": {
+   "PhysicalSky": {
+    "enableVolumetricClouds": false
+   }
+  }
+ }
+]

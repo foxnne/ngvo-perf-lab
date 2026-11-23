@@ -1,0 +1,440 @@
+{
+ "suspects": [
+  "LightLimitFix",
+  "NeuralRendering",
+  "ScreenSpaceGI",
+  "LightShafts",
+  "VolumetricLighting",
+  "ImageBasedLighting",
+  "Skylighting",
+  "SubsurfaceScattering",
+  "ExponentialHeightFog",
+  "LinearLighting"
+ ],
+ "shots": [
+  {
+   "place": "dragonsreach",
+   "variant": "0_as_is",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.095,
+   "p99": 0.705,
+   "clip%": 0.02,
+   "sat": 0.42
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "1_LightLimitFix_off",
+   "mean": 0.153,
+   "p1": 0.058,
+   "p50": 0.116,
+   "p99": 0.535,
+   "clip%": 0.01,
+   "sat": 0.264
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "2_NeuralRendering_off",
+   "mean": 0.177,
+   "p1": 0.036,
+   "p50": 0.08,
+   "p99": 0.778,
+   "clip%": 1.2,
+   "sat": 0.454
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "3_ScreenSpaceGI_off",
+   "mean": 0.17,
+   "p1": 0.052,
+   "p50": 0.108,
+   "p99": 0.646,
+   "clip%": 0.02,
+   "sat": 0.393
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "4_LightShafts_off",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.094,
+   "p99": 0.704,
+   "clip%": 0.02,
+   "sat": 0.449
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "5_VolumetricLighting_off",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.094,
+   "p99": 0.705,
+   "clip%": 0.02,
+   "sat": 0.449
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "6_ImageBasedLighting_off",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.094,
+   "p99": 0.706,
+   "clip%": 0.02,
+   "sat": 0.448
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "7_Skylighting_off",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.094,
+   "p99": 0.706,
+   "clip%": 0.02,
+   "sat": 0.448
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "8_SubsurfaceScattering_off",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.093,
+   "p99": 0.705,
+   "clip%": 0.02,
+   "sat": 0.448
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "9_ExponentialHeightFog_off",
+   "mean": 0.169,
+   "p1": 0.049,
+   "p50": 0.091,
+   "p99": 0.688,
+   "clip%": 0.01,
+   "sat": 0.446
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "10_LinearLighting_off",
+   "mean": 0.164,
+   "p1": 0.061,
+   "p50": 0.121,
+   "p99": 0.557,
+   "clip%": 0.04,
+   "sat": 0.387
+  },
+  {
+   "place": "dragonsreach",
+   "variant": "9_interior_layer_x1",
+   "mean": 0.174,
+   "p1": 0.052,
+   "p50": 0.094,
+   "p99": 0.705,
+   "clip%": 0.02,
+   "sat": 0.448
+  },
+  {
+   "place": "inn",
+   "variant": "0_as_is",
+   "mean": 0.172,
+   "p1": 0.056,
+   "p50": 0.14,
+   "p99": 0.353,
+   "clip%": 0.0,
+   "sat": 0.371
+  },
+  {
+   "place": "inn",
+   "variant": "1_LightLimitFix_off",
+   "mean": 0.152,
+   "p1": 0.052,
+   "p50": 0.119,
+   "p99": 0.314,
+   "clip%": 0.0,
+   "sat": 0.442
+  },
+  {
+   "place": "inn",
+   "variant": "2_NeuralRendering_off",
+   "mean": 0.172,
+   "p1": 0.055,
+   "p50": 0.14,
+   "p99": 0.357,
+   "clip%": 0.03,
+   "sat": 0.376
+  },
+  {
+   "place": "inn",
+   "variant": "3_ScreenSpaceGI_off",
+   "mean": 0.188,
+   "p1": 0.059,
+   "p50": 0.148,
+   "p99": 0.377,
+   "clip%": 0.0,
+   "sat": 0.291
+  },
+  {
+   "place": "inn",
+   "variant": "4_LightShafts_off",
+   "mean": 0.15,
+   "p1": 0.044,
+   "p50": 0.124,
+   "p99": 0.394,
+   "clip%": 0.0,
+   "sat": 0.248
+  },
+  {
+   "place": "inn",
+   "variant": "5_VolumetricLighting_off",
+   "mean": 0.15,
+   "p1": 0.044,
+   "p50": 0.124,
+   "p99": 0.394,
+   "clip%": 0.0,
+   "sat": 0.249
+  },
+  {
+   "place": "inn",
+   "variant": "6_ImageBasedLighting_off",
+   "mean": 0.15,
+   "p1": 0.044,
+   "p50": 0.124,
+   "p99": 0.393,
+   "clip%": 0.0,
+   "sat": 0.249
+  },
+  {
+   "place": "inn",
+   "variant": "7_Skylighting_off",
+   "mean": 0.15,
+   "p1": 0.044,
+   "p50": 0.124,
+   "p99": 0.393,
+   "clip%": 0.0,
+   "sat": 0.249
+  },
+  {
+   "place": "inn",
+   "variant": "8_SubsurfaceScattering_off",
+   "mean": 0.15,
+   "p1": 0.044,
+   "p50": 0.124,
+   "p99": 0.393,
+   "clip%": 0.0,
+   "sat": 0.249
+  },
+  {
+   "place": "inn",
+   "variant": "9_ExponentialHeightFog_off",
+   "mean": 0.14,
+   "p1": 0.041,
+   "p50": 0.116,
+   "p99": 0.365,
+   "clip%": 0.0,
+   "sat": 0.249
+  },
+  {
+   "place": "inn",
+   "variant": "10_LinearLighting_off",
+   "mean": 0.125,
+   "p1": 0.04,
+   "p50": 0.104,
+   "p99": 0.272,
+   "clip%": 0.0,
+   "sat": 0.29
+  },
+  {
+   "place": "inn",
+   "variant": "9_interior_layer_x1",
+   "mean": 0.15,
+   "p1": 0.045,
+   "p50": 0.124,
+   "p99": 0.393,
+   "clip%": 0.0,
+   "sat": 0.249
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "0_as_is",
+   "mean": 0.125,
+   "p1": 0.025,
+   "p50": 0.07,
+   "p99": 0.483,
+   "clip%": 0.0,
+   "sat": 0.327
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "1_LightLimitFix_off",
+   "mean": 0.122,
+   "p1": 0.021,
+   "p50": 0.064,
+   "p99": 0.488,
+   "clip%": 0.0,
+   "sat": 0.35
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "2_NeuralRendering_off",
+   "mean": 0.121,
+   "p1": 0.015,
+   "p50": 0.048,
+   "p99": 0.546,
+   "clip%": 0.16,
+   "sat": 0.279
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "3_ScreenSpaceGI_off",
+   "mean": 0.156,
+   "p1": 0.033,
+   "p50": 0.136,
+   "p99": 0.429,
+   "clip%": 0.0,
+   "sat": 0.182
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "4_LightShafts_off",
+   "mean": 0.108,
+   "p1": 0.007,
+   "p50": 0.032,
+   "p99": 0.524,
+   "clip%": 0.0,
+   "sat": 0.388
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "5_VolumetricLighting_off",
+   "mean": 0.108,
+   "p1": 0.007,
+   "p50": 0.032,
+   "p99": 0.526,
+   "clip%": 0.0,
+   "sat": 0.392
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "6_ImageBasedLighting_off",
+   "mean": 0.108,
+   "p1": 0.007,
+   "p50": 0.032,
+   "p99": 0.526,
+   "clip%": 0.0,
+   "sat": 0.396
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "7_Skylighting_off",
+   "mean": 0.108,
+   "p1": 0.007,
+   "p50": 0.032,
+   "p99": 0.525,
+   "clip%": 0.0,
+   "sat": 0.398
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "8_SubsurfaceScattering_off",
+   "mean": 0.108,
+   "p1": 0.007,
+   "p50": 0.032,
+   "p99": 0.526,
+   "clip%": 0.0,
+   "sat": 0.4
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "9_ExponentialHeightFog_off",
+   "mean": 0.101,
+   "p1": 0.006,
+   "p50": 0.03,
+   "p99": 0.495,
+   "clip%": 0.0,
+   "sat": 0.403
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "10_LinearLighting_off",
+   "mean": 0.105,
+   "p1": 0.007,
+   "p50": 0.024,
+   "p99": 0.528,
+   "clip%": 0.0,
+   "sat": 0.437
+  },
+  {
+   "place": "bleakfalls",
+   "variant": "9_interior_layer_x1",
+   "mean": 0.108,
+   "p1": 0.007,
+   "p50": 0.032,
+   "p99": 0.525,
+   "clip%": 0.0,
+   "sat": 0.403
+  }
+ ],
+ "exposure": {
+  "dragonsreach": {
+   "active": true,
+   "compensationEV": -4.699999809265137,
+   "exposureTarget": 0.18000000715255737,
+   "frame_count": 16170,
+   "meteredEV100": -7.2832746505737305,
+   "meteredFrame": 16167,
+   "meteredLuminance": 0.0008024645503610373,
+   "pipelineRunning": true,
+   "preExposure": 8.629899978637695,
+   "rangeEV100": [
+    -10.0,
+    10.0
+   ]
+  },
+  "inn": {
+   "active": true,
+   "compensationEV": -4.699999809265137,
+   "exposureTarget": 0.18000000715255737,
+   "frame_count": 22522,
+   "meteredEV100": -8.425567626953125,
+   "meteredFrame": 22519,
+   "meteredLuminance": 0.0003635477914940566,
+   "pipelineRunning": true,
+   "preExposure": 19.048908233642578,
+   "rangeEV100": [
+    -10.0,
+    10.0
+   ]
+  },
+  "bleakfalls": {
+   "active": true,
+   "compensationEV": -4.699999809265137,
+   "exposureTarget": 0.18000000715255737,
+   "frame_count": 29598,
+   "meteredEV100": -9.394783020019531,
+   "meteredFrame": 29595,
+   "meteredLuminance": 0.00018569423991721123,
+   "pipelineRunning": true,
+   "preExposure": 37.29350280761719,
+   "rangeEV100": [
+    -10.0,
+    10.0
+   ]
+  }
+ },
+ "layer_readback": {
+  "dragonsreach": {
+   "LinearLighting.ambientMult": 1.0,
+   "LinearLighting.directionalLightMult": 1.0,
+   "ImageBasedLighting.EnvIBLScale": 1.0
+  },
+  "inn": {
+   "LinearLighting.ambientMult": 1.0,
+   "LinearLighting.directionalLightMult": 1.0,
+   "ImageBasedLighting.EnvIBLScale": 1.0
+  },
+  "bleakfalls": {
+   "LinearLighting.ambientMult": 1.0,
+   "LinearLighting.directionalLightMult": 1.0,
+   "ImageBasedLighting.EnvIBLScale": 1.0
+  }
+ }
+}

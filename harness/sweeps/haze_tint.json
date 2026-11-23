@@ -1,0 +1,974 @@
+[
+ {
+  "name": "0_haze_x2_as_tested",
+  "set": {
+   "cloudLayer": {
+    "cirrus": {
+     "uvSize": 3.0,
+     "altitude": 8000.0,
+     "densityScale": 0.3,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.0,
+            0.0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     }
+    },
+    "low": {
+     "ndfAltitudeOffset": 1200.0,
+     "ndfAltitudeScale": 900.0,
+     "densityScale": 0.75,
+     "bottomSpreadScale": 0.8133,
+     "bottomSpreadHeight": 0.3
+    },
+    "lighting": {
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.0
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 4.44,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 8.88,
+      "y": 0.0
+     }
+    }
+   },
+   "aerosolScatter": {
+    "x": 5.0442,
+    "y": 6.8378,
+    "z": 9.1504
+   },
+   "aerosolAbsorption": {
+    "x": 0.2654,
+    "y": 0.29312,
+    "z": 0.32082
+   },
+   "rayleighScatter": {
+    "x": 19.8147,
+    "y": 37.035000000000004,
+    "z": 88.239
+   },
+   "rayleighScatterAP1": {
+    "x": 20.8032,
+    "y": 36.060900000000004,
+    "z": 86.73
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": 0.05,
+        "y": 0.35,
+        "z": 0.0,
+        "w": 0.68
+       },
+       "exponent": 1.4
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.6,
+        "z": 0.0,
+        "w": 0.5
+       },
+       "exponent": 1.6
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.02
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.25
+      }
+     }
+    }
+   },
+   "ozoneAbsorption": {
+    "x": 6.8733,
+    "y": 4.6212,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 6.749699999999999,
+    "y": 4.9806,
+    "z": 0.0
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_darker_haze_absorb_x3",
+  "set": {
+   "cloudLayer": {
+    "cirrus": {
+     "uvSize": 3.0,
+     "altitude": 8000.0,
+     "densityScale": 0.3,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.0,
+            0.0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     }
+    },
+    "low": {
+     "ndfAltitudeOffset": 1200.0,
+     "ndfAltitudeScale": 900.0,
+     "densityScale": 0.75,
+     "bottomSpreadScale": 0.8133,
+     "bottomSpreadHeight": 0.3
+    },
+    "lighting": {
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.0
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 4.44,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 8.88,
+      "y": 0.0
+     }
+    }
+   },
+   "aerosolScatter": {
+    "x": 5.0442,
+    "y": 6.8378,
+    "z": 9.1504
+   },
+   "aerosolAbsorption": {
+    "x": 0.7962,
+    "y": 0.8793599999999999,
+    "z": 0.96246
+   },
+   "rayleighScatter": {
+    "x": 19.8147,
+    "y": 37.035000000000004,
+    "z": 88.239
+   },
+   "rayleighScatterAP1": {
+    "x": 20.8032,
+    "y": 36.060900000000004,
+    "z": 86.73
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": 0.05,
+        "y": 0.35,
+        "z": 0.0,
+        "w": 0.68
+       },
+       "exponent": 1.4
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.6,
+        "z": 0.0,
+        "w": 0.5
+       },
+       "exponent": 1.6
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.02
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.25
+      }
+     }
+    }
+   },
+   "ozoneAbsorption": {
+    "x": 6.8733,
+    "y": 4.6212,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 6.749699999999999,
+    "y": 4.9806,
+    "z": 0.0
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_darker_haze_absorb_x6",
+  "set": {
+   "cloudLayer": {
+    "cirrus": {
+     "uvSize": 3.0,
+     "altitude": 8000.0,
+     "densityScale": 0.3,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.0,
+            0.0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     }
+    },
+    "low": {
+     "ndfAltitudeOffset": 1200.0,
+     "ndfAltitudeScale": 900.0,
+     "densityScale": 0.75,
+     "bottomSpreadScale": 0.8133,
+     "bottomSpreadHeight": 0.3
+    },
+    "lighting": {
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.0
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 4.44,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 8.88,
+      "y": 0.0
+     }
+    }
+   },
+   "aerosolScatter": {
+    "x": 5.0442,
+    "y": 6.8378,
+    "z": 9.1504
+   },
+   "aerosolAbsorption": {
+    "x": 1.5924,
+    "y": 1.7587199999999998,
+    "z": 1.92492
+   },
+   "rayleighScatter": {
+    "x": 19.8147,
+    "y": 37.035000000000004,
+    "z": 88.239
+   },
+   "rayleighScatterAP1": {
+    "x": 20.8032,
+    "y": 36.060900000000004,
+    "z": 86.73
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": 0.05,
+        "y": 0.35,
+        "z": 0.0,
+        "w": 0.68
+       },
+       "exponent": 1.4
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.6,
+        "z": 0.0,
+        "w": 0.5
+       },
+       "exponent": 1.6
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.02
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.25
+      }
+     }
+    }
+   },
+   "ozoneAbsorption": {
+    "x": 6.8733,
+    "y": 4.6212,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 6.749699999999999,
+    "y": 4.9806,
+    "z": 0.0
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_less_bright_scatter_x0.6_absorb_x4",
+  "set": {
+   "cloudLayer": {
+    "cirrus": {
+     "uvSize": 3.0,
+     "altitude": 8000.0,
+     "densityScale": 0.3,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.0,
+            0.0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     }
+    },
+    "low": {
+     "ndfAltitudeOffset": 1200.0,
+     "ndfAltitudeScale": 900.0,
+     "densityScale": 0.75,
+     "bottomSpreadScale": 0.8133,
+     "bottomSpreadHeight": 0.3
+    },
+    "lighting": {
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.0
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 4.44,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 8.88,
+      "y": 0.0
+     }
+    }
+   },
+   "aerosolScatter": {
+    "x": 3.02652,
+    "y": 4.102679999999999,
+    "z": 5.490239999999999
+   },
+   "aerosolAbsorption": {
+    "x": 1.0616,
+    "y": 1.17248,
+    "z": 1.28328
+   },
+   "rayleighScatter": {
+    "x": 19.8147,
+    "y": 37.035000000000004,
+    "z": 88.239
+   },
+   "rayleighScatterAP1": {
+    "x": 20.8032,
+    "y": 36.060900000000004,
+    "z": 86.73
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": 0.05,
+        "y": 0.35,
+        "z": 0.0,
+        "w": 0.68
+       },
+       "exponent": 1.4
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.6,
+        "z": 0.0,
+        "w": 0.5
+       },
+       "exponent": 1.6
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.02
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.25
+      }
+     }
+    }
+   },
+   "ozoneAbsorption": {
+    "x": 6.8733,
+    "y": 4.6212,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 6.749699999999999,
+    "y": 4.9806,
+    "z": 0.0
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "4_warm_tinted_haze_absorbs_blue",
+  "set": {
+   "cloudLayer": {
+    "cirrus": {
+     "uvSize": 3.0,
+     "altitude": 8000.0,
+     "densityScale": 0.3,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.0,
+            0.0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     }
+    },
+    "low": {
+     "ndfAltitudeOffset": 1200.0,
+     "ndfAltitudeScale": 900.0,
+     "densityScale": 0.75,
+     "bottomSpreadScale": 0.8133,
+     "bottomSpreadHeight": 0.3
+    },
+    "lighting": {
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.0
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 4.44,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 8.88,
+      "y": 0.0
+     }
+    }
+   },
+   "aerosolScatter": {
+    "x": 5.0442,
+    "y": 6.8378,
+    "z": 9.1504
+   },
+   "aerosolAbsorption": {
+    "x": 0.3981,
+    "y": 0.8793599999999999,
+    "z": 1.92492
+   },
+   "rayleighScatter": {
+    "x": 19.8147,
+    "y": 37.035000000000004,
+    "z": 88.239
+   },
+   "rayleighScatterAP1": {
+    "x": 20.8032,
+    "y": 36.060900000000004,
+    "z": 86.73
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": 0.05,
+        "y": 0.35,
+        "z": 0.0,
+        "w": 0.68
+       },
+       "exponent": 1.4
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.6,
+        "z": 0.0,
+        "w": 0.5
+       },
+       "exponent": 1.6
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.02
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.25
+      }
+     }
+    }
+   },
+   "ozoneAbsorption": {
+    "x": 6.8733,
+    "y": 4.6212,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 6.749699999999999,
+    "y": 4.9806,
+    "z": 0.0
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "5_warm_tint_and_darker",
+  "set": {
+   "cloudLayer": {
+    "cirrus": {
+     "uvSize": 3.0,
+     "altitude": 8000.0,
+     "densityScale": 0.3,
+     "weather": {
+      "states": [
+       {
+        "weight": 1.0,
+        "value": {
+         "layers": [
+          {
+           "noise": 1,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -0.9,
+            0.3,
+            0.25,
+            0.8
+           ]
+          },
+          {
+           "noise": 4,
+           "frequency": 1.0,
+           "offset": [
+            0.0,
+            0.0
+           ],
+           "range": [
+            -1.0,
+            1.0,
+            0.0,
+            0.0
+           ]
+          }
+         ],
+         "localMap": "",
+         "localWeight": 0.0,
+         "localWindScale": 1.0,
+         "localBlendMode": 0
+        }
+       }
+      ]
+     }
+    },
+    "low": {
+     "ndfAltitudeOffset": 1200.0,
+     "ndfAltitudeScale": 900.0,
+     "densityScale": 0.75,
+     "bottomSpreadScale": 0.8133,
+     "bottomSpreadHeight": 0.3
+    },
+    "lighting": {
+     "sunExtinction": 1.0,
+     "viewExtinction": 1.0,
+     "msAlbedo": 0.999,
+     "ambientStrength": 1.0
+    },
+    "wind": {
+     "lowVelocity": {
+      "x": 4.44,
+      "y": 0.0
+     },
+     "highVelocity": {
+      "x": 8.88,
+      "y": 0.0
+     }
+    }
+   },
+   "aerosolScatter": {
+    "x": 4.03536,
+    "y": 5.47024,
+    "z": 7.32032
+   },
+   "aerosolAbsorption": {
+    "x": 0.6635000000000001,
+    "y": 1.31904,
+    "z": 2.56656
+   },
+   "rayleighScatter": {
+    "x": 19.8147,
+    "y": 37.035000000000004,
+    "z": 88.239
+   },
+   "rayleighScatterAP1": {
+    "x": 20.8032,
+    "y": 36.060900000000004,
+    "z": 86.73
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "primary": {
+       "range": {
+        "x": 0.05,
+        "y": 0.35,
+        "z": 0.0,
+        "w": 0.68
+       },
+       "exponent": 1.4
+      },
+      "secondary": {
+       "range": {
+        "x": -0.2,
+        "y": 0.8,
+        "z": 0.0,
+        "w": 0.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.6,
+        "z": 0.0,
+        "w": 0.5
+       },
+       "exponent": 1.6
+      },
+      "heightVariation": {
+       "range": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.02
+       },
+       "exponent": 1.0
+      },
+      "bottomTypeRange": {
+       "x": -0.4,
+       "y": 0.5,
+       "z": 0.0,
+       "w": 0.25
+      }
+     }
+    }
+   },
+   "ozoneAbsorption": {
+    "x": 6.8733,
+    "y": 4.6212,
+    "z": 0.0
+   },
+   "ozoneAbsorptionAP1": {
+    "x": 6.749699999999999,
+    "y": 4.9806,
+    "z": 0.0
+   }
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.1
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 16
+ }
+]

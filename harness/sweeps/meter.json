@@ -1,0 +1,326 @@
+[
+ {
+  "name": "auto_full",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -10,
+       18
+      ],
+      "NightAdaptationRange": [
+       -10,
+       18
+      ],
+      "InteriorAdaptationRange": [
+       -10,
+       18
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 7
+ },
+ {
+  "name": "pin_-04",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -4,
+       -4
+      ],
+      "NightAdaptationRange": [
+       -4,
+       -4
+      ],
+      "InteriorAdaptationRange": [
+       -4,
+       -4
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_-02",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       -2,
+       -2
+      ],
+      "NightAdaptationRange": [
+       -2,
+       -2
+      ],
+      "InteriorAdaptationRange": [
+       -2,
+       -2
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_+00",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       0,
+       0
+      ],
+      "NightAdaptationRange": [
+       0,
+       0
+      ],
+      "InteriorAdaptationRange": [
+       0,
+       0
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_+02",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       2,
+       2
+      ],
+      "NightAdaptationRange": [
+       2,
+       2
+      ],
+      "InteriorAdaptationRange": [
+       2,
+       2
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_+04",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       4,
+       4
+      ],
+      "NightAdaptationRange": [
+       4,
+       4
+      ],
+      "InteriorAdaptationRange": [
+       4,
+       4
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_+06",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       6,
+       6
+      ],
+      "NightAdaptationRange": [
+       6,
+       6
+      ],
+      "InteriorAdaptationRange": [
+       6,
+       6
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_+08",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       8,
+       8
+      ],
+      "NightAdaptationRange": [
+       8,
+       8
+      ],
+      "InteriorAdaptationRange": [
+       8,
+       8
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ },
+ {
+  "name": "pin_+10",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    },
+    "Look Grade": {
+     "enabled": false
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "AdaptationRange": [
+       10,
+       10
+      ],
+      "NightAdaptationRange": [
+       10,
+       10
+      ],
+      "InteriorAdaptationRange": [
+       10,
+       10
+      ],
+      "ExposureCompensation": 0.0,
+      "NightExposureCompensation": 0.0,
+      "InteriorExposureCompensation": 0.0,
+      "BrightSceneCompression": 0.0,
+      "AdaptSpeed": 5.0
+     }
+    }
+   }
+  },
+  "settle": 6
+ }
+]

@@ -1,0 +1,57 @@
+{
+ "label": "perf-64gb-base",
+ "rep": 1,
+ "scenario": "sprint",
+ "config": "83e429e905",
+ "time": "2026-11-21 20:26:18",
+ "render": {
+  "frames": 3650,
+  "mean": 27.45,
+  "fps": 36.4,
+  "p50": 26.33,
+  "p95": 35.47,
+  "p99": 43.9,
+  "max": 126.2,
+  "over50": 27,
+  "over100": 2,
+  "over250": 0,
+  "stall_ms": 231
+ },
+ "main_cpu_ms": 24.79,
+ "fg_share": 1.0,
+ "distance": 11120,
+ "cells": 7,
+ "presented": {
+  "present": {
+   "frames": 7445,
+   "mean": 13.7,
+   "fps": 73.0,
+   "p50": 13.19,
+   "p95": 17.38,
+   "p99": 21.16,
+   "max": 92.8,
+   "over50": 10,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 7445,
+   "mean": 13.7,
+   "fps": 73.0,
+   "p50": 13.16,
+   "p95": 17.91,
+   "p99": 21.6,
+   "max": 93.1,
+   "over50": 10,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 7445
+  }
+ },
+ "onward_restarts": 2,
+ "offroute": 7049
+}

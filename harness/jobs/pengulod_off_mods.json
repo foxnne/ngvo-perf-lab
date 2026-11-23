@@ -1,0 +1,16 @@
+{
+ "enable": [
+  "NGVO - DynDOLOD Output",
+  "NGVO - TexGen Output",
+  "DynDOLOD DLL NG and Scripts 3.00",
+  "DynDOLOD - Settings Loader"
+ ],
+ "disable": [
+  "PenguLOD Output - LOD (fork tree flags)",
+  "PenguLOD Output - LOD",
+  "PenguLOD Output - Textures",
+  "PenguLOD SKSE Plugin",
+  "foxnne - Aspen LOD (PenguLOD)",
+  "foxnne - No Ivy Trees LOD (PenguLOD)"
+ ]
+}

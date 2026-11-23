@@ -1,0 +1,218 @@
+[
+ {
+  "name": "00_off",
+  "features": {
+   "LightShafts": {
+    "Enabled": false,
+    "SunStrength": 0.1,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "01_quality_0_low",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.3,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 0,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "02_quality_1_medium",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.3,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "03_quality_2_high",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.3,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 2,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "04_quality_3_ultra",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.3,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 3,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "05_debug_occlusion",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 1,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "06_debug_beams_only",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.3,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 2,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "07_debug_beams_only_low",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.3,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 0,
+    "DebugView": 2,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ }
+]

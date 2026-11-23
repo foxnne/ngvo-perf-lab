@@ -1,0 +1,121 @@
+[
+ {
+  "name": "0_normal",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 0
+   }
+  }
+ },
+ {
+  "name": "1_floor_map",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 1
+   }
+  }
+ },
+ {
+  "name": "2_pool_depth",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 2
+   }
+  }
+ },
+ {
+  "name": "5_fog_light",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 5
+   }
+  }
+ },
+ {
+  "name": "6_fog_removes",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 6
+   }
+  }
+ },
+ {
+  "name": "7_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "8_natural_morning",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ }
+]

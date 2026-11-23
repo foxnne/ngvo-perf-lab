@@ -1,0 +1,193 @@
+{
+ "forest": [
+  {
+   "lever": "grass",
+   "what": "grass hidden (tg)",
+   "base_ms": 33.27,
+   "switched_ms": 33.153,
+   "cost_ms": 0.12,
+   "fps_base": 30.1,
+   "fps_switched": 30.2
+  },
+  {
+   "lever": "lod",
+   "what": "all LOD hidden: terrain, objects, tree LOD (tll)",
+   "base_ms": 29.69,
+   "switched_ms": 32.816,
+   "cost_ms": -3.12,
+   "fps_base": 33.7,
+   "fps_switched": 30.5
+  },
+  {
+   "lever": "trees",
+   "what": "full trees hidden (tt)",
+   "base_ms": 27.2,
+   "switched_ms": 26.845,
+   "cost_ms": 0.35,
+   "fps_base": 36.8,
+   "fps_switched": 37.3
+  },
+  {
+   "lever": "sky",
+   "what": "sky hidden (ts)",
+   "base_ms": 27.34,
+   "switched_ms": 29.061,
+   "cost_ms": -1.72,
+   "fps_base": 36.6,
+   "fps_switched": 34.4
+  },
+  {
+   "lever": "water",
+   "what": "water hidden (tws)",
+   "base_ms": 27.65,
+   "switched_ms": 26.459,
+   "cost_ms": 1.19,
+   "fps_base": 36.2,
+   "fps_switched": 37.8
+  },
+  {
+   "lever": "ssgi",
+   "what": "Screen Space GI off",
+   "base_ms": 27.41,
+   "switched_ms": 27.43,
+   "cost_ms": -0.02,
+   "fps_base": 36.5,
+   "fps_switched": 36.5
+  },
+  {
+   "lever": "ssgi-quarter",
+   "what": "Screen Space GI quarter res",
+   "base_ms": 29.58,
+   "switched_ms": 25.478,
+   "cost_ms": 4.1,
+   "fps_base": 33.8,
+   "fps_switched": 39.2
+  },
+  {
+   "lever": "ssr",
+   "what": "Screen Space Reflections off",
+   "base_ms": 31.32,
+   "switched_ms": 28.897,
+   "cost_ms": 2.42,
+   "fps_base": 31.9,
+   "fps_switched": 34.6
+  },
+  {
+   "lever": "ssr-64steps",
+   "what": "SSR 64 steps instead of 128",
+   "base_ms": 30.04,
+   "switched_ms": 29.748,
+   "cost_ms": 0.29,
+   "fps_base": 33.3,
+   "fps_switched": 33.6
+  },
+  {
+   "lever": "vol-light",
+   "what": "exterior volumetric lighting off",
+   "base_ms": 30.2,
+   "switched_ms": 30.147,
+   "cost_ms": 0.05,
+   "fps_base": 33.1,
+   "fps_switched": 33.2
+  },
+  {
+   "lever": "ss-shadows",
+   "what": "Screen Space Shadows off",
+   "base_ms": 29.86,
+   "switched_ms": 29.467,
+   "cost_ms": 0.39,
+   "fps_base": 33.5,
+   "fps_switched": 33.9
+  },
+  {
+   "lever": "terrain-shadows",
+   "what": "Terrain Shadows off",
+   "base_ms": 29.85,
+   "switched_ms": 29.518,
+   "cost_ms": 0.33,
+   "fps_base": 33.5,
+   "fps_switched": 33.9
+  },
+  {
+   "lever": "psky",
+   "what": "Physical Sky off",
+   "base_ms": 29.93,
+   "switched_ms": 27.375,
+   "cost_ms": 2.55,
+   "fps_base": 33.4,
+   "fps_switched": 36.5
+  },
+  {
+   "lever": "vol-clouds",
+   "what": "volumetric clouds off",
+   "base_ms": 30.16,
+   "switched_ms": 28.938,
+   "cost_ms": 1.22,
+   "fps_base": 33.2,
+   "fps_switched": 34.6
+  },
+  {
+   "lever": "cloud-march-perf",
+   "what": "cloud march at the performance variant (step 1.0, range 24 km, blur 2, half-res shadow)",
+   "base_ms": 30.58,
+   "switched_ms": 30.493,
+   "cost_ms": 0.09,
+   "fps_base": 32.7,
+   "fps_switched": 32.8
+  },
+  {
+   "lever": "fg-off",
+   "what": "frame generation off",
+   "base_ms": 30.38,
+   "switched_ms": 29.001,
+   "cost_ms": 1.38,
+   "fps_base": 32.9,
+   "fps_switched": 34.5
+  },
+  {
+   "lever": "dlss-balanced",
+   "what": "DLSS Balanced instead of Quality",
+   "base_ms": 30.36,
+   "switched_ms": 27.77,
+   "cost_ms": 2.59,
+   "fps_base": 32.9,
+   "fps_switched": 36.0
+  },
+  {
+   "lever": "nr-off",
+   "what": "Neural Rendering off",
+   "base_ms": 30.66,
+   "switched_ms": 27.975,
+   "cost_ms": 2.69,
+   "fps_base": 32.6,
+   "fps_switched": 35.7
+  },
+  {
+   "lever": "nr-75",
+   "what": "Neural Rendering at 75% resolution",
+   "base_ms": 30.58,
+   "switched_ms": 30.533,
+   "cost_ms": 0.05,
+   "fps_base": 32.7,
+   "fps_switched": 32.8
+  },
+  {
+   "lever": "nr-50",
+   "what": "Neural Rendering at 50% resolution",
+   "base_ms": 30.47,
+   "switched_ms": 29.415,
+   "cost_ms": 1.06,
+   "fps_base": 32.8,
+   "fps_switched": 34.0
+  },
+  {
+   "lever": "nr-everyframe",
+   "what": "Neural Rendering every frame (alternate frames off; negative = alternate frames helps)",
+   "base_ms": 33.79,
+   "switched_ms": 31.659,
+   "cost_ms": 2.13,
+   "fps_base": 29.6,
+   "fps_switched": 31.6
+  }
+ ]
+}

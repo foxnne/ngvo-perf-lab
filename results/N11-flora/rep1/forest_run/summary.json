@@ -1,0 +1,29 @@
+{
+ "label": "N11-flora",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "da27c7775c",
+ "time": "2026-11-20 04:21:09",
+ "render": {
+  "frames": 2202,
+  "mean": 26.47,
+  "fps": 37.8,
+  "p50": 25.82,
+  "p95": 30.79,
+  "p99": 40.14,
+  "max": 171.6,
+  "over50": 3,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 172
+ },
+ "main_cpu_ms": 23.47,
+ "fg_share": 1.0,
+ "distance": 17220,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1268
+}

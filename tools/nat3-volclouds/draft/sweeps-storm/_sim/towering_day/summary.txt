@@ -1,0 +1,10 @@
+00_live                                  slab 1200..2100 m  cover   5%  solid   0%  body thickness med   70 p90  106 m  top p90 1351 m  top type med 0.10 p90 0.21
+01_tall_slab_tall_types                  slab 1000..4500 m  cover   6%  solid   0%  body thickness med  891 p90 1369 m  top p90 2613 m  top type med 0.66 p90 0.88
+02_core_towers                           slab 1000..4500 m  cover   4%  solid   0%  body thickness med  616 p90  822 m  top p90 2476 m  top type med 0.43 p90 0.65
+03_solid_cores                           slab 1000..4500 m  cover  15%  solid   9%  body thickness med 1494 p90 2577 m  top p90 3715 m  top type med 0.39 p90 0.63
+04_few_large_cells                       slab 1000..4500 m  cover  11%  solid   6%  body thickness med 1493 p90 2577 m  top p90 3715 m  top type med 0.36 p90 0.60
+05_big_tile                              slab 1000..4500 m  cover  18%  solid  10%  body thickness med 1494 p90 2577 m  top p90 3715 m  top type med 0.37 p90 0.61
+06_flat_dark_base                        slab 1000..4500 m  cover  13%  solid   7%  body thickness med 1316 p90 2702 m  top p90 3702 m  top type med 0.36 p90 0.60
+07_contrast                              slab 1000..4500 m  cover  13%  solid   7%  body thickness med 1316 p90 2702 m  top p90 3702 m  top type med 0.36 p90 0.60
+08_no_top_expansion                      slab 1000..4500 m  cover  13%  solid   7%  body thickness med 1316 p90 1870 m  top p90 2870 m  top type med 0.36 p90 0.60
+09_big_billows                           slab 1000..4500 m  cover  13%  solid   7%  body thickness med 1316 p90 2702 m  top p90 3702 m  top type med 0.36 p90 0.60

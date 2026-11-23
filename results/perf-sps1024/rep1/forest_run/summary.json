@@ -1,0 +1,57 @@
+{
+ "label": "perf-sps1024",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "83e429e905",
+ "time": "2026-11-21 20:36:58",
+ "render": {
+  "frames": 1684,
+  "mean": 34.47,
+  "fps": 29.0,
+  "p50": 29.25,
+  "p95": 32.14,
+  "p99": 42.5,
+  "max": 6408.0,
+  "over50": 14,
+  "over100": 3,
+  "over250": 3,
+  "stall_ms": 8352
+ },
+ "main_cpu_ms": 27.2,
+ "fg_share": 1.0,
+ "distance": 16804,
+ "cells": 7,
+ "presented": {
+  "present": {
+   "frames": 3501,
+   "mean": 17.12,
+   "fps": 58.4,
+   "p50": 14.52,
+   "p95": 16.11,
+   "p99": 25.99,
+   "max": 6384.9,
+   "over50": 3,
+   "over100": 3,
+   "over250": 2,
+   "stall_ms": 8295
+  },
+  "displayed": {
+   "frames": 3501,
+   "mean": 17.12,
+   "fps": 58.4,
+   "p50": 14.55,
+   "p95": 16.87,
+   "p99": 23.73,
+   "max": 6389.0,
+   "over50": 3,
+   "over100": 3,
+   "over250": 2,
+   "stall_ms": 8298
+  },
+  "frame_types": {
+   "Application": 3501
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 110
+}

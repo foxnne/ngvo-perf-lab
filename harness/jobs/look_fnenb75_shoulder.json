@@ -1,0 +1,73 @@
+{
+ "PostProcessing": {
+  "Look Grade": {
+   "enabled": true,
+   "settings": {
+    "Exposure": 0.9,
+    "Highlights": 0.95,
+    "Midtones": 1.0,
+    "BlackPoint": 0.0,
+    "ShadowsLift": -0.03,
+    "Contrast": 1.0,
+    "ContrastPivot": 0.45,
+    "WhitePoint": 1.0,
+    "ShoulderStrength": 0.5,
+    "ShoulderStart": 0.6,
+    "Warmth": 0.0,
+    "Tint": 0.0,
+    "Saturation": 1.0,
+    "Vibrance": 0.0,
+    "ShadowHue": 220.0,
+    "ShadowAmount": 0.025,
+    "HighlightHue": 40.0,
+    "HighlightAmount": 0.021,
+    "BandRed": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandOrange": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandYellow": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandGreen": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandAqua": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandBlue": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandPurple": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "BandMagenta": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "LUT": {
+   "enabled": true,
+   "settings": {
+    "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_fnenb75_20261119_lin128.dds"
+   }
+  }
+ }
+}

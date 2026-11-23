@@ -1,0 +1,44 @@
+[
+ {
+  "name": "0_now",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_transmission_0.8",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeTransmission": 0.8
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_transmission_0.8_wrap_0.6",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeTransmission": 0.8,
+    "LODTreeWrap": 0.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_transmission_1.0_softening_0.85",
+  "set": {},
+  "features": {
+   "TreeWind": {
+    "LODTreeTransmission": 1.0,
+    "LODTreeShadowSoftening": 0.85
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ }
+]

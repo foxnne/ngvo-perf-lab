@@ -73,6 +73,7 @@ def settle(cell=None, maxwait=180):
 
 
 LOADED_SAVE = None
+ATTACHED = []
 BASE_SAVE = 'preRestart_auri'    # the harness's fixed starting save; named explicitly so view saves made later don't change what a run loads
 
 
@@ -94,14 +95,16 @@ def launch(save=None):
         release()
         try: cs.call('communityshaders.testbed', {'action': 'camera', 'mode': 'player'})
         except Exception: pass
-        have = saves()
-        if save in have:
-            print('attached: loading save', save, flush=True)
-            cs.call('game', {'action': 'load', 'name': save}); time.sleep(12)
-            if not settle(): raise SystemExit('save did not load')
-            LOADED_SAVE = save; time.sleep(4)
-        else:
-            print('attached: staying in the current game (no save named %s)' % save, flush=True); LOADED_SAVE = None
+        # Do NOT load a save here: loading from inside a running game through the bridge drops to the main menu.
+        # The caller travels to its view instead (coc + teleport), which takes about 20 s and has always worked.
+        m = menus().get('openMenus', [])
+        if 'Main Menu' in m and 'Loading Menu' not in m:      # a previous load left the game on the main menu: start the base save from there
+            have = saves(); pick = BASE_SAVE if BASE_SAVE in have else None
+            cs.call('game', {'action': 'load', 'name': pick} if pick else {'action': 'loadLast'}); time.sleep(15)
+        if not settle(maxwait=300): raise SystemExit('attached, but the game never reached a loaded cell')
+        time.sleep(4)
+        print('attached to the running game (no save load; the job travels to its view)', flush=True)
+        LOADED_SAVE = None; ATTACHED.append(1)
         return
     if mo2_running(): close_mo2()
     for attempt in range(3):                      # the MO2 shortcut sometimes does not start the game: send it again
@@ -113,12 +116,23 @@ def launch(save=None):
         if running(): break
     else: raise SystemExit('game did not start')
     t0 = time.time()
-    while time.time() - t0 < 420:
+    while time.time() - t0 < float(os.environ.get('NGVO_MENU_WAIT', '420')):      # after a fork build the game compiles shaders before the menu: the build job raises this
         try:
             if 'Main Menu' in cs.call('menu', {'action': 'list'})['openMenus']: break
         except Exception: pass
         time.sleep(5)
     else: raise SystemExit('main menu not reached')
+    # Wait for the shader cache to finish before loading: a save loaded while shaders still compile has come up with wrong
+    # face tint, hair colour or missing hair for the whole session (seen 2026-11-19, intermittent; unproven cause).
+    t1 = time.time(); quiet = 0
+    while time.time() - t1 < 1500 and quiet < 3:
+        try:
+            st = cs.call('communityshaders.inspect', {'kind': 'shadercache'})
+            quiet = quiet + 1 if not st.get('compiling') else 0
+        except Exception: quiet = 0
+        time.sleep(5)
+    print('shader cache idle after %.0f s at the main menu' % (time.time() - t1), flush=True)
+    time.sleep(20)                                   # let late plugins finish their own main-menu work
     have = saves(); pick = save if save in have else BASE_SAVE if BASE_SAVE in have else None
     print('loading save:', pick or '(most recent)', flush=True)
     cs.call('game', {'action': 'load', 'name': pick} if pick else {'action': 'loadLast'}); time.sleep(15)
@@ -135,7 +149,10 @@ def all_on(strict=True):
     Returns the live state; with strict, quits the game and exits when something is off, so nothing is measured or shot that way."""
     def g(short):
         r = cs.call('communityshaders.feature', {'action': 'get', 'shortName': short}); return r.get('settings', r)
-    nr, up, ps = g('NeuralRendering'), g('Upscaling'), g('PhysicalSky')
+    for _ in range(12):                                     # mid-load the bridge answers with an error dict: wait instead of failing
+        nr, up, ps = g('NeuralRendering'), g('Upscaling'), g('PhysicalSky')
+        if any('error' not in x for x in (nr, up, ps)): break
+        time.sleep(10)
     state = {'nr_enabled': nr.get('enabled'), 'nr_scale': nr.get('resolutionScale'), 'nr_alternate': nr.get('alternateFrames'),
              'frame_generation': up.get('frameGenerationMode'), 'volumetric_clouds': ps.get('enableVolumetricClouds'), 'physical_sky': ps.get('enabled')}
     bad = [k for k, ok in (('nr_enabled', state['nr_enabled'] is True), ('nr_scale', abs((state['nr_scale'] or 0) - NR_SCALE) < 0.01), ('nr_alternate', state['nr_alternate'] is False),
@@ -190,7 +207,7 @@ def goto(cell):
 
 
 def exterior_setup():
-    cs.world(action='hour', value=12.0); cs.world(action='timescale', value=1)
+    cs.world(action='hour', value=float(sys.argv[sys.argv.index('--hour') + 1]) if '--hour' in sys.argv else 12.0); cs.world(action='timescale', value=1)
     cs.world(action='weather', name='SunnyTU', instant=True, lock=True)
 
 
@@ -360,7 +377,8 @@ def sc_sprint(route_file, seconds=100):
             while st['i'] < len(pts) - 1 and math.hypot(pts[st['i']][0] - x, pts[st['i']][1] - y) < 350: st['i'] += 1
             tx, ty = pts[min(st['i'] + 1, len(pts) - 1)]
             cs.world(action='teleport', rz=math.degrees(math.atan2(tx - x, ty - y)) % 360)
-            if t - st['keys'] > 2.5: down('w'); down('leftShift'); st['keys'] = t
+            # one continuous hold, renewed before the bridge's 60 s maximum: a fresh key-down every 2.5 s toggled the sprint off and on
+            if t - st['keys'] > 55.0: down('w', 60000); down('leftShift', 60000); st['keys'] = t
             if t - st['last_t'] > 3.0:
                 if math.hypot(x - st['last'][0], y - st['last'][1]) < 150:      # stuck: hop to the next waypoint, keep height
                     cs.world(action='teleport', x=pts[st['i']][0], y=pts[st['i']][1], z=z + 60); st['skips'] += 1
@@ -416,6 +434,8 @@ def sc_spin(cell, pose, seconds=40, rev_seconds=3.0):
 SCENARIOS = {
     'plains': sc_static('WhiterunExterior04', dict(x=START[0], y=START[1], z=START[2], rx=4.0, rz=247.0)),
     'forest': sc_static('HalfMoonMillExterior'),
+    'riften': sc_static('RiftenOrigin'),
+    'rift': sc_static('ShorsStone'),
     'city': sc_static('WhiterunOrigin'),
     'interior': sc_static('WhiterunBanneredMare', interior=True),
     'flight': sc_flight(),

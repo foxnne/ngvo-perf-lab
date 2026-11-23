@@ -1,0 +1,5 @@
+{"PostProcessing": {"Histogram Auto Exposure": {"settings": {
+ "AdaptationRange": [-6.0, 16.0], "InteriorAdaptationRange": [-10.0, 10.0], "NightAdaptationRange": [-8.0, 10.0],
+ "BrightSceneKneeEV": -10.0, "BrightSceneCompression": 0.22,
+ "ExposureCompensation": -4.2, "InteriorExposureCompensation": -4.7, "NightExposureCompensation": -4.7, "AdaptSpeed": 1.0}},
+ "LUT": {"enabled": false}, "Look Grade": {"enabled": false}}}

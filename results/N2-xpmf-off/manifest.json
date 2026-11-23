@@ -1,0 +1,27 @@
+{
+ "time": "2026-11-19 15:41:33",
+ "files": {
+  "profile/modlist.txt": "15dcfec0b2efa946e4ce5c593a52b0df",
+  "profile/plugins.txt": "19c2ae5b2939c2b098b5e7d566b898b5",
+  "profile/loadorder.txt": "38f02c3f5bc68560cfb0d02ec4370b64",
+  "profile/skyrim.ini": "b64b3e462cb4811e7c4642a92434c993",
+  "profile/skyrimprefs.ini": "a03549b59dc048b1eaa81a44c5344b3b",
+  "profile/skyrimcustom.ini": "4fca0e59ce285f5617618ff8083ba084",
+  "cs/SettingsUser.json": "aa9e63a4455c1b08055f5a8faca323cc",
+  "cs/SceneManager.json": "b0113ba105e4097270358f6b7f540c69",
+  "ini/SSEDisplayTweaks.ini": "3822ef27e0dab12ca651e25c78df23ab",
+  "ini/TextureDownscaler.ini": "59858775a496c587e3a54f4563117882",
+  "ini/SPS.ini": "905acdf6b2e53f2f2e9f5c98800aa80a",
+  "ini/SkyrimPrecombines.ini": "0d1b586639379835d55ad896ea0d3ac7",
+  "ini/FasterTextures.ini": "1386c1fe86542a2c514db7724a69c759",
+  "ini/DynDOLOD_MCM_settings.ini": "c9780f8e45b8f3708db7664a3d6bed8d"
+ },
+ "binaries": {
+  "CommunityShaders.dll": "734d23bfc406328d2892eca6c4bb19b5",
+  "nvngx_dlss.dll": "dc1a83569dcbe51823c1b108a9ede468",
+  "nvngx_dlssnr.dll": "894ce9718ad97a52fcd9c83b426cfa93"
+ },
+ "mods_enabled": 2013,
+ "mods_total": 2181,
+ "id": "80b01917e6"
+}

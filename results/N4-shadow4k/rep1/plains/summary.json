@@ -1,0 +1,27 @@
+{
+ "label": "N4-shadow4k",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "157ac30532",
+ "time": "2026-11-19 20:33:59",
+ "render": {
+  "frames": 527,
+  "mean": 28.89,
+  "fps": 34.6,
+  "p50": 26.99,
+  "p95": 31.6,
+  "p99": 42.21,
+  "max": 573.6,
+  "over50": 5,
+  "over100": 2,
+  "over250": 1,
+  "stall_ms": 700
+ },
+ "main_cpu_ms": 24.65,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

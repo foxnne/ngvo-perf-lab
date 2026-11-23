@@ -1,0 +1,339 @@
+{
+ "_about": "Compact shot plan for the Looks Lab (2026-11-20): one neutral frame (Look Grade and LUT off) per scene the lab's single global grade / LUT is judged on: outdoors by day, golden hour and night, forest, Rift aspens, two interiors and one dungeon. Same format as baseline_plan.json (the full views x sky types x times matrix, which stays as it is). Dry run:  python baseline_shoot.py lab-baseline-02 --plan baseline_plan_lab.json --dry-run   Queue:  baseline_shoot.py lab-baseline-02 --plan baseline_plan_lab.json   then build the lab:  python build_lab_job.py lab-baseline-02  2026-11-21 trim (user: too many similar shots): dropped Belethor (same as the inn) and Embershard (same as the barrow); added one overcast plains frame and one face/bust frame (skin, hands, NR); views carry their own sky list in \"skies\".",
+ "schema": "ngvo-baseline-plan/1",
+ "times": {
+  "_note": "Row name -> game hour. A view lists the rows it is shot at in its own 'times'. The Scene Manager period of each hour is computed from 'period_model' and written to every shot in the manifest (16:30 is still period Day here: the sun is about 25 deg up and sets 18:30).",
+  "Day": {
+   "hour": 13.0,
+   "note": "solar noon, sun 55 deg: pure Day"
+  },
+  "Golden": {
+   "hour": 16.5,
+   "note": "16:30, low warm afternoon sun; Scene Manager period Day"
+  },
+  "Night": {
+   "hour": 22.0,
+   "note": "22:00, pure Night (19:05-06:56)"
+  }
+ },
+ "period_model": {
+  "_note": "Copy of baseline_plan.json 'period_model' (sun-driven periods, fork branch foxnne/scene-periods-sun). Keep the two the same.",
+  "kind": "sun",
+  "names": [
+   "Dawn",
+   "Sunrise",
+   "Day",
+   "Sunset",
+   "Dusk",
+   "Night"
+  ],
+  "sun": {
+   "path": "alternate",
+   "timing": [
+    33,
+    60,
+    96,
+    123
+   ],
+   "tilt_deg": 55.0
+  },
+  "day_elevation": 10.0,
+  "horizon_elevation": 0.0,
+  "night_elevation": -5.0,
+  "blend_degrees": 3.0,
+  "ease": 1.0
+ },
+ "sky": {
+  "_note": "mode 'scene': outdoors only the weather and the hour are set; the sky, fog and ambient are whatever the saved settings and installed packs give (the game as it looks now), like sky_sweep.py --stock. SunnyPF is the weather today's base sweeps (sweeps/base_normalize.json) use. Indoor views never get a weather: see 'interior_matrix'.",
+  "mode": "scene",
+  "weather_settle_seconds": 20,
+  "hour_settle_seconds": 12,
+  "types": {
+   "fair": {
+    "weather": "SunnyPF"
+   },
+   "overcast": {
+    "weather": "OvercastPF"
+   }
+  }
+ },
+ "stages": {
+  "1": {
+   "sky_types": [
+    "fair",
+    "overcast"
+   ],
+   "note": "the whole set"
+  }
+ },
+ "sites": {
+  "_note": "Shot in this order. Indoor sites first: nothing in this job has forced a weather yet when they are shot (a lock an earlier job left is released before travelling). cell / travel / player must equal the view's views.json entry (checked at start).",
+  "inn": {
+   "cell": "WhiterunBanneredMare",
+   "interior": true,
+   "settle_seconds": 14
+  },
+  "dragonsreach": {
+   "cell": "WhiterunDragonsreach",
+   "interior": true,
+   "settle_seconds": 14
+  },
+  "barrow": {
+   "cell": "BleakFallsBarrow01",
+   "interior": true,
+   "settle_seconds": 14
+  },
+  "plains": {
+   "cell": "WhiterunExterior04",
+   "player": {
+    "x": 19157.0,
+    "y": -7419.0,
+    "z": -3612.0,
+    "rx": 0.0,
+    "rz": 160.0
+   },
+   "settle_seconds": 12
+  },
+  "riverwood": {
+   "cell": "Riverwood",
+   "settle_seconds": 14
+  },
+  "rift": {
+   "travel": "cow Tamriel 40 -24",
+   "settle_seconds": 14
+  }
+ },
+ "views": [
+  {
+   "id": "inn_bannered_mare",
+   "site": "inn",
+   "kind": "interior",
+   "views_json": "inn_bannered_mare",
+   "times": [
+    "Day"
+   ],
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ]
+  },
+  {
+   "id": "hall_dragonsreach",
+   "site": "dragonsreach",
+   "kind": "interior",
+   "views_json": "hall_dragonsreach",
+   "times": [
+    "Day"
+   ],
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ]
+  },
+  {
+   "id": "dungeon_bleak_falls",
+   "site": "barrow",
+   "kind": "dungeon",
+   "views_json": "dungeon_bleak_falls",
+   "times": [
+    "Day"
+   ],
+   "near": [
+    0.0,
+    0.65,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.3,
+    0.25,
+    0.7,
+    0.6
+   ]
+  },
+  {
+   "id": "plains_west",
+   "site": "plains",
+   "kind": "exterior",
+   "views_json": "plains_west",
+   "times": [
+    "Day",
+    "Golden",
+    "Night"
+   ],
+   "near": [
+    0.0,
+    0.75,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.4,
+    1.0,
+    0.58
+   ],
+   "skies": [
+    "fair"
+   ]
+  },
+  {
+   "id": "plains_west_overcast",
+   "site": "plains",
+   "kind": "exterior",
+   "views_json": "plains_west",
+   "times": [
+    "Day"
+   ],
+   "near": [
+    0.0,
+    0.75,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.4,
+    1.0,
+    0.58
+   ],
+   "skies": [
+    "overcast"
+   ]
+  },
+  {
+   "id": "face_bust",
+   "site": "plains",
+   "kind": "face",
+   "face": {
+    "distance": 95.0,
+    "height": 105.0,
+    "pitch": -2.0,
+    "fov": 40.0
+   },
+   "near": [
+    0.32,
+    0.1,
+    0.68,
+    1.0
+   ],
+   "far": [
+    0.0,
+    0.25,
+    0.2,
+    0.75
+   ],
+   "times": [
+    "Day"
+   ],
+   "skies": [
+    "fair"
+   ]
+  },
+  {
+   "id": "riverwood_floor",
+   "site": "riverwood",
+   "kind": "exterior",
+   "views_json": "riverwood_floor",
+   "times": [
+    "Day"
+   ],
+   "near": [
+    0.0,
+    0.7,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.25,
+    0.3,
+    0.75,
+    0.55
+   ],
+   "skies": [
+    "fair"
+   ]
+  },
+  {
+   "id": "rift_aspens",
+   "site": "rift",
+   "kind": "exterior",
+   "views_json": "rift_aspens",
+   "times": [
+    "Day"
+   ],
+   "near": [
+    0.0,
+    0.7,
+    1.0,
+    1.0
+   ],
+   "far": [
+    0.25,
+    0.1,
+    0.75,
+    0.45
+   ],
+   "skies": [
+    "fair"
+   ]
+  }
+ ],
+ "interior_matrix": {
+  "_note": "Rows for indoor views that list no 'times' of their own. Indoor views (interior, dungeon) are shot once per time row, never per sky type, and the script does not set or lock a weather for them: the cell keeps its own (interior) weather.",
+  "interior": [
+   "Day"
+  ],
+  "dungeon": [
+   "Day"
+  ]
+ },
+ "neutral": {
+  "_note": "What makes a shot neutral for the lab: the two stages after tone mapping that the lab replaces are OFF, switched live through the bridge (never saved) and put back at the end. The script sets them, reads them back before every shot and aborts on a mismatch.",
+  "post_processing_off": [
+   "Look Grade",
+   "LUT"
+  ],
+  "post_processing_warn_if_on": [
+   "Camera",
+   "Border"
+  ],
+  "hdr_must_be_off": true,
+  "scene_manager_file": "C:/Modlists/NGVO 8.0 Beta/mods/CS Settings/SKSE/Plugins/CommunityShaders/SceneSettings/SceneManager.json",
+  "settings_user_file": "C:/Modlists/NGVO 8.0 Beta/mods/CS Settings/SKSE/Plugins/CommunityShaders/SettingsUser.json"
+ },
+ "capture": {
+  "camera_settle_seconds": 4,
+  "face_pose_check": true,
+  "face_pose_max_diff": 0.012,
+  "expect_resolution": [
+   3440,
+   1440
+  ],
+  "dark_percentiles": [
+   0.1,
+   1,
+   5
+  ]
+ },
+ "build": {
+  "dll": "C:/Modlists/NGVO 8.0 Beta/mods/Bottled Shaders - foxnne/SKSE/Plugins/CommunityShaders.dll",
+  "fork": "C:/Users/foxnn/dev/skyrim-community-shaders"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "label": "N1-newsky",
+ "rep": 1,
+ "scenario": "vista",
+ "config": "93faafb0ce",
+ "time": "2026-11-19 12:09:50",
+ "render": {
+  "frames": 463,
+  "mean": 32.57,
+  "fps": 30.7,
+  "p50": 31.9,
+  "p95": 36.59,
+  "p99": 38.45,
+  "max": 51.0,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 15.95,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

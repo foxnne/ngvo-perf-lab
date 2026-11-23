@@ -1,0 +1,55 @@
+{
+ "label": "premerge-recheck",
+ "rep": 1,
+ "scenario": "spin",
+ "config": "4f56ebe1fd",
+ "time": "2026-11-22 18:04:14",
+ "render": {
+  "frames": 1566,
+  "mean": 25.59,
+  "fps": 39.1,
+  "p50": 25.46,
+  "p95": 28.57,
+  "p99": 29.9,
+  "max": 60.0,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.15,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 3279,
+   "mean": 12.79,
+   "fps": 78.2,
+   "p50": 12.64,
+   "p95": 14.16,
+   "p99": 15.79,
+   "max": 25.2,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 3279,
+   "mean": 12.79,
+   "fps": 78.2,
+   "p50": 12.59,
+   "p95": 15.37,
+   "p99": 16.55,
+   "max": 26.4,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 3279
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "label": "nostream-check",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "969d75615e",
+ "time": "2026-11-22 18:25:11",
+ "render": {
+  "frames": 571,
+  "mean": 26.53,
+  "fps": 37.7,
+  "p50": 26.28,
+  "p95": 28.38,
+  "p99": 33.31,
+  "max": 82.6,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.97,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1281,
+   "mean": 13.23,
+   "fps": 75.6,
+   "p50": 12.99,
+   "p95": 14.07,
+   "p99": 16.25,
+   "max": 61.8,
+   "over50": 1,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1281,
+   "mean": 13.23,
+   "fps": 75.6,
+   "p50": 12.96,
+   "p95": 15.22,
+   "p99": 18.84,
+   "max": 62.4,
+   "over50": 1,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1281
+  }
+ }
+}

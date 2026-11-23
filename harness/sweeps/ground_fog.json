@@ -1,0 +1,87 @@
+[
+ {
+  "name": "00_ground_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "01_defaults",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "02_amount_2_calm",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 2.0,
+    "WindResponse": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "03_thick_3m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 2.0,
+    "WindResponse": 0.0,
+    "Thickness": 3.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "04_hollows_2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 2.0,
+    "WindResponse": 0.0,
+    "BasinStrength": 2.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "05_flat_no_mounds",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 2.0,
+    "WindResponse": 0.0,
+    "NoiseStrength": 0.0,
+    "BankStrength": 0.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "06_dense_amount_4",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 4.0,
+    "WindResponse": 0.0,
+    "Thickness": 2.5
+   }
+  },
+  "settle": 12
+ }
+]

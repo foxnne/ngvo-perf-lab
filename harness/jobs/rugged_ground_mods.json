@@ -1,0 +1,5 @@
+{"install": [["C:/Users/foxnn/dev/rugged-ground/x", "Rugged Ground - Stones & Scree"],
+             ["C:/Users/foxnn/dev/rugged-ground/out/foxnne - Rugged Ground 2K", "foxnne - Rugged Ground 2K"],
+             ["C:/Users/foxnn/dev/rugged-ground/out/foxnne - Rugged Ground Patch", "foxnne - Rugged Ground Patch"]],
+ "above": "foxnne - QW Grass",
+ "enable": ["foxnne - Rugged Ground Patch", "foxnne - Rugged Ground 2K", "Rugged Ground - Stones & Scree"]}

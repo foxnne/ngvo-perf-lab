@@ -1,0 +1,454 @@
+[
+ {
+  "name": "00_live",
+  "label": "Reference: saved fair-weather sky (horizon band at its default: coverage 0.5 x pleasant 0.6, top 3.2 km at 60 km = 3 degrees).",
+  "look_for": "Baseline. From plains_west the default band is hidden behind the mountains.",
+  "scene": "per-weather scene: yes",
+  "cost": "same as live",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {}
+ },
+ {
+  "name": "01_band_towers",
+  "label": "Horizon band as a distant storm line: towers (type 0), top 9 km, 45 km away, coverage 0.7, density 2.",
+  "look_for": "Cumulus towers standing 8-11 degrees above the true horizon behind the terrain, fair sky overhead untouched. Painted look? Repetition along the horizon?",
+  "scene": "per-weather scene: yes",
+  "cost": "negligible (analytic, per sky pixel)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "horizon": {
+     "enabled": true,
+     "pleasantAmount": 1.0,
+     "coverage": 0.7,
+     "type": 0.0,
+     "baseAltitude": 900.0,
+     "topAltitude": 9000.0,
+     "distance": 45.0,
+     "density": 2.0
+    }
+   }
+  }
+ },
+ {
+  "name": "02_band_dark",
+  "label": "01 + stronger self-shadow: shade 8 (default 4), sunlit 0.3 (default 0.22).",
+  "look_for": "Dark bases and far sides, bright sunlit faces: at sunset a glowing rim on backlit towers.",
+  "scene": "per-weather scene: yes",
+  "cost": "negligible",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "horizon": {
+     "enabled": true,
+     "pleasantAmount": 1.0,
+     "coverage": 0.7,
+     "type": 0.0,
+     "baseAltitude": 900.0,
+     "topAltitude": 9000.0,
+     "distance": 45.0,
+     "density": 2.0,
+     "shade": 8.0,
+     "sunlit": 0.3
+    }
+   }
+  }
+ },
+ {
+  "name": "03_band_wall",
+  "label": "01 as a continuous wall: type 0.55 (half bank, half towers), coverage 1.0, top 7 km.",
+  "look_for": "An unbroken storm shelf along the whole horizon with towers rising from it: the \"approaching front\" reading.",
+  "scene": "per-weather scene: yes",
+  "cost": "negligible",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "horizon": {
+     "enabled": true,
+     "pleasantAmount": 1.0,
+     "coverage": 1.0,
+     "type": 0.55,
+     "baseAltitude": 900.0,
+     "topAltitude": 7000.0,
+     "distance": 45.0,
+     "density": 2.0
+    }
+   }
+  }
+ },
+ {
+  "name": "04_front_mask",
+  "label": "Ray-marched front: slab 1-5 km; a low-frequency mask (gain layers on noise slot 1 at frequency 0.5) switches regions between the live fair coverage (gain 0.65, top type x0.03) and solid tall cells (gain 1).",
+  "look_for": "A region of large dark towers somewhere in the sky with ordinary fair cumulus elsewhere. Fair cumulus get thicker (lowest type still fills ~15-20% of the 4 km slab): acceptable?",
+  "scene": "per-weather scene: ranges yes; the gain layers must read slot 1 GLOBALLY (harmless while their output stays 1..1)",
+  "cost": "HIGH: slab 4.4x thicker",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 4000.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "coverageGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.65,
+        "w": 1.0
+       }
+      },
+      "modelingGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.03,
+        "w": 1.0
+       }
+      },
+      "primary": {
+       "range": {
+        "x": 0.1,
+        "y": 0.65,
+        "z": 0.0,
+        "w": 1.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.5,
+        "z": 0.25,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "05_front_shifted",
+  "label": "04 with the mask moved 0.12 tile (about 3 km) east-west: what the wind does to it over time.",
+  "look_for": "The storm region sits somewhere else: shows how the front approaches / passes. Compare with 04.",
+  "scene": "per-weather scene: ranges yes; the gain layers must read slot 1 GLOBALLY (harmless while their output stays 1..1)",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 4000.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "coverageGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.12,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.65,
+        "w": 1.0
+       }
+      },
+      "modelingGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.12,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.03,
+        "w": 1.0
+       }
+      },
+      "primary": {
+       "range": {
+        "x": 0.1,
+        "y": 0.65,
+        "z": 0.0,
+        "w": 1.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.5,
+        "z": 0.25,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "06_front_dark",
+  "label": "04 + storm lighting: sunExtinction 1.6, ambientStrength 0.6, msAlbedo 0.994, densityScale 1.0, wide bases.",
+  "look_for": "The storm region reads dark and heavy. Note the fair region darkens with it (lighting is global, not per region).",
+  "scene": "per-weather scene: ranges yes; the gain layers must read slot 1 GLOBALLY (harmless while their output stays 1..1)",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 4000.0,
+     "densityScale": 1.0,
+     "bottomSpreadScale": 1.0,
+     "bottomSpreadHeight": 0.15
+    },
+    "lighting": {
+     "sunExtinction": 1.6,
+     "ambientStrength": 0.6,
+     "msAlbedo": 0.994
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "coverageGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.65,
+        "w": 1.0
+       }
+      },
+      "modelingGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.03,
+        "w": 1.0
+       }
+      },
+      "primary": {
+       "range": {
+        "x": 0.1,
+        "y": 0.65,
+        "z": 0.0,
+        "w": 1.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.5,
+        "z": 0.25,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "07_front_flat_far",
+  "label": "04 with curvatureRadius 300 km (live 74.9): the cloud layer no longer sinks towards the horizon.",
+  "look_for": "Far cells (10-30 km) stay above the terrain horizon and stack up into a wall; near cells unchanged. Does the far deck look like a ceiling?",
+  "scene": "per-weather scene: ranges yes; the gain layers must read slot 1 GLOBALLY (harmless while their output stays 1..1); curvatureRadius is a float (a transition tilts the far field)",
+  "cost": "HIGHER: far rays stay in the slab longer",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 4000.0,
+     "curvatureRadius": 300.0
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "coverageGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.65,
+        "w": 1.0
+       }
+      },
+      "modelingGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.03,
+        "w": 1.0
+       }
+      },
+      "primary": {
+       "range": {
+        "x": 0.1,
+        "y": 0.65,
+        "z": 0.0,
+        "w": 1.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.5,
+        "z": 0.25,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "name": "08_front_plus_band",
+  "label": "04 + 02: ray-marched front and the dark horizon band behind it.",
+  "look_for": "Depth: near towers in front of a far storm line. Do the two layers match in colour and darkness?",
+  "scene": "per-weather scene: ranges yes; the gain layers must read slot 1 GLOBALLY (harmless while their output stays 1..1)",
+  "cost": "HIGH (thick slab)",
+  "weather": "SunnyPF",
+  "settle": 14,
+  "set": {
+   "cloudLayer": {
+    "low": {
+     "ndfAltitudeOffset": 1000.0,
+     "ndfAltitudeScale": 4000.0
+    },
+    "horizon": {
+     "enabled": true,
+     "pleasantAmount": 1.0,
+     "coverage": 0.7,
+     "type": 0.0,
+     "baseAltitude": 900.0,
+     "topAltitude": 9000.0,
+     "distance": 45.0,
+     "density": 2.0,
+     "shade": 8.0,
+     "sunlit": 0.3
+    }
+   },
+   "cloudMap": {
+    "procedural": {
+     "parameters": {
+      "coverageGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.65,
+        "w": 1.0
+       }
+      },
+      "modelingGain": {
+       "noise": 1,
+       "frequency": 0.5,
+       "exponent": 1.0,
+       "offset": {
+        "x": 0.0,
+        "y": 0.0
+       },
+       "range": {
+        "x": -0.25,
+        "y": 0.1,
+        "z": 0.03,
+        "w": 1.0
+       }
+      },
+      "primary": {
+       "range": {
+        "x": 0.1,
+        "y": 0.65,
+        "z": 0.0,
+        "w": 1.0
+       }
+      },
+      "modeling": {
+       "range": {
+        "x": -0.5,
+        "y": 0.5,
+        "z": 0.25,
+        "w": 1.0
+       },
+       "exponent": 1.0
+      }
+     }
+    }
+   }
+  }
+ }
+]

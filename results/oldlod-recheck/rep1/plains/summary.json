@@ -1,0 +1,55 @@
+{
+ "label": "oldlod-recheck",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "0c47719abf",
+ "time": "2026-11-22 18:14:38",
+ "render": {
+  "frames": 581,
+  "mean": 25.92,
+  "fps": 38.6,
+  "p50": 25.83,
+  "p95": 27.15,
+  "p99": 32.26,
+  "max": 62.2,
+  "over50": 1,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.88,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 1311,
+   "mean": 12.93,
+   "fps": 77.4,
+   "p50": 12.73,
+   "p95": 13.71,
+   "p99": 14.21,
+   "max": 33.7,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 1311,
+   "mean": 12.92,
+   "fps": 77.4,
+   "p50": 12.7,
+   "p95": 14.36,
+   "p99": 16.02,
+   "max": 33.1,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 1311
+  }
+ }
+}

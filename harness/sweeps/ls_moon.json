@@ -1,0 +1,245 @@
+[
+ {
+  "name": "00_off",
+  "features": {
+   "LightShafts": {
+    "Enabled": false,
+    "SunStrength": 0.1,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "01_moon_strength_0.1",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 0.1,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "02_moon_strength_0.3",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 0.3,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "03_moon_strength_1",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 1.0,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "04_moon_strength_1_density_4",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 1.0,
+    "Density": 4.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "05_moon_strength_1_cloud_occlusion_0",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 1.0,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 0.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "06_moon_strength_1_silhouette_1",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 1.0,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 1.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "07_moon_debug_beams_only",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 1.0,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 2,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "CloudyPF",
+  "settle": 14
+ },
+ {
+  "name": "08_moon_strength_1_clear",
+  "features": {
+   "LightShafts": {
+    "Enabled": true,
+    "SunStrength": 0.1,
+    "MoonStrength": 1.0,
+    "Density": 1.0,
+    "Length": 50.0,
+    "Tightness": 0.6,
+    "CloudOcclusion": 1.0,
+    "MaxBrightness": 1.0,
+    "Quality": 1,
+    "DebugView": 0,
+    "DistantStrength": 1.0,
+    "DistantLength": 1500.0,
+    "HighSunStrength": 0.5,
+    "VeilRemoval": 1.0,
+    "SilhouetteRays": 0.0
+   },
+   "Effects11": {
+    "StandaloneRays": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

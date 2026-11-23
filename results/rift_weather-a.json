@@ -1,0 +1,259 @@
+{
+ "samples": [
+  {
+   "hour": 12.1,
+   "weather": {
+    "editorID": "CloudyPF",
+    "formID": "0x00012F89"
+   },
+   "outgoing": null,
+   "pct": 1.0
+  },
+  {
+   "hour": 13.1,
+   "weather": {
+    "editorID": "CloudyPF",
+    "formID": "0x00012F89"
+   },
+   "outgoing": null,
+   "pct": 1.0
+  },
+  {
+   "hour": 17.1,
+   "weather": {
+    "editorID": "CloudyPF",
+    "formID": "0x00012F89"
+   },
+   "outgoing": null,
+   "pct": 1.0
+  },
+  {
+   "hour": 9.1,
+   "weather": {
+    "editorID": "OvercastPF",
+    "formID": "0x2D0053B6"
+   },
+   "outgoing": {
+    "editorID": "CloudyPF",
+    "formID": "0x00012F89"
+   },
+   "pct": 0.5985308289527893
+  },
+  {
+   "hour": 13.1,
+   "weather": {
+    "editorID": "OvercastPF",
+    "formID": "0x2D0053B6"
+   },
+   "outgoing": null,
+   "pct": 1.0
+  },
+  {
+   "hour": 17.1,
+   "weather": {
+    "editorID": "OvercastPF",
+    "formID": "0x2D0053B6"
+   },
+   "outgoing": null,
+   "pct": 1.0
+  }
+ ],
+ "shots": [
+  "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftweather-a-2_2026-11-21_19-55-39_602.png",
+  "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftweather-a-5_2026-11-21_19-56-55_182.png"
+ ],
+ "ExponentialHeightFog": {
+  "cubemapMipLevel": 8.0,
+  "directionalInscatteringAnisotropy": -0.04899999871850014,
+  "directionalInscatteringMultiplier": 1.5,
+  "disableVanillaFog": 1,
+  "distanceHazeFadeDistance": 60000.0,
+  "distanceHazeMaxOpacity": 0.029999999329447746,
+  "distanceHazeStartDistance": 15000.0,
+  "enabled": 1,
+  "fogDensity": 0.004999999888241291,
+  "fogDensity2": 0.00800000037997961,
+  "fogHeight": 182.0,
+  "fogHeight2": -4915.89990234375,
+  "fogHeightFalloff": 0.20000000298023224,
+  "fogHeightFalloff2": 1.5180000066757202,
+  "fogInscatteringColor": [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "fogLightingInfluence": 0.699999988079071,
+  "inscatteringTint": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "originalFogColorAmount": 0.0,
+  "originalFogColorOverride": [
+   1.0,
+   1.0,
+   1.0,
+   0.0
+  ],
+  "respectVanillaFogFade": 1,
+  "startDistance": 0.0,
+  "sunlightAttenuationAmount": 1.0,
+  "useDynamicCubemaps": 1,
+  "useSkyIBL": 1,
+  "useVanillaFogSettings": 1,
+  "vanillaFogStrength": 0.10000000149011612,
+  "volumetricDirectionalScatteringIntensity": 2.059999942779541,
+  "volumetricFogAlbedo": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "volumetricFogEmissive": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "volumetricFogEnabled": 0,
+  "volumetricFogExtinctionScale": 0.7699999809265137,
+  "volumetricFogNearFadeInDistance": 1000.0,
+  "volumetricFogNoiseScale": 0.00044100001105107367,
+  "volumetricFogNoiseThreshold": 0.4099999964237213,
+  "volumetricFogNoiseVelocity": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "volumetricFogScatteringDistribution": -0.029999999329447746,
+  "volumetricFogStartDistance": 0.0,
+  "volumetricLocalLightScatteringIntensity": 1.2999999523162842,
+  "volumetricSkyLightingIntensity": 1.590000033378601
+ },
+ "VolumetricLighting": {
+  "Effects11Priority": 2,
+  "ExteriorCustomSize": {
+   "Depth": 130,
+   "Height": 256,
+   "Width": 288
+  },
+  "ExteriorDayHaze": 0.30000001192092896,
+  "ExteriorEnabled": true,
+  "ExteriorNightHaze": 0.03999999910593033,
+  "ExteriorNightStrength": 1.399999976158142,
+  "ExteriorQuality": 1,
+  "ExteriorShaftDefinition": 1.0,
+  "ExteriorStrength": 1.399999976158142,
+  "ExteriorSunFocus": 1.0,
+  "InteriorCustomSize": {
+   "Depth": 90,
+   "Height": 192,
+   "Width": 320
+  },
+  "InteriorEnabled": true,
+  "InteriorHaze": 1.0,
+  "InteriorQuality": 1,
+  "InteriorShaftDefinition": 0.0,
+  "InteriorStrength": 1.0,
+  "InteriorSunFocus": 1.0
+ },
+ "GroundFog": {
+  "Albedo": 0.9700000286102295,
+  "Amount": 1.0,
+  "BankScale": 115.0,
+  "BankStrength": 1.0,
+  "BasinStrength": 2.5,
+  "Breathing": 0.25,
+  "BurnOffStrength": 1.0,
+  "CanopyShade": 1.0,
+  "CloudDarkening": 0.75,
+  "Density": 0.004999999888241291,
+  "DownhillFlow": 1.0,
+  "DriftScale": 2.5,
+  "DriftStrength": 0.8999999761581421,
+  "Enabled": true,
+  "EveningAmount": 1.0,
+  "FadeEnd": 430.0,
+  "FadeStart": 86.0,
+  "FarAmount": 1.0,
+  "FarDensity": 0.001500000013038516,
+  "FarEnd": 6000.0,
+  "FarThickness": 15.0,
+  "FloorMaxHeight": 4.0,
+  "ForwardScatter": 0.6000000238418579,
+  "GroundFill": 0.25,
+  "HalfResolution": true,
+  "ImpulseStrength": 1.0,
+  "MaxSteps": 72,
+  "MiddayAmount": 0.10000000149011612,
+  "MorningAmount": 1.399999976158142,
+  "MultipleScatter": 0.6000000238418579,
+  "NearDensity": 0.0,
+  "NearDistance": 40.0,
+  "NearFalloff": 1.5,
+  "NearThickness": 0.8999999761581421,
+  "NearVolume": true,
+  "NoiseScale": 13.0,
+  "NoiseStrength": 1.0,
+  "PoolOpacity": 0.550000011920929,
+  "Pooling": 0.0,
+  "Reactive": true,
+  "ReactiveStrength": 1.0,
+  "SelfShadow": 1.0,
+  "SettleTime": 25.0,
+  "ShadowRetention": 0.44999998807907104,
+  "ShoreSoftness": 0.6000000238418579,
+  "SkyAmbientScale": 1.0,
+  "Steepness": 3.0,
+  "StepGrowth": 0.30000001192092896,
+  "SunDiffusion": 0.30000001192092896,
+  "SunLimit": 1.0,
+  "SunScale": 1.0,
+  "SurfaceBlendDistance": 3.0,
+  "SurfaceMaxHeight": 1.0,
+  "SurfaceSoftness": 0.5,
+  "Swirl": 1.0,
+  "Thickness": 1.5,
+  "VolumeInjection": false,
+  "WakeTime": 6.0,
+  "WaterPatchiness": 0.699999988079071,
+  "WaterPreference": 0.0,
+  "WindDriftSpeed": 1.5,
+  "WindResponse": 0.699999988079071,
+  "WispScale": 4.0,
+  "Wispiness": 1.0
+ },
+ "PhysicalSky": {
+  "aerosolAbsorption": [
+   0.13269959390163422,
+   0.14655999839305878,
+   0.16040681302547455
+  ],
+  "aerosolFalloff": 0.8333333134651184,
+  "aerosolHumidity": 50.0,
+  "aerosolLoading": 0.20000000298023224,
+  "aerosolPhaseG": 0.6164173483848572,
+  "aerosolScatter": [
+   2.5221140384674072,
+   3.4189000129699707,
+   4.575206279754639
+  ],
+  "aerosolType": 1,
+  "apLumMix": 1.0,
+  "apTrMix": 1.0,
+  "ozoneAbsorption": [
+   2.291100025177002,
+   1.5404000282287598,
+   0.0
+  ],
+  "ozoneAbsorptionAP1": [
+   2.2499001026153564,
+   1.6601999998092651,
+   0.0
+  ],
+  "ozoneAltitude": 40.18025207519531,
+  "ozoneThickness": 35.660709381103516
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "0_as_is": {
+  "render": {
+   "frames": 328,
+   "mean": 37.11,
+   "fps": 26.9,
+   "p50": 38.19,
+   "p95": 48.6,
+   "p99": 53.73,
+   "max": 96.4,
+   "over50": 11,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "presented": {
+   "error": "no data (PresentMon needs admin or Performance Log Users)"
+  },
+  "tally": {
+   "pushed": 118,
+   "shadowLights": 10,
+   "keptLocalShadow": 6,
+   "localShadowCacheActive": true
+  }
+ },
+ "1_local_shadows_off": {
+  "render": {
+   "frames": 658,
+   "mean": 18.44,
+   "fps": 54.2,
+   "p50": 17.89,
+   "p95": 22.97,
+   "p99": 25.82,
+   "max": 27.3,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "presented": {
+   "error": "no data (PresentMon needs admin or Performance Log Users)"
+  },
+  "tally": {
+   "pushed": 110,
+   "shadowLights": 10,
+   "keptLocalShadow": 0,
+   "localShadowCacheActive": false
+  }
+ },
+ "2_nr_off": {
+  "render": {
+   "frames": 571,
+   "mean": 21.37,
+   "fps": 46.8,
+   "p50": 16.05,
+   "p95": 44.31,
+   "p99": 49.72,
+   "max": 54.3,
+   "over50": 4,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "presented": {
+   "error": "no data (PresentMon needs admin or Performance Log Users)"
+  },
+  "tally": {
+   "pushed": 118,
+   "shadowLights": 10,
+   "keptLocalShadow": 1,
+   "localShadowCacheActive": true
+  }
+ },
+ "3_nr_off_and_local_shadows_off": {
+  "render": {
+   "frames": 329,
+   "mean": 36.99,
+   "fps": 27.0,
+   "p50": 36.25,
+   "p95": 46.98,
+   "p99": 50.41,
+   "max": 90.2,
+   "over50": 6,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "presented": {
+   "error": "no data (PresentMon needs admin or Performance Log Users)"
+  },
+  "tally": {
+   "pushed": 113,
+   "shadowLights": 10,
+   "keptLocalShadow": 0,
+   "localShadowCacheActive": false
+  }
+ }
+}

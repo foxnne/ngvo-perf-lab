@@ -1,0 +1,9 @@
+00_live                                  slab 1200..2100 m  cover   5%  solid   0%  body thickness med   70 p90  106 m  top p90 1351 m  top type med 0.10 p90 0.21
+01_band_towers                           slab 1200..2100 m  cover   5%  solid   0%  body thickness med   70 p90  106 m  top p90 1351 m  top type med 0.10 p90 0.21
+02_band_dark                             slab 1200..2100 m  cover   5%  solid   0%  body thickness med   70 p90  106 m  top p90 1351 m  top type med 0.10 p90 0.21
+03_band_wall                             slab 1200..2100 m  cover   5%  solid   0%  body thickness med   70 p90  106 m  top p90 1351 m  top type med 0.10 p90 0.21
+04_front_mask                            slab 1000..5000 m  cover  10%  solid   2%  body thickness med  234 p90 2648 m  top p90 3866 m  top type med 0.02 p90 0.63
+05_front_shifted                         slab 1000..5000 m  cover  11%  solid   2%  body thickness med  235 p90 3022 m  top p90 4102 m  top type med 0.02 p90 0.69
+06_front_dark                            slab 1000..5000 m  cover  13%  solid   1%  body thickness med  157 p90 2103 m  top p90 3629 m  top type med 0.02 p90 0.63
+07_front_flat_far                        slab 1000..5000 m  cover  10%  solid   2%  body thickness med  234 p90 2648 m  top p90 3866 m  top type med 0.02 p90 0.63
+08_front_plus_band                       slab 1000..5000 m  cover  10%  solid   2%  body thickness med  234 p90 2648 m  top p90 3866 m  top type med 0.02 p90 0.63

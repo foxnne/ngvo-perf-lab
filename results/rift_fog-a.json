@@ -1,0 +1,50 @@
+[
+ {
+  "hour": 6.5,
+  "variant": "all_on",
+  "weather": "SClearSkyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h6.5-all_on_2026-11-21_20-16-47_153.png"
+ },
+ {
+  "hour": 6.5,
+  "variant": "ground_fog_off",
+  "weather": "SClearSkyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h6.5-ground_fog_off_2026-11-21_20-16-55_620.png"
+ },
+ {
+  "hour": 6.5,
+  "variant": "vol_lighting_off",
+  "weather": "SClearSkyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h6.5-vol_lighting_off_2026-11-21_20-17-09_091.png"
+ },
+ {
+  "hour": 6.5,
+  "variant": "height_fog_off",
+  "weather": "SClearSkyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h6.5-height_fog_off_2026-11-21_20-17-22_631.png"
+ },
+ {
+  "hour": 18.5,
+  "variant": "all_on",
+  "weather": "CloudyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h18.5-all_on_2026-11-21_20-17-58_093.png"
+ },
+ {
+  "hour": 18.5,
+  "variant": "ground_fog_off",
+  "weather": "CloudyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h18.5-ground_fog_off_2026-11-21_20-18-06_557.png"
+ },
+ {
+  "hour": 18.5,
+  "variant": "vol_lighting_off",
+  "weather": "CloudyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h18.5-vol_lighting_off_2026-11-21_20-18-20_026.png"
+ },
+ {
+  "hour": 18.5,
+  "variant": "height_fog_off",
+  "weather": "CloudyPF",
+  "shot": "C:\\modlists\\NGVO 8.0 Beta\\Stock Game\\Screenshots\\CS_riftfog-a-h18.5-height_fog_off_2026-11-21_20-18-33_528.png"
+ }
+]

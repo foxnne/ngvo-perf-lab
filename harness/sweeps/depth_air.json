@@ -1,0 +1,136 @@
+[
+ {
+  "name": "00_saved_base",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "01_air_x2",
+  "set": {
+   "rayleighScatter": [
+    13.2098,
+    24.69,
+    58.826
+   ],
+   "rayleighScatterAP1": [
+    13.8688,
+    24.0406,
+    57.82
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "02_air_x3",
+  "set": {
+   "rayleighScatter": [
+    19.8147,
+    37.035000000000004,
+    88.239
+   ],
+   "rayleighScatterAP1": [
+    20.8032,
+    36.060900000000004,
+    86.73
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "03_air_x4.5",
+  "set": {
+   "rayleighScatter": [
+    29.72205,
+    55.5525,
+    132.3585
+   ],
+   "rayleighScatterAP1": [
+    31.2048,
+    54.091350000000006,
+    130.095
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "04_air_x3_haze_0.3",
+  "set": {
+   "rayleighScatter": [
+    19.8147,
+    37.035000000000004,
+    88.239
+   ],
+   "rayleighScatterAP1": [
+    20.8032,
+    36.060900000000004,
+    86.73
+   ],
+   "aerosolLoading": 0.3
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "05_air_x3_thinner_air_layer",
+  "set": {
+   "rayleighScatter": [
+    19.8147,
+    37.035000000000004,
+    88.239
+   ],
+   "rayleighScatterAP1": [
+    20.8032,
+    36.060900000000004,
+    86.73
+   ],
+   "rayleighFalloff": 0.3333333333333333
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "06_old_base_haze_0.4_fog_0.3",
+  "set": {
+   "aerosolLoading": 0.4
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.3
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "07_air_x3_fog_0.2",
+  "set": {
+   "rayleighScatter": [
+    19.8147,
+    37.035000000000004,
+    88.239
+   ],
+   "rayleighScatterAP1": [
+    20.8032,
+    36.060900000000004,
+    86.73
+   ]
+  },
+  "features": {
+   "ExponentialHeightFog": {
+    "vanillaFogStrength": 0.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

@@ -1,0 +1,28 @@
+[
+ {
+  "outside_set": "SunnyPF",
+  "outside_read": "SClearSkyTU",
+  "inside": "Helios_SClearSkyPF",
+  "stats": {
+   "mean": 0.259,
+   "p1": 0.071,
+   "p50": 0.207,
+   "p99": 0.987,
+   "clip%": 2.08,
+   "sat": 0.268
+  }
+ },
+ {
+  "outside_set": "SunnyTU",
+  "outside_read": "SClearSkyTU",
+  "inside": "Helios_SClearSkyPF",
+  "stats": {
+   "mean": 0.209,
+   "p1": 0.064,
+   "p50": 0.136,
+   "p99": 0.709,
+   "clip%": 0.02,
+   "sat": 0.394
+  }
+ }
+]

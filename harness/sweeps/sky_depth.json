@@ -1,0 +1,242 @@
+[
+ {
+  "name": "0_now",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "1_blue_band_sat_0.2_lum_-0.1",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "BandBlue": [
+       0.0,
+       0.2,
+       -0.1
+      ],
+      "BandAqua": [
+       0.0,
+       0.1,
+       -0.05
+      ]
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "2_blue_band_sat_0.35_lum_-0.2",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "BandBlue": [
+       0.0,
+       0.35,
+       -0.2
+      ],
+      "BandAqua": [
+       0.0,
+       0.2,
+       -0.1
+      ]
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "3_tonemap_colour_restored",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "4_tonemap_restored_blue_0.2",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "BandBlue": [
+       0.0,
+       0.2,
+       -0.1
+      ],
+      "BandAqua": [
+       0.0,
+       0.1,
+       -0.05
+      ]
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "5_as4_highlights_1.0_shoulder",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "BandBlue": [
+       0.0,
+       0.2,
+       -0.1
+      ],
+      "BandAqua": [
+       0.0,
+       0.1,
+       -0.05
+      ],
+      "Highlights": 1.0,
+      "ShoulderStrength": 0.5,
+      "ShoulderStart": 0.6
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "6_as5_exposure_0.6",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Color Grading and Tone Mapping": {
+     "settings": {
+      "tonemapParams": [
+       [
+        1.0,
+        0.88,
+        1.0,
+        0.96
+       ],
+       [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+       ]
+      ],
+      "oklchSaturation": [
+       0.92,
+       1.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "BandBlue": [
+       0.0,
+       0.2,
+       -0.1
+      ],
+      "BandAqua": [
+       0.0,
+       0.1,
+       -0.05
+      ],
+      "Highlights": 1.0,
+      "ShoulderStrength": 0.5,
+      "ShoulderStart": 0.6,
+      "Exposure": 0.6
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {"name": "0_now", "set": {}, "features": {}, "weather": "SunnyPF", "settle": 16},
+ {"name": "1_baseline_d12_ungraded", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "2_baseline_nr_0.8", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}, "NeuralRendering": {"intensity": 0.8, "localStructureStrength": 1.0}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "3_baseline_nr_0.8_heightfog_off", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}, "LUT": {"enabled": false}}, "NeuralRendering": {"intensity": 0.8, "localStructureStrength": 1.0}, "ExponentialHeightFog": {"fogHeight": 0.0, "volumetricFogExtinctionScale": 1.0}}, "weather": "SunnyPF", "settle": 16},
+ {"name": "4_baseline_nr_0.8_lut_soft", "set": {}, "features": {"ViewAtmosphere": {"distanceExaggeration": 12.0, "distanceExaggerationStart": 150.0, "distanceExaggerationFull": 1500.0}, "PostProcessing": {"Look Grade": {"enabled": false}}, "NeuralRendering": {"intensity": 0.8, "localStructureStrength": 1.0}}, "weather": "SunnyPF", "settle": 16}
+]

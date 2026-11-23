@@ -1,0 +1,21 @@
+{
+ "CollisionDistance": 2048.0,
+ "CostBiasStartDistance": 12000.0,
+ "EdgeFadeStart": 0.8500000238418579,
+ "EnableFarLOD": true,
+ "EnableMeshLOD": true,
+ "EnableMidLOD": true,
+ "EnableOcclusionCulling": true,
+ "FarLODPixelSize": 3.0,
+ "FullDetailPixelSize": 3.0,
+ "InvisibleFadeCull": 0.0,
+ "MeshCostBias": 0.0,
+ "MeshLODBandPixels": 3.0,
+ "MidLODPixelSize": 3.0,
+ "MinDensity": 1.0,
+ "MinPixelSize": 0.30000001192092896,
+ "OcclusionDepthBias": 0.019999999552965164,
+ "OcclusionTightness": 0.8999999761581421,
+ "RenderDistanceOverride": 131072.0,
+ "SimpleShadingPixelSize": 8.0
+}

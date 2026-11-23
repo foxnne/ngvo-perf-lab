@@ -1,0 +1,90 @@
+[
+ {
+  "name": "0_valley_fog_as_now_25m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_valley_12m_same_look_per_metre",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarThickness": 12.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "2_valley_12m_denser",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarThickness": 12.0,
+    "FarDensity": 0.006
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "3_valley_6m_denser",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarThickness": 6.0,
+    "FarDensity": 0.012
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "4_valley_6m_much_denser",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarThickness": 6.0,
+    "FarDensity": 0.025
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "5_valley_5m_dense_steeper_falloff",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarThickness": 5.0,
+    "FarDensity": 0.03,
+    "Steepness": 5.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "6_valley_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "FarAmount": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

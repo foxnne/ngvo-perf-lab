@@ -1,0 +1,29 @@
+[
+ {
+  "name": "0_range8",
+  "set": {
+   "shadowVolumeRange": 8.0
+  },
+  "features": {},
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_range16",
+  "set": {
+   "shadowVolumeRange": 16.0
+  },
+  "features": {},
+  "weather": "CloudyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_range16_sunny",
+  "set": {
+   "shadowVolumeRange": 16.0
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 16
+ }
+]

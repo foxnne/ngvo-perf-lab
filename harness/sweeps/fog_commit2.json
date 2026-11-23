@@ -1,0 +1,52 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_density_1.2",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 1.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "2_density_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 0.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "3_density_2.5_natural_morning",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ }
+]

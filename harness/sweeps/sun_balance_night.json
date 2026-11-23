@@ -1,0 +1,197 @@
+[
+ {
+  "name": "0_now",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 0
+   }
+  }
+ },
+ {
+  "name": "1_fog_light_from_sky",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 1
+   }
+  }
+ },
+ {
+  "name": "2_fog_sky_moons_matched",
+  "set": {
+   "masserColor": [
+    0.019,
+    0.0115,
+    0.0115
+   ],
+   "secundaColor": [
+    0.0076,
+    0.0095,
+    0.0095
+   ]
+  },
+  "features": {
+   "SkySync": {
+    "FullMoonIntensity": 1.0,
+    "CrescentMoonIntensity": 0.6,
+    "NewMoonIntensity": 0.15
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 1
+   }
+  }
+ },
+ {
+  "name": "3_moons_x2",
+  "set": {
+   "masserColor": [
+    0.038,
+    0.023,
+    0.023
+   ],
+   "secundaColor": [
+    0.0152,
+    0.019,
+    0.019
+   ]
+  },
+  "features": {
+   "SkySync": {
+    "FullMoonIntensity": 1.0,
+    "CrescentMoonIntensity": 0.6,
+    "NewMoonIntensity": 0.15
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 1
+   }
+  }
+ },
+ {
+  "name": "4_moons_x4",
+  "set": {
+   "masserColor": [
+    0.076,
+    0.046,
+    0.046
+   ],
+   "secundaColor": [
+    0.0304,
+    0.038,
+    0.038
+   ]
+  },
+  "features": {
+   "SkySync": {
+    "FullMoonIntensity": 1.0,
+    "CrescentMoonIntensity": 0.6,
+    "NewMoonIntensity": 0.15
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 1
+   }
+  }
+ },
+ {
+  "name": "5_moons_x4_minvis_0.1_stars_1",
+  "set": {
+   "masserColor": [
+    0.076,
+    0.046,
+    0.046
+   ],
+   "secundaColor": [
+    0.0304,
+    0.038,
+    0.038
+   ]
+  },
+  "features": {
+   "SkySync": {
+    "FullMoonIntensity": 1.0,
+    "CrescentMoonIntensity": 0.6,
+    "NewMoonIntensity": 0.15
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ProceduralNightSky": {
+    "starIntensity": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 1
+   }
+  }
+ },
+ {
+  "name": "6_as5_night_exposure_-1",
+  "set": {
+   "masserColor": [
+    0.076,
+    0.046,
+    0.046
+   ],
+   "secundaColor": [
+    0.0304,
+    0.038,
+    0.038
+   ]
+  },
+  "features": {
+   "SkySync": {
+    "FullMoonIntensity": 1.0,
+    "CrescentMoonIntensity": 0.6,
+    "NewMoonIntensity": 0.15
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ProceduralNightSky": {
+    "starIntensity": 1.0
+   },
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "NightExposureCompensation": -1.0
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18,
+  "shader": {
+   "file": "ViewAtmosphere/LightScattering.cs.hlsl",
+   "defines": {
+    "HEIGHT_FOG_LIGHT_FROM_SKY": 1
+   }
+  }
+ }
+]

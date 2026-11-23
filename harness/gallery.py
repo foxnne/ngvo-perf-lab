@@ -10,10 +10,16 @@ def latest(sub):
     d = os.path.join(RES, sub)
     tags = sorted((t for t in os.listdir(d) if os.path.isdir(os.path.join(d, t))), key=lambda t: os.path.getmtime(os.path.join(d, t))) if os.path.isdir(d) else []
     return f'{sub}/{tags[-1]}' if tags else sub
-SETS = [('Neural Rendering 100% vs 75%: native-resolution face crops (tap, then zoom)', ['npc_portraits/nr_100_vs_75_front.png', 'npc_portraits/nr_100_vs_75_three_quarter_left.png', 'npc_portraits/preset_compare_crops.png']),
-        ('Chosen reference views', ['viewfinder_west/ilinalta_up1100_yaw252.png', 'viewfinder_plains/plains_up0700_yaw270.png']),
-        ('Cloud preset, latest pass: ' + os.path.basename(latest('sky_preset')), latest('sky_preset')),
-        ('NPC portraits (Neural Rendering on, pass p4)', 'npc_portraits/p4')]
+SETS = [('Fair-weather skies, 13:00 (per-weather pass 3): clear, fair, partly cloudy, rain', ['sky_sweep/p3b-day/00_clear_SClearSkyPF__h13.png', 'sky_sweep/p3b-day/01_fair_SunnyPF__h13.png', 'sky_sweep/p3b-day/02_partly_CloudyPF__h13.png', 'sky_sweep/p3b-day/04_rain_RainPF__h13.png']),
+        ('Same skies at 17:30', ['sky_sweep/p3b-sunset/00_clear_SClearSkyPF__h17.5.png', 'sky_sweep/p3b-sunset/01_fair_SunnyPF__h17.5.png', 'sky_sweep/p3b-sunset/02_partly_CloudyPF__h17.5.png', 'sky_sweep/p3b-sunset/04_rain_RainPF__h17.5.png']),
+        ('Sunset colour test, 18:00: as now / air x3 / air x3 + ozone x3 + haze x2', ['sky_sweep/sunsetcol/0_partly_cloudy_base__h18.png', 'sky_sweep/sunsetcol/2_air_x3__h18.png', 'sky_sweep/sunsetcol/6_air_x3_ozone_x3_haze_x2__h18.png']),
+        ('Sunset clouds, 18:20: reference / half cloud ambient / higher cloud base', ['sky_sweep/sunsetcloud/0_air_x2_reference__h18.3.png', 'sky_sweep/sunsetcloud/1_less_ambient_0.5__h18.3.png', 'sky_sweep/sunsetcloud/6_higher_base_2000__h18.3.png']),
+        ('Night and aurora (latest run)', 'sky_sweep/night-plains'),
+        ('Storm clouds under the rain weather (before the heavy-sky build): 13:00 and 17:30', ['sky_sweep/clone-day/05_storm_StormPF__h13.png', 'sky_sweep/clone-sunset/05_storm_StormPF__h17.5.png']),
+        ('Valley fog height, 13:00: as built (25 m) / chosen (6 m, denser) / off', ['sky_sweep/valleylow/0_valley_fog_as_now_25m__h13.png', 'sky_sweep/valleylow/3_valley_6m_denser__h13.png', 'sky_sweep/valleylow/6_valley_off__h13.png']),
+        ('Distance exaggeration, 13:00 and 17:30: off / level 12 with the higher cap', ['sky_sweep/distlim-plains/k01_off__h13.png', 'sky_sweep/distlim-plains/k12_limit_5.0__h13.png', 'sky_sweep/distlim-plains/k01_off__h17.5.png', 'sky_sweep/distlim-plains/k12_limit_5.0__h17.5.png']),
+        ('Giant Whiterun tree with its own wind profile', ['sky_sweep/canopy2/00_as_is__h13.png']),
+        ('Comparison sheets sent in chat', ['ask/valley_fog_height_13h.jpg', 'ask/rays_whiterun_4.jpg', 'ask/sun_rays_half_moon_mill.jpg'])]
 EXT = ('.png', '.avif', '.jxr', '.jpg')
 body = []
 KEEP = set()                                           # files this build publishes; everything else is pruned at the end (no wipe first: a wipe left thumbnails missing while a page was open)

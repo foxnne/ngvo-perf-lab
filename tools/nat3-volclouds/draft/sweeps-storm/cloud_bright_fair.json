@@ -1,0 +1,81 @@
+[
+ {
+  "name": "f0_fair_saved",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {}
+ },
+ {
+  "name": "f1_brightness_1p3",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {
+   "cloudLayer": {
+    "lighting": {
+     "brightness": 1.3
+    }
+   }
+  }
+ },
+ {
+  "name": "f2_brightness_1p6",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {
+   "cloudLayer": {
+    "lighting": {
+     "brightness": 1.6
+    }
+   }
+  }
+ },
+ {
+  "name": "f3_brightness_2",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {
+   "cloudLayer": {
+    "lighting": {
+     "brightness": 2.0
+    }
+   }
+  }
+ },
+ {
+  "name": "f4_sunext_0p6",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {
+   "cloudLayer": {
+    "lighting": {
+     "sunExtinction": 0.6
+    }
+   }
+  }
+ },
+ {
+  "name": "f5_ms_1p5",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {
+   "cloudLayer": {
+    "lighting": {
+     "msStrength": 1.5
+    }
+   }
+  }
+ },
+ {
+  "name": "f6_bright_1p4_sunext_0p7",
+  "weather": "SunnyPF",
+  "settle": 10,
+  "set": {
+   "cloudLayer": {
+    "lighting": {
+     "brightness": 1.4,
+     "sunExtinction": 0.7
+    }
+   }
+  }
+ }
+]

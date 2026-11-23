@@ -1,0 +1,10 @@
+{
+ "deactivate": [
+  "DynDOLOD.esm",
+  "DynDOLOD.esp"
+ ],
+ "append": [
+  "PenguLOD.esp",
+  "Occlusion.esp"
+ ]
+}

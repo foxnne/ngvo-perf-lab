@@ -1,0 +1,29 @@
+{
+ "label": "N7-fogrun",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "1f73d57483",
+ "time": "2026-11-19 22:48:37",
+ "render": {
+  "frames": 1133,
+  "mean": 51.29,
+  "fps": 19.5,
+  "p50": 58.75,
+  "p95": 70.6,
+  "p99": 78.73,
+  "max": 159.4,
+  "over50": 594,
+  "over100": 3,
+  "over250": 0,
+  "stall_ms": 377
+ },
+ "main_cpu_ms": 46.83,
+ "fg_share": 1.0,
+ "distance": 16601,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1450
+}

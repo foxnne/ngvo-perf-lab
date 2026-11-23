@@ -1,0 +1,149 @@
+[
+ {
+  "name": "0_now_grade_ev_0.8",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "1_exposure_before_tonemap",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.0
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -2.01,
+      "InteriorExposureCompensation": 0.8,
+      "NightExposureCompensation": 0.4
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "2_as1_bright_scene_compression_0.5",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.0
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -2.01,
+      "InteriorExposureCompensation": 0.8,
+      "NightExposureCompensation": 0.4,
+      "BrightSceneCompression": 0.5,
+      "BrightSceneKneeEV": 3.0
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "3_as2_bloom_0.05",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.0
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -2.01,
+      "InteriorExposureCompensation": 0.8,
+      "NightExposureCompensation": 0.4,
+      "BrightSceneCompression": 0.5,
+      "BrightSceneKneeEV": 3.0
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "BlendFactor": 0.05
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "4_as3_interior_minus_0.7",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.0
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -2.01,
+      "InteriorExposureCompensation": 0.1,
+      "NightExposureCompensation": 0.4,
+      "BrightSceneCompression": 0.5,
+      "BrightSceneKneeEV": 3.0
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "BlendFactor": 0.05
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "5_as4_grade_shoulder",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "Look Grade": {
+     "settings": {
+      "Exposure": 0.0,
+      "Highlights": 1.0,
+      "ShoulderStrength": 0.5,
+      "ShoulderStart": 0.65
+     }
+    },
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -2.01,
+      "InteriorExposureCompensation": 0.1,
+      "NightExposureCompensation": 0.4,
+      "BrightSceneCompression": 0.5,
+      "BrightSceneKneeEV": 3.0
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "BlendFactor": 0.05
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ }
+]

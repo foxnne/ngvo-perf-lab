@@ -1,0 +1,57 @@
+{
+ "label": "perf-lod4-60k",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "57c7fcd2d1",
+ "time": "2026-11-21 22:07:39",
+ "render": {
+  "frames": 1853,
+  "mean": 31.42,
+  "fps": 31.8,
+  "p50": 30.96,
+  "p95": 33.78,
+  "p99": 45.52,
+  "max": 73.0,
+  "over50": 13,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 29.25,
+ "fg_share": 1.0,
+ "distance": 17552,
+ "cells": 6,
+ "presented": {
+  "present": {
+   "frames": 3827,
+   "mean": 15.66,
+   "fps": 63.8,
+   "p50": 15.41,
+   "p95": 17.08,
+   "p99": 21.96,
+   "max": 46.4,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 3827,
+   "mean": 15.66,
+   "fps": 63.8,
+   "p50": 15.4,
+   "p95": 17.77,
+   "p99": 22.37,
+   "max": 46.8,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 3827
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 1304
+}

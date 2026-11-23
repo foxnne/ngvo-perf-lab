@@ -1,0 +1,55 @@
+{
+ "label": "merge1122-opt",
+ "rep": 1,
+ "scenario": "spin",
+ "config": "969d75615e",
+ "time": "2026-11-22 17:40:06",
+ "render": {
+  "frames": 1559,
+  "mean": 25.66,
+  "fps": 39.0,
+  "p50": 25.53,
+  "p95": 28.58,
+  "p99": 29.67,
+  "max": 41.4,
+  "over50": 0,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 23.76,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "present": {
+   "frames": 3280,
+   "mean": 12.8,
+   "fps": 78.1,
+   "p50": 12.56,
+   "p95": 14.18,
+   "p99": 15.62,
+   "max": 30.3,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 3280,
+   "mean": 12.8,
+   "fps": 78.2,
+   "p50": 12.58,
+   "p95": 15.33,
+   "p99": 16.65,
+   "max": 31.1,
+   "over50": 0,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 3280
+  }
+ }
+}

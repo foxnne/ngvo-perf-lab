@@ -1,0 +1,110 @@
+[
+ {
+  "name": "00_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "01_extreme_flat_sheet",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 4.0,
+    "Density": 0.5,
+    "Thickness": 3.0,
+    "WindResponse": 0.0,
+    "NoiseStrength": 0.0,
+    "BankStrength": 0.0,
+    "BasinStrength": 0.0,
+    "WaterPreference": 0.0,
+    "FadeStart": 400.0,
+    "FadeEnd": 1000.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "02_extreme_ground_fill_4",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 4.0,
+    "Density": 0.5,
+    "Thickness": 3.0,
+    "WindResponse": 0.0,
+    "NoiseStrength": 0.0,
+    "BankStrength": 0.0,
+    "BasinStrength": 0.0,
+    "WaterPreference": 0.0,
+    "FadeStart": 400.0,
+    "FadeEnd": 1000.0,
+    "GroundFill": 4.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "03_extreme_no_self_shadow_bright",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 4.0,
+    "Density": 0.5,
+    "Thickness": 3.0,
+    "WindResponse": 0.0,
+    "NoiseStrength": 0.0,
+    "BankStrength": 0.0,
+    "BasinStrength": 0.0,
+    "WaterPreference": 0.0,
+    "FadeStart": 400.0,
+    "FadeEnd": 1000.0,
+    "SelfShadow": 0.0,
+    "SunScale": 3.0,
+    "SkyAmbientScale": 3.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "04_dense_with_mounds",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 4.0,
+    "Density": 0.2,
+    "Thickness": 3.0,
+    "WindResponse": 0.0,
+    "NoiseStrength": 1.0,
+    "BankStrength": 1.0,
+    "BasinStrength": 0.0,
+    "WaterPreference": 0.0,
+    "FadeStart": 400.0,
+    "FadeEnd": 1000.0
+   }
+  },
+  "settle": 12
+ },
+ {
+  "name": "05_moderate",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "Amount": 2.0,
+    "Density": 0.15,
+    "Thickness": 2.0,
+    "WindResponse": 0.0
+   }
+  },
+  "settle": 12
+ }
+]

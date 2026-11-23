@@ -1,0 +1,809 @@
+{
+ "plains": {
+  "frames": {
+   "frameGeneration": 1,
+   "frameMs": 28.67,
+   "presentThreadCpuMs": 26.3,
+   "processCpuMs": 118.94
+  },
+  "passes": [],
+  "drawcalls": {
+   "frame": {
+    "avgMs": 28.926233291625977,
+    "ms": 28.08970069885254,
+    "p95Ms": 30.379459381103516
+   },
+   "frameGeneration": true,
+   "frame_count": 18980,
+   "neuralRendering": true,
+   "shaders": {
+    "BloodSplatter": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "DistantTree": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Effect": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Grass": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "ImageSpace": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Lighting": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "None": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Particle": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Sky": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Total": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Utility": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Water": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    }
+   },
+   "utility": []
+  }
+ },
+ "forest": {
+  "frames": {
+   "frameGeneration": 1.0,
+   "frameMs": 64.72,
+   "presentThreadCpuMs": 46.59,
+   "processCpuMs": 223.06
+  },
+  "passes": [
+   {
+    "name": "NeuralRendering::Generate",
+    "gpu": 6.33,
+    "cpu": 0.628
+   },
+   {
+    "name": "Upscaling::Upscale",
+    "gpu": 2.467,
+    "cpu": 0.142
+   },
+   {
+    "name": "TerrainBlending::TerrainPasses",
+    "gpu": 1.371,
+    "cpu": 0.22
+   },
+   {
+    "name": "ScreenSpaceReflections::ReblurSpecular",
+    "gpu": 1.074,
+    "cpu": 0.006
+   },
+   {
+    "name": "ScreenSpaceGI::Reblur",
+    "gpu": 0.81,
+    "cpu": 0.008
+   },
+   {
+    "name": "GroundFog::Pixel",
+    "gpu": 0.728,
+    "cpu": 0.0
+   },
+   {
+    "name": "ScreenSpaceGI::GI",
+    "gpu": 0.592,
+    "cpu": 0.0
+   },
+   {
+    "name": "GrassOptimizations::IndirectDraw",
+    "gpu": 0.58,
+    "cpu": 0.062
+   },
+   {
+    "name": "DeferredComposite",
+    "gpu": 0.447,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::VolumetricMainView",
+    "gpu": 0.443,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::CloudAmbientTransport",
+    "gpu": 0.276,
+    "cpu": 0.005
+   },
+   {
+    "name": "DynamicCubemaps::PublishReflections",
+    "gpu": 0.246,
+    "cpu": 0.003
+   },
+   {
+    "name": "PhysicalSky::VolumetricReproject",
+    "gpu": 0.242,
+    "cpu": 0.0
+   },
+   {
+    "name": "ViewAtmosphere::LightScattering",
+    "gpu": 0.22,
+    "cpu": 0.001
+   },
+   {
+    "name": "TerrainBlending::TerrainDepth",
+    "gpu": 0.208,
+    "cpu": 0.003
+   },
+   {
+    "name": "DynamicCubemaps::Capture",
+    "gpu": 0.202,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::VolumetricShadowVolume",
+    "gpu": 0.184,
+    "cpu": 0.001
+   },
+   {
+    "name": "PhysicalSky::UpperSunDepth",
+    "gpu": 0.18,
+    "cpu": 0.0
+   },
+   {
+    "name": "TerrainBlending::CopyDepth",
+    "gpu": 0.176,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::MotionBlur",
+    "gpu": 0.172,
+    "cpu": 0.002
+   },
+   {
+    "name": "TerrainShadows::ShadowUpdate",
+    "gpu": 0.171,
+    "cpu": 0.001
+   },
+   {
+    "name": "ViewAtmosphere::ReflectionMedium",
+    "gpu": 0.165,
+    "cpu": 0.001
+   },
+   {
+    "name": "Upscaling::EncodeTextures",
+    "gpu": 0.162,
+    "cpu": 0.002
+   },
+   {
+    "name": "ScreenSpaceShadows::RayMarch",
+    "gpu": 0.14,
+    "cpu": 0.001
+   },
+   {
+    "name": "DynamicCubemaps::DetectLightingReflections",
+    "gpu": 0.139,
+    "cpu": 0.0
+   },
+   {
+    "name": "Skylighting::ProbeUpdate",
+    "gpu": 0.139,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::Composite",
+    "gpu": 0.138,
+    "cpu": 0.002
+   },
+   {
+    "name": "PhysicalSky::CloudAmbientLighting",
+    "gpu": 0.137,
+    "cpu": 0.0
+   },
+   {
+    "name": "HiZPyramid::Base",
+    "gpu": 0.134,
+    "cpu": 0.003
+   },
+   {
+    "name": "ViewAtmosphere::Composite",
+    "gpu": 0.133,
+    "cpu": 0.0
+   },
+   {
+    "name": "NeuralRendering::CategoryCapture",
+    "gpu": 0.133,
+    "cpu": 0.002
+   },
+   {
+    "name": "PhysicalSky::VolumetricCubemap",
+    "gpu": 0.118,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::CopyToTarget",
+    "gpu": 0.118,
+    "cpu": 0.001
+   },
+   {
+    "name": "ViewAtmosphere::Integration",
+    "gpu": 0.114,
+    "cpu": 0.001
+   },
+   {
+    "name": "ScreenSpaceShadows::Denoise",
+    "gpu": 0.114,
+    "cpu": 0.001
+   },
+   {
+    "name": "ScreenSpaceReflections::SpecularGI",
+    "gpu": 0.112,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::ColorGrading",
+    "gpu": 0.109,
+    "cpu": 0.003
+   },
+   {
+    "name": "CloudShadows::LayerSeed",
+    "gpu": 0.09,
+    "cpu": 0.006
+   },
+   {
+    "name": "PhysicalSky::VolumetricFilter",
+    "gpu": 0.089,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::Publish",
+    "gpu": 0.085,
+    "cpu": 0.005
+   },
+   {
+    "name": "ScreenSpaceShadows::ShadowMaskFilter",
+    "gpu": 0.085,
+    "cpu": 0.004
+   },
+   {
+    "name": "Upscaling::DepthUpscale",
+    "gpu": 0.084,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::VolumetricCloudAmbientSH",
+    "gpu": 0.084,
+    "cpu": 0.001
+   },
+   {
+    "name": "SubsurfaceScattering::Burley",
+    "gpu": 0.079,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::SkyViewLut",
+    "gpu": 0.077,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::UpperCloudMainView",
+    "gpu": 0.065,
+    "cpu": 0.0
+   },
+   {
+    "name": "CloudShadows::Propagate",
+    "gpu": 0.065,
+    "cpu": 0.003
+   },
+   {
+    "name": "PostProcessing::LocalExposure::Grid",
+    "gpu": 0.057,
+    "cpu": 0.001
+   },
+   {
+    "name": "PostProcessing::HistogramAutoExposure",
+    "gpu": 0.055,
+    "cpu": 0.002
+   },
+   {
+    "name": "CloudShadows::OcclusionCopy",
+    "gpu": 0.055,
+    "cpu": 0.002
+   },
+   {
+    "name": "ScreenSpaceGI::Composite",
+    "gpu": 0.054,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::TransmittanceLut",
+    "gpu": 0.054,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::CaptureMips",
+    "gpu": 0.052,
+    "cpu": 0.0
+   },
+   {
+    "name": "ScreenSpaceGI::PrefilterRadiance",
+    "gpu": 0.049,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::PrepareIrradianceReflections",
+    "gpu": 0.047,
+    "cpu": 0.001
+   },
+   {
+    "name": "PhysicalSky::CloudBoundary",
+    "gpu": 0.044,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::LocalExposure::Setup",
+    "gpu": 0.042,
+    "cpu": 0.001
+   },
+   {
+    "name": "PostProcessing::CODBloom::Downsample",
+    "gpu": 0.04,
+    "cpu": 0.003
+   },
+   {
+    "name": "DynamicCubemaps::PrepareIrradiance",
+    "gpu": 0.04,
+    "cpu": 0.001
+   },
+   {
+    "name": "DynamicCubemaps::CaptureMipsReflections",
+    "gpu": 0.04,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::CODBloom::Threshold",
+    "gpu": 0.038,
+    "cpu": 0.001
+   },
+   {
+    "name": "PhysicalSky::SkyTail",
+    "gpu": 0.037,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::CloudShadowMean",
+    "gpu": 0.034,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::BC6H",
+    "gpu": 0.033,
+    "cpu": 0.001
+   },
+   {
+    "name": "DynamicCubemaps::BC6HReflections",
+    "gpu": 0.033,
+    "cpu": 0.001
+   },
+   {
+    "name": "DynamicCubemaps::IrradianceBA",
+    "gpu": 0.031,
+    "cpu": 0.001
+   },
+   {
+    "name": "DynamicCubemaps::IrradianceReflectionsBA",
+    "gpu": 0.031,
+    "cpu": 0.001
+   },
+   {
+    "name": "GrassOptimizations::InstanceCull",
+    "gpu": 0.03,
+    "cpu": 0.017
+   },
+   {
+    "name": "DynamicCubemaps::CaptureReflections",
+    "gpu": 0.03,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::CODBloom::Upsample",
+    "gpu": 0.027,
+    "cpu": 0.002
+   },
+   {
+    "name": "GroundFog::Simulation",
+    "gpu": 0.027,
+    "cpu": 0.0
+   },
+   {
+    "name": "GrassCollision::CollisionUpdate",
+    "gpu": 0.026,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::LocalExposure::Pyramid",
+    "gpu": 0.024,
+    "cpu": 0.004
+   },
+   {
+    "name": "ScreenSpaceReflections::HiZDepth",
+    "gpu": 0.023,
+    "cpu": 0.003
+   },
+   {
+    "name": "ScreenSpaceGI::PrefilterDepths",
+    "gpu": 0.021,
+    "cpu": 0.0
+   },
+   {
+    "name": "ViewAtmosphere::ReflectionSkySH",
+    "gpu": 0.02,
+    "cpu": 0.001
+   },
+   {
+    "name": "TerrainBlending::DepthBlend",
+    "gpu": 0.02,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::InferReflections",
+    "gpu": 0.019,
+    "cpu": 0.0
+   },
+   {
+    "name": "Upscaling::CopyDepthD3D12",
+    "gpu": 0.018,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::Infer",
+    "gpu": 0.018,
+    "cpu": 0.0
+   },
+   {
+    "name": "ScreenSpaceShadows::Clear",
+    "gpu": 0.018,
+    "cpu": 0.0
+   },
+   {
+    "name": "VolumetricShadows::DownsampleMip1",
+    "gpu": 0.017,
+    "cpu": 0.0
+   },
+   {
+    "name": "ScreenSpaceGI::PrefilterNormals",
+    "gpu": 0.016,
+    "cpu": 0.0
+   },
+   {
+    "name": "VolumetricShadows::DownsampleMip0",
+    "gpu": 0.016,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::MultiscatterLut",
+    "gpu": 0.012,
+    "cpu": 0.0
+   },
+   {
+    "name": "LightLimitFix::ClusterCull",
+    "gpu": 0.011,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::IrradianceReflectionsA",
+    "gpu": 0.01,
+    "cpu": 0.002
+   },
+   {
+    "name": "DynamicCubemaps::IrradianceA",
+    "gpu": 0.01,
+    "cpu": 0.0
+   },
+   {
+    "name": "PostProcessing::LocalExposure::Blur",
+    "gpu": 0.01,
+    "cpu": 0.001
+   },
+   {
+    "name": "DynamicCubemaps::DetectLighting",
+    "gpu": 0.009,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::VolumetricCubeReproject",
+    "gpu": 0.008,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::IrradianceReflectionsBB",
+    "gpu": 0.007,
+    "cpu": 0.0
+   },
+   {
+    "name": "DynamicCubemaps::IrradianceBB",
+    "gpu": 0.007,
+    "cpu": 0.0
+   },
+   {
+    "name": "TerrainBlending::ClearDepth",
+    "gpu": 0.007,
+    "cpu": 0.0
+   },
+   {
+    "name": "PhysicalSky::AerialPerspectiveLut",
+    "gpu": 0.007,
+    "cpu": 0.0
+   },
+   {
+    "name": "VolumetricShadows::BlurVMip0",
+    "gpu": 0.006,
+    "cpu": 0.0
+   },
+   {
+    "name": "LightLimitFix::ClusterBuild",
+    "gpu": 0.006,
+    "cpu": 0.0
+   },
+   {
+    "name": "VolumetricShadows::BlurHMip0",
+    "gpu": 0.006,
+    "cpu": 0.0
+   },
+   {
+    "name": "Upscaling::UnderwaterMaskUpscale",
+    "gpu": 0.006,
+    "cpu": 0.0
+   },
+   {
+    "name": "ImageBasedLighting::SkyDiffuseIBL",
+    "gpu": 0.005,
+    "cpu": 0.0
+   },
+   {
+    "name": "HiZPyramid::Mips",
+    "gpu": 0.005,
+    "cpu": 0.003
+   },
+   {
+    "name": "VolumetricShadows::BlurVMip1",
+    "gpu": 0.004,
+    "cpu": 0.0
+   },
+   {
+    "name": "VolumetricShadows::BlurHMip1",
+    "gpu": 0.004,
+    "cpu": 0.0
+   },
+   {
+    "name": "HDRDisplay::ClearUI",
+    "gpu": 0.002,
+    "cpu": 0.0
+   },
+   {
+    "name": "CloudShadows::ClearLayer",
+    "gpu": 0.001,
+    "cpu": 0.001
+   },
+   {
+    "name": "GrassOptimizations::UploadPending",
+    "gpu": 0.001,
+    "cpu": 0.001
+   },
+   {
+    "name": "TerrainBlending::NoBlendPasses",
+    "gpu": 0.0,
+    "cpu": 0.0
+   },
+   {
+    "name": "GrassOptimizations::CullSetup",
+    "gpu": 0.0,
+    "cpu": 0.006
+   },
+   {
+    "name": "GrassOptimizations::SliceCull",
+    "gpu": 0.0,
+    "cpu": 0.088
+   }
+  ],
+  "drawcalls": {
+   "frame": {
+    "avgMs": 62.78865051269531,
+    "ms": 44.09769821166992,
+    "p95Ms": 74.87435913085938
+   },
+   "frameGeneration": true,
+   "frame_count": 19624,
+   "neuralRendering": true,
+   "shaders": {
+    "BloodSplatter": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "DistantTree": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Effect": {
+     "cpuMs": 0.4101337194442749,
+     "drawCalls": 73.16146120622938
+    },
+    "Grass": {
+     "cpuMs": 0.18903352320194244,
+     "drawCalls": 22.000000476836863
+    },
+    "ImageSpace": {
+     "cpuMs": 1.0421741008758545,
+     "drawCalls": 66.96564042137283
+    },
+    "Lighting": {
+     "cpuMs": 8.296243667602539,
+     "drawCalls": 4610.251020409631
+    },
+    "None": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Particle": {
+     "cpuMs": 0.0,
+     "drawCalls": 0.0
+    },
+    "Sky": {
+     "cpuMs": 0.10181111842393875,
+     "drawCalls": 28.297111756603396
+    },
+    "Total": {
+     "cpuMs": 18.954410552978516,
+     "drawCalls": 15833.269864434478
+    },
+    "Utility": {
+     "cpuMs": 7.664905071258545,
+     "drawCalls": 10258.465765342859
+    },
+    "Water": {
+     "cpuMs": 1.2504501342773438,
+     "drawCalls": 774.1289339057811
+    }
+   },
+   "utility": [
+    {
+     "defines": "NO_PIXEL_SHADER RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TREE_WIND ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x2000",
+     "drawsPerFrame": 2887.0683229813662
+    },
+    {
+     "defines": "NO_PIXEL_SHADER RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TREE_WIND ",
+     "depthTarget": "kSHADOWMAPS_ESRAM",
+     "descriptor": "0x2000",
+     "drawsPerFrame": 2691.666149068323
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_ANIM TREE_WIND VC ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x4002083",
+     "drawsPerFrame": 2148.169254658385
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_CLAMPED REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_ANIM TREE_WIND VC ",
+     "depthTarget": "kSHADOWMAPS_ESRAM",
+     "descriptor": "0x400c083",
+     "drawsPerFrame": 1039.108695652174
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x2083",
+     "drawsPerFrame": 378.0357142857143
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x2082",
+     "drawsPerFrame": 335.27950310559004
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_CLAMPED REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND ",
+     "depthTarget": "kSHADOWMAPS_ESRAM",
+     "descriptor": "0xc082",
+     "drawsPerFrame": 162.32453416149067
+    },
+    {
+     "defines": "ALPHA_TEST LOD_OBJECT RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x8002083",
+     "drawsPerFrame": 140.3198757763975
+    },
+    {
+     "defines": "RENDER_SHADOWMAP RENDER_SHADOWMAP_PB REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kSHADOWMAPS",
+     "descriptor": "0x14003",
+     "drawsPerFrame": 86.07142857142857
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_CLAMPED REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kSHADOWMAPS_ESRAM",
+     "descriptor": "0xc083",
+     "drawsPerFrame": 83.96273291925466
+    },
+    {
+     "defines": "ALPHA_TEST LOD_OBJECT RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x8002082",
+     "drawsPerFrame": 74.17080745341615
+    },
+    {
+     "defines": "NO_PIXEL_SHADER RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TREE_WIND ",
+     "depthTarget": "kPRECIPITATION_OCCLUSION_MAP",
+     "descriptor": "0x2000",
+     "drawsPerFrame": 63.06211180124224
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_CLAMPED REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND ",
+     "depthTarget": "kSHADOWMAPS",
+     "descriptor": "0xc082",
+     "drawsPerFrame": 48.39751552795031
+    },
+    {
+     "defines": "RENDER_SHADOWMAP RENDER_SHADOWMAP_PB REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND ",
+     "depthTarget": "kSHADOWMAPS",
+     "descriptor": "0x14002",
+     "drawsPerFrame": 37.97204968944099
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_CLAMPED REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kVOLUMETRIC_LIGHTING_SHADOWMAPS_ESRAM",
+     "descriptor": "0xc083",
+     "drawsPerFrame": 32.59627329192546
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_ANIM TREE_WIND VC ",
+     "depthTarget": "kPRECIPITATION_OCCLUSION_MAP",
+     "descriptor": "0x4002083",
+     "drawsPerFrame": 26.849378881987576
+    },
+    {
+     "defines": "NO_PIXEL_SHADER RENDER_DEPTH REVERSE_Z SHADOWSPLITCOUNT=3 TREE_WIND ",
+     "depthTarget": "kSHADOWMAPS",
+     "descriptor": "0x2000",
+     "drawsPerFrame": 21.055900621118013
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_PB REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kSHADOWMAPS",
+     "descriptor": "0x14083",
+     "drawsPerFrame": 10.01863354037267
+    },
+    {
+     "defines": "ALPHA_TEST RENDER_SHADOWMAP RENDER_SHADOWMAP_PB REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_ANIM TREE_WIND VC ",
+     "depthTarget": "kSHADOWMAPS",
+     "descriptor": "0x4014083",
+     "drawsPerFrame": 6.996894409937888
+    },
+    {
+     "defines": "RENDER_NORMAL REVERSE_Z SHADOWSPLITCOUNT=3 TEXTURE TREE_WIND VC ",
+     "depthTarget": "kMAIN",
+     "descriptor": "0x203",
+     "drawsPerFrame": 6.9937888198757765
+    }
+   ]
+  }
+ }
+}

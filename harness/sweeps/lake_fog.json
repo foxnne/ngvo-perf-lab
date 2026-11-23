@@ -1,0 +1,77 @@
+[
+ {
+  "name": "0_fog_on_water_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "WaterPreference": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_lake_fog_default",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "WaterPreference": 1.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_lake_fog_strong",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "WaterPreference": 3.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_patchiness_0.3",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "WaterPreference": 1.5,
+    "WaterPatchiness": 0.3
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "4_patchiness_1.0",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "WaterPreference": 1.5,
+    "WaterPatchiness": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "5_soft_shore_1.5m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "WaterPreference": 1.5,
+    "ShoreSoftness": 1.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ }
+]

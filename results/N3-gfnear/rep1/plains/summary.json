@@ -1,0 +1,27 @@
+{
+ "label": "N3-gfnear",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "1b74b82ab1",
+ "time": "2026-11-19 18:16:53",
+ "render": {
+  "frames": 546,
+  "mean": 27.63,
+  "fps": 36.2,
+  "p50": 25.34,
+  "p95": 28.29,
+  "p99": 69.86,
+  "max": 514.2,
+  "over50": 6,
+  "over100": 5,
+  "over250": 2,
+  "stall_ms": 1175
+ },
+ "main_cpu_ms": 23.36,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

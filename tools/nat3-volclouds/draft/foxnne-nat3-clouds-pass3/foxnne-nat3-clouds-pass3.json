@@ -1,0 +1,25 @@
+{
+  "name": "foxnne NAT III clouds (pass 3)",
+  "version": "0.3.0",
+  "type": "CS",
+  "author": "foxnne",
+  "description": "UNTESTED DRAFT, pass 3. Per-weather volumetric cloud coverage, vertical fill, altitude, density, lighting, drift, high layer, haze, twilight Rayleigh and storm lightning (Physical Sky), height-fog strength (Exponential Height Fog) and weather-ambient amount (Image Based Lighting) for the 111 NAT.CS III weathers, by sky type. Applying a pack with scene files makes it the active pack: read notes/install-pass-3.md first.",
+  "tags": [
+    "NAT.CS III",
+    "Physical Sky",
+    "volumetric clouds",
+    "draft"
+  ],
+  "csVersion": "1.9.0",
+  "requiredFeatures": [
+    "PhysicalSky",
+    "ExponentialHeightFog",
+    "ImageBasedLighting",
+    "SceneManager",
+    "SkySync"
+  ],
+  "requiredPlugins": [
+    "NAT-ENB.esp",
+    "NAT-CS.esp"
+  ]
+}

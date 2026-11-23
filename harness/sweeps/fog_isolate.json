@@ -1,0 +1,117 @@
+[
+ {
+  "name": "A_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": false
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "B_on_pool_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": true,
+    "NearDensity": 0.0
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "C_on_pool_off_sheet_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": true,
+    "NearDensity": 0.0,
+    "Density": 0.0
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "D_on_pool_sheet_valley_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": true,
+    "NearDensity": 0.0,
+    "Density": 0.0,
+    "FarDensity": 0.0
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "E_pool_only_density_2_even",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": true,
+    "NearDensity": 2.0,
+    "Pooling": 0.0,
+    "Density": 0.0,
+    "FarDensity": 0.0
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "F_pool_only_density_2_0.9m_even",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": true,
+    "NearDensity": 2.0,
+    "NearThickness": 0.9,
+    "Pooling": 0.0,
+    "Density": 0.0,
+    "FarDensity": 0.0
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "G_pool_only_density_2_pooling_1",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": true,
+    "NearDensity": 2.0,
+    "Pooling": 1.0,
+    "Density": 0.0,
+    "FarDensity": 0.0
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ },
+ {
+  "name": "H_fog_off_again",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 0.0,
+    "Enabled": false
+   }
+  },
+  "weather": "SClearSkyPF",
+  "settle": 18
+ }
+]

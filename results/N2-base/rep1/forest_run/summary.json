@@ -1,0 +1,29 @@
+{
+ "label": "N2-base",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "891d226982",
+ "time": "2026-11-19 12:54:10",
+ "render": {
+  "frames": 2250,
+  "mean": 25.9,
+  "fps": 38.6,
+  "p50": 25.25,
+  "p95": 30.41,
+  "p99": 34.67,
+  "max": 177.5,
+  "over50": 4,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 178
+ },
+ "main_cpu_ms": 22.71,
+ "fg_share": 1.0,
+ "distance": 17251,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1256
+}

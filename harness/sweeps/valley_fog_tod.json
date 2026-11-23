@@ -1,0 +1,137 @@
+[
+ {
+  "name": "0_now_no_burnoff",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_burnoff_tod",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.25,
+    "EveningAmount": 1.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_burnoff_tod_far_0.004",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.25,
+    "EveningAmount": 1.2,
+    "FarDensity": 0.004
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_burnoff_tod_far_0.004_thick35",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.25,
+    "EveningAmount": 1.2,
+    "FarDensity": 0.004,
+    "FarThickness": 35.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "4_burnoff_midday_0.1",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.1,
+    "EveningAmount": 1.2
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "5_thin_far_0.0015_15m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.1,
+    "EveningAmount": 1.0,
+    "FarDensity": 0.0015,
+    "FarThickness": 15.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "6_thin_hollows_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.1,
+    "EveningAmount": 1.0,
+    "FarDensity": 0.0015,
+    "FarThickness": 15.0,
+    "BasinStrength": 2.5,
+    "Density": 0.003
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "7_patchy_hollows_4_far_0.002_20m",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.1,
+    "EveningAmount": 1.0,
+    "FarDensity": 0.002,
+    "FarThickness": 20.0,
+    "BasinStrength": 4.0,
+    "Density": 0.002
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ },
+ {
+  "name": "8_sheet_off_valley_only",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "BurnOffStrength": 1.0,
+    "MorningAmount": 1.4,
+    "MiddayAmount": 0.1,
+    "EveningAmount": 1.0,
+    "FarDensity": 0.002,
+    "FarThickness": 20.0,
+    "Density": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 20
+ }
+]

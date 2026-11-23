@@ -1,0 +1,9 @@
+LODGen47=tree_of_life.nif,,,,Never Fade LOD,Unchanged,0
+LODGen48=oak_big01_,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen49=oak_big_wide01_,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen50=oak_druids01_,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen51=elm_big_split0,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen52=elm_big_wide01_,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen53=elm_forest_big0,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen54=elm_forest_medium01_summer_vine,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1
+LODGen55=alder_forest_slim01_,Static LOD4,Static LOD4,Static LOD4,Far LOD,Unchanged,1

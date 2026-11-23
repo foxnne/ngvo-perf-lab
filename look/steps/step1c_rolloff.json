@@ -1,0 +1,84 @@
+[
+ {
+  "name": "0_old",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7
+    }
+   }
+  }
+ },
+ {
+  "name": "1_shoulder_0p5_1p0",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 1.0
+    }
+   }
+  }
+ },
+ {
+  "name": "2_shoulder_0p4_1p0",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "ShoulderStart": 0.4,
+     "ShoulderStrength": 1.0
+    }
+   }
+  }
+ },
+ {
+  "name": "3_white_1p3",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "WhitePoint": 1.3
+    }
+   }
+  }
+ },
+ {
+  "name": "4_white_1p3_shoulder_0p5_0p85",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "WhitePoint": 1.3,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 0.85
+    }
+   }
+  }
+ },
+ {
+  "name": "5_highlights_0p8",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "Highlights": 0.8
+    }
+   }
+  }
+ },
+ {
+  "name": "6_highlights_0p8_shoulder",
+  "pp": {
+   "Look Grade": {
+    "settings": {
+     "Exposure": 0.7,
+     "Highlights": 0.8,
+     "ShoulderStart": 0.5,
+     "ShoulderStrength": 0.85
+    }
+   }
+  }
+ }
+]

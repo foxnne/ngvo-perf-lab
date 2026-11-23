@@ -1,0 +1,218 @@
+[
+ {
+  "name": "SunnyPF__remap_0_1",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    1.0
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "SunnyPF__remap_0_0.5",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "SunnyPF__remap_0_0.25",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.25
+   ]
+  },
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 25
+ },
+ {
+  "name": "SClearSkyPF__remap_0_1",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    1.0
+   ]
+  },
+  "features": {},
+  "weather": "SClearSkyPF",
+  "settle": 25
+ },
+ {
+  "name": "SClearSkyPF__remap_0_0.5",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  },
+  "features": {},
+  "weather": "SClearSkyPF",
+  "settle": 25
+ },
+ {
+  "name": "SClearSkyPF__remap_0_0.25",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.25
+   ]
+  },
+  "features": {},
+  "weather": "SClearSkyPF",
+  "settle": 25
+ },
+ {
+  "name": "CloudyPF__remap_0_1",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    1.0
+   ]
+  },
+  "features": {},
+  "weather": "CloudyPF",
+  "settle": 25
+ },
+ {
+  "name": "CloudyPF__remap_0_0.5",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  },
+  "features": {},
+  "weather": "CloudyPF",
+  "settle": 25
+ },
+ {
+  "name": "CloudyPF__remap_0_0.25",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.25
+   ]
+  },
+  "features": {},
+  "weather": "CloudyPF",
+  "settle": 25
+ },
+ {
+  "name": "OvercastPF__remap_0_1",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    1.0
+   ]
+  },
+  "features": {},
+  "weather": "OvercastPF",
+  "settle": 25
+ },
+ {
+  "name": "OvercastPF__remap_0_0.5",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  },
+  "features": {},
+  "weather": "OvercastPF",
+  "settle": 25
+ },
+ {
+  "name": "OvercastPF__remap_0_0.25",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.25
+   ]
+  },
+  "features": {},
+  "weather": "OvercastPF",
+  "settle": 25
+ },
+ {
+  "name": "FogPF__remap_0_1",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    1.0
+   ]
+  },
+  "features": {},
+  "weather": "FogPF",
+  "settle": 25
+ },
+ {
+  "name": "FogPF__remap_0_0.5",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  },
+  "features": {},
+  "weather": "FogPF",
+  "settle": 25
+ },
+ {
+  "name": "FogPF__remap_0_0.25",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.25
+   ]
+  },
+  "features": {},
+  "weather": "FogPF",
+  "settle": 25
+ },
+ {
+  "name": "RainPF__remap_0_1",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    1.0
+   ]
+  },
+  "features": {},
+  "weather": "RainPF",
+  "settle": 25
+ },
+ {
+  "name": "RainPF__remap_0_0.5",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.5
+   ]
+  },
+  "features": {},
+  "weather": "RainPF",
+  "settle": 25
+ },
+ {
+  "name": "RainPF__remap_0_0.25",
+  "set": {
+   "cloudShadowRemapRange": [
+    0.0,
+    0.25
+   ]
+  },
+  "features": {},
+  "weather": "RainPF",
+  "settle": 25
+ }
+]

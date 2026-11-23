@@ -1,0 +1,7 @@
+WINDOW 'Elapsed Time: 03:06, Total Elapsed Time: 03:06' class=TfrmMain
+  [Element] Exit DynDOLOD, zip and exit, check log or restart?
+  [Element] The zip option will only pack the relevant files into the zip file and permanently delete everything in the dedicated output folder C:\modlists\NGVO 8.0 Beta\tools\DynDOLOD\DynDOLOD_Output\!
+  [CCPushButton] Exit DynDOLOD
+  [CCPushButton] Zip and Exit
+  [CCPushButton] Check log
+  [CCPushButton] Restart

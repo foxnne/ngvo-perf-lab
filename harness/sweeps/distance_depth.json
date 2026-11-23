@@ -1,0 +1,205 @@
+[
+ {
+  "name": "0_as_now_level_12_cap_5",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "1_off",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 1.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "2_level_6_cap_2.5",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 6.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "ViewAtmosphere/DistanceExaggeration.hlsli",
+   "defines": {
+    "DISTANCE_EXAGGERATION_LIMIT": 2.5
+   }
+  }
+ },
+ {
+  "name": "3_level_12_starts_later_500m_full_at_4km",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationStart": 500.0,
+    "distanceExaggerationFull": 4000.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "4_level_12_starts_1km_full_at_6km",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationStart": 1000.0,
+    "distanceExaggerationFull": 6000.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "5_level_12_no_added_haze_air_only",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationHaze": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "6_level_8_starts_500m_no_added_haze",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 8.0,
+    "distanceExaggerationStart": 500.0,
+    "distanceExaggerationFull": 4000.0,
+    "distanceExaggerationHaze": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "7_as_now_ground_fog_off",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   },
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "8_as_now_fog_lit_half_as_bright",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   },
+   "GroundFog": {
+    "SkyAmbientScale": 0.45,
+    "SunScale": 0.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "9_later_start_fog_half_as_bright",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationStart": 500.0,
+    "distanceExaggerationFull": 4000.0
+   },
+   "GroundFog": {
+    "SkyAmbientScale": 0.45,
+    "SunScale": 0.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "10_later_start_no_haze_fog_half_as_bright",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationStart": 500.0,
+    "distanceExaggerationFull": 4000.0,
+    "distanceExaggerationHaze": 0.0
+   },
+   "GroundFog": {
+    "SkyAmbientScale": 0.45,
+    "SunScale": 0.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "11_as_now_deeper_shade_skylight_floor_0.1",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "12_as_now_cloud_shadows_feature_0.8",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0
+   },
+   "CloudShadows": {
+    "Opacity": 0.8
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ },
+ {
+  "name": "13_later_start_deeper_shade_dim_fog",
+  "set": {},
+  "features": {
+   "ViewAtmosphere": {
+    "distanceExaggeration": 12.0,
+    "distanceExaggerationStart": 500.0,
+    "distanceExaggerationFull": 4000.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "GroundFog": {
+    "SkyAmbientScale": 0.45,
+    "SunScale": 0.6
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14
+ }
+]

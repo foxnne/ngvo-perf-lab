@@ -1,0 +1,5 @@
+[
+ {"name": "0_saved_settings", "set": {}, "features": {}, "weather": "SunnyPF", "settle": 20},
+ {"name": "1_far_valley_ref_0.003_25m", "set": {}, "features": {"GroundFog": {"FarDensity": 0.003, "FarThickness": 25.0}}, "weather": "SunnyPF", "settle": 20},
+ {"name": "2_far_ref_pool_on", "set": {}, "features": {"GroundFog": {"FarDensity": 0.003, "FarThickness": 25.0, "Pooling": 1.0}}, "weather": "SunnyPF", "settle": 20}
+]

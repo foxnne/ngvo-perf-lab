@@ -1,0 +1,27 @@
+{
+ "label": "N14-forest-vramcap",
+ "rep": 1,
+ "scenario": "plains",
+ "config": "668386177d",
+ "time": "2026-11-20 10:17:48",
+ "render": {
+  "frames": 224,
+  "mean": 67.2,
+  "fps": 14.9,
+  "p50": 65.0,
+  "p95": 73.25,
+  "p99": 137.8,
+  "max": 292.4,
+  "over50": 218,
+  "over100": 6,
+  "over250": 1,
+  "stall_ms": 934
+ },
+ "main_cpu_ms": 58.51,
+ "fg_share": 1.0,
+ "distance": 0,
+ "cells": 1,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ }
+}

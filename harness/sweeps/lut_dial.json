@@ -1,0 +1,91 @@
+[
+ {
+  "name": "0_now_lut_full",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "1_lut_70",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix70_20261120_lin128.dds"
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "2_lut_50",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "3_lut_30",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix30_20261120_lin128.dds"
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "4_lut_off",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": false
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ },
+ {
+  "name": "5_lut_50_shadows_lifted",
+  "set": {},
+  "features": {
+   "PostProcessing": {
+    "LUT": {
+     "enabled": true,
+     "settings": {
+      "LutPath": "C:\\Modlists\\NGVO 8.0 Beta\\mods\\foxnne - NAT LUTs\\SKSE\\Plugins\\CommunityShaders\\LUTs\\lab_mix50_20261120_lin128.dds"
+     }
+    },
+    "Look Grade": {
+     "settings": {
+      "ShadowsLift": 0.01
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 16
+ }
+]

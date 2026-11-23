@@ -1,0 +1,1 @@
+{"PostProcessing": {"Histogram Auto Exposure": {"settings": {"ExposureCompensation": -3.81}}, "COD Bloom": {"settings": {"Threshold": 3.14, "BlendFactor": 0.05}}, "Color Grading and Tone Mapping": {"settings": {"tonemapParams": [[1.0, 0.88, 1.0, 1.0], [1.0, 1.0, 1.0, 0.0]], "oklchSaturation": [1.0, 1.0, 0.0, 0.0]}}, "Look Grade": {"settings": {"Vibrance": 0.15}}}}

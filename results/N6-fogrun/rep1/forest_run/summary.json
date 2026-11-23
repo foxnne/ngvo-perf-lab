@@ -1,0 +1,29 @@
+{
+ "label": "N6-fogrun",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "97b22938b0",
+ "time": "2026-11-19 22:14:34",
+ "render": {
+  "frames": 2299,
+  "mean": 25.3,
+  "fps": 39.5,
+  "p50": 24.58,
+  "p95": 30.6,
+  "p99": 34.65,
+  "max": 233.5,
+  "over50": 3,
+  "over100": 1,
+  "over250": 0,
+  "stall_ms": 234
+ },
+ "main_cpu_ms": 22.96,
+ "fg_share": 1.0,
+ "distance": 17318,
+ "cells": 6,
+ "presented": {
+  "error": "no data (PresentMon needs admin or Performance Log Users)"
+ },
+ "onward_restarts": 0,
+ "offroute": 1226
+}

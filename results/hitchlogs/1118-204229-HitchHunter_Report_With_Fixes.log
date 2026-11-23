@@ -345,3 +345,12 @@
   Video memory: up to 9.3 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
 [21:50:11] Hitch 57 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 11.2 ms, GPU 40.7 ms, game/HUD/other 5.1 ms. Video memory 9.3 of 14.9 GB (62%).
   Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 15 samples from the slow part of the frame
+[21:51:06] Hitch 50 ms - mostly game logic, scripts, HUD/menus or other mods. World 9.9 ms, GPU 0.9 ms, game/HUD/other 39.6 ms. Video memory 8.4 of 14.9 GB (56%).
+  Main thread was in: the game itself (waiting for another thread) 100%; 13 samples from the slow part of the frame
+[21:51:07] Summary of the last 1 minute: 2400 frames, average 25.0 ms (40 fps), 1% low 33 fps, 2 hitches, longest 57 ms. Main causes: game logic, scripts, HUD/menus or other mods (1), waiting for the GPU (GPU load, vsync or frame generation) (1). Highest video memory use during a hitch: 62%.
+  Most hitches at: Whiterun (2)
+  Video memory: up to 9.3 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+[21:52:07] Summary of the last 1 minute: 2420 frames, average 24.8 ms (40 fps), 1% low 37 fps, 0 hitches.
+  Video memory: up to 8.4 of 14.9 GB; nearly full (90% or more) 0% of the time, over the limit 0%.
+[21:52:53] Hitch 57 ms - mostly waiting for the GPU (GPU load, vsync or frame generation). World 10.1 ms, GPU 41.9 ms, game/HUD/other 4.9 ms. Video memory 8.4 of 14.9 GB (56%).
+  Main thread was in: amd_fidelityfx_framegeneration_dx12.dll (inside Windows) 100%; 15 samples from the slow part of the frame

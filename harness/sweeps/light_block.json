@@ -1,0 +1,235 @@
+[
+ {
+  "name": "0_baseline",
+  "set": {},
+  "features": {},
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "1_sun_20_exposure_-1",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14
+     }
+    }
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "2_sun20_fill_0.5",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "3_sun20_fill_0",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "4_sun20_fill_0_shade_floor_0.1",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "5_as4_ambient_scales",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "6_as5_bloom_mix_0.05",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.81
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ },
+ {
+  "name": "7_as6_exposure_-0.7",
+  "set": {
+   "sunlightColor": [
+    20.0,
+    19.4,
+    19.0
+   ]
+  },
+  "features": {
+   "PostProcessing": {
+    "Histogram Auto Exposure": {
+     "settings": {
+      "ExposureCompensation": -3.51
+     }
+    },
+    "COD Bloom": {
+     "settings": {
+      "Threshold": 3.14,
+      "BlendFactor": 0.05
+     }
+    }
+   },
+   "ScreenSpaceGI": {
+    "FallbackSkyBoost": 0.0
+   },
+   "Skylighting": {
+    "MinDiffuseVisibility": 0.1
+   },
+   "ImageBasedLighting": {
+    "SkyIBLScale": 1.0,
+    "DALCAmount": 0.25
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 18
+ }
+]

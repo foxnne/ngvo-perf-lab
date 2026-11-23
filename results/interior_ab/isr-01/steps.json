@@ -1,0 +1,172 @@
+[
+ {
+  "step": "0_arrival",
+  "gameHour": 14.228923797607422,
+  "sky": {
+   "active": false,
+   "cellInterior": true,
+   "cellIsCurrent": true,
+   "cellNorthRotation": -5.4977874755859375,
+   "currentSkyRotation": -5.4977874755859375,
+   "interiorWithSun": false,
+   "reassertEnabled": false,
+   "reasserts": 0,
+   "rootRotate": [
+    0.7071070075035095,
+    -0.7071065306663513,
+    -0.0,
+    0.7071065306663513,
+    0.7071070075035095,
+    0.0,
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "skyRotationApplied": true
+  },
+  "stats": {
+   "mean": 0.228,
+   "p1": 0.064,
+   "p50": 0.16,
+   "p99": 0.949,
+   "clip%": 0.48,
+   "sat": 0.378
+  }
+ },
+ {
+  "step": "1_hour13",
+  "gameHour": 13.033205032348633,
+  "sky": {
+   "active": false,
+   "cellInterior": true,
+   "cellIsCurrent": true,
+   "cellNorthRotation": -5.4977874755859375,
+   "currentSkyRotation": -5.4977874755859375,
+   "interiorWithSun": false,
+   "reassertEnabled": false,
+   "reasserts": 0,
+   "rootRotate": [
+    0.7071070075035095,
+    -0.7071065306663513,
+    -0.0,
+    0.7071065306663513,
+    0.7071070075035095,
+    0.0,
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "skyRotationApplied": true
+  },
+  "stats": {
+   "mean": 0.187,
+   "p1": 0.055,
+   "p50": 0.127,
+   "p99": 0.922,
+   "clip%": 0.12,
+   "sat": 0.362
+  }
+ },
+ {
+  "step": "2_reassert_on",
+  "gameHour": 13.074225425720215,
+  "sky": {
+   "active": false,
+   "cellInterior": true,
+   "cellIsCurrent": true,
+   "cellNorthRotation": -5.4977874755859375,
+   "currentSkyRotation": -5.4977874755859375,
+   "interiorWithSun": false,
+   "reassertEnabled": true,
+   "reasserts": 0,
+   "rootRotate": [
+    0.7071070075035095,
+    -0.7071065306663513,
+    -0.0,
+    0.7071065306663513,
+    0.7071070075035095,
+    0.0,
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "skyRotationApplied": true
+  },
+  "stats": {
+   "mean": 0.209,
+   "p1": 0.062,
+   "p50": 0.144,
+   "p99": 0.939,
+   "clip%": 0.32,
+   "sat": 0.39
+  }
+ },
+ {
+  "step": "3_hour16_reassert_on",
+  "gameHour": 16.03324317932129,
+  "sky": {
+   "active": false,
+   "cellInterior": true,
+   "cellIsCurrent": true,
+   "cellNorthRotation": -5.4977874755859375,
+   "currentSkyRotation": -5.4977874755859375,
+   "interiorWithSun": false,
+   "reassertEnabled": true,
+   "reasserts": 0,
+   "rootRotate": [
+    0.7071070075035095,
+    -0.7071065306663513,
+    -0.0,
+    0.7071065306663513,
+    0.7071070075035095,
+    0.0,
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "skyRotationApplied": true
+  },
+  "stats": {
+   "mean": 0.225,
+   "p1": 0.068,
+   "p50": 0.156,
+   "p99": 0.941,
+   "clip%": 0.44,
+   "sat": 0.406
+  }
+ },
+ {
+  "step": "4_console_h10_reassert_on",
+  "gameHour": 10.033332824707031,
+  "sky": {
+   "active": false,
+   "cellInterior": true,
+   "cellIsCurrent": true,
+   "cellNorthRotation": -5.4977874755859375,
+   "currentSkyRotation": -5.4977874755859375,
+   "interiorWithSun": false,
+   "reassertEnabled": true,
+   "reasserts": 0,
+   "rootRotate": [
+    0.7071070075035095,
+    -0.7071065306663513,
+    -0.0,
+    0.7071065306663513,
+    0.7071070075035095,
+    0.0,
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "skyRotationApplied": true
+  },
+  "stats": {
+   "mean": 0.187,
+   "p1": 0.058,
+   "p50": 0.126,
+   "p99": 0.929,
+   "clip%": 0.14,
+   "sat": 0.348
+  }
+ }
+]

@@ -1,0 +1,12 @@
+# Switch profile foxnne-nsfw to PenguLOD object/tree/grass LOD + occlusion (terrain LOD untouched). Paste these lines into queue.txt.
+# Staged by dev/pengulod (trial 4, 2026-11-21; anchors re-checked against the live profile that day). Game and MO2 must be closed
+# (the jobs refuse otherwise). Undo: jobs/pengulod_off.txt.
+# 1) copies the six staged mods into mods/ (18.5 GB, a few minutes, needs that much free space on C:; skipped when a mod folder already exists,
+#    so after a re-generation delete the old "PenguLOD Output - *" folders in mods/ first), lists them directly above
+#    "foxnne - 3D Map Restore" (fork tree flags > LOD > Textures > SKSE > Aspen LOD > No Ivy LOD; that mod ships a patched copy of
+#    DynDOLOD's Occlusion.esp with DynDOLOD.esm as master, which must NOT win over PenguLOD's Occlusion.esp) and unticks, in place,
+#    NGVO - DynDOLOD Output, NGVO - TexGen Output, DynDOLOD DLL NG and Scripts 3.00, DynDOLOD - Settings Loader.
+#    Test from the main menu with coc or a throw-away character; do not carry saves across the switch.
+# 2) deactivates DynDOLOD.esm + DynDOLOD.esp, puts PenguLOD.esp and Occlusion.esp (now PenguLOD's) last.
+mod_state_job.py pengulod-on jobs/pengulod_on_mods.json
+plugin_order_job.py pengulod-on jobs/pengulod_on_plugins.json

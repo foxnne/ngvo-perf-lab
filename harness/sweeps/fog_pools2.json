@@ -1,0 +1,115 @@
+[
+ {
+  "name": "0_fog_off",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": false
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 14,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 0
+   }
+  }
+ },
+ {
+  "name": "1_pools_density_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 0
+   }
+  }
+ },
+ {
+  "name": "2_pools_density_4",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 4.0
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 0
+   }
+  }
+ },
+ {
+  "name": "3_pools_wisp_2.5",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5,
+    "WispSize": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 0
+   }
+  }
+ },
+ {
+  "name": "4_budget_view",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 4
+   }
+  }
+ },
+ {
+  "name": "5_depth_view",
+  "set": {},
+  "features": {
+   "GroundFog": {
+    "Enabled": true,
+    "BurnOffStrength": 1.0,
+    "NearDensity": 2.5
+   }
+  },
+  "weather": "SunnyPF",
+  "settle": 22,
+  "shader": {
+   "file": "GroundFog/Pool.hlsli",
+   "defines": {
+    "GROUND_FOG_POOL_DEBUG": 2
+   }
+  }
+ }
+]

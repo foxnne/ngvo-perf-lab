@@ -1,0 +1,100 @@
+[
+ {
+  "step": "1_arrive",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.232,
+   "p1": 0.068,
+   "p50": 0.162,
+   "p99": 0.951,
+   "clip%": 0.48,
+   "sat": 0.384
+  }
+ },
+ {
+  "step": "2_teleport",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.232,
+   "p1": 0.066,
+   "p50": 0.161,
+   "p99": 0.952,
+   "clip%": 0.57,
+   "sat": 0.385
+  }
+ },
+ {
+  "step": "3_hour13",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.187,
+   "p1": 0.057,
+   "p50": 0.126,
+   "p99": 0.923,
+   "clip%": 0.1,
+   "sat": 0.343
+  }
+ },
+ {
+  "step": "4_freeze",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.187,
+   "p1": 0.058,
+   "p50": 0.125,
+   "p99": 0.923,
+   "clip%": 0.12,
+   "sat": 0.338
+  }
+ },
+ {
+  "step": "5_free_camera",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.192,
+   "p1": 0.066,
+   "p50": 0.129,
+   "p99": 0.673,
+   "clip%": 0.02,
+   "sat": 0.371
+  }
+ },
+ {
+  "step": "6_unfrozen_free_camera",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.197,
+   "p1": 0.067,
+   "p50": 0.13,
+   "p99": 0.675,
+   "clip%": 0.02,
+   "sat": 0.377
+  }
+ },
+ {
+  "step": "7_player_camera",
+  "pushed": 117,
+  "droppedFaded": 7,
+  "windowLightsDropped": 2,
+  "stats": {
+   "mean": 0.204,
+   "p1": 0.064,
+   "p50": 0.138,
+   "p99": 0.939,
+   "clip%": 0.21,
+   "sat": 0.343
+  }
+ }
+]

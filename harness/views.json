@@ -105,5 +105,275 @@
    "yaw": 252.0,
    "fov": 80.0
   }
+ },
+ "plains_north": {
+  "note": "Whiterun plain looking north toward the Sea of Ghosts (distant storms), added 2026-11-18",
+  "cell": "WhiterunExterior04",
+  "player": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3612.0,
+   "rx": 0.0,
+   "rz": 160.0
+  },
+  "settle_seconds": 12,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 700.0,
+   "pitch": -12.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  }
+ },
+ "plains_ground": {
+  "note": "Whiterun plain near ground level looking west along the plain (ground fog), added 2026-11-19",
+  "cell": "WhiterunExterior04",
+  "player": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3612.0,
+   "rx": 0.0,
+   "rz": 160.0
+  },
+  "settle_seconds": 12,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 160.0,
+   "pitch": 2.0,
+   "yaw": 270.0,
+   "fov": 90.0
+  },
+  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png"
+ },
+ "tree_canopy": {
+  "note": "Under the giant Whiterun tree looking up through leaves at the sky (leaf edges against clouds), 2026-11-19",
+  "cell": "WhiterunExterior04",
+  "player": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3612.0,
+   "rx": 0.0,
+   "rz": 160.0
+  },
+  "settle_seconds": 12,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 700.0,
+   "pitch": -35.0,
+   "yaw": 305.0,
+   "fov": 80.0
+  },
+  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png"
+ },
+ "mill_west": {
+  "note": "Half Moon Mill (lake shore, overhead trees) looking west toward the evening sun, eye height; added 2026-11-19 at the user's request for shafts, water and ground fog",
+  "cell": "HalfMoonMillExterior",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 140.0,
+   "pitch": -14.0,
+   "yaw": 250.0,
+   "fov": 75.0
+  },
+  "player": {
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 920.7,
+   "rx": 0.0,
+   "rz": 250.0
+  }
+ },
+ "mill_canopy": {
+  "note": "Half Moon Mill looking up-west through the tree canopy toward the sun",
+  "cell": "HalfMoonMillExterior",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 140.0,
+   "pitch": -34.0,
+   "yaw": 250.0,
+   "fov": 80.0
+  },
+  "player": {
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 920.7,
+   "rx": 0.0,
+   "rz": 250.0
+  }
+ },
+ "mill_east": {
+  "note": "Half Moon Mill looking east toward the morning sun over the water",
+  "cell": "HalfMoonMillExterior",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 140.0,
+   "pitch": -8.0,
+   "yaw": 95.0,
+   "fov": 80.0
+  },
+  "player": {
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 920.7,
+   "rx": 0.0,
+   "rz": 250.0
+  }
+ },
+ "mill_floor": {
+  "note": "Half Moon Mill forest floor, eye height looking into the trees: dappled sunlight test",
+  "cell": "HalfMoonMillExterior",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 140.0,
+   "pitch": -12.0,
+   "yaw": 250.0,
+   "fov": 75.0
+  },
+  "player": {
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 920.7,
+   "rx": 0.0,
+   "rz": 250.0
+  }
+ },
+ "riverwood_floor": {
+  "note": "Riverwood pine forest floor looking south into the trees: dappled sunlight test",
+  "cell": "Riverwood",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 140.0,
+   "pitch": -10.0,
+   "yaw": 180.0,
+   "fov": 75.0
+  }
+ },
+ "inn_bannered_mare": {
+  "note": "Bannered Mare interior, hearth and lamps: interior exposure test",
+  "cell": "WhiterunBanneredMare",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 185.0,
+   "pitch": 2.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  }
+ },
+ "dungeon_bleak_falls": {
+  "note": "Bleak Falls Barrow interior, first hall: dungeon exposure test Camera yaw 90 / pitch -4 (2026-11-21): looks into the beam hall instead of the wall.",
+  "cell": "BleakFallsBarrow01",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 185.0,
+   "pitch": -4.0,
+   "yaw": 90.0,
+   "fov": 75.0
+  }
+ },
+ "rift_aspens": {
+  "note": "Rift aspen wood on the lake shore outside Riften, looking south into the near aspens (dock and house in front). Framing taken from results/aspen_check/a3/0_saved__180.png (2026-11-20). Reached with a console command, not a cell name: baseline_shoot.py reads \"travel\"; sky_sweep.py needs a \"cell\" and cannot use this view.",
+  "travel": "cow Tamriel 40 -24",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 200.0,
+   "pitch": -4.0,
+   "yaw": 180.0,
+   "fov": 70.0
+  },
+  "sample": "results/aspen_check/a3/0_saved__180.png"
+ },
+ "hall_dragonsreach": {
+  "note": "Dragonsreach great hall (large interior, fire pit, daylight from high windows): interior exposure test. Camera NOT checked in game (added offline 2026-11-20): the yaw is a placeholder. While needs_camera_check is true, baseline_shoot.py points the camera where the player faces after coc and writes the camera it used into the manifest; look at the first frame, set a real yaw here and remove the flag. sky_sweep.py uses the yaw as written.",
+  "cell": "WhiterunDragonsreach",
+  "settle_seconds": 14,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 185.0,
+   "pitch": 2.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  }
+ },
+ "shop_belethor": {
+  "note": "Belethor's General Goods (small dim shop, lamp and candle light): interior exposure test. Camera NOT checked in game (added offline 2026-11-20): the yaw is a placeholder. While needs_camera_check is true, baseline_shoot.py points the camera where the player faces after coc and writes the camera it used into the manifest; look at the first frame, set a real yaw here and remove the flag. sky_sweep.py uses the yaw as written.",
+  "cell": "WhiterunBelethorsGeneralGoods",
+  "settle_seconds": 14,
+  "needs_camera_check": true,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 185.0,
+   "pitch": 2.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  }
+ },
+ "dungeon_embershard": {
+  "note": "Embershard Mine entrance tunnel (cave / mine, torch light): dungeon exposure test. Camera NOT checked in game (added offline 2026-11-20): the yaw is a placeholder. While needs_camera_check is true, baseline_shoot.py points the camera where the player faces after coc and writes the camera it used into the manifest; look at the first frame, set a real yaw here and remove the flag. sky_sweep.py uses the yaw as written.",
+  "cell": "EmbershardMine01",
+  "settle_seconds": 14,
+  "needs_camera_check": true,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 185.0,
+   "pitch": 2.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  }
+ },
+ "ilinalta_backlit": {
+  "note": "Saved by the user 2026-11-22 (\"I love it\"): high over the east shore of Lake Ilinalta looking west into the low sun; backlit pines, island, far tree LOD in mountain shade. First shot at 17:30, SunnyPF.",
+  "travel": "cow Tamriel -2 -14",
+  "player": {
+   "x": -6586.35,
+   "y": -53651.57,
+   "z": 1559.77
+  },
+  "settle_seconds": 40,
+  "camera": {
+   "relative_to": "player position after settling",
+   "dx": 0,
+   "dy": 0,
+   "dz": 3500.0,
+   "pitch": 8.0,
+   "yaw": 270.0,
+   "fov": 45.0
+  },
+  "sample": "results/views/ilinalta_backlit_1730.png"
  }
 }

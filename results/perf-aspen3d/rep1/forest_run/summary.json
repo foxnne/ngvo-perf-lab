@@ -1,0 +1,57 @@
+{
+ "label": "perf-aspen3d",
+ "rep": 1,
+ "scenario": "forest_run",
+ "config": "495f7a2bf3",
+ "time": "2026-11-21 21:57:17",
+ "render": {
+  "frames": 1693,
+  "mean": 34.29,
+  "fps": 29.2,
+  "p50": 34.06,
+  "p95": 39.92,
+  "p99": 49.73,
+  "max": 76.3,
+  "over50": 16,
+  "over100": 0,
+  "over250": 0,
+  "stall_ms": 0
+ },
+ "main_cpu_ms": 30.76,
+ "fg_share": 1.0,
+ "distance": 17331,
+ "cells": 6,
+ "presented": {
+  "present": {
+   "frames": 3450,
+   "mean": 17.11,
+   "fps": 58.5,
+   "p50": 16.9,
+   "p95": 19.41,
+   "p99": 23.44,
+   "max": 52.5,
+   "over50": 1,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "displayed": {
+   "frames": 3450,
+   "mean": 17.11,
+   "fps": 58.5,
+   "p50": 17.14,
+   "p95": 22.87,
+   "p99": 25.45,
+   "max": 57.2,
+   "over50": 4,
+   "over100": 0,
+   "over250": 0,
+   "stall_ms": 0
+  },
+  "frame_types": {
+   "Application": 3450
+  }
+ },
+ "onward_restarts": 0,
+ "offroute": 1215
+}
