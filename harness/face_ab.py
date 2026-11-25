@@ -1,39 +1,38 @@
-"""Queue job: same-pose character close-ups under setting variants (pose frozen, light frozen).
-usage: python face_ab.py TAG   -> results/face_ab/TAG/*.png + a labelled sheet"""
-import copy, json, os, shutil, sys, time
+"""Exact face comparison across neural rendering stacks: fixed spot, fixed hour (time frozen), fixed camera maths.
+Player via RaceMenu first (character teleported to an exact pose), then two NPCs spawned at the same spot.
+usage: python face_ab.py TAG [ours|theo]     ours = also shoots the old-NGVO recipe as a second variant, live"""
+import copy, json, math, os, shutil, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-import bench, cs
-TAG = sys.argv[1]; OUT = os.path.join(os.path.dirname(HERE), 'results', 'face_ab', TAG); os.makedirs(OUT, exist_ok=True)
-VARIANTS = [('0_as_now', {}),
-            ('1_lighting_thickness_0.1_as_before_today', {'ScreenSpaceGI': {'Thickness': 0.1}}),
-            ('2_ground_fog_off', {'GroundFog': {'Enabled': False}}),
-            ('3_thickness_0.1_and_ground_fog_off', {'ScreenSpaceGI': {'Thickness': 0.1}, 'GroundFog': {'Enabled': False}}),
-            ('4_sky_light_full_colour_no_weather_ambient', {'ImageBasedLighting': {'SkyIBLSaturation': 1.0, 'EnvIBLSaturation': 1.0, 'DALCAmount': 0.0}}),
-            ('5_haze_as_before_0.4_loading', {'PhysicalSky': {'aerosolScatter': [5.0442, 6.8378, 9.1504], 'aerosolAbsorption': [0.2654, 0.29312, 0.32081]}}),
-            ('6_as_now_again', {})]
-bench.launch(); bench.all_on(); bench.console('tgm'); bench.goto('WhiterunExterior04'); bench.exterior_setup()
-cs.world(action='teleport', x=bench.START[0], y=bench.START[1], z=bench.START[2], rx=0.0, rz=160.0); time.sleep(10)
-cs.world(action='weather', name='SunnyPF', instant=True, lock=True); bench.console('set gamehour to 15'); time.sleep(6)
-cs.world(action='timescale', value=0); cs.world(action='freeze', on=True); time.sleep(1)
-shots = []
-try:
-    for framing, kw in (('bust', dict(distance=95.0, height=105.0, pitch=-2.0, fov=40.0)), ('body', dict(distance=230.0, height=85.0, pitch=-2.0, fov=45.0))):
-        bench.face_camera(True, **kw); time.sleep(4)
-        for name, change in VARIANTS:
-            orig = {}
-            for short, ch in change.items():
-                g = cs.call('communityshaders.feature', {'action': 'get', 'shortName': short}); orig[short] = g.get('settings', g)
-                s = copy.deepcopy(orig[short]); s.update(ch); cs.call('communityshaders.feature', {'action': 'set', 'shortName': short, 'settings': s})
-            time.sleep(8)
-            src = cs.shot(f'faceab-{framing}-{name}'); time.sleep(1.0)
-            dst = os.path.join(OUT, f'{framing}_{name}' + os.path.splitext(src)[1]); shutil.copy2(src, dst); shots.append(dst); print(dst, flush=True)
-            for short, o in orig.items(): cs.call('communityshaders.feature', {'action': 'set', 'shortName': short, 'settings': o})
-            time.sleep(2)
-finally:
-    try: bench.face_camera(False)
-    except Exception: pass
-    cs.world(action='freeze', on=False); cs.world(action='timescale', value=1)
-    try: cs.world(action='weather', name='SunnyPF', instant=False, lock=False)
-    except Exception: pass
-json.dump(shots, open(os.path.join(OUT, 'shots.json'), 'w'), indent=1)
-if os.environ.get('NGVO_KEEP_OPEN') != '1': bench.quit_game()
+import bench, cs, shots
+TAG = sys.argv[1]; MODE = sys.argv[2] if len(sys.argv) > 2 else 'theo'; tb = shots.tb
+OUT = os.path.join(shots.ROOT, 'results', 'faceab', TAG); os.makedirs(OUT, exist_ok=True)
+X, Y, Z, RZ = 18322.2, -10992.1, -4624.35, 200.0
+def get(n): g = cs.call('communityshaders.feature', {'action': 'get', 'shortName': n}); return g.get('settings', g)
+def put(n, s): cs.call('communityshaders.feature', {'action': 'set', 'shortName': n, 'settings': s})
+VARS = [('main', None)]
+if MODE == 'ours':
+    NR = get('NeuralRendering'); old = copy.deepcopy(NR); old.update(placement=3, style=1, automaticMask=False, rawModelOutput=True, resolutionScale=1.0)
+    VARS = [('saved', NR), ('oldngvo', old)]
+def shoot(name):
+    for key, s in VARS:
+        if s is not None: put('NeuralRendering', s); time.sleep(14)
+        f = shots.grab('fa'); shutil.move(f, os.path.join(OUT, '%s_%s.png' % (name, key))); print('shot', name, key, flush=True)
+    if MODE == 'ours': put('NeuralRendering', VARS[0][1]); time.sleep(8)
+tb(action='camera', mode='player'); bench.console('coc WhiterunExterior01'); time.sleep(10); shots.ready(25, 150)
+cs.world(action='hour', value=13.0); cs.world(action='weather', name='SClearSkyPF', instant=True, lock=True); cs.world(action='timescale', value=0)
+cs.world(action='teleport', x=X, y=Y, z=Z, rz=RZ); time.sleep(45)
+pr = cs.call('communityshaders.inspect', {'kind': 'profiler'})['frame']; card = subprocess.run(['nvidia-smi', '--query-gpu=memory.used', '--format=csv,noheader'], capture_output=True, text=True).stdout.strip()
+print('stables frame avg %.1f ms p95 %.1f | card %s | box %s' % (pr['avgMs'], pr['p95Ms'], card, bench.menus().get('messageBoxOpen')), flush=True)
+vt = r'C:\Modlists\NGVO 8.0 Beta\overwrite\SKSE\Plugins\CommunityShaders\VramTrack.jsonl'
+if os.path.exists(vt):
+    for r in [json.loads(x) for x in open(vt, encoding='utf-8') if x.strip()][-3:]:
+        print('  tracker: proc %5.0f MB | created %5.0f MB/s freed %5.0f MB/s | %s' % (r['procMB'], r['newMB'] / max(r['dt'], .1), r['freedMB'] / max(r['dt'], .1), [(s['cat'], round(s['mb']), s['n']) for s in r.get('sites', [])[:3]]), flush=True)
+cs.world(action='console', command='showracemenu'); time.sleep(14); print([x for x in bench.menus()['openMenus'] if 'ace' in x]); shoot('player')
+bench.tap('r'); time.sleep(2.5); bench.tap('enter'); time.sleep(4)
+tb(action='pin', x=X + 100, y=Y + 500, z=Z + 30)
+for name in ('Adrianne Avenicci', 'Belethor'):
+    r = tb(action='spawn', npc=name, x=X, y=Y, z=Z, rz=RZ, ai=False); time.sleep(6); e = r['eye']; a = math.radians(RZ + 12); cx, cy = e['x'] + math.sin(a) * 80, e['y'] + math.cos(a) * 80
+    tb(action='camera', mode='override', x=cx, y=cy, z=e['z'] + 2, pitch=0, yaw=math.degrees(math.atan2(e['x'] - cx, e['y'] - cy)) % 360, fov=36); time.sleep(12)
+    shoot(name.split()[0].lower()); tb(action='remove', id=r['id'])
+tb(action='clear'); tb(action='camera', mode='player'); tb(action='unpin', x=X, y=Y, z=Z + 8)
+cs.world(action='timescale', value=20); cs.world(action='weather', name='SunnyPF', instant=False, lock=False); print('done', OUT)

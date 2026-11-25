@@ -2,329 +2,400 @@
  "ilinalta_west": {
   "note": "Reference view chosen by the user 2026-11-18: Lake Ilinalta looking west at the mountains (clouds, far tree LOD, water).",
   "cell": "GuardianStones",
-  "player": {
-   "x": 662.0,
-   "y": -59220.0,
-   "z": 612.0,
-   "rx": 0.0,
-   "rz": 270.0
-  },
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 1100.0,
+   "absolute": true,
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 1711.6,
    "pitch": -3.0,
    "yaw": 252.0,
    "fov": 65.0
   },
-  "sample": "results/viewfinder_west/ilinalta_up1100_yaw252.png"
+  "sample": "results/viewfinder_west/ilinalta_up1100_yaw252.png",
+  "travel": "coc GuardianStones",
+  "anchor": {
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 615.6,
+   "yaw": 270.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:30"
  },
  "plains_west": {
   "note": "Reference view chosen by the user 2026-11-18: Whiterun tundra looking west to the mountain range (clouds, distant LOD).",
   "cell": "WhiterunExterior04",
-  "player": {
-   "x": 19157.0,
-   "y": -7419.0,
-   "z": -3612.0,
-   "rx": 0.0,
-   "rz": 160.0
-  },
   "settle_seconds": 12,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 700.0,
+   "absolute": true,
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -2912.3,
    "pitch": -3.0,
    "yaw": 270.0,
    "fov": 65.0
   },
-  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png"
+  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png",
+  "travel": "coc WhiterunExterior04",
+  "anchor": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3608.3,
+   "yaw": 160.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31",
+  "flaw": "treehouse roofs in the foreground since the Treehouse mod: consider moving the camera (2026-11-25)"
  },
  "ilinalta_shore": {
   "note": "Low camera on the Guardian Stones shore looking west: the low sun sits behind the far trees (sun rays, glare, water glint).",
   "cell": "GuardianStones",
-  "player": {
-   "x": 662.0,
-   "y": -59220.0,
-   "z": 612.0,
-   "rx": 0.0,
-   "rz": 270.0
-  },
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 150.0,
+   "absolute": true,
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 761.6,
    "pitch": -4.0,
    "yaw": 262.0,
    "fov": 65.0
-  }
+  },
+  "travel": "coc GuardianStones",
+  "anchor": {
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 615.6,
+   "yaw": 270.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31"
  },
  "plains_throat": {
   "note": "Whiterun tundra looking south-east to the Throat of the World (cloud cap / weather map check), added 2026-11-18 (raised to 2600 after the 700 version faced a wall); tilted up 14 deg (negative pitch = up) and widened to 85 so the summit and sky are in frame",
   "cell": "WhiterunExterior04",
-  "player": {
-   "x": 19157.0,
-   "y": -7419.0,
-   "z": -3612.0,
-   "rx": 0.0,
-   "rz": 160.0
-  },
   "settle_seconds": 12,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 2600.0,
+   "absolute": true,
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -1012.3,
    "pitch": -14.0,
    "yaw": 135.0,
    "fov": 85.0
-  }
+  },
+  "travel": "coc WhiterunExterior04",
+  "anchor": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3608.3,
+   "yaw": 160.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31"
  },
  "ilinalta_sky": {
   "note": "Ilinalta looking up 35 degrees at the high cloud layer (added 2026-11-18)",
   "cell": "GuardianStones",
-  "player": {
-   "x": 662.0,
-   "y": -59220.0,
-   "z": 612.0,
-   "rx": 0.0,
-   "rz": 270.0
-  },
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 1100.0,
+   "absolute": true,
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 1711.6,
    "pitch": -35.0,
    "yaw": 252.0,
    "fov": 80.0
-  }
+  },
+  "travel": "coc GuardianStones",
+  "anchor": {
+   "x": 662.0,
+   "y": -59220.0,
+   "z": 615.6,
+   "yaw": 270.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31"
  },
  "plains_north": {
   "note": "Whiterun plain looking north toward the Sea of Ghosts (distant storms), added 2026-11-18",
   "cell": "WhiterunExterior04",
-  "player": {
-   "x": 19157.0,
-   "y": -7419.0,
-   "z": -3612.0,
-   "rx": 0.0,
-   "rz": 160.0
-  },
   "settle_seconds": 12,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 700.0,
+   "absolute": true,
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -2912.3,
    "pitch": -12.0,
    "yaw": 0.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc WhiterunExterior04",
+  "anchor": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3608.3,
+   "yaw": 160.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31",
+  "flaw": "since the Treehouse mod (2026-11-23) the treehouse platforms block most of the frame: needs a new camera spot (2026-11-25)"
  },
  "plains_ground": {
   "note": "Whiterun plain near ground level looking west along the plain (ground fog), added 2026-11-19",
   "cell": "WhiterunExterior04",
-  "player": {
-   "x": 19157.0,
-   "y": -7419.0,
-   "z": -3612.0,
-   "rx": 0.0,
-   "rz": 160.0
-  },
   "settle_seconds": 12,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 160.0,
+   "absolute": true,
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3452.3,
    "pitch": 2.0,
    "yaw": 270.0,
    "fov": 90.0
   },
-  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png"
+  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png",
+  "travel": "coc WhiterunExterior04",
+  "anchor": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3608.3,
+   "yaw": 160.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31"
  },
  "tree_canopy": {
   "note": "Under the giant Whiterun tree looking up through leaves at the sky (leaf edges against clouds), 2026-11-19",
   "cell": "WhiterunExterior04",
-  "player": {
-   "x": 19157.0,
-   "y": -7419.0,
-   "z": -3612.0,
-   "rx": 0.0,
-   "rz": 160.0
-  },
   "settle_seconds": 12,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 700.0,
+   "absolute": true,
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -2912.3,
    "pitch": -35.0,
    "yaw": 305.0,
    "fov": 80.0
   },
-  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png"
+  "sample": "results/viewfinder_plains/plains_up0700_yaw270.png",
+  "travel": "coc WhiterunExterior04",
+  "anchor": {
+   "x": 19157.0,
+   "y": -7419.0,
+   "z": -3608.3,
+   "yaw": 160.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:31"
  },
  "mill_west": {
   "note": "Half Moon Mill (lake shore, overhead trees) looking west toward the evening sun, eye height; added 2026-11-19 at the user's request for shafts, water and ground fog",
   "cell": "HalfMoonMillExterior",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 140.0,
+   "absolute": true,
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 1060.7,
    "pitch": -14.0,
    "yaw": 250.0,
    "fov": 75.0
   },
-  "player": {
+  "travel": "coc HalfMoonMillExterior",
+  "anchor": {
    "x": -44179.5,
    "y": -58077.4,
-   "z": 920.7,
-   "rx": 0.0,
-   "rz": 250.0
-  }
+   "z": 924.7,
+   "yaw": 250.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:32"
  },
  "mill_canopy": {
   "note": "Half Moon Mill looking up-west through the tree canopy toward the sun",
   "cell": "HalfMoonMillExterior",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 140.0,
+   "absolute": true,
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 1060.7,
    "pitch": -34.0,
    "yaw": 250.0,
    "fov": 80.0
   },
-  "player": {
+  "travel": "coc HalfMoonMillExterior",
+  "anchor": {
    "x": -44179.5,
    "y": -58077.4,
-   "z": 920.7,
-   "rx": 0.0,
-   "rz": 250.0
-  }
+   "z": 924.7,
+   "yaw": 250.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:32"
  },
  "mill_east": {
   "note": "Half Moon Mill looking east toward the morning sun over the water",
   "cell": "HalfMoonMillExterior",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 140.0,
+   "absolute": true,
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 1060.7,
    "pitch": -8.0,
    "yaw": 95.0,
    "fov": 80.0
   },
-  "player": {
+  "travel": "coc HalfMoonMillExterior",
+  "anchor": {
    "x": -44179.5,
    "y": -58077.4,
-   "z": 920.7,
-   "rx": 0.0,
-   "rz": 250.0
-  }
+   "z": 924.7,
+   "yaw": 250.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:32"
  },
  "mill_floor": {
   "note": "Half Moon Mill forest floor, eye height looking into the trees: dappled sunlight test",
   "cell": "HalfMoonMillExterior",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 140.0,
+   "absolute": true,
+   "x": -44179.5,
+   "y": -58077.4,
+   "z": 1060.7,
    "pitch": -12.0,
    "yaw": 250.0,
    "fov": 75.0
   },
-  "player": {
+  "travel": "coc HalfMoonMillExterior",
+  "anchor": {
    "x": -44179.5,
    "y": -58077.4,
-   "z": 920.7,
-   "rx": 0.0,
-   "rz": 250.0
-  }
+   "z": 924.7,
+   "yaw": 250.0
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:32"
  },
  "riverwood_floor": {
   "note": "Riverwood pine forest floor looking south into the trees: dappled sunlight test",
   "cell": "Riverwood",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 140.0,
+   "absolute": true,
+   "x": 17224.8,
+   "y": -47204.4,
+   "z": -4.5,
    "pitch": -10.0,
    "yaw": 180.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc Riverwood",
+  "anchor": {
+   "x": 17224.8,
+   "y": -47204.4,
+   "z": -140.5,
+   "yaw": 58.7
+  },
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:32"
  },
  "inn_bannered_mare": {
   "note": "Bannered Mare interior, hearth and lamps: interior exposure test",
   "cell": "WhiterunBanneredMare",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 185.0,
+   "absolute": true,
+   "x": -106.7,
+   "y": -70.1,
+   "z": 255.4,
    "pitch": 2.0,
    "yaw": 0.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc WhiterunBanneredMare",
+  "anchor": {
+   "x": -106.7,
+   "y": -70.1,
+   "z": 74.4,
+   "yaw": 177.6
+  },
+  "worldspace": null,
+  "saved": "2026-11-25 03:33"
  },
  "dungeon_bleak_falls": {
   "note": "Bleak Falls Barrow interior, first hall: dungeon exposure test Camera yaw 90 / pitch -4 (2026-11-21): looks into the beam hall instead of the wall.",
   "cell": "BleakFallsBarrow01",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 185.0,
+   "absolute": true,
+   "x": -7411.0,
+   "y": 1082.0,
+   "z": 758.5,
    "pitch": -4.0,
    "yaw": 90.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc BleakFallsBarrow01",
+  "anchor": {
+   "x": -7411.0,
+   "y": 1082.0,
+   "z": 577.5,
+   "yaw": 90.0
+  },
+  "worldspace": null,
+  "saved": "2026-11-25 03:34"
  },
  "rift_aspens": {
   "note": "Rift aspen wood on the lake shore outside Riften, looking south into the near aspens (dock and house in front). Framing taken from results/aspen_check/a3/0_saved__180.png (2026-11-20). Reached with a console command, not a cell name: baseline_shoot.py reads \"travel\"; sky_sweep.py needs a \"cell\" and cannot use this view.",
   "travel": "cow Tamriel 40 -24",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 200.0,
+   "absolute": true,
+   "x": 167665.6,
+   "y": -96471.3,
+   "z": 10888.4,
    "pitch": -4.0,
    "yaw": 180.0,
    "fov": 70.0
   },
-  "sample": "results/aspen_check/a3/0_saved__180.png"
+  "sample": "results/aspen_check/a3/0_saved__180.png",
+  "anchor": {
+   "x": 167665.6,
+   "y": -96471.3,
+   "z": 10692.4,
+   "yaw": 0.0
+  },
+  "cell": "RiftenPlankside03",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-25 03:34"
  },
  "hall_dragonsreach": {
   "note": "Dragonsreach great hall (large interior, fire pit, daylight from high windows): interior exposure test. Camera NOT checked in game (added offline 2026-11-20): the yaw is a placeholder. While needs_camera_check is true, baseline_shoot.py points the camera where the player faces after coc and writes the camera it used into the manifest; look at the first frame, set a real yaw here and remove the flag. sky_sweep.py uses the yaw as written.",
   "cell": "WhiterunDragonsreach",
   "settle_seconds": 14,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 185.0,
+   "absolute": true,
+   "x": -448.0,
+   "y": -128.0,
+   "z": -133.0,
    "pitch": 2.0,
    "yaw": 0.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc WhiterunDragonsreach",
+  "anchor": {
+   "x": -448.0,
+   "y": -128.0,
+   "z": -314.0,
+   "yaw": 359.0
+  },
+  "worldspace": null,
+  "saved": "2026-11-25 03:35"
  },
  "shop_belethor": {
   "note": "Belethor's General Goods (small dim shop, lamp and candle light): interior exposure test. Camera NOT checked in game (added offline 2026-11-20): the yaw is a placeholder. While needs_camera_check is true, baseline_shoot.py points the camera where the player faces after coc and writes the camera it used into the manifest; look at the first frame, set a real yaw here and remove the flag. sky_sweep.py uses the yaw as written.",
@@ -332,14 +403,23 @@
   "settle_seconds": 14,
   "needs_camera_check": true,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 185.0,
+   "absolute": true,
+   "x": 207.5,
+   "y": 2.2,
+   "z": 254.5,
    "pitch": 2.0,
    "yaw": 0.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc WhiterunBelethorsGeneralGoods",
+  "anchor": {
+   "x": 207.5,
+   "y": 2.2,
+   "z": 73.5,
+   "yaw": 180.8
+  },
+  "worldspace": null,
+  "saved": "2026-11-25 03:35"
  },
  "dungeon_embershard": {
   "note": "Embershard Mine entrance tunnel (cave / mine, torch light): dungeon exposure test. Camera NOT checked in game (added offline 2026-11-20): the yaw is a placeholder. While needs_camera_check is true, baseline_shoot.py points the camera where the player faces after coc and writes the camera it used into the manifest; look at the first frame, set a real yaw here and remove the flag. sky_sweep.py uses the yaw as written.",
@@ -347,33 +427,2339 @@
   "settle_seconds": 14,
   "needs_camera_check": true,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 185.0,
+   "absolute": true,
+   "x": 2487.3,
+   "y": 1485.5,
+   "z": 9428.8,
    "pitch": 2.0,
    "yaw": 0.0,
    "fov": 75.0
-  }
+  },
+  "travel": "coc EmbershardMine01",
+  "anchor": {
+   "x": 2487.3,
+   "y": 1485.5,
+   "z": 9247.8,
+   "yaw": 15.7
+  },
+  "worldspace": null,
+  "saved": "2026-11-25 03:36"
  },
  "ilinalta_backlit": {
-  "note": "Saved by the user 2026-11-22 (\"I love it\"): high over the east shore of Lake Ilinalta looking west into the low sun; backlit pines, island, far tree LOD in mountain shade. First shot at 17:30, SunnyPF.",
+  "note": "Saved by the user 2026-11-22 (\"I love it\"): high over the east shore of Lake Ilinalta looking west into the low sun; backlit pines, island, far tree LOD in mountain shade. First shot at 17:30, SunnyPF. Common view (user 2026-11-23). Sky variant for weather cycles: pitch -5, fov 60.",
   "travel": "cow Tamriel -2 -14",
-  "player": {
-   "x": -6586.35,
-   "y": -53651.57,
-   "z": 1559.77
-  },
   "settle_seconds": 40,
   "camera": {
-   "relative_to": "player position after settling",
-   "dx": 0,
-   "dy": 0,
-   "dz": 3500.0,
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 5059.8,
    "pitch": 8.0,
    "yaw": 270.0,
    "fov": 45.0
   },
-  "sample": "results/views/ilinalta_backlit_1730.png"
+  "sample": "results/views/ilinalta_backlit_1730.png",
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 15:52"
+ },
+ "pale_tower_coast": {
+  "note": "Chosen by the user 2026-11-23 as a common view. Snowy headland with a ruined tower, ice coast and sea to the left, peaks behind. Snow, sea, far horizon.",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -1389.2,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_pale_yaw090.png",
+  "anchor": {
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -6385.2,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 15:54"
+ },
+ "pale_snow_forest": {
+  "note": "Chosen by the user 2026-11-23 as a common view. Snow-covered pine forest falling to the coast, snow range behind, sea to the right. Tree LOD in snow, cloud shadow on forest.",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -1389.2,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_pale_yaw270.png",
+  "anchor": {
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -6385.2,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 15:54"
+ },
+ "whiterun_plains": {
+  "note": "Chosen by the user 2026-11-23 as a common view. The standard Whiterun plains view (user: \"whiterun plains would adopt these shots\"): western watchtower and fort on the tundra, ranges behind. Replaces the WhiterunExterior04 +700 view with the tree in frame.",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": 367.8,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_whiterun_hold_yaw270.png",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 15:53"
+ },
+ "reach_rocks": {
+  "note": "Common view (user 2026-11-23). Reach rocks and juniper, tower ruin, the valley and far ranges. Camera high over the ravine cell; the character is held by the tower in the next cell east (RedEagleRedoubtExterior02), because the game only draws the far land in full from there. With the character at the camera position, or anywhere in the ravine cell or west of it, the valley is missing (tested 2026-11-23).",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -122272.0,
+   "y": 17905.0,
+   "z": 3828.0,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/verify_reach/character_next_cell.png",
+  "anchor": {
+   "x": -117470.0,
+   "y": 18050.0,
+   "z": -1640.0,
+   "yaw": 90.0
+  },
+  "cell": "RedEagleRedoubtExterior02",
+  "worldspace": "Tamriel"
+ },
+ "whiterun_hold_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 302.1,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_whiterun_hold_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: town, river, forest. ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 302.1,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_whiterun_hold_yaw090.png",
+  "set": "map",
+  "good_for": "town, river, forest",
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 302.1,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_whiterun_hold_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: tundra, towers, ranges (standard plains view). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 302.1,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_whiterun_hold_yaw270.png",
+  "set": "map",
+  "good_for": "tundra, towers, ranges (standard plains view)",
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Flaw: blue culled patch. ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 13302.1,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_whiterun_hold_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": "blue culled patch",
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 13302.1,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_whiterun_hold_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 13302.1,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_whiterun_hold_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 13302.1,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_whiterun_hold_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "whiterun_hold_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 4 -3",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": 13302.1,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_whiterun_hold_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 17542.9,
+   "y": -10722.4,
+   "z": -4693.9,
+   "yaw": 297.9
+  },
+  "cell": "WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:27"
+ },
+ "falkreath_ilinalta_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 6559.8,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_falkreath_ilinalta_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 6559.8,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_falkreath_ilinalta_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 6559.8,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_falkreath_ilinalta_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: lake, pine forest, backlit. ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 6559.8,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_falkreath_ilinalta_yaw270.png",
+  "set": "map",
+  "good_for": "lake, pine forest, backlit",
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 19559.8,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_falkreath_ilinalta_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 19559.8,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_falkreath_ilinalta_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 19559.8,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_falkreath_ilinalta_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 19559.8,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_falkreath_ilinalta_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "falkreath_ilinalta_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -2 -14",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 19559.8,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_falkreath_ilinalta_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -6586.4,
+   "y": -53651.6,
+   "z": 1563.8,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:28"
+ },
+ "rift_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: autumn forest, snow range. ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 15887.2,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_rift_yaw000.png",
+  "set": "map",
+  "good_for": "autumn forest, snow range",
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 15887.2,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_rift_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: autumn forest, lake. ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 15887.2,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_rift_yaw180.png",
+  "set": "map",
+  "good_for": "autumn forest, lake",
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 15887.2,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_rift_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 28887.2,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_rift_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 28887.2,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_rift_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 28887.2,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_rift_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 28887.2,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_rift_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "rift_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 40 -22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 28887.2,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_rift_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 165215.6,
+   "y": -89786.0,
+   "z": 10891.2,
+   "yaw": 331.4
+  },
+  "cell": "MerryfairFarmExterior",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: rock, juniper, ruins. ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 5503.5,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_reach_yaw000.png",
+  "set": "map",
+  "good_for": "rock, juniper, ruins",
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Flaw: far land culled to sky blue at this height. ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 5503.5,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_reach_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": "far land culled to sky blue at this height",
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 5503.5,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_reach_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 5503.5,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_reach_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Flaw: large culled area. ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 18503.5,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_reach_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": "large culled area",
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 18503.5,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_reach_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 18503.5,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_reach_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 18503.5,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_reach_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "reach_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -28 5",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 18503.5,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_reach_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -113826.6,
+   "y": 23247.2,
+   "z": 507.5,
+   "yaw": 341.1
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:29"
+ },
+ "haafingar_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -8966.7,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_haafingar_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: Solitude arch, harbour, forest. ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -8966.7,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_haafingar_yaw090.png",
+  "set": "map",
+  "good_for": "Solitude arch, harbour, forest",
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -8966.7,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_haafingar_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -8966.7,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_haafingar_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": 4033.3,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_haafingar_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": 4033.3,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_haafingar_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": 4033.3,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_haafingar_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": 4033.3,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_haafingar_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "haafingar_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel -18 22",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": 4033.3,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_haafingar_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": -70324.3,
+   "y": 92998.0,
+   "z": -13962.7,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: sea, ice, far horizon, sky. ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -2503.4,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_pale_yaw000.png",
+  "set": "map",
+  "good_for": "sea, ice, far horizon, sky",
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: snow, sea, horizon, tower. ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -2503.4,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_pale_yaw090.png",
+  "set": "map",
+  "good_for": "snow, sea, horizon, tower",
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -2503.4,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_pale_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: snow forest, tree LOD, coast. ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -2503.4,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_pale_yaw270.png",
+  "set": "map",
+  "good_for": "snow forest, tree LOD, coast",
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Flaw: blue culled patch. ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": 10496.6,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_pale_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": "blue culled patch",
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Flaw: blue culled patch. ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": 10496.6,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_pale_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": "blue culled patch",
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": 10496.6,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_pale_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": 10496.6,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_pale_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "pale_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 10 20",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": 10496.6,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_pale_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 41429.7,
+   "y": 85081.7,
+   "z": -7499.4,
+   "yaw": 0.0
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:30"
+ },
+ "winterhold_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: college, sea ice, sky. ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -4024.5,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_winterhold_yaw000.png",
+  "set": "map",
+  "good_for": "college, sea ice, sky",
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: sea ice, ice floe LOD, volcano, horizon. ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -4024.5,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_winterhold_yaw090.png",
+  "set": "map",
+  "good_for": "sea ice, ice floe LOD, volcano, horizon",
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -4024.5,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_winterhold_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -4024.5,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_winterhold_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": 8975.5,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_winterhold_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": 8975.5,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_winterhold_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": 8975.5,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_winterhold_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Flaw: blue culled patch. ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": 8975.5,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_winterhold_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": "blue culled patch",
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "winterhold_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 26 24",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": 8975.5,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_winterhold_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "cell": "WinterholdExterior02",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_wide_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). Good for: Windhelm, snow, river. ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -7501.7,
+   "pitch": 10.0,
+   "yaw": 0.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_eastmarch_yaw000.png",
+  "set": "map",
+  "good_for": "Windhelm, snow, river",
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_wide_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -7501.7,
+   "pitch": 10.0,
+   "yaw": 90.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_eastmarch_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_wide_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -7501.7,
+   "pitch": 10.0,
+   "yaw": 180.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_eastmarch_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_wide_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -7501.7,
+   "pitch": 10.0,
+   "yaw": 270.0,
+   "fov": 55.0
+  },
+  "sample": "results/region_shots/map1/wide_eastmarch_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_bird_north": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": 5498.3,
+   "pitch": 30.0,
+   "yaw": 0.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_eastmarch_yaw000.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_bird_east": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": 5498.3,
+   "pitch": 30.0,
+   "yaw": 90.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_eastmarch_yaw090.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_bird_south": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": 5498.3,
+   "pitch": 30.0,
+   "yaw": 180.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_eastmarch_yaw180.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_bird_west": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": 5498.3,
+   "pitch": 30.0,
+   "yaw": 270.0,
+   "fov": 65.0
+  },
+  "sample": "results/region_shots/map1/bird_eastmarch_yaw270.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "eastmarch_bird_down": {
+  "note": "Map set 2026-11-22 (the full view set, user 2026-11-23). ",
+  "travel": "cow Tamriel 30 2",
+  "settle_seconds": 40,
+  "camera": {
+   "absolute": true,
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": 5498.3,
+   "pitch": 80.0,
+   "yaw": 0.0,
+   "fov": 75.0
+  },
+  "sample": "results/region_shots/map1/bird_eastmarch_down.png",
+  "set": "map",
+  "good_for": null,
+  "flaw": null,
+  "anchor": {
+   "x": 125395.2,
+   "y": 8483.2,
+   "z": -12497.7,
+   "yaw": 60.2
+  },
+  "cell": "Wilderness",
+  "worldspace": "Tamriel",
+  "saved": "2026-11-23 16:31"
+ },
+ "sky_from_ground_west": {
+  "note": "Sky study view above the Whiterun plains (2026-11-23). Camera straight above the plains spot; the character stays on the ground. Raised to 60 m above the ground 2026-11-23 so trees do not block the sky.",
+  "travel": "cow Tamriel 4 -3",
+  "worldspace": "Tamriel",
+  "cell": "WhiterunExterior01",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "nopin": true,
+  "set": "sky",
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -426.4,
+   "pitch": -28,
+   "yaw": 270,
+   "fov": 70
+  },
+  "good_for": "clouds as the player sees them, looking up west"
+ },
+ "sky_from_ground_south": {
+  "note": "Sky study view above the Whiterun plains (2026-11-23). Camera straight above the plains spot; the character stays on the ground. Raised to 60 m above the ground 2026-11-23 so trees do not block the sky.",
+  "travel": "cow Tamriel 4 -3",
+  "worldspace": "Tamriel",
+  "cell": "WhiterunExterior01",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "nopin": true,
+  "set": "sky",
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -426.4,
+   "pitch": -28,
+   "yaw": 180,
+   "fov": 70
+  },
+  "good_for": "clouds toward the sun at midday"
+ },
+ "sky_cloud_level_north": {
+  "note": "Sky study view above the Whiterun plains (2026-11-23). Camera straight above the plains spot; the character stays on the ground.",
+  "travel": "cow Tamriel 4 -3",
+  "worldspace": "Tamriel",
+  "cell": "WhiterunExterior01",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "nopin": true,
+  "set": "sky",
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": 100416.8,
+   "pitch": 0,
+   "yaw": 0,
+   "fov": 60
+  },
+  "good_for": "cloud sides and bases at cloud height, sun behind"
+ },
+ "sky_cloud_level_south": {
+  "note": "Sky study view above the Whiterun plains (2026-11-23). Camera straight above the plains spot; the character stays on the ground.",
+  "travel": "cow Tamriel 4 -3",
+  "worldspace": "Tamriel",
+  "cell": "WhiterunExterior01",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "nopin": true,
+  "set": "sky",
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": 100416.8,
+   "pitch": 0,
+   "yaw": 180,
+   "fov": 60
+  },
+  "good_for": "cloud sides at cloud height, into the sun"
+ },
+ "sky_above_west": {
+  "note": "Sky study view above the Whiterun plains (2026-11-23). Camera straight above the plains spot; the character stays on the ground.",
+  "travel": "cow Tamriel 4 -3",
+  "worldspace": "Tamriel",
+  "cell": "WhiterunExterior01",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "nopin": true,
+  "set": "sky",
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": 240476.8,
+   "pitch": 18,
+   "yaw": 270,
+   "fov": 60
+  },
+  "good_for": "cloud tops from above, the fast travel arc view"
+ },
+ "sky_top_down": {
+  "note": "Sky study view above the Whiterun plains (2026-11-23). Camera straight above the plains spot; the character stays on the ground.",
+  "travel": "cow Tamriel 4 -3",
+  "worldspace": "Tamriel",
+  "cell": "WhiterunExterior01",
+  "anchor": {
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": -4628.2,
+   "yaw": 248.3
+  },
+  "nopin": true,
+  "set": "sky",
+  "camera": {
+   "absolute": true,
+   "x": 18261.7,
+   "y": -11159.1,
+   "z": 415551.8,
+   "pitch": 85,
+   "yaw": 0,
+   "fov": 70
+  },
+  "good_for": "coverage pattern and cloud shadows from straight above"
+ },
+ "sea_horizon_pale_north": {
+  "note": "Sea horizon view (user 2026-11-23: a shot facing the horizon at the sea, to judge the furthest water level).",
+  "travel": "cow Tamriel 10 20",
+  "worldspace": "Tamriel",
+  "anchor": {
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -6385.2,
+   "yaw": 0.0
+  },
+  "set": "sea",
+  "camera": {
+   "absolute": true,
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -1389.2,
+   "pitch": 2,
+   "yaw": 0,
+   "fov": 45
+  },
+  "good_for": "far sea to the horizon from the Pale coast: furthest water level, seam, tiling, sea ice"
+ },
+ "sea_horizon_pale_north_high": {
+  "note": "Sea horizon view (user 2026-11-23: a shot facing the horizon at the sea, to judge the furthest water level).",
+  "travel": "cow Tamriel 10 20",
+  "worldspace": "Tamriel",
+  "anchor": {
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": -6385.2,
+   "yaw": 0.0
+  },
+  "set": "sea",
+  "camera": {
+   "absolute": true,
+   "x": 42162.6,
+   "y": 82176.0,
+   "z": 4610.8,
+   "pitch": 6,
+   "yaw": 0,
+   "fov": 45
+  },
+  "good_for": "same from higher: more sea surface between coast and horizon"
+ },
+ "sea_horizon_winterhold_northeast": {
+  "note": "Sea horizon view (user 2026-11-23: a shot facing the horizon at the sea, to judge the furthest water level).",
+  "travel": "cow Tamriel 26 24",
+  "worldspace": "Tamriel",
+  "anchor": {
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -9020.5,
+   "yaw": 133.2
+  },
+  "set": "sea",
+  "camera": {
+   "absolute": true,
+   "x": 108599.9,
+   "y": 100404.7,
+   "z": -2024.5,
+   "pitch": 3,
+   "yaw": 45,
+   "fov": 45
+  },
+  "good_for": "open sea north-east of Winterhold to the horizon"
+ },
+ "stables_road_eye": {
+  "note": "Road colour check at the Whiterun stables (user 2026-11-23: roads read greenish grey, wanted dusty dirt).",
+  "travel": "coc WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "anchor": {
+   "x": 17412.5,
+   "y": -11381.7,
+   "z": -4760.2,
+   "yaw": 270.0
+  },
+  "set": "roads",
+  "camera": {
+   "absolute": true,
+   "x": 17412.5,
+   "y": -11381.7,
+   "z": -4630.2,
+   "pitch": 12,
+   "yaw": 270.0,
+   "fov": 55
+  },
+  "good_for": "road surface colour and texture at the Whiterun stables, eye height"
+ },
+ "stables_road_high": {
+  "note": "Road colour check at the Whiterun stables (user 2026-11-23: roads read greenish grey, wanted dusty dirt).",
+  "travel": "coc WhiterunExterior01",
+  "worldspace": "Tamriel",
+  "anchor": {
+   "x": 17412.5,
+   "y": -11381.7,
+   "z": -4760.2,
+   "yaw": 270.0
+  },
+  "set": "roads",
+  "camera": {
+   "absolute": true,
+   "x": 17412.5,
+   "y": -11381.7,
+   "z": -3860.2,
+   "pitch": 35,
+   "yaw": 270.0,
+   "fov": 55
+  },
+  "good_for": "road against grass and buildings at the stables, from above"
  }
 }

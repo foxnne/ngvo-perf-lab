@@ -22,14 +22,15 @@ def status():
     return cs.call('communityshaders.inspect', {'kind': 'shadercache'})
 
 
-def reload(maxwait=600):
+def reload(maxwait=1500):
     """Drop the in-memory cache; unchanged shaders come back from the disk cache, changed sources recompile."""
     before = status(); size0 = os.path.getsize(LOG) if os.path.exists(LOG) else 0; t0 = time.time()
     cs.call('communityshaders.shadercache', {'action': 'clear'}); time.sleep(3)
     quiet = 0; last = None
     while time.time() - t0 < maxwait:
         s = status(); cur = (s.get('compiling'), s.get('completedTasks'))
-        quiet = quiet + 1 if (not s.get('compiling') and cur == last) else 0; last = cur
+        # compute (standalone) shaders such as the cloud march compile last and take up to ~10 min; clouds are absent until then
+        quiet = quiet + 1 if (not s.get('compiling') and not s.get('standalonePending') and cur == last) else 0; last = cur
         if quiet >= 3: break
         time.sleep(1.5)
     after = status(); errs = []
