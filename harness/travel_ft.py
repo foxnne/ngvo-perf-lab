@@ -2,7 +2,7 @@
 the map like a player (m, f, type the name, Enter, e, Enter) so Sky Above flies its arc; frame times are recorded during
 the flight, and after landing the same readings as travel_leak.py are logged (RAM, video memory, tracker, frame, NR).
 usage: python travel_ft.py TAG [--rounds 4] [--dests Riften,Solitude,...]      output: results/travel_ft/TAG.json"""
-import json, math, os, sys, time
+import json, math, os, re, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import bench, cs, shots
 TAG = sys.argv[1]
@@ -25,13 +25,31 @@ def flights_ended():
     except Exception: return 0
 
 
+def sft_size():
+    try: return os.path.getsize(SFT_LOG)
+    except Exception: return 0
+
+
+CENSUS = re.compile(r'Census \((?P<when>[^)]*)\): day (?P<day>[\d.]+) hour (?P<hour>[\d.]+) TimeScale (?P<ts>\d+) \| actors high (?P<high>\d+) '
+                    r'midHigh (?P<mh>\d+) midLow (?P<ml>\d+) low (?P<low>\d+) \(runtime-created (?P<dyn>\d+), dead (?P<dead>\d+)\)')
+def sft_since(offset):
+    """Sky Above's time-lapse/census lines written since offset (bVisualTimeLapse build, 2026-11-25)."""
+    try:
+        with open(SFT_LOG, 'rb') as fh: fh.seek(offset); text = fh.read().decode('utf-8', 'replace')
+    except Exception: return {}
+    out = {'timelapse': [l.split('] ', 2)[-1] for l in text.splitlines() if 'Time-lapse:' in l][-4:]}
+    for m in CENSUS.finditer(text):
+        out['census_' + m['when'].replace(' ', '_')] = {k: float(v) if '.' in v else int(v) for k, v in m.groupdict().items() if k != 'when'}
+    return out
+
+
 def typ(s):
     for ch in s.lower():
         bench.tap('space' if ch == ' ' else ch); time.sleep(0.08)
 
 
 def trip(dest):
-    p0 = bench.pos(); t0 = time.time(); n0 = flights_ended()
+    p0 = bench.pos(); t0 = time.time(); n0 = flights_ended(); off0 = sft_size()
     if MAP_UI:
         bench.tap('m'); time.sleep(3.0)
         bench.tap('f'); time.sleep(1.2); typ(dest); time.sleep(0.8); bench.tap('enter'); time.sleep(2.0)
@@ -62,7 +80,8 @@ def trip(dest):
     fs = sorted(fm)
     return {'ended': ended, 'moved': round(moved), 'flightSeconds': round(time.time() - t0, 1), 'frames': len(fm),
             'flightMedianMs': round(fs[len(fs) // 2], 1) if fs else None, 'flightP99Ms': round(fs[int(len(fs) * 0.99)], 1) if fs else None,
-            'flightMaxMs': round(fs[-1], 1) if fs else None, 'over100': sum(1 for x in fm if x > 100), 'over250': sum(1 for x in fm if x > 250)}
+            'flightMaxMs': round(fs[-1], 1) if fs else None, 'over100': sum(1 for x in fm if x > 100), 'over250': sum(1 for x in fm if x > 250),
+            **sft_since(off0)}
 
 
 def log(label, extra=None):
